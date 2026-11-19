@@ -78,7 +78,8 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
   const practices: Row = {};
   const otherPractices: Record<string, unknown> = {};
   for (const [k, v] of Object.entries(p)) {
-    if (k === 'agentsMd') continue;
+    // agentsMd is in the stack's agent files; unknown is why a practice is null, not a practice.
+    if (k === 'agentsMd' || k === 'unknown') continue;
     const col = PRACTICES[k];
     if (!col) {
       otherPractices[k] = v;
