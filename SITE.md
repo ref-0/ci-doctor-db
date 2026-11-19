@@ -232,6 +232,39 @@ A section of its own beside The repo: what the repo is built with, captured on e
 - **What the scorer captures:** most of it already (`profile.languages`, `profile.packages`, and `practices`' task runner, package manager, linters, test runner, runner provider, agent files). New: formatters, more test runners (Playwright, pytest, go test), libraries and frameworks read from the root manifests and the workspace's (`package.json`, `Cargo.toml`, `pyproject.toml`, `go.mod`, `Gemfile`), counted by how many packages use each, top 8 shown.
 - **Stored as columns and a JSON field in D1,** so "similar" and the filters are SQL.
 
+## 7b. Your five graphs (asked 19 Nov)
+
+"Optimize all of your graphs": the report draws the five graphs that decide how far a change reaches and how long CI waits, each with its flagged issues first, and the fix linked to its guide section. An overloaded export path, for example, can make one edit invalidate most of the workspace's affected checks and caches.
+
+```
+   Your graphs                                        measured 18 Nov · ⓘ how
+   ┌ 1 Packages ───────────────┐ ┌ 2 Export paths ──────────────────────────┐
+   │   app ─┐                  │ │ ⚠ core "."  re-exports 340 modules,       │
+   │   cli ─┼─► core ◄─ sdk    │ │   imported by 42 packages: an edit to any │
+   │  web ──┘    ▲ ⟲ model     │ │   of them triggers 42 packages' checks    │
+   │ ⚠ cycle core ⇄ model      │ │ ⚠ ui   no exports map                     │
+   │ ⚠ core: 31 of 38 depend   │ │ ✓ sdk  6 entries, source first            │
+   └───────────────────────────┘ └──────────────────────────────────────────┘
+   ┌ 3 Layers in packages ─────┐ ┌ 4 Workspace tasks ───────────────────────┐
+   │ core: 4 folders, 2 cycles │ │ ⚠ test: no declared inputs, cache misses  │
+   │ from your agent's run ✦   │ │ ⚠ build: inputs cover 92% of the repo     │
+   └───────────────────────────┘ └──────────────────────────────────────────┘
+   ┌ 5 CI jobs ─────────────────────────────────────────────────────────────┐
+   │ setup ─► build ─► test 1..10 ─► pack ─► result      chain sets 21.4 min │
+   │ ⚠ test 5/10 blocks 38 job-min downstream · ⚠ build waits 2.1 min queued  │
+   └────────────────────────────────────────────────────────────────────────┘
+```
+
+- **Each graph is drawn,** small and interactive: nodes sized by fan-in, the flagged node or edge in the score's colour, the rest monochrome (as everywhere else). Hovering a flag shows its numbers and the guide link; "Fix it" adds it to the agent prompt.
+- **What the site can measure from outside,** with no clone and few API calls:
+  - **1 Packages:** every manifest, which the scorer already reads (P-011): edges, cycles, depth, fan-in hubs.
+  - **2 Export paths:** each package's `exports` map, plus its entry files, fetched from `raw.githubusercontent.com` (not counted against the API): `export *`, re-exported module counts, root barrels. **Overload** is re-exported modules × importing packages, the edit-to-invalidation fan-out (P-014).
+  - **4 Workspace tasks:** `turbo.json`, `nx.json` and Vite+ task config by raw fetch: task dependencies, tasks with no inputs, inputs that cover most of the repo.
+  - **5 CI jobs:** the job graph from the workflow files and the jobs API (P-010): the chain that sets the wait, blocked against queued time, the top blocker. The replay (section 6) animates the same graph.
+- **What needs the repo itself:** 3 Layers in packages, the file import graph, and **what triggers what** (replaying commits through the graph) come from `scripts/graph/`, run by the person's agent. They appear on the report only through a field report (LEARNING-LOOP.md), marked ✦ "from your agent's run" with its date; until then the panel says how to get it.
+- **Flags are dated claims with numbers,** never adjectives: "imported by 42 packages", not "too big". Each has its threshold from the dataset ("worse than 90% of large TypeScript repos") once the loop has enough repos.
+- **For agents:** the graphs and flags are in `/<owner>/<repo>.json` and the `<ci-report>` block, one line per flag.
+
 ## 8. Fix first
 
 ```
