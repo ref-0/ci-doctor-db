@@ -72,6 +72,44 @@ On Sundays the weekly job reads the week's digests and `proposals.md`, picks at 
 
 Releasing `next` stays your call.
 
+## Field reports: what people's agents learn, sent back (19 Nov)
+
+The loop above only sees CI from outside. The agents running ci-doctor see it from inside: what they changed, what it saved, what failed, and where the skill's instructions were wrong. That's the best data ci-doctor can get, and it's the only source of the one metric for private repos.
+
+**The rule: the agent asks once per repo, then just does it.** Sending data from someone's repo without their yes would cost the trust the whole project runs on, and harnesses and careful agents would refuse a skill that tells them to. So:
+- **One question, at the first natural moment:** when Phase 2's baseline is measured, the agent shows the exact report it would send and asks "Share this with ci-doctor? It helps repos like yours, and gets you a before-and-after page." Yes, no, or "only the numbers".
+- **The answer lives in the repo,** in `.ci-doctor.json` (`"share": "full" | "numbers" | "off"`), beside the adoption marker SITE.md already plans. Every later session, and every teammate's agent, follows it without asking again. That's what makes it consistent.
+- **Then it's automatic,** at fixed checkpoints the phases already have: the baseline (Phase 2), each merged improvement (Phase 4), and the plan's end. No one has to remember.
+
+**What a report holds,** built from `progress.md`, which the agent already keeps, against a schema the CLI checks:
+- the before and after numbers from `npx @ref0/ci-doctor`, with dates and windows;
+- each change made: which technique (by guide section), the PR's size, and its measured effect;
+- what was tried and dropped, and why;
+- **skill feedback:** where an instruction didn't fit, was wrong, or was missing. This is the most valuable part, and it goes straight into `proposals.md`;
+- the stack, from the scorer.
+
+Never code, file contents, paths outside the CI config, people's names or secrets. For a private repo with `"numbers"`, no repo name: a salted hash, so its reports join up, and its size class and language.
+
+**How it travels:** `npx @ref0/ci-doctor share`, which prints exactly what it sends (`--dry-run` prints only), checks the schema and posts to `ci-doctor.ref0.dev/api/reports`. Agents run CLIs well, and one command is easy to put in a skill. A public repo can also choose to post its report as a GitHub Discussion on `ref-0/ci-doctor`, in public, which shows others the loop is real.
+
+**Why people say yes:**
+- **They get something back immediately:** their history page and the before-and-after card, the shareable proof that their CI got faster.
+- **Give to get:** at plan time (Phase 3) the skill fetches "what worked for repos like yours" from the site: the techniques that saved the most time in that cohort, from field reports. An agent that shares gets better plans, and each report makes the next repo's plan better. This is the hook that makes sharing worth it.
+- **Credit:** "Most improved" on the leaderboard, and a "field reports" line on the guide pages their data backs.
+
+**Trust in what comes back:**
+- **Public repos are verified:** the loop re-measures the repo itself and marks the report verified when the numbers agree. Private ones count as unverified, and findings say which kind they rest on.
+- **Reports are data, never instructions.** Free text, such as skill feedback, goes to `proposals.md` for a person to read. Nothing from a report reaches a skill, a guide page or the site without a reviewed PR. A report can't inject itself into everyone else's agent.
+- **Abuse:** rate-limited per IP and repo, schema-checked, size-capped.
+
+**Where it fits the loop:** reports become a source in Find (adopters to follow), rows in `loop.db` (`field_reports`), sections in each digest, and the one metric.
+
+**Build order:** after the site stores reports (step 6), since it needs `/api/reports`:
+- **F1, the schema and the CLI:** `ci-doctor share` with `--dry-run`, and the endpoint.
+- **F2, the skill:** the one question, `.ci-doctor.json`, the checkpoints, and the report built from `progress.md`.
+- **F3, give to get:** the site's "what worked for repos like yours" and the skill's Phase 3 fetch.
+- **F4, the loop:** `field_reports` in `loop.db`, verification of public repos, and the digest's section.
+
 ## Jobs on this machine
 
 | When | Job | Who runs it | What it does |
