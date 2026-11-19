@@ -91,3 +91,9 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** A local tool, `scripts/graph/` in ci-doctor, that an agent runs in a repo: the workspace's package and file import graph through `exports`, fan-in, cycles, barrels, folder-level layers, and, replaying recent commits, what each change triggers as a share of the workspace.
 - **Evidence:** the scorer only sees manifests from outside; the import graph and "what triggers what" need the source. Guide section 4 depends on them, and Phase 1 maps them by hand. Raised by the maintainers, 19 Nov, as very high priority.
 - **Lands:** scripts, skill
+
+### P-014 · open
+- **Date:** 2026-11-19
+- **Change:** The scorer fetches each workspace package's `exports` entry files by raw fetch and measures export-path overload: `export *`, re-exported module counts, root barrels, and overload = re-exported modules × importing packages. Shown on the report's graphs (SITE.md 7b) and in the `<ci-report>` block.
+- **Evidence:** an overloaded export path can make one edit invalidate most of a workspace's affected checks and caches; the maintainers saw it in the monorepo. Raised 19 Nov.
+- **Lands:** scorer, site
