@@ -78,7 +78,8 @@ CREATE TABLE IF NOT EXISTS reports (
   test_runner       TEXT,
   task_runner       TEXT,
 
-  -- The stack, as JSON until the scorer captures its fields (loop step 2):
+  -- The stack, as JSON: the published scorer's report.stack, with languages, packages, workspace, testRunners,
+  -- lintFormat, libraries, runners, agentFiles and unknown. A research report has only the first four it shares:
   -- {"languages":[[name,pct]],"packages":{npm,cargo,go,python},"runners":[[provider,jobs]],"agentFiles":[...]}
   stack          TEXT NOT NULL DEFAULT '{}'
 );

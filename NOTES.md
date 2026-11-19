@@ -184,7 +184,7 @@ What the first probe got wrong (all fixed in `score.ts`):
 
 ## The scorer, v0 (18 Nov 2026)
 
-`node score.ts owner/repo [...] [--days 7] [--json]`. It writes `reports/<owner>__<repo>/<date>.json` and prints the `<ci-report>` block. API responses and raw files are cached for 24 h in `cache/`. Workflow files and `package.json` come from raw.githubusercontent.com, which spends no API quota.
+This research scorer, `score.ts`, is retired: the published one in ci-doctor (`scorer/`, `@ref0/ci-doctor`) holds every field it had, and more. `GH_TOKEN=$(node token.ts) node score-repos.ts owner/repo [...]` scores with it, through `scorer.ts`, and writes `reports/<owner>__<repo>/<date>.json`. What follows describes v0 as it was on 18 Nov.
 
 What it reads, in about 10 to 45 API calls a repo:
 - **Runs:** up to 1,000 from the last 7 days. On busy repos that's only 0.4 to 1.5 days.

@@ -27,7 +27,7 @@ export const FLAGS = [
 export const NAMED_TRAITS = ['package_manager', 'test_runner', 'task_runner'] as const;
 const PRACTICES = ['workflows', ...FLAGS, ...NAMED_TRAITS] as const;
 
-// Runner providers score.ts names from job labels; anything else is a raw label it didn't recognise.
+// Runner providers the scorer names from job labels; anything else is a raw label it didn't recognise.
 export const KNOWN_RUNNERS = new Set([
   'Blacksmith', 'Depot', 'Namespace', 'BuildJet', 'WarpBuild', 'Ubicloud', 'RunsOn', 'self-hosted', 'GitHub larger', 'GitHub-hosted',
 ]);
