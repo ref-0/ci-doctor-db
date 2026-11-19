@@ -1,0 +1,239 @@
+{
+ "repo": "mastodon/mastodon",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 10.7,
+  "stars": 50554,
+  "forks": 7560,
+  "languages": [
+   [
+    "Ruby",
+    61
+   ],
+   [
+    "TypeScript",
+    23
+   ],
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "SCSS",
+    5
+   ]
+  ],
+  "linesOfCode": 318987,
+  "linesFrom": "tree",
+  "files": 10128,
+  "sourceFiles": 4409,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 205153,
+   "tests": 113217,
+   "integration": 0,
+   "support": 617
+  },
+  "testShare": 0.35686054204349793,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 88.8,
+  "commitsPerWeekYear": 60.8,
+  "pace": 1.5,
+  "activeAuthors28d": 18,
+  "prsOpenedPerWeek": 80,
+  "prsMergedPerWeek": 55,
+  "botShareOfMergedPrs": 25.5,
+  "openToMergeHours": {
+   "p50": 4.4,
+   "p90": 72.9,
+   "n": 41
+  },
+  "prRunsPerDay": 499.9,
+  "runsPerMergedPr": 63.6
+ },
+ "window": {
+  "days": 2,
+  "runs": 1000,
+  "runsInPeriod": 2150,
+  "truncated": true,
+  "mainDays": 5.4
+ },
+ "size": "large",
+ "headsPerWeek": 364,
+ "score": 62,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 57,
+  "reliability": 86,
+  "efficiency": 39
+ },
+ "detail": {
+  "speed": {
+   "wait": 66,
+   "forSize": 31,
+   "tail": 71
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 78,
+   "redHeads": 70
+  },
+  "efficiency": {
+   "minutesPerPr": 21,
+   "runsPerPr": 0,
+   "setup": 59,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2161.5,
+  "prBilledMinutesPerDay": 2578.4,
+  "jobMinutesPerMergedPr": 275.1,
+  "expectedMinutesPerMergedPr": 107.2,
+  "expectedWait": 8.9,
+  "workflowsOnPrs": 13
+ },
+ "wait": {
+  "heads": 104,
+  "timed": 62,
+  "p50": 13.616666666666667,
+  "p75": 15.4,
+  "p90": 17.216666666666665,
+  "redRate": 0.22115384615384615,
+  "rerunRate": 0.038461538461538464,
+  "passedOnRerunRate": 0.009615384615384616,
+  "cancelledRate": 0.18269230769230768,
+  "botHeads": 14,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Ruby Testing",
+    61
+   ],
+   [
+    "Build container image for PR",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Ruby Testing",
+    12
+   ],
+   [
+    "Check i18n",
+    5
+   ],
+   [
+    "JavaScript Linting",
+    5
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Ruby Testing",
+   "Historical data migration test",
+   "CodeQL"
+  ],
+  "allPushesP50": 13.616666666666667
+ },
+ "main": {
+  "heads": 39,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.1282051282051282,
+  "redBy": [
+   [
+    "Ruby Testing",
+    3
+   ],
+   [
+    "Bundler Audit",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.34,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 6,
+  "spanMin": 13.433333333333334,
+  "jobMinutes": 27.28333333333333,
+  "billedMinutes": 30,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.4049382716049383,
+  "critical": {
+   "name": "test (.ruby-version)",
+   "minutes": 10.183333333333334,
+   "shareOfSpan": 0.7362637362637362
+  },
+  "longest": {
+   "name": "test (.ruby-version)",
+   "minutes": 10.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    36
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 22,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "yarn berry",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "Setup is 40% of job time: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"test (.ruby-version)\" runs 10 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 54
+}

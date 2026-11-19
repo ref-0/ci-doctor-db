@@ -15,8 +15,10 @@ Every repo here is public, and every number comes from GitHub's public API: each
 | [`LEARNING-LOOP.md`](LEARNING-LOOP.md) | The loop's plan, including field reports from people's agents |
 | [`SITE.md`](SITE.md), [`card/`](card/), [`colour.ts`](colour.ts) | The score site's design and its social cards |
 | [`NOTES.md`](NOTES.md), [`LAUNCH.md`](LAUNCH.md) | The first notes, and the launch plan |
+| [`reports/`](reports/) | Every measured report, one JSON file per repo and date: the score and its parts, PR wait percentiles, jobs, tests, practices and stack. A `_rescored` file re-scores the report it sits beside |
+| [`digest/`](digest/) | The loop's daily comparison: the numbers as JSON, and a readable digest |
 
-The measured reports, the API cache and `loop.db` aren't in git yet.
+`loop.db` isn't in git: `node loop/import.ts` builds it from `reports/`. Nor is the raw API cache.
 
 ## Run it
 

@@ -1,0 +1,254 @@
+{
+ "repo": "symfony/symfony",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 16.9,
+  "stars": 31445,
+  "forks": 9949,
+  "languages": [
+   [
+    "PHP",
+    98
+   ],
+   [
+    "Twig",
+    1
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 3207628,
+  "linesFrom": "tree",
+  "files": 16966,
+  "sourceFiles": 13165,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2177730,
+   "tests": 951981,
+   "integration": 0,
+   "support": 77917
+  },
+  "testShare": 0.3210779017679762,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 198.8,
+  "pace": 2.1,
+  "activeAuthors28d": "≥41",
+  "prsOpenedPerWeek": 147,
+  "prsMergedPerWeek": 117,
+  "botShareOfMergedPrs": 1,
+  "openToMergeHours": {
+   "p50": 3,
+   "p90": 23.6,
+   "n": 99
+  },
+  "prRunsPerDay": 348.7,
+  "runsPerMergedPr": 20.9
+ },
+ "window": {
+  "days": 2.9,
+  "runs": 1000,
+  "runsInPeriod": 2184,
+  "truncated": true,
+  "mainDays": 5.9
+ },
+ "size": "large",
+ "headsPerWeek": 405,
+ "score": 76,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 83,
+  "reliability": 58,
+  "efficiency": 76
+ },
+ "detail": {
+  "speed": {
+   "wait": 76,
+   "forSize": 100,
+   "tail": 59
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 42,
+   "setup": 54,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3019.9,
+  "prBilledMinutesPerDay": 3402.7,
+  "jobMinutesPerMergedPr": 180.7,
+  "expectedMinutesPerMergedPr": 486.8,
+  "expectedWait": 24.2,
+  "workflowsOnPrs": 10
+ },
+ "wait": {
+  "heads": 166,
+  "timed": 152,
+  "p50": 9,
+  "p75": 10.616666666666667,
+  "p90": 22.4,
+  "redRate": 0.4036144578313253,
+  "rerunRate": 0.006024096385542169,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.0783132530120482,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Integration",
+    84
+   ],
+   [
+    "Unit Tests",
+    35
+   ],
+   [
+    "Windows",
+    30
+   ]
+  ],
+  "redBy": [
+   [
+    "Windows",
+    36
+   ],
+   [
+    "Unit Tests",
+    28
+   ],
+   [
+    "CS",
+    21
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Unit Tests",
+   "Windows",
+   "Integration"
+  ],
+  "allPushesP50": 9
+ },
+ "main": {
+  "heads": 36,
+  "p50": 9.15,
+  "p90": 11.083333333333334,
+  "redRate": 0.4166666666666667,
+  "redBy": [
+   [
+    "Windows",
+    11
+   ],
+   [
+    "Unit Tests",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 8.116666666666667,
+  "jobMinutes": 8.066666666666666,
+  "billedMinutes": 9,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.4306418219461698,
+  "critical": {
+   "name": "Integration (8.2)",
+   "minutes": 8.066666666666666,
+   "shareOfSpan": 0.9938398357289527
+  },
+  "longest": {
+   "name": "Integration (8.2)",
+   "minutes": 8.066666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": true,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Setup is 43% of job time: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"Integration (8.2)\" runs 8 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 38,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 70,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

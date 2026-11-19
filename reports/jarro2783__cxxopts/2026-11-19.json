@@ -1,0 +1,196 @@
+{
+ "repo": "jarro2783/cxxopts",
+ "date": "2026-11-19",
+ "unscored": "Only 1 PR pushes in the window ran the main workflows; 5 are needed.",
+ "profile": {
+  "ageYears": 12.1,
+  "stars": 4830,
+  "forks": 674,
+  "languages": [
+   [
+    "C++",
+    96
+   ],
+   [
+    "CMake",
+    2
+   ],
+   [
+    "Meson",
+    1
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 26640,
+  "linesFrom": "tree",
+  "files": 44,
+  "sourceFiles": 10,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2530,
+   "tests": 24110,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.9050353915087906,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 0.8,
+  "commitsPerWeekYear": 0.4,
+  "pace": 1.7,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 3,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 8.8,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 1.4,
+  "runs": 12,
+  "runsInPeriod": 12,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "small",
+ "headsPerWeek": 10,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 40,
+   "forSize": 0,
+   "tail": 55
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null,
+   "redHeads": 0
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": null,
+   "queue": null,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 0,
+  "prBilledMinutesPerDay": 0,
+  "jobMinutesPerMergedPr": null,
+  "expectedMinutesPerMergedPr": 31,
+  "expectedWait": 2.6,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 2,
+  "timed": 1,
+  "p50": 30.1,
+  "p75": 30.1,
+  "p90": 30.1,
+  "redRate": 0.5,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CIFuzz",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Meson",
+    1
+   ],
+   [
+    "CMake",
+    1
+   ],
+   [
+    "Build cxxopts",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Meson"
+  ],
+  "allPushesP50": 30.1
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": "WORKSPACE",
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Share a remote cache for WORKSPACE: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 4
+}

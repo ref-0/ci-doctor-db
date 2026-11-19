@@ -1,0 +1,237 @@
+{
+ "repo": "gastownhall/beads",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 1.1,
+  "stars": 28835,
+  "forks": 1947,
+  "languages": [
+   [
+    "Go",
+    95
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Starlark",
+    1
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "linesOfCode": 1736554,
+  "linesFrom": "tree",
+  "files": 5745,
+  "sourceFiles": 4236,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 652951,
+   "tests": 1073296,
+   "integration": 9627,
+   "support": 681
+  },
+  "testShare": 0.6239962353029338,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 2,
+   "python": 1
+  },
+  "commitsPerWeek": 62.5,
+  "commitsPerWeekYear": 187.4,
+  "pace": 0.4,
+  "activeAuthors28d": 10,
+  "prsOpenedPerWeek": 123,
+  "prsMergedPerWeek": 80,
+  "botShareOfMergedPrs": 87.5,
+  "openToMergeHours": {
+   "p50": 96.7,
+   "p90": 671.6,
+   "n": 10
+  },
+  "prRunsPerDay": 142.8,
+  "runsPerMergedPr": 12.5
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 816,
+  "runsInPeriod": 818,
+  "truncated": false,
+  "mainDays": 6.5
+ },
+ "size": "large",
+ "headsPerWeek": 339,
+ "score": 71,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 80,
+  "reliability": 32,
+  "efficiency": 85
+ },
+ "detail": {
+  "speed": {
+   "wait": 69,
+   "forSize": 98,
+   "tail": 72
+  },
+  "reliability": {
+   "flakes": 43,
+   "mainRed": 17
+  },
+  "efficiency": {
+   "minutesPerPr": 94,
+   "runsPerPr": 63,
+   "setup": 100,
+   "queue": 74,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2563,
+  "prBilledMinutesPerDay": 3284.3,
+  "jobMinutesPerMergedPr": 224.3,
+  "expectedMinutesPerMergedPr": 397.6,
+  "expectedWait": 21,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 344,
+  "timed": 65,
+  "p50": 10.883333333333333,
+  "p75": 13.466666666666667,
+  "p90": 16.15,
+  "redRate": 0.29941860465116277,
+  "rerunRate": 0.10755813953488372,
+  "passedOnRerunRate": 0.07267441860465117,
+  "cancelledRate": 0.00872093023255814,
+  "botHeads": 204,
+  "lightHeads": 4,
+  "lastToFinish": [
+   [
+    "PR",
+    61
+   ],
+   [
+    "PR Risk",
+    4
+   ]
+  ],
+  "redBy": [
+   [
+    "PR",
+    102
+   ],
+   [
+    "PR Risk",
+    3
+   ]
+  ],
+  "leftOut": [
+   "rbe worker-env sync automerge",
+   "Remove needs-triage when triaged",
+   "Auto-label new issues and PRs"
+  ],
+  "heavyWorkflows": [
+   "PR"
+  ],
+  "allPushesP50": 10.6
+ },
+ "main": {
+  "heads": 56,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.3392857142857143,
+  "redBy": [
+   [
+    "Bazel",
+    15
+   ],
+   [
+    "Main",
+    5
+   ]
+  ]
+ },
+ "botRunShare": 0.7840451248992748,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 24,
+  "spanMin": 7.8,
+  "jobMinutes": 49.68333333333333,
+  "billedMinutes": 63,
+  "subMinuteJobs": 7,
+  "queueP50Sec": 7,
+  "queueP90Sec": 24,
+  "setupShare": 0.15434906196702672,
+  "critical": {
+   "name": "CI Gate / Required",
+   "minutes": 0.13333333333333333,
+   "shareOfSpan": 0.015873015873015872
+  },
+  "longest": {
+   "name": "Bazel / dolt-int",
+   "minutes": 6.65
+  },
+  "providers": [
+   [
+    "Blacksmith",
+    96
+   ],
+   [
+    "GitHub-hosted",
+    51
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 23,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": "MODULE.bazel",
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "7% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "apiCalls": 53,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 66,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

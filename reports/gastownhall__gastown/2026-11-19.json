@@ -1,0 +1,214 @@
+{
+ "repo": "gastownhall/gastown",
+ "date": "2026-11-19",
+ "unscored": "Only 4 PR pushes in the window ran the main workflows; 5 are needed.",
+ "profile": {
+  "ageYears": 0.9,
+  "stars": 18835,
+  "forks": 1703,
+  "languages": [
+   [
+    "Go",
+    95
+   ],
+   [
+    "Shell",
+    2
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "Go Template",
+    1
+   ]
+  ],
+  "linesOfCode": 496540,
+  "linesFrom": "tree",
+  "files": 1565,
+  "sourceFiles": 1243,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 273630,
+   "tests": 219937,
+   "integration": 2973,
+   "support": 0
+  },
+  "testShare": 0.4489254799131455,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "commitsPerWeek": 3,
+  "commitsPerWeekYear": 149.7,
+  "pace": 0,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 7,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 10.4,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 3.9,
+  "runs": 26,
+  "runsInPeriod": 26,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "medium",
+ "headsPerWeek": 15,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 68,
+   "forSize": 49,
+   "tail": 75
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 94
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 65.7,
+  "prBilledMinutesPerDay": 75,
+  "jobMinutesPerMergedPr": null,
+  "expectedMinutesPerMergedPr": 133.7,
+  "expectedWait": 11.1,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 8,
+  "timed": 4,
+  "p50": 12.583333333333334,
+  "p75": 13.3,
+  "p90": 14.95,
+  "redRate": 0.125,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 3,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    4
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Block Internal PRs",
+   "Auto-label new issues and PRs",
+   "Remove needs-triage when triaged"
+  ],
+  "heavyWorkflows": [
+   "CI",
+   "Windows CI"
+  ],
+  "allPushesP50": 12.583333333333334
+ },
+ "main": {
+  "heads": 2,
+  "p50": 14.383333333333333,
+  "p90": 14.45,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.4090909090909091,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 12.4,
+  "jobMinutes": 24.45,
+  "billedMinutes": 28,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.11068943706514864,
+  "critical": {
+   "name": "Test",
+   "minutes": 12.35,
+   "shareOfSpan": 0.9959459459459459
+  },
+  "longest": {
+   "name": "Test",
+   "minutes": 12.35
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Test\" runs 12 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "apiCalls": 9
+}

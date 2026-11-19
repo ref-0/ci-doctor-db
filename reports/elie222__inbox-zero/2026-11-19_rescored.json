@@ -1,0 +1,235 @@
+{
+ "repo": "elie222/inbox-zero",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 3.4,
+  "stars": 13065,
+  "forks": 1677,
+  "languages": [
+   [
+    "TypeScript",
+    98
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "PLpgSQL",
+    0
+   ]
+  ],
+  "linesOfCode": 780030,
+  "files": 5138,
+  "sourceFiles": 4193,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 394148,
+   "tests": 325287,
+   "integration": 59518,
+   "support": 1896
+  },
+  "testShare": 0.4952319627181819,
+  "packages": {
+   "npm": 22,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 78.8,
+  "commitsPerWeekYear": 84.4,
+  "pace": 0.9,
+  "activeAuthors28d": 12,
+  "prsOpenedPerWeek": 57,
+  "prsMergedPerWeek": 68,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 1.6,
+   "p90": 60.2,
+   "n": 68
+  },
+  "prRunsPerDay": 71.8,
+  "runsPerMergedPr": 7.4,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 494,
+  "runsInPeriod": 494,
+  "truncated": false,
+  "mainDays": 6.9
+ },
+ "size": "medium",
+ "headsPerWeek": 173,
+ "score": 49,
+ "parts": {
+  "speed": 30,
+  "reliability": 90,
+  "efficiency": 66
+ },
+ "detail": {
+  "speed": {
+   "wait": 33,
+   "forSize": 28,
+   "tail": 23
+  },
+  "reliability": {
+   "flakes": 88,
+   "mainRed": 93
+  },
+  "efficiency": {
+   "minutesPerPr": 70,
+   "runsPerPr": 84,
+   "setup": 74,
+   "queue": 21,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2764,
+  "prBilledMinutesPerDay": 3131.3,
+  "jobMinutesPerMergedPr": 284.5,
+  "expectedMinutesPerMergedPr": 305.3,
+  "expectedWait": 17.5,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 170,
+  "timed": 87,
+  "p50": 27.666666666666668,
+  "p75": 39.53333333333333,
+  "p90": 63.06666666666667,
+  "redRate": 0.08823529411764706,
+  "rerunRate": 0.023529411764705882,
+  "passedOnRerunRate": 0.023529411764705882,
+  "cancelledRate": 0.3764705882352941,
+  "botHeads": 1,
+  "lightHeads": 9,
+  "lastToFinish": [
+   [
+    "Playwright",
+    82
+   ],
+   [
+    "Run Tests",
+    5
+   ]
+  ],
+  "redBy": [
+   [
+    "Run Tests",
+    6
+   ],
+   [
+    "Playwright",
+    6
+   ],
+   [
+    "Build Check",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Playwright"
+  ],
+  "allPushesP50": 25.116666666666667
+ },
+ "main": {
+  "heads": 67,
+  "p50": 19.4,
+  "p90": 50.916666666666664,
+  "redRate": 0.07462686567164178,
+  "redBy": [
+   [
+    "Mail packages",
+    3
+   ],
+   [
+    "Playwright",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.008086253369272238,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 11.3,
+  "jobMinutes": 11.216666666666669,
+  "billedMinutes": 13,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 17,
+  "queueP90Sec": 148,
+  "setupShare": 0.3307943416757345,
+  "critical": {
+   "name": "Browser report",
+   "minutes": 0.7166666666666667,
+   "shareOfSpan": 0.04370629370629371
+  },
+  "longest": {
+   "name": "E2E mail (google)",
+   "minutes": 12.416666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 15,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "p90 is 2.3× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 148 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 27,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 43,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "repo": "anomalyco/opencode",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 1.6,
+  "stars": 227844,
+  "forks": 30911,
+  "languages": [
+   [
+    "TypeScript",
+    85
+   ],
+   [
+    "MDX",
+    11
+   ],
+   [
+    "CSS",
+    3
+   ],
+   [
+    "Rust",
+    1
+   ]
+  ],
+  "linesOfCode": 2082266,
+  "files": 11577,
+  "sourceFiles": 7212,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1418558,
+   "tests": 590750,
+   "integration": 64744,
+   "support": 8985
+  },
+  "testShare": 0.31899563269163256,
+  "packages": {
+   "npm": 42,
+   "cargo": 1,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 358.9,
+  "pace": 1.3,
+  "activeAuthors28d": "≥29",
+  "prsOpenedPerWeek": 647,
+  "prsMergedPerWeek": 315,
+  "botShareOfMergedPrs": 9,
+  "openToMergeHours": {
+   "p50": 0.5,
+   "p90": 23,
+   "n": 91
+  },
+  "prRunsPerDay": 1208.2,
+  "runsPerMergedPr": 26.8,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 1,
+  "runs": 999,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.2
+ },
+ "size": "large",
+ "headsPerWeek": 1651,
+ "score": 88,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 92,
+  "reliability": 81,
+  "efficiency": 80
+ },
+ "detail": {
+  "speed": {
+   "wait": 88,
+   "forSize": 100,
+   "tail": 86
+  },
+  "reliability": {
+   "flakes": 90,
+   "mainRed": 69
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 32,
+   "setup": 83,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 690.1,
+  "prBilledMinutesPerDay": 1079.2,
+  "jobMinutesPerMergedPr": 15.3,
+  "expectedMinutesPerMergedPr": 422.1,
+  "expectedWait": 21.9,
+  "workflowsOnPrs": 8
+ },
+ "wait": {
+  "heads": 234,
+  "timed": 74,
+  "p50": 5.45,
+  "p75": 8.5,
+  "p90": 9.516666666666667,
+  "redRate": 0.14957264957264957,
+  "rerunRate": 0.04700854700854701,
+  "passedOnRerunRate": 0.021367521367521368,
+  "cancelledRate": 0.02564102564102564,
+  "botHeads": 15,
+  "lightHeads": 34,
+  "lastToFinish": [
+   [
+    "check-test",
+    56
+   ],
+   [
+    "check",
+    9
+   ],
+   [
+    "check-docs",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "check",
+    23
+   ],
+   [
+    "check-test",
+    22
+   ],
+   [
+    "check-bot-scope",
+    14
+   ]
+  ],
+  "leftOut": [
+   "triage-pr-standards",
+   "triage-contributor"
+  ],
+  "heavyWorkflows": [
+   "check-test",
+   "check"
+  ],
+  "allPushesP50": 1.95
+ },
+ "main": {
+  "heads": 50,
+  "p50": 10.633333333333333,
+  "p90": 15.166666666666666,
+  "redRate": 0.16,
+  "redBy": [
+   [
+    "check-test",
+    8
+   ]
+  ]
+ },
+ "botRunShare": 0.07871914609739826,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 1.15,
+  "jobMinutes": 0.9833333333333333,
+  "billedMinutes": 1,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 6,
+  "queueP90Sec": 10,
+  "setupShare": 0.2857142857142857,
+  "critical": {
+   "name": "unit (linux)",
+   "minutes": 0.9833333333333333,
+   "shareOfSpan": 0.912280701754386
+  },
+  "longest": {
+   "name": "unit (linux)",
+   "minutes": 0.9833333333333333
+  },
+  "providers": [
+   [
+    "Blacksmith",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 19,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "bun",
+  "fastLint": true,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for turbo.json: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  }
+ ],
+ "apiCalls": 54,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 86,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

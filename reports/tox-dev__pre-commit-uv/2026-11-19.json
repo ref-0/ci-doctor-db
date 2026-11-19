@@ -1,0 +1,221 @@
+{
+ "repo": "tox-dev/pre-commit-uv",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 2.3,
+  "stars": 208,
+  "forks": 7,
+  "languages": [
+   [
+    "Python",
+    100
+   ]
+  ],
+  "linesOfCode": 567,
+  "linesFrom": "tree",
+  "files": 31,
+  "sourceFiles": 4,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 270,
+   "tests": 297,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.5230705930758831,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 10.5,
+  "commitsPerWeekYear": 2.6,
+  "pace": 4.1,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 11,
+  "prsMergedPerWeek": 12,
+  "botShareOfMergedPrs": 33.3,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 41.8,
+   "n": 8
+  },
+  "prRunsPerDay": 10.7,
+  "runsPerMergedPr": 6.3
+ },
+ "window": {
+  "days": 6.1,
+  "runs": 65,
+  "runsInPeriod": 65,
+  "truncated": false,
+  "mainDays": 7
+ },
+ "size": "small",
+ "headsPerWeek": 17,
+ "score": 79,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 73,
+  "reliability": 100,
+  "efficiency": 77
+ },
+ "detail": {
+  "speed": {
+   "wait": 94,
+   "forSize": 45,
+   "tail": 74
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 99,
+   "runsPerPr": 91,
+   "setup": 86,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 24.7,
+  "prBilledMinutesPerDay": 47.9,
+  "jobMinutesPerMergedPr": 14.4,
+  "expectedMinutesPerMergedPr": 28.1,
+  "expectedWait": 3.3,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 15,
+  "timed": 11,
+  "p50": 4,
+  "p75": 13.866666666666667,
+  "p90": 15.35,
+  "redRate": 0.2,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 4,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "🧪 check",
+    10
+   ],
+   [
+    "📝 Changelog",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "📝 Changelog",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "🧪 check"
+  ],
+  "allPushesP50": 4
+ },
+ "main": {
+  "heads": 14,
+  "p50": 8.866666666666667,
+  "p90": 74.33333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.2523364485981308,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 13,
+  "spanMin": 15.316666666666666,
+  "jobMinutes": 8.450000000000001,
+  "billedMinutes": 15,
+  "subMinuteJobs": 12,
+  "queueP50Sec": 223,
+  "queueP90Sec": 897,
+  "setupShare": 0.26785714285714285,
+  "critical": {
+   "name": "🚦 Required checks pass",
+   "minutes": 0.11666666666666667,
+   "shareOfSpan": 0.004352557127312296
+  },
+  "longest": {
+   "name": "🧪 Test / 🧪 3.15t on ubuntu-26.04",
+   "minutes": 2.55
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    78
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 1,
+  "over10s": 1,
+  "top": [
+   {
+    "file": "tests/pre_commit_uv/test_pre_commit_patch.py",
+    "sec": 58.13,
+    "job": "🧪 Test / 🧪 3.15t on ubuntu-26.04"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "1 test files take over 10 s; the slowest, tests/pre_commit_uv/test_pre_commit_patch.py, takes 58 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "p90 is 3.8× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 897 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 1
+}

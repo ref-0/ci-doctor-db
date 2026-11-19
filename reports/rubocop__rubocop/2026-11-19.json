@@ -1,0 +1,217 @@
+{
+ "repo": "rubocop/rubocop",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 14.6,
+  "stars": 12926,
+  "forks": 3163,
+  "languages": [
+   [
+    "Ruby",
+    100
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "Emacs Lisp",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 398296,
+  "linesFrom": "tree",
+  "files": 2204,
+  "sourceFiles": 1791,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 125690,
+   "tests": 272412,
+   "integration": 0,
+   "support": 194
+  },
+  "testShare": 0.6844299125458223,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 108.3,
+  "commitsPerWeekYear": 48,
+  "pace": 2.2,
+  "activeAuthors28d": 22,
+  "prsOpenedPerWeek": 81,
+  "prsMergedPerWeek": 70,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 24.1,
+   "p90": 100.9,
+   "n": 70
+  },
+  "prRunsPerDay": 62.5,
+  "runsPerMergedPr": 6.3
+ },
+ "window": {
+  "days": 6.6,
+  "runs": 414,
+  "runsInPeriod": 414,
+  "truncated": false,
+  "mainDays": 6.6
+ },
+ "size": "medium",
+ "headsPerWeek": 146,
+ "score": 77,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 59,
+  "reliability": 100,
+  "efficiency": 88
+ },
+ "detail": {
+  "speed": {
+   "wait": 66,
+   "forSize": 37,
+   "tail": 71
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 71,
+   "runsPerPr": 91,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1084.2,
+  "prBilledMinutesPerDay": 1295.7,
+  "jobMinutesPerMergedPr": 108.4,
+  "expectedMinutesPerMergedPr": 119.7,
+  "expectedWait": 10,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 138,
+  "timed": 96,
+  "p50": 13.666666666666666,
+  "p75": 15.916666666666666,
+  "p90": 17.5,
+  "redRate": 0.050724637681159424,
+  "rerunRate": 0.014492753623188406,
+  "passedOnRerunRate": 0.007246376811594203,
+  "cancelledRate": 0.2536231884057971,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    96
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    4
+   ],
+   [
+    "Linting",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 13.666666666666666
+ },
+ "main": {
+  "heads": 71,
+  "p50": 16.9,
+  "p90": 55.266666666666666,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 18,
+  "spanMin": 12.216666666666667,
+  "jobMinutes": 60.08333333333333,
+  "billedMinutes": 69,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 5,
+  "setupShare": 0.1157313172433847,
+  "critical": {
+   "name": "Spec - JRuby",
+   "minutes": 12.183333333333334,
+   "shareOfSpan": 0.9957746478873238
+  },
+  "longest": {
+   "name": "Spec - JRuby",
+   "minutes": 12.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Spec - JRuby\" runs 12 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "apiCalls": 22
+}

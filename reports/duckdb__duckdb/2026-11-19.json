@@ -1,0 +1,231 @@
+{
+ "repo": "duckdb/duckdb",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8.4,
+  "stars": 43164,
+  "forks": 4221,
+  "languages": [
+   [
+    "C++",
+    92
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "C",
+    3
+   ],
+   [
+    "Swift",
+    0
+   ]
+  ],
+  "linesOfCode": 1486584,
+  "linesFrom": "tree",
+  "files": 18468,
+  "sourceFiles": 4659,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1231192,
+   "tests": 255392,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.1717979584913588,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 564.7,
+  "pace": 1.7,
+  "activeAuthors28d": "≥31",
+  "prsOpenedPerWeek": 258,
+  "prsMergedPerWeek": 197,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 13.8,
+   "p90": 118.7,
+   "n": 100
+  },
+  "prRunsPerDay": 186.8,
+  "runsPerMergedPr": 6.6
+ },
+ "window": {
+  "days": 6.4,
+  "runs": 1000,
+  "runsInPeriod": 1417,
+  "truncated": true,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 815,
+ "score": 39,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 5,
+  "reliability": 84,
+  "efficiency": 57
+ },
+ "detail": {
+  "speed": {
+   "wait": 13,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 96,
+   "mainRed": null,
+   "redHeads": 57
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 89,
+   "setup": 100,
+   "queue": 73,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 44603.9,
+  "prBilledMinutesPerDay": 47008.6,
+  "jobMinutesPerMergedPr": 1584.9,
+  "expectedMinutesPerMergedPr": 231.3,
+  "expectedWait": 19.3,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 748,
+  "timed": 486,
+  "p50": 78.85,
+  "p75": 199.33333333333334,
+  "p90": 386.26666666666665,
+  "redRate": 0.2700534759358289,
+  "rerunRate": 0.0427807486631016,
+  "passedOnRerunRate": 0.014705882352941176,
+  "cancelledRate": 0.24064171122994651,
+  "botHeads": 0,
+  "lightHeads": 15,
+  "lastToFinish": [
+   [
+    "Main",
+    478
+   ],
+   [
+    "Windows static exports",
+    6
+   ],
+   [
+    "Forward PR events to pr-tracker",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Main",
+    198
+   ],
+   [
+    "NightlyTests",
+    7
+   ],
+   [
+    "Windows static exports",
+    5
+   ]
+  ],
+  "leftOut": [
+   "Create Documentation issue for the Needs Documentation label"
+  ],
+  "heavyWorkflows": [
+   "Main"
+  ],
+  "allPushesP50": 76.36666666666666
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 40,
+  "spanMin": 63.016666666666666,
+  "jobMinutes": 457.8999999999999,
+  "billedMinutes": 476,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 12,
+  "queueP90Sec": 25,
+  "setupShare": 0.07001712084462834,
+  "critical": {
+   "name": "Summary",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.0013224014810896587
+  },
+  "longest": {
+   "name": "Linux Release (musl, arm64)",
+   "minutes": 34.05
+  },
+  "providers": [
+   [
+    "Namespace",
+    286
+   ],
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 27,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "p90 is 4.9× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "apiCalls": 55
+}

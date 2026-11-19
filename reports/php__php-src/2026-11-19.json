@@ -1,0 +1,219 @@
+{
+ "repo": "php/php-src",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 15.4,
+  "stars": 41809,
+  "forks": 8575,
+  "languages": [
+   [
+    "C",
+    69
+   ],
+   [
+    "PHP",
+    28
+   ],
+   [
+    "C++",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 1459747,
+  "linesFrom": "tree",
+  "files": 28881,
+  "sourceFiles": 2516,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1457928,
+   "tests": 862,
+   "integration": 0,
+   "support": 957
+  },
+  "testShare": 0.0012458327524676373,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 124.8,
+  "pace": 2.4,
+  "activeAuthors28d": "≥46",
+  "prsOpenedPerWeek": 120,
+  "prsMergedPerWeek": 48,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 344.2,
+   "p90": 2422.2,
+   "n": 48
+  },
+  "prRunsPerDay": 74.5,
+  "runsPerMergedPr": 10.9
+ },
+ "window": {
+  "days": 7,
+  "runs": 322,
+  "runsInPeriod": 323,
+  "truncated": false,
+  "mainDays": 6.9
+ },
+ "size": "large",
+ "headsPerWeek": 312,
+ "score": 37,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 12,
+  "reliability": 64,
+  "efficiency": 57
+ },
+ "detail": {
+  "speed": {
+   "wait": 23,
+   "forSize": 0,
+   "tail": 8
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 10,
+   "redHeads": 71
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 69,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 8381,
+  "prBilledMinutesPerDay": 8576.1,
+  "jobMinutesPerMergedPr": 1222.2,
+  "expectedMinutesPerMergedPr": 229.2,
+  "expectedWait": 19.1,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 312,
+  "timed": 240,
+  "p50": 52.7,
+  "p75": 61.38333333333333,
+  "p90": 133.46666666666667,
+  "redRate": 0.21794871794871795,
+  "rerunRate": 0.003205128205128205,
+  "passedOnRerunRate": 0.003205128205128205,
+  "cancelledRate": 0.22756410256410256,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Test",
+    240
+   ]
+  ],
+  "redBy": [
+   [
+    "Test",
+    65
+   ],
+   [
+    "Verify Bundled Files",
+    4
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Test"
+  ],
+  "allPushesP50": 52.7
+ },
+ "main": {
+  "heads": 85,
+  "p50": 57.266666666666666,
+  "p90": 214.83333333333334,
+  "redRate": 0.36470588235294116,
+  "redBy": [
+   [
+    "Test",
+    31
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 56.083333333333336,
+  "jobMinutes": 214.76666666666668,
+  "billedMinutes": 219,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.037565347274085135,
+  "critical": {
+   "name": "Suite / LINUX_X64_ASAN_DEBUG_ZTS",
+   "minutes": 50.5,
+   "shareOfSpan": 0.995400788436268
+  },
+  "longest": {
+   "name": "Suite / LINUX_X64_ASAN_DEBUG_ZTS",
+   "minutes": 50.5
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 13,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"Suite / LINUX_X64_ASAN_DEBUG_ZTS\" runs 51 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "apiCalls": 21
+}

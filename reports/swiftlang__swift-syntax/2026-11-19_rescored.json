@@ -1,0 +1,224 @@
+{
+ "repo": "swiftlang/swift-syntax",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8.3,
+  "stars": 3724,
+  "forks": 564,
+  "languages": [
+   [
+    "Swift",
+    99
+   ],
+   [
+    "CMake",
+    1
+   ],
+   [
+    "C",
+    0
+   ],
+   [
+    "Starlark",
+    0
+   ]
+  ],
+  "linesOfCode": 190497,
+  "linesFrom": "tree",
+  "files": 915,
+  "sourceFiles": 740,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 113743,
+   "tests": 76754,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.4029154269998,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 22.5,
+  "commitsPerWeekYear": 10.4,
+  "pace": 2.1,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 5,
+  "prsMergedPerWeek": 5,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 49.3,
+   "p90": 142.7,
+   "n": 5
+  },
+  "prRunsPerDay": 1.5,
+  "runsPerMergedPr": 2.1
+ },
+ "window": {
+  "days": 5.5,
+  "runs": 8,
+  "runsInPeriod": 8,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "small",
+ "headsPerWeek": 10,
+ "score": 54,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 31,
+  "reliability": 100,
+  "efficiency": 78
+ },
+ "detail": {
+  "speed": {
+   "wait": 38,
+   "forSize": 16,
+   "tail": 48
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 39,
+   "runsPerPr": 100,
+   "setup": 98,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 242.2,
+  "prBilledMinutesPerDay": 259,
+  "jobMinutesPerMergedPr": 339.1,
+  "expectedMinutesPerMergedPr": 191.7,
+  "expectedWait": 12.6,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 8,
+  "timed": 7,
+  "p50": 24.3,
+  "p75": 26.966666666666665,
+  "p90": 31.233333333333334,
+  "redRate": 0.25,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Pull request",
+    7
+   ]
+  ],
+  "redBy": [
+   [
+    "Pull request",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Pull request"
+  ],
+  "allPushesP50": 24.3
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 5,
+  "jobs": 25,
+  "spanMin": 26.3,
+  "jobMinutes": 184.23333333333332,
+  "billedMinutes": 199,
+  "subMinuteJobs": 7,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.21005189838841848,
+  "critical": {
+   "name": "Run tests using swift-syntax-dev-utils (Windows)",
+   "minutes": 26.266666666666666,
+   "shareOfSpan": 0.9986263736263737
+  },
+  "longest": {
+   "name": "Run tests using swift-syntax-dev-utils (Windows)",
+   "minutes": 26.266666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    125
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": "MODULE.bazel",
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Share a remote cache for MODULE.bazel: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"Run tests using swift-syntax-dev-utils (Windows)\" runs 26 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 5,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 57,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

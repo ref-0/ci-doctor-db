@@ -1,0 +1,236 @@
+{
+ "repo": "bevyengine/bevy",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 6.8,
+  "stars": 49851,
+  "forks": 5070,
+  "languages": [
+   [
+    "Rust",
+    95
+   ],
+   [
+    "WGSL",
+    5
+   ],
+   [
+    "Go Template",
+    0
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "linesOfCode": 865460,
+  "files": 3232,
+  "sourceFiles": 2031,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 860725,
+   "tests": 4322,
+   "integration": 581,
+   "support": 0
+  },
+  "testShare": 0.0056642503603742305,
+  "packages": {
+   "npm": 2,
+   "cargo": 96,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 42.3,
+  "commitsPerWeekYear": 48.1,
+  "pace": 0.9,
+  "activeAuthors28d": 73,
+  "prsOpenedPerWeek": 80,
+  "prsMergedPerWeek": 54,
+  "botShareOfMergedPrs": 9.3,
+  "openToMergeHours": {
+   "p50": 58.6,
+   "p90": 503.7,
+   "n": 49
+  },
+  "prRunsPerDay": 206,
+  "runsPerMergedPr": 26.7,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 5.8,
+  "runs": 1000,
+  "runsInPeriod": 1273,
+  "truncated": true,
+  "mainDays": 7
+ },
+ "size": "large",
+ "headsPerWeek": 279,
+ "score": 39,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 26,
+  "reliability": 58,
+  "efficiency": 57
+ },
+ "detail": {
+  "speed": {
+   "wait": 27,
+   "forSize": 20,
+   "tail": 42
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 23,
+   "runsPerPr": 33,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6026,
+  "prBilledMinutesPerDay": 6715.9,
+  "jobMinutesPerMergedPr": 781.1,
+  "expectedMinutesPerMergedPr": 316,
+  "expectedWait": 17.9,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 232,
+  "timed": 174,
+  "p50": 32.583333333333336,
+  "p75": 35.25,
+  "p90": 37.733333333333334,
+  "redRate": 0.14655172413793102,
+  "rerunRate": 0.008620689655172414,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.2413793103448276,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    171
+   ],
+   [
+    "Security Static Analysis",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    27
+   ],
+   [
+    "Example Run",
+    15
+   ],
+   [
+    "Dependencies",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Welcome new contributors",
+   "Action on PR labeled"
+  ],
+  "heavyWorkflows": [
+   "CI",
+   "Security Static Analysis"
+  ],
+  "allPushesP50": 32.583333333333336
+ },
+ "main": {
+  "heads": 42,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.5952380952380952,
+  "redBy": [
+   [
+    "Example Run",
+    21
+   ],
+   [
+    "Update Actions Caches",
+    6
+   ]
+  ]
+ },
+ "botRunShare": 0.12854030501089325,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 29,
+  "spanMin": 29.8,
+  "jobMinutes": 143.24999999999994,
+  "billedMinutes": 160,
+  "subMinuteJobs": 10,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.09402898550724638,
+  "critical": {
+   "name": "miri",
+   "minutes": 32.03333333333333,
+   "shareOfSpan": 0.9987631416202846
+  },
+  "longest": {
+   "name": "miri",
+   "minutes": 28.166666666666668
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    174
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"miri\" runs 28 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 39,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 44,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

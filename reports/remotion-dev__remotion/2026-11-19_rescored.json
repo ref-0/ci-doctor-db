@@ -1,0 +1,245 @@
+{
+ "repo": "remotion-dev/remotion",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 6.4,
+  "stars": 74137,
+  "forks": 6265,
+  "languages": [
+   [
+    "TypeScript",
+    72
+   ],
+   [
+    "Rust",
+    9
+   ],
+   [
+    "PHP",
+    7
+   ],
+   [
+    "MDX",
+    6
+   ]
+  ],
+  "linesOfCode": 2071000,
+  "files": 14790,
+  "sourceFiles": 11062,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2209637,
+   "tests": 182381,
+   "integration": 98501,
+   "support": 12249
+  },
+  "testShare": 0.1171227279621458,
+  "packages": {
+   "npm": 132,
+   "cargo": 3,
+   "go": 2,
+   "python": 1
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 271.7,
+  "pace": 2.3,
+  "activeAuthors28d": "≥16",
+  "prsOpenedPerWeek": 173,
+  "prsMergedPerWeek": 130,
+  "botShareOfMergedPrs": 2,
+  "openToMergeHours": {
+   "p50": 3.9,
+   "p90": 67.9,
+   "n": 98
+  },
+  "prRunsPerDay": 116.4,
+  "runsPerMergedPr": 6.3,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 624,
+  "runsInPeriod": 624,
+  "truncated": false,
+  "mainDays": 6.5
+ },
+ "size": "large",
+ "headsPerWeek": 616,
+ "score": 59,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 52,
+  "reliability": 69,
+  "efficiency": 70
+ },
+ "detail": {
+  "speed": {
+   "wait": 48,
+   "forSize": 67,
+   "tail": 25
+  },
+  "reliability": {
+   "flakes": 77,
+   "mainRed": 58
+  },
+  "efficiency": {
+   "minutesPerPr": 85,
+   "runsPerPr": 91,
+   "setup": 81,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5401,
+  "prBilledMinutesPerDay": 6033.8,
+  "jobMinutesPerMergedPr": 290.8,
+  "expectedMinutesPerMergedPr": 421.4,
+  "expectedWait": 21.9,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 623,
+  "timed": 412,
+  "p50": 18.633333333333333,
+  "p75": 30.65,
+  "p90": 60.083333333333336,
+  "redRate": 0.29213483146067415,
+  "rerunRate": 0.06260032102728733,
+  "passedOnRerunRate": 0.03531300160513644,
+  "cancelledRate": 0.2680577849117175,
+  "botHeads": 4,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "Install and Test",
+    411
+   ],
+   [
+    "Build FFmpeg",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Install and Test",
+    182
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Install and Test"
+  ],
+  "allPushesP50": 18.633333333333333
+ },
+ "main": {
+  "heads": 148,
+  "p50": 19.1,
+  "p90": 50.31666666666667,
+  "redRate": 0.19594594594594594,
+  "redBy": [
+   [
+    "Install and Test",
+    29
+   ]
+  ]
+ },
+ "botRunShare": 0.0035714285714285713,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 16,
+  "spanMin": 19.883333333333333,
+  "jobMinutes": 71.18333333333332,
+  "billedMinutes": 79,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 448,
+  "setupShare": 0.2944976609489864,
+  "critical": {
+   "name": "Required CI",
+   "minutes": 0.35,
+   "shareOfSpan": 0.017369727047146403
+  },
+  "longest": {
+   "name": "Web renderer tests",
+   "minutes": 14.3
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    93
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "bun",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for turbo.json: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"Web renderer tests\" runs 14 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "p90 is 3.2× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 448 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "apiCalls": 49,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 60,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

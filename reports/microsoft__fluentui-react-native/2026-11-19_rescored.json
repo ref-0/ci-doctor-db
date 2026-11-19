@@ -1,0 +1,224 @@
+{
+ "repo": "microsoft/fluentui-react-native",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 7.4,
+  "stars": 1449,
+  "forks": 180,
+  "languages": [
+   [
+    "TypeScript",
+    79
+   ],
+   [
+    "C++",
+    9
+   ],
+   [
+    "JavaScript",
+    6
+   ],
+   [
+    "Swift",
+    4
+   ]
+  ],
+  "linesOfCode": 383801,
+  "files": 3954,
+  "sourceFiles": 2677,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 392622,
+   "tests": 97489,
+   "integration": 10745,
+   "support": 14560
+  },
+  "testShare": 0.23824155253970616,
+  "packages": {
+   "npm": 92,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 21.3,
+  "commitsPerWeekYear": 6.2,
+  "pace": 3.5,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 23,
+  "prsMergedPerWeek": 14,
+  "botShareOfMergedPrs": 7.1,
+  "openToMergeHours": {
+   "p50": 27.9,
+   "p90": 79.8,
+   "n": 13
+  },
+  "prRunsPerDay": 35.1,
+  "runsPerMergedPr": 17.6,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 7,
+  "runs": 246,
+  "runsInPeriod": 246,
+  "truncated": false,
+  "mainDays": 5.9
+ },
+ "size": "medium",
+ "headsPerWeek": 123,
+ "score": 42,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 24,
+  "reliability": 97,
+  "efficiency": 40
+ },
+ "detail": {
+  "speed": {
+   "wait": 29,
+   "forSize": 12,
+   "tail": 35
+  },
+  "reliability": {
+   "flakes": 94,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 49,
+   "setup": 82,
+   "queue": 53,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2748.3,
+  "prBilledMinutesPerDay": 2863.4,
+  "jobMinutesPerMergedPr": 1374.2,
+  "expectedMinutesPerMergedPr": 241.6,
+  "expectedWait": 14.9,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 123,
+  "timed": 47,
+  "p50": 30.5,
+  "p75": 33.4,
+  "p90": 45.583333333333336,
+  "redRate": 0.22764227642276422,
+  "rerunRate": 0.0975609756097561,
+  "passedOnRerunRate": 0.016260162601626018,
+  "cancelledRate": 0.35772357723577236,
+  "botHeads": 20,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "PR",
+    46
+   ],
+   [
+    "CodeQL",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "PR",
+    28
+   ],
+   [
+    "CodeQL",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "PR"
+  ],
+  "allPushesP50": 30.5
+ },
+ "main": {
+  "heads": 14,
+  "p50": 3.466666666666667,
+  "p90": 4.016666666666667,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.15328467153284672,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 17,
+  "spanMin": 30.65,
+  "jobMinutes": 211.16666666666669,
+  "billedMinutes": 220,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 4,
+  "queueP90Sec": 49,
+  "setupShare": 0.28994271164863145,
+  "critical": {
+   "name": "macOS Storybook PR (physical)",
+   "minutes": 36.18333333333333,
+   "shareOfSpan": 0.9977588525324967
+  },
+  "longest": {
+   "name": "macOS Storybook PR (physical)",
+   "minutes": 36.18333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    100
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "yarn berry",
+  "fastLint": true,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"macOS Storybook PR (physical)\" runs 36 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  }
+ ],
+ "apiCalls": 14,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 49,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

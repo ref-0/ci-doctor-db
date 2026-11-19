@@ -1,0 +1,231 @@
+{
+ "repo": "astral-sh/uv",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 3.1,
+  "stars": 92222,
+  "forks": 3922,
+  "languages": [
+   [
+    "Rust",
+    98
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "linesOfCode": 648872,
+  "files": 1895,
+  "sourceFiles": 865,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 402148,
+   "tests": 316340,
+   "integration": 56,
+   "support": 0
+  },
+  "testShare": 0.44032963523630575,
+  "packages": {
+   "npm": 0,
+   "cargo": 92,
+   "go": 0,
+   "python": 4
+  },
+  "commitsPerWeek": 55.8,
+  "commitsPerWeekYear": 68.6,
+  "pace": 0.9,
+  "activeAuthors28d": 16,
+  "prsOpenedPerWeek": 44,
+  "prsMergedPerWeek": 39,
+  "botShareOfMergedPrs": 10.3,
+  "openToMergeHours": {
+   "p50": 34.2,
+   "p90": 548.2,
+   "n": 35
+  },
+  "prRunsPerDay": 44.5,
+  "runsPerMergedPr": 8,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.7,
+  "runs": 297,
+  "runsInPeriod": 297,
+  "truncated": false,
+  "mainDays": 6.3
+ },
+ "size": "medium",
+ "headsPerWeek": 245,
+ "score": 52,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 46,
+  "reliability": 57,
+  "efficiency": 65
+ },
+ "detail": {
+  "speed": {
+   "wait": 44,
+   "forSize": 44,
+   "tail": 57
+  },
+  "reliability": {
+   "flakes": 97,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 23,
+   "runsPerPr": 81,
+   "setup": 87,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3985.2,
+  "prBilledMinutesPerDay": 5036.8,
+  "jobMinutesPerMergedPr": 715.3,
+  "expectedMinutesPerMergedPr": 287.3,
+  "expectedWait": 16.8,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 234,
+  "timed": 109,
+  "p50": 20.616666666666667,
+  "p75": 21.85,
+  "p90": 24.016666666666666,
+  "redRate": 0.20085470085470086,
+  "rerunRate": 0.029914529914529916,
+  "passedOnRerunRate": 0.01282051282051282,
+  "cancelledRate": 0.45726495726495725,
+  "botHeads": 11,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    109
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    47
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 20.616666666666667
+ },
+ "main": {
+  "heads": 31,
+  "p50": 20.516666666666666,
+  "p90": 22.166666666666668,
+  "redRate": 0.5806451612903226,
+  "redBy": [
+   [
+    "CI",
+    18
+   ],
+   [
+    "Sync uv-security",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.031042128603104215,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 53,
+  "spanMin": 19.216666666666665,
+  "jobMinutes": 104.79999999999998,
+  "billedMinutes": 137,
+  "subMinuteJobs": 31,
+  "queueP50Sec": 3,
+  "queueP90Sec": 7,
+  "setupShare": 0.26339944271430915,
+  "critical": {
+   "name": "all required jobs passed",
+   "minutes": 0.15,
+   "shareOfSpan": 0.01019108280254777
+  },
+  "longest": {
+   "name": "bench / simulated",
+   "minutes": 17.35
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    325
+   ],
+   [
+    "Depot",
+    39
+   ],
+   [
+    "Namespace",
+    36
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"bench / simulated\" runs 17 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  }
+ ],
+ "apiCalls": 13,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 54,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

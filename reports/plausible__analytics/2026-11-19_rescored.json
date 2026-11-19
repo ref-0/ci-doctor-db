@@ -1,0 +1,231 @@
+{
+ "repo": "plausible/analytics",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8,
+  "stars": 29884,
+  "forks": 1943,
+  "languages": [
+   [
+    "Elixir",
+    81
+   ],
+   [
+    "TypeScript",
+    14
+   ],
+   [
+    "HTML",
+    2
+   ],
+   [
+    "JavaScript",
+    2
+   ]
+  ],
+  "linesOfCode": 310455,
+  "linesFrom": "tree",
+  "files": 2165,
+  "sourceFiles": 1650,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 109903,
+   "tests": 154550,
+   "integration": 45711,
+   "support": 291
+  },
+  "testShare": 0.64599227348857,
+  "packages": {
+   "npm": 3,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 18,
+  "commitsPerWeekYear": 12.2,
+  "pace": 1.5,
+  "activeAuthors28d": 13,
+  "prsOpenedPerWeek": 19,
+  "prsMergedPerWeek": 18,
+  "botShareOfMergedPrs": 11.1,
+  "openToMergeHours": {
+   "p50": 36.3,
+   "p90": 145.6,
+   "n": 16
+  },
+  "prRunsPerDay": 60.9,
+  "runsPerMergedPr": 23.7
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 415,
+  "runsInPeriod": 415,
+  "truncated": false,
+  "mainDays": 6.4
+ },
+ "size": "medium",
+ "headsPerWeek": 64,
+ "score": 93,
+ "grade": "B+",
+ "band": "fast",
+ "parts": {
+  "speed": 100,
+  "reliability": 79,
+  "efficiency": 85
+ },
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 65,
+   "mainRed": 98
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 37,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 198.8,
+  "prBilledMinutesPerDay": 311.4,
+  "jobMinutesPerMergedPr": 77.3,
+  "expectedMinutesPerMergedPr": 225.3,
+  "expectedWait": 14.1,
+  "workflowsOnPrs": 9
+ },
+ "wait": {
+  "heads": 62,
+  "timed": 49,
+  "p50": 2.15,
+  "p75": 2.683333333333333,
+  "p90": 3.316666666666667,
+  "redRate": 0.3387096774193548,
+  "rerunRate": 0.04838709677419355,
+  "passedOnRerunRate": 0.04838709677419355,
+  "cancelledRate": 0.06451612903225806,
+  "botHeads": 4,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "All checks pass",
+    30
+   ],
+   [
+    "Elixir CI",
+    19
+   ]
+  ],
+  "redBy": [
+   [
+    "All checks pass",
+    23
+   ],
+   [
+    "Elixir CI",
+    15
+   ],
+   [
+    "Validate migrations",
+    5
+   ]
+  ],
+  "leftOut": [
+   "Add preview environment URL to PR",
+   "Tracker: publish NPM release"
+  ],
+  "heavyWorkflows": [
+   "Elixir CI"
+  ],
+  "allPushesP50": 2.15
+ },
+ "main": {
+  "heads": 18,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.05555555555555555,
+  "redBy": [
+   [
+    "Build Private Images GHCR",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.28107074569789675,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 2.4833333333333334,
+  "jobMinutes": 2.45,
+  "billedMinutes": 3,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.0029498525073746312,
+  "critical": {
+   "name": "enforce-all-checks",
+   "minutes": 2.45,
+   "shareOfSpan": 0.9900990099009901
+  },
+  "longest": {
+   "name": "enforce-all-checks",
+   "minutes": 2.45
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 15,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 29,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 87,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

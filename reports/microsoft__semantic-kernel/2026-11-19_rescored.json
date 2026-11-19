@@ -1,0 +1,233 @@
+{
+ "repo": "microsoft/semantic-kernel",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 3.7,
+  "stars": 28786,
+  "forks": 4865,
+  "languages": [
+   [
+    "C#",
+    62
+   ],
+   [
+    "Python",
+    36
+   ],
+   [
+    "Jupyter Notebook",
+    2
+   ],
+   [
+    "TypeScript",
+    0
+   ]
+  ],
+  "linesOfCode": 717229,
+  "linesFrom": "tree",
+  "files": 4850,
+  "sourceFiles": 3684,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 618436,
+   "tests": 89119,
+   "integration": 9673,
+   "support": 0
+  },
+  "testShare": 0.13774246080286734,
+  "packages": {
+   "npm": 3,
+   "cargo": 0,
+   "go": 0,
+   "python": 4
+  },
+  "commitsPerWeek": 22.8,
+  "commitsPerWeekYear": 7.2,
+  "pace": 3.2,
+  "activeAuthors28d": 50,
+  "prsOpenedPerWeek": 35,
+  "prsMergedPerWeek": 2,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.8,
+   "p90": 23.4,
+   "n": 2
+  },
+  "prRunsPerDay": 85.2,
+  "runsPerMergedPr": 298
+ },
+ "window": {
+  "days": 6.7,
+  "runs": 473,
+  "runsInPeriod": 473,
+  "truncated": false,
+  "mainDays": 0.9
+ },
+ "size": "medium",
+ "headsPerWeek": 76,
+ "score": 71,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 68,
+  "reliability": 100,
+  "efficiency": 51
+ },
+ "detail": {
+  "speed": {
+   "wait": 62,
+   "forSize": 75,
+   "tail": 73
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 28,
+   "runsPerPr": 0,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 191.5,
+  "prBilledMinutesPerDay": 223.5,
+  "jobMinutesPerMergedPr": 670.3,
+  "expectedMinutesPerMergedPr": 297,
+  "expectedWait": 17.1,
+  "workflowsOnPrs": 9
+ },
+ "wait": {
+  "heads": 72,
+  "timed": 15,
+  "p50": 12.916666666666666,
+  "p75": 14.866666666666667,
+  "p90": 15.633333333333333,
+  "redRate": 0.09722222222222222,
+  "rerunRate": 0.027777777777777776,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.013888888888888888,
+  "botHeads": 3,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Merge Gatekeeper",
+    9
+   ],
+   [
+    "dotnet-build-and-test",
+    4
+   ],
+   [
+    "Spell Check",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Merge Gatekeeper",
+    7
+   ],
+   [
+    "dotnet-build-and-test",
+    5
+   ],
+   [
+    "Python Integration Tests",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Label pull request",
+   "Label title prefix"
+  ],
+  "heavyWorkflows": [
+   "dotnet-build-and-test",
+   "Merge Gatekeeper",
+   "Python Unit Tests"
+  ],
+  "allPushesP50": 12.916666666666666
+ },
+ "main": {
+  "heads": 2,
+  "p50": null,
+  "p90": null,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.07894736842105263,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 14.433333333333334,
+  "jobMinutes": 14.383333333333333,
+  "billedMinutes": 15,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.0011235955056179776,
+  "critical": {
+   "name": "merge-gatekeeper",
+   "minutes": 14.383333333333333,
+   "shareOfSpan": 0.9957983193277311
+  },
+  "longest": {
+   "name": "merge-gatekeeper",
+   "minutes": 14.383333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 23,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "pytest-xdist",
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"merge-gatekeeper\" runs 14 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 26,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 72,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

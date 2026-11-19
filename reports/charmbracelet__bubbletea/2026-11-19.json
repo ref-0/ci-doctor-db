@@ -1,0 +1,222 @@
+{
+  "repo": "charmbracelet/bubbletea",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 6.9,
+    "stars": 45772,
+    "forks": 1937,
+    "languages": [
+      [
+        "Go",
+        100
+      ]
+    ],
+    "linesOfCode": 13370,
+    "files": 238,
+    "sourceFiles": 121,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 10790,
+      "tests": 2579,
+      "integration": 0,
+      "support": 0
+    },
+    "testShare": 0.1929272555467739,
+    "packages": {
+      "npm": 0,
+      "cargo": 0,
+      "go": 2,
+      "python": 0
+    },
+    "commitsPerWeek": 6,
+    "commitsPerWeekYear": 2.7,
+    "pace": 2.2,
+    "activeAuthors28d": 17,
+    "prsOpenedPerWeek": 4,
+    "prsMergedPerWeek": 20,
+    "botShareOfMergedPrs": 0,
+    "openToMergeHours": {
+      "p50": 927.4,
+      "p90": 2309.1,
+      "n": 20
+    },
+    "prRunsPerDay": 13,
+    "runsPerMergedPr": 4.6,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 6,
+    "runs": 78,
+    "runsInPeriod": 78,
+    "truncated": false,
+    "mainDays": 5.8
+  },
+  "size": "small",
+  "headsPerWeek": 30,
+  "score": 86,
+  "grade": "B",
+  "band": "fast",
+  "parts": {
+    "speed": 94,
+    "reliability": 88,
+    "efficiency": 66
+  },
+  "detail": {
+    "speed": {
+      "wait": 100,
+      "forSize": 79,
+      "tail": 100
+    },
+    "reliability": {
+      "flakes": 74,
+      "mainRed": 100,
+      "redHeads": 100
+    },
+    "efficiency": {
+      "minutesPerPr": 71,
+      "runsPerPr": 100,
+      "setup": 0,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 42.9,
+    "prBilledMinutesPerDay": 78.2,
+    "jobMinutesPerMergedPr": 15,
+    "expectedMinutesPerMergedPr": 16.3,
+    "expectedWait": 2,
+    "workflowsOnPrs": 3
+  },
+  "wait": {
+    "heads": 26,
+    "timed": 23,
+    "p50": 1.4,
+    "p75": 1.4833333333333334,
+    "p90": 1.5666666666666667,
+    "redRate": 0.07692307692307693,
+    "rerunRate": 0.11538461538461539,
+    "passedOnRerunRate": 0.038461538461538464,
+    "cancelledRate": 0,
+    "botHeads": 0,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "build",
+        17
+      ],
+      [
+        "lint",
+        6
+      ]
+    ],
+    "redBy": [
+      [
+        "lint",
+        1
+      ],
+      [
+        "build",
+        1
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "build",
+      "lint"
+    ],
+    "allPushesP50": 1.4
+  },
+  "main": {
+    "heads": 21,
+    "p50": 1.65,
+    "p90": 2.8333333333333335,
+    "redRate": 0,
+    "redBy": []
+  },
+  "botRunShare": 0,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 12,
+    "spanMin": 1.1333333333333333,
+    "jobMinutes": 7.033333333333332,
+    "billedMinutes": 13,
+    "subMinuteJobs": 10,
+    "queueP50Sec": 2,
+    "queueP90Sec": 3,
+    "setupShare": 0.7113095238095238,
+    "critical": {
+      "name": "build-examples / build (windows-latest)",
+      "minutes": 1.2166666666666666,
+      "shareOfSpan": 0.9701492537313432
+    },
+    "longest": {
+      "name": "build-examples / build (windows-latest)",
+      "minutes": 1.0833333333333333
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        72
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 2,
+    "over10s": 0,
+    "top": [
+      {
+        "file": "charm.land/bubbletea/v2",
+        "sec": 2.501,
+        "job": "build-go-mod / build (windows-latest)"
+      },
+      {
+        "file": "examples/simple",
+        "sec": 0.019,
+        "job": "build-examples / build (windows-latest)"
+      }
+    ]
+  },
+  "practices": {
+    "workflows": 7,
+    "cancelInProgress": false,
+    "pathFilters": false,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": false,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": false,
+    "shardsConfigured": false,
+    "timeouts": false,
+    "fastLint": false,
+    "eslint": false,
+    "testResults": false,
+    "depBotsBatched": true,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Set timeout-minutes on jobs",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 13
+}

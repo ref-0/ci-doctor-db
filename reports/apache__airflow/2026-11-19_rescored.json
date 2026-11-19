@@ -1,0 +1,229 @@
+{
+ "repo": "apache/airflow",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 11.6,
+  "stars": 47534,
+  "forks": 18401,
+  "languages": [
+   [
+    "Python",
+    87
+   ],
+   [
+    "TypeScript",
+    9
+   ],
+   [
+    "Go",
+    1
+   ],
+   [
+    "Kotlin",
+    1
+   ]
+  ],
+  "linesOfCode": 3033002,
+  "files": 15619,
+  "sourceFiles": 10465,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1418785,
+   "tests": 1627611,
+   "integration": 23667,
+   "support": 3336
+  },
+  "testShare": 0.5383661909139459,
+  "packages": {
+   "npm": 10,
+   "cargo": 0,
+   "go": 2,
+   "python": 144
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 171.8,
+  "pace": 1.4,
+  "activeAuthors28d": "≥144",
+  "prsOpenedPerWeek": 273,
+  "prsMergedPerWeek": 222,
+  "botShareOfMergedPrs": 6,
+  "openToMergeHours": {
+   "p50": 128.5,
+   "p90": 576,
+   "n": 94
+  },
+  "prRunsPerDay": 412,
+  "runsPerMergedPr": 13,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 2.4,
+  "runs": 999,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 2
+ },
+ "size": "large",
+ "headsPerWeek": 1189,
+ "score": 29,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 46
+ },
+ "detail": {
+  "speed": {
+   "wait": 1,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 22,
+   "runsPerPr": 62,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 38331.3,
+  "prBilledMinutesPerDay": 41172.7,
+  "jobMinutesPerMergedPr": 1208.6,
+  "expectedMinutesPerMergedPr": 477.9,
+  "expectedWait": 23.9,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 412,
+  "timed": 106,
+  "p50": 114.55,
+  "p75": 169.28333333333333,
+  "p90": 271.26666666666665,
+  "redRate": 0.18446601941747573,
+  "rerunRate": 0.36893203883495146,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.09223300970873786,
+  "botHeads": 4,
+  "lightHeads": 9,
+  "lastToFinish": [
+   [
+    "Tests (AMD)",
+    101
+   ],
+   [
+    "CodeQL",
+    5
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests (AMD)",
+    76
+   ],
+   [
+    "CodeQL",
+    10
+   ]
+  ],
+  "leftOut": [
+   "Java SDK release verification"
+  ],
+  "heavyWorkflows": [
+   "Tests (AMD)"
+  ],
+  "allPushesP50": 113.55
+ },
+ "main": {
+  "heads": 59,
+  "p50": 17.466666666666665,
+  "p90": 72.46666666666667,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.02773497688751926,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 21,
+  "spanMin": 77.06666666666666,
+  "jobMinutes": 115.93333333333334,
+  "billedMinutes": 128,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 2,
+  "queueP90Sec": 720,
+  "setupShare": 0.06886012225818051,
+  "critical": {
+   "name": "CI passed",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.0008650519031141869
+  },
+  "longest": {
+   "name": "Dependency upgrade summary / Deps 3.11:constraints-source-providers",
+   "minutes": 64.66666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    202
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "pytest-xdist",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "\"Dependency upgrade summary / Deps 3.11:constraints-source-providers\" runs 65 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.4× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 720 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 53,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 38,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

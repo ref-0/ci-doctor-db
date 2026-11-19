@@ -1,0 +1,240 @@
+{
+ "repo": "AtalayaLabs/OxiCloud",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 1.7,
+  "stars": 3723,
+  "forks": 192,
+  "languages": [
+   [
+    "Rust",
+    55
+   ],
+   [
+    "TypeScript",
+    15
+   ],
+   [
+    "Hurl",
+    11
+   ],
+   [
+    "Svelte",
+    9
+   ]
+  ],
+  "linesOfCode": 548756,
+  "files": 2340,
+  "sourceFiles": 1051,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 569256,
+   "tests": 36849,
+   "integration": 12293,
+   "support": 205
+  },
+  "testShare": 0.07977119182277388,
+  "packages": {
+   "npm": 2,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 123.5,
+  "commitsPerWeekYear": 59.1,
+  "pace": 2,
+  "activeAuthors28d": 15,
+  "prsOpenedPerWeek": 42,
+  "prsMergedPerWeek": 25,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 20.9,
+   "p90": 59.5,
+   "n": 25
+  },
+  "prRunsPerDay": 42,
+  "runsPerMergedPr": 11.8,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 7,
+  "runs": 294,
+  "runsInPeriod": 294,
+  "truncated": false,
+  "mainDays": 6.5
+ },
+ "size": "medium",
+ "headsPerWeek": 106,
+ "score": 30,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 8,
+  "reliability": 76,
+  "efficiency": 48
+ },
+ "detail": {
+  "speed": {
+   "wait": 12,
+   "forSize": 0,
+   "tail": 20
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 43
+  },
+  "efficiency": {
+   "minutesPerPr": 25,
+   "runsPerPr": 65,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2308.7,
+  "prBilledMinutesPerDay": 2440.6,
+  "jobMinutesPerMergedPr": 646.4,
+  "expectedMinutesPerMergedPr": 271.8,
+  "expectedWait": 16.1,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 106,
+  "timed": 104,
+  "p50": 54.56666666666667,
+  "p75": 59.7,
+  "p90": 69.16666666666667,
+  "redRate": 0.4528301886792453,
+  "rerunRate": 0.009433962264150943,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    100
+   ],
+   [
+    "Load Smoke",
+    2
+   ],
+   [
+    "Docker Build and Test",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    46
+   ],
+   [
+    "Load Smoke",
+    5
+   ],
+   [
+    "Docker Build and Test",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI",
+   "Docker Build and Test"
+  ],
+  "allPushesP50": 54.56666666666667
+ },
+ "main": {
+  "heads": 24,
+  "p50": 34.583333333333336,
+  "p90": 40.78333333333333,
+  "redRate": 0.25,
+  "redBy": [
+   [
+    "CI",
+    6
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 76.06666666666666,
+  "jobMinutes": 77.28333333333335,
+  "billedMinutes": 83,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 685,
+  "queueP90Sec": 1626,
+  "setupShare": 0.10469687564659631,
+  "critical": {
+   "name": "Frontend end-to-end tests (via Playwright)",
+   "minutes": 18.966666666666665,
+   "shareOfSpan": 0.2440691596300764
+  },
+  "longest": {
+   "name": "Frontend end-to-end tests (via Playwright)",
+   "minutes": 19.716666666666665
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    64
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 8,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"Frontend end-to-end tests (via Playwright)\" runs 20 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 1626 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "apiCalls": 27,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 35,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

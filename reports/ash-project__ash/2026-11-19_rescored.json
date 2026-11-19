@@ -1,0 +1,220 @@
+{
+ "repo": "ash-project/ash",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 7.1,
+  "stars": 2570,
+  "forks": 471,
+  "languages": [
+   [
+    "Elixir",
+    100
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 288680,
+  "linesFrom": "tree",
+  "files": 1280,
+  "sourceFiles": 1127,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 164397,
+   "tests": 124284,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.4305237457139707,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 24.8,
+  "commitsPerWeekYear": 17.1,
+  "pace": 1.5,
+  "activeAuthors28d": 24,
+  "prsOpenedPerWeek": 10,
+  "prsMergedPerWeek": 10,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 8.9,
+   "p90": 77.2,
+   "n": 10
+  },
+  "prRunsPerDay": 3.2,
+  "runsPerMergedPr": 2.2
+ },
+ "window": {
+  "days": 6,
+  "runs": 19,
+  "runsInPeriod": 19,
+  "truncated": false,
+  "mainDays": 6.2
+ },
+ "size": "medium",
+ "headsPerWeek": 22,
+ "score": 82,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 84,
+  "reliability": 58,
+  "efficiency": 100
+ },
+ "detail": {
+  "speed": {
+   "wait": 93,
+   "forSize": 100,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 88.1,
+  "prBilledMinutesPerDay": 125.6,
+  "jobMinutesPerMergedPr": 61.7,
+  "expectedMinutesPerMergedPr": 219.9,
+  "expectedWait": 13.9,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 19,
+  "timed": 16,
+  "p50": 4.4,
+  "p75": 6.75,
+  "p90": 484.45,
+  "redRate": 0.42105263157894735,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Ash CI",
+    16
+   ]
+  ],
+  "redBy": [
+   [
+    "Ash CI",
+    8
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Ash CI"
+  ],
+  "allPushesP50": 4.4
+ },
+ "main": {
+  "heads": 22,
+  "p50": 7.783333333333333,
+  "p90": 10.85,
+  "redRate": 0.4090909090909091,
+  "redBy": [
+   [
+    "Ash CI",
+    8
+   ],
+   [
+    "Test Subprojects",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 30,
+  "spanMin": 4.383333333333334,
+  "jobMinutes": 31.28333333333333,
+  "billedMinutes": 46,
+  "subMinuteJobs": 17,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.09525756336876533,
+  "critical": {
+   "name": "ash-ci (SimpleSat) / mix test",
+   "minutes": 3.316666666666667,
+   "shareOfSpan": 0.7604562737642585
+  },
+  "longest": {
+   "name": "ash-ci (SimpleSat) / mix test",
+   "minutes": 3.316666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    180
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "p90 is 110.1× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 4,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 68,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,230 @@
+{
+ "repo": "functionalscript/functionalscript",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 5.1,
+  "stars": 76,
+  "forks": 6,
+  "languages": [
+   [
+    "JavaScript",
+    89
+   ],
+   [
+    "Rust",
+    6
+   ],
+   [
+    "TypeScript",
+    5
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 615947,
+  "linesFrom": "tree",
+  "files": 3570,
+  "sourceFiles": 2632,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 573891,
+   "tests": 31227,
+   "integration": 7056,
+   "support": 3774
+  },
+  "testShare": 0.06827841737083958,
+  "packages": {
+   "npm": 1,
+   "cargo": 5,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 304.6,
+  "pace": 2.8,
+  "activeAuthors28d": "≥4",
+  "prsOpenedPerWeek": 156,
+  "prsMergedPerWeek": 162,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 2.3,
+   "p90": 13,
+   "n": 100
+  },
+  "prRunsPerDay": 185.9,
+  "runsPerMergedPr": 8
+ },
+ "window": {
+  "days": 6.5,
+  "runs": 999,
+  "runsInPeriod": 1190,
+  "truncated": true,
+  "mainDays": 7.1
+ },
+ "size": "large",
+ "headsPerWeek": 554,
+ "score": 63,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 50,
+  "reliability": 100,
+  "efficiency": 65
+ },
+ "detail": {
+  "speed": {
+   "wait": 49,
+   "forSize": 51,
+   "tail": 52
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 59,
+   "runsPerPr": 81,
+   "setup": 100,
+   "queue": 10,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 7673.1,
+  "prBilledMinutesPerDay": 8162.3,
+  "jobMinutesPerMergedPr": 331.6,
+  "expectedMinutesPerMergedPr": 282.4,
+  "expectedWait": 16.6,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 511,
+  "timed": 331,
+  "p50": 18.116666666666667,
+  "p75": 22.316666666666666,
+  "p90": 28.15,
+  "redRate": 0.09197651663405088,
+  "rerunRate": 0.011741682974559686,
+  "passedOnRerunRate": 0.007827788649706457,
+  "cancelledRate": 0.3013698630136986,
+  "botHeads": 9,
+  "lightHeads": 11,
+  "lastToFinish": [
+   [
+    "CI",
+    331
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    41
+   ],
+   [
+    "Website",
+    6
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 17.983333333333334
+ },
+ "main": {
+  "heads": 115,
+  "p50": null,
+  "p90": null,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.1980405878236529,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 17.016666666666666,
+  "jobMinutes": 31.93333333333333,
+  "billedMinutes": 38,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 95,
+  "queueP90Sec": 215,
+  "setupShare": 0.03647917156978112,
+  "critical": {
+   "name": "package",
+   "minutes": 0.25,
+   "shareOfSpan": 0.014691478942213516
+  },
+  "longest": {
+   "name": "node",
+   "minutes": 14.866666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "bun",
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"node\" runs 15 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 215 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "apiCalls": 39,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 66,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

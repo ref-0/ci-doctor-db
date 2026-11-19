@@ -1,0 +1,231 @@
+{
+  "repo": "truffle-ai/dexto",
+  "date": "2026-11-19",
+  "unscored": "Only 2 PR pushes in the window ran the main workflows; 5 are needed.",
+  "profile": {
+    "ageYears": 1.7,
+    "stars": 661,
+    "forks": 88,
+    "languages": [
+      [
+        "TypeScript",
+        98
+      ],
+      [
+        "JavaScript",
+        1
+      ],
+      [
+        "Shell",
+        1
+      ],
+      [
+        "PowerShell",
+        0
+      ]
+    ],
+    "linesOfCode": 456466,
+    "files": 2281,
+    "sourceFiles": 1668,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 322935,
+      "tests": 130325,
+      "integration": 25862,
+      "support": 831
+    },
+    "testShare": 0.3271532674760321,
+    "packages": {
+      "npm": 25,
+      "cargo": 0,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 29.8,
+    "commitsPerWeekYear": 8.6,
+    "pace": 3.4,
+    "activeAuthors28d": 2,
+    "prsOpenedPerWeek": 43,
+    "prsMergedPerWeek": 31,
+    "botShareOfMergedPrs": 90.3,
+    "openToMergeHours": {
+      "p50": 0.4,
+      "p90": 6.4,
+      "n": 3
+    },
+    "prRunsPerDay": 78.7,
+    "runsPerMergedPr": 17.8,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 6.5,
+    "runs": 510,
+    "runsInPeriod": 510,
+    "truncated": false,
+    "mainDays": 6.4
+  },
+  "size": "medium",
+  "headsPerWeek": 123,
+  "score": null,
+  "parts": {},
+  "detail": {
+    "speed": {
+      "wait": 60,
+      "forSize": 88,
+      "tail": 55
+    },
+    "reliability": {
+      "flakes": 77,
+      "mainRed": 100,
+      "redHeads": 77
+    },
+    "efficiency": {
+      "minutesPerPr": 71,
+      "runsPerPr": 49,
+      "setup": 100,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 534.6,
+    "prBilledMinutesPerDay": 579.3,
+    "jobMinutesPerMergedPr": 120.7,
+    "expectedMinutesPerMergedPr": 131.2,
+    "expectedWait": 10.9,
+    "workflowsOnPrs": 8
+  },
+  "wait": {
+    "heads": 114,
+    "timed": 2,
+    "p50": 6.616666666666666,
+    "p75": 11.4,
+    "p90": 11.4,
+    "redRate": 0.19298245614035087,
+    "rerunRate": 0.043859649122807015,
+    "passedOnRerunRate": 0.03508771929824561,
+    "cancelledRate": 0.15789473684210525,
+    "botHeads": 71,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "Standalone Binary Smoke",
+        2
+      ]
+    ],
+    "redBy": [
+      [
+        "build_and_test",
+        18
+      ],
+      [
+        "Require Changeset",
+        9
+      ],
+      [
+        "Code Quality Check",
+        6
+      ]
+    ],
+    "leftOut": [
+      "Publish dexto beta (manual)"
+    ],
+    "heavyWorkflows": [
+      "Standalone Binary Smoke",
+      "Code Quality Check",
+      "build_and_test"
+    ],
+    "allPushesP50": 6.616666666666666
+  },
+  "main": {
+    "heads": 25,
+    "p50": 3.7,
+    "p90": 4.25,
+    "redRate": 0,
+    "redBy": []
+  },
+  "botRunShare": 0.8589065255731922,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 5,
+    "spanMin": 12.233333333333333,
+    "jobMinutes": 26.71666666666667,
+    "billedMinutes": 28,
+    "subMinuteJobs": 0,
+    "queueP50Sec": 4,
+    "queueP90Sec": 10,
+    "setupShare": 0.16603487490523122,
+    "critical": {
+      "name": "smoke (macos-15-intel, darwin-x64)",
+      "minutes": 12.116666666666667,
+      "shareOfSpan": 0.9871465295629821
+    },
+    "longest": {
+      "name": "smoke (macos-15-intel, darwin-x64)",
+      "minutes": 12.116666666666667
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        30
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 13,
+    "cancelInProgress": true,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": false,
+    "taskRunner": "turbo.json",
+    "packageManager": "pnpm",
+    "fastLint": false,
+    "eslint": true,
+    "testRunner": "vitest",
+    "testResults": false,
+    "depBotsBatched": false,
+    "agentsMd": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "agentRules": true,
+    "preCommit": true
+  },
+  "fixes": [
+    {
+      "text": "Share a remote cache for turbo.json: it has none in CI",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+    },
+    {
+      "text": "\"smoke (macos-15-intel, darwin-x64)\" runs 12 min in one job: shard it",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+    },
+    {
+      "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "Set timeout-minutes on jobs",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+    },
+    {
+      "text": "Lint with Oxlint or Biome",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+    }
+  ],
+  "apiCalls": 33
+}
