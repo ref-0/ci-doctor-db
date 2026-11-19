@@ -1,6 +1,6 @@
 # CI score site: the design (18 Nov 2026)
 
-Agreed with the user on 18 Nov:
+Agreed on 18 Nov:
 - **Build it with ref0's component library** (`@ref0/ui`), following the `brand` and `ui-design` skills.
 - **The header** has the "ref0 ci-doctor" logo lockup on the left and the GitHub logo, linking to ci-doctor, on the right.
 - **The middle of the landing page** is one input: paste your GitHub repo.
@@ -8,7 +8,7 @@ Agreed with the user on 18 Nov:
 - **Every report has a Copy page split button** in the shadcn style.
 - **"Where you stand" and "Replay a PR run"** are the centrepieces.
 - **Every measured repo becomes data.** Reports compare a repo with similar repos, and the site states what the dataset shows.
-- **The X card isn't decided.** The text mock-up didn't excite the user. See [The X card](#the-x-card-open).
+- **The X card isn't decided.** The text mock-up wasn't exciting enough. See [The X card](#the-x-card-open).
 - **Deploy it on Cloudflare,** very fast and cheap to run. See [Architecture](#architecture-on-cloudflare).
 - **The home page shows recently checked repos:** what people have run.
 - **React,** because `@ref0/ui` is React. Build it with ref0's UI skills. See [Building](#building).
@@ -445,8 +445,8 @@ The scarce resource is GitHub API quota, not Cloudflare compute. Design for both
 - **Use React, with `@ref0/ui`'s components, blocks and brand kit.** `@ref0/ui` is private and unpublished, so the site belongs in the ref0 monorepo as a new app, beside `apps/brand` and `apps/web`. It then gets the library's source, ref0's skills, CI and Workers Builds.
   - Use TanStack Start on Workers, like `apps/web`.
   - Its infrastructure (D1, R2, the Durable Object, the cron) goes in the `infra` Alchemy stack.
-  - When the app is added, the user updates the Workers Builds trigger paths, as AGENTS.md says.
-  - **Decided 18 Nov:** the user agreed the site goes in the ref0 monorepo.
+  - When the app is added, a maintainer updates the Workers Builds trigger paths, as ref0's AGENTS.md says.
+  - **Decided 18 Nov:** the site goes in the ref0 monorepo.
 - **ref0's UI skills to use:**
   - `brand`: the lockup, voice and the X card;
   - `ui-design`, `ui-principles` and `ui-component`: screens and components;

@@ -70,7 +70,7 @@ On Sundays the weekly job reads the week's digests and `proposals.md`, picks at 
 - **Guide pages:** a technique backed by movers or a cohort effect, cited as a dated finding with n.
 - **Skills:** where adopters stall or what they skip, once adoption data exists.
 
-Releasing `next` stays your call.
+Releasing `next` stays a maintainer's call.
 
 ## Field reports: what people's agents learn, sent back (19 Nov)
 
@@ -110,13 +110,13 @@ Never code, file contents, paths outside the CI config, people's names or secret
 - **F3, give to get:** the site's "what worked for repos like yours" and the skill's Phase 3 fetch.
 - **F4, the loop:** `field_reports` in `loop.db`, verification of public repos, and the digest's section.
 
-## Jobs on this machine
+## Jobs on the maintainers' machine
 
 | When | Job | Who runs it | What it does |
 |---|---|---|---|
-| Daily 02:00 | Measure | A script, started by a scheduled T3 task on a cheap model that only runs it and reports failures | Find, measure, store, then pull from the site once it's live |
-| Daily 05:00 | Learn | `loop/compare.ts` and `loop/digest.ts` write the numbers; then Codex on `codex_mux` adds the narrative and proposals in the digest's marked place | Compare, digest, update `loop/proposals.md` |
-| Sunday 10:00 | Optimize | This thread, as EM | Pick ≤3 proposals, brief Opus engineers, PRs on `next` |
+| Daily 02:00 | Measure | A script, started by a scheduled agent task on a cheap model that only runs it and reports failures | Find, measure, store, then pull from the site once it's live |
+| Daily 05:00 | Learn | `loop/compare.ts` and `loop/digest.ts` write the numbers; then a model adds the narrative and proposals in the digest's marked place | Compare, digest, update `loop/proposals.md` |
+| Sunday 10:00 | Optimize | A maintainer's agent | Pick ≤3 proposals, brief coding agents, PRs on `next` |
 
 The times avoid the existing schedule: the agent spend audit at 07:00, issue triage at 07:30, slow tests at 06:00 Mon/Wed/Fri and the ci-doctor sync at 10:00 Saturday. Each job leaves nothing running and writes only under `~/ref0-work/ci-score/`.
 

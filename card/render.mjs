@@ -9,8 +9,7 @@ import satori from 'satori';
 import { scoreColour } from '../colour.ts';
 import { grade } from '../score.ts';
 
-const FONTS = '/home/rahim/.t3/worktrees/ref0/t3-4cb0450c/node_modules/.pnpm';
-const font = (pkg, file) => readFileSync(`${FONTS}/@fontsource+${pkg}@5.3.0/node_modules/@fontsource/${pkg}/files/${file}`);
+const font = (pkg, file) => readFileSync(new URL(`node_modules/@fontsource/${pkg}/files/${file}`, import.meta.url));
 const fonts = [
   { name: 'Host Grotesk', data: font('host-grotesk', 'host-grotesk-latin-400-normal.woff'), weight: 400 },
   { name: 'Host Grotesk', data: font('host-grotesk', 'host-grotesk-latin-500-normal.woff'), weight: 500 },
