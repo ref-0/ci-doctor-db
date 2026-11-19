@@ -49,6 +49,10 @@ CREATE TABLE IF NOT EXISTS reports (
   runs_per_merged_pr REAL,
   setup_share    REAL,
   queue_p90_sec  REAL,
+  bot_run_share  REAL,                       -- share of PR runs from bots
+  logs_read      INTEGER,                    -- job logs the probe read
+  files_timed    INTEGER,                    -- test files with timings parsed from those logs
+  api_calls      INTEGER,                    -- GitHub API calls the check took
 
   -- practices, 0/1 unless named
   workflows         INTEGER,
