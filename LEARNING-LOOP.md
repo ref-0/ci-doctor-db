@@ -115,7 +115,7 @@ Never code, file contents, paths outside the CI config, people's names or secret
 | When | Job | Who runs it | What it does |
 |---|---|---|---|
 | Daily 02:00 | Measure | A script, started by a scheduled T3 task on a cheap model that only runs it and reports failures | Find, measure, store, then pull from the site once it's live |
-| Daily 05:00 | Learn | The compare script, then Codex on `codex_mux` writing the digest | Compare, digest, update the proposals |
+| Daily 05:00 | Learn | `loop/compare.ts` and `loop/digest.ts` write the numbers; then Codex on `codex_mux` adds the narrative and proposals in the digest's marked place | Compare, digest, update `loop/proposals.md` |
 | Sunday 10:00 | Optimize | This thread, as EM | Pick ≤3 proposals, brief Opus engineers, PRs on `next` |
 
 The times avoid the existing schedule: the agent spend audit at 07:00, issue triage at 07:30, slow tests at 06:00 Mon/Wed/Fri and the ci-doctor sync at 10:00 Saturday. Each job leaves nothing running and writes only under `~/ref0-work/ci-score/`.
