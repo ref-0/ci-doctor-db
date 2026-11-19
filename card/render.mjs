@@ -211,16 +211,6 @@ const homeCard = () =>
       pasteBox(),
       box({ marginTop: 48, flexDirection: 'column' }, beforeAfter([31, 24.1], [92, 3.2]))));
 
-// The landing page before the site scores repos: the headline and the command, no paste box and no example numbers (19 Nov).
-const startCard = () =>
-  frame('ci-doctor.ref0.dev',
-    box({ flexGrow: 1, flexDirection: 'column', justifyContent: 'center', paddingTop: 12 },
-      text({ fontSize: 92, fontWeight: 700, letterSpacing: -2, lineHeight: 1 }, 'How fast is your CI?'),
-      text({ fontSize: 34, color: C.muted, marginTop: 26 }, 'Score it from 0 to 100, then hand the fix to your agent.'),
-      box({ marginTop: 56, height: 96, borderRadius: 18, border: `2px solid ${C.line}`, background: '#161717', alignItems: 'center', padding: '0 32px', gap: 22 },
-        text({ fontFamily: 'Plex Mono', fontSize: 38, color: C.faint }, '$'),
-        text({ fontFamily: 'Plex Mono', fontSize: 38, color: C.ink }, 'npx @ref0/ci-doctor'))));
-
 // A repo's history: its score and PR wait before a change and after, each from its own window of PR runs.
 // The footer says how many days it's been since the split, and the minutes the change saves each PR's wait.
 const [NAME_GAP, NUDGE] = [32, 9]; // measured: 71 px from the header to the name and 70 from the cards to the rule
@@ -264,7 +254,6 @@ const compareCard = (repos) => {
 const [kind = 'repo', ...args] = process.argv.slice(2);
 const [name, card] =
   kind === 'home' ? ['home', homeCard()]
-  : kind === 'start' ? ['start', startCard()]
   // An example until a real adopter's history exists: the brand's made-up cast, never a real repo with invented numbers.
   : kind === 'history' ? ['history', historyCard({ repo: 'pip/garden', language: 'TypeScript', before: [48, 18.6], after: [81, 6.2], days: 11 })]
   : kind === 'compare' ? [`compare-${args.map((r) => r.split('/')[1]).join('-')}`, compareCard(args.length >= 2 && args.length <= 3 ? args : fail('compare takes 2 or 3 repos'))]
