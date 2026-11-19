@@ -1,6 +1,6 @@
 # CI score: the X launch (noted 18 Nov 2026)
 
-The user wants an X launch for the site, inspired by React Doctor's launch post. Bring this up again when the site is close to ready.
+The site gets an X launch, inspired by React Doctor's launch post. Bring this up again when the site is close to ready.
 
 ## The reference
 
