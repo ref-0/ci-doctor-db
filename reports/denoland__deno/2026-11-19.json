@@ -1,0 +1,219 @@
+{
+  "repo": "denoland/deno",
+  "date": "2026-11-19",
+  "unscored": "Only 3 PR pushes in the window ran the main workflows; 5 are needed.",
+  "profile": {
+    "ageYears": 8.5,
+    "stars": 109038,
+    "forks": 7498,
+    "languages": [
+      [
+        "Rust",
+        62
+      ],
+      [
+        "TypeScript",
+        26
+      ],
+      [
+        "JavaScript",
+        10
+      ],
+      [
+        "C",
+        1
+      ]
+    ],
+    "linesOfCode": 1112416,
+    "files": 14949,
+    "sourceFiles": 5863,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 1184837,
+      "tests": 174543,
+      "integration": 42700,
+      "support": 19728
+    },
+    "testShare": 0.16666878837761906,
+    "packages": {
+      "npm": 0,
+      "cargo": 72,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 2,
+    "commitsPerWeekYear": 55,
+    "pace": 0,
+    "activeAuthors28d": 4,
+    "prsOpenedPerWeek": 25,
+    "prsMergedPerWeek": 5,
+    "botShareOfMergedPrs": 0,
+    "openToMergeHours": {
+      "p50": 302.1,
+      "p90": 958.3,
+      "n": 5
+    },
+    "prRunsPerDay": 20.1,
+    "runsPerMergedPr": 28.2,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 7,
+    "runs": 140,
+    "runsInPeriod": 140,
+    "truncated": false,
+    "mainDays": 0.1
+  },
+  "size": "large",
+  "headsPerWeek": 69,
+  "score": null,
+  "grade": null,
+  "band": null,
+  "parts": {},
+  "detail": {
+    "speed": {
+      "wait": 16,
+      "forSize": 0,
+      "tail": 22
+    },
+    "reliability": {
+      "flakes": 100,
+      "mainRed": 100,
+      "redHeads": 78
+    },
+    "efficiency": {
+      "minutesPerPr": 0,
+      "runsPerPr": 30,
+      "setup": 100,
+      "queue": 28,
+      "shardIdle": 100
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 3183,
+    "prBilledMinutesPerDay": 3567.8,
+    "jobMinutesPerMergedPr": 4456.2,
+    "expectedMinutesPerMergedPr": 198.5,
+    "expectedWait": 16.5,
+    "workflowsOnPrs": 2
+  },
+  "wait": {
+    "heads": 69,
+    "timed": 3,
+    "p50": 71.1,
+    "p75": 79.01666666666667,
+    "p90": 79.01666666666667,
+    "redRate": 0.18840579710144928,
+    "rerunRate": 0.4927536231884058,
+    "passedOnRerunRate": 0,
+    "cancelledRate": 0.014492753623188406,
+    "botHeads": 0,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "ci",
+        3
+      ]
+    ],
+    "redBy": [
+      [
+        "ci",
+        11
+      ],
+      [
+        "pr",
+        3
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "ci"
+    ],
+    "allPushesP50": 71.1
+  },
+  "main": {
+    "heads": 5,
+    "p50": null,
+    "p90": null,
+    "redRate": 0,
+    "redBy": []
+  },
+  "botRunShare": 0.013793103448275862,
+  "jobs": {
+    "runsSampled": 3,
+    "jobs": 132,
+    "spanMin": 71.08333333333333,
+    "jobMinutes": 703.0833333333333,
+    "billedMinutes": 787,
+    "subMinuteJobs": 53,
+    "queueP50Sec": 3,
+    "queueP90Sec": 117,
+    "setupShare": 0.08967162165417882,
+    "critical": {
+      "name": "ci status",
+      "minutes": 0.05,
+      "shareOfSpan": 0.0007033997655334116
+    },
+    "longest": {
+      "name": "build release linux-x86_64",
+      "minutes": 59.53333333333333
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        396
+      ]
+    ],
+    "shard": {
+      "name": "test integration (#) debug macos-x86_64",
+      "shards": 2,
+      "medianMin": 13.8,
+      "maxMin": 17.233333333333334,
+      "maxOverMedian": 1.248792270531401,
+      "idleTail": 0.09961315280464217
+    }
+  },
+  "tests": {
+    "logsRead": 3,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 11,
+    "cancelInProgress": true,
+    "pathFilters": false,
+    "affected": false,
+    "draftSkip": true,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": true,
+    "timeouts": true,
+    "fastLint": false,
+    "eslint": false,
+    "testRunner": "nextest",
+    "testResults": true,
+    "depBotsBatched": false,
+    "agentsMd": [
+      "CLAUDE.md",
+      ".github/copilot-instructions.md"
+    ],
+    "agentRules": true,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Jobs wait 117 s for a runner at p90",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+    }
+  ],
+  "apiCalls": 7
+}

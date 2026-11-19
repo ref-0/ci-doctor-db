@@ -1,0 +1,237 @@
+{
+ "repo": "rome-os/rome",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.2,
+  "stars": 906,
+  "forks": 69,
+  "languages": [
+   [
+    "TypeScript",
+    78
+   ],
+   [
+    "Swift",
+    9
+   ],
+   [
+    "HTML",
+    8
+   ],
+   [
+    "JavaScript",
+    5
+   ]
+  ],
+  "linesOfCode": 1106480,
+  "files": 5225,
+  "sourceFiles": 3861,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 697080,
+   "tests": 434698,
+   "integration": 17616,
+   "support": 1059
+  },
+  "testShare": 0.3940817815327204,
+  "packages": {
+   "npm": 48,
+   "cargo": 0,
+   "go": 1,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 28.4,
+  "pace": 6.4,
+  "activeAuthors28d": "≥9",
+  "prsOpenedPerWeek": 237,
+  "prsMergedPerWeek": 216,
+  "botShareOfMergedPrs": 2,
+  "openToMergeHours": {
+   "p50": 1.1,
+   "p90": 10.6,
+   "n": 98
+  },
+  "prRunsPerDay": 215.3,
+  "runsPerMergedPr": 7,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 4.6,
+  "runs": 999,
+  "runsInPeriod": 1783,
+  "truncated": true,
+  "mainDays": 4.6
+ },
+ "size": "large",
+ "headsPerWeek": 887,
+ "score": 86,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 83,
+  "reliability": 83,
+  "efficiency": 97
+ },
+ "detail": {
+  "speed": {
+   "wait": 77,
+   "forSize": 100,
+   "tail": 60
+  },
+  "reliability": {
+   "flakes": 77,
+   "mainRed": 92
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 86,
+   "setup": 99,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 4436.3,
+  "prBilledMinutesPerDay": 5023.6,
+  "jobMinutesPerMergedPr": 143.8,
+  "expectedMinutesPerMergedPr": 342.6,
+  "expectedWait": 18.9,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 588,
+  "timed": 295,
+  "p50": 8.75,
+  "p75": 10.633333333333333,
+  "p90": 22.066666666666666,
+  "redRate": 0.18537414965986396,
+  "rerunRate": 0.05612244897959184,
+  "passedOnRerunRate": 0.03571428571428571,
+  "cancelledRate": 0.41156462585034015,
+  "botHeads": 2,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    183
+   ],
+   [
+    "iOS CI",
+    112
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    62
+   ],
+   [
+    "iOS CI",
+    52
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI",
+   "iOS CI"
+  ],
+  "allPushesP50": 8.75
+ },
+ "main": {
+  "heads": 128,
+  "p50": 8.666666666666666,
+  "p90": 14.7,
+  "redRate": 0.078125,
+  "redBy": [
+   [
+    "CI",
+    7
+   ],
+   [
+    "iOS CI",
+    3
+   ]
+  ]
+ },
+ "botRunShare": 0.016191210485736313,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 8,
+  "spanMin": 8.45,
+  "jobMinutes": 21.116666666666664,
+  "billedMinutes": 25,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.20340975896531452,
+  "critical": {
+   "name": "layout-invariants",
+   "minutes": 8.816666666666666,
+   "shareOfSpan": 0.9944237918215613
+  },
+  "longest": {
+   "name": "layout-invariants",
+   "minutes": 8.816666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    48
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "\"layout-invariants\" runs 9 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "apiCalls": 47,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 83,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

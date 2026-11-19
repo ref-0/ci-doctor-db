@@ -1,0 +1,252 @@
+{
+ "repo": "anthropics/claude-code-action",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 1.5,
+  "stars": 10010,
+  "forks": 2284,
+  "languages": [
+   [
+    "TypeScript",
+    93
+   ],
+   [
+    "Python",
+    5
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "JavaScript",
+    1
+   ]
+  ],
+  "linesOfCode": 42425,
+  "linesFrom": "tree",
+  "files": 245,
+  "sourceFiles": 139,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 16390,
+   "tests": 25806,
+   "integration": 176,
+   "support": 53
+  },
+  "testShare": 0.6136674520982337,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 11.3,
+  "commitsPerWeekYear": 9.9,
+  "pace": 1.1,
+  "activeAuthors28d": 7,
+  "prsOpenedPerWeek": 85,
+  "prsMergedPerWeek": 25,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 11.3,
+   "p90": 22.9,
+   "n": 25
+  },
+  "prRunsPerDay": 162.4,
+  "runsPerMergedPr": 45.5
+ },
+ "window": {
+  "days": 6.2,
+  "runs": 1000,
+  "runsInPeriod": 1318,
+  "truncated": true,
+  "mainDays": 6.3
+ },
+ "size": "medium",
+ "headsPerWeek": 143,
+ "score": 74,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 69,
+  "reliability": 100,
+  "efficiency": 61
+ },
+ "detail": {
+  "speed": {
+   "wait": 83,
+   "forSize": 74,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 11,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 66.7,
+  "prBilledMinutesPerDay": 139.9,
+  "jobMinutesPerMergedPr": 18.7,
+  "expectedMinutesPerMergedPr": 116.8,
+  "expectedWait": 8.9,
+  "workflowsOnPrs": 7
+ },
+ "wait": {
+  "heads": 126,
+  "timed": 25,
+  "p50": 6.8,
+  "p75": 17.4,
+  "p90": 3470.133333333333,
+  "redRate": 0.03968253968253968,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI All",
+    16
+   ],
+   [
+    "Test Structured Outputs",
+    3
+   ],
+   [
+    "Test Settings Feature",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI All",
+    5
+   ],
+   [
+    "Test Custom Executables",
+    5
+   ],
+   [
+    "CI",
+    5
+   ]
+  ],
+  "leftOut": [
+   "Security check for workflows that call Claude",
+   "Test Claude Code Action"
+  ],
+  "heavyWorkflows": [
+   "CI All",
+   "Test Structured Outputs",
+   "Test Settings Feature"
+  ],
+  "allPushesP50": 6.8
+ },
+ "main": {
+  "heads": 29,
+  "p50": 5.783333333333333,
+  "p90": 12.6,
+  "redRate": 0.034482758620689655,
+  "redBy": [
+   [
+    "CI All",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 18,
+  "spanMin": 5.966666666666667,
+  "jobMinutes": 9.416666666666666,
+  "billedMinutes": 19,
+  "subMinuteJobs": 16,
+  "queueP50Sec": 8,
+  "queueP90Sec": 307,
+  "setupShare": 0.1688888888888889,
+  "critical": {
+   "name": "test-structured-output / Summary",
+   "minutes": 0.05,
+   "shareOfSpan": 0.0047984644913627635
+  },
+  "longest": {
+   "name": "test-structured-output / Test Arrays and Objects",
+   "minutes": 12.2
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "bun",
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"test-structured-output / Test Arrays and Objects\" runs 12 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 510.3× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 307 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "apiCalls": 30,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 61,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

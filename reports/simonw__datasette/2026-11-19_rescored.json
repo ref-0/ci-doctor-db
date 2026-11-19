@@ -1,0 +1,229 @@
+{
+ "repo": "simonw/datasette",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 9.1,
+  "stars": 11606,
+  "forks": 969,
+  "languages": [
+   [
+    "Python",
+    78
+   ],
+   [
+    "JavaScript",
+    12
+   ],
+   [
+    "HTML",
+    6
+   ],
+   [
+    "CSS",
+    4
+   ]
+  ],
+  "linesOfCode": 139903,
+  "linesFrom": "tree",
+  "files": 391,
+  "sourceFiles": 218,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 75683,
+   "tests": 64221,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.4590377079052604,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 53.8,
+  "commitsPerWeekYear": 17.1,
+  "pace": 3.1,
+  "activeAuthors28d": 14,
+  "prsOpenedPerWeek": 24,
+  "prsMergedPerWeek": 24,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 221.2,
+   "n": 24
+  },
+  "prRunsPerDay": 52.7,
+  "runsPerMergedPr": 15.4
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 366,
+  "runsInPeriod": 366,
+  "truncated": false,
+  "mainDays": 4.9
+ },
+ "size": "medium",
+ "headsPerWeek": 61,
+ "score": 86,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 86,
+  "reliability": 81,
+  "efficiency": 89
+ },
+ "detail": {
+  "speed": {
+   "wait": 83,
+   "forSize": 90,
+   "tail": 86
+  },
+  "reliability": {
+   "flakes": 94,
+   "mainRed": 62
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 55,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 239.9,
+  "prBilledMinutesPerDay": 289.3,
+  "jobMinutesPerMergedPr": 70,
+  "expectedMinutesPerMergedPr": 173.2,
+  "expectedWait": 11.8,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 61,
+  "timed": 43,
+  "p50": 6.883333333333334,
+  "p75": 9,
+  "p90": 9.5,
+  "redRate": 0.18032786885245902,
+  "rerunRate": 0.04918032786885246,
+  "passedOnRerunRate": 0.01639344262295082,
+  "cancelledRate": 0.16393442622950818,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Playwright",
+    43
+   ]
+  ],
+  "redBy": [
+   [
+    "Test",
+    10
+   ],
+   [
+    "Playwright",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Playwright",
+   "Test"
+  ],
+  "allPushesP50": 6.883333333333334
+ },
+ "main": {
+  "heads": 38,
+  "p50": 8.416666666666666,
+  "p90": 12.616666666666667,
+  "redRate": 0.18421052631578946,
+  "redBy": [
+   [
+    "Test",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 3,
+  "spanMin": 6.216666666666667,
+  "jobMinutes": 14.716666666666667,
+  "billedMinutes": 17,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.12304250559284116,
+  "critical": {
+   "name": "test (webkit)",
+   "minutes": 6.183333333333334,
+   "shareOfSpan": 0.9946380697050938
+  },
+  "longest": {
+   "name": "test (webkit)",
+   "minutes": 6.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    18
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "pytest-xdist",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "apiCalls": 29,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 76,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

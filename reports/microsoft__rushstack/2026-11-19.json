@@ -1,0 +1,228 @@
+{
+  "repo": "microsoft/rushstack",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 10.1,
+    "stars": 6511,
+    "forks": 723,
+    "languages": [
+      [
+        "TypeScript",
+        98
+      ],
+      [
+        "JavaScript",
+        2
+      ],
+      [
+        "CSS",
+        0
+      ],
+      [
+        "HTML",
+        0
+      ]
+    ],
+    "linesOfCode": 593034,
+    "files": 6287,
+    "sourceFiles": 3133,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 339480,
+      "tests": 249661,
+      "integration": 2746,
+      "support": 1427
+    },
+    "testShare": 0.4278241416089893,
+    "packages": {
+      "npm": 216,
+      "cargo": 0,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 8.3,
+    "commitsPerWeekYear": 11.6,
+    "pace": 0.7,
+    "activeAuthors28d": 6,
+    "prsOpenedPerWeek": 15,
+    "prsMergedPerWeek": 1,
+    "botShareOfMergedPrs": 0,
+    "openToMergeHours": {
+      "p50": 0.6,
+      "p90": 0.6,
+      "n": 1
+    },
+    "prRunsPerDay": 7.1,
+    "runsPerMergedPr": 49.9,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 5.3,
+    "runs": 38,
+    "runsInPeriod": 38,
+    "truncated": false,
+    "mainDays": 0
+  },
+  "size": "medium",
+  "headsPerWeek": 46,
+  "score": 29,
+  "grade": "F",
+  "band": "slow",
+  "parts": {
+    "speed": 29,
+    "reliability": 35,
+    "efficiency": 19
+  },
+  "detail": {
+    "speed": {
+      "wait": 39,
+      "forSize": 0,
+      "tail": 44
+    },
+    "reliability": {
+      "flakes": 0,
+      "mainRed": 100,
+      "redHeads": 11
+    },
+    "efficiency": {
+      "minutesPerPr": 0,
+      "runsPerPr": 7,
+      "setup": 0,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 712.6,
+    "prBilledMinutesPerDay": 722.9,
+    "jobMinutesPerMergedPr": 4987.9,
+    "expectedMinutesPerMergedPr": 145.2,
+    "expectedWait": 12.1,
+    "workflowsOnPrs": 1
+  },
+  "wait": {
+    "heads": 35,
+    "timed": 29,
+    "p50": 31.483333333333334,
+    "p75": 36.733333333333334,
+    "p90": 40.25,
+    "redRate": 0.45714285714285713,
+    "rerunRate": 0.17142857142857143,
+    "passedOnRerunRate": 0.17142857142857143,
+    "cancelledRate": 0,
+    "botHeads": 0,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "CI",
+        29
+      ]
+    ],
+    "redBy": [
+      [
+        "CI",
+        16
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "CI"
+    ],
+    "allPushesP50": 31.483333333333334
+  },
+  "main": {
+    "heads": 1,
+    "p50": 40.05,
+    "p90": 40.05,
+    "redRate": 0,
+    "redBy": []
+  },
+  "botRunShare": 0,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 4,
+    "spanMin": 30.2,
+    "jobMinutes": 95.93333333333334,
+    "billedMinutes": 98,
+    "subMinuteJobs": 0,
+    "queueP50Sec": 3,
+    "queueP90Sec": 5,
+    "setupShare": 0.8901713255184851,
+    "critical": {
+      "name": "Node.js v26 (windows-latest)",
+      "minutes": 30.133333333333333,
+      "shareOfSpan": 0.9979287489643744
+    },
+    "longest": {
+      "name": "Node.js v26 (windows-latest)",
+      "minutes": 30.133333333333333
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        24
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 2,
+    "cancelInProgress": false,
+    "pathFilters": false,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": false,
+    "depCache": false,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": false,
+    "shardsConfigured": false,
+    "timeouts": false,
+    "fastLint": false,
+    "eslint": false,
+    "testResults": false,
+    "depBotsBatched": true,
+    "agentsMd": [
+      ".github/copilot-instructions.md"
+    ],
+    "agentRules": true,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Setup is 89% of job time: cache dependencies and build once",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+    },
+    {
+      "text": "\"Node.js v26 (windows-latest)\" runs 30 min in one job: shard it",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+    },
+    {
+      "text": "17% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Move broad checks to a scheduled sweep",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+    },
+    {
+      "text": "Set timeout-minutes on jobs",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+    }
+  ],
+  "apiCalls": 7
+}

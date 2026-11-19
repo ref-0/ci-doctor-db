@@ -1,0 +1,278 @@
+{
+ "repo": "paperclipai/paperclip",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.7,
+  "stars": 114810,
+  "forks": 19066,
+  "languages": [
+   [
+    "TypeScript",
+    93
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "Rust",
+    3
+   ],
+   [
+    "PLpgSQL",
+    0
+   ]
+  ],
+  "linesOfCode": 5977120,
+  "files": 17381,
+  "sourceFiles": 13952,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2679127,
+   "tests": 3071042,
+   "integration": 394265,
+   "support": 25264
+  },
+  "testShare": 0.5657604521764055,
+  "packages": {
+   "npm": 45,
+   "cargo": 4,
+   "go": 1,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 159.4,
+  "pace": 4.4,
+  "activeAuthors28d": "≥9",
+  "prsOpenedPerWeek": 988,
+  "prsMergedPerWeek": 719,
+  "botShareOfMergedPrs": 5,
+  "openToMergeHours": {
+   "p50": 1.5,
+   "p90": 8.5,
+   "n": 95
+  },
+  "prRunsPerDay": 1357.1,
+  "runsPerMergedPr": 13.2,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 0.9,
+  "runs": 988,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 0.3
+ },
+ "size": "large",
+ "headsPerWeek": 3254,
+ "score": 39,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 18,
+  "reliability": 79,
+  "efficiency": 64
+ },
+ "detail": {
+  "speed": {
+   "wait": 14,
+   "forSize": 22,
+   "tail": 21
+  },
+  "reliability": {
+   "flakes": 64,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 31,
+   "runsPerPr": 61,
+   "setup": 100,
+   "queue": 59,
+   "shardIdle": 90
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 129207.1,
+  "prBilledMinutesPerDay": 137917.8,
+  "jobMinutesPerMergedPr": 1257.9,
+  "expectedMinutesPerMergedPr": 597.8,
+  "expectedWait": 27.9,
+  "workflowsOnPrs": 8
+ },
+ "wait": {
+  "heads": 407,
+  "timed": 132,
+  "p50": 49,
+  "p75": 56.766666666666666,
+  "p90": 66.73333333333333,
+  "redRate": 0.3046683046683047,
+  "rerunRate": 0.18181818181818182,
+  "passedOnRerunRate": 0.04914004914004914,
+  "cancelledRate": 0.4520884520884521,
+  "botHeads": 4,
+  "lightHeads": 5,
+  "lastToFinish": [
+   [
+    "PR",
+    127
+   ],
+   [
+    "Runner image",
+    5
+   ]
+  ],
+  "redBy": [
+   [
+    "PR",
+    124
+   ],
+   [
+    "Backup checkpoint qualification",
+    1
+   ],
+   [
+    "Storybook Visual",
+    1
+   ]
+  ],
+  "leftOut": [
+   "CI work benchmark",
+   "commitperclip PR Review"
+  ],
+  "heavyWorkflows": [
+   "PR"
+  ],
+  "allPushesP50": 48.266666666666666
+ },
+ "main": {
+  "heads": 43,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.046511627906976744,
+  "redBy": [
+   [
+    "Cloud readiness 92dbf39e6ff057b292aaf498824c7f8001e61c93",
+    1
+   ],
+   [
+    "Cloud readiness fcaf748607492426977ccb9785169a07e6a34382",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.0242098184263618,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 52,
+  "spanMin": 15.366666666666667,
+  "jobMinutes": 340.9666666666667,
+  "billedMinutes": 367,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 32,
+  "queueP90Sec": 41,
+  "setupShare": 0.12356519179829295,
+  "critical": {
+   "name": "ci / verify",
+   "minutes": 0.08333333333333333,
+   "shareOfSpan": 0.00547645125958379
+  },
+  "longest": {
+   "name": "ci / General tests (server (4/12))",
+   "minutes": 13.683333333333334
+  },
+  "providers": [
+   [
+    "RunsOn",
+    308
+   ]
+  ],
+  "shard": {
+   "name": "ci / General tests (server (#))",
+   "shards": 12,
+   "medianMin": 11.166666666666666,
+   "maxMin": 13.566666666666666,
+   "maxOverMedian": 1.1416666666666666,
+   "idleTail": 0.13025384935497294
+  }
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 344,
+  "over10s": 50,
+  "top": [
+   {
+    "file": "src/services/ssh-remote-workspace.integration.test.ts",
+    "sec": 299.581,
+    "job": "ci / General tests (server (2/12))"
+   },
+   {
+    "file": "src/__tests__/issue-recovery-idle-backstop.test.ts",
+    "sec": 231.548,
+    "job": "ci / General tests (server (4/12))"
+   },
+   {
+    "file": "src/__tests__/recovery-settled-records-census.test.ts",
+    "sec": 214.257,
+    "job": "ci / General tests (server (4/12))"
+   },
+   {
+    "file": "src/services/workspace-recovery-warm-handoff.test.ts",
+    "sec": 202.143,
+    "job": "ci / General tests (server (4/12))"
+   },
+   {
+    "file": "src/__tests__/heartbeat-native-restart-suspension.test.ts",
+    "sec": 188.858,
+    "job": "ci / General tests (server (2/12))"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for turbo.json: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "50 test files take over 10 s; the slowest, src/services/ssh-remote-workspace.integration.test.ts, takes 300 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "apiCalls": 67,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 50,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

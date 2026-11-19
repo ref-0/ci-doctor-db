@@ -1,0 +1,223 @@
+{
+ "repo": "Silvertree2010/ApolloOffice",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 51,
+  "forks": 14,
+  "languages": [
+   [
+    "Rust",
+    65
+   ],
+   [
+    "JavaScript",
+    16
+   ],
+   [
+    "Python",
+    15
+   ],
+   [
+    "HTML",
+    5
+   ]
+  ],
+  "linesOfCode": 21090,
+  "linesFrom": "tree",
+  "files": 75,
+  "sourceFiles": 36,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 19243,
+   "tests": 1566,
+   "integration": 281,
+   "support": 0
+  },
+  "testShare": 0.08758777981668776,
+  "packages": {
+   "npm": 0,
+   "cargo": 1,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 9.3,
+  "commitsPerWeekYear": 1.7,
+  "pace": 5.3,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 6,
+  "prsMergedPerWeek": 3,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.2,
+   "p90": 104.6,
+   "n": 3
+  },
+  "prRunsPerDay": 5.3,
+  "runsPerMergedPr": 12.3
+ },
+ "window": {
+  "days": 4.4,
+  "runs": 23,
+  "runsInPeriod": 23,
+  "truncated": false,
+  "mainDays": 1.6
+ },
+ "size": "small",
+ "headsPerWeek": 37,
+ "score": 36,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 81
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 64,
+   "setup": 55,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 0,
+  "prBilledMinutesPerDay": 0,
+  "jobMinutesPerMergedPr": 0,
+  "expectedMinutesPerMergedPr": 92.7,
+  "expectedWait": 7.6,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 23,
+  "timed": 19,
+  "p50": 1214.3166666666666,
+  "p75": 1221.3333333333333,
+  "p90": 6241.766666666666,
+  "redRate": 0.8695652173913043,
+  "rerunRate": 0.17391304347826086,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    19
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    20
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 1214.3166666666666
+ },
+ "main": {
+  "heads": 5,
+  "p50": 1.9833333333333334,
+  "p90": 2.466666666666667,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 1,
+  "jobs": 2,
+  "spanMin": 1.7833333333333334,
+  "jobMinutes": 2.533333333333333,
+  "billedMinutes": 3,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.4246575342465753,
+  "critical": {
+   "name": "test (windows-latest)",
+   "minutes": 1.7333333333333334,
+   "shareOfSpan": 0.9719626168224299
+  },
+  "longest": {
+   "name": "test (windows-latest)",
+   "minutes": 1.7333333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    2
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 2,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 5.1× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 7,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 40,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

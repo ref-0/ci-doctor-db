@@ -1,0 +1,222 @@
+{
+ "repo": "benhoyt/inih",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 11.7,
+  "stars": 3067,
+  "forks": 583,
+  "languages": [
+   [
+    "C++",
+    39
+   ],
+   [
+    "C",
+    34
+   ],
+   [
+    "Meson",
+    18
+   ],
+   [
+    "Shell",
+    6
+   ]
+  ],
+  "linesOfCode": 1362,
+  "linesFrom": "tree",
+  "files": 63,
+  "sourceFiles": 14,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1180,
+   "tests": 183,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.13407055830112052,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 1.8,
+  "commitsPerWeekYear": 0.2,
+  "pace": 10.1,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 6,
+  "prsMergedPerWeek": 2,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0,
+   "p90": 0,
+   "n": 2
+  },
+  "prRunsPerDay": 18,
+  "runsPerMergedPr": 63
+ },
+ "window": {
+  "days": 0.1,
+  "runs": 9,
+  "runsInPeriod": 9,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "medium",
+ "headsPerWeek": 98,
+ "score": 54,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 30,
+  "reliability": 80,
+  "efficiency": 75
+ },
+ "detail": {
+  "speed": {
+   "wait": 69,
+   "forSize": 0,
+   "tail": 8
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 0,
+   "setup": 94,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 0,
+  "prBilledMinutesPerDay": 0,
+  "jobMinutesPerMergedPr": 0,
+  "expectedMinutesPerMergedPr": 10,
+  "expectedWait": 2,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 7,
+  "timed": 7,
+  "p50": 12.2,
+  "p75": 45.36666666666667,
+  "p90": 140,
+  "redRate": 0.7142857142857143,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Tests",
+    7
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests",
+    6
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 12.2
+ },
+ "main": {
+  "heads": 2,
+  "p50": 0.55,
+  "p90": 0.5833333333333334,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 2,
+  "jobs": 3,
+  "spanMin": 0.6,
+  "jobMinutes": 0.8333333333333334,
+  "billedMinutes": 3,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.22807017543859648,
+  "critical": {
+   "name": "build-meson-msvc",
+   "minutes": 0.5833333333333334,
+   "shareOfSpan": 0.9583333333333334
+  },
+  "longest": {
+   "name": "build-meson-msvc",
+   "minutes": 0.5833333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 1,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 11.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 7
+}

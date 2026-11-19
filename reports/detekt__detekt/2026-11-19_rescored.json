@@ -1,0 +1,247 @@
+{
+ "repo": "detekt/detekt",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 10.1,
+  "stars": 7120,
+  "forks": 890,
+  "languages": [
+   [
+    "Kotlin",
+    99
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "linesOfCode": 162381,
+  "linesFrom": "tree",
+  "files": 2023,
+  "sourceFiles": 1216,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 63853,
+   "tests": 98527,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.6067673435939881,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 18,
+  "commitsPerWeekYear": 13.6,
+  "pace": 1.3,
+  "activeAuthors28d": 17,
+  "prsOpenedPerWeek": 16,
+  "prsMergedPerWeek": 16,
+  "botShareOfMergedPrs": 31.3,
+  "openToMergeHours": {
+   "p50": 896.1,
+   "p90": 1780.5,
+   "n": 11
+  },
+  "prRunsPerDay": 54.2,
+  "runsPerMergedPr": 23.7
+ },
+ "window": {
+  "days": 5.2,
+  "runs": 185,
+  "runsInPeriod": 185,
+  "truncated": false,
+  "mainDays": 4.8
+ },
+ "size": "medium",
+ "headsPerWeek": 59,
+ "score": 71,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 63,
+  "reliability": 92,
+  "efficiency": 73
+ },
+ "detail": {
+  "speed": {
+   "wait": 65,
+   "forSize": 58,
+   "tail": 66
+  },
+  "reliability": {
+   "flakes": 88,
+   "mainRed": 96
+  },
+  "efficiency": {
+   "minutesPerPr": 64,
+   "runsPerPr": 37,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 439.4,
+  "prBilledMinutesPerDay": 494.7,
+  "jobMinutesPerMergedPr": 192.2,
+  "expectedMinutesPerMergedPr": 181.9,
+  "expectedWait": 12.2,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 44,
+  "timed": 33,
+  "p50": 11.9,
+  "p75": 17.216666666666665,
+  "p90": 18.9,
+  "redRate": 0.4318181818181818,
+  "rerunRate": 0.06818181818181818,
+  "passedOnRerunRate": 0.022727272727272728,
+  "cancelledRate": 0,
+  "botHeads": 1,
+  "lightHeads": 7,
+  "lastToFinish": [
+   [
+    "Pre Merge Checks",
+    25
+   ],
+   [
+    "Code Coverage",
+    4
+   ],
+   [
+    "Execute detekt",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Pre Merge Checks",
+    15
+   ],
+   [
+    "Execute detekt",
+    14
+   ],
+   [
+    "Code Coverage",
+    4
+   ]
+  ],
+  "leftOut": [
+   "Build and Deploy Website",
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Pre Merge Checks",
+   "Code Coverage"
+  ],
+  "allPushesP50": 8.433333333333334
+ },
+ "main": {
+  "heads": 16,
+  "p50": 11.85,
+  "p90": 19.766666666666666,
+  "redRate": 0.0625,
+  "redBy": [
+   [
+    "Execute detekt",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.1024390243902439,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 10,
+  "spanMin": 8.583333333333334,
+  "jobMinutes": 47.5,
+  "billedMinutes": 53,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 7,
+  "setupShare": 0.034786641929499075,
+  "critical": {
+   "name": "gradle (macos-latest, 25)",
+   "minutes": 18.15,
+   "shareOfSpan": 0.9945736434108526
+  },
+  "longest": {
+   "name": "gradle (macos-latest, 25)",
+   "minutes": 18.15
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    60
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"gradle (macos-latest, 25)\" runs 18 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "apiCalls": 20,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 62,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,269 @@
+{
+ "repo": "RediSearch/RediSearch",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 10.5,
+  "stars": 6246,
+  "forks": 602,
+  "languages": [
+   [
+    "Rust",
+    32
+   ],
+   [
+    "C++",
+    23
+   ],
+   [
+    "Python",
+    21
+   ],
+   [
+    "C",
+    21
+   ]
+  ],
+  "linesOfCode": 928816,
+  "files": 2996,
+  "sourceFiles": 2221,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 585362,
+   "tests": 349643,
+   "integration": 82311,
+   "support": 0
+  },
+  "testShare": 0.42460135635302926,
+  "packages": {
+   "npm": 1,
+   "cargo": 120,
+   "go": 0,
+   "python": 3
+  },
+  "commitsPerWeek": 41,
+  "commitsPerWeekYear": 44.3,
+  "pace": 0.9,
+  "activeAuthors28d": 24,
+  "prsOpenedPerWeek": 102,
+  "prsMergedPerWeek": 63,
+  "botShareOfMergedPrs": 22.2,
+  "openToMergeHours": {
+   "p50": 44.6,
+   "p90": 441.8,
+   "n": 49
+  },
+  "prRunsPerDay": 601.3,
+  "runsPerMergedPr": 66.8,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 2,
+  "runs": 1000,
+  "runsInPeriod": 2145,
+  "truncated": true,
+  "mainDays": 6.2
+ },
+ "size": "large",
+ "headsPerWeek": 687,
+ "score": 27,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 10,
+  "reliability": 63,
+  "efficiency": 42
+ },
+ "detail": {
+  "speed": {
+   "wait": 13,
+   "forSize": 0,
+   "tail": 26
+  },
+  "reliability": {
+   "flakes": 95,
+   "mainRed": 19
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 0,
+   "setup": 90,
+   "queue": 59,
+   "shardIdle": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 48089.3,
+  "prBilledMinutesPerDay": 50550.4,
+  "jobMinutesPerMergedPr": 5343.3,
+  "expectedMinutesPerMergedPr": 323.4,
+  "expectedWait": 18.2,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 196,
+  "timed": 105,
+  "p50": 51.583333333333336,
+  "p75": 53.45,
+  "p90": 59.18333333333333,
+  "redRate": 0.15816326530612246,
+  "rerunRate": 0.025510204081632654,
+  "passedOnRerunRate": 0.015306122448979591,
+  "cancelledRate": 0.3673469387755102,
+  "botHeads": 12,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "Pull Request Flow",
+    105
+   ]
+  ],
+  "redBy": [
+   [
+    "Pull Request Flow",
+    30
+   ],
+   [
+    "Link Check",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Benchmark",
+   "labeler",
+   "Release Notes Check",
+   "Auto-backport scripts tests",
+   "Backport merged pull request",
+   "PR Validation Triage"
+  ],
+  "heavyWorkflows": [
+   "Pull Request Flow"
+  ],
+  "allPushesP50": 51.583333333333336
+ },
+ "main": {
+  "heads": 36,
+  "p50": 294.26666666666665,
+  "p90": 294.26666666666665,
+  "redRate": 0.3333333333333333,
+  "redBy": [
+   [
+    "Push to Master or Version Branch",
+    9
+   ],
+   [
+    "Periodic Master Validation",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0.21858736059479553,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 55,
+  "spanMin": 51.15,
+  "jobMinutes": 561.9833333333333,
+  "billedMinutes": 589,
+  "subMinuteJobs": 22,
+  "queueP50Sec": 3,
+  "queueP90Sec": 40,
+  "setupShare": 0.2506436740314951,
+  "critical": {
+   "name": "pr-validation",
+   "minutes": 0.13333333333333333,
+   "shareOfSpan": 0.0022845953002610963
+  },
+  "longest": {
+   "name": "coverage / coverage (Unit) / Unit tests on Ubuntu Noble x86_64",
+   "minutes": 33.11666666666667
+  },
+  "providers": [
+   [
+    "staging-u-x64-medium",
+    234
+   ],
+   [
+    "GitHub-hosted",
+    96
+   ]
+  ],
+  "shard": {
+   "name": "miri (#) / Build container for platform / build-image",
+   "shards": 3,
+   "medianMin": 0.75,
+   "maxMin": 0.7666666666666667,
+   "maxOverMedian": 1.0222222222222224,
+   "idleTail": 0.02898550724637685
+  }
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 4168,
+  "over10s": 84,
+  "top": [
+   {
+    "file": "trie_rs::integration trie_map::removing_long_keys_reclaims_empty_chunks",
+    "sec": 88.192,
+    "job": "miri (2/3) / MIRI [count:2/3] on Ubuntu Noble x86_64"
+   },
+   {
+    "file": "trie_rs::integration trie_map::long_keys_multiple_chunks::unrelated_prefix::removal",
+    "sec": 65.654,
+    "job": "miri (1/3) / MIRI [count:1/3] on Ubuntu Noble x86_64"
+   },
+   {
+    "file": "trie_rs::integration trie_map::long_keys_multiple_chunks::shared_prefix::removal",
+    "sec": 65.348,
+    "job": "miri (1/3) / MIRI [count:1/3] on Ubuntu Noble x86_64"
+   },
+   {
+    "file": "trie_rs::integration trie_map::long_keys_multiple_chunks::empty_trie::removal",
+    "sec": 65.128,
+    "job": "miri (1/3) / MIRI [count:1/3] on Ubuntu Noble x86_64"
+   },
+   {
+    "file": "trie_rs::integration trie_map::long_key_before_chunk_boundary",
+    "sec": 56.741,
+    "job": "miri (2/3) / MIRI [count:2/3] on Ubuntu Noble x86_64"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "84 test files take over 10 s; the slowest, trie_rs::integration trie_map::removing_long_keys_reclaims_empty_chunks, takes 88 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  }
+ ],
+ "apiCalls": 24,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 38,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

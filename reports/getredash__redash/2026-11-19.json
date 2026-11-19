@@ -1,0 +1,212 @@
+{
+  "repo": "getredash/redash",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 13.1,
+    "stars": 28890,
+    "forks": 4644,
+    "languages": [
+      [
+        "TypeScript",
+        37
+      ],
+      [
+        "Python",
+        35
+      ],
+      [
+        "JavaScript",
+        22
+      ],
+      [
+        "Less",
+        4
+      ]
+    ],
+    "linesOfCode": 145861,
+    "files": 1976,
+    "sourceFiles": 1030,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 84998,
+      "tests": 26426,
+      "integration": 34437,
+      "support": 0
+    },
+    "testShare": 0.41726893432389744,
+    "packages": {
+      "npm": 3,
+      "cargo": 0,
+      "go": 0,
+      "python": 2
+    },
+    "commitsPerWeek": 11.8,
+    "commitsPerWeekYear": 2.5,
+    "pace": 4.7,
+    "activeAuthors28d": 9,
+    "prsOpenedPerWeek": 8,
+    "prsMergedPerWeek": 0,
+    "botShareOfMergedPrs": null,
+    "openToMergeHours": {
+      "p50": null,
+      "p90": null,
+      "n": 0
+    },
+    "prRunsPerDay": 5.1,
+    "runsPerMergedPr": null,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 5.4,
+    "runs": 28,
+    "runsInPeriod": 28,
+    "truncated": false,
+    "mainDays": 0
+  },
+  "size": "small",
+  "headsPerWeek": 15,
+  "score": 56,
+  "grade": "D",
+  "band": "ok",
+  "parts": {
+    "speed": 23,
+    "reliability": 83,
+    "efficiency": 100
+  },
+  "detail": {
+    "speed": {
+      "wait": 29,
+      "forSize": 0,
+      "tail": 38
+    },
+    "reliability": {
+      "flakes": 100,
+      "mainRed": null,
+      "redHeads": 42
+    },
+    "efficiency": {
+      "minutesPerPr": null,
+      "runsPerPr": null,
+      "setup": 100,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 125.3,
+    "prBilledMinutesPerDay": 135.4,
+    "jobMinutesPerMergedPr": null,
+    "expectedMinutesPerMergedPr": 74.7,
+    "expectedWait": 6.2,
+    "workflowsOnPrs": 3
+  },
+  "wait": {
+    "heads": 12,
+    "timed": 10,
+    "p50": 41.61666666666667,
+    "p75": 46.733333333333334,
+    "p90": 48.483333333333334,
+    "redRate": 0.3333333333333333,
+    "rerunRate": 0,
+    "passedOnRerunRate": 0,
+    "cancelledRate": 0,
+    "botHeads": 2,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "Tests",
+        10
+      ]
+    ],
+    "redBy": [
+      [
+        "Tests",
+        4
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "Tests"
+    ],
+    "allPushesP50": 41.61666666666667
+  },
+  "main": {
+    "heads": 0,
+    "p50": null,
+    "p90": null,
+    "redRate": null,
+    "redBy": []
+  },
+  "botRunShare": 0.17857142857142858,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 7,
+    "spanMin": 41,
+    "jobMinutes": 52.49999999999999,
+    "billedMinutes": 56,
+    "subMinuteJobs": 4,
+    "queueP50Sec": 2,
+    "queueP90Sec": 2,
+    "setupShare": 0.15982274741506647,
+    "critical": {
+      "name": "frontend-e2e-tests",
+      "minutes": 40.9,
+      "shareOfSpan": 0.9831730769230769
+    },
+    "longest": {
+      "name": "frontend-e2e-tests",
+      "minutes": 40.9
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        36
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 6,
+    "cancelInProgress": true,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": true,
+    "packageManager": "pnpm",
+    "fastLint": true,
+    "eslint": false,
+    "testRunner": "jest",
+    "testResults": true,
+    "depBotsBatched": false,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": true
+  },
+  "fixes": [
+    {
+      "text": "\"frontend-e2e-tests\" runs 41 min in one job: shard it",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+    },
+    {
+      "text": "Jest: consider Vitest",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 11
+}

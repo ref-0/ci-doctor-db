@@ -1,0 +1,210 @@
+{
+ "repo": "open-meteo/open-meteo",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 5.4,
+  "stars": 6697,
+  "forks": 485,
+  "languages": [
+   [
+    "Swift",
+    96
+   ],
+   [
+    "C",
+    4
+   ],
+   [
+    "Dockerfile",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 147292,
+  "linesFrom": "tree",
+  "files": 456,
+  "sourceFiles": 385,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 124441,
+   "tests": 21842,
+   "integration": 1009,
+   "support": 0
+  },
+  "testShare": 0.1551393142541863,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 13.8,
+  "commitsPerWeekYear": 7.9,
+  "pace": 1.7,
+  "activeAuthors28d": 17,
+  "prsOpenedPerWeek": 10,
+  "prsMergedPerWeek": 10,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 3.9,
+   "p90": 97.1,
+   "n": 10
+  },
+  "prRunsPerDay": 11.6,
+  "runsPerMergedPr": 8.1
+ },
+ "window": {
+  "days": 6.3,
+  "runs": 73,
+  "runsInPeriod": 73,
+  "truncated": false,
+  "mainDays": 4.8
+ },
+ "size": "medium",
+ "headsPerWeek": 76,
+ "score": 97,
+ "grade": "A",
+ "band": "excellent",
+ "parts": {
+  "speed": 95,
+  "reliability": 100,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 96,
+   "forSize": 89,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 81,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 37.9,
+  "prBilledMinutesPerDay": 43.1,
+  "jobMinutesPerMergedPr": 26.5,
+  "expectedMinutesPerMergedPr": 72.8,
+  "expectedWait": 6.1,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 69,
+  "timed": 66,
+  "p50": 3.6,
+  "p75": 3.95,
+  "p90": 5,
+  "redRate": 0.014492753623188406,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Test",
+    66
+   ]
+  ],
+  "redBy": [
+   [
+    "Test",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Test"
+  ],
+  "allPushesP50": 3.6
+ },
+ "main": {
+  "heads": 11,
+  "p50": 3.8833333333333333,
+  "p90": 6.433333333333334,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.010526315789473684,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 3.466666666666667,
+  "jobMinutes": 3.4166666666666665,
+  "billedMinutes": 4,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.10900473933649289,
+  "critical": {
+   "name": "Linux",
+   "minutes": 3.4166666666666665,
+   "shareOfSpan": 0.9901960784313726
+  },
+  "longest": {
+   "name": "Linux",
+   "minutes": 3.4166666666666665
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 8,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 7
+}

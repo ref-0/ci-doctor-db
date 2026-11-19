@@ -1,0 +1,227 @@
+{
+  "repo": "rust-lang/rust-clippy",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 12,
+    "stars": 13681,
+    "forks": 2370,
+    "languages": [
+      [
+        "Rust",
+        100
+      ],
+      [
+        "HTML",
+        0
+      ],
+      [
+        "CSS",
+        0
+      ],
+      [
+        "JavaScript",
+        0
+      ]
+    ],
+    "linesOfCode": 311329,
+    "files": 4710,
+    "sourceFiles": 2386,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 208240,
+      "tests": 102976,
+      "integration": 114,
+      "support": 0
+    },
+    "testShare": 0.3311285279010422,
+    "packages": {
+      "npm": 1,
+      "cargo": 11,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 57,
+    "commitsPerWeekYear": 45.4,
+    "pace": 1,
+    "activeAuthors28d": 56,
+    "prsOpenedPerWeek": 29,
+    "prsMergedPerWeek": 22,
+    "botShareOfMergedPrs": 0,
+    "openToMergeHours": {
+      "p50": 12.6,
+      "p90": 412.4,
+      "n": 22
+    },
+    "prRunsPerDay": 100.9,
+    "runsPerMergedPr": 32.1,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 7,
+    "runs": 708,
+    "runsInPeriod": 708,
+    "truncated": false,
+    "mainDays": 6.6
+  },
+  "size": "medium",
+  "headsPerWeek": 115,
+  "score": 81,
+  "grade": "B",
+  "band": "fast",
+  "parts": {
+    "speed": 80,
+    "reliability": 89,
+    "efficiency": 74
+  },
+  "detail": {
+    "speed": {
+      "wait": 80,
+      "forSize": 70,
+      "tail": 88
+    },
+    "reliability": {
+      "flakes": 100,
+      "mainRed": null,
+      "redHeads": 64
+    },
+    "efficiency": {
+      "minutesPerPr": 76,
+      "runsPerPr": 25,
+      "setup": 100,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 300.1,
+    "prBilledMinutesPerDay": 466.9,
+    "jobMinutesPerMergedPr": 95.5,
+    "expectedMinutesPerMergedPr": 115.5,
+    "expectedWait": 9.6,
+    "workflowsOnPrs": 6
+  },
+  "wait": {
+    "heads": 115,
+    "timed": 84,
+    "p50": 7.783333333333333,
+    "p75": 8.116666666666667,
+    "p90": 8.566666666666666,
+    "redRate": 0.24347826086956523,
+    "rerunRate": 0,
+    "passedOnRerunRate": 0,
+    "cancelledRate": 0.25217391304347825,
+    "botHeads": 0,
+    "lightHeads": 2,
+    "lastToFinish": [
+      [
+        "Lintcheck",
+        78
+      ],
+      [
+        "Clippy Test",
+        5
+      ],
+      [
+        "Clippy changelog check",
+        1
+      ]
+    ],
+    "redBy": [
+      [
+        "Clippy Test",
+        22
+      ],
+      [
+        "Clippy changelog check",
+        6
+      ],
+      [
+        "Clippy Dev Test",
+        4
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "Lintcheck",
+      "Clippy Test"
+    ],
+    "allPushesP50": 7.733333333333333
+  },
+  "main": {
+    "heads": 0,
+    "p50": null,
+    "p90": null,
+    "redRate": null,
+    "redBy": []
+  },
+  "botRunShare": 0.03146374829001368,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 3,
+    "spanMin": 7.7,
+    "jobMinutes": 12.616666666666667,
+    "billedMinutes": 14,
+    "subMinuteJobs": 1,
+    "queueP50Sec": 2,
+    "queueP90Sec": 2,
+    "setupShare": 0.020481927710843374,
+    "critical": {
+      "name": "diff",
+      "minutes": 0.36666666666666664,
+      "shareOfSpan": 0.044715447154471545
+    },
+    "longest": {
+      "name": "base",
+      "minutes": 7.75
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        18
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 1,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 9,
+    "cancelInProgress": true,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": true,
+    "scheduled": false,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": true,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": false,
+    "fastLint": false,
+    "eslint": false,
+    "testResults": false,
+    "depBotsBatched": false,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "Move broad checks to a scheduled sweep",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+    },
+    {
+      "text": "Set timeout-minutes on jobs",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 33
+}

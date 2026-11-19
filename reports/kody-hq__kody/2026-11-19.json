@@ -1,0 +1,316 @@
+{
+  "repo": "kody-hq/kody",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 0.7,
+    "stars": 979,
+    "forks": 97,
+    "languages": [
+      [
+        "TypeScript",
+        98
+      ],
+      [
+        "JavaScript",
+        1
+      ],
+      [
+        "CSS",
+        1
+      ],
+      [
+        "Shell",
+        0
+      ]
+    ],
+    "linesOfCode": 1570959,
+    "files": 8113,
+    "sourceFiles": 6683,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 967087,
+      "tests": 591829,
+      "integration": 23204,
+      "support": 60
+    },
+    "testShare": 0.3887631715933567,
+    "packages": {
+      "npm": 16,
+      "cargo": 0,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": "≥125",
+    "commitsPerWeekYear": 93.2,
+    "pace": 2.6,
+    "activeAuthors28d": "≥3",
+    "prsOpenedPerWeek": 249,
+    "prsMergedPerWeek": 237,
+    "botShareOfMergedPrs": 86,
+    "openToMergeHours": {
+      "p50": 0.6,
+      "p90": 1.4,
+      "n": 14
+    },
+    "prRunsPerDay": 299.6,
+    "runsPerMergedPr": 8.8,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 4,
+    "runs": 1000,
+    "runsInPeriod": 1372,
+    "truncated": true,
+    "mainDays": 2.4
+  },
+  "size": "large",
+  "headsPerWeek": 605,
+  "score": 60,
+  "parts": {
+    "speed": 42,
+    "reliability": 79,
+    "efficiency": 75
+  },
+  "detail": {
+    "speed": {
+      "wait": 30,
+      "forSize": 70,
+      "tail": 28
+    },
+    "reliability": {
+      "flakes": 62,
+      "mainRed": 96,
+      "redHeads": 92
+    },
+    "efficiency": {
+      "minutesPerPr": 67,
+      "runsPerPr": 77,
+      "setup": 100,
+      "queue": 33,
+      "shardIdle": 99
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 8002.8,
+    "prBilledMinutesPerDay": 8658.6,
+    "jobMinutesPerMergedPr": 236.4,
+    "expectedMinutesPerMergedPr": 238.8,
+    "expectedWait": 19.9,
+    "workflowsOnPrs": 144
+  },
+  "wait": {
+    "heads": 346,
+    "timed": 16,
+    "p50": 16.166666666666668,
+    "p75": 22.133333333333333,
+    "p90": 25.583333333333332,
+    "redRate": 0.13005780346820808,
+    "rerunRate": 0.06647398843930635,
+    "passedOnRerunRate": 0.05202312138728324,
+    "cancelledRate": 0.28901734104046245,
+    "botHeads": 204,
+    "lightHeads": 2,
+    "lastToFinish": [
+      [
+        "✅ Validate",
+        14
+      ],
+      [
+        "Desktop binaries",
+        2
+      ]
+    ],
+    "redBy": [
+      [
+        "✅ Validate",
+        28
+      ],
+      [
+        "Desktop binaries",
+        13
+      ],
+      [
+        "Isolated paced restore drill: replay sealed paced chains into the drill account with a live readout",
+        1
+      ]
+    ],
+    "leftOut": [
+      "Split oversized Mailbox and RunLog owner dumps into parts instead of skipping them",
+      "feat(cli): package checks and publishes run as polled durable workflows",
+      "Make package publish finalization safe to retry",
+      "fix(dr): export oversized storage dumps in parts instead of skipping them",
+      "fix(publish-offload): store sealed build documents in R2, not D1",
+      "fix(publish): keep the serving commit's runtime through an unfinished publish, and let finalize resume finish published-only tips (#5305)",
+      "🔎 Preview",
+      "fix(publish): pass body/path/query credential placeholders the credential already allows; link owner approval for the rest",
+      "fix(ci): retry Mac packaging hiccups in Desktop release and fix two Windows CLI test flakes",
+      "docs: match RunLog SQL stats, lazy parse checks, and shared UI comments",
+      "fix(open-api): packageCheck accepts a package tree as large as the publish checks accept",
+      "feat(limits): denial-of-wallet guards cap runaway git, execute, publish, check, and run-read calls per person and per org",
+      "fix(storage): storage.sql meters CREATE TABLE AS VALUES, and reads with a comment or replace() stay reads",
+      "fix(package-apps): a publish never clears the runs-as person an owner chose",
+      "fix(package-apps): realtime sockets and runtime credential checks read the commit everyone runs while a republish is held",
+      "feat(execute): load imported published kody:@ builds as is in hosted execute",
+      "fix(package-apps): hold everyone, jobs and triggers included, on the approved version while a wider republish of an internet-visible app awaits approval",
+      "fix(publish): one shared walk for the credential scans, a syntax node limit that fails clearly, and package and commit on durable publish runs",
+      "fix(cli): refuse any raw kody: import at publish and test the shipped publish builder",
+      "fix(cli): bundle the module parser into the publish builder so local and context builds link kody:@ imports",
+      "fix(cli): bundle the import parser into the publish builder and refuse raw kody: imports at publish",
+      "feat(package-apps): host label grammar for {leaf}--{handle}",
+      "fix(package-codemods): scan drifted apps on their published tree in 0019",
+      "fix(package-apps): hold everyone on the approved version while a wider republish of an internet-visible app awaits approval",
+      "fix(deps): ship one hoisted xstate copy and fail lockfile:check when workspaces nest duplicates",
+      "chore(db): drop the unused published_bundle_artifacts.total_bytes column",
+      "refactor(package-runtime): drop the persisted artifact manifest and refuse an oversized cloud build before it starts",
+      "fix(dev): publish saved packages through real git when the mock Artifacts git server backs the remote",
+      "ci(desktop): skip Desktop release for desktop markdown-only pushes",
+      "chore(client): drop the Unknown Start release recovery now that the opt-in Start workers are deleted",
+      "fix(package-apps): keep public visitors on an approved commit through a republish; carry same-or-narrower approvals forward with the serving advance",
+      "perf(publish-offload): skip writing runtime modules when linking a dependency into an uploaded build",
+      "test(package-app-handoff): date the parent session from the real clock so the handoff test does not expire on 2027-01-15",
+      "Ship Linux AppImage and .deb in every desktop release",
+      "fix(publish-offload): time each step of storing an uploaded build and stop telling local builders to build locally",
+      "fix(publish-offload): publish a local or context build as uploaded, without rebuilding a sample in the cloud",
+      "feat(package-runtime): store a manifest of module roles and sizes with each published bundle artifact",
+      "feat(desktop): ship Windows x64 and arm64 MSIX with App Installer updates in every release",
+      "✍️ CLA"
+    ],
+    "heavyWorkflows": [
+      "✅ Validate"
+    ],
+    "allPushesP50": 16.166666666666668
+  },
+  "main": {
+    "heads": 78,
+    "p50": 8.016666666666667,
+    "p90": 19.45,
+    "redRate": 0.0641025641025641,
+    "redBy": [
+      [
+        "🖥️ macOS host commands (main)",
+        3
+      ],
+      [
+        "Desktop binaries",
+        2
+      ]
+    ]
+  },
+  "botRunShare": 0.6066666666666667,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 19,
+    "spanMin": 14.2,
+    "jobMinutes": 82.68333333333332,
+    "billedMinutes": 92,
+    "subMinuteJobs": 3,
+    "queueP50Sec": 2,
+    "queueP90Sec": 97,
+    "setupShare": 0.16554398856909575,
+    "critical": {
+      "name": "✅ Validate",
+      "minutes": 0.25,
+      "shareOfSpan": 0.01643192488262911
+    },
+    "longest": {
+      "name": "🎭 E2E (1/2)",
+      "minutes": 14.616666666666667
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        114
+      ]
+    ],
+    "shard": {
+      "name": "🧪 Node (#)",
+      "shards": 2,
+      "medianMin": 4.816666666666666,
+      "maxMin": 6.4,
+      "maxOverMedian": 1.254901960784314,
+      "idleTail": 0.10156250000000006
+    }
+  },
+  "tests": {
+    "logsRead": 3,
+    "filesTimed": 2072,
+    "over10s": 2,
+    "top": [
+      {
+        "file": "tools/check-stale-local-migrations.node.test.ts",
+        "sec": 28.32,
+        "job": "🧪 Node (1/2)"
+      },
+      {
+        "file": "packages/worker/src/state-machines.node.test.ts",
+        "sec": 11.427,
+        "job": "🧪 Node (1/2)"
+      },
+      {
+        "file": "packages/worker/src/credentials/credential-storage-boundary.node.test.ts",
+        "sec": 8.873,
+        "job": "🧪 Node (1/2)"
+      },
+      {
+        "file": "packages/worker/src/repo/checks-typecheck.node.test.ts",
+        "sec": 8.637,
+        "job": "🧪 Node (2/2)"
+      },
+      {
+        "file": "packages/worker/src/repo/credential-pattern-check-large-package.node.test.ts",
+        "sec": 7.796,
+        "job": "🧪 Node (2/2)"
+      }
+    ]
+  },
+  "practices": {
+    "workflows": 24,
+    "cancelInProgress": true,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": true,
+    "mergeQueue": true,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": true,
+    "taskRunner": "nx.json",
+    "packageManager": "npm",
+    "fastLint": true,
+    "eslint": false,
+    "testRunner": "vitest",
+    "testResults": true,
+    "depBotsBatched": false,
+    "agentsMd": [
+      "AGENTS.md"
+    ],
+    "agentRules": true,
+    "preCommit": true
+  },
+  "fixes": [
+    {
+      "text": "Share a remote cache for nx.json: it has none in CI",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+    },
+    {
+      "text": "\"🧪 Node (#)\": the slowest shard takes 1.25× the median, 10% idle; balance shards by measured time",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+    },
+    {
+      "text": "2 test files take over 10 s; the slowest, tools/check-stale-local-migrations.node.test.ts, takes 28 s",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+    },
+    {
+      "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "Jobs wait 97 s for a runner at p90",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+    }
+  ],
+  "apiCalls": 69
+}

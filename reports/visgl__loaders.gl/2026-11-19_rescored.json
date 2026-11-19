@@ -1,0 +1,230 @@
+{
+ "repo": "visgl/loaders.gl",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8.2,
+  "stars": 860,
+  "forks": 232,
+  "languages": [
+   [
+    "TypeScript",
+    95
+   ],
+   [
+    "JavaScript",
+    5
+   ],
+   [
+    "CSS",
+    1
+   ],
+   [
+    "MDX",
+    0
+   ]
+  ],
+  "linesOfCode": 853671,
+  "files": 7098,
+  "sourceFiles": 4083,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 559866,
+   "tests": 275782,
+   "integration": 17017,
+   "support": 1008
+  },
+  "testShare": 0.3441679345222672,
+  "packages": {
+   "npm": 32,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 59.3,
+  "commitsPerWeekYear": 21.7,
+  "pace": 2.8,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 78,
+  "prsMergedPerWeek": 80,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.8,
+   "p90": 18.4,
+   "n": 80
+  },
+  "prRunsPerDay": 46.9,
+  "runsPerMergedPr": 4.1,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.6,
+  "runs": 311,
+  "runsInPeriod": 311,
+  "truncated": false,
+  "mainDays": 6.2
+ },
+ "size": "large",
+ "headsPerWeek": 325,
+ "score": 79,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 67,
+  "reliability": 100,
+  "efficiency": 93
+ },
+ "detail": {
+  "speed": {
+   "wait": 61,
+   "forSize": 75,
+   "tail": 73
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 65,
+   "queue": 100,
+   "shardIdle": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1629.2,
+  "prBilledMinutesPerDay": 1850.4,
+  "jobMinutesPerMergedPr": 142.6,
+  "expectedMinutesPerMergedPr": 314.5,
+  "expectedWait": 17.8,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 308,
+  "timed": 162,
+  "p50": 13.416666666666666,
+  "p75": 14.333333333333334,
+  "p90": 15.85,
+  "redRate": 0.12337662337662338,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.474025974025974,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "test",
+    162
+   ]
+  ],
+  "redBy": [
+   [
+    "test",
+    38
+   ]
+  ],
+  "leftOut": [
+   "release"
+  ],
+  "heavyWorkflows": [
+   "test"
+  ],
+  "allPushesP50": 13.416666666666666
+ },
+ "main": {
+  "heads": 77,
+  "p50": 12.75,
+  "p90": 15,
+  "redRate": 0.025974025974025976,
+  "redBy": [
+   [
+    "test",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.01288659793814433,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 13,
+  "spanMin": 13.7,
+  "jobMinutes": 45.58333333333333,
+  "billedMinutes": 52,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.3736581337737407,
+  "critical": {
+   "name": "Required CI",
+   "minutes": 0.18333333333333332,
+   "shareOfSpan": 0.013126491646778041
+  },
+  "longest": {
+   "name": "Tests (Node 24 - headless tests 3/4)",
+   "minutes": 6.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    78
+   ]
+  ],
+  "shard": {
+   "name": "Tests (Node 24 - headless tests #)",
+   "shards": 4,
+   "medianMin": 4.6,
+   "maxMin": 6.183333333333334,
+   "maxOverMedian": 1.0852272727272727,
+   "idleTail": 0.057591623036649185
+  }
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "packageManager": "yarn berry",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Setup is 37% of job time: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  }
+ ],
+ "apiCalls": 12,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 80,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "repo": "pytest-dev/pytest",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 11.4,
+  "stars": 14702,
+  "forks": 3746,
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "Gherkin",
+    0
+   ]
+  ],
+  "linesOfCode": 131660,
+  "files": 645,
+  "sourceFiles": 275,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 49661,
+   "tests": 80,
+   "integration": 469,
+   "support": 81450
+  },
+  "testShare": 0.6228096381491335,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 15.3,
+  "commitsPerWeekYear": 16.3,
+  "pace": 0.9,
+  "activeAuthors28d": 14,
+  "prsOpenedPerWeek": 30,
+  "prsMergedPerWeek": 4,
+  "botShareOfMergedPrs": 50,
+  "openToMergeHours": {
+   "p50": 201.4,
+   "p90": 242,
+   "n": 2
+  },
+  "prRunsPerDay": 10.6,
+  "runsPerMergedPr": 18.5,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.4,
+  "runs": 68,
+  "runsInPeriod": 68,
+  "truncated": false,
+  "mainDays": 3.1
+ },
+ "size": "medium",
+ "headsPerWeek": 69,
+ "score": 63,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 60,
+  "reliability": 97,
+  "efficiency": 39
+ },
+ "detail": {
+  "speed": {
+   "wait": 63,
+   "forSize": 52,
+   "tail": 71
+  },
+  "reliability": {
+   "flakes": 95,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 47,
+   "setup": 100,
+   "queue": 27,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1173.4,
+  "prBilledMinutesPerDay": 1307.9,
+  "jobMinutesPerMergedPr": 2053.4,
+  "expectedMinutesPerMergedPr": 169.7,
+  "expectedWait": 11.6,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 63,
+  "timed": 43,
+  "p50": 12.5,
+  "p75": 13.983333333333333,
+  "p90": 16.616666666666667,
+  "redRate": 0.1111111111111111,
+  "rerunRate": 0.031746031746031744,
+  "passedOnRerunRate": 0.015873015873015872,
+  "cancelledRate": 0.2222222222222222,
+  "botHeads": 4,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "test",
+    43
+   ]
+  ],
+  "redBy": [
+   [
+    "test",
+    7
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "test"
+  ],
+  "allPushesP50": 12.5
+ },
+ "main": {
+  "heads": 3,
+  "p50": 15.2,
+  "p90": 18.316666666666666,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.07042253521126761,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 32,
+  "spanMin": 11.866666666666667,
+  "jobMinutes": 124.69999999999997,
+  "billedMinutes": 139,
+  "subMinuteJobs": 8,
+  "queueP50Sec": 2,
+  "queueP90Sec": 121,
+  "setupShare": 0.12008390141583639,
+  "critical": {
+   "name": "check",
+   "minutes": 0.05,
+   "shareOfSpan": 0.004213483146067416
+  },
+  "longest": {
+   "name": "build (windows-py314)",
+   "minutes": 11.25
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"build (windows-py314)\" runs 11 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 121 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 6,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 63,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

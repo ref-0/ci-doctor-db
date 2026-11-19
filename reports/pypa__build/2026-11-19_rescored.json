@@ -1,0 +1,215 @@
+{
+ "repo": "pypa/build",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 6.5,
+  "stars": 865,
+  "forks": 299,
+  "languages": [
+   [
+    "Python",
+    100
+   ]
+  ],
+  "linesOfCode": 5556,
+  "files": 144,
+  "sourceFiles": 23,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 302,
+   "tests": 5171,
+   "integration": 83,
+   "support": 0
+  },
+  "testShare": 0.9455953730868686,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 5.8,
+  "commitsPerWeekYear": 4.9,
+  "pace": 1.2,
+  "activeAuthors28d": 7,
+  "prsOpenedPerWeek": 20,
+  "prsMergedPerWeek": 14,
+  "botShareOfMergedPrs": 7.1,
+  "openToMergeHours": {
+   "p50": 14.6,
+   "p90": 262.6,
+   "n": 13
+  },
+  "prRunsPerDay": 19,
+  "runsPerMergedPr": 9.5,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 130,
+  "runsInPeriod": 130,
+  "truncated": false,
+  "mainDays": 5.4
+ },
+ "size": "medium",
+ "headsPerWeek": 67,
+ "score": 72,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 67,
+  "reliability": 100,
+  "efficiency": 59
+ },
+ "detail": {
+  "speed": {
+   "wait": 82,
+   "forSize": 40,
+   "tail": 89
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 74,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1128.5,
+  "prBilledMinutesPerDay": 1337.2,
+  "jobMinutesPerMergedPr": 564.3,
+  "expectedMinutesPerMergedPr": 59.7,
+  "expectedWait": 5.6,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 65,
+  "timed": 50,
+  "p50": 7.35,
+  "p75": 7.883333333333334,
+  "p90": 8.283333333333333,
+  "redRate": 0.1076923076923077,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.2,
+  "botHeads": 2,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "test",
+    50
+   ]
+  ],
+  "redBy": [
+   [
+    "test",
+    7
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "test"
+  ],
+  "allPushesP50": 7.35
+ },
+ "main": {
+  "heads": 14,
+  "p50": 7.216666666666667,
+  "p90": 10.166666666666666,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.027777777777777776,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 47,
+  "spanMin": 7.483333333333333,
+  "jobMinutes": 129.95000000000002,
+  "billedMinutes": 155,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.07908288376655223,
+  "critical": {
+   "name": "Required checks pass",
+   "minutes": 0.05,
+   "shareOfSpan": 0.008908685968819599
+  },
+  "longest": {
+   "name": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+   "minutes": 6.783333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    238
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 3,
+  "over10s": 3,
+  "top": [
+   {
+    "file": "tests/test_main.py",
+    "sec": 44.16,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, tox)"
+   },
+   {
+    "file": "tests/test_integration.py",
+    "sec": 41.65,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, tox)"
+   },
+   {
+    "file": "tests/test_env.py",
+    "sec": 30.1,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, tox)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "3 test files take over 10 s; the slowest, tests/test_main.py, takes 44 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 13,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 71,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

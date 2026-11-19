@@ -1,0 +1,276 @@
+{
+ "repo": "tailscale/tailscale",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 6.8,
+  "stars": 39299,
+  "forks": 3511,
+  "languages": [
+   [
+    "Go",
+    96
+   ],
+   [
+    "C",
+    1
+   ],
+   [
+    "TypeScript",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 687845,
+  "files": 3145,
+  "sourceFiles": 2725,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 400648,
+   "tests": 270343,
+   "integration": 16473,
+   "support": 381
+  },
+  "testShare": 0.4175320990436314,
+  "packages": {
+   "npm": 2,
+   "cargo": 1,
+   "go": 1,
+   "python": 0
+  },
+  "commitsPerWeek": 64.5,
+  "commitsPerWeekYear": 35.2,
+  "pace": 1.7,
+  "activeAuthors28d": 54,
+  "prsOpenedPerWeek": 99,
+  "prsMergedPerWeek": 72,
+  "botShareOfMergedPrs": 11.1,
+  "openToMergeHours": {
+   "p50": 24,
+   "p90": 362.1,
+   "n": 64
+  },
+  "prRunsPerDay": 407.9,
+  "runsPerMergedPr": 39.7,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 2.5,
+  "runs": 1000,
+  "runsInPeriod": 1907,
+  "truncated": true,
+  "mainDays": 2.3
+ },
+ "size": "large",
+ "headsPerWeek": 320,
+ "score": 62,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 62,
+  "reliability": 86,
+  "efficiency": 40
+ },
+ "detail": {
+  "speed": {
+   "wait": 57,
+   "forSize": 66,
+   "tail": 67
+  },
+  "reliability": {
+   "flakes": 77,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 17,
+   "runsPerPr": 17,
+   "setup": 100,
+   "queue": 22,
+   "shardIdle": 53
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 8544.7,
+  "prBilledMinutesPerDay": 9609.4,
+  "jobMinutesPerMergedPr": 830.7,
+  "expectedMinutesPerMergedPr": 292.9,
+  "expectedWait": 17,
+  "workflowsOnPrs": 16
+ },
+ "wait": {
+  "heads": 112,
+  "timed": 64,
+  "p50": 14.583333333333334,
+  "p75": 15.466666666666667,
+  "p90": 18.266666666666666,
+  "redRate": 0.14285714285714285,
+  "rerunRate": 0.08035714285714286,
+  "passedOnRerunRate": 0.03571428571428571,
+  "cancelledRate": 0.08035714285714286,
+  "botHeads": 7,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    61
+   ],
+   [
+    "natlab-test",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    8
+   ],
+   [
+    "golangci-lint",
+    4
+   ],
+   [
+    "tailscale.com/cmd/vet",
+    3
+   ]
+  ],
+  "leftOut": [
+   "checklocks"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 14.583333333333334
+ },
+ "main": {
+  "heads": 43,
+  "p50": 14.983333333333333,
+  "p90": 17.416666666666668,
+  "redRate": 0.023255813953488372,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.033846153846153845,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 50,
+  "spanMin": 13.75,
+  "jobMinutes": 210.93333333333337,
+  "billedMinutes": 237,
+  "subMinuteJobs": 11,
+  "queueP50Sec": 3,
+  "queueP90Sec": 140,
+  "setupShare": 0.17723615712257454,
+  "critical": {
+   "name": "notify_windows",
+   "minutes": 0.23333333333333334,
+   "shareOfSpan": 0.018134715025906734
+  },
+  "longest": {
+   "name": "Windows (2/2)",
+   "minutes": 12.433333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    300
+   ]
+  ],
+  "shard": {
+   "name": "Windows (#)",
+   "shards": 2,
+   "medianMin": 5,
+   "maxMin": 12.133333333333333,
+   "maxOverMedian": 1.932642487046632,
+   "idleTail": 0.24128686327077747
+  }
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 200,
+  "over10s": 13,
+  "top": [
+   {
+    "file": "tailscale.com/tstest/integration",
+    "sec": 472.647,
+    "job": "Windows (2/2)"
+   },
+   {
+    "file": "tailscale.com/ssh/tailssh",
+    "sec": 167.092,
+    "job": "macos"
+   },
+   {
+    "file": "tailscale.com/tsnet",
+    "sec": 107.085,
+    "job": "macos"
+   },
+   {
+    "file": "tailscale.com/util/eventbus/eventbuscheck",
+    "sec": 81.412,
+    "job": "macos"
+   },
+   {
+    "file": "tailscale.com/cmd/tailscaled",
+    "sec": 30.566,
+    "job": "macos"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 29,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"Windows (#)\": the slowest shard takes 1.93× the median, 24% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "13 test files take over 10 s; the slowest, tailscale.com/tstest/integration, takes 473 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Jobs wait 140 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 58,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 64,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

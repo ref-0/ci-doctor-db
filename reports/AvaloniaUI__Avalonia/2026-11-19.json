@@ -1,0 +1,228 @@
+{
+ "repo": "AvaloniaUI/Avalonia",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 13,
+  "stars": 31846,
+  "forks": 2901,
+  "languages": [
+   [
+    "C#",
+    98
+   ],
+   [
+    "Objective-C++",
+    1
+   ],
+   [
+    "TypeScript",
+    0
+   ],
+   [
+    "Objective-C",
+    0
+   ]
+  ],
+  "linesOfCode": 877296,
+  "linesFrom": "tree",
+  "files": 6122,
+  "sourceFiles": 4442,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 618508,
+   "tests": 258787,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.2949832373090557,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 34,
+  "commitsPerWeekYear": 18.9,
+  "pace": 1.8,
+  "activeAuthors28d": 45,
+  "prsOpenedPerWeek": 44,
+  "prsMergedPerWeek": 47,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 76.6,
+   "p90": 703.9,
+   "n": 47
+  },
+  "prRunsPerDay": 55.5,
+  "runsPerMergedPr": 8.3
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 188,
+  "runsInPeriod": 188,
+  "truncated": false,
+  "mainDays": 6.7
+ },
+ "size": "medium",
+ "headsPerWeek": 143,
+ "score": 70,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 46,
+  "reliability": 97,
+  "efficiency": 90
+ },
+ "detail": {
+  "speed": {
+   "wait": 49,
+   "forSize": 28,
+   "tail": 59
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 85
+  },
+  "efficiency": {
+   "minutesPerPr": 86,
+   "runsPerPr": 80,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 802.9,
+  "prBilledMinutesPerDay": 831.2,
+  "jobMinutesPerMergedPr": 119.6,
+  "expectedMinutesPerMergedPr": 177.7,
+  "expectedWait": 14.8,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 142,
+  "timed": 94,
+  "p50": 23.716666666666665,
+  "p75": 24.75,
+  "p90": 26.166666666666668,
+  "redRate": 0.1619718309859155,
+  "rerunRate": 0.14084507042253522,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.1056338028169014,
+  "botHeads": 0,
+  "lightHeads": 3,
+  "lastToFinish": [
+   [
+    "Build",
+    92
+   ],
+   [
+    "Contribution Bot",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Build",
+    23
+   ]
+  ],
+  "leftOut": [
+   "Label team PRs",
+   "Avalonia CLA Bot"
+  ],
+  "heavyWorkflows": [
+   "Build"
+  ],
+  "allPushesP50": 23.683333333333334
+ },
+ "main": {
+  "heads": 45,
+  "p50": 24.7,
+  "p90": 27.483333333333334,
+  "redRate": 0.044444444444444446,
+  "redBy": [
+   [
+    "Build",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.1936842105263158,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 24.6,
+  "jobMinutes": 45.06666666666667,
+  "billedMinutes": 48,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.1787957148134466,
+  "critical": {
+   "name": "Windows",
+   "minutes": 24.55,
+   "shareOfSpan": 0.9979674796747967
+  },
+  "longest": {
+   "name": "Windows",
+   "minutes": 24.55
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    24
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Windows\" runs 25 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "apiCalls": 13
+}

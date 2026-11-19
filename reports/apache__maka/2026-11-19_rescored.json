@@ -1,0 +1,235 @@
+{
+ "repo": "apache/maka",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.5,
+  "stars": 5989,
+  "forks": 578,
+  "languages": [
+   [
+    "TypeScript",
+    92
+   ],
+   [
+    "JavaScript",
+    5
+   ],
+   [
+    "Rust",
+    1
+   ],
+   [
+    "CSS",
+    1
+   ]
+  ],
+  "linesOfCode": 2024579,
+  "files": 5036,
+  "sourceFiles": 4433,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1087887,
+   "tests": 908870,
+   "integration": 19089,
+   "support": 9212
+  },
+  "testShare": 0.4627875951138939,
+  "packages": {
+   "npm": 18,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 10.3,
+  "commitsPerWeekYear": 99.6,
+  "pace": 0.1,
+  "activeAuthors28d": 11,
+  "prsOpenedPerWeek": 187,
+  "prsMergedPerWeek": 171,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.2,
+   "p90": 19.3,
+   "n": 100
+  },
+  "prRunsPerDay": 78.7,
+  "runsPerMergedPr": 3.2,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 549,
+  "runsInPeriod": 556,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 382,
+ "score": 24,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 58,
+  "efficiency": 60
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 37,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 18907.7,
+  "prBilledMinutesPerDay": 19706.9,
+  "jobMinutesPerMergedPr": 774,
+  "expectedMinutesPerMergedPr": 418.2,
+  "expectedWait": 21.8,
+  "workflowsOnPrs": 10
+ },
+ "wait": {
+  "heads": 386,
+  "timed": 268,
+  "p50": 151.75,
+  "p75": 196.76666666666668,
+  "p90": 364.21666666666664,
+  "redRate": 0.6865284974093264,
+  "rerunRate": 0.0051813471502590676,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.2772020725388601,
+  "botHeads": 8,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "CI",
+    268
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    252
+   ],
+   [
+    "Dependency audit",
+    28
+   ],
+   [
+    "CLI package validation",
+    6
+   ]
+  ],
+  "leftOut": [
+   "Release Windows check",
+   "Release Linux check",
+   "PR effort label"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 151.75
+ },
+ "main": {
+  "heads": 1,
+  "p50": 13.3,
+  "p90": 13.3,
+  "redRate": 1,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.09481216457960644,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 35.31666666666667,
+  "jobMinutes": 31.766666666666666,
+  "billedMinutes": 34,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 392,
+  "queueP90Sec": 1936,
+  "setupShare": 0.08805790108564536,
+  "critical": {
+   "name": "test",
+   "minutes": 0.31666666666666665,
+   "shareOfSpan": 0.0066068900424728644
+  },
+  "longest": {
+   "name": "test",
+   "minutes": 27.7
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    21
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 27,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "packageManager": "npm",
+  "fastLint": true,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "\"test\" runs 28 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.4× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 1936 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 22,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 25,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

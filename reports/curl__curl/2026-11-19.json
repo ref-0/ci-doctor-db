@@ -1,0 +1,240 @@
+{
+ "repo": "curl/curl",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 16.7,
+  "stars": 43559,
+  "forks": 7501,
+  "languages": [
+   [
+    "C",
+    75
+   ],
+   [
+    "Perl",
+    8
+   ],
+   [
+    "Python",
+    6
+   ],
+   [
+    "M4",
+    4
+   ]
+  ],
+  "linesOfCode": 340335,
+  "linesFrom": "tree",
+  "files": 4579,
+  "sourceFiles": 1129,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 237282,
+   "tests": 103053,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.30279741012067424,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 85.5,
+  "commitsPerWeekYear": 68.6,
+  "pace": 1.2,
+  "activeAuthors28d": 53,
+  "prsOpenedPerWeek": 113,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 676.1,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 1.8,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.1
+ },
+ "size": "large",
+ "headsPerWeek": 359,
+ "score": 62,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 71,
+  "reliability": 32,
+  "efficiency": 86
+ },
+ "detail": {
+  "speed": {
+   "wait": 77,
+   "forSize": 56,
+   "tail": 79
+  },
+  "reliability": {
+   "flakes": 59,
+   "mainRed": 4,
+   "redHeads": 12
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": 76,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 22941.3,
+  "prBilledMinutesPerDay": 26875.2,
+  "jobMinutesPerMergedPr": null,
+  "expectedMinutesPerMergedPr": 110.7,
+  "expectedWait": 9.2,
+  "workflowsOnPrs": 13
+ },
+ "wait": {
+  "heads": 91,
+  "timed": 40,
+  "p50": 9.316666666666666,
+  "p75": 10.85,
+  "p90": 12.683333333333334,
+  "redRate": 0.45054945054945056,
+  "rerunRate": 0.10989010989010989,
+  "passedOnRerunRate": 0.054945054945054944,
+  "cancelledRate": 0.43956043956043955,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "non-native",
+    16
+   ],
+   [
+    "macOS",
+    14
+   ],
+   [
+    "Windows",
+    8
+   ]
+  ],
+  "redBy": [
+   [
+    "Linux",
+    17
+   ],
+   [
+    "macOS",
+    17
+   ],
+   [
+    "Windows",
+    15
+   ]
+  ],
+  "leftOut": [
+   "Labeler"
+  ],
+  "heavyWorkflows": [
+   "Linux",
+   "macOS",
+   "Windows",
+   "non-native"
+  ],
+  "allPushesP50": 9.316666666666666
+ },
+ "main": {
+  "heads": 26,
+  "p50": 9.583333333333334,
+  "p90": 15.183333333333334,
+  "redRate": 0.38461538461538464,
+  "redBy": [
+   [
+    "Windows",
+    7
+   ],
+   [
+    "Linux",
+    6
+   ],
+   [
+    "macOS",
+    6
+   ]
+  ]
+ },
+ "botRunShare": 0.018,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 19,
+  "spanMin": 7.933333333333334,
+  "jobMinutes": 45.81666666666666,
+  "billedMinutes": 53,
+  "subMinuteJobs": 6,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.31843575418994413,
+  "critical": {
+   "name": "freebsd 14.5, CM clang openssl arm64",
+   "minutes": 7.9,
+   "shareOfSpan": 0.9957983193277311
+  },
+  "longest": {
+   "name": "freebsd 14.5, CM clang openssl arm64",
+   "minutes": 7.9
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 16,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 65
+}

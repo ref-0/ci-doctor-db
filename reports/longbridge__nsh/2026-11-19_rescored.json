@@ -1,0 +1,247 @@
+{
+ "repo": "longbridge/nsh",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 3063,
+  "forks": 210,
+  "languages": [
+   [
+    "Rust",
+    90
+   ],
+   [
+    "TypeScript",
+    4
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "Java",
+    3
+   ]
+  ],
+  "linesOfCode": 1427263,
+  "files": 3164,
+  "sourceFiles": 2476,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1289374,
+   "tests": 185928,
+   "integration": 242,
+   "support": 8129
+  },
+  "testShare": 0.13095779731642956,
+  "packages": {
+   "npm": 1,
+   "cargo": 34,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 36.4,
+  "pace": 11,
+  "activeAuthors28d": "≥66",
+  "prsOpenedPerWeek": 509,
+  "prsMergedPerWeek": 507,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 1.9,
+   "p90": 7.9,
+   "n": 100
+  },
+  "prRunsPerDay": 1249,
+  "runsPerMergedPr": 17.2,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 0.8,
+  "runs": 948,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 5
+ },
+ "size": "large",
+ "headsPerWeek": 1153,
+ "score": 32,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 58
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 95,
+   "runsPerPr": 50,
+   "setup": 56,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 15104.5,
+  "prBilledMinutesPerDay": 15815,
+  "jobMinutesPerMergedPr": 208.5,
+  "expectedMinutesPerMergedPr": 372.7,
+  "expectedWait": 20.1,
+  "workflowsOnPrs": 10
+ },
+ "wait": {
+  "heads": 125,
+  "timed": 58,
+  "p50": 126.03333333333333,
+  "p75": 173.86666666666667,
+  "p90": 225.98333333333332,
+  "redRate": 0.52,
+  "rerunRate": 0.048,
+  "passedOnRerunRate": 0.008,
+  "cancelledRate": 0.304,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "Rust application",
+    30
+   ],
+   [
+    "Linux",
+    14
+   ],
+   [
+    "Compat",
+    6
+   ]
+  ],
+  "redBy": [
+   [
+    "Compat",
+    43
+   ],
+   [
+    "Core",
+    39
+   ],
+   [
+    "Rust application",
+    35
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Linux",
+   "Rust application",
+   "Windows",
+   "Compat",
+   "Website"
+  ],
+  "allPushesP50": 126.03333333333333
+ },
+ "main": {
+  "heads": 298,
+  "p50": 33.81666666666667,
+  "p90": 81.33333333333333,
+  "redRate": 0.03355704697986577,
+  "redBy": [
+   [
+    "Website",
+    10
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 116.93333333333334,
+  "jobMinutes": 60.18333333333333,
+  "billedMinutes": 63,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 1952,
+  "queueP90Sec": 9919,
+  "setupShare": 0.41939966648137855,
+  "critical": {
+   "name": "web",
+   "minutes": 54.86666666666667,
+   "shareOfSpan": 0.5229475484606613
+  },
+  "longest": {
+   "name": "web",
+   "minutes": 40.53333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    21
+   ],
+   [
+    "public",
+    3
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Setup is 42% of job time: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"web\" runs 41 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 9919 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 47,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 35,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

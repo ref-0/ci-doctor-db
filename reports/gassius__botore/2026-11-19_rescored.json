@@ -1,0 +1,234 @@
+{
+ "repo": "gassius/botore",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.2,
+  "stars": 0,
+  "forks": 0,
+  "languages": [
+   [
+    "TypeScript",
+    68
+   ],
+   [
+    "PLpgSQL",
+    17
+   ],
+   [
+    "JavaScript",
+    9
+   ],
+   [
+    "Shell",
+    6
+   ]
+  ],
+  "linesOfCode": 69351,
+  "linesFrom": "tree",
+  "files": 1822,
+  "sourceFiles": 475,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 50456,
+   "tests": 18104,
+   "integration": 596,
+   "support": 194
+  },
+  "testShare": 0.2724467921481168,
+  "packages": {
+   "npm": 16,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 93,
+  "commitsPerWeekYear": 7.7,
+  "pace": 12,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 30,
+  "prsMergedPerWeek": 28,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 7,
+   "p90": 56.5,
+   "n": 28
+  },
+  "prRunsPerDay": 110.2,
+  "runsPerMergedPr": 27.6
+ },
+ "window": {
+  "days": 6.3,
+  "runs": 692,
+  "runsInPeriod": 692,
+  "truncated": false,
+  "mainDays": 6
+ },
+ "size": "large",
+ "headsPerWeek": 261,
+ "score": 32,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 9,
+  "reliability": 100,
+  "efficiency": 31
+ },
+ "detail": {
+  "speed": {
+   "wait": 15,
+   "forSize": 0,
+   "tail": 16
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 31,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3318.1,
+  "prBilledMinutesPerDay": 3384.3,
+  "jobMinutesPerMergedPr": 829.5,
+  "expectedMinutesPerMergedPr": 137.4,
+  "expectedWait": 10,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 234,
+  "timed": 8,
+  "p50": 45.916666666666664,
+  "p75": 64.03333333333333,
+  "p90": 76.66666666666667,
+  "redRate": 0.3803418803418803,
+  "rerunRate": 0.017094017094017096,
+  "passedOnRerunRate": 0.004273504273504274,
+  "cancelledRate": 0.6837606837606838,
+  "botHeads": 54,
+  "lightHeads": 8,
+  "lastToFinish": [
+   [
+    "Native design captures",
+    8
+   ]
+  ],
+  "redBy": [
+   [
+    "PR",
+    63
+   ],
+   [
+    "Native design captures",
+    27
+   ]
+  ],
+  "leftOut": [
+   "Android release boot smoke"
+  ],
+  "heavyWorkflows": [
+   "Native design captures"
+  ],
+  "allPushesP50": 27.45
+ },
+ "main": {
+  "heads": 18,
+  "p50": 3.6166666666666667,
+  "p90": 4.45,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.8118131868131868,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 3,
+  "spanMin": 60.65,
+  "jobMinutes": 132.41666666666666,
+  "billedMinutes": 134,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 5,
+  "queueP90Sec": 304,
+  "setupShare": 0.05896434421065894,
+  "critical": {
+   "name": "iOS Simulator captures",
+   "minutes": 60.21666666666667,
+   "shareOfSpan": 0.9347764169752208
+  },
+  "longest": {
+   "name": "iOS Simulator captures",
+   "minutes": 60.583333333333336
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    18
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for turbo.json: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"iOS Simulator captures\" runs 61 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 304 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "apiCalls": 22,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 41,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

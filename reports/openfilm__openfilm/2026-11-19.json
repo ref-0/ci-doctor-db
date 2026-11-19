@@ -1,0 +1,228 @@
+{
+  "repo": "openfilm/openfilm",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 0.1,
+    "stars": 8316,
+    "forks": 815,
+    "languages": [
+      [
+        "TypeScript",
+        48
+      ],
+      [
+        "JavaScript",
+        43
+      ],
+      [
+        "HTML",
+        8
+      ],
+      [
+        "CSS",
+        1
+      ]
+    ],
+    "linesOfCode": 541301,
+    "files": 3610,
+    "sourceFiles": 1342,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 412654,
+      "tests": 128578,
+      "integration": 68,
+      "support": 0
+    },
+    "testShare": 0.23766147682082747,
+    "packages": {
+      "npm": 8,
+      "cargo": 0,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 42.5,
+    "commitsPerWeekYear": 5.5,
+    "pace": 7.7,
+    "activeAuthors28d": 20,
+    "prsOpenedPerWeek": 26,
+    "prsMergedPerWeek": 25,
+    "botShareOfMergedPrs": 8,
+    "openToMergeHours": {
+      "p50": 20.2,
+      "p90": 91.8,
+      "n": 23
+    },
+    "prRunsPerDay": 12.3,
+    "runsPerMergedPr": 3.4,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 6.3,
+    "runs": 78,
+    "runsInPeriod": 78,
+    "truncated": false,
+    "mainDays": 6.1
+  },
+  "size": "medium",
+  "headsPerWeek": 85,
+  "score": 46,
+  "grade": "F",
+  "band": "slow",
+  "parts": {
+    "speed": 30,
+    "reliability": 57,
+    "efficiency": 72
+  },
+  "detail": {
+    "speed": {
+      "wait": 39,
+      "forSize": 0,
+      "tail": 48
+    },
+    "reliability": {
+      "flakes": 50,
+      "mainRed": 70,
+      "redHeads": 50
+    },
+    "efficiency": {
+      "minutesPerPr": 53,
+      "runsPerPr": 100,
+      "setup": 100,
+      "queue": 47,
+      "shardIdle": 59
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 697.7,
+    "prBilledMinutesPerDay": 721.4,
+    "jobMinutesPerMergedPr": 195.4,
+    "expectedMinutesPerMergedPr": 145.5,
+    "expectedWait": 12.1,
+    "workflowsOnPrs": 1
+  },
+  "wait": {
+    "heads": 77,
+    "timed": 29,
+    "p50": 31.016666666666666,
+    "p75": 34.13333333333333,
+    "p90": 36.11666666666667,
+    "redRate": 0.2987012987012987,
+    "rerunRate": 0.2077922077922078,
+    "passedOnRerunRate": 0.06493506493506493,
+    "cancelledRate": 0.1038961038961039,
+    "botHeads": 3,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "ci",
+        29
+      ]
+    ],
+    "redBy": [
+      [
+        "ci",
+        23
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "ci"
+    ],
+    "allPushesP50": 31.016666666666666
+  },
+  "main": {
+    "heads": 26,
+    "p50": 32,
+    "p90": 39.03333333333333,
+    "redRate": 0.15384615384615385,
+    "redBy": [
+      [
+        "ci",
+        4
+      ]
+    ]
+  },
+  "botRunShare": 0.18461538461538463,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 16,
+    "spanMin": 19.383333333333333,
+    "jobMinutes": 104.68333333333334,
+    "billedMinutes": 113,
+    "subMinuteJobs": 7,
+    "queueP50Sec": 3,
+    "queueP90Sec": 61,
+    "setupShare": 0.1750760852154413,
+    "critical": {
+      "name": "test (windows-latest)",
+      "minutes": 0.06666666666666667,
+      "shareOfSpan": 0.0023121387283236996
+    },
+    "longest": {
+      "name": "windows / shard 2/3",
+      "minutes": 17.9
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        96
+      ]
+    ],
+    "shard": {
+      "name": "windows / #/3",
+      "shards": 3,
+      "medianMin": 16.95,
+      "maxMin": 17.9,
+      "maxOverMedian": 1.221001221001221,
+      "idleTail": 0.22377405338299194
+    }
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 5,
+    "cancelInProgress": true,
+    "pathFilters": false,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": true,
+    "packageManager": "pnpm",
+    "fastLint": false,
+    "eslint": false,
+    "testResults": false,
+    "depBotsBatched": false,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "6% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "Jobs wait 61 s for a runner at p90",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 8
+}

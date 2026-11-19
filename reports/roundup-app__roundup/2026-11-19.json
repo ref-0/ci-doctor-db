@@ -1,0 +1,220 @@
+{
+ "repo": "roundup-app/roundup",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 0,
+  "forks": 0,
+  "languages": [
+   [
+    "TypeScript",
+    45
+   ],
+   [
+    "Rust",
+    45
+   ],
+   [
+    "Python",
+    5
+   ],
+   [
+    "JavaScript",
+    2
+   ]
+  ],
+  "linesOfCode": 573213,
+  "linesFrom": "tree",
+  "files": 5008,
+  "sourceFiles": 2334,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 284773,
+   "tests": 259111,
+   "integration": 7825,
+   "support": 21504
+  },
+  "testShare": 0.5031989298210274,
+  "packages": {
+   "npm": 6,
+   "cargo": 17,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 488.5,
+  "pace": 7.6,
+  "activeAuthors28d": "≥1",
+  "prsOpenedPerWeek": 468,
+  "prsMergedPerWeek": 411,
+  "botShareOfMergedPrs": 75,
+  "openToMergeHours": {
+   "p50": 0.1,
+   "p90": 13.9,
+   "n": 25
+  },
+  "prRunsPerDay": 812.5,
+  "runsPerMergedPr": 13.8
+ },
+ "window": {
+  "days": 1.2,
+  "runs": 998,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.8
+ },
+ "size": "large",
+ "headsPerWeek": 1590,
+ "score": 66,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 54,
+  "reliability": 75,
+  "efficiency": 82
+ },
+ "detail": {
+  "speed": {
+   "wait": 65,
+   "forSize": 47,
+   "tail": 47
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 59,
+   "redHeads": 43
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 59,
+   "setup": 66,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2846.7,
+  "prBilledMinutesPerDay": 4176.4,
+  "jobMinutesPerMergedPr": 48.5,
+  "expectedMinutesPerMergedPr": 143.7,
+  "expectedWait": 12,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 279,
+  "timed": 32,
+  "p50": 14,
+  "p75": 33,
+  "p90": 37.81666666666667,
+  "redRate": 0.32616487455197135,
+  "rerunRate": 0.007168458781362007,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.25806451612903225,
+  "botHeads": 144,
+  "lightHeads": 29,
+  "lastToFinish": [
+   [
+    "Check",
+    32
+   ]
+  ],
+  "redBy": [
+   [
+    "Check",
+    100
+   ],
+   [
+    "loop",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Check"
+  ],
+  "allPushesP50": 9.233333333333333
+ },
+ "main": {
+  "heads": 150,
+  "p50": 34.46666666666667,
+  "p90": 54.96666666666667,
+  "redRate": 0.19333333333333333,
+  "redBy": [
+   [
+    "Check",
+    29
+   ]
+  ]
+ },
+ "botRunShare": 0.7619414483821263,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 3.0166666666666666,
+  "jobMinutes": 5.6,
+  "billedMinutes": 8,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.37237237237237236,
+  "critical": {
+   "name": "pre",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.02247191011235955
+  },
+  "longest": {
+   "name": "lint",
+   "minutes": 2.816666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 13,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 2.7× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "apiCalls": 37
+}

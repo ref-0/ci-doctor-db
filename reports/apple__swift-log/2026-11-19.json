@@ -1,0 +1,212 @@
+{
+ "repo": "apple/swift-log",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 7.8,
+  "stars": 4057,
+  "forks": 358,
+  "languages": [
+   [
+    "Swift",
+    98
+   ],
+   [
+    "CMake",
+    2
+   ]
+  ],
+  "linesOfCode": 12587,
+  "linesFrom": "tree",
+  "files": 144,
+  "sourceFiles": 42,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 6645,
+   "tests": 5942,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.4721058457757557,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 1.8,
+  "commitsPerWeekYear": 1.8,
+  "pace": 1,
+  "activeAuthors28d": 6,
+  "prsOpenedPerWeek": 3,
+  "prsMergedPerWeek": 1,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 62.1,
+   "p90": 62.1,
+   "n": 1
+  },
+  "prRunsPerDay": 7.4,
+  "runsPerMergedPr": 52
+ },
+ "window": {
+  "days": 5.2,
+  "runs": 39,
+  "runsInPeriod": 39,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "small",
+ "headsPerWeek": 24,
+ "score": 59,
+ "grade": "D+",
+ "band": "ok",
+ "parts": {
+  "speed": 54,
+  "reliability": 80,
+  "efficiency": 43
+ },
+ "detail": {
+  "speed": {
+   "wait": 73,
+   "forSize": 0,
+   "tail": 81
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 6,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 435.8,
+  "prBilledMinutesPerDay": 520.2,
+  "jobMinutesPerMergedPr": 3050.4,
+  "expectedMinutesPerMergedPr": 21.3,
+  "expectedWait": 2,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 18,
+  "timed": 15,
+  "p50": 10.6,
+  "p75": 11.45,
+  "p90": 11.85,
+  "redRate": 0.5555555555555556,
+  "rerunRate": 0.05555555555555555,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.05555555555555555,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "PR",
+    15
+   ]
+  ],
+  "redBy": [
+   [
+    "PR",
+    10
+   ]
+  ],
+  "leftOut": [
+   "PR label"
+  ],
+  "heavyWorkflows": [
+   "PR"
+  ],
+  "allPushesP50": 10.6
+ },
+ "main": {
+  "heads": 1,
+  "p50": 367.71666666666664,
+  "p90": 367.71666666666664,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.075,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 51,
+  "spanMin": 10.833333333333334,
+  "jobMinutes": 131.01666666666665,
+  "billedMinutes": 156,
+  "subMinuteJobs": 20,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.05337752886044119,
+  "critical": {
+   "name": "Tests / Test / Debug-Test-Nightly Windows Swift nightly-main",
+   "minutes": 10.066666666666666,
+   "shareOfSpan": 0.9333333333333332
+  },
+  "longest": {
+   "name": "Tests / Test / Debug-Test-Nightly Windows Swift nightly-main",
+   "minutes": 10.066666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    286
+   ],
+   [
+    "self-hosted",
+    30
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Tests / Test / Debug-Test-Nightly Windows Swift nightly-main\" runs 10 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 5
+}

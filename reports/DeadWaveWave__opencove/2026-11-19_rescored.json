@@ -1,0 +1,228 @@
+{
+ "repo": "DeadWaveWave/opencove",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 0.7,
+  "stars": 1652,
+  "forks": 151,
+  "languages": [
+   [
+    "TypeScript",
+    94
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "CSS",
+    2
+   ],
+   [
+    "PowerShell",
+    0
+   ]
+  ],
+  "linesOfCode": 867743,
+  "files": 5415,
+  "sourceFiles": 5124,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 369752,
+   "tests": 355192,
+   "integration": 141947,
+   "support": 877
+  },
+  "testShare": 0.5739046755237628,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 61.8,
+  "commitsPerWeekYear": 16.5,
+  "pace": 3.7,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 113,
+  "prsMergedPerWeek": 111,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 1.9,
+   "p90": 10.8,
+   "n": 100
+  },
+  "prRunsPerDay": 88.8,
+  "runsPerMergedPr": 5.6,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 5.9,
+  "runs": 526,
+  "runsInPeriod": 526,
+  "truncated": false,
+  "mainDays": 5.8
+ },
+ "size": "medium",
+ "headsPerWeek": 227,
+ "score": 27,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 5,
+  "reliability": 34,
+  "efficiency": 86
+ },
+ "detail": {
+  "speed": {
+   "wait": 11,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 0,
+   "mainRed": 81
+  },
+  "efficiency": {
+   "minutesPerPr": 63,
+   "runsPerPr": 95,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5451.1,
+  "prBilledMinutesPerDay": 5677.8,
+  "jobMinutesPerMergedPr": 343.8,
+  "expectedMinutesPerMergedPr": 316.2,
+  "expectedWait": 17.9,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 192,
+  "timed": 110,
+  "p50": 59.083333333333336,
+  "p75": 123.05,
+  "p90": 183.3,
+  "redRate": 0.296875,
+  "rerunRate": 0.234375,
+  "passedOnRerunRate": 0.13020833333333334,
+  "cancelledRate": 0.18229166666666666,
+  "botHeads": 1,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "CI",
+    110
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    52
+   ],
+   [
+    "PR Template Check",
+    12
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 59.083333333333336
+ },
+ "main": {
+  "heads": 111,
+  "p50": 38.25,
+  "p90": 63.93333333333333,
+  "redRate": 0.11711711711711711,
+  "redBy": [
+   [
+    "CI",
+    13
+   ]
+  ]
+ },
+ "botRunShare": 0.009419152276295133,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 22.233333333333334,
+  "jobMinutes": 119.81666666666666,
+  "billedMinutes": 123,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.07845874633533435,
+  "critical": {
+   "name": "e2e-duration-summary",
+   "minutes": 0.16666666666666666,
+   "shareOfSpan": 0.007363770250368188
+  },
+  "longest": {
+   "name": "e2e-ubuntu (4)",
+   "minutes": 22.366666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "13% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "p90 is 3.1× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "apiCalls": 18,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 31,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

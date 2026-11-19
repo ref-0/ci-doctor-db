@@ -1,0 +1,235 @@
+{
+ "repo": "prometheus/alertmanager",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 13.4,
+  "stars": 8699,
+  "forks": 2513,
+  "languages": [
+   [
+    "Go",
+    87
+   ],
+   [
+    "Elm",
+    8
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "Go Template",
+    1
+   ]
+  ],
+  "linesOfCode": 103121,
+  "files": 782,
+  "sourceFiles": 469,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 58479,
+   "tests": 47715,
+   "integration": 941,
+   "support": 934
+  },
+  "testShare": 0.4588716575115443,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "commitsPerWeek": 10,
+  "commitsPerWeekYear": 13,
+  "pace": 0.7,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 13,
+  "prsMergedPerWeek": 2,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 578.6,
+   "p90": 861.4,
+   "n": 2
+  },
+  "prRunsPerDay": 9,
+  "runsPerMergedPr": 31.6,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 6.7,
+  "runs": 60,
+  "runsInPeriod": 60,
+  "truncated": false,
+  "mainDays": 4.3
+ },
+ "size": "small",
+ "headsPerWeek": 28,
+ "score": 84,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 82,
+  "reliability": 100,
+  "efficiency": 76
+ },
+ "detail": {
+  "speed": {
+   "wait": 81,
+   "forSize": 80,
+   "tail": 89
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 81,
+   "runsPerPr": 26,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 33.3,
+  "prBilledMinutesPerDay": 41.5,
+  "jobMinutesPerMergedPr": 116.6,
+  "expectedMinutesPerMergedPr": 156.6,
+  "expectedWait": 11,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 27,
+  "timed": 12,
+  "p50": 7.566666666666666,
+  "p75": 7.633333333333334,
+  "p90": 8.266666666666667,
+  "redRate": 0.037037037037037035,
+  "rerunRate": 0.07407407407407407,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    12
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 7.566666666666666
+ },
+ "main": {
+  "heads": 2,
+  "p50": 0.9,
+  "p90": 0.9833333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.030303030303030304,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 5.916666666666667,
+  "jobMinutes": 13.966666666666665,
+  "billedMinutes": 16,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.08104395604395605,
+  "critical": {
+   "name": "Test",
+   "minutes": 3.55,
+   "shareOfSpan": 0.626470588235294
+  },
+  "longest": {
+   "name": "Test",
+   "minutes": 3.55
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 43,
+  "over10s": 2,
+  "top": [
+   {
+    "file": "github.com/prometheus/alertmanager/test/with_api_v2/acceptance",
+    "sec": 42.347,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/app",
+    "sec": 11.403,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/dispatch",
+    "sec": 8.792,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/notify/email",
+    "sec": 5.367,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/provider/mem",
+    "sec": 4.186,
+    "job": "Test"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "2 test files take over 10 s; the slowest, github.com/prometheus/alertmanager/test/with_api_v2/acceptance, takes 42 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  }
+ ],
+ "apiCalls": 11,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 76,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

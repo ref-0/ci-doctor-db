@@ -1,0 +1,219 @@
+{
+ "repo": "godotengine/godot",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 12.9,
+  "stars": 120383,
+  "forks": 27565,
+  "languages": [
+   [
+    "C++",
+    87
+   ],
+   [
+    "C#",
+    3
+   ],
+   [
+    "Java",
+    2
+   ],
+   [
+    "C",
+    2
+   ]
+  ],
+  "linesOfCode": 2337019,
+  "linesFrom": "tree",
+  "files": 14465,
+  "sourceFiles": 4415,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2223026,
+   "tests": 112633,
+   "integration": 0,
+   "support": 1360
+  },
+  "testShare": 0.04877705246474173,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 118.8,
+  "commitsPerWeekYear": 161.6,
+  "pace": 0.7,
+  "activeAuthors28d": 89,
+  "prsOpenedPerWeek": 163,
+  "prsMergedPerWeek": 67,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 62.3,
+   "p90": 992.3,
+   "n": 67
+  },
+  "prRunsPerDay": 48.5,
+  "runsPerMergedPr": 5.1
+ },
+ "window": {
+  "days": 7,
+  "runs": 340,
+  "runsInPeriod": 340,
+  "truncated": false,
+  "mainDays": 5.4
+ },
+ "size": "large",
+ "headsPerWeek": 337,
+ "score": 71,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 56,
+  "reliability": 100,
+  "efficiency": 84
+ },
+ "detail": {
+  "speed": {
+   "wait": 51,
+   "forSize": 74,
+   "tail": 24
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 56,
+   "runsPerPr": 99,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5242.4,
+  "prBilledMinutesPerDay": 5644.1,
+  "jobMinutesPerMergedPr": 547.7,
+  "expectedMinutesPerMergedPr": 438.5,
+  "expectedWait": 22.5,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 337,
+  "timed": 247,
+  "p50": 17.116666666666667,
+  "p75": 34.266666666666666,
+  "p90": 61.9,
+  "redRate": 0.16023738872403562,
+  "rerunRate": 0.19584569732937684,
+  "passedOnRerunRate": 0.002967359050445104,
+  "cancelledRate": 0.05637982195845697,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "🔗 GHA",
+    247
+   ]
+  ],
+  "redBy": [
+   [
+    "🔗 GHA",
+    55
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "🔗 GHA"
+  ],
+  "allPushesP50": 17.116666666666667
+ },
+ "main": {
+  "heads": 8,
+  "p50": 21.316666666666666,
+  "p90": 72.56666666666666,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 20,
+  "spanMin": 50.9,
+  "jobMinutes": 350.06666666666666,
+  "billedMinutes": 361,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.1433482952917582,
+  "critical": {
+   "name": "🍎 macOS / Editor (target=editor)",
+   "minutes": 46.75,
+   "shareOfSpan": 0.5757389162561576
+  },
+  "longest": {
+   "name": "🏁 Windows / Template w/ GCC (target=template_release, use_mingw=yes)",
+   "minutes": 54.55
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    120
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 9,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "\"🏁 Windows / Template w/ GCC (target=template_release, use_mingw=yes)\" runs 55 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 3.6× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 26,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 73,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

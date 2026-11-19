@@ -1,0 +1,227 @@
+{
+  "repo": "ling-stack-org/ling-stack",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 0.5,
+    "stars": 983,
+    "forks": 112,
+    "languages": [
+      [
+        "TypeScript",
+        57
+      ],
+      [
+        "JavaScript",
+        39
+      ],
+      [
+        "CSS",
+        2
+      ],
+      [
+        "Swift",
+        1
+      ]
+    ],
+    "linesOfCode": 2210050,
+    "files": 7608,
+    "sourceFiles": 6404,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 1146234,
+      "tests": 861820,
+      "integration": 202763,
+      "support": 3364
+    },
+    "testShare": 0.4823213535167915,
+    "packages": {
+      "npm": 21,
+      "cargo": 4,
+      "go": 1,
+      "python": 0
+    },
+    "commitsPerWeek": "≥125",
+    "commitsPerWeekYear": 35.3,
+    "pace": 3.8,
+    "activeAuthors28d": "≥3",
+    "prsOpenedPerWeek": 44,
+    "prsMergedPerWeek": 53,
+    "botShareOfMergedPrs": 22.6,
+    "openToMergeHours": {
+      "p50": 3.8,
+      "p90": 30,
+      "n": 41
+    },
+    "prRunsPerDay": 135.1,
+    "runsPerMergedPr": 17.8,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 7.1,
+    "runs": 939,
+    "runsInPeriod": 939,
+    "truncated": false,
+    "mainDays": 0
+  },
+  "size": "large",
+  "headsPerWeek": 299,
+  "score": 41,
+  "grade": "F",
+  "band": "slow",
+  "parts": {
+    "speed": 40,
+    "reliability": 47,
+    "efficiency": 36
+  },
+  "detail": {
+    "speed": {
+      "wait": 44,
+      "forSize": 48,
+      "tail": 26
+    },
+    "reliability": {
+      "flakes": 37,
+      "mainRed": null,
+      "redHeads": 68
+    },
+    "efficiency": {
+      "minutesPerPr": 2,
+      "runsPerPr": 49,
+      "setup": 100,
+      "queue": 0,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 8172.4,
+    "prBilledMinutesPerDay": 8677.9,
+    "jobMinutesPerMergedPr": 1079.4,
+    "expectedMinutesPerMergedPr": 282.3,
+    "expectedWait": 23.5,
+    "workflowsOnPrs": 9
+  },
+  "wait": {
+    "heads": 304,
+    "timed": 102,
+    "p50": 27.2,
+    "p75": 45.11666666666667,
+    "p90": 67.76666666666667,
+    "redRate": 0.22697368421052633,
+    "rerunRate": 0.18092105263157895,
+    "passedOnRerunRate": 0.07894736842105263,
+    "cancelledRate": 0.41118421052631576,
+    "botHeads": 22,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "CI",
+        99
+      ],
+      [
+        "CodeQL",
+        2
+      ],
+      [
+        "Desktop build · 709/merge",
+        1
+      ]
+    ],
+    "redBy": [
+      [
+        "CI",
+        68
+      ],
+      [
+        "Desktop build · 709/merge",
+        1
+      ]
+    ],
+    "leftOut": [
+      "Full CI label"
+    ],
+    "heavyWorkflows": [
+      "CI"
+    ],
+    "allPushesP50": 27.2
+  },
+  "main": {
+    "heads": 0,
+    "p50": null,
+    "p90": null,
+    "redRate": null,
+    "redBy": []
+  },
+  "botRunShare": 0.10197710718002082,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 27,
+    "spanMin": 25.416666666666668,
+    "jobMinutes": 231.05,
+    "billedMinutes": 246,
+    "subMinuteJobs": 4,
+    "queueP50Sec": 2,
+    "queueP90Sec": 557,
+    "setupShare": 0.08235800962159834,
+    "critical": {
+      "name": "CI timing telemetry",
+      "minutes": 0.43333333333333335,
+      "shareOfSpan": 0.016887816646562123
+    },
+    "longest": {
+      "name": "Common checks (fast lane)",
+      "minutes": 1.3666666666666667
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        137
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 1,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 10,
+    "cancelInProgress": true,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": true,
+    "mergeQueue": false,
+    "scheduled": true,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": true,
+    "shardsConfigured": true,
+    "timeouts": true,
+    "packageManager": "pnpm",
+    "fastLint": false,
+    "eslint": false,
+    "testResults": true,
+    "depBotsBatched": true,
+    "agentsMd": [
+      "AGENTS.md"
+    ],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "8% of PR heads went green only on a rerun: track and fix flakes",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+    },
+    {
+      "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+    },
+    {
+      "text": "Jobs wait 557 s for a runner at p90",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+    }
+  ],
+  "apiCalls": 30
+}

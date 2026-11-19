@@ -1,0 +1,228 @@
+{
+ "repo": "apache/iceberg",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8,
+  "stars": 9445,
+  "forks": 3697,
+  "languages": [
+   [
+    "Java",
+    98
+   ],
+   [
+    "Scala",
+    1
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "ANTLR",
+    0
+   ]
+  ],
+  "linesOfCode": 1847049,
+  "linesFrom": "tree",
+  "files": 6706,
+  "sourceFiles": 6303,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 745989,
+   "tests": 1084504,
+   "integration": 16556,
+   "support": 0
+  },
+  "testShare": 0.596118344612528,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 50,
+  "commitsPerWeekYear": 37.8,
+  "pace": 1.3,
+  "activeAuthors28d": 62,
+  "prsOpenedPerWeek": 107,
+  "prsMergedPerWeek": 65,
+  "botShareOfMergedPrs": 20,
+  "openToMergeHours": {
+   "p50": 37.4,
+   "p90": 864.7,
+   "n": 52
+  },
+  "prRunsPerDay": 542.6,
+  "runsPerMergedPr": 58.4
+ },
+ "window": {
+  "days": 2.2,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 2.6
+ },
+ "size": "large",
+ "headsPerWeek": 288,
+ "score": 45,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 21,
+  "reliability": 96,
+  "efficiency": 29
+ },
+ "detail": {
+  "speed": {
+   "wait": 27,
+   "forSize": 10,
+   "tail": 25
+  },
+  "reliability": {
+   "flakes": 99,
+   "mainRed": 100,
+   "redHeads": 81
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 1,
+   "setup": 100,
+   "queue": 27,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 12273.7,
+  "prBilledMinutesPerDay": 12874.9,
+  "jobMinutesPerMergedPr": 1321.8,
+  "expectedMinutesPerMergedPr": 257.9,
+  "expectedWait": 21.5,
+  "workflowsOnPrs": 15
+ },
+ "wait": {
+  "heads": 91,
+  "timed": 51,
+  "p50": 45.583333333333336,
+  "p75": 56.4,
+  "p90": 72.5,
+  "redRate": 0.17582417582417584,
+  "rerunRate": 0.01098901098901099,
+  "passedOnRerunRate": 0.01098901098901099,
+  "cancelledRate": 0.2857142857142857,
+  "botHeads": 0,
+  "lightHeads": 12,
+  "lastToFinish": [
+   [
+    "Spark CI",
+    43
+   ],
+   [
+    "Flink CI",
+    7
+   ],
+   [
+    "CVE Scan",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Java CI",
+    8
+   ],
+   [
+    "Spark CI",
+    6
+   ],
+   [
+    "PR Title Check",
+    5
+   ]
+  ],
+  "leftOut": [
+   "Source Release CI",
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Spark CI",
+   "Flink CI"
+  ],
+  "allPushesP50": 40.63333333333333
+ },
+ "main": {
+  "heads": 25,
+  "p50": 63.983333333333334,
+  "p90": 108.9,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.016,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 10,
+  "spanMin": 30.883333333333333,
+  "jobMinutes": 250.05,
+  "billedMinutes": 254,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 118,
+  "setupShare": 0.024083769633507852,
+  "critical": {
+   "name": "spark-tests (17, pull_request, 4.2, 2.13, core)",
+   "minutes": 32.766666666666666,
+   "shareOfSpan": 0.9989189189189189
+  },
+  "longest": {
+   "name": "spark-tests (17, pull_request, 4.2, 2.13, core)",
+   "minutes": 32.766666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    60
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 23,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"spark-tests (17, pull_request, 4.2, 2.13, core)\" runs 33 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 118 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 60
+}

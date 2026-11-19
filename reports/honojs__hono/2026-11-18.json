@@ -1,0 +1,234 @@
+{
+ "repo": "honojs/hono",
+ "date": "2026-11-18",
+ "profile": {
+  "ageYears": 4.9,
+  "stars": 32979,
+  "forks": 1484,
+  "languages": [
+   [
+    "TypeScript",
+    100
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "linesOfCode": 99349,
+  "files": 585,
+  "sourceFiles": 452,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 31175,
+   "tests": 69305,
+   "integration": 0,
+   "support": 87
+  },
+  "testShare": 0.6900043519721262,
+  "packages": {
+   "npm": 9,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 14.8,
+  "commitsPerWeekYear": 9.5,
+  "pace": 1.5,
+  "activeAuthors28d": 14,
+  "prsOpenedPerWeek": 18,
+  "prsMergedPerWeek": 22,
+  "botShareOfMergedPrs": 72.7,
+  "openToMergeHours": {
+   "p50": 406.6,
+   "p90": 1534.6,
+   "n": 6
+  },
+  "prRunsPerDay": 13.2,
+  "runsPerMergedPr": 4.2
+ },
+ "window": {
+  "days": 7.4,
+  "runs": 263,
+  "runsInPeriod": 263,
+  "truncated": false
+ },
+ "size": "small",
+ "headsPerWeek": 23,
+ "score": 76,
+ "parts": {
+  "speed": 100,
+  "reliability": 32,
+  "efficiency": 82
+ },
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 0,
+   "mainRed": 51,
+   "redHeads": 73
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 24,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 31.5,
+  "prBilledMinutesPerDay": 54,
+  "jobMinutesPerMergedPr": 10,
+  "expectedMinutesPerMergedPr": 59.8,
+  "expectedWait": 5,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 24,
+  "timed": 17,
+  "p50": 1.7666666666666666,
+  "p75": 1.8166666666666667,
+  "p90": 1.95,
+  "redRate": 0.20833333333333334,
+  "rerunRate": 0.2916666666666667,
+  "passedOnRerunRate": 0.20833333333333334,
+  "cancelledRate": 0,
+  "lastToFinish": [
+   [
+    "ci",
+    17
+   ]
+  ],
+  "redBy": [
+   [
+    "ci",
+    5
+   ]
+  ],
+  "leftOut": []
+ },
+ "main": {
+  "heads": 27,
+  "p50": 1.4166666666666667,
+  "p90": 1.7333333333333334,
+  "redRate": 0.2222222222222222,
+  "redBy": [
+   [
+    "ci",
+    6
+   ]
+  ]
+ },
+ "botRunShare": 0.311787072243346,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 13,
+  "spanMin": 1.7833333333333334,
+  "jobMinutes": 8.849999999999998,
+  "billedMinutes": 16,
+  "subMinuteJobs": 10,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.5784114052953157,
+  "critical": {
+   "name": "HTTP Speed Check on PR",
+   "minutes": 1.75,
+   "shareOfSpan": 0.9807692307692307
+  },
+  "longest": {
+   "name": "HTTP Speed Check on PR",
+   "minutes": 1.75
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    78
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 126,
+  "over10s": 0,
+  "top": [
+   {
+    "file": "build/jsx-types.test.ts",
+    "sec": 5.35,
+    "job": "Main"
+   },
+   {
+    "file": "src/middleware/timeout/index.test.ts",
+    "sec": 4.25,
+    "job": "Main"
+   },
+   {
+    "file": "src/jsx/dom/index.test.tsx",
+    "sec": 2.905,
+    "job": "Main"
+   },
+   {
+    "file": "build/declaration-emit.test.ts",
+    "sec": 2.134,
+    "job": "Main"
+   },
+   {
+    "file": "src/middleware/logger/index.test.ts",
+    "sec": 2.061,
+    "job": "Main"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": "vite-plus",
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "21% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  },
+  {
+   "text": "No AGENTS.md: agents don't know the narrow test command",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 1
+}

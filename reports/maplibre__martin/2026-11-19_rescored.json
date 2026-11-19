@@ -1,0 +1,266 @@
+{
+ "repo": "maplibre/martin",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 9.1,
+  "stars": 4085,
+  "forks": 418,
+  "languages": [
+   [
+    "Rust",
+    93
+   ],
+   [
+    "TypeScript",
+    5
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Just",
+    1
+   ]
+  ],
+  "linesOfCode": 245497,
+  "files": 2282,
+  "sourceFiles": 720,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 163817,
+   "tests": 53553,
+   "integration": 29697,
+   "support": 741
+  },
+  "testShare": 0.33893695402126456,
+  "packages": {
+   "npm": 2,
+   "cargo": 13,
+   "go": 0,
+   "python": 1
+  },
+  "commitsPerWeek": 53.3,
+  "commitsPerWeekYear": 23.5,
+  "pace": 2.3,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 63,
+  "prsMergedPerWeek": 39,
+  "botShareOfMergedPrs": 41,
+  "openToMergeHours": {
+   "p50": 2.6,
+   "p90": 111.2,
+   "n": 23
+  },
+  "prRunsPerDay": 132.2,
+  "runsPerMergedPr": 23.7,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 736,
+  "runsInPeriod": 738,
+  "truncated": false,
+  "mainDays": 7
+ },
+ "size": "medium",
+ "headsPerWeek": 245,
+ "score": 40,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 36,
+  "reliability": 44,
+  "efficiency": 49
+ },
+ "detail": {
+  "speed": {
+   "wait": 42,
+   "forSize": 27,
+   "tail": 41
+  },
+  "reliability": {
+   "flakes": 76,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 16,
+   "runsPerPr": 37,
+   "setup": 91,
+   "queue": 100,
+   "shardIdle": 23
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3327.2,
+  "prBilledMinutesPerDay": 3842,
+  "jobMinutesPerMergedPr": 597.2,
+  "expectedMinutesPerMergedPr": 208.5,
+  "expectedWait": 13.4,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 248,
+  "timed": 115,
+  "p50": 21.666666666666668,
+  "p75": 31.883333333333333,
+  "p90": 38.53333333333333,
+  "redRate": 0.33064516129032256,
+  "rerunRate": 0.04838709677419355,
+  "passedOnRerunRate": 0.036290322580645164,
+  "cancelledRate": 0.3024193548387097,
+  "botHeads": 23,
+  "lightHeads": 2,
+  "lastToFinish": [
+   [
+    "CI",
+    115
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    59
+   ],
+   [
+    "autofix.ci",
+    35
+   ]
+  ],
+  "leftOut": [
+   "Hotpath benchmark",
+   "Python release",
+   "Relabel Pull Request"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 21.566666666666666
+ },
+ "main": {
+  "heads": 36,
+  "p50": 42.18333333333333,
+  "p90": 96.83333333333333,
+  "redRate": 0.6666666666666666,
+  "redBy": [
+   [
+    "CI",
+    24
+   ]
+  ]
+ },
+ "botRunShare": 0.19870009285051068,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 31,
+  "spanMin": 17.716666666666665,
+  "jobMinutes": 109.58333333333333,
+  "billedMinutes": 125,
+  "subMinuteJobs": 9,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.24637102144093753,
+  "critical": {
+   "name": "CI Finished",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.0031826861871419474
+  },
+  "longest": {
+   "name": "security / CodeQL (rust)",
+   "minutes": 17.4
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    188
+   ]
+  ],
+  "shard": {
+   "name": "rust / Check feature matrix (#)",
+   "shards": 4,
+   "medianMin": 1.4833333333333334,
+   "maxMin": 2.2333333333333334,
+   "maxOverMedian": 1.6,
+   "idleTail": 0.3306347150259067
+  }
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 7625,
+  "over10s": 31,
+  "top": [
+   {
+    "file": "martin-e2e-tests::martin_cp_bulk per_tile_operations_give_the_same_tiles_at_any_thread_count",
+    "sec": 94.81,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin-e2e-tests::martin_cp_bulk per_tile_operations_write_valid_mvt_at_any_thread_count",
+    "sec": 75.68,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin config::file::tiles::postgres::builder::tests::discover_matches_each_fixture",
+    "sec": 59.927,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin::pg_generate_test a_view_split_by_its_integer_id_keeps_negative_and_null_ids",
+    "sec": 59.105,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin::pg_reload_test catalog_follows_create_and_drop_through_the_reloader",
+    "sec": 54.246,
+    "job": "rust / Test against PostGIS variants"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 19,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "\"rust / Check feature matrix (#)\": the slowest shard takes 1.60× the median, 33% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "31 test files take over 10 s; the slowest, martin-e2e-tests::martin_cp_bulk per_tile_operations_give_the_same_tiles_at_any_thread_count, takes 95 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "apiCalls": 28,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 39,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,227 @@
+{
+  "repo": "pubkey/event-reduce",
+  "date": "2026-11-19",
+  "profile": {
+    "ageYears": 6.8,
+    "stars": 756,
+    "forks": 24,
+    "languages": [
+      [
+        "TypeScript",
+        41
+      ],
+      [
+        "Rust",
+        9
+      ],
+      [
+        "C#",
+        9
+      ],
+      [
+        "Python",
+        9
+      ]
+    ],
+    "linesOfCode": 27088,
+    "files": 239,
+    "sourceFiles": 168,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 16740,
+      "tests": 10498,
+      "integration": 59,
+      "support": 0
+    },
+    "testShare": 0.3867227426427758,
+    "packages": {
+      "npm": 2,
+      "cargo": 1,
+      "go": 1,
+      "python": 1
+    },
+    "commitsPerWeek": 46.5,
+    "commitsPerWeekYear": 7.3,
+    "pace": 6.3,
+    "activeAuthors28d": 2,
+    "prsOpenedPerWeek": 21,
+    "prsMergedPerWeek": 51,
+    "botShareOfMergedPrs": 15.7,
+    "openToMergeHours": {
+      "p50": 17.7,
+      "p90": 19.4,
+      "n": 43
+    },
+    "prRunsPerDay": 21.8,
+    "runsPerMergedPr": 3,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 4.2,
+    "runs": 92,
+    "runsInPeriod": 92,
+    "truncated": false,
+    "mainDays": 4.6
+  },
+  "size": "medium",
+  "headsPerWeek": 153,
+  "score": 48,
+  "grade": "F",
+  "band": "slow",
+  "parts": {
+    "speed": 7,
+    "reliability": 100,
+    "efficiency": 74
+  },
+  "detail": {
+    "speed": {
+      "wait": 13,
+      "forSize": 0,
+      "tail": 6
+    },
+    "reliability": {
+      "flakes": 100,
+      "mainRed": 100,
+      "redHeads": 100
+    },
+    "efficiency": {
+      "minutesPerPr": 90,
+      "runsPerPr": 100,
+      "setup": 78,
+      "queue": 0,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 133.7,
+    "prBilledMinutesPerDay": 218,
+    "jobMinutesPerMergedPr": 18.4,
+    "expectedMinutesPerMergedPr": 30.1,
+    "expectedWait": 2.5,
+    "workflowsOnPrs": 1
+  },
+  "wait": {
+    "heads": 92,
+    "timed": 24,
+    "p50": 78.46666666666667,
+    "p75": 132.96666666666667,
+    "p90": 153.58333333333334,
+    "redRate": 0.05434782608695652,
+    "rerunRate": 0,
+    "passedOnRerunRate": 0,
+    "cancelledRate": 0,
+    "botHeads": 68,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "CI",
+        24
+      ]
+    ],
+    "redBy": [
+      [
+        "CI",
+        5
+      ]
+    ],
+    "leftOut": [],
+    "heavyWorkflows": [
+      "CI"
+    ],
+    "allPushesP50": 78.46666666666667
+  },
+  "main": {
+    "heads": 51,
+    "p50": 52.65,
+    "p90": 144.56666666666666,
+    "redRate": 0.0196078431372549,
+    "redBy": [
+      [
+        "CI",
+        1
+      ]
+    ]
+  },
+  "botRunShare": 0.5244755244755245,
+  "jobs": {
+    "runsSampled": 6,
+    "jobs": 8,
+    "spanMin": 3.1,
+    "jobMinutes": 6.299999999999999,
+    "billedMinutes": 10,
+    "subMinuteJobs": 7,
+    "queueP50Sec": 2,
+    "queueP90Sec": 566,
+    "setupShare": 0.3081232492997199,
+    "critical": {
+      "name": "test",
+      "minutes": 2.95,
+      "shareOfSpan": 0.9888268156424581
+    },
+    "longest": {
+      "name": "test",
+      "minutes": 2.8666666666666667
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        48
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 2,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 4,
+    "cancelInProgress": false,
+    "pathFilters": false,
+    "affected": false,
+    "draftSkip": false,
+    "mergeQueue": false,
+    "scheduled": false,
+    "depCache": false,
+    "remoteCache": false,
+    "compilerCache": false,
+    "frozenInstall": false,
+    "shardsConfigured": false,
+    "timeouts": false,
+    "fastLint": false,
+    "eslint": false,
+    "testResults": false,
+    "depBotsBatched": true,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Jobs wait 566 s for a runner at p90",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+    },
+    {
+      "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Move broad checks to a scheduled sweep",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+    },
+    {
+      "text": "Set timeout-minutes on jobs",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 8
+}

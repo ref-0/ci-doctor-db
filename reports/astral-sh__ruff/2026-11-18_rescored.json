@@ -1,0 +1,249 @@
+{
+ "repo": "astral-sh/ruff",
+ "date": "2026-11-18",
+ "profile": {
+  "ageYears": 4.3,
+  "stars": 51271,
+  "forks": 2761,
+  "languages": [
+   [
+    "Rust",
+    97
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "TypeScript",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 1113882,
+  "files": 11334,
+  "sourceFiles": 5108,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 973235,
+   "tests": 47590,
+   "integration": 20348,
+   "support": 72906
+  },
+  "testShare": 0.1264222242920261,
+  "packages": {
+   "npm": 1,
+   "cargo": 57,
+   "go": 0,
+   "python": 33
+  },
+  "commitsPerWeek": 124.5,
+  "commitsPerWeekYear": 102.4,
+  "pace": 1.2,
+  "activeAuthors28d": 47,
+  "prsOpenedPerWeek": 220,
+  "prsMergedPerWeek": 165,
+  "botShareOfMergedPrs": 8,
+  "openToMergeHours": {
+   "p50": 23.1,
+   "p90": 238,
+   "n": 92
+  },
+  "prRunsPerDay": 524.8,
+  "runsPerMergedPr": 22.3,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 1.5,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true
+ },
+ "size": "large",
+ "headsPerWeek": 854,
+ "score": 66,
+ "parts": {
+  "speed": 52,
+  "reliability": 91,
+  "efficiency": 84
+ },
+ "detail": {
+  "speed": {
+   "wait": 47,
+   "forSize": 57,
+   "tail": 62
+  },
+  "reliability": {
+   "flakes": 84,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 40,
+   "setup": 100,
+   "queue": 92,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1964.4,
+  "prBilledMinutesPerDay": 2555.8,
+  "jobMinutesPerMergedPr": 83.3,
+  "expectedMinutesPerMergedPr": 343.4,
+  "expectedWait": 19,
+  "workflowsOnPrs": 8
+ },
+ "wait": {
+  "heads": 180,
+  "timed": 122,
+  "p50": 19.083333333333332,
+  "p75": 19.55,
+  "p90": 20.833333333333332,
+  "redRate": 0.16111111111111112,
+  "rerunRate": 0.08333333333333333,
+  "passedOnRerunRate": 0.027777777777777776,
+  "cancelledRate": 0.2388888888888889,
+  "lastToFinish": [
+   [
+    "CI",
+    119
+   ],
+   [
+    "ty ecosystem-analyzer",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    27
+   ],
+   [
+    "ty ecosystem-analyzer",
+    4
+   ],
+   [
+    "Run memory report",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Release"
+  ]
+ },
+ "main": {
+  "heads": 46,
+  "p50": 19.366666666666667,
+  "p90": 20.75,
+  "redRate": 0.021739130434782608
+ },
+ "botRunShare": 0.148,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 28,
+  "spanMin": 10.05,
+  "jobMinutes": 80.23333333333333,
+  "billedMinutes": 95,
+  "subMinuteJobs": 9,
+  "queueP50Sec": 3,
+  "queueP90Sec": 13,
+  "setupShare": 0.18310463121783876,
+  "critical": {
+   "name": "benchmarks walltime ruff (x86_64)",
+   "minutes": 2.8666666666666667,
+   "shareOfSpan": 0.30228471001757473
+  },
+  "longest": {
+   "name": "cargo fuzz build",
+   "minutes": 7.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    105
+   ],
+   [
+    "Depot",
+    65
+   ],
+   [
+    "Namespace",
+    12
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 9771,
+  "over10s": 10,
+  "top": [
+   {
+    "file": "ruff_annotate_snippets::examples id_hyperlink",
+    "sec": 49.399,
+    "job": "cargo test (linux, release)"
+   },
+   {
+    "file": "ruff_annotate_snippets::examples highlight_source",
+    "sec": 45.921,
+    "job": "cargo test (linux, release)"
+   },
+   {
+    "file": "ruff_annotate_snippets::examples highlight_message",
+    "sec": 40.963,
+    "job": "cargo test (linux, release)"
+   },
+   {
+    "file": "ruff_annotate_snippets::examples elide_header",
+    "sec": 36.122,
+    "job": "cargo test (linux, release)"
+   },
+   {
+    "file": "ruff_annotate_snippets::examples multislice",
+    "sec": 31.877,
+    "job": "cargo test (linux, release)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 27,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "10 test files take over 10 s; the slowest, ruff_annotate_snippets::examples id_hyperlink, takes 49 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  }
+ ],
+ "apiCalls": 19,
+ "rescored": {
+  "from": "2026-11-18.json",
+  "scoreWas": 61,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,219 @@
+{
+  "repo": "Ataraxy-Labs/sem",
+  "date": "2026-11-19",
+  "unscored": "Only 3 PR pushes in the window ran the main workflows; 5 are needed.",
+  "profile": {
+    "ageYears": 0.8,
+    "stars": 3457,
+    "forks": 110,
+    "languages": [
+      [
+        "Rust",
+        73
+      ],
+      [
+        "TypeScript",
+        17
+      ],
+      [
+        "JavaScript",
+        7
+      ],
+      [
+        "Python",
+        3
+      ]
+    ],
+    "linesOfCode": 300685,
+    "files": 824,
+    "sourceFiles": 667,
+    "treeTruncated": false,
+    "sourceLines": {
+      "implementation": 242486,
+      "tests": 55219,
+      "integration": 206,
+      "support": 2773
+    },
+    "testShare": 0.193552821423563,
+    "packages": {
+      "npm": 3,
+      "cargo": 7,
+      "go": 0,
+      "python": 0
+    },
+    "commitsPerWeek": 6.3,
+    "commitsPerWeekYear": 14.2,
+    "pace": 0.5,
+    "activeAuthors28d": 2,
+    "prsOpenedPerWeek": 1,
+    "prsMergedPerWeek": 1,
+    "botShareOfMergedPrs": 0,
+    "openToMergeHours": {
+      "p50": 1,
+      "p90": 1,
+      "n": 1
+    },
+    "prRunsPerDay": 28,
+    "runsPerMergedPr": 196,
+    "linesFrom": "tree"
+  },
+  "window": {
+    "days": 0,
+    "runs": 11,
+    "runsInPeriod": 11,
+    "truncated": false,
+    "mainDays": 0
+  },
+  "size": "medium",
+  "headsPerWeek": 42,
+  "score": null,
+  "grade": null,
+  "band": null,
+  "parts": {},
+  "detail": {
+    "speed": {
+      "wait": 41,
+      "forSize": 0,
+      "tail": 55
+    },
+    "reliability": {
+      "flakes": 100,
+      "mainRed": 100,
+      "redHeads": 0
+    },
+    "efficiency": {
+      "minutesPerPr": 0,
+      "runsPerPr": 0,
+      "setup": 100,
+      "queue": 100,
+      "shardIdle": null
+    }
+  },
+  "efficiency": {
+    "prJobMinutesPerDay": 232.2,
+    "prBilledMinutesPerDay": 248,
+    "jobMinutesPerMergedPr": 1625.6,
+    "expectedMinutesPerMergedPr": 104.2,
+    "expectedWait": 8.7,
+    "workflowsOnPrs": 4
+  },
+  "wait": {
+    "heads": 3,
+    "timed": 3,
+    "p50": 29.35,
+    "p75": 30.15,
+    "p90": 30.15,
+    "redRate": 0.6666666666666666,
+    "rerunRate": 0,
+    "passedOnRerunRate": 0,
+    "cancelledRate": 0,
+    "botHeads": 0,
+    "lightHeads": 0,
+    "lastToFinish": [
+      [
+        "Windows",
+        3
+      ]
+    ],
+    "redBy": [
+      [
+        "Windows",
+        1
+      ],
+      [
+        "Changelog",
+        1
+      ]
+    ],
+    "leftOut": [
+      "Lockfile"
+    ],
+    "heavyWorkflows": [
+      "Windows",
+      "Semver Check"
+    ],
+    "allPushesP50": 29.35
+  },
+  "main": {
+    "heads": 1,
+    "p50": 39.03333333333333,
+    "p90": 39.03333333333333,
+    "redRate": 0,
+    "redBy": []
+  },
+  "botRunShare": 0,
+  "jobs": {
+    "runsSampled": 2,
+    "jobs": 1,
+    "spanMin": 29.316666666666666,
+    "jobMinutes": 29.266666666666666,
+    "billedMinutes": 30,
+    "subMinuteJobs": 0,
+    "queueP50Sec": 3,
+    "queueP90Sec": 3,
+    "setupShare": 0.014991671293725709,
+    "critical": {
+      "name": "build-windows",
+      "minutes": 29.266666666666666,
+      "shareOfSpan": 0.9982944855031267
+    },
+    "longest": {
+      "name": "build-windows",
+      "minutes": 29.266666666666666
+    },
+    "providers": [
+      [
+        "GitHub-hosted",
+        2
+      ]
+    ]
+  },
+  "tests": {
+    "logsRead": 1,
+    "filesTimed": 0,
+    "over10s": 0,
+    "top": []
+  },
+  "practices": {
+    "workflows": 10,
+    "cancelInProgress": false,
+    "pathFilters": true,
+    "affected": false,
+    "draftSkip": true,
+    "mergeQueue": false,
+    "scheduled": false,
+    "depCache": true,
+    "remoteCache": false,
+    "compilerCache": true,
+    "frozenInstall": true,
+    "shardsConfigured": false,
+    "timeouts": true,
+    "fastLint": false,
+    "eslint": false,
+    "testRunner": "vitest",
+    "testResults": false,
+    "depBotsBatched": false,
+    "agentsMd": [],
+    "agentRules": false,
+    "preCommit": false
+  },
+  "fixes": [
+    {
+      "text": "\"build-windows\" runs 29 min in one job: shard it",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+    },
+    {
+      "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+    },
+    {
+      "text": "Move broad checks to a scheduled sweep",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+    },
+    {
+      "text": "No AGENTS.md: agents don't know the narrow test command",
+      "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+    }
+  ],
+  "apiCalls": 6
+}

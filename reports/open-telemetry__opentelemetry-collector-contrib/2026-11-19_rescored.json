@@ -1,0 +1,251 @@
+{
+ "repo": "open-telemetry/opentelemetry-collector-contrib",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 7.4,
+  "stars": 5059,
+  "forks": 4143,
+  "languages": [
+   [
+    "Go",
+    100
+   ],
+   [
+    "Makefile",
+    0
+   ],
+   [
+    "Go Template",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 1939074,
+  "files": 14395,
+  "sourceFiles": 8186,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 854633,
+   "tests": 1052321,
+   "integration": 37151,
+   "support": 3737
+  },
+  "testShare": 0.5612412561183705,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 357,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 98.3,
+  "pace": 1.6,
+  "activeAuthors28d": "≥139",
+  "prsOpenedPerWeek": 198,
+  "prsMergedPerWeek": 178,
+  "botShareOfMergedPrs": 29,
+  "openToMergeHours": {
+   "p50": 33.2,
+   "p90": 1251.4,
+   "n": 71
+  },
+  "prRunsPerDay": 2382,
+  "runsPerMergedPr": 93.7,
+  "linesFrom": "tree"
+ },
+ "window": {
+  "days": 0.4,
+  "runs": 991,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 0.4
+ },
+ "size": "large",
+ "headsPerWeek": 1092,
+ "score": 41,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 28,
+  "reliability": 79,
+  "efficiency": 44
+ },
+ "detail": {
+  "speed": {
+   "wait": 25,
+   "forSize": 28,
+   "tail": 38
+  },
+  "reliability": {
+   "flakes": 97,
+   "mainRed": 54
+  },
+  "efficiency": {
+   "minutesPerPr": 15,
+   "runsPerPr": 0,
+   "setup": 90,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 30543.9,
+  "prBilledMinutesPerDay": 34126,
+  "jobMinutesPerMergedPr": 1201.2,
+  "expectedMinutesPerMergedPr": 412.3,
+  "expectedWait": 21.6,
+  "workflowsOnPrs": 24
+ },
+ "wait": {
+  "heads": 78,
+  "timed": 19,
+  "p50": 34.4,
+  "p75": 35.6,
+  "p90": 42.166666666666664,
+  "redRate": 0.07692307692307693,
+  "rerunRate": 0.05128205128205128,
+  "passedOnRerunRate": 0.01282051282051282,
+  "cancelledRate": 0.23076923076923078,
+  "botHeads": 2,
+  "lightHeads": 33,
+  "lastToFinish": [
+   [
+    "e2e-tests",
+    18
+   ],
+   [
+    "e2e-tests-windows",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "build-and-test",
+    4
+   ],
+   [
+    "build-and-test-arm",
+    3
+   ],
+   [
+    "scoped-test",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "e2e-tests",
+   "build-and-test"
+  ],
+  "allPushesP50": 0.6
+ },
+ "main": {
+  "heads": 19,
+  "p50": 104.25,
+  "p90": 129.18333333333334,
+  "redRate": 0.21052631578947367,
+  "redBy": [
+   [
+    "build-and-test",
+    2
+   ],
+   [
+    "build-and-test-windows",
+    1
+   ],
+   [
+    "build-and-test-darwin",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.07397444519166106,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 19,
+  "spanMin": 33.916666666666664,
+  "jobMinutes": 188.5666666666667,
+  "billedMinutes": 198,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.2482514386896857,
+  "critical": {
+   "name": "kubernetes-test",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.001934235976789168
+  },
+  "longest": {
+   "name": "kubernetes-test-matrix (v1.35.0, processor/k8sattributesprocessor)",
+   "minutes": 20.083333333333332
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 2,
+  "over10s": 2,
+  "top": [
+   {
+    "file": "github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor",
+    "sec": 922.367,
+    "job": "kubernetes-test-matrix (v1.35.0, processor/k8sattributesprocessor)"
+   },
+   {
+    "file": "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver",
+    "sec": 599.228,
+    "job": "kubernetes-test-matrix (v1.34.0, receiver/k8sclusterreceiver)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "\"kubernetes-test-matrix (v1.35.0, processor/k8sattributesprocessor)\" runs 20 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "2 test files take over 10 s; the slowest, github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor, takes 922 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  }
+ ],
+ "apiCalls": 79,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 49,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

@@ -1,0 +1,222 @@
+{
+ "repo": "apache/kafka",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 15.3,
+  "stars": 34233,
+  "forks": 15706,
+  "languages": [
+   [
+    "Java",
+    90
+   ],
+   [
+    "Scala",
+    8
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 2675832,
+  "linesFrom": "tree",
+  "files": 7668,
+  "sourceFiles": 6737,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1085351,
+   "tests": 1427701,
+   "integration": 150042,
+   "support": 12738
+  },
+  "testShare": 0.5943875221653817,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 59.3,
+  "commitsPerWeekYear": 40.3,
+  "pace": 1.5,
+  "activeAuthors28d": 76,
+  "prsOpenedPerWeek": 110,
+  "prsMergedPerWeek": 71,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 102.2,
+   "p90": 1179.8,
+   "n": 71
+  },
+  "prRunsPerDay": 104.9,
+  "runsPerMergedPr": 10.3
+ },
+ "window": {
+  "days": 7.2,
+  "runs": 551,
+  "runsInPeriod": 553,
+  "truncated": false,
+  "mainDays": 7
+ },
+ "size": "large",
+ "headsPerWeek": 311,
+ "score": 39,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 1,
+  "reliability": 99,
+  "efficiency": 44
+ },
+ "detail": {
+  "speed": {
+   "wait": 2,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 94
+  },
+  "efficiency": {
+   "minutesPerPr": 11,
+   "runsPerPr": 71,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 10058.1,
+  "prBilledMinutesPerDay": 10312.9,
+  "jobMinutesPerMergedPr": 991.6,
+  "expectedMinutesPerMergedPr": 310.4,
+  "expectedWait": 25.9,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 318,
+  "timed": 112,
+  "p50": 161.06666666666666,
+  "p75": 215.18333333333334,
+  "p90": 297.65,
+  "redRate": 0.12264150943396226,
+  "rerunRate": 0.3490566037735849,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.06289308176100629,
+  "botHeads": 0,
+  "lightHeads": 54,
+  "lastToFinish": [
+   [
+    "CI",
+    109
+   ],
+   [
+    "Pull Request Reviewed",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    35
+   ],
+   [
+    "Pull Request Reviewed",
+    16
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labeled"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 136.93333333333334
+ },
+ "main": {
+  "heads": 64,
+  "p50": 193.46666666666667,
+  "p90": 360.06666666666666,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.022085889570552148,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 152.06666666666666,
+  "jobMinutes": 315.21666666666664,
+  "billedMinutes": 323,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 2,
+  "queueP90Sec": 315,
+  "setupShare": 0.011595127918727728,
+  "critical": {
+   "name": "build / Collate Test Catalog",
+   "minutes": 0.4,
+   "shareOfSpan": 0.002617515541498528
+  },
+  "longest": {
+   "name": "build / JUnit tests Java 17",
+   "minutes": 141.6
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 20,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"build / JUnit tests Java 17\" runs 142 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 315 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md"
+  }
+ ],
+ "apiCalls": 34
+}

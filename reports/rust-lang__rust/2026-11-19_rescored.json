@@ -1,0 +1,221 @@
+{
+ "repo": "rust-lang/rust",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 16.4,
+  "stars": 122183,
+  "forks": 16664,
+  "languages": [
+   [
+    "Rust",
+    91
+   ],
+   [
+    "HTML",
+    6
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "C",
+    1
+   ]
+  ],
+  "linesOfCode": 5593877,
+  "files": 59942,
+  "sourceFiles": 36156,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 3564078,
+   "tests": 1377351,
+   "integration": 919,
+   "support": 3958
+  },
+  "testShare": 0.2794465210858776,
+  "packages": {
+   "npm": 4,
+   "cargo": 269,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 676.6,
+  "pace": 1,
+  "activeAuthors28d": "≥80",
+  "prsOpenedPerWeek": 272,
+  "prsMergedPerWeek": 180,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 70.6,
+   "p90": 988.5,
+   "n": 100
+  },
+  "prRunsPerDay": 259.2,
+  "runsPerMergedPr": 10.1
+ },
+ "window": {
+  "days": 3.8,
+  "runs": 997,
+  "runsInPeriod": 1832,
+  "truncated": true,
+  "mainDays": 7
+ },
+ "size": "large",
+ "headsPerWeek": 906,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 5,
+  "reliability": 96,
+  "efficiency": 59
+ },
+ "detail": {
+  "speed": {
+   "wait": 7,
+   "forSize": 0,
+   "tail": 10
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 91
+  },
+  "efficiency": {
+   "minutesPerPr": 1,
+   "runsPerPr": 72,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 58321,
+  "prBilledMinutesPerDay": 59119.5,
+  "jobMinutesPerMergedPr": 2268,
+  "expectedMinutesPerMergedPr": 584.9,
+  "expectedWait": 27.5,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 498,
+  "timed": 374,
+  "p50": 76.61666666666666,
+  "p75": 85.05,
+  "p90": 91.73333333333333,
+  "redRate": 0.1566265060240964,
+  "rerunRate": 0.002008032128514056,
+  "passedOnRerunRate": 0.002008032128514056,
+  "cancelledRate": 0.21084337349397592,
+  "botHeads": 14,
+  "lightHeads": 4,
+  "lastToFinish": [
+   [
+    "CI",
+    374
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    78
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 76.56666666666666
+ },
+ "main": {
+  "heads": 25,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.08,
+  "redBy": [
+   [
+    "Post merge analysis",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.057729941291585124,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 83.43333333333334,
+  "jobMinutes": 570.4666666666667,
+  "billedMinutes": 575,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 4,
+  "setupShare": 0.030381515001600558,
+  "critical": {
+   "name": "PR - test-x86_64-gnu-gcc",
+   "minutes": 90.43333333333334,
+   "shareOfSpan": 0.9903117101937656
+  },
+  "longest": {
+   "name": "PR - test-x86_64-gnu-gcc",
+   "minutes": 90.43333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "fastLint": false,
+  "eslint": true,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"PR - test-x86_64-gnu-gcc\" runs 90 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "apiCalls": 30,
+ "rescored": {
+  "from": "2026-11-19.json",
+  "scoreWas": 47,
+  "on": "2026-11-19",
+  "by": "rescore-local.ts"
+ }
+}

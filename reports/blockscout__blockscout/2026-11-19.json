@@ -1,0 +1,220 @@
+{
+ "repo": "blockscout/blockscout",
+ "date": "2026-11-19",
+ "profile": {
+  "ageYears": 8.9,
+  "stars": 4784,
+  "forks": 3223,
+  "languages": [
+   [
+    "Elixir",
+    90
+   ],
+   [
+    "HTML",
+    3
+   ],
+   [
+    "Solidity",
+    2
+   ],
+   [
+    "SCSS",
+    2
+   ]
+  ],
+  "linesOfCode": 544527,
+  "linesFrom": "tree",
+  "files": 3600,
+  "sourceFiles": 2872,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 342416,
+   "tests": 202109,
+   "integration": 0,
+   "support": 2
+  },
+  "testShare": 0.3711679957002425,
+  "packages": {
+   "npm": 3,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "commitsPerWeek": 15.5,
+  "commitsPerWeekYear": 15.9,
+  "pace": 1,
+  "activeAuthors28d": 5,
+  "prsOpenedPerWeek": 36,
+  "prsMergedPerWeek": 23,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 3.4,
+   "p90": 65.8,
+   "n": 23
+  },
+  "prRunsPerDay": 60.5,
+  "runsPerMergedPr": 18.4
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 412,
+  "runsInPeriod": 412,
+  "truncated": false,
+  "mainDays": 6
+ },
+ "size": "medium",
+ "headsPerWeek": 112,
+ "score": 93,
+ "grade": "A",
+ "band": "excellent",
+ "parts": {
+  "speed": 100,
+  "reliability": 100,
+  "efficiency": 64
+ },
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100,
+   "redHeads": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 48,
+   "setup": 0,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 7.9,
+  "prBilledMinutesPerDay": 41.5,
+  "jobMinutesPerMergedPr": 2.4,
+  "expectedMinutesPerMergedPr": 140,
+  "expectedWait": 11.7,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 109,
+  "timed": 98,
+  "p50": 2.4833333333333334,
+  "p75": 3.3666666666666667,
+  "p90": 4.483333333333333,
+  "redRate": 0.009174311926605505,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 11,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "PR Conventional Commit Validation",
+    94
+   ],
+   [
+    "CodeQL",
+    3
+   ],
+   [
+    "Close issues on dev merge",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "PR Conventional Commit Validation",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Blockscout main CI"
+  ],
+  "heavyWorkflows": [
+   "CodeQL",
+   "PR Conventional Commit Validation"
+  ],
+  "allPushesP50": 2.4833333333333334
+ },
+ "main": {
+  "heads": 17,
+  "p50": 2.6166666666666667,
+  "p90": 5.233333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.2468354430379747,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 0.1,
+  "jobMinutes": 0.06666666666666667,
+  "billedMinutes": 1,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 1,
+  "critical": {
+   "name": "validate-pr-title",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.625
+  },
+  "longest": {
+   "name": "validate-pr-title",
+   "minutes": 0.06666666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 40,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "fastLint": false,
+  "eslint": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "apiCalls": 23
+}
