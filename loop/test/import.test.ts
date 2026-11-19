@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { join } from 'node:path';
 import { cohorts, counts, history, latestOf, open } from '../db.ts';
-import { importReports } from '../import.ts';
+import { importReports, reportRow, type Misfit } from '../import.ts';
 
 const FIXTURES = join(import.meta.dirname, 'fixtures');
 
@@ -98,4 +98,15 @@ test('cohorts count latest scored reports, with nearest-rank percentiles', () =>
       { size: 'medium', language: 'TypeScript', n: 1, p10: 78, p50: 78, p90: 78 },
     ],
   );
+});
+
+test("a published scorer's report keeps its own stack, with no misfits", () => {
+  const stack = { languages: [['Rust', 97]], packages: { npm: 0, cargo: 3, go: 0, python: 0 }, workspace: { packageManagers: ['Cargo'], tools: ['Cargo workspace'] }, testRunners: ['cargo nextest'], lintFormat: ['Clippy'], libraries: [{ name: 'serde', ecosystem: 'cargo', packages: 2 }], runners: [['Depot', 12]], agentFiles: ['AGENTS.md'], unknown: [] };
+  const report = { repo: 'pip/app', date: '2026-11-20', checkout: null, defaultBranch: 'main', score: 70, grade: 'C+', practices: {}, stack, read: { calls: 40, fromCache: 0 } };
+  const misfits: Misfit[] = [];
+
+  const row = reportRow('pip__app', '2026-11-20.json', JSON.stringify(report), misfits);
+
+  assert.deepEqual(misfits, []);
+  assert.deepEqual(JSON.parse(String(row?.stack)), stack);
 });

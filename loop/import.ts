@@ -7,7 +7,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import type { DatabaseSync, SQLInputValue } from 'node:sqlite';
-import { band, grade } from '../score.ts';
+import { band, grade } from '../scorer.ts';
 import { DEFAULT_DB, open } from './db.ts';
 
 export const DEFAULT_REPORTS = process.env.REPORTS ?? join(homedir(), 'ref0-work', 'ci-score', 'reports');
@@ -44,7 +44,7 @@ const PRACTICES: Record<string, string> = {
 const KNOWN = new Set([
   'repo', 'date', 'profile', 'window', 'size', 'headsPerWeek', 'score', 'grade', 'band', 'parts', 'detail',
   'efficiency', 'wait', 'main', 'botRunShare', 'jobs', 'tests', 'practices', 'fixes', 'notes', 'apiCalls',
-  'rescored', 'unscored',
+  'rescored', 'unscored', 'checkout', 'defaultBranch', 'stack', 'read',
 ]);
 
 type Row = Record<string, SQLInputValue>;
@@ -88,7 +88,8 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
     practices[col] = typeof v === 'boolean' ? Number(v) : typeof v === 'number' ? v : str(v);
   }
 
-  const stack: Record<string, unknown> = {
+  // The published scorer writes the stack; a research report's is put together from the same fields it reads.
+  const stack: Record<string, unknown> = r.stack ?? {
     languages: r.profile?.languages ?? [],
     packages: r.profile?.packages ?? {},
     runners: r.jobs?.providers ?? [],
