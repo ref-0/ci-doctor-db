@@ -141,6 +141,10 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
     runs_per_merged_pr: num(r.profile?.runsPerMergedPr),
     setup_share: num(r.jobs?.setupShare),
     queue_p90_sec: num(r.jobs?.queueP90Sec),
+    bot_run_share: num(r.botRunShare),
+    logs_read: int(r.tests?.logsRead),
+    files_timed: int(r.tests?.filesTimed),
+    api_calls: int(r.apiCalls),
 
     workflows: null, cancel_in_progress: null, path_filters: null, affected: null, draft_skip: null,
     merge_queue: null, scheduled: null, dep_cache: null, remote_cache: null, compiler_cache: null,
