@@ -77,7 +77,7 @@ Releasing `next` stays your call.
 The loop above only sees CI from outside. The agents running ci-doctor see it from inside: what they changed, what it saved, what failed, and where the skill's instructions were wrong. That's the best data ci-doctor can get, and it's the only source of the one metric for private repos.
 
 **The rule: the agent asks once per repo, then just does it.** Sending data from someone's repo without their yes would cost the trust the whole project runs on, and harnesses and careful agents would refuse a skill that tells them to. So:
-- **One question, at the first natural moment:** when Phase 2's baseline is measured, the agent shows the exact report it would send and asks "Share this with ci-doctor? It helps repos like yours, and gets you a before-and-after page." Yes, no, or "only the numbers".
+- **One question, at the first natural moment:** when Phase 2's baseline is measured, the agent shows the exact report it would send and asks "Share this with ci-doctor? It helps repos like yours, and gets you a before-and-after page." Yes, no, or "only the numbers". The default answer is yes for a public repo and "only the numbers" for a private one (agreed 19 Nov).
 - **The answer lives in the repo,** in `.ci-doctor.json` (`"share": "full" | "numbers" | "off"`), beside the adoption marker SITE.md already plans. Every later session, and every teammate's agent, follows it without asking again. That's what makes it consistent.
 - **Then it's automatic,** at fixed checkpoints the phases already have: the baseline (Phase 2), each merged improvement (Phase 4), and the plan's end. No one has to remember.
 
