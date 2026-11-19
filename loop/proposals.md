@@ -80,7 +80,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** the scorer counts packages and nothing more. Guide section 4 (a selector from the real dependency graph, fan-in, package entry points) and section 9 (boundaries, the export guard, source-first exports) depend on this graph, and Phase 1 maps it by hand. Raised by the maintainers, 19 Nov.
 - **Lands:** scorer, then guide
 
-### P-012 · briefed
+### P-012 · done (ci-doctor#3)
 - **Date:** 2026-11-19
 - **Change:** A guide section, and a `ci-doctor` topic, on the package graph as a checked contract: declared layers, which entries of each package another may import, nothing imports an app, enforced by a lint rule, and what it buys CI (narrower selection, cache keys that don't change for unrelated edits, a type check that stays per project). Source: the monorepo's package-graph lint, at sync.
 - **Evidence:** guide section 9 names "no forbidden layer imports" in one bullet; there's no section on designing or checking the graph. Raised by the maintainers, 19 Nov.
