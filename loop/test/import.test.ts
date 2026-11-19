@@ -102,7 +102,7 @@ test('cohorts count latest scored reports, with nearest-rank percentiles', () =>
 
 test("a published scorer's report keeps its own stack, with no misfits", () => {
   const stack = { languages: [['Rust', 97]], packages: { npm: 0, cargo: 3, go: 0, python: 0 }, workspace: { packageManagers: ['Cargo'], tools: ['Cargo workspace'] }, testRunners: ['cargo nextest'], lintFormat: ['Clippy'], libraries: [{ name: 'serde', ecosystem: 'cargo', packages: 2 }], runners: [['Depot', 12]], agentFiles: ['AGENTS.md'], unknown: [] };
-  const report = { repo: 'pip/app', date: '2026-11-20', checkout: null, defaultBranch: 'main', score: 70, grade: 'C+', practices: {}, stack, read: { calls: 40, fromCache: 0 } };
+  const report = { repo: 'pip/app', date: '2026-11-20', checkout: null, defaultBranch: 'main', score: 70, grade: 'C+', practices: { cancelInProgress: true, unknown: ['Read the first 40 of 45 workflow files'] }, stack, read: { calls: 40, fromCache: 0 } };
   const misfits: Misfit[] = [];
 
   const row = reportRow('pip__app', '2026-11-20.json', JSON.stringify(report), misfits);
