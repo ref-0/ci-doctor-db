@@ -15,6 +15,26 @@ export function open(path: string = DEFAULT_DB): DatabaseSync {
   return db;
 }
 
+// Columns schema.sql has that this database lacks. CREATE TABLE IF NOT EXISTS leaves an older table as it is, and
+// loop.db is rebuilt from reports/ rather than migrated, so the measure job stops on any of these before scoring.
+export function missingColumns(db: DatabaseSync): string[] {
+  const want = new DatabaseSync(':memory:');
+  want.exec(readFileSync(SCHEMA, 'utf8'));
+  const cols = (d: DatabaseSync, t: string) => new Set((d.prepare(`SELECT name FROM pragma_table_info(?)`).all(t) as { name: string }[]).map((c) => c.name));
+  const missing: string[] = [];
+  for (const { name } of want.prepare(`SELECT name FROM sqlite_schema WHERE type = 'table'`).all() as { name: string }[]) {
+    const have = cols(db, name);
+    for (const c of cols(want, name)) if (!have.has(c)) missing.push(`${name}.${c}`);
+  }
+  want.close();
+  return missing;
+}
+
+export function checkSchema(db: DatabaseSync, path: string) {
+  const missing = missingColumns(db);
+  if (missing.length) throw new Error(`${path} is older than schema.sql (no ${missing.join(', ')}): rebuild it with \`rm ${path} && node loop/import.ts\``);
+}
+
 // Each repo's latest report, scored or not.
 export function latestReports(db: DatabaseSync) {
   return db

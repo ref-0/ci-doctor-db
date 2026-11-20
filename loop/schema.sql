@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS repos (
   first_seen     TEXT NOT NULL,              -- YYYY-MM-DD of its first check
   last_checked   TEXT NOT NULL,              -- YYYY-MM-DD of its newest check
   times_checked  INTEGER NOT NULL,
-  latest_report  TEXT REFERENCES reports(id)
+  latest_report  TEXT REFERENCES reports(id),
+  github_id      INTEGER                     -- GitHub's numeric repo id, which a rename keeps; NULL until looked up
 );
 
 -- One row per report file. A rescore of a stored report is its own row, sorting after the report it rescored.
@@ -89,6 +90,7 @@ CREATE INDEX IF NOT EXISTS reports_cohort ON reports (size, language);
 CREATE INDEX IF NOT EXISTS reports_date ON reports (date);
 
 -- When and why each repo was measured. A rescore isn't a check: it re-reads a stored report.
+-- An import makes one per measured report no other check names; the measure job makes its own, with an ISO time.
 CREATE TABLE IF NOT EXISTS checks (
   repo     TEXT NOT NULL,
   at       TEXT NOT NULL,                    -- YYYY-MM-DD, or an ISO time once the loop records them
@@ -96,6 +98,7 @@ CREATE TABLE IF NOT EXISTS checks (
   scored   INTEGER NOT NULL,
   report   TEXT REFERENCES reports(id),      -- NULL when the check failed before writing one
   error    TEXT,                             -- why it didn't score, or why it failed
+  calls    INTEGER,                          -- GitHub API calls it spent; NULL for an import
   PRIMARY KEY (repo, at, reason)
 );
 
