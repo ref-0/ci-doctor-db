@@ -1,7 +1,8 @@
 // The nightly measure job: find, measure, store, publish. The scheduled task at 02:00 runs this and nothing else.
 // It prints one summary line per stage, writes the detail to logs/measure-<date>.log, and exits non-zero only when the
 // night couldn't run at all: no scorer checkout, no database or no token.
-// Usage: node loop/measure.ts [--max <n>] [--until 05:00] [--dry-run] [--push] [--prune]
+// Usage: node loop/measure.ts [--max <n>] [--until HH:MM] [--dry-run] [--push] [--prune]
+//   --until     the night's stop time, today, local (default 05:00); started after it, the job measures nothing
 //   --dry-run   prints the queue with each repo's reason and checks nothing
 //   --push      pushes every report origin/main lacks to main, as one data commit made on origin/main (publish.ts)
 //   --prune     really deletes the cache's old files; without it the prune stage only says what it would delete
@@ -34,12 +35,12 @@ export interface Clock {
 }
 export const realClock: Clock = { now: () => Date.now(), sleep: (ms) => new Promise((r) => setTimeout(r, ms)) };
 
-// The next local hh:mm after `now`: started at 02:00, 05:00 is the same morning.
-export function nextAt(now: number, hhmm: string): number {
+// Today's local hh:mm. The night is today's 02:00 to 05:00: a run started after its stop time measures nothing.
+export function todayAt(now: number, hhmm: string): number {
   const [h, m] = hhmm.split(':').map(Number);
+  if (!Number.isInteger(h) || !Number.isInteger(m)) throw new Error(`--until takes HH:MM, not ${hhmm}`);
   const d = new Date(now);
   d.setHours(h!, m!, 0, 0);
-  if (d.getTime() <= now) d.setDate(d.getDate() + 1);
   return d.getTime();
 }
 
@@ -65,7 +66,7 @@ export interface NightDeps {
   stopAt: number;
   quota: () => Quota;
   token: () => string;
-  check: (repo: string, token: string) => Promise<CheckResult>;
+  check: (repo: string, token: string, timeoutMs: number) => Promise<CheckResult>;
   importOne: (db: DatabaseSync, reportsDir: string, dir: string, file: string) => { id: string };
   refreshRepos: (db: DatabaseSync) => number;
   log: (s: string) => void;
@@ -99,8 +100,9 @@ export async function runNight(queue: Entry[], d: NightDeps) {
       break;
     }
 
+    // No check runs past the stop time: its timeout is the smaller of 10 minutes and the time left.
     const at = new Date(d.clock.now()).toISOString();
-    const res = await d.check(e.repo, token);
+    const res = await d.check(e.repo, token, Math.min(CHECK_TIMEOUT_MS, d.stopAt - d.clock.now()));
     const o = record(d, e, at, res, wait.quota);
     outcomes.push(o);
     d.log(`${at} ${e.reason} ${e.repo}: ${o.outcome}${o.error ? ` (${o.error})` : ''}, ${o.calls ?? '?'} calls`);
@@ -149,14 +151,14 @@ function record(d: NightDeps, e: Entry, at: string, res: CheckResult, before: Qu
   return { repo: e.repo, reason: e.reason, at, outcome, calls, error, file };
 }
 
-// The scorer in its own process, at the loop's checkout of next, timed out after 10 minutes.
+// The scorer in its own process, at the loop's checkout of next, timed out after `timeoutMs`.
 export function childCheck(scorerSrc: string) {
-  return (repo: string, token: string) =>
+  return (repo: string, token: string, timeoutMs: number) =>
     new Promise<CheckResult>((resolve) => {
       execFile(
         'node',
         [join(import.meta.dirname, 'check.ts'), repo],
-        { env: childEnv({ GH_TOKEN: token, CI_DOCTOR_SCORER: scorerSrc }), timeout: CHECK_TIMEOUT_MS, maxBuffer: 256 << 20, encoding: 'utf8' },
+        { env: childEnv({ GH_TOKEN: token, CI_DOCTOR_SCORER: scorerSrc }), timeout: timeoutMs, killSignal: 'SIGKILL', maxBuffer: 256 << 20, encoding: 'utf8' },
         (err, stdout, stderr) => {
           if (!err) {
             try {
@@ -165,7 +167,7 @@ export function childCheck(scorerSrc: string) {
               return resolve({ error: 'the scorer printed no JSON' });
             }
           }
-          if (err.killed) return resolve({ error: `timed out after ${CHECK_TIMEOUT_MS / 60_000} minutes` });
+          if (err.killed) return resolve({ error: `timed out after ${Math.round(timeoutMs / 1000)} seconds` });
           resolve({ error: stderr.trim().split('\n')[0] || err.message.split('\n')[0]! });
         },
       );
@@ -210,7 +212,11 @@ async function main() {
   const say = (s: string) => (console.log(s), log(s));
   const dryRun = process.argv.includes('--dry-run');
   const max = arg('--max') === undefined ? Infinity : Number(arg('--max'));
-  const stopAt = nextAt(Date.now(), arg('--until') ?? '05:00');
+  const stopAt = todayAt(Date.now(), arg('--until') ?? '05:00');
+  if (!dryRun && Date.now() >= stopAt) {
+    say(`measure: started after the night's stop time, ${new Date(stopAt).toTimeString().slice(0, 5)}; measuring nothing`);
+    return 0;
+  }
   log(`== ${new Date().toISOString()} measure${dryRun ? ' --dry-run' : ''}, max ${max}, stop at ${new Date(stopAt).toISOString()}`);
 
   say(ensureScorer(log));
