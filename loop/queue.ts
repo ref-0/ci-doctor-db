@@ -131,7 +131,7 @@ export interface GitHub {
 
 export const SEARCH_PAGES = 4; // of 50 repos, per language
 export const MIN_STARS = 100; // a search floor, so class projects and personal dashboards don't fill the gaps
-export const CANDIDATES_PER_SLOT = 4; // PR-run counts read, at most, per slot a language has to fill
+export const CANDIDATES_PER_SLOT = 4; // PR-run counts read, at most, per slot a cohort has to fill
 export const MIN_PR_RUNS = 5; // a score needs 5 timed PR pushes
 export const BYTES_PER_LINE = 30; // the scorer's: GitHub's language bytes ÷ lines
 export const HEADS_PER_PR = 2; // PR heads in a week per PR opened, roughly: a PR is pushed to again after review
@@ -160,7 +160,9 @@ export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracke
 
   for (const language of languages) {
     const slots = () => [...left].filter(([k]) => k.endsWith(` × ${language}`)).reduce((s, [, n]) => s + n, 0);
-    const budget = slots() * CANDIDATES_PER_SLOT;
+    // Each cohort screens up to CANDIDATES_PER_SLOT repos per slot of its own, so one cohort's failures don't use up
+    // another's chances.
+    const screened = new Map<string, number>();
 
     const found: Candidate[] = [];
     for (let page = 1; page <= SEARCH_PAGES; page++) {
@@ -181,17 +183,16 @@ export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracke
       .filter((c) => !c.fork && !c.archived && !c.private && c.language === language && c.prs > 0 && !tracked.has(c.id))
       .sort((a, b) => b.prs - a.prs || a.repo.localeCompare(b.repo));
 
-    let looked = 0;
     for (const c of candidates) {
-      if (slots() === 0 || looked >= budget) break;
+      if (slots() === 0) break;
       const lines = Math.round(c.bytes / BYTES_PER_LINE);
       const key = cohortKey(predictSize(lines, c.prs * HEADS_PER_PR), language);
-      if (!left.get(key)) continue;
+      if (!left.get(key) || (screened.get(key) ?? 0) >= want.get(key)! * CANDIDATES_PER_SLOT) continue;
       if (!(await guard())) {
         log(`gaps: the quota guard stopped discovery, with ${out.length} repos found`);
         return out;
       }
-      looked++;
+      screened.set(key, (screened.get(key) ?? 0) + 1);
       let runs: number;
       try {
         runs = gh.prRuns(c.repo, since);
