@@ -191,8 +191,12 @@ export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REP
   try {
     for (const row of rows) changes += upsert(db, 'reports', ['id'], row);
 
+    // A report the measure job checked has its check already, with its reason and calls.
+    const checked = new Set(
+      (db.prepare(`SELECT report FROM checks WHERE reason != 'import' AND report IS NOT NULL`).all() as { report: string }[]).map((c) => c.report),
+    );
     for (const row of rows) {
-      if (row.seq !== 0) continue;
+      if (row.seq !== 0 || checked.has(row.id as string)) continue;
       changes += upsert(db, 'checks', ['repo', 'at', 'reason'], {
         repo: row.repo,
         at: row.date,
@@ -203,22 +207,7 @@ export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REP
       });
     }
 
-    // Each repo from its checks and reports: the newest report file wins as its latest.
-    changes += Number(
-      db
-        .prepare(
-          `INSERT INTO repos (repo, first_seen, last_checked, times_checked, latest_report)
-           SELECT c.repo, MIN(c.at), MAX(c.at), COUNT(*),
-                  (SELECT r.id FROM reports r WHERE r.repo = c.repo ORDER BY r.date DESC, r.seq DESC LIMIT 1)
-             FROM checks c GROUP BY c.repo
-           ON CONFLICT (repo) DO UPDATE SET
-             first_seen = excluded.first_seen, last_checked = excluded.last_checked,
-             times_checked = excluded.times_checked, latest_report = excluded.latest_report
-           WHERE repos.first_seen IS NOT excluded.first_seen OR repos.last_checked IS NOT excluded.last_checked
-              OR repos.times_checked IS NOT excluded.times_checked OR repos.latest_report IS NOT excluded.latest_report`,
-        )
-        .run().changes,
-    );
+    changes += refreshRepos(db);
     db.exec('COMMIT');
   } catch (e) {
     db.exec('ROLLBACK');
@@ -226,6 +215,35 @@ export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REP
   }
 
   return { files: rows.length, changes, misfits };
+}
+
+// One report file the measure job just wrote, into its reports row. Its check and repo row are the caller's.
+export function importOne(db: DatabaseSync, reportsDir: string, dir: string, file: string): { id: string; misfits: Misfit[] } {
+  const misfits: Misfit[] = [];
+  const row = reportRow(dir, file, readFileSync(join(reportsDir, dir, file), 'utf8'), misfits);
+  if (!row) throw new Error(misfits.map((m) => m.what).join('; '));
+  upsert(db, 'reports', ['id'], row);
+  return { id: row.id as string, misfits };
+}
+
+// Each repo from its checks and reports: the newest report file wins as its latest. Times are days, as an import's
+// checks are; the measure job's checks carry ISO times.
+export function refreshRepos(db: DatabaseSync): number {
+  return Number(
+    db
+      .prepare(
+        `INSERT INTO repos (repo, first_seen, last_checked, times_checked, latest_report)
+         SELECT c.repo, MIN(substr(c.at, 1, 10)), MAX(substr(c.at, 1, 10)), COUNT(*),
+                (SELECT r.id FROM reports r WHERE r.repo = c.repo ORDER BY r.date DESC, r.seq DESC LIMIT 1)
+           FROM checks c GROUP BY c.repo
+         ON CONFLICT (repo) DO UPDATE SET
+           first_seen = excluded.first_seen, last_checked = excluded.last_checked,
+           times_checked = excluded.times_checked, latest_report = excluded.latest_report
+         WHERE repos.first_seen IS NOT excluded.first_seen OR repos.last_checked IS NOT excluded.last_checked
+            OR repos.times_checked IS NOT excluded.times_checked OR repos.latest_report IS NOT excluded.latest_report`,
+      )
+      .run().changes,
+  );
 }
 
 function arg(name: string): string | undefined {

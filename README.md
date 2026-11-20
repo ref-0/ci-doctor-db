@@ -29,7 +29,12 @@ node loop/import.ts      # reports/ into loop.db
 node loop/compare.ts     # the day's comparison, into digest/
 node loop/digest.ts      # the readable digest
 node --test loop/test/   # the loop's tests
+node loop/measure.ts --dry-run --max 10   # tonight's queue, with each repo's reason
+node loop/measure.ts     # the nightly job: find, measure, store, publish (--push from main)
+node loop/prune.ts --dry-run              # what cache retention would delete
 ```
+
+The nightly job scores with ci-doctor's `next`, from its own checkout at `~/ref0-work/ci-doctor-next`, with the `ref0-ci-doctor` App's token. It runs from 02:00 to today's 05:00 (`--until`), one run at a time, and pushes every report `origin/main` lacks as one data commit made on `origin/main`. Its log goes to `logs/measure-<date>.log`. When `loop/schema.sql` changes, rebuild `loop.db` with `rm loop.db && node loop/import.ts`.
 
 Scoring a repo uses the published scorer, `npx @ref0/ci-doctor`.
 
