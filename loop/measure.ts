@@ -115,6 +115,9 @@ export async function runNight(queue: Entry[], d: NightDeps) {
   }
 
   d.refreshRepos(d.db);
+  // A new repo's GitHub id, from discovery, goes with its row.
+  const setId = d.db.prepare(`UPDATE repos SET github_id = ? WHERE repo = ? AND github_id IS NULL`);
+  for (const e of queue) if (e.githubId && outcomes.some((o) => o.repo === e.repo)) setId.run(e.githubId, e.repo);
   return { outcomes, stopped };
 }
 

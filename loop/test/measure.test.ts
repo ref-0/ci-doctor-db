@@ -232,3 +232,16 @@ test("a quota that can't be read ends the night with its reason, keeping what wa
   assert.equal(db.prepare(`SELECT COUNT(*) AS n FROM repos`).get()!.n, 1);
   done();
 });
+
+test("a gap repo's GitHub id is stored with its row", async () => {
+  const { db, reportsDir, done } = setup();
+  const clock = fakeClock();
+
+  await runNight([{ repo: 'a/new', reason: 'gap', why: 'test', githubId: 4242 }], {
+    db, reportsDir, clock, stopAt: STOP, quota: fakeQuota(clock).read, token: () => 't',
+    check: async (repo) => ({ report: report(repo) }), importOne, refreshRepos, log: () => {},
+  });
+
+  assert.equal(db.prepare(`SELECT github_id FROM repos WHERE repo = 'a/new'`).get()!.github_id, 4242);
+  done();
+});

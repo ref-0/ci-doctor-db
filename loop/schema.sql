@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS repos (
   first_seen     TEXT NOT NULL,              -- YYYY-MM-DD of its first check
   last_checked   TEXT NOT NULL,              -- YYYY-MM-DD of its newest check
   times_checked  INTEGER NOT NULL,
-  latest_report  TEXT REFERENCES reports(id)
+  latest_report  TEXT REFERENCES reports(id),
+  github_id      INTEGER                     -- GitHub's numeric repo id, which a rename keeps; NULL until looked up
 );
 
 -- One row per report file. A rescore of a stored report is its own row, sorting after the report it rescored.

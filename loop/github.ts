@@ -94,7 +94,7 @@ const SEARCH = `query($q: String!, $after: String) {
   search(query: $q, type: REPOSITORY, first: 50, after: $after) {
     pageInfo { hasNextPage endCursor }
     nodes { ... on Repository {
-      nameWithOwner isFork isArchived isPrivate
+      databaseId nameWithOwner isFork isArchived isPrivate
       primaryLanguage { name }
       languages(first: 1) { totalSize }
       pullRequests(first: 100, orderBy: { field: CREATED_AT, direction: DESC }) { nodes { createdAt } }
@@ -119,6 +119,7 @@ export function liveGitHub(token: string) {
       return r.nodes
         .filter((n: any) => n?.nameWithOwner)
         .map((n: any) => ({
+          id: n.databaseId,
           repo: n.nameWithOwner,
           fork: n.isFork,
           archived: n.isArchived,
@@ -127,6 +128,20 @@ export function liveGitHub(token: string) {
           bytes: n.languages?.totalSize ?? 0,
           prs: (n.pullRequests?.nodes ?? []).filter((p: any) => p.createdAt >= since).length,
         }));
+    },
+    repoIds(repos) {
+      const ids = new Map<string, number>();
+      for (let i = 0; i < repos.length; i += 50) {
+        const batch = repos.slice(i, i + 50);
+        const fields = batch.map((r, j) => {
+          const [owner, name] = r.split('/');
+          return `r${j}: repository(owner: ${JSON.stringify(owner)}, name: ${JSON.stringify(name)}) { databaseId }`;
+        });
+        calls.graphql++;
+        const data = graphql(token, { query: `{ ${fields.join('\n')} }` });
+        batch.forEach((r, j) => data[`r${j}`]?.databaseId && ids.set(r, data[`r${j}`].databaseId));
+      }
+      return ids;
     },
     prRuns(repo, since) {
       calls.core++;

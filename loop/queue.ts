@@ -18,7 +18,7 @@ export const LANGUAGES = [
 export const SIZES = ['small', 'medium', 'large'] as const;
 
 export type Reason = 'refresh' | 'adoption' | 'gap';
-export type Entry = { repo: string; reason: Reason; why: string; cohort?: string };
+export type Entry = { repo: string; reason: Reason; why: string; cohort?: string; githubId?: number };
 export type Gap = { size: string; language: string; n: number; under: number };
 
 const DAY = 86_400_000;
@@ -112,6 +112,7 @@ export function quotas(gaps: Gap[], slots: number): Map<string, number> {
 
 // What discovery asks GitHub: a repo search (GraphQL, its own points limit) and a PR-runs count (core).
 export type Candidate = {
+  id: number; // GitHub's numeric repo id
   repo: string;
   fork: boolean;
   archived: boolean;
@@ -124,6 +125,8 @@ export interface GitHub {
   // Public repos whose main language is `language`, with at least MIN_STARS stars, pushed since `since`: one page.
   searchRepos(language: string, since: string, page: number): Candidate[];
   prRuns(repo: string, since: string): number;
+  // GitHub's numeric ids of these repos, by the names given; a renamed repo resolves to its new self.
+  repoIds(repos: string[]): Map<string, number>;
 }
 
 export const SEARCH_PAGES = 4; // of 50 repos, per language
@@ -148,7 +151,8 @@ export function predictSize(lines: number, headsPerWeek: number) {
 export type Guard = () => Promise<boolean>;
 const always: Guard = async () => true;
 
-export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set<string>, today: string, log: (s: string) => void = () => {}, guard: Guard = always): Promise<Entry[]> {
+// `tracked` holds the ids of every tracked repo, so a renamed one isn't taken again, and the ids taken are added to it.
+export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set<number>, today: string, log: (s: string) => void = () => {}, guard: Guard = always): Promise<Entry[]> {
   const since = addDays(today, -7);
   const out: Entry[] = [];
   const left = new Map(want);
@@ -170,8 +174,11 @@ export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracke
       found.push(...repos);
       if (repos.length < 50) break;
     }
+    // One repo can come back on two pages, as pushes reorder the search between them: keep it once.
+    const seen = new Set<number>();
     const candidates = found
-      .filter((c) => !c.fork && !c.archived && !c.private && c.language === language && c.prs > 0 && !tracked.has(c.repo.toLowerCase()))
+      .filter((c) => !seen.has(c.id) && (seen.add(c.id), true))
+      .filter((c) => !c.fork && !c.archived && !c.private && c.language === language && c.prs > 0 && !tracked.has(c.id))
       .sort((a, b) => b.prs - a.prs || a.repo.localeCompare(b.repo));
 
     let looked = 0;
@@ -194,8 +201,8 @@ export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracke
       if (runs < MIN_PR_RUNS) continue;
 
       left.set(key, left.get(key)! - 1);
-      tracked.add(c.repo.toLowerCase());
-      out.push({ repo: c.repo, reason: 'gap', cohort: key, why: `gap ${key}: ~${Math.round(lines / 1000)}k lines, ${c.prs} PRs this week, ${runs} PR runs` });
+      tracked.add(c.id);
+      out.push({ repo: c.repo, reason: 'gap', cohort: key, githubId: c.id, why: `gap ${key}: ~${Math.round(lines / 1000)}k lines, ${c.prs} PRs this week, ${runs} PR runs` });
     }
     const unfilled = slots();
     if (unfilled) log(`gaps: ${language} left ${unfilled} slots unfilled, from ${candidates.length} candidates`);
@@ -203,13 +210,23 @@ export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracke
   return out;
 }
 
+// Every tracked repo's GitHub id, looking up and storing those not known yet (a rebuilt loop.db has none).
+export function trackedIds(db: DatabaseSync, gh: GitHub): Set<number> {
+  const unknown = (db.prepare(`SELECT repo FROM repos WHERE github_id IS NULL`).all() as { repo: string }[]).map((r) => r.repo);
+  if (unknown.length) {
+    const ids = gh.repoIds(unknown);
+    const set = db.prepare(`UPDATE repos SET github_id = ? WHERE repo = ?`);
+    for (const [repo, id] of ids) set.run(id, repo);
+  }
+  return new Set((db.prepare(`SELECT github_id FROM repos WHERE github_id IS NOT NULL`).all() as { github_id: number }[]).map((r) => r.github_id));
+}
+
 // The night: refreshes first, then gaps in what's left of `slots`.
 export async function planNight(db: DatabaseSync, opts: { today: string; slots: number; gh?: GitHub; log?: (s: string) => void; guard?: Guard }) {
   const refreshes = dueRefreshes(db, opts.today).slice(0, opts.slots);
   const gaps = cohortGaps(db);
   const want = quotas(gaps, opts.slots - refreshes.length);
-  const tracked = new Set((db.prepare(`SELECT repo FROM repos`).all() as { repo: string }[]).map((r) => r.repo.toLowerCase()));
-  const found = opts.gh ? await findGapRepos(opts.gh, want, tracked, opts.today, opts.log, opts.guard) : [];
+  const found = opts.gh && want.size ? await findGapRepos(opts.gh, want, trackedIds(db, opts.gh), opts.today, opts.log, opts.guard) : [];
   return { queue: [...refreshes, ...found], refreshes, gaps, quotas: want };
 }
 

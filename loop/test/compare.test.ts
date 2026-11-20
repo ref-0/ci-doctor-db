@@ -25,7 +25,7 @@ function clone(db: DatabaseSync, from: string, repo: string, set: Record<string,
   const row = { ...src, ...set, id: `${repo}/${src.date}`, repo, seq: 0, rescored_from: null, score_was: null };
   const cols = Object.keys(row);
   db.prepare(`INSERT INTO reports (${cols.join(', ')}) VALUES (${cols.map(() => '?').join(', ')})`).run(...cols.map((c) => row[c as keyof typeof row] as never));
-  db.prepare(`INSERT INTO repos VALUES (?, ?, ?, 1, ?)`).run(repo, src.date as string, src.date as string, row.id);
+  db.prepare(`INSERT INTO repos (repo, first_seen, last_checked, times_checked, latest_report) VALUES (?, ?, ?, 1, ?)`).run(repo, src.date as string, src.date as string, row.id);
 }
 
 const run = (db: DatabaseSync, labels = NO_LABELS, previous: Digest | null = null) =>
