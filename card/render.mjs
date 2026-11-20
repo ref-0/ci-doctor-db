@@ -7,7 +7,7 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import satori from 'satori';
 import { scoreColour } from '../colour.ts';
-import { grade } from '../score.ts';
+import { grade } from '../scorer.ts';
 
 const font = (pkg, file) => readFileSync(new URL(`node_modules/@fontsource/${pkg}/files/${file}`, import.meta.url));
 const fonts = [
@@ -105,7 +105,7 @@ const GLYPH_TOP = -0.2; // measured: centres the icon on the digits within 2 px
 const FOOT_GAP = { 7: 364 };
 const footPull = (n, size) => -Math.round((((FOOT_GAP[String(n).at(-1)] ?? 55) - 55) * size * 0.6) / 1000);
 
-// The grade, from score.ts (A+ to F). Drawn as a tinted tile in
+// The grade, from the published scorer (A+ to F). Drawn as a tinted tile in
 // the score's colour, so it reads as a label on the score rather than a second number.
 const gradeOf = (score) => grade(score);
 const FOOT_BOTTOM = 15; // measured: "/100" sits on the digits' baseline

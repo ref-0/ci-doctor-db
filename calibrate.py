@@ -1,13 +1,14 @@
 """Re-score every stored report under a scoring config, without API calls, and check it against the
 targets: repos labelled fast land at 75+, slow under 50, and the scale reads sensibly.
 
-Mirrors scoreOf in score.ts; once a config is chosen, port its numbers there.
-Usage: python3 calibrate.py inbox/repos.csv inbox/research.csv
+Mirrors scoreOf in ci-doctor's scorer/src/score.ts; once a config is chosen, port its numbers there.
+Usage: python3 calibrate.py inbox/repos.csv inbox/research.csv   (REPORTS=<dir> to read the reports there)
 """
 import csv
 import glob
 import json
 import math
+import os
 import sys
 
 labels = {}
@@ -16,7 +17,7 @@ for path in sys.argv[1:]:
         labels[r['repo'].lower()] = r.get('expected') or ''
 
 reports = []
-for d in sorted(glob.glob('reports/*')):
+for d in sorted(glob.glob(os.path.join(os.environ.get('REPORTS', 'reports'), '*'))):
     files = sorted(glob.glob(f'{d}/*.json'))
     if files:
         r = json.load(open(files[-1]))
@@ -48,7 +49,7 @@ def lin(x, good, bad):
 
 
 def logs(x, good, bad):
-    # As score.ts's logScore: unknown stays unknown, and 0 counts as tiny (full marks).
+    # As the scorer's logScore: unknown stays unknown, and 0 counts as tiny (full marks).
     return None if x is None else 100 * min(1, max(0, 1 - (math.log(max(x, 1e-9)) - math.log(good)) / (math.log(bad) - math.log(good))))
 
 

@@ -4,7 +4,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { BYTES_PER_LINE, CODE_EXT, MAX_SOURCE_FILE, SKIP, sizeClass } from './score.ts';
+import { BYTES_PER_LINE, CODE_EXT, MAX_SOURCE_FILE, SKIP, sizeClass } from './scorer.ts';
 
 const HERE = import.meta.dirname;
 const fromCache = (path: string) => {
