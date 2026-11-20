@@ -9,12 +9,43 @@ const ROOT = join(import.meta.dirname, '..');
 
 // A fresh App installation token from token.ts, which keeps its own key and cache. Never logged.
 export function appToken(): string {
-  const token = execFileSync('node', [join(ROOT, 'token.ts')], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: childEnv() }).trim();
+  const token = withRetry(() => {
+    try {
+      return execFileSync('node', [join(ROOT, 'token.ts')], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: childEnv() }).trim();
+    } catch (e) {
+      throw new Error(`token.ts: ${String((e as { stderr?: string }).stderr ?? '').trim().split('\n').at(-1) || (e as Error).message.split('\n')[0]}`);
+    }
+  });
   if (!token) throw new Error('token.ts printed no token');
   return token;
 }
 
+// A read worth trying again: GitHub's 5xx, or the connection going.
+const TRANSIENT = /HTTP 5\d\d|\b50[0-4]\b|connection (reset|refused)|ECONNRESET|ETIMEDOUT|timed? ?out|unexpected EOF|TLS handshake|no such host|network is unreachable/i;
+export const isTransient = (message: string) => TRANSIENT.test(message);
+
+const sleepSync = (ms: number) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+
+// `fn`, tried again on a transient failure after 2, 4 and 8 seconds.
+export function withRetry<T>(fn: () => T, { tries = 4, baseMs = 2_000, sleep = sleepSync, log = (_: string) => {} } = {}): T {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return fn();
+    } catch (e) {
+      const message = (e as Error).message;
+      if (attempt >= tries || !isTransient(message)) throw e;
+      const wait = baseMs * 2 ** (attempt - 1);
+      log(`retrying in ${wait / 1000} seconds after: ${message.split('\n')[0]}`);
+      sleep(wait);
+    }
+  }
+}
+
 function gh(token: string, path: string, fields: Record<string, string | number> = {}, method = 'GET'): any {
+  return withRetry(() => ghOnce(token, path, fields, method));
+}
+
+function ghOnce(token: string, path: string, fields: Record<string, string | number>, method: string): any {
   const args = ['api', '--hostname=github.com', '-X', method, path];
   for (const [k, v] of Object.entries(fields)) args.push(typeof v === 'number' ? '-F' : '-f', `${k}=${v}`);
   try {

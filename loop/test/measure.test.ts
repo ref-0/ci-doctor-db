@@ -168,3 +168,22 @@ test('a token that fails ends the night, recorded as why it stopped', async () =
   assert.equal(night.stopped, 'token.ts failed: no key');
   done();
 });
+
+test("a quota that can't be read ends the night with its reason, keeping what was checked", async () => {
+  const { db, reportsDir, done } = setup();
+  const clock = fakeClock();
+  const q = fakeQuota(clock);
+  let reads = 0;
+
+  const night = await runNight(entries('a/1', 'a/2', 'a/3'), {
+    db, reportsDir, clock, stopAt: STOP, token: () => 't',
+    quota: () => (++reads > 1 ? (() => { throw new Error('gh api rate_limit: HTTP 502: Bad Gateway'); })() : q.read()),
+    check: async (repo) => ({ report: report(repo) }),
+    importOne, refreshRepos, log: () => {},
+  });
+
+  assert.deepEqual(night.outcomes.map((o) => o.repo), ['a/1']);
+  assert.match(night.stopped, /the quota couldn't be read: .*502/);
+  assert.equal(db.prepare(`SELECT COUNT(*) AS n FROM repos`).get()!.n, 1);
+  done();
+});
