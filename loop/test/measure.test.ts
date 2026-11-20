@@ -94,6 +94,18 @@ test('a low quota pauses until its reset, then goes on', async () => {
   assert.match(logs[0]!, /pausing 3630 seconds until the reset/);
 });
 
+test('a reset time already past pauses a minute at a time, and ends the night after 4 pauses', async () => {
+  const clock = fakeClock();
+  const stuck = () => ({ remaining: 10, limit: 5000, reset: Math.floor((T0 - 3_600_000) / 1000) });
+  let reads = 0;
+
+  const r = await waitForQuota(clock, () => (reads++, stuck()), STOP, () => {});
+
+  assert.deepEqual(r, { go: false, why: 'quota 10 stayed low after 4 pauses' });
+  assert.deepEqual(clock.slept, [60_000, 60_000, 60_000, 60_000]);
+  assert.equal(reads, 5);
+});
+
 test('it stops at the stop time, and when the quota resets only after it', async () => {
   const late = fakeClock(STOP);
   assert.deepEqual(await waitForQuota(late, fakeQuota(late).read, STOP, () => {}), { go: false, why: 'reached the stop time' });

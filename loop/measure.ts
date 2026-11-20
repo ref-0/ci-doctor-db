@@ -44,16 +44,22 @@ export function todayAt(now: number, hhmm: string): number {
   return d.getTime();
 }
 
-// Before each check: stop at the deadline, or wait for the quota's reset while it's low, as batch.sh does.
+// Before each check: stop at the deadline, or wait for the quota's reset while it's low, as batch.sh does. A pause
+// is at least a minute, so a reset time already past can't spin on the quota endpoint, and after MAX_PAUSES pauses
+// in a row the night ends.
+export const MIN_PAUSE_MS = 60_000;
+export const MAX_PAUSES = 4;
+
 export async function waitForQuota(clock: Clock, quota: () => Quota, stopAt: number, log: (s: string) => void) {
-  for (;;) {
+  for (let pauses = 0; ; pauses++) {
     if (clock.now() >= stopAt) return { go: false as const, why: 'reached the stop time' };
     const q = quota();
     if (q.remaining >= KEEP + CHECK_P90) return { go: true as const, quota: q };
-    const resume = q.reset * 1000 + RESET_SLACK_MS;
-    if (resume >= stopAt) return { go: false as const, why: `quota ${q.remaining} is low until after the stop time` };
-    log(`${new Date(clock.now()).toISOString()} quota ${q.remaining} < ${KEEP + CHECK_P90}, pausing ${Math.round((resume - clock.now()) / 1000)} seconds until the reset`);
-    await clock.sleep(Math.max(0, resume - clock.now()));
+    if (pauses >= MAX_PAUSES) return { go: false as const, why: `quota ${q.remaining} stayed low after ${MAX_PAUSES} pauses` };
+    const until = Math.max(q.reset * 1000 + RESET_SLACK_MS, clock.now() + MIN_PAUSE_MS);
+    if (until >= stopAt) return { go: false as const, why: `quota ${q.remaining} is low until after the stop time` };
+    log(`${new Date(clock.now()).toISOString()} quota ${q.remaining} < ${KEEP + CHECK_P90}, pausing ${Math.round((until - clock.now()) / 1000)} seconds until the reset`);
+    await clock.sleep(until - clock.now());
   }
 }
 
