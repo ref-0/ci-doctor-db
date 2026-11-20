@@ -34,14 +34,14 @@ Public repos only. No people: no authors, emails or accounts stored, beyond what
 ### 2. Measure
 
 - **One scorer.** The loop runs the published scorer (`npx @ref0/ci-doctor <repo> --json`, or its module) with the `ref0-ci-doctor` App token (`token.ts`), never a person's token. The research `score.ts` is retired once the published one holds every field it has; `calibrate.py` reads stored inputs, so it keeps working.
-- **Budget:** the App has 5,000 calls an hour and a check takes a median 28 (p90 58). The night window, 02:00–05:00, keeps 1,000 an hour spare for the site once it shares the App: about 400 checks a night. Refreshes come first, gaps get what's left.
+- **Budget:** the App has 5,000 calls an hour and a check takes a median 66 (p90 103). The night window, 02:00–05:00, keeps 1,000 an hour spare for the site once it shares the App: about 180 checks a night. Refreshes come first, gaps get what's left. `loop/measure.ts` reads the quota before each check, pauses until the reset when fewer than 1,103 are left, and stops at 05:00.
 - **Stack capture:** the fields from SITE.md's "The stack" (languages, workspace tools, test runners, lint and format, libraries, runners, agent files) go into the scorer first, since comparing needs them.
 
 ### 3. Store
 
 - **One SQLite file, `loop.db`, with the site's D1 schema:** `repos`, `reports` (one row per report: date, score, parts, size, p50/p90, stack and practice columns), `checks` (when and why each was measured), `adoption`, and `findings`. Full report JSON stays in `reports/` as the site keeps it in R2. Same schema both sides, so moving to the site's data later is a copy, not a rewrite.
 - **Import** the 243 existing repos on day one.
-- **Cache retention:** raw API responses and logs kept 14 days, then deleted. Reports are kept forever.
+- **Cache retention:** raw API responses and logs kept 14 days, then deleted, by `loop/prune.ts`. Reports are kept forever.
 - **Once the site is live,** a `pull` step copies its new `checks` and `reports` into `loop.db` each night, through an export endpoint on the site (`/api/export?since=`, behind a token). Then the site's own cron does the refreshing, and the local job only finds gaps and runs experiments.
 
 ### 4. Compare
