@@ -89,7 +89,7 @@ function fakeGitHub(repos: Record<string, { prs: number; fork?: boolean; archive
   return { gh, asked };
 }
 
-test('gap repos come busiest first, skipping forks, archived, tracked and repos without PR runs', () => {
+test('gap repos come busiest first, skipping forks, archived, tracked and repos without PR runs', async () => {
   const { gh } = fakeGitHub({
     'x/busiest': { prs: 9, fork: true },
     'x/archived': { prs: 8, archived: true },
@@ -100,28 +100,28 @@ test('gap repos come busiest first, skipping forks, archived, tracked and repos 
     'x/third': { prs: 3 },
   });
 
-  const found = findGapRepos(gh, new Map([['medium × Rust', 2]]), new Set(['x/tracked']), '2026-11-19');
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 2]]), new Set(['x/tracked']), '2026-11-19');
 
   assert.deepEqual(found.map((e) => e.repo), ['x/good', 'x/also']);
   assert.equal(found[0]!.reason, 'gap');
   assert.equal(found[0]!.cohort, 'medium × Rust');
 });
 
-test('a candidate predicted into a full or other cohort is passed over', () => {
+test('a candidate predicted into a full or other cohort is passed over', async () => {
   const { gh, asked } = fakeGitHub({
     'x/huge': { prs: 9, bytes: 30 * 5_000_000 },
     'x/mid': { prs: 5 },
     'x/next': { prs: 4 },
   });
 
-  const found = findGapRepos(gh, new Map([['medium × Rust', 1]]), new Set(), '2026-11-19');
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 1]]), new Set(), '2026-11-19');
 
   assert.deepEqual(found.map((e) => e.repo), ['x/mid']);
   // Runs are read only for a repo whose cohort has room, and not once the quota is filled.
   assert.deepEqual(asked, ['search Rust 1', 'runs x/mid']);
 });
 
-test('the night is refreshes first, then gaps in what is left of the slots', () => {
+test('the night is refreshes first, then gaps in what is left of the slots', async () => {
   const db = open(':memory:');
   for (let i = 0; i < 3; i++) add(db, `old/r${i}`, '2026-11-01', { language: 'Rust' });
   // Every cohort but these is just as far under, so the two slots left go to the first in the gaps' order.
@@ -131,14 +131,24 @@ test('the night is refreshes first, then gaps in what is left of the slots', () 
     'old/r0': { prs: 3, language: 'TypeScript', bytes: 30 * 50_000 },
   });
 
-  const plan = planNight(db, { today: '2026-11-19', slots: 5, gh });
+  const plan = await planNight(db, { today: '2026-11-19', slots: 5, gh });
 
   assert.deepEqual(Object.fromEntries(plan.quotas), { 'small × TypeScript': 1, 'medium × TypeScript': 1 });
   assert.deepEqual(plan.queue.map((e) => [e.reason, e.repo]), [
     ['refresh', 'old/r0'], ['refresh', 'old/r1'], ['refresh', 'old/r2'], ['gap', 'new/small'], ['gap', 'new/medium'],
   ]);
 
-  const tight = planNight(db, { today: '2026-11-19', slots: 2, gh });
+  const tight = await planNight(db, { today: '2026-11-19', slots: 2, gh });
   assert.deepEqual(tight.queue.map((e) => e.reason), ['refresh', 'refresh']);
   assert.equal(tight.quotas.size, 0);
+});
+
+test('discovery asks the quota guard before each core call, and stops when it says so', async () => {
+  const { gh, asked } = fakeGitHub({ 'x/a': { prs: 5 }, 'x/b': { prs: 4 }, 'x/c': { prs: 3 } });
+  let allowed = 1;
+
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 3]]), new Set(), '2026-11-19', () => {}, async () => allowed-- > 0);
+
+  assert.deepEqual(found.map((e) => e.repo), ['x/a']);
+  assert.deepEqual(asked, ['search Rust 1', 'runs x/a']);
 });

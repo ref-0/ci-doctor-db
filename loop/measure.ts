@@ -247,7 +247,15 @@ async function main() {
   const hours = (stopAt - Date.now()) / 3_600_000;
   const slots = Math.min(max, Math.floor((Math.max(0, q0.limit - KEEP) * Math.min(hours, 24)) / CHECK_MEDIAN));
   const gh = liveGitHub(token);
-  const plan = planNight(db, { today: date, slots, gh: gh.api, log });
+  // Discovery's core calls wait on the same quota guard as the checks.
+  const guard = async () => {
+    try {
+      return (await waitForQuota(realClock, () => coreQuota(token), stopAt, log)).go;
+    } catch {
+      return false;
+    }
+  };
+  const plan = await planNight(db, { today: date, slots, gh: gh.api, log, guard });
   for (const l of describe(plan)) log(l);
   const byReason = (es: { reason: string }[]) => Object.entries(Object.groupBy(es, (e) => e.reason)).map(([r, xs]) => `${xs!.length} ${r}`).join(', ') || 'nothing';
   say(`queue: ${plan.queue.length} of ${slots} slots (${byReason(plan.queue)}); discovery ${gh.calls.core} core and ${gh.calls.graphql} GraphQL calls`);

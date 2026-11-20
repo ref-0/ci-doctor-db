@@ -144,7 +144,11 @@ export function predictSize(lines: number, headsPerWeek: number) {
 // New repos for each language's cohort quotas: public repos pushed this week, the most PRs opened this week first,
 // that aren't forks, archived or tracked and ran Actions on PRs. A repo's cohort is predicted from its language bytes
 // and PRs opened; the score it gets decides where it lands, and tomorrow's quotas follow from that.
-export function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set<string>, today: string, log: (s: string) => void = () => {}): Entry[] {
+// `guard`, the measure job's quota check, runs before each core call; when it says stop, discovery ends with what it has.
+export type Guard = () => Promise<boolean>;
+const always: Guard = async () => true;
+
+export async function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set<string>, today: string, log: (s: string) => void = () => {}, guard: Guard = always): Promise<Entry[]> {
   const since = addDays(today, -7);
   const out: Entry[] = [];
   const left = new Map(want);
@@ -176,6 +180,10 @@ export function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set
       const lines = Math.round(c.bytes / BYTES_PER_LINE);
       const key = cohortKey(predictSize(lines, c.prs * HEADS_PER_PR), language);
       if (!left.get(key)) continue;
+      if (!(await guard())) {
+        log(`gaps: the quota guard stopped discovery, with ${out.length} repos found`);
+        return out;
+      }
       looked++;
       let runs: number;
       try {
@@ -196,16 +204,16 @@ export function findGapRepos(gh: GitHub, want: Map<string, number>, tracked: Set
 }
 
 // The night: refreshes first, then gaps in what's left of `slots`.
-export function planNight(db: DatabaseSync, opts: { today: string; slots: number; gh?: GitHub; log?: (s: string) => void }) {
+export async function planNight(db: DatabaseSync, opts: { today: string; slots: number; gh?: GitHub; log?: (s: string) => void; guard?: Guard }) {
   const refreshes = dueRefreshes(db, opts.today).slice(0, opts.slots);
   const gaps = cohortGaps(db);
   const want = quotas(gaps, opts.slots - refreshes.length);
   const tracked = new Set((db.prepare(`SELECT repo FROM repos`).all() as { repo: string }[]).map((r) => r.repo.toLowerCase()));
-  const found = opts.gh ? findGapRepos(opts.gh, want, tracked, opts.today, opts.log) : [];
+  const found = opts.gh ? await findGapRepos(opts.gh, want, tracked, opts.today, opts.log, opts.guard) : [];
   return { queue: [...refreshes, ...found], refreshes, gaps, quotas: want };
 }
 
-export function describe(plan: ReturnType<typeof planNight>): string[] {
+export function describe(plan: Awaited<ReturnType<typeof planNight>>): string[] {
   const lines = [`quotas: ${[...plan.quotas].map(([k, n]) => `${k} ${n}`).join(', ') || 'none'}`];
   for (const e of plan.queue) lines.push(`${e.reason.padEnd(8)} ${e.repo.padEnd(40)} ${e.why}`);
   return lines;
@@ -222,7 +230,7 @@ if (import.meta.main) {
   const db = open(arg('--db') ?? DEFAULT_DB);
   const today = new Date().toISOString().slice(0, 10);
   const gh = process.argv.includes('--no-search') ? undefined : liveGitHub(appToken());
-  const plan = planNight(db, { today, slots: Number(arg('--max') ?? 180), gh: gh?.api, log: console.log });
+  const plan = await planNight(db, { today, slots: Number(arg('--max') ?? 180), gh: gh?.api, log: console.log });
   for (const l of describe(plan)) console.log(l);
   if (gh) console.log(`discovery calls: ${gh.calls.core} core, ${gh.calls.graphql} GraphQL`);
   console.log(`queue: ${plan.queue.length} (${plan.refreshes.length} refreshes, ${plan.queue.length - plan.refreshes.length} gaps)`);
