@@ -12,6 +12,7 @@ import { join } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
 import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
+import { takeLock } from './lock.ts';
 import { publish } from './publish.ts';
 import type { Entry } from './queue.ts';
 
@@ -191,6 +192,12 @@ async function main() {
   const date = new Date().toISOString().slice(0, 10);
   const logs = join(ROOT, 'logs');
   mkdirSync(logs, { recursive: true });
+
+  // The whole run holds the lock, so a second run started meanwhile exits at once.
+  const lock = takeLock(process.env.LOOP_LOCK ?? join(logs, 'measure.lock'));
+  if ('heldBy' in lock) throw new Error(`another measure run (pid ${lock.heldBy}) holds the lock; this one exits`);
+  process.on('exit', lock.release);
+
   const logFile = join(logs, `measure-${date}.log`);
   const log = (s: string) => appendFileSync(logFile, s + '\n');
   const say = (s: string) => (console.log(s), log(s));
