@@ -2,13 +2,14 @@
 // The scorer makes its own reads; these are the ones around it.
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
+import { childEnv } from './env.ts';
 import { MIN_STARS, type GitHub } from './queue.ts';
 
 const ROOT = join(import.meta.dirname, '..');
 
 // A fresh App installation token from token.ts, which keeps its own key and cache. Never logged.
 export function appToken(): string {
-  const token = execFileSync('node', [join(ROOT, 'token.ts')], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+  const token = execFileSync('node', [join(ROOT, 'token.ts')], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: childEnv() }).trim();
   if (!token) throw new Error('token.ts printed no token');
   return token;
 }
@@ -21,7 +22,7 @@ function gh(token: string, path: string, fields: Record<string, string | number>
       encoding: 'utf8',
       maxBuffer: 64 << 20,
       stdio: ['ignore', 'pipe', 'pipe'],
-      env: { ...process.env, GH_TOKEN: token, GH_PROMPT_DISABLED: '1', GH_NO_UPDATE_NOTIFIER: '1', GH_TELEMETRY: 'false' },
+      env: childEnv({ GH_TOKEN: token, GH_PROMPT_DISABLED: '1', GH_NO_UPDATE_NOTIFIER: '1', GH_TELEMETRY: 'false' }),
     });
     return JSON.parse(out);
   } catch (e) {
