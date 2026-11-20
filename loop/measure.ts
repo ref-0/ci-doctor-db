@@ -201,7 +201,8 @@ function publish(files: string[], date: string, push: boolean, log: (s: string) 
 const arg = (n: string) => (process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : undefined);
 
 async function main() {
-  const date = new Date().toLocaleDateString('en-CA');
+  // UTC, as the scorer dates its reports.
+  const date = new Date().toISOString().slice(0, 10);
   const logs = join(ROOT, 'logs');
   mkdirSync(logs, { recursive: true });
   const logFile = join(logs, `measure-${date}.log`);
@@ -271,7 +272,7 @@ if (import.meta.main) {
     (e) => {
       console.error(`measure: the night couldn't run: ${(e as Error).message.split('\n')[0]}`);
       try {
-        appendFileSync(join(ROOT, 'logs', `measure-${new Date().toLocaleDateString('en-CA')}.log`), `${(e as Error).stack}\n`);
+        appendFileSync(join(ROOT, 'logs', `measure-${new Date().toISOString().slice(0, 10)}.log`), `${(e as Error).stack}\n`);
       } catch {}
       process.exit(1);
     },
