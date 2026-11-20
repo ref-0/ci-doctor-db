@@ -220,7 +220,7 @@ if (import.meta.main) {
     process.exit(2);
   }
   const db = open(arg('--db') ?? DEFAULT_DB);
-  const today = new Date().toLocaleDateString('en-CA');
+  const today = new Date().toISOString().slice(0, 10);
   const gh = process.argv.includes('--no-search') ? undefined : liveGitHub(appToken());
   const plan = planNight(db, { today, slots: Number(arg('--max') ?? 180), gh: gh?.api, log: console.log });
   for (const l of describe(plan)) console.log(l);
