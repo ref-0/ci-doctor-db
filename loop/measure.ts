@@ -3,7 +3,7 @@
 // night couldn't run at all: no scorer checkout, no database or no token.
 // Usage: node loop/measure.ts [--max <n>] [--until 05:00] [--dry-run] [--push] [--prune]
 //   --dry-run   prints the queue with each repo's reason and checks nothing
-//   --push      pushes the night's data commit to origin main (only from main); otherwise it stays local
+//   --push      pushes every report origin/main lacks to main, as one data commit made on origin/main (publish.ts)
 //   --prune     really deletes the cache's old files; without it the prune stage only says what it would delete
 import { execFile, execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -12,11 +12,13 @@ import { join } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
 import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
+import { publish } from './publish.ts';
 import type { Entry } from './queue.ts';
 
 const ROOT = join(import.meta.dirname, '..');
 export const SCORER_CHECKOUT = join(homedir(), 'ref0-work', 'ci-doctor-next');
 const SCORER_REMOTE = 'https://github.com/ref-0/ci-doctor.git';
+const SCRATCH = join(homedir(), '.cache', 'ci-loop-measure');
 
 // The App's hourly limit is shared with the site once it's live: keep 1,000 spare, and room for a p90 check.
 export const KEEP = 1_000;
@@ -179,26 +181,6 @@ function ensureScorer(log: (s: string) => void): string {
   return `scorer: next at ${git('rev-parse', '--short', 'HEAD')}`;
 }
 
-// The night's new reports, as one data commit on the current branch; pushed to main only from main.
-function publish(files: string[], date: string, push: boolean, log: (s: string) => void): string {
-  if (!files.length) return 'publish: no new reports';
-  const git = (...a: string[]) => execFileSync('git', ['-C', ROOT, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
-  git('add', '--', ...files.map((f) => join('reports', f)));
-  const message = `Reports: ${files.length} checks on ${date}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`;
-  git('-c', 'user.name=mihar-22', '-c', 'user.email=14304599+mihar-22@users.noreply.github.com', 'commit', '-q', '-m', message, '--', ...files.map((f) => join('reports', f)));
-  const sha = git('rev-parse', '--short', 'HEAD');
-  const branch = git('branch', '--show-current');
-  if (!push) return `publish: ${files.length} reports committed as ${sha} on ${branch}, not pushed`;
-  if (branch !== 'main') return `publish: ${files.length} reports committed as ${sha} on ${branch}; --push pushes only from main`;
-  try {
-    git('push', '-q', 'origin', 'main');
-  } catch (e) {
-    log(`publish: push failed: ${(e as Error).message}`);
-    return `publish: ${files.length} reports committed as ${sha}, push failed (see the log)`;
-  }
-  return `publish: ${files.length} reports pushed to main as ${sha}`;
-}
-
 const arg = (n: string) => (process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : undefined);
 
 async function main() {
@@ -263,7 +245,7 @@ async function main() {
   say(`store: ${after.files} report files in loop.db, ${after.changes} rows changed by the import`);
   db.close();
 
-  say(publish(outcomes.flatMap((o) => (o.file ? [o.file] : [])), date, process.argv.includes('--push'), log));
+  say(publish({ root: ROOT, scratch: SCRATCH, date, push: process.argv.includes('--push'), log }));
 
   const really = process.argv.includes('--prune');
   say(existsSync(DEFAULT_CACHE) ? summary(prune(DEFAULT_CACHE, { dryRun: !really }), !really) : 'prune: no cache/ here');
