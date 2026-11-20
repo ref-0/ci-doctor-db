@@ -36,7 +36,10 @@ Measured 18–19 Nov 2026 from GitHub's API: each repo's PR runs over its last 7
 | Runner queue at p90 (s) | 2 | 4 | 596 |
 | Setup share of job time | 3% | 15% | 42% |
 | Runs per merged PR | 4.2 | 16.6 | 77.8 |
+| Job minutes per merged PR | 31 | 259 | 1,471 |
 | Test share of job time | 13% | 41% | 61% |
+
+Job minutes per merged PR counts every run on every push of a PR that merged. 210 of the 219 repos had it.
 
 ## 3. Practices against wait for size
 
