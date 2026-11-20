@@ -28,6 +28,7 @@ export const CHECK_MEDIAN = 66;
 export const CHECK_P90 = 103;
 export const RESET_SLACK_MS = 30_000;
 export const CHECK_TIMEOUT_MS = 600_000;
+export const NIGHT_HOURS = 3; // 02:00 to 05:00
 
 export interface Clock {
   now(): number;
@@ -247,13 +248,15 @@ async function main() {
   // The night's size: what the budget allows until the stop time, at a median check.
   const token = appToken();
   const q0 = coreQuota(token);
-  const hours = (stopAt - Date.now()) / 3_600_000;
+  // Only a dry run gets here past the stop time; it plans a whole night from now.
+  const planStop = Date.now() < stopAt ? stopAt : Date.now() + NIGHT_HOURS * 3_600_000;
+  const hours = (planStop - Date.now()) / 3_600_000;
   const slots = Math.min(max, Math.floor((Math.max(0, q0.limit - KEEP) * Math.min(hours, 24)) / CHECK_MEDIAN));
   const gh = liveGitHub(token);
   // Discovery's core calls wait on the same quota guard as the checks.
   const guard = async () => {
     try {
-      return (await waitForQuota(realClock, () => coreQuota(token), stopAt, log)).go;
+      return (await waitForQuota(realClock, () => coreQuota(token), planStop, log)).go;
     } catch {
       return false;
     }
