@@ -30,12 +30,14 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Date:** 2026-11-19
 - **Change:** Page past the runs list's 1,000-run cap by time window (`created=` ranges), so a busy repo's window covers its 7 days.
 - **Evidence:** `digest/2026-11-19.md`: "Windows: 97 of 219 hit the 1,000-run cap; 76 cover under 3 days and 32 under 1".
+- **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Windows: 127 of 315 hit the 1,000-run cap; 94 cover under 3 days and 44 under 1". Correlation, not cause: the sample grew from n=219 to n=315; the lower capped share is not evidence of a pagination improvement.
 - **Lands:** scorer
 
 ### P-004 · open
 - **Date:** 2026-11-19
 - **Change:** Re-score every stored report with bot PR runs (Dependabot, Renovate) left out of the wait, and keep it only if separation holds.
 - **Evidence:** `digest/2026-11-19.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 7% / 34% (n 219), counted in every score".
+- **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 5% / 32% (n 315), counted in every score". Correlation, not cause: the larger sample still includes bot runs; these figures do not measure the effect of excluding them.
 - **Lands:** calibration
 
 ### P-005 · open
@@ -48,24 +50,28 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Date:** 2026-11-19
 - **Change:** Detect the test runner for the repos where none is found: `cargo test`, `go test`, plain `pytest`, and Node's own runners, read from workflows and manifests.
 - **Evidence:** `digest/2026-11-19.md`: "No test runner detected: 125 of 219 scored repos: 34 × TypeScript, 18 × Python, 17 × Rust, 14 × Go".
+- **Evidence (2026-11-20):** `digest/2026-11-20.md`: "No test runner detected: 140 of 315 scored repos: 34 × TypeScript, 18 × Python, 17 × Rust, 14 × Go" and "Test timings parsed: 90 of 315 scored repos (29%); logs read for 312". Correlation, not cause: yesterday's 85/219 (39%) and today's 90/315 describe different samples, not demonstrated parser regression.
 - **Lands:** scorer
 
 ### P-007 · open
 - **Date:** 2026-11-19
 - **Change:** Name the providers behind the runner labels the scorer passes through raw, starting with `xcode-*`, or count them as "other" so they don't show as providers.
 - **Evidence:** `digest/2026-11-19.md`: "Runner labels not recognised: `xcode-27` (4), …", 10 labels in all.
+- **Evidence (2026-11-20):** `digest/2026-11-20.json`, first unrecognised runner-label row: "repos": 11; the corresponding row in `digest/2026-11-19.json`: "repos": 4. Correlation, not cause: the label now affects n=11 repos versus n=4 yesterday, across scored samples of n=315 versus n=219; this supports the existing detection priority, not a claim about runner performance.
 - **Lands:** scorer
 
 ### P-008 · open
 - **Date:** 2026-11-19
 - **Change:** Give repos with too few PR pushes in 7 days a longer window (14, then 28 days) before calling them unscored.
 - **Evidence:** `digest/2026-11-19.md`: "Unscored: 24 (24 × Only N PR pushes in the window ran the main workflows; N are needed.)".
+- **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Checks since 2026-11-19: 103" and "Unscored: 6 (6 × Only N PR pushes in the window ran the main workflows; N are needed.)". Correlation, not cause: n=6 of 103 checks still lack enough pushes; yesterday's n=24 of 246 was cumulative, so these counts do not establish improved scoring coverage.
 - **Lands:** scorer
 
 ### P-009 · open
 - **Date:** 2026-11-19
 - **Change:** Compare practice effects on wait for size (wait ÷ the size curve), not raw wait, within each cohort: several effects point backwards, as `FINDINGS.md` §3 saw across all repos.
 - **Evidence:** `digest/2026-11-19.md`: "medium × TypeScript (28) | frozen_install | 23.3 (21) | 6.8 (7) | 3.43" and "large × Rust (22) | compiler_cache | 27 (16) | 14.3 (6) | 1.89".
+- **Evidence (2026-11-20):** `digest/2026-11-20.md`: "large × JavaScript (13) | draft_skip | 9.3 (7) | 18.1 (5) | 0.51"; the frozen-install ratio remains "3.43" (n=21/7) and compiler-cache ratio "1.89" (n=16/6). Correlation, not cause: the JavaScript cohort grew from n=6 to n=13 and newly meets the ranking threshold; "0 of 3 repos with two measured reports moved more than 25%" supplies no within-repo confirmation. Adjust for size before treating these gaps as practice effects.
 - **Lands:** calibration
 
 ### P-010 · done (ci-doctor#5)
@@ -103,3 +109,9 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Add the coverage audit's general techniques to the guide and skills: startup work and startup gates, per-phase harness timing, fixture CPU profiling, immutable prerequisites with fresh mutable state, batched fixtures with equivalence checks, immutable build snapshots, capture and replay, completion predicates, first-pass vs replay waits, and the flake cases (executable descriptors, Git maintenance, socket paths, parent pipes, refused bodies, isolated sparse checkouts, installer logs).
 - **Evidence:** a full audit of the monorepo's 14,412 commits against the guide found 17 techniques that moved CI time or flake rate and that the guide doesn't teach or teaches only in passing. The report stays on the maintainers' machine (`ci-gist/build/COVERAGE-AUDIT.md`).
 - **Lands:** guide sections 2, 5, 8, 10 and 11; the Workers, flake and triage skill topics
+
+### P-016 · open
+- **Date:** 2026-11-20
+- **Change:** Investigate and correct numeric test-runner classification so version-like values are not presented as runner identities; verify the underlying values before changing detection.
+- **Evidence:** `digest/2026-11-20.md`: "By test runner: none detected 29/140, 0.0 2/75"; `digest/2026-11-19.json` has no matching category. The numeric category spans n=75 repos, all with logs read, but only n=2 with timings (`digest/2026-11-20.json`). Correlation, not cause: this warrants a classification audit, not a claim that correcting the category will improve timing coverage.
+- **Lands:** scorer
