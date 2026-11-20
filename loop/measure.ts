@@ -79,7 +79,14 @@ export async function runNight(queue: Entry[], d: NightDeps) {
   let stopped = 'the queue is done';
 
   for (const e of queue) {
-    const wait = await waitForQuota(d.clock, d.quota, d.stopAt, d.log);
+    let wait: Awaited<ReturnType<typeof waitForQuota>>;
+    try {
+      wait = await waitForQuota(d.clock, d.quota, d.stopAt, d.log);
+    } catch (err) {
+      // The reads were already retried: end the night, and let the store and publish stages run on what it has.
+      stopped = `the quota couldn't be read: ${(err as Error).message.split('\n')[0]}`;
+      break;
+    }
     if (!wait.go) {
       stopped = wait.why;
       break;
