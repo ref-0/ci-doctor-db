@@ -180,3 +180,13 @@ test('a renamed tracked repo is known by its id and not taken again, and ids are
   await planNight(db, { today: '2026-11-19', slots: 50, gh });
   assert.equal(asked.filter((a) => a.startsWith('ids')).length, 1);
 });
+
+test("each cohort has its own screening budget: one cohort's failures leave another's chances", async () => {
+  // Eight busy medium repos with no PR runs come first, then a small one that qualifies.
+  const failing = Object.fromEntries(Array.from({ length: 8 }, (_, i) => [`x/m${i}`, { prs: 20 + i, runs: 0 }]));
+  const { gh } = fakeGitHub({ ...failing, 'x/small': { prs: 5, bytes: 30 * 50_000 } });
+
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 1], ['small × Rust', 1]]), new Set(), '2026-11-19');
+
+  assert.deepEqual(found.map((e) => e.repo), ['x/small']);
+});
