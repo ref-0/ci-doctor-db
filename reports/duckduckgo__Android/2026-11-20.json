@@ -1,0 +1,1069 @@
+{
+ "repo": "duckduckgo/Android",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "develop",
+ "profile": {
+  "ageYears": 9.9,
+  "stars": 4909,
+  "forks": 1432,
+  "languages": [
+   [
+    "Kotlin",
+    98
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Java",
+    0
+   ]
+  ],
+  "linesOfCode": 1333773,
+  "files": 11454,
+  "sourceFiles": 6736,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 716214,
+   "tests": 612313,
+   "integration": 4444,
+   "support": 801
+  },
+  "testShare": 0.4630162708649703,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 85.3,
+  "commitsPerWeekYear": 57.5,
+  "pace": 1.5,
+  "activeAuthors28d": 28,
+  "prsOpenedPerWeek": 103,
+  "prsMergedPerWeek": 89,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 28.9,
+   "p90": 169.6,
+   "n": 89
+  },
+  "prRunsPerDay": 2000,
+  "runsPerMergedPr": 157.3
+ },
+ "window": {
+  "days": 0.4,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 7
+ },
+ "size": "large",
+ "headsPerWeek": 1386,
+ "score": 80,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 80,
+  "reliability": 100,
+  "efficiency": 58
+ },
+ "detail": {
+  "speed": {
+   "wait": 70,
+   "forSize": 96,
+   "tail": 76
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 49,
+   "runsPerPr": 0,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6696.9,
+  "prBilledMinutesPerDay": 8159,
+  "jobMinutesPerMergedPr": 526.7,
+  "expectedMinutesPerMergedPr": 364.4,
+  "expectedWait": 19.8,
+  "workflowsOnPrs": 11
+ },
+ "wait": {
+  "heads": 99,
+  "timed": 59,
+  "p50": 10.6,
+  "p75": 12.5,
+  "p90": 14.1,
+  "redRate": 0.26262626262626265,
+  "rerunRate": 0.010101010101010102,
+  "passedOnRerunRate": 0.010101010101010102,
+  "cancelledRate": 0.37373737373737376,
+  "botHeads": 0,
+  "lightHeads": 2,
+  "lastToFinish": [
+   [
+    "CI Checks",
+    56
+   ],
+   [
+    "Code review assistant",
+    2
+   ],
+   [
+    "Pull Request changed -> Sync Asana PR task",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "CI Checks",
+    22
+   ],
+   [
+    "Pull Request changed -> Sync Asana PR task",
+    3
+   ],
+   [
+    "Build debug apk",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Pull Request opened -> Comment on task and add it to Android Release Board",
+   "Mark task as complete and move PRs merged to the default branch to Waiting for release"
+  ],
+  "heavyWorkflows": [
+   "CI Checks",
+   "Build debug apk"
+  ],
+  "allPushesP50": 10.6
+ },
+ "main": {
+  "heads": 66,
+  "p50": 12.183333333333334,
+  "p90": 12.183333333333334,
+  "redRate": 0.030303030303030304,
+  "redBy": [
+   [
+    "CI Checks",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.20506730007917656,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 6,
+  "spanMin": 7.866666666666666,
+  "jobMinutes": 16.65,
+  "billedMinutes": 20,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.09243697478991597,
+  "critical": {
+   "name": "Unit tests",
+   "minutes": 11.516666666666667,
+   "shareOfSpan": 0.9691444600280505
+  },
+  "longest": {
+   "name": "Unit tests",
+   "minutes": 11.516666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    18
+   ],
+   [
+    "android-large-runner",
+    18
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 6,
+  "edges": 5,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Unit tests",
+    "runs": 3
+   },
+   {
+    "name": "Android CI tests",
+    "runs": 3
+   }
+  ],
+  "chain": [
+   {
+    "name": "Check Changed Files",
+    "minutes": 0.3,
+    "share": 0.03,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.3
+   },
+   {
+    "name": "Unit tests",
+    "minutes": 11.6,
+    "share": 0.97,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 11.5,
+    "setupMin": 0.5
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 7.9,
+  "blockedMinP50": 0.4,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 7.8,
+  "setupInPathMinP50": 0.6,
+  "topBlockers": [
+   {
+    "name": "Check Changed Files",
+    "runs": 6,
+    "heldJobs": 5,
+    "jobs": 6,
+    "tookMin": 0.4,
+    "heldJobMin": 1.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44646072897,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.5,
+    "path": [
+     "Check Changed Files",
+     "Unit tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.3,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 10.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 7.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 9.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44646056909,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.9,
+    "path": [
+     "Check Changed Files",
+     "Unit tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 8.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 11.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 44644147488,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13,
+    "path": [
+     "Check Changed Files",
+     "Unit tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 13,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 9.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 7.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44643575588,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7,
+    "path": [
+     "Check Changed Files",
+     "Android CI tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 44635191962,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.9,
+    "path": [
+     "Check Changed Files",
+     "Android CI tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 7.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.6
+     }
+    ]
+   },
+   {
+    "id": 44632606857,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.4,
+    "path": [
+     "Check Changed Files",
+     "Android CI tests"
+    ],
+    "topBlocker": "Check Changed Files",
+    "jobs": [
+     {
+      "name": "Check Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Android CI tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Lint",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 5.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Code Formatting",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "E2E Source Patches",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Unit tests",
+      "needs": [
+       "check_changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 58,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": null,
+  "frozenInstall": true,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": [
+   "Read the first 40 of 58 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Kotlin",
+    98
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Java",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm",
+    "pip",
+    "Bundler"
+   ],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Jest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier"
+  ],
+  "libraries": [
+   {
+    "name": "@duckduckgo/autoconsent",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@duckduckgo/autofill",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@duckduckgo/content-scope-scripts",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@duckduckgo/pixel-schema",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@duckduckgo/privacy-dashboard",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@duckduckgo/privacy-reference-tests",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-json",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-node-resolve",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "rollup",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "rollup-plugin-terser",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "fastlane",
+    "ecosystem": "ruby",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    18
+   ],
+   [
+    "android-large-runner",
+    18
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "@duckduckgo/android-browser",
+     "path": "PixelDefinitions/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "ddg-android",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "fixes": [],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Kotlin it applies the principles, without a Kotlin-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 106,
+ "read": {
+  "calls": 106,
+  "fromCache": 0
+ }
+}
