@@ -10,6 +10,7 @@ import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
+import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
 import type { Entry } from './queue.ts';
 
@@ -145,7 +146,7 @@ export function childCheck(scorerSrc: string) {
       execFile(
         'node',
         [join(import.meta.dirname, 'check.ts'), repo],
-        { env: { ...process.env, GH_TOKEN: token, CI_DOCTOR_SCORER: scorerSrc }, timeout: CHECK_TIMEOUT_MS, maxBuffer: 256 << 20, encoding: 'utf8' },
+        { env: childEnv({ GH_TOKEN: token, CI_DOCTOR_SCORER: scorerSrc }), timeout: CHECK_TIMEOUT_MS, maxBuffer: 256 << 20, encoding: 'utf8' },
         (err, stdout, stderr) => {
           if (!err) {
             try {
@@ -201,6 +202,9 @@ function publish(files: string[], date: string, push: boolean, log: (s: string) 
 const arg = (n: string) => (process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : undefined);
 
 async function main() {
+  const unsafe = debugSettings();
+  if (unsafe.length) throw new Error(`refusing to run with Node's debugging on, which would print the App's token: ${unsafe.join('; ')}`);
+
   // UTC, as the scorer dates its reports.
   const date = new Date().toISOString().slice(0, 10);
   const logs = join(ROOT, 'logs');
