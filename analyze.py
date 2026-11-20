@@ -112,7 +112,8 @@ print('\n== distributions')
 for name, get in [('p50 wait', lambda r: num(r['wait']['p50'])), ('p90/p50', lambda r: (num(r['wait']['p90']) or 0) / (num(r['wait']['p50']) or 1)),
                   ('green only on rerun', lambda r: num(r['wait']['passedOnRerunRate'])), ('main red', lambda r: num(r['main']['redRate'])),
                   ('queue p90 s', lambda r: num((r.get('jobs') or {}).get('queueP90Sec'))), ('setup share', lambda r: num((r.get('jobs') or {}).get('setupShare'))),
-                  ('runs per merged PR', lambda r: num(r['profile'].get('runsPerMergedPr'))), ('test share', lambda r: num(r['profile'].get('testShare')))]:
+                  ('runs per merged PR', lambda r: num(r['profile'].get('runsPerMergedPr'))), ('job-min / merged PR', lambda r: num(r['efficiency'].get('jobMinutesPerMergedPr'))),
+                  ('test share', lambda r: num(r['profile'].get('testShare')))]:
     xs = sorted(x for x in (get(r) for r, _ in scored) if x is not None)
     if xs:
         q = lambda p: xs[min(len(xs) - 1, int(p * len(xs)))]
