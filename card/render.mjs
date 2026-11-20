@@ -175,12 +175,13 @@ const pasteBox = (style = {}) =>
       box({ alignItems: 'baseline', gap: 12 }, text({}, 'Fix'), arrow(30, C.bg))));
 
 // The landing page: the paste box, then your repo going from slow to fast. The before card is dimmed with a 🐢,
-// the after card glows in its score colour with a 🔥, and a plain pill on the arrow says how much faster.
+// the after card glows in its score colour with a 🔥, and a plain pill on the arrow names ci-doctor, what made it fast.
 // The numbers are an example, not a measured repo: swap in a real adopter's before and after once there is one.
 // Two scores with an arrow between: the before card dimmed with its sticker on the left, the after card glowing in its colour.
 // Each side is [score, p50 minutes]. Home shows an example pair; a repo's history shows its own.
 // Tight trims the cards' inner padding, for history, where a title sits above them.
-const beforeAfter = (before, after, tight = false) => {
+// The pill says how much faster unless given its words, as home gives "/ci-doctor".
+const beforeAfter = (before, after, tight = false, pill) => {
   const pad = tight ? { height: 196, side: 30, foot: 26, top: 26, right: 32 } : { height: 214, side: 36, foot: 32, top: 26, right: 32 };
   const sticker = (score, side) =>
     box({ position: 'absolute', top: -26, [side]: -18, transform: `rotate(${side === 'right' ? 12 : -12}deg)` }, h('img', { src: emoji(mood(score)), width: 64, height: 64 }));
@@ -198,7 +199,7 @@ const beforeAfter = (before, after, tight = false) => {
     mini(before, false),
     box({ flexDirection: 'column', alignItems: 'center', gap: 14 },
       box({ height: 50, borderRadius: 25, padding: '0 20px', alignItems: 'center', fontSize: 26, background: '#161717', border: `2px solid ${C.line}` },
-        line([[`${times.toFixed(1)}×`], ' faster'], 26)),
+        pill === undefined ? line([[`${times.toFixed(1)}×`], ' faster'], 26) : text({ fontFamily: 'Plex Mono' }, pill)),
       arrow(52, C.muted)),
     mini(after, true));
 };
@@ -208,7 +209,7 @@ const homeCard = () =>
   frame('ci-doctor.ref0.dev',
     box({ flexGrow: 1, flexDirection: 'column', justifyContent: 'center', paddingTop: 58 },
       pasteBox(),
-      box({ marginTop: 48, flexDirection: 'column' }, beforeAfter([31, 24.1], [92, 3.2]))));
+      box({ marginTop: 48, flexDirection: 'column' }, beforeAfter([31, 24.1], [92, 3.2], false, '/ci-doctor'))));
 
 // A repo's history: its score and PR wait before a change and after, each from its own window of PR runs.
 // The footer says how many days it's been since the split, and the minutes the change saves each PR's wait.
