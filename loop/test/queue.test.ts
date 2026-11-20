@@ -12,7 +12,7 @@ function add(db: DatabaseSync, repo: string, date: string, { size = 'large', lan
   );
   db.prepare(`INSERT INTO checks (repo, at, reason, scored, report) VALUES (?, ?, 'import', ?, ?)`).run(repo, date, score === null ? 0 : 1, id);
   db.prepare(
-    `INSERT INTO repos VALUES (?, ?, ?, 1, ?) ON CONFLICT (repo) DO UPDATE SET last_checked = excluded.last_checked, latest_report = excluded.latest_report`,
+    `INSERT INTO repos (repo, first_seen, last_checked, times_checked, latest_report) VALUES (?, ?, ?, 1, ?) ON CONFLICT (repo) DO UPDATE SET last_checked = excluded.last_checked, latest_report = excluded.latest_report`,
   ).run(repo, date, date, id);
 }
 
@@ -74,23 +74,27 @@ test('size is predicted as the scorer takes it, the larger of code and traffic',
   assert.equal(predictSize(2_000_000, 0), 'large');
 });
 
-function fakeGitHub(repos: Record<string, { prs: number; fork?: boolean; archived?: boolean; language?: string; bytes?: number; runs?: number }>) {
+type FakeRepo = { prs: number; fork?: boolean; archived?: boolean; language?: string; bytes?: number; runs?: number; id?: number; page?: number[] };
+
+// Repos' ids are their order here unless given; `page` lists the search pages a repo comes back on (default [1]).
+function fakeGitHub(repos: Record<string, FakeRepo>, ids: Record<string, number> = {}) {
   const asked: string[] = [];
+  const idOf = (repo: string) => repos[repo]?.id ?? Object.keys(repos).indexOf(repo) + 1;
   const gh: GitHub = {
     searchRepos(language, _since, page) {
       asked.push(`search ${language} ${page}`);
-      if (page > 1) return [];
       return Object.entries(repos)
-        .filter(([, r]) => (r.language ?? 'Rust') === language)
-        .map(([repo, r]) => ({ repo, fork: !!r.fork, archived: !!r.archived, private: false, language: r.language ?? 'Rust', bytes: r.bytes ?? 30 * 300_000, prs: r.prs }));
+        .filter(([, r]) => (r.language ?? 'Rust') === language && (r.page ?? [1]).includes(page))
+        .map(([repo, r]) => ({ id: idOf(repo), repo, fork: !!r.fork, archived: !!r.archived, private: false, language: r.language ?? 'Rust', bytes: r.bytes ?? 30 * 300_000, prs: r.prs }));
     },
     prRuns: (repo) => (asked.push(`runs ${repo}`), repos[repo]!.runs ?? 50),
+    repoIds: (names) => (asked.push(`ids ${names.join(',')}`), new Map(names.filter((n) => ids[n]).map((n) => [n, ids[n]!]))),
   };
-  return { gh, asked };
+  return { gh, asked, idOf };
 }
 
 test('gap repos come busiest first, skipping forks, archived, tracked and repos without PR runs', async () => {
-  const { gh } = fakeGitHub({
+  const { gh, idOf } = fakeGitHub({
     'x/busiest': { prs: 9, fork: true },
     'x/archived': { prs: 8, archived: true },
     'x/tracked': { prs: 7 },
@@ -100,7 +104,7 @@ test('gap repos come busiest first, skipping forks, archived, tracked and repos 
     'x/third': { prs: 3 },
   });
 
-  const found = await findGapRepos(gh, new Map([['medium × Rust', 2]]), new Set(['x/tracked']), '2026-11-19');
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 2]]), new Set([idOf('x/tracked')]), '2026-11-19');
 
   assert.deepEqual(found.map((e) => e.repo), ['x/good', 'x/also']);
   assert.equal(found[0]!.reason, 'gap');
@@ -151,4 +155,28 @@ test('discovery asks the quota guard before each core call, and stops when it sa
 
   assert.deepEqual(found.map((e) => e.repo), ['x/a']);
   assert.deepEqual(asked, ['search Rust 1', 'runs x/a']);
+});
+
+test('a repo on two search pages takes one slot', async () => {
+  const many = Object.fromEntries(Array.from({ length: 50 }, (_, i) => [`x/p${i}`, { prs: 1, page: [1], runs: 0 }]));
+  const { gh } = fakeGitHub({ ...many, 'x/twice': { prs: 9, page: [1, 2] }, 'x/other': { prs: 2, page: [2] } });
+
+  const found = await findGapRepos(gh, new Map([['medium × Rust', 2]]), new Set(), '2026-11-19');
+
+  assert.deepEqual(found.map((e) => e.repo), ['x/twice', 'x/other']);
+});
+
+test('a renamed tracked repo is known by its id and not taken again, and ids are stored', async () => {
+  const db = open(':memory:');
+  add(db, 'old-owner/tool', '2026-11-18', { language: 'Rust', size: 'medium' });
+  const { gh, asked } = fakeGitHub({ 'new-owner/tool': { prs: 9, id: 77 }, 'x/fresh': { prs: 5, id: 78 } }, { 'old-owner/tool': 77 });
+
+  const plan = await planNight(db, { today: '2026-11-19', slots: 50, gh });
+
+  assert.ok(!plan.queue.some((e) => e.repo === 'new-owner/tool'));
+  assert.ok(plan.queue.some((e) => e.repo === 'x/fresh' && e.githubId === 78));
+  assert.equal(db.prepare(`SELECT github_id FROM repos WHERE repo = 'old-owner/tool'`).get()!.github_id, 77);
+  // Known ids aren't looked up again.
+  await planNight(db, { today: '2026-11-19', slots: 50, gh });
+  assert.equal(asked.filter((a) => a.startsWith('ids')).length, 1);
 });

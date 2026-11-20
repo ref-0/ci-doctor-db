@@ -48,6 +48,7 @@ test('repos count checks, not rescores', () => {
     last_checked: '2026-11-19',
     times_checked: 2,
     latest_report: 'vitejs/vite/2026-11-19_rescored',
+    github_id: null,
   });
 });
 
