@@ -68,13 +68,13 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** `digest/2026-11-19.md`: "medium × TypeScript (28) | frozen_install | 23.3 (21) | 6.8 (7) | 3.43" and "large × Rust (22) | compiler_cache | 27 (16) | 14.3 (6) | 1.89".
 - **Lands:** calibration
 
-### P-010 · briefed
+### P-010 · done (ci-doctor#5)
 - **Date:** 2026-11-19
 - **Change:** Read each workflow's job graph (`needs:`, reusable workflows, and wait actions where named) and compute, per PR run: the critical path through the graph, each job's **blocked** time (from its creation until its last `needs` finished) apart from its **queue** time (until a runner took it), and the job that blocks the most downstream minutes. Report "the chain that sets the wait" and "the top blocker", and add both to the `<ci-report>` block.
 - **Evidence:** today the scorer takes "the critical job" as whichever job finished last (`score.ts` jobs section) and never reads `needs:`, so it can't tell a slow job from one waiting on another. Guide sections 1, 3 and 7 tell agents to name the critical path, and Phase 2 measures it by hand. Raised by the maintainers, 19 Nov.
 - **Lands:** scorer, then site (the replay view, SITE.md section 6)
 
-### P-011 · briefed
+### P-011 · done (ci-doctor#4)
 - **Date:** 2026-11-19
 - **Change:** Read a JavaScript or TypeScript workspace's package graph from its manifests: packages, internal dependency edges, depth, fan-in, cycles, and each package's `exports` map (present, source-first condition, barrel entries). Record it in the report's stack, and flag what widens selection or slows checks: a cycle, a package most of the workspace depends on, a barrel entry, a package with no `exports`.
 - **Evidence:** the scorer counts packages and nothing more. Guide section 4 (a selector from the real dependency graph, fan-in, package entry points) and section 9 (boundaries, the export guard, source-first exports) depend on this graph, and Phase 1 maps it by hand. Raised by the maintainers, 19 Nov.
@@ -86,7 +86,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** guide section 9 names "no forbidden layer imports" in one bullet; there's no section on designing or checking the graph. Raised by the maintainers, 19 Nov.
 - **Lands:** guide, skill
 
-### P-013 · briefed
+### P-013 · done (ci-doctor#7)
 - **Date:** 2026-11-19
 - **Change:** A local tool, `scripts/graph/` in ci-doctor, that an agent runs in a repo: the workspace's package and file import graph through `exports`, fan-in, cycles, barrels, folder-level layers, and, replaying recent commits, what each change triggers as a share of the workspace.
 - **Evidence:** the scorer only sees manifests from outside; the import graph and "what triggers what" need the source. Guide section 4 depends on them, and Phase 1 maps them by hand. Raised by the maintainers, 19 Nov, as very high priority.
@@ -97,3 +97,9 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** The scorer fetches each workspace package's `exports` entry files by raw fetch and measures export-path overload: `export *`, re-exported module counts, root barrels, and overload = re-exported modules × importing packages. Shown on the report's graphs (SITE.md 7b) and in the `<ci-report>` block.
 - **Evidence:** an overloaded export path can make one edit invalidate most of a workspace's affected checks and caches; the maintainers saw it in the monorepo. Raised 19 Nov.
 - **Lands:** scorer, site
+
+### P-015 · done (ci-doctor#6)
+- **Date:** 2026-11-19
+- **Change:** Add the coverage audit's general techniques to the guide and skills: startup work and startup gates, per-phase harness timing, fixture CPU profiling, immutable prerequisites with fresh mutable state, batched fixtures with equivalence checks, immutable build snapshots, capture and replay, completion predicates, first-pass vs replay waits, and the flake cases (executable descriptors, Git maintenance, socket paths, parent pipes, refused bodies, isolated sparse checkouts, installer logs).
+- **Evidence:** a full audit of the monorepo's 14,412 commits against the guide found 17 techniques that moved CI time or flake rate and that the guide doesn't teach or teaches only in passing. The report stays on the maintainers' machine (`ci-gist/build/COVERAGE-AUDIT.md`).
+- **Lands:** guide sections 2, 5, 8, 10 and 11; the Workers, flake and triage skill topics
