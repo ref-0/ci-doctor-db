@@ -202,14 +202,16 @@ async function main() {
   say(ensureScorer(log));
   const { SCORER_SRC } = await import('../scorer.ts');
   const { importOne, refreshRepos, importReports } = await import('./import.ts');
-  const { open } = await import('./db.ts');
+  const { open, checkSchema } = await import('./db.ts');
   const { planNight, describe } = await import('./queue.ts');
   const { appToken, coreQuota, liveGitHub } = await import('./github.ts');
   const { prune, summary, DEFAULT_CACHE } = await import('./prune.ts');
 
   // This checkout's reports/ and loop.db, so the data commit holds what the night wrote.
   const reportsDir = join(ROOT, 'reports');
-  const db = open(process.env.LOOP_DB ?? join(ROOT, 'loop.db'));
+  const dbPath = process.env.LOOP_DB ?? join(ROOT, 'loop.db');
+  const db = open(dbPath);
+  checkSchema(db, dbPath);
   const before = importReports(db, reportsDir);
   say(`store: ${before.files} report files in loop.db before the night, ${before.changes} rows changed`);
 

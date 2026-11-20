@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { join } from 'node:path';
+import { readFileSync } from 'node:fs';
 import { cohorts, counts, history, latestOf, open } from '../db.ts';
 import { importReports, reportRow, type Misfit } from '../import.ts';
 
@@ -109,4 +110,16 @@ test("a published scorer's report keeps its own stack, with no misfits", () => {
 
   assert.deepEqual(misfits, []);
   assert.deepEqual(JSON.parse(String(row?.stack)), stack);
+});
+
+test('a loop.db older than schema.sql is named, with how to rebuild it', async () => {
+  const { DatabaseSync } = await import('node:sqlite');
+  const { checkSchema, missingColumns } = await import('../db.ts');
+  const db = new DatabaseSync(':memory:');
+  db.exec(`CREATE TABLE checks (repo TEXT NOT NULL, at TEXT NOT NULL, reason TEXT NOT NULL, scored INTEGER NOT NULL, report TEXT, error TEXT, PRIMARY KEY (repo, at, reason))`);
+  db.exec(readFileSync(join(import.meta.dirname, '..', 'schema.sql'), 'utf8'));
+
+  assert.deepEqual(missingColumns(db), ['checks.calls']);
+  assert.throws(() => checkSchema(db, 'loop.db'), /no checks\.calls.*rm loop\.db && node loop\/import\.ts/);
+  assert.doesNotThrow(() => checkSchema(open(':memory:'), 'x'));
 });
