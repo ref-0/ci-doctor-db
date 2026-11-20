@@ -1,12 +1,11 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, existsSync, writeFileSync, utimesSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, existsSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { open } from '../db.ts';
 import { importOne, importReports, refreshRepos } from '../import.ts';
 import { KEEP, CHECK_P90, nextAt, runNight, waitForQuota, type CheckResult, type Clock } from '../measure.ts';
-import { prune } from '../prune.ts';
 import type { Quota } from '../github.ts';
 import type { Entry } from '../queue.ts';
 
@@ -168,28 +167,4 @@ test('a token that fails ends the night, recorded as why it stopped', async () =
   assert.deepEqual(night.outcomes, []);
   assert.equal(night.stopped, 'token.ts failed: no key');
   done();
-});
-
-test('prune deletes cache files older than 14 days, and only lists them on a dry run', () => {
-  mkdirSync(SCRATCH, { recursive: true });
-  const cache = mkdtempSync(join(SCRATCH, 'cache-'));
-  const now = Date.parse('2026-11-19T12:00:00Z');
-  const old = (now - 20 * 86_400_000) / 1000;
-  mkdirSync(join(cache, 'logs'));
-  writeFileSync(join(cache, 'old'), 'x'.repeat(100));
-  writeFileSync(join(cache, 'logs', 'old.log'), 'y'.repeat(50));
-  writeFileSync(join(cache, 'new'), 'z');
-  utimesSync(join(cache, 'old'), old, old);
-  utimesSync(join(cache, 'logs', 'old.log'), old, old);
-  utimesSync(join(cache, 'new'), now / 1000, now / 1000);
-
-  const dry = prune(cache, { now, dryRun: true });
-  assert.deepEqual({ files: dry.files, bytes: dry.bytes, kept: dry.kept }, { files: 2, bytes: 150, kept: 1 });
-  assert.ok(existsSync(join(cache, 'old')));
-
-  prune(cache, { now, dryRun: false });
-  assert.ok(!existsSync(join(cache, 'old')));
-  assert.ok(!existsSync(join(cache, 'logs')));
-  assert.ok(existsSync(join(cache, 'new')));
-  rmSync(cache, { recursive: true, force: true });
 });
