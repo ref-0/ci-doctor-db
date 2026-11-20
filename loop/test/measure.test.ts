@@ -2,10 +2,11 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, existsSync } from 'node:fs';
 import { homedir } from 'node:os';
+import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import { open } from '../db.ts';
 import { importOne, importReports, refreshRepos } from '../import.ts';
-import { KEEP, CHECK_P90, nextAt, runNight, waitForQuota, type CheckResult, type Clock } from '../measure.ts';
+import { KEEP, CHECK_P90, todayAt, runNight, waitForQuota, type CheckResult, type Clock } from '../measure.ts';
 import type { Quota } from '../github.ts';
 import type { Entry } from '../queue.ts';
 
@@ -42,10 +43,42 @@ function setup() {
 const entries = (...repos: string[]): Entry[] => repos.map((repo) => ({ repo, reason: 'gap', why: 'test' }));
 const report = (repo: string, extra: Record<string, unknown> = {}) => ({ ...FIXTURE, repo, read: { calls: 66 }, ...extra });
 
-test('the stop time is the next 05:00 after the start', () => {
-  const start = new Date(2026, 10, 20, 2, 0).getTime();
-  assert.equal(nextAt(start, '05:00'), new Date(2026, 10, 20, 5, 0).getTime());
-  assert.equal(nextAt(new Date(2026, 10, 19, 17, 0).getTime(), '05:00'), new Date(2026, 10, 20, 5, 0).getTime());
+test("the stop time is today's 05:00, even after it", () => {
+  assert.equal(todayAt(new Date(2026, 10, 20, 2, 0).getTime(), '05:00'), new Date(2026, 10, 20, 5, 0).getTime());
+  assert.equal(todayAt(new Date(2026, 10, 20, 5, 1).getTime(), '05:00'), new Date(2026, 10, 20, 5, 0).getTime());
+  assert.throws(() => todayAt(0, 'five'), /HH:MM/);
+});
+
+test('a check never runs past the stop time: its timeout is what is left, up to 10 minutes', async () => {
+  const { db, reportsDir, done } = setup();
+  const clock = fakeClock(STOP - 3 * 60_000);
+  const timeouts: number[] = [];
+
+  await runNight(entries('a/1', 'a/2'), {
+    db, reportsDir, clock, stopAt: STOP, quota: fakeQuota(clock).read, token: () => 't',
+    check: async (repo, _t, timeoutMs) => (timeouts.push(timeoutMs), await clock.sleep(60_000), { report: report(repo) }),
+    importOne, refreshRepos, log: () => {},
+  });
+
+  assert.deepEqual(timeouts, [180_000, 120_000]);
+  const early = fakeClock();
+  const t: number[] = [];
+  await runNight(entries('a/3'), { db, reportsDir, clock: early, stopAt: STOP, quota: fakeQuota(early).read, token: () => 't', check: async (repo, _t, ms) => (t.push(ms), { report: report(repo) }), importOne, refreshRepos, log: () => {} });
+  assert.deepEqual(t, [600_000]);
+  done();
+});
+
+test('a run started after the stop time measures nothing and exits 0', () => {
+  mkdirSync(SCRATCH, { recursive: true });
+  const r = spawnSync('node', [join(import.meta.dirname, '..', 'measure.ts'), '--until', '00:00'], {
+    encoding: 'utf8',
+    env: { ...process.env, LOOP_LOCK: join(SCRATCH, `stop-test-${process.pid}.lock`) },
+    timeout: 30_000,
+  });
+
+  assert.equal(r.status, 0);
+  assert.match(r.stdout, /started after the night's stop time, 00:00; measuring nothing/);
+  assert.doesNotMatch(r.stdout, /scorer:/);
 });
 
 test('a low quota pauses until its reset, then goes on', async () => {
