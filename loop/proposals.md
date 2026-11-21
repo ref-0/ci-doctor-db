@@ -31,6 +31,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Page past the runs list's 1,000-run cap by time window (`created=` ranges), so a busy repo's window covers its 7 days.
 - **Evidence:** `digest/2026-11-19.md`: "Windows: 97 of 219 hit the 1,000-run cap; 76 cover under 3 days and 32 under 1".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Windows: 127 of 315 hit the 1,000-run cap; 94 cover under 3 days and 44 under 1". Correlation, not cause: the sample grew from n=219 to n=315; the lower capped share is not evidence of a pagination improvement.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Windows: 141 of 367 hit the 1,000-run cap; 102 cover under 3 days and 45 under 1". Correlation, not cause: capped counts rose from 127/315 while their share fell; this does not establish a pagination fix.
 - **Lands:** scorer
 
 ### P-004 · open
@@ -38,6 +39,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Re-score every stored report with bot PR runs (Dependabot, Renovate) left out of the wait, and keep it only if separation holds.
 - **Evidence:** `digest/2026-11-19.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 7% / 34% (n 219), counted in every score".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 5% / 32% (n 315), counted in every score". Correlation, not cause: the larger sample still includes bot runs; these figures do not measure the effect of excluding them.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 3% / 33% (n 367), counted in every score". Correlation, not cause: n=315 → 367 is a changing sample, not a measured exclusion effect; reconcile this aggregate description with today's five bot-related unscored checks before evaluating the re-score.
 - **Lands:** calibration
 
 ### P-005 · open
@@ -51,6 +53,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Detect the test runner for the repos where none is found: `cargo test`, `go test`, plain `pytest`, and Node's own runners, read from workflows and manifests.
 - **Evidence:** `digest/2026-11-19.md`: "No test runner detected: 125 of 219 scored repos: 34 × TypeScript, 18 × Python, 17 × Rust, 14 × Go".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "No test runner detected: 140 of 315 scored repos: 34 × TypeScript, 18 × Python, 17 × Rust, 14 × Go" and "Test timings parsed: 90 of 315 scored repos (29%); logs read for 312". Correlation, not cause: yesterday's 85/219 (39%) and today's 90/315 describe different samples, not demonstrated parser regression.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "No test runner detected: 143 of 367 scored repos" and "Test timings parsed: 91 of 367 scored repos (25%); logs read for 364". Correlation, not cause: unidentified runners increased from 140/315, while timing coverage declined from 90/315; these aggregates do not establish detection or parser regression.
 - **Lands:** scorer
 
 ### P-007 · open
@@ -58,6 +61,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Name the providers behind the runner labels the scorer passes through raw, starting with `xcode-*`, or count them as "other" so they don't show as providers.
 - **Evidence:** `digest/2026-11-19.md`: "Runner labels not recognised: `xcode-27` (4), …", 10 labels in all.
 - **Evidence (2026-11-20):** `digest/2026-11-20.json`, first unrecognised runner-label row: "repos": 11; the corresponding row in `digest/2026-11-19.json`: "repos": 4. Correlation, not cause: the label now affects n=11 repos versus n=4 yesterday, across scored samples of n=315 versus n=219; this supports the existing detection priority, not a claim about runner performance.
+- **Evidence (2026-11-21):** `digest/2026-11-21.json`, first unrecognised runner-label row: "repos": 15, versus "repos": 11 in `digest/2026-11-20.json`. Correlation, not cause: n=15 versus n=11 across scored samples n=367 versus n=315 supports the existing classification audit, not a performance claim.
 - **Lands:** scorer
 
 ### P-008 · open
@@ -65,6 +69,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Give repos with too few PR pushes in 7 days a longer window (14, then 28 days) before calling them unscored.
 - **Evidence:** `digest/2026-11-19.md`: "Unscored: 24 (24 × Only N PR pushes in the window ran the main workflows; N are needed.)".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Checks since 2026-11-19: 103" and "Unscored: 6 (6 × Only N PR pushes in the window ran the main workflows; N are needed.)". Correlation, not cause: n=6 of 103 checks still lack enough pushes; yesterday's n=24 of 246 was cumulative, so these counts do not establish improved scoring coverage.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Checks since 2026-11-20: 151" and "5 × Only N PR pushes in the window ran the main workflows; N are needed." Another five checks were unscored with bot-related reasons (`digest/2026-11-21.json`, reason counts 3+1+1). Correlation, not cause: n=10/151 versus n=6/103 does not establish a trend, and a longer window is not yet shown to recover enough eligible pushes.
 - **Lands:** scorer
 
 ### P-009 · open
@@ -72,6 +77,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Compare practice effects on wait for size (wait ÷ the size curve), not raw wait, within each cohort: several effects point backwards, as `FINDINGS.md` §3 saw across all repos.
 - **Evidence:** `digest/2026-11-19.md`: "medium × TypeScript (28) | frozen_install | 23.3 (21) | 6.8 (7) | 3.43" and "large × Rust (22) | compiler_cache | 27 (16) | 14.3 (6) | 1.89".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "large × JavaScript (13) | draft_skip | 9.3 (7) | 18.1 (5) | 0.51"; the frozen-install ratio remains "3.43" (n=21/7) and compiler-cache ratio "1.89" (n=16/6). Correlation, not cause: the JavaScript cohort grew from n=6 to n=13 and newly meets the ranking threshold; "0 of 3 repos with two measured reports moved more than 25%" supplies no within-repo confirmation. Adjust for size before treating these gaps as practice effects.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "large × Java (14) | test_results | 33.6 (5) | 5.1 (6) | 6.6". Correlation, not cause: the cohort grew from n=5 to n=14 and newly qualifies for ranking, with n=5/6 in the comparison; movers remain "0 of 3". This strengthens the need for adjustment, not a recommendation to remove test results.
 - **Lands:** calibration
 
 ### P-010 · done (ci-doctor#5)
@@ -114,4 +120,11 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Date:** 2026-11-20
 - **Change:** Investigate and correct numeric test-runner classification so version-like values are not presented as runner identities; verify the underlying values before changing detection.
 - **Evidence:** `digest/2026-11-20.md`: "By test runner: none detected 29/140, 0.0 2/75"; `digest/2026-11-19.json` has no matching category. The numeric category spans n=75 repos, all with logs read, but only n=2 with timings (`digest/2026-11-20.json`). Correlation, not cause: this warrants a classification audit, not a claim that correcting the category will improve timing coverage.
+- **Evidence (2026-11-21):** `digest/2026-11-21.md`: "0.0 2/123", versus "0.0 2/75" in `digest/2026-11-20.md`; both JSON digests show logs read for every repo in this category. Correlation, not cause: the category grew by n=48 with the timed count unchanged at n=2; classification correction alone has no demonstrated timing benefit.
+- **Lands:** scorer
+
+### P-017 · open
+- **Date:** 2026-11-21
+- **Change:** Audit Java/Kotlin timing extraction and add parsers for verified unsupported formats, distinguishing absent timing output from extraction failures.
+- **Evidence:** `digest/2026-11-21.md`: "Java 0/22, Kotlin 0/22", versus "Java 0/8, Kotlin 0/6" in `digest/2026-11-20.md`; the JSON digests show logs read for all n=22+22 today and n=8+6 yesterday. Correlation, not cause: zero coverage persists across a larger sample, warranting an output-format audit without establishing a parser defect or any wait reduction. This concerns timing extraction, separately from P-006's runner detection and P-016's numeric classification.
 - **Lands:** scorer
