@@ -1,6 +1,7 @@
 -- The learning loop's store: the score site's D1 tables, in SQLite.
 -- D1 runs this file unchanged: no PRAGMAs, no extensions, JSON kept as TEXT.
 -- Full report JSON stays in reports/ (the site's R2); a report row names it by `path`.
+-- The site's D1 makes these tables with ref0's apps/ci-doctor/migrations/: change both together. loop/site.ts sends them.
 
 -- Every repo ever measured. latest_report is the newest report file, scored or not.
 CREATE TABLE IF NOT EXISTS repos (
