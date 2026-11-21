@@ -11,7 +11,7 @@ Every repo here is public, and every number comes from GitHub's public API: each
 | [`FINDINGS.md`](FINDINGS.md) | What scoring 219 repos showed, dated |
 | [`calibration.md`](calibration.md), [`calibrate.py`](calibrate.py), [`calibration/`](calibration/) | How the score's settings were chosen against labelled fast and slow repos, and how to reproduce it |
 | [`inbox/`](inbox/), [`research/`](research/) | The repo lists and their labels |
-| [`loop/`](loop/) | The learning loop: the database schema, the import, the daily comparison and digest, and the [proposals](loop/proposals.md) it feeds |
+| [`loop/`](loop/) | The learning loop: the database schema, the import, the daily comparison and digest, the push to the score site's store (`loop/site.ts`), and the [proposals](loop/proposals.md) it feeds |
 | [`LEARNING-LOOP.md`](LEARNING-LOOP.md) | The loop's plan, including field reports from people's agents |
 | [`SITE.md`](SITE.md), [`card/`](card/), [`colour.ts`](colour.ts) | The score site's design and its social cards |
 | [`NOTES.md`](NOTES.md), [`LAUNCH.md`](LAUNCH.md) | The first notes, and the launch plan |
