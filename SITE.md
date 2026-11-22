@@ -283,6 +283,11 @@ A section of its own beside The repo: what the repo is built with, captured on e
 
 Tabs by size class. Each row links to its report. A trend column comes from the dated report history.
 
+- **Each tab says what its size class is** (21 Nov): "Repos with 1M or more lines of code or 250 or more PR pushes a week." A repo takes the larger of the two classes. No description under the page title.
+- **The nav marks the current page.**
+- **A "for its size" note on each row** (agreed 21 Nov), such as "3× faster than usual for 1.4M lines": the wait against the size curve's expectation. The score's size weight stays modest: size explains 12% of wait across 219 repos.
+- **Ranked by how the time has held** (agreed 21 Nov), once history exists: the median of the last 4 weekly scores from the nightly re-check, so one good or bad window doesn't move a repo. A repo with one measurement is marked "new" until it has more. Optionally a consistency signal, the spread of its weekly waits. Until then, ranking stays on the newest score.
+
 ```
    Tiny   Small   [Medium]   Large            sort: score ▾
    #  repo                 score  p50 wait  reliability  trend
@@ -311,13 +316,13 @@ Decided 19 Nov. Every page that can be shared gets its own card, drawn by `card/
 
 | Page | What it is | Its card (`node render.mjs …`) |
 |---|---|---|
-| `/` | Paste a repo, recently checked, headline stats | `home` (decided 19 Nov): the paste box ("github.com/your/repo", **Fix →**), then two score cards with an arrow between them. The before card (31, 24.1 min) is dimmed with a tilted 🐢 sticker. The after card (92, 3.2 min) glows in its score colour with a tilted 🔥. A plain pill on the arrow says "**7.5×** faster". 48 px between the box and the cards; the body is centred between header and bottom edge. No grade on home. Locked 19 Nov. The numbers are an example: replace them with a real adopter's before and after once there is one |
+| `/` | The hero, the skills, Score your CI | `home` (redrawn 22 Nov): "Burning time and money on CI?" and "Skills that teach your coding agents to make CI fast, reliable and efficient, and keep it that way.", over three skill cards fanned a little, ci-doctor's in the middle in the site's blue ("Measures your CI, then plans and fixes it."), speed-up-tests and cache-ci either side. Six cards in a pile were too crowded |
 | `/owner/repo` | The report | `repo owner/repo`: A2, the score card. Decided 19 Nov, for every card that names a repo (repo, history and compare): the dominant language's icon left of the repo name, from Pierre's set (`card/pierre/`, MIT), in the language's GitHub colour. A language the set doesn't have, or none, draws no icon. A chip after the name, the name in the footer, Simple Icons' logos (Rust's is black on dark, Go's and .NET's are wordmarks) and muted icons were tried |
 | `/owner/repo/history` | Score and wait over time, the adoption date marked | `history` (drawn 19 Nov): the repo's name, left-aligned and close over the cards, then the home card's before and after (inner padding trimmed a little), centred between the header and the footer's rule, with its real scores and p50 waits, the pill saying "**N×** faster". The footer says "**11** days" since the split on the left and "**12.4** min saved per PR" (p50 before minus after) on the right. Locked 19 Nov; a split date, "+N points", the two windows' dates and run counts were tried. See [Before and after](#before-and-after) |
 | `/compare/a/b…` | 2 or 3 repos side by side | `compare a b [c]`: each repo with a medal by score (🥇🥈🥉), its lines and p50 wait under the name ("1.4M lines · 5.2 min"), a bar of its score and the score in `scoreColour`; footer "oxc finishes PR checks **4.1× faster** than biome", fastest against slowest by wait (decided 19 Nov); under 1.1×, "**django** and **cli** finish PR checks in about the same time" |
-| `/leaderboard` | Rankings by size class, filterable by language | The top 5 in a class (not drawn yet) |
-| `/findings` | Dated claims from the data | One finding per card (not drawn yet) |
-| `/how-it-works` | How the score is measured | The three parts and their weights (not drawn yet) |
+| `/scores` | Scores: score your repo, How it works, Findings, the leaderboard | `scores` (drawn 22 Nov): "Score your CI" and "How fast and how reliable your CI is, out of 100, ranked against repos its size.", over the before and after (31, 24.1 min → 92, 3.2 min, the pill "/ci-doctor"). Replaces the paste box card, which read as a form. A repo's report, history and compare share it on the site until they're drawn on request |
+| `/scores/findings` | Dated claims from the data | `findings` (drawn 22 Nov): "Findings" and its line, over one claim as a tile: the median p50 PR wait across the scored repos, a snapshot from `reports/` redrawn with the cards |
+| `/scores/how-it-works` | How the score is measured | `how` (drawn 22 Nov): "How it works" and its line, over the three parts as one bar, each segment as wide as its weight (speed 60, reliability 20, efficiency 20) |
 | `/owner/repo.md`, `.json` | The report for agents, behind Copy page | None |
 | `/badge/owner/repo.svg` | The README badge | None |
 

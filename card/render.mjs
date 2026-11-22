@@ -1,6 +1,9 @@
 // Draws the site's social cards at 1200×630 with Satori + resvg, from the stored reports.
 //   node render.mjs repo owner/repo        → repo-owner__repo.png     (the report page's card)
-//   node render.mjs home                   → home.png                  (the landing page's card)
+//   node render.mjs home                   → home.png                  (the landing page's card: the skills)
+//   node render.mjs scores                 → scores.png                (the Scores page's card)
+//   node render.mjs how                    → how-it-works.png          (How it works)
+//   node render.mjs findings               → findings.png              (Findings)
 //   node render.mjs compare a/b c/d [e/f]  → compare-b-d.png           (2 or 3 repos head to head)
 import { Resvg } from '@resvg/resvg-js';
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
@@ -165,18 +168,6 @@ const dataset = () => {
   const waits = scored.map((r) => r.wait.p50).sort((a, b) => a - b);
   return { count: scored.length, median: waits[Math.floor(waits.length / 2)] };
 };
-const github = (size, color) =>
-  h('img', { width: size, height: size, src: `data:image/svg+xml;base64,${Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="${color}"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>`).toString('base64')}` });
-const pasteBox = (style = {}) =>
-  box({ height: 100, borderRadius: 18, border: `2px solid ${C.line}`, background: '#161717', alignItems: 'center', padding: '0 14px 0 30px', gap: 20, ...style },
-    github(38, C.faint),
-    text({ fontFamily: 'Plex Mono', fontSize: 34, color: C.faint, flexGrow: 1 }, 'github.com/your/repo'),
-    box({ height: 70, borderRadius: 12, background: C.ink, color: C.bg, alignItems: 'center', padding: '0 28px', fontSize: 32, fontWeight: 700 },
-      box({ alignItems: 'baseline', gap: 12 }, text({}, 'Fix'), arrow(30, C.bg))));
-
-// The landing page: the paste box, then your repo going from slow to fast. The before card is dimmed with a 🐢,
-// the after card glows in its score colour with a 🔥, and a plain pill on the arrow names ci-doctor, what made it fast.
-// The numbers are an example, not a measured repo: swap in a real adopter's before and after once there is one.
 // Two scores with an arrow between: the before card dimmed with its sticker on the left, the after card glowing in its colour.
 // Each side is [score, p50 minutes]. Home shows an example pair; a repo's history shows its own.
 // Tight trims the cards' inner padding, for history, where a title sits above them.
@@ -204,12 +195,44 @@ const beforeAfter = (before, after, tight = false, pill) => {
     mini(after, true));
 };
 
-// The home page: the paste box over an example before and after.
-const homeCard = () =>
-  frame('ci-doctor.ref0.dev',
-    box({ flexGrow: 1, flexDirection: 'column', justifyContent: 'center', paddingTop: 58 },
-      pasteBox(),
-      box({ marginTop: 48, flexDirection: 'column' }, beforeAfter([31, 24.1], [92, 3.2], false, '/ci-doctor'))));
+// A card's title and the line under it, as the page's hero says them, under the header.
+const titled = (url, title, words, ...children) =>
+  box({ width: 1200, height: 630, position: 'relative', overflow: 'hidden', background: C.bg, color: C.ink, fontFamily: 'Host Grotesk', flexDirection: 'column', padding: 56 },
+    box({ justifyContent: 'space-between', alignItems: 'center' },
+      h('img', { src: logo, height: 34, width: 34 * (892.7 / 146.4) }),
+      text({ fontFamily: 'Plex Mono', fontSize: 22, color: C.faint }, url)),
+    text({ marginTop: 56, fontSize: 68, fontWeight: 500, letterSpacing: -2, lineHeight: 1 }, title),
+    box({ marginTop: 20, fontSize: 30, color: C.muted, width: 940, lineHeight: 1.3, flexWrap: 'wrap', whiteSpace: 'pre' }, ...kerned(words, 30, 400)),
+    ...children);
+
+// The Scores page: its title and what a score is, over an example before and after.
+const scoresCard = () =>
+  titled('ci-doctor.ref0.dev/scores', 'Score your CI', 'How fast and how reliable your CI is, out of 100, ranked against repos its size.',
+    box({ marginTop: 'auto', flexDirection: 'column' }, beforeAfter([31, 24.1], [92, 3.2], true, '/ci-doctor')));
+
+// How it works: the three parts as one bar, each segment as wide as its weight.
+const PARTS = [['Speed', 60, '#efeee9'], ['Reliability', 20, '#b4b3ac'], ['Efficiency', 20, '#7c7c76']];
+const howCard = () =>
+  titled('ci-doctor.ref0.dev/scores/how-it-works', 'How it works', 'Three parts, each scored 0 to 100 from its GitHub Actions runs, weighed into one score.',
+    box({ marginTop: 'auto', flexDirection: 'column', gap: 22, paddingBottom: 12 },
+      box({ gap: 8 }, ...PARTS.map(([, w, c]) => box({ flexGrow: w, flexBasis: 0, height: 28, borderRadius: 6, background: c }))),
+      box({ gap: 8 }, ...PARTS.map(([name, w]) =>
+        box({ flexGrow: w, flexBasis: 0, flexDirection: 'column', gap: 4 },
+          text({ fontSize: 30, fontWeight: 500 }, name),
+          box({ fontSize: 26 }, line([[String(w)], ' points'], 26)))))));
+
+// Findings: one claim, counted from the stored reports, as a tile.
+const findingsCard = () => {
+  const { count, median } = dataset();
+  return titled('ci-doctor.ref0.dev/scores/findings', 'Findings', 'Claims about CI, counted from every scored repo’s newest report, each with the SQL that reads it.',
+    box({ marginTop: 'auto', borderRadius: 22, border: `2px solid ${C.line}`, background: '#161717', padding: '48px 40px', alignItems: 'center', gap: 36 },
+      box({ alignItems: 'baseline', gap: 12 },
+        text({ fontSize: 96, fontWeight: 700, lineHeight: 0.9, letterSpacing: -3 }, median.toFixed(1)),
+        text({ fontSize: 32, color: C.muted }, 'min')),
+      box({ flexDirection: 'column', gap: 6 },
+        text({ fontSize: 32, fontWeight: 500 }, 'The typical PR waits this long for CI'),
+        box({ fontSize: 26 }, line(['The median p50 wait across ', [String(count)], ' scored repos'], 26)))));
+};
 
 // A repo's history: its score and PR wait before a change and after, each from its own window of PR runs.
 // The footer says how many days it's been since the split, and the minutes the change saves each PR's wait.
@@ -251,9 +274,44 @@ const compareCard = (repos) => {
       : [[short(byWait[0])], ' finishes PR checks ', [`${times.toFixed(1)}× faster`], ' than ', [short(byWait.at(-1))]], 32), null));
 };
 
+
+// The skills card, for the home page and the guide: the hero's question over the skills as a deck dropped on the floor,
+// each card its mark, name and a short line, the whole plan's in the site's blue.
+const BLUE = '#75a3fc'; // oklch(72% 0.14 263), the site's --primary on dark
+const SKILLS = [
+  ['speed-up-tests', 'Finds the tests that hold up every run.', 70, 392, -6],
+  ['ci-doctor', 'Measures your CI, then plans and fixes it.', 430, 372, 0],
+  ['cache-ci', 'Caches installs and builds that never hit.', 790, 392, 6],
+];
+const skillMark = (name, px, color) =>
+  h('img', { width: px, height: px, src: `data:image/svg+xml;base64,${Buffer.from(readFileSync(new URL(`skills/${name}.svg`, import.meta.url), 'utf8').replaceAll('currentColor', color)).toString('base64')}` });
+const skillCard = ([name, words, left, top, turn]) => {
+  const hub = name === 'ci-doctor';
+  return box({ position: 'absolute', left, top, width: 340, height: 200, transform: `rotate(${turn}deg)`, flexDirection: 'column', gap: 12, padding: '26px 28px',
+    borderRadius: 22, background: '#161717', border: `2px solid ${hub ? `${BLUE}99` : C.line}`,
+    boxShadow: hub ? `0 0 60px 4px ${BLUE}33, 0 24px 40px -12px #000000` : '0 24px 40px -12px #000000' },
+    box({ alignItems: 'center', gap: 12 }, skillMark(name, 32, hub ? BLUE : C.ink), text({ fontSize: 30, fontWeight: 500 }, name)),
+    box({ width: 284, fontSize: 22, lineHeight: 1.35, color: C.muted, flexWrap: 'wrap', whiteSpace: 'pre' }, ...kerned(words, 22, 400)));
+};
+const skillsCard = () =>
+  box({ width: 1200, height: 630, position: 'relative', overflow: 'hidden', background: C.bg, color: C.ink, fontFamily: 'Host Grotesk', flexDirection: 'column' },
+    box({ padding: '56px 56px 0', flexDirection: 'column' },
+      box({ justifyContent: 'space-between', alignItems: 'center' },
+        h('img', { src: logo, height: 34, width: 34 * (892.7 / 146.4) }),
+        text({ fontFamily: 'Plex Mono', fontSize: 22, color: C.faint }, 'ci-doctor.ref0.dev')),
+      text({ marginTop: 64, fontSize: 68, fontWeight: 500, letterSpacing: -2, lineHeight: 1 }, 'Burning time and money on CI?'),
+      box({ marginTop: 22, fontSize: 30, color: C.muted, width: 900, lineHeight: 1.3 },
+        'Skills that teach your coding agents to make CI fast, reliable and efficient, and keep it that way.')),
+    // Drawn so the pile overlaps: the whole plan last, on top.
+    ...SKILLS.filter(([n]) => n !== 'ci-doctor').map(skillCard),
+    skillCard(SKILLS.find(([n]) => n === 'ci-doctor')));
+
 const [kind = 'repo', ...args] = process.argv.slice(2);
 const [name, card] =
-  kind === 'home' ? ['home', homeCard()]
+  kind === 'home' ? ['home', skillsCard()]
+  : kind === 'scores' ? ['scores', scoresCard()]
+  : kind === 'how' ? ['how-it-works', howCard()]
+  : kind === 'findings' ? ['findings', findingsCard()]
   // An example until a real adopter's history exists: the brand's made-up cast, never a real repo with invented numbers.
   : kind === 'history' ? ['history', historyCard({ repo: 'pip/garden', language: 'TypeScript', before: [48, 18.6], after: [81, 6.2], days: 11 })]
   : kind === 'compare' ? [`compare-${args.map((r) => r.split('/')[1]).join('-')}`, compareCard(args.length >= 2 && args.length <= 3 ? args : fail('compare takes 2 or 3 repos'))]
