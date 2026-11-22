@@ -224,7 +224,7 @@ const howCard = () =>
 // Findings: one claim, counted from the stored reports, as a tile.
 const findingsCard = () => {
   const { count, median } = dataset();
-  return titled('ci-doctor.ref0.dev/scores/findings', 'Findings', 'Claims about CI, counted from every scored repo’s newest report, each with the SQL that reads it.',
+  return titled('ci-doctor.ref0.dev/scores/findings', 'Findings', 'What we learned scoring the CI of hundreds of repos.',
     box({ marginTop: 'auto', borderRadius: 22, border: `2px solid ${C.line}`, background: '#161717', padding: '48px 40px', alignItems: 'center', gap: 36 },
       box({ alignItems: 'baseline', gap: 12 },
         text({ fontSize: 96, fontWeight: 700, lineHeight: 0.9, letterSpacing: -3 }, median.toFixed(1)),
