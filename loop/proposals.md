@@ -32,6 +32,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** `digest/2026-11-19.md`: "Windows: 97 of 219 hit the 1,000-run cap; 76 cover under 3 days and 32 under 1".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Windows: 127 of 315 hit the 1,000-run cap; 94 cover under 3 days and 44 under 1". Correlation, not cause: the sample grew from n=219 to n=315; the lower capped share is not evidence of a pagination improvement.
 - **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Windows: 141 of 367 hit the 1,000-run cap; 102 cover under 3 days and 45 under 1". Correlation, not cause: capped counts rose from 127/315 while their share fell; this does not establish a pagination fix.
+- **Evidence (2026-11-23):** `digest/2026-11-23.md`: "Windows: 135 of 365 hit the 1,000-run cap; 96 cover under 3 days and 29 under 1", versus "141 of 367" previously. `digest/2026-11-23.json` records changed window days for n=28/30 movers. Correlation, not cause: fewer capped windows in a changed sample does not establish a pagination fix, and unequal coverage can confound before/after waits.
 - **Lands:** scorer
 
 ### P-004 · open
@@ -40,6 +41,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** `digest/2026-11-19.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 7% / 34% (n 219), counted in every score".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 5% / 32% (n 315), counted in every score". Correlation, not cause: the larger sample still includes bot runs; these figures do not measure the effect of excluding them.
 - **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 3% / 33% (n 367), counted in every score". Correlation, not cause: n=315 → 367 is a changing sample, not a measured exclusion effect; reconcile this aggregate description with today's five bot-related unscored checks before evaluating the re-score.
+- **Evidence (2026-11-23):** `digest/2026-11-23.json`, unscored reason counts for bot-related checks: "n": 4 plus four rows with "n": 1, totaling n=8/231 checks, versus n=5/151 previously; `digest/2026-11-23.md`: "Bot share of PR runs: p10 / p50 / p90 0% / 3% / 35% (n 365), counted in every score". Correlation, not cause: bot eligibility failures are not measured improvements; reconcile the aggregate wording with exclusion before calibration.
 - **Lands:** calibration
 
 ### P-005 · open
@@ -70,6 +72,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** `digest/2026-11-19.md`: "Unscored: 24 (24 × Only N PR pushes in the window ran the main workflows; N are needed.)".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "Checks since 2026-11-19: 103" and "Unscored: 6 (6 × Only N PR pushes in the window ran the main workflows; N are needed.)". Correlation, not cause: n=6 of 103 checks still lack enough pushes; yesterday's n=24 of 246 was cumulative, so these counts do not establish improved scoring coverage.
 - **Evidence (2026-11-21):** `digest/2026-11-21.md`: "Checks since 2026-11-20: 151" and "5 × Only N PR pushes in the window ran the main workflows; N are needed." Another five checks were unscored with bot-related reasons (`digest/2026-11-21.json`, reason counts 3+1+1). Correlation, not cause: n=10/151 versus n=6/103 does not establish a trend, and a longer window is not yet shown to recover enough eligible pushes.
+- **Evidence (2026-11-23):** `digest/2026-11-23.md`: "Checks since 2026-11-21: 231" and "16 × Only N PR pushes in the window ran the main workflows; N are needed." Stored reports `reports/Ataraxy-Labs__sem/2026-11-22.json` and `reports/pestphp__pest/2026-11-22.json` give "timed": 1 and "timed": 4; both remain unscored. Correlation, not cause: n=16/231 checks still lack sufficient eligible pushes; n=2 highlighted repos do not show that extending windows would recover them.
 - **Lands:** scorer
 
 ### P-009 · open
@@ -78,6 +81,7 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Evidence:** `digest/2026-11-19.md`: "medium × TypeScript (28) | frozen_install | 23.3 (21) | 6.8 (7) | 3.43" and "large × Rust (22) | compiler_cache | 27 (16) | 14.3 (6) | 1.89".
 - **Evidence (2026-11-20):** `digest/2026-11-20.md`: "large × JavaScript (13) | draft_skip | 9.3 (7) | 18.1 (5) | 0.51"; the frozen-install ratio remains "3.43" (n=21/7) and compiler-cache ratio "1.89" (n=16/6). Correlation, not cause: the JavaScript cohort grew from n=6 to n=13 and newly meets the ranking threshold; "0 of 3 repos with two measured reports moved more than 25%" supplies no within-repo confirmation. Adjust for size before treating these gaps as practice effects.
 - **Evidence (2026-11-21):** `digest/2026-11-21.md`: "large × Java (14) | test_results | 33.6 (5) | 5.1 (6) | 6.6". Correlation, not cause: the cohort grew from n=5 to n=14 and newly qualifies for ranking, with n=5/6 in the comparison; movers remain "0 of 3". This strengthens the need for adjustment, not a recommendation to remove test results.
+- **Evidence (2026-11-23):** `digest/2026-11-23.md`: "large × Kotlin (12) | scheduled | 9.2 (7) | 45.8 (5) | 0.2", and the Java test-results comparison changed from "33.6 (5) | 5.1 (6) | 6.6" to "33.6 (5) | 19.9 (7) | 1.68" (n=14→15 in that cohort). Correlation, not cause: changing membership and unknown practices can shift rankings without an intervention. The unref mover records "dep_bots_batched 0 → 1" but wait "1.3 → 3.1 min" (one repo; timed pushes n=174→208 in its reports), providing no support for a batching speedup.
 - **Lands:** calibration
 
 ### P-010 · done (ci-doctor#5)
@@ -121,10 +125,18 @@ Status is `open` (not started), `briefed` (an engineer has a brief), `done` (mer
 - **Change:** Investigate and correct numeric test-runner classification so version-like values are not presented as runner identities; verify the underlying values before changing detection.
 - **Evidence:** `digest/2026-11-20.md`: "By test runner: none detected 29/140, 0.0 2/75"; `digest/2026-11-19.json` has no matching category. The numeric category spans n=75 repos, all with logs read, but only n=2 with timings (`digest/2026-11-20.json`). Correlation, not cause: this warrants a classification audit, not a claim that correcting the category will improve timing coverage.
 - **Evidence (2026-11-21):** `digest/2026-11-21.md`: "0.0 2/123", versus "0.0 2/75" in `digest/2026-11-20.md`; both JSON digests show logs read for every repo in this category. Correlation, not cause: the category grew by n=48 with the timed count unchanged at n=2; classification correction alone has no demonstrated timing benefit.
+- **Evidence (2026-11-23):** `digest/2026-11-23.md`: "0.0 22/199", versus "0.0 2/123" previously; unidentified runners changed n=143→65 while scored n=367→365. Numeric flips affect n=21/30 movers in `digest/2026-11-23.json`; all corresponding source practice values in their newer reports are `false`, for example `reports/home-assistant__core/2026-11-22.json`: "packageManager": false, "testRunner": false, "taskRunner": false. These are representation artefacts, not newly installed runners. Correlation, not cause: category redistribution does not demonstrate better detection or timing extraction; audit import/storage alongside scorer output.
 - **Lands:** scorer
 
 ### P-017 · open
 - **Date:** 2026-11-21
 - **Change:** Audit Java/Kotlin timing extraction and add parsers for verified unsupported formats, distinguishing absent timing output from extraction failures.
 - **Evidence:** `digest/2026-11-21.md`: "Java 0/22, Kotlin 0/22", versus "Java 0/8, Kotlin 0/6" in `digest/2026-11-20.md`; the JSON digests show logs read for all n=22+22 today and n=8+6 yesterday. Correlation, not cause: zero coverage persists across a larger sample, warranting an output-format audit without establishing a parser defect or any wait reduction. This concerns timing extraction, separately from P-006's runner detection and P-016's numeric classification.
+- **Evidence (2026-11-23):** `digest/2026-11-23.md`: "Java 1/23" and "Kotlin 0/21", versus "Java 0/22, Kotlin 0/22" previously; its JSON records "logs_read": 23 and "logs_read": 21. Correlation, not cause: one timed Java repo and persistent Kotlin absence across n=23/21 warrant the existing format audit, without establishing a parser change or wait reduction.
 - **Lands:** scorer
+
+### P-018 · open
+- **Date:** 2026-11-23
+- **Change:** Gate movers and noise on sufficient eligible timed pushes, comparable windows and measurement provenance; retain workflow-read completeness and distinguish representation/unknown changes from verified CI changes.
+- **Evidence:** `digest/2026-11-23.json`: "pairs": 165 with n=30 mover rows (previously n=0/3); n=7/30 show workflow totals "40" → 49–131 and practice values 0→null. Each newer report still states "Read the first 40 of" its workflow total; for example `reports/grafana__grafana/2026-11-22.json`: "Read the first 40 of 102 workflow files". This is a total-count/completeness reporting change, not uncapped reading or demonstrated practice removal. Three movers have undersized endpoints: sem "timed": 3→1, pest 26→4, mysql 4→9 in their paired reports. `digest/2026-11-23.md`: "Noise: 12 unchanged repos; |p50 change| p50 5%, p90 99%"; pest remains in that noise set despite its unscored endpoint. Correlation, not cause: these n=3 eligibility transitions, n=7 incomplete reads and n=28/30 changed window lengths undermine comparable before/after interpretation; no measured benefit from this proposed gate yet.
+- **Lands:** calibration (`loop/compare.ts`, `loop/import.ts`; persist timed-push counts and measurement/completeness metadata in `loop/schema.sql`)
