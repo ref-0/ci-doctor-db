@@ -45,6 +45,8 @@ const KNOWN = new Set([
   'repo', 'date', 'profile', 'window', 'size', 'headsPerWeek', 'score', 'grade', 'band', 'parts', 'detail',
   'efficiency', 'wait', 'main', 'botRunShare', 'jobs', 'tests', 'practices', 'fixes', 'notes', 'apiCalls',
   'rescored', 'unscored', 'checkout', 'defaultBranch', 'stack', 'read',
+  // In the JSON file only: which scorer made it, and who submitted it with --submit (a measured report has no submitted).
+  'scorerVersion', 'submitted',
 ]);
 
 type Row = Record<string, SQLInputValue>;

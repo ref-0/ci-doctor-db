@@ -1,0 +1,641 @@
+{
+ "repo": "pip/garden",
+ "date": "2026-11-24",
+ "scorerVersion": "0.3.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3,
+  "stars": 120,
+  "forks": 8,
+  "languages": [
+   [
+    "TypeScript",
+    98
+   ],
+   [
+    "JavaScript",
+    3
+   ]
+  ],
+  "linesOfCode": 13000,
+  "files": 5,
+  "sourceFiles": 2,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 10000,
+   "tests": 3000,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.23076923076923078,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 7.5,
+  "commitsPerWeekYear": 7,
+  "pace": 1,
+  "activeAuthors28d": 2,
+  "prsOpenedPerWeek": 14.3,
+  "prsMergedPerWeek": 11.5,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 2,
+   "p90": 2,
+   "n": 12
+  },
+  "prRunsPerDay": 2.7,
+  "runsPerMergedPr": 1.7
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 20,
+  "runsInPeriod": 20,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "small",
+ "headsPerWeek": 19,
+ "score": 82,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 79,
+  "reliability": 79,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 86,
+   "forSize": 65,
+   "tail": 90
+  },
+  "reliability": {
+   "flakes": 64,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 81,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 15.7,
+  "prBilledMinutesPerDay": 16.4,
+  "jobMinutesPerMergedPr": 9.6,
+  "prVcpuMinutesPerDay": 62.8,
+  "vcpuMinutesPerMergedPr": 38.3,
+  "expectedVcpuMinutesPerMergedPr": 316.2,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 79.1,
+  "expectedWait": 6.8,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "19 pushes were timed, under 20"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 20,
+  "ranHeads": 20,
+  "timed": 19,
+  "p50": 6,
+  "p75": 7,
+  "p90": 8,
+  "redRate": 0.1,
+  "rerunRate": 0.05,
+  "passedOnRerunRate": 0.05,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    19
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 6
+ },
+ "main": {
+  "heads": 10,
+  "p50": 6,
+  "p90": 8,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 4.916666666666667,
+  "jobMinutes": 4.75,
+  "billedMinutes": 5,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 10,
+  "queueP90Sec": 10,
+  "setupShare": 0.13043478260869565,
+  "setupMinPerJob": 0.75,
+  "critical": {
+   "name": "test",
+   "minutes": 4.75,
+   "shareOfSpan": 0.9661016949152542
+  },
+  "longest": {
+   "name": "test",
+   "minutes": 4.75
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "test",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "test",
+    "minutes": 4.9,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.2,
+    "workMin": 4.8,
+    "setupMin": 0.8
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 4.9,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 4.8,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 1000,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 1001,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 1002,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 1004,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 1006,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 1007,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 1,
+  "over10s": 1,
+  "top": [
+   {
+    "file": "src/secret-path/slow.test.ts",
+    "sec": 12.5,
+    "job": "test"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 1,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    98
+   ],
+   [
+    "JavaScript",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest"
+  ],
+  "lintFormat": [
+   "ESLint"
+  ],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "app",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "app",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "app"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 5
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "test",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 3.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "test"
+   ],
+   "pathMinP50": 4.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "1 test file takes over 10 s; the slowest, src/secret-path/slow.test.ts, takes 13 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 29,
+ "read": {
+  "calls": 29,
+  "fromCache": 0
+ },
+ "submitted": {
+  "by": "pip",
+  "at": "2026-11-23T10:00:00.000Z"
+ }
+}
