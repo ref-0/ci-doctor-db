@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS reports (
   sha256         TEXT NOT NULL,              -- of the file, so a re-import knows nothing changed
   rescored_from  TEXT,                       -- the report id a rescore re-scored
   score_was      INTEGER,                    -- a rescore's previous score
+  submitted_by   TEXT,                       -- the GitHub login that sent it with --submit; NULL for a report measured here
 
   window_days    REAL,
   window_runs    INTEGER,

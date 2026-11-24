@@ -1,0 +1,44 @@
+# Checks a pull request that submits a report, from `npx @ref0/ci-doctor --submit`, with submission/check.ts.
+# pull_request_target runs this file and the check as the default branch has them, never the pull request's: the
+# pull request is only data, read through the API. Nothing from it is checked out, installed or run.
+# It comments what it found and sets the `submission` status on the head commit. It doesn't merge.
+name: Submission
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths: ['reports/**']
+
+permissions: {}
+
+concurrency:
+  group: submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read # the check's own file, the submitted file at the head commit, and the repo's folder at the base
+      pull-requests: write # the comment
+      statuses: write # the `submission` status
+    steps:
+      # The default branch's submission/ folder, and nothing else.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          sparse-checkout: submission
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      # The scorer release whose smokeCheck submissions must pass: the release that carries --submit. Move it with
+      # each scorer release, or submissions from the new one fail as newer than the check.
+      - name: Install the scorer
+        run: npm install --prefix "$RUNNER_TEMP/scorer" --ignore-scripts --no-audit --no-fund @ref0/ci-doctor@0.4.0
+      - name: Check the submission
+        run: node submission/check.ts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SCORER: ${{ runner.temp }}/scorer/node_modules/@ref0/ci-doctor/dist/index.js
