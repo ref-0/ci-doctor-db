@@ -4,11 +4,11 @@ import type { DatabaseSync } from 'node:sqlite';
 import { open } from '../db.ts';
 import { cohortGaps, dueRefreshes, findGapRepos, planNight, predictSize, quotas, TARGET, type GitHub } from '../queue.ts';
 
-// A repo with one measured report on `date`, scored unless `score` is null.
-function add(db: DatabaseSync, repo: string, date: string, { size = 'large', language = 'TypeScript', score = 70 as number | null } = {}) {
+// A repo with one measured report on `date`, scored unless `score` is null, or one submitted by `submittedBy`.
+function add(db: DatabaseSync, repo: string, date: string, { size = 'large', language = 'TypeScript', score = 70 as number | null, submittedBy = null as string | null } = {}) {
   const id = `${repo}/${date}`;
-  db.prepare(`INSERT INTO reports (id, repo, date, seq, path, sha256, score, size, language) VALUES (?, ?, ?, 0, ?, '', ?, ?, ?)`).run(
-    id, repo, date, `${repo.replace('/', '__')}/${date}.json`, score, size, language,
+  db.prepare(`INSERT INTO reports (id, repo, date, seq, path, sha256, score, size, language, submitted_by) VALUES (?, ?, ?, 0, ?, '', ?, ?, ?, ?)`).run(
+    id, repo, date, `${repo.replace('/', '__')}/${date}.json`, score, size, language, submittedBy,
   );
   db.prepare(`INSERT INTO checks (repo, at, reason, scored, report) VALUES (?, ?, 'import', ?, ?)`).run(repo, date, score === null ? 0 : 1, id);
   db.prepare(
@@ -37,6 +37,23 @@ test('a failed check counts as an attempt, so a failing repo waits its 7 days ag
 
   assert.deepEqual(dueRefreshes(db, '2026-11-19'), []);
   assert.match(dueRefreshes(db, '2026-11-22')[0]!.why, /last check failed 2026-11-15/);
+});
+
+test('a repo with only submitted reports is never due; one also measured here keeps its refresh', () => {
+  const db = open(':memory:');
+  add(db, 'pip/garden', '2026-11-01', { submittedBy: 'pip' });
+  add(db, 'mo/shed', '2026-10-20');
+  add(db, 'mo/shed', '2026-11-01', { submittedBy: 'mo' });
+  db.prepare(`INSERT INTO adoption VALUES ('pip/garden', 'marker', '2026-11-10', 'https://example.com')`).run();
+
+  assert.deepEqual(dueRefreshes(db, '2026-11-19').map((e) => e.repo), ['mo/shed']);
+});
+
+test('a submitted repo counts in its cohort like a measured one', () => {
+  const db = open(':memory:');
+  add(db, 'pip/garden', '2026-11-01', { size: 'small', language: 'Rust', submittedBy: 'pip' });
+
+  assert.equal(cohortGaps(db).find((g) => g.size === 'small' && g.language === 'Rust')!.n, 1);
 });
 
 test('gaps are target cohorts under 15 scored repos, furthest under first; unscored repos do not count', () => {

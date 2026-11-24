@@ -29,16 +29,20 @@ Score a public repo on your machine and send its report here as a pull request, 
 npx @ref0/ci-doctor --repo pip/garden --submit
 ```
 
-It adds one file, `reports/pip__garden/<date>.json`: the report `--json` prints, with `submitted: { by, at }`, your login and the time. A submitted report is marked as submitted that way, so it can be told from one measured here.
+It adds one new file, `reports/pip__garden/<date>.json`, under the repo's name as GitHub spells it: the report `--json` prints, with `submitted: { by, at }`, your login and the time. An unscored report isn't sent: there's nothing in it to compare.
+
+A submission only adds a file. It never replaces a report here, measured or submitted, and the nightly measure skips a repo whose report for today is already here, so neither replaces the other. To send the same day's report again, use the pull request that's open.
 
 Nothing here scores your repo again. The [submission check](.github/workflows/submission.yml) runs [`submission/check.ts`](submission/check.ts) from this repo's default branch, reads the pull request as data and runs nothing from it. It looks at:
 
-- that the pull request adds or replaces exactly that one file, and nothing else (anything else is left for a person);
-- the scorer's own `smokeCheck` on the file: its fields and types, under 1 MB; its path matching its repo and date, today's or yesterday's in UTC; made by the current scorer release; numbers in range; and a score, grade and parts that agree with the report's own measures;
+- that the pull request adds exactly that one new file, and changes nothing else (anything else is left for a person);
+- the scorer's own `smokeCheck` on the file: its fields and types, under 1 MB; only strings that are safe to show; a score; its path matching its repo and date, today's or yesterday's in UTC; made by the current scorer release; numbers in range and in order; links only into ci-doctor's guide; and a score, parts, detail and size that agree with the report's own measures, with enough of them to score;
 - that `submitted.by` is who opened the pull request;
-- one API call: the repo exists and is public.
+- one call about the repo: it exists, is public, is spelt exactly as GitHub spells it, and its main language is one the report lists.
 
-It comments what it found and sets the `submission` status on the pull request's head commit. It doesn't merge.
+It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit. A person merges every submission.
+
+Once merged, the import keeps who submitted it (`reports.submitted_by`). A submitted report counts in its cohort and findings like a measured one, and a repo with only submitted reports is never measured here: the nightly queue leaves it out.
 
 ## Run it
 

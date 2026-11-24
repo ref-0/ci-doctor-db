@@ -6,11 +6,10 @@
 // Usage: node rescore-local.ts [--dry]   (REPORTS=<dir> to re-score the reports there)
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { expectedMinutesPerMergedPr, expectedVcpuMinutesPerMergedPr, expectedWait, scoreOf } from './scorer.ts';
+import { expectedMinutesPerMergedPr, expectedVcpuMinutesPerMergedPr, expectedWait, inputsOf, scoreOf } from './scorer.ts';
 
 const REPORTS = process.env.REPORTS ?? join(import.meta.dirname, 'reports');
 const dry = process.argv.includes('--dry');
-const n = (x: unknown) => (typeof x === 'number' && Number.isFinite(x) ? x : NaN);
 const r1 = (x: number) => Math.round(x * 10) / 10;
 
 let changed = 0;
@@ -31,18 +30,7 @@ for (const dir of readdirSync(REPORTS)) {
     continue;
   }
 
-  const { score, parts, detail } = scoreOf({
-    p50: n(report.wait.p50),
-    p90: n(report.wait.p90),
-    linesOfCode: report.profile.linesOfCode,
-    passedOnRerunRate: n(report.wait.passedOnRerunRate),
-    mainRedRate: n(report.main.redRate),
-    vcpuMinutesPerMergedPr: n(report.efficiency.vcpuMinutesPerMergedPr),
-    runsPerMergedPr: n(report.profile.runsPerMergedPr),
-    setupMinPerJob: n(report.jobs?.setupMinPerJob),
-    queueP90Sec: n(report.jobs?.queueP90Sec),
-    shardIdleTail: n(report.jobs?.shard?.idleTail),
-  });
+  const { score, parts, detail } = scoreOf(inputsOf(report));
   if (score === report.score && JSON.stringify(detail) === JSON.stringify(report.detail)) {
     same++;
     continue;

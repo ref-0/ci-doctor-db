@@ -14,7 +14,7 @@ import type { DatabaseSync } from 'node:sqlite';
 import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
 import { takeLock } from './lock.ts';
-import { publish } from './publish.ts';
+import { publish, publishedReports } from './publish.ts';
 import type { Entry } from './queue.ts';
 
 const ROOT = join(import.meta.dirname, '..');
@@ -77,16 +77,28 @@ export interface NightDeps {
   importOne: (db: DatabaseSync, reportsDir: string, dir: string, file: string) => { id: string };
   refreshRepos: (db: DatabaseSync) => number;
   log: (s: string) => void;
+  /** Whether `<owner>__<repo>/<date>.json` is stored already. Default: under reportsDir. */
+  stored?: (file: string) => boolean;
 }
 
 export type Outcome = { repo: string; reason: Entry['reason']; at: string; outcome: 'scored' | 'unscored' | 'failed'; calls: number | null; error: string | null; file: string | null };
 
 // Checks the queue in order until it's done or the stop time. Every check is recorded, failures with their reason.
+// A repo with a report for today stored already, such as one submitted, isn't measured: the night never writes over a
+// report, as a submission never replaces one.
 export async function runNight(queue: Entry[], d: NightDeps) {
   const outcomes: Outcome[] = [];
+  const skipped: string[] = [];
   let stopped = 'the queue is done';
+  const stored = d.stored ?? ((file: string) => existsSync(join(d.reportsDir, file)));
 
   for (const e of queue) {
+    const file = `${e.repo.replace('/', '__')}/${new Date(d.clock.now()).toISOString().slice(0, 10)}.json`;
+    if (stored(file)) {
+      skipped.push(e.repo);
+      d.log(`${new Date(d.clock.now()).toISOString()} ${e.reason} ${e.repo}: skipped, reports/${file} is already there`);
+      continue;
+    }
     let wait: Awaited<ReturnType<typeof waitForQuota>>;
     try {
       wait = await waitForQuota(d.clock, d.quota, d.stopAt, d.log);
@@ -119,7 +131,7 @@ export async function runNight(queue: Entry[], d: NightDeps) {
   // A new repo's GitHub id, from discovery, goes with its row.
   const setId = d.db.prepare(`UPDATE repos SET github_id = ? WHERE repo = ? AND github_id IS NULL`);
   for (const e of queue) if (e.githubId && outcomes.some((o) => o.repo === e.repo)) setId.run(e.githubId, e.repo);
-  return { outcomes, stopped };
+  return { outcomes, skipped, stopped };
 }
 
 function record(d: NightDeps, e: Entry, at: string, res: CheckResult, before: Quota): Outcome {
@@ -270,17 +282,25 @@ async function main() {
     return 0;
   }
 
-  const { outcomes, stopped } = await runNight(plan.queue, {
+  // A report for today on origin/main, such as a submission merged since this checkout last caught up, counts as stored.
+  let onMain = new Set<string>();
+  try {
+    onMain = publishedReports(ROOT);
+  } catch (e) {
+    log(`measure: couldn't read origin/main's reports, so only this checkout's count as stored: ${(e as Error).message.split('\n')[0]}`);
+  }
+  const { outcomes, skipped, stopped } = await runNight(plan.queue, {
     db, reportsDir, clock: realClock, stopAt, log,
     quota: () => coreQuota(appToken()),
     token: appToken,
     check: childCheck(SCORER_SRC),
     importOne,
     refreshRepos,
+    stored: (file) => existsSync(join(reportsDir, file)) || onMain.has(`reports/${file}`),
   });
   const count = (o: Outcome['outcome']) => outcomes.filter((x) => x.outcome === o).length;
   const calls = outcomes.reduce((s, o) => s + (o.calls ?? 0), 0);
-  say(`measure: ${outcomes.length} checks (${count('scored')} scored, ${count('unscored')} unscored, ${count('failed')} failed), ${calls} scorer calls + ${gh.calls.core} discovery core + ${gh.calls.graphql} GraphQL; stopped: ${stopped}`);
+  say(`measure: ${outcomes.length} checks (${count('scored')} scored, ${count('unscored')} unscored, ${count('failed')} failed; ${skipped.length} skipped, today's report already there), ${calls} scorer calls + ${gh.calls.core} discovery core + ${gh.calls.graphql} GraphQL; stopped: ${stopped}`);
   for (const o of outcomes.filter((x) => x.outcome === 'failed')) log(`failed ${o.repo}: ${o.error}`);
 
   const after = importReports(db, reportsDir);

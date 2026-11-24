@@ -44,9 +44,9 @@ const PRACTICES: Record<string, string> = {
 const KNOWN = new Set([
   'repo', 'date', 'profile', 'window', 'size', 'headsPerWeek', 'score', 'grade', 'band', 'parts', 'detail',
   'efficiency', 'wait', 'main', 'botRunShare', 'jobs', 'tests', 'practices', 'fixes', 'notes', 'apiCalls',
-  'rescored', 'unscored', 'checkout', 'defaultBranch', 'stack', 'read',
-  // In the JSON file only: which scorer made it, and who submitted it with --submit (a measured report has no submitted).
-  'scorerVersion', 'submitted',
+  'rescored', 'unscored', 'checkout', 'defaultBranch', 'stack', 'read', 'submitted',
+  // In the JSON file only: which scorer made it, and what the evidence and the graphs say.
+  'scorerVersion', 'evidence', 'jobGraph', 'graphs',
 ]);
 
 type Row = Record<string, SQLInputValue>;
@@ -117,6 +117,7 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
     sha256: createHash('sha256').update(text).digest('hex'),
     rescored_from: rescored?.from ? `${repo}/${String(rescored.from).replace(/\.json$/, '')}` : null,
     score_was: int(rescored?.scoreWas),
+    submitted_by: str(r.submitted?.by),
 
     window_days: num(r.window?.days),
     window_runs: int(r.window?.runs),
