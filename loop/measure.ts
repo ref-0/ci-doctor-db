@@ -161,7 +161,7 @@ function record(d: NightDeps, e: Entry, at: string, res: CheckResult, before: Qu
   return { repo: e.repo, reason: e.reason, at, outcome, calls, error, file };
 }
 
-// The scorer in its own process, at the loop's checkout of next, timed out after `timeoutMs`.
+// The scorer in its own process, at the loop's checkout of ci-doctor's main, timed out after `timeoutMs`.
 export function childCheck(scorerSrc: string) {
   return (repo: string, token: string, timeoutMs: number) =>
     new Promise<CheckResult>((resolve) => {
@@ -184,21 +184,21 @@ export function childCheck(scorerSrc: string) {
     });
 }
 
-// The loop's own checkout of ci-doctor's next: cloned once, fast-forwarded each night, never the shared checkout.
+// The loop's own checkout of ci-doctor's main: cloned once, fast-forwarded each night, never the shared checkout.
 function ensureScorer(log: (s: string) => void): string {
   const git = (...a: string[]) => execFileSync('git', ['-C', SCORER_CHECKOUT, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
   if (!existsSync(SCORER_CHECKOUT)) {
-    execFileSync('git', ['clone', '-q', '--branch', 'next', SCORER_REMOTE, SCORER_CHECKOUT], { stdio: ['ignore', 'pipe', 'pipe'] });
-    return `scorer: cloned next at ${git('rev-parse', '--short', 'HEAD')}`;
+    execFileSync('git', ['clone', '-q', '--branch', 'main', SCORER_REMOTE, SCORER_CHECKOUT], { stdio: ['ignore', 'pipe', 'pipe'] });
+    return `scorer: cloned main at ${git('rev-parse', '--short', 'HEAD')}`;
   }
   try {
-    git('fetch', '-q', 'origin', 'next');
-    git('merge', '-q', '--ff-only', 'origin/next');
+    git('fetch', '-q', 'origin', 'main');
+    git('merge', '-q', '--ff-only', 'origin/main');
   } catch (e) {
     log(`scorer: couldn't fast-forward: ${(e as Error).message.split('\n')[0]}`);
-    return `scorer: next at ${git('rev-parse', '--short', 'HEAD')}, not fast-forwarded (see the log)`;
+    return `scorer: main at ${git('rev-parse', '--short', 'HEAD')}, not fast-forwarded (see the log)`;
   }
-  return `scorer: next at ${git('rev-parse', '--short', 'HEAD')}`;
+  return `scorer: main at ${git('rev-parse', '--short', 'HEAD')}`;
 }
 
 const arg = (n: string) => (process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : undefined);
