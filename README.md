@@ -40,7 +40,7 @@ Nothing here scores your repo again. The [submission check](.github/workflows/su
 - that `submitted.by` is who opened the pull request;
 - one call about the repo: it exists, is public, is spelt exactly as GitHub spells it, and its main language is one the report lists.
 
-It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit. A person merges every submission.
+It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit: `error` when GitHub refused one of its calls, and nothing at all when the head moved while it ran, since the newer push's own run decides. A person merges every submission. Merge one for a repo measured here outside the nightly's hours: a report the nightly writes for the same repo and day while the submission lands is left in its checkout, which then can't fast-forward until that file is removed.
 
 Once merged, the import keeps who submitted it (`reports.submitted_by`). A submitted report counts in its cohort and findings like a measured one, and a repo with only submitted reports is never measured here: the nightly queue leaves it out.
 
