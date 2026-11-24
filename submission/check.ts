@@ -76,7 +76,7 @@ export async function checkSubmission(api: Api, pr: Pr, { smokeCheck, shown }: S
   if (!meta || meta.private !== false) problems.push(`GitHub has no public repo ${shown(repo)}: a submission is of a public repo.`);
   else {
     if (meta.full_name !== repo) problems.push(`GitHub spells the repo ${shown(meta.full_name)}, not ${shown(repo)}: run \`npx @ref0/ci-doctor@latest --repo ${meta.full_name} --submit\` again, which files it under GitHub's name.`);
-    const languages = Array.isArray(report?.profile?.languages) ? report.profile.languages.map((l: unknown) => (Array.isArray(l) ? l[0] : l)) : [];
+    const languages = Array.isArray(report?.profile?.languages) ? report.profile.languages.map((l: unknown) => (Array.isArray(l) ? l[0] : undefined)) : [];
     if (typeof meta.language === 'string' && report && !languages.includes(meta.language)) problems.push(`GitHub says ${shown(repo)} is mostly ${shown(meta.language)}, which the report's languages don't list.`);
   }
 
@@ -107,10 +107,18 @@ export async function checkSubmission(api: Api, pr: Pr, { smokeCheck, shown }: S
   };
 }
 
-/** Comments the verdict, and for a submission sets the status on the head commit. */
-export async function report(api: Api, pr: Pr, v: Verdict) {
+/**
+ * Comments the verdict, and for a submission sets the status on the head commit. It says nothing, and answers false,
+ * when the pull request's head has moved since the event: the files were listed for the newer head, and that push's
+ * own run decides.
+ */
+export async function report(api: Api, pr: Pr, v: Verdict): Promise<boolean> {
+  const head = (await api.get(`repos/${pr.repo}/pulls/${pr.number}`))?.head?.sha;
+  if (head !== pr.sha) return false;
+
   await api.post(`repos/${pr.repo}/issues/${pr.number}/comments`, { body: v.comment });
   if (v.kind === 'checked') await api.post(`repos/${pr.repo}/statuses/${pr.sha}`, { state: v.state, context: CONTEXT, description: v.description.slice(0, 140) });
+  return true;
 }
 
 /** The REST API with the workflow's token. */
@@ -142,7 +150,13 @@ if (import.meta.main) {
   const pr: Pr = { repo: process.env.GITHUB_REPOSITORY!, number: event.pull_request.number, sha: event.pull_request.head.sha, base: event.pull_request.base.sha, author: event.pull_request.user.login };
   const scorer: Scorer = await import(pathToFileURL(process.env.SCORER!).href);
   const api = githubApi(process.env.GH_TOKEN!, process.env.GITHUB_API_URL);
-  const verdict = await checkSubmission(api, pr, scorer);
-  await report(api, pr, verdict);
-  console.log(verdict.kind === 'checked' ? `${verdict.state}: ${verdict.description}` : 'not a submission');
+  try {
+    const verdict = await checkSubmission(api, pr, scorer);
+    const said = await report(api, pr, verdict);
+    console.log(!said ? 'the head moved; the newer push decides' : verdict.kind === 'checked' ? `${verdict.state}: ${verdict.description}` : 'not a submission');
+  } catch (e) {
+    // GitHub refused a read or a write: the pull request must not keep an earlier pass, or show nothing at all.
+    await api.post(`repos/${pr.repo}/statuses/${pr.sha}`, { state: 'error', context: CONTEXT, description: "The check couldn't run. Re-run the Submission workflow." }).catch(() => {});
+    throw e;
+  }
 }

@@ -22,12 +22,14 @@ const text = (edit: (r: any) => void = () => {}) => {
 const PUBLIC = { full_name: 'pip/garden', private: false, language: 'TypeScript', owner: { login: 'pip', type: 'User' } };
 
 // repo: null is a 404; stored: the report files already in pip__garden at the base commit.
-const fakeApi = ({ files = [{ filename: FILE, status: 'added' }] as { filename: string; status: string }[], file = text(), repo = PUBLIC as unknown, stored = [] as string[] } = {}) => {
+// head: the pull request's head commit when the verdict is reported.
+const fakeApi = ({ files = [{ filename: FILE, status: 'added' }] as { filename: string; status: string }[], file = text(), repo = PUBLIC as unknown, stored = [] as string[], head = 'c0ffee' } = {}) => {
   const calls: string[] = [];
   const api: Api = {
     get: async (path) => {
       calls.push(`GET ${path}`);
       if (path.endsWith('/files?per_page=100')) return files;
+      if (path === 'repos/ref-0/ci-doctor-db/pulls/7') return { head: { sha: head } };
       if (path === 'repos/pip/garden') return repo ?? undefined;
       if (path === 'repos/ref-0/ci-doctor-db/contents/reports/pip__garden?ref=ba5e') return stored.length ? stored.map((name) => ({ name })) : undefined;
       return undefined;
@@ -41,6 +43,20 @@ const check = (api: Api, pr = PR) => checkSubmission(api, pr, SCORER, NOW);
 const failed = (v: Awaited<ReturnType<typeof check>>) => (assert.equal(v.kind === 'checked' && v.state, 'failure', v.comment), v.comment);
 
 describe('a submission', () => {
+  it('whose head moved while it was checked gets no comment and no status: the newer push decides', async () => {
+    const { api, calls } = fakeApi({ head: 'decaf' });
+    const v = await check(api);
+
+    assert.equal(await report(api, PR, v), false);
+    assert.ok(!calls.some((c) => c.startsWith('POST ')));
+  });
+
+  it('whose languages are bare names fails on the language GitHub gives', async () => {
+    const r = JSON.parse(text());
+    r.profile.languages = ['TypeScript'];
+    assert.match(failed(await check(fakeApi({ file: JSON.stringify(r) }).api)), /languages/);
+  });
+
   it('that passes: four reads, then a comment and a success status on the head commit', async () => {
     const { api, calls } = fakeApi();
     const v = await check(api);
@@ -53,9 +69,10 @@ describe('a submission', () => {
     ]);
     assert.match(v.comment, /For whoever merges: this is `pip\/garden`'s first report here, and `pip` owns it\.$/);
 
-    await report(api, PR, v);
-    assert.match(calls[4]!, /^POST repos\/ref-0\/ci-doctor-db\/issues\/7\/comments .*passes the submission check/);
-    assert.equal(calls[5], `POST repos/ref-0/ci-doctor-db/statuses/c0ffee ${JSON.stringify({ state: 'success', context: 'submission', description: "pip/garden's report passes" })}`);
+    assert.equal(await report(api, PR, v), true);
+    assert.equal(calls[4], 'GET repos/ref-0/ci-doctor-db/pulls/7');
+    assert.match(calls[5]!, /^POST repos\/ref-0\/ci-doctor-db\/issues\/7\/comments .*passes the submission check/);
+    assert.equal(calls[6], `POST repos/ref-0/ci-doctor-db/statuses/c0ffee ${JSON.stringify({ state: 'success', context: 'submission', description: "pip/garden's report passes" })}`);
   });
 
   it("says, without failing, what's stored here already and whose repo it is", async () => {
@@ -106,14 +123,15 @@ describe('not a submission', () => {
     ['a removed report', [{ filename: FILE, status: 'removed' }]],
     ['a renamed report', [{ filename: FILE, status: 'renamed' }]],
   ] as const)
-    it(`${what}: a comment, no status, and nothing read but the files`, async () => {
+    it(`${what}: a comment, no status, and nothing read but the files and the head`, async () => {
       const { api, calls } = fakeApi({ files: [...files] });
       const v = await check(api);
       assert.equal(v.kind, 'not-a-submission');
       assert.match(v.comment, /leaves it for a person/);
       await report(api, PR, v);
-      assert.equal(calls.length, 2);
-      assert.match(calls[1]!, /^POST repos\/ref-0\/ci-doctor-db\/issues\/7\/comments /);
+      assert.deepEqual(calls.slice(0, 2), ['GET repos/ref-0/ci-doctor-db/pulls/7/files?per_page=100', 'GET repos/ref-0/ci-doctor-db/pulls/7']);
+      assert.equal(calls.length, 3);
+      assert.match(calls[2]!, /^POST repos\/ref-0\/ci-doctor-db\/issues\/7\/comments /);
     });
 
   it("prints a file's name only in a safe form", async () => {
