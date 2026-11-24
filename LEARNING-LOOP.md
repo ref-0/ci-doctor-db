@@ -64,13 +64,13 @@ The 05:00 job writes `digest/YYYY-MM-DD.md` from the night's numbers, under a pa
 
 ### 6. Optimize
 
-On Sundays the weekly job reads the week's digests and `proposals.md`, picks at most 3 by expected effect on the metric or on trust in the score, and briefs an engineer for each. Each becomes a PR on ci-doctor's `next`:
+On Sundays the weekly job reads the week's digests and `proposals.md`, picks at most 3 by expected effect on the metric or on trust in the score, and briefs an engineer for each. Each becomes a PR on ci-doctor's `main`:
 - **Scorer:** new parsers (`go test`, `cargo test`, JUnit), detection rules, stack fields.
 - **Calibration:** only with a re-score of every stored report attached, better separation on the trusted labels, the hold-out no worse, and the score changes listed. Nothing public moves without this.
 - **Guide pages:** a technique backed by movers or a cohort effect, cited as a dated finding with n.
 - **Skills:** where adopters stall or what they skip, once adoption data exists.
 
-Releasing `next` stays a maintainer's call.
+Releasing stays a maintainer's call.
 
 ## Field reports: what people's agents learn, sent back (19 Nov)
 
@@ -116,7 +116,7 @@ Never code, file contents, paths outside the CI config, people's names or secret
 |---|---|---|---|
 | Daily 02:00 | Measure | A script, started by a scheduled agent task on a cheap model that only runs it and reports failures | Find, measure, store, then pull from the site once it's live |
 | Daily 05:00 | Learn | `loop/compare.ts` and `loop/digest.ts` write the numbers; then a model adds the narrative and proposals in the digest's marked place | Compare, digest, update `loop/proposals.md` |
-| Sunday 10:00 | Optimize | A maintainer's agent | Pick ≤3 proposals, brief coding agents, PRs on `next` |
+| Sunday 10:00 | Optimize | A maintainer's agent | Pick ≤3 proposals, brief coding agents, PRs on `main` |
 
 The times avoid the existing schedule: the agent spend audit at 07:00, issue triage at 07:30, slow tests at 06:00 Mon/Wed/Fri and the ci-doctor sync at 10:00 Saturday. Each job leaves nothing running and writes only under `~/ref0-work/ci-score/`.
 
