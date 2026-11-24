@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { join } from 'node:path';
 import { open } from '../db.ts';
 import { importReports } from '../import.ts';
-import { changed, literal, siteSql } from '../site.ts';
+import { changed, literal, NOT_ON_SITE, siteSql } from '../site.ts';
 
 const FIXTURES = join(import.meta.dirname, 'fixtures');
 
@@ -31,6 +31,14 @@ test('a literal quotes text with its quotes doubled and writes nothing as NULL',
   assert.equal(literal("it's"), "'it''s'");
   assert.equal(literal(null), 'NULL');
   assert.equal(literal(0.25), '0.25');
+});
+
+test("a push names no column the site's D1 lacks", () => {
+  const { loop } = both();
+  const sql = siteSql(loop.prepare('SELECT * FROM reports').all(), [], []);
+
+  assert.ok(sql.length > 0);
+  for (const column of NOT_ON_SITE) assert.ok(!sql.includes(column), column);
 });
 
 test('a push leaves D1 holding what loop.db does, and a second one sends nothing', () => {
