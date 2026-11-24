@@ -50,9 +50,13 @@ test('a push leaves D1 holding what loop.db does, and a second one sends nothing
   assert.deepEqual(dump(dbs.site), dump(dbs.loop));
 });
 
-test("a report longer than D1's statement limit goes in pieces, and D1 holds it whole", () => {
+test("a report longer than D1's statement limit goes in pieces over the row D1 has, and D1 holds it whole", () => {
   const dbs = both();
-  const stack = JSON.stringify({ libraries: Array.from({ length: 9_000 }, (_, i) => ({ name: `it's-\u{1F9EA}-${i}`, packages: i })) });
+  push(dbs);
+  // The first emoji's two code units sit either side of the first piece's end, so a cut by count alone would split it.
+  const libraries = Array.from({ length: 9_000 }, (_, i) => ({ name: `it's-\u{1F9EA}-${i}`, packages: i }));
+  const stack = JSON.stringify({ x: `${'a'.repeat(19_993)}\u{1F9EA}`, libraries });
+  assert.equal(stack.codePointAt(19_999), 0x1f9ea);
   assert.ok(Buffer.byteLength(stack) > 2 * STATEMENT_BYTES);
   dbs.loop.prepare("UPDATE reports SET stack = ?, sha256 = 'long' WHERE id = 'vitejs/vite/2026-11-19_rescored'").run(stack);
 
