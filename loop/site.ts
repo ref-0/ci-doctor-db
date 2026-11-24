@@ -38,6 +38,14 @@ export const upserts = (table: string, key: ReadonlyArray<string>, rows: Readonl
     return `INSERT INTO ${table} (${columns.join(', ')}) VALUES (${values}) ON CONFLICT (${key.join(', ')}) ${conflict};`;
   });
 
+/**
+ * The columns of loop.db's reports that the site's D1 doesn't have, so a push leaves them out: an upsert naming a
+ * column D1 lacks fails the whole push. The site reads who submitted a report from the report's file until its own
+ * schema gains the column; take `submitted_by` off this list in the change that adds it there.
+ */
+export const NOT_ON_SITE: ReadonlySet<string> = new Set(['submitted_by']);
+const onSite = (row: Row): Row => Object.fromEntries(Object.entries(row).filter(([column]) => !NOT_ON_SITE.has(column)));
+
 /** The reports to send: those D1 lacks or holds at another sha256. */
 export const changed = (local: ReadonlyArray<Row>, remote: ReadonlyMap<string, string>) =>
   local.filter((r) => remote.get(String(r.id)) !== r.sha256);
@@ -47,7 +55,7 @@ export const changed = (local: ReadonlyArray<Row>, remote: ReadonlyMap<string, s
  * then the checks D1 lacks. A repo's row is sent whole each time; there are hundreds, not millions.
  */
 export const siteSql = (reports: ReadonlyArray<Row>, repos: ReadonlyArray<Row>, checks: ReadonlyArray<Row>) =>
-  [...upserts('reports', ['id'], reports), ...upserts('repos', ['repo'], repos), ...upserts('checks', ['repo', 'at', 'reason'], checks, true)].join('\n');
+  [...upserts('reports', ['id'], reports.map(onSite)), ...upserts('repos', ['repo'], repos), ...upserts('checks', ['repo', 'at', 'reason'], checks, true)].join('\n');
 
 const wrangler = (args: string[]) =>
   execFileSync(WRANGLER, args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 << 20 });
