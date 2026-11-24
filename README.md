@@ -17,8 +17,32 @@ Every repo here is public, and every number comes from GitHub's public API: each
 | [`NOTES.md`](NOTES.md), [`LAUNCH.md`](LAUNCH.md) | The first notes, and the launch plan |
 | [`reports/`](reports/) | Every measured report, one JSON file per repo and date: the score and its parts, PR wait percentiles, jobs, tests, practices and stack. A `_rescored` file re-scores the report it sits beside |
 | [`digest/`](digest/) | The loop's daily comparison: the numbers as JSON, and a readable digest |
+| [`submission/`](submission/), [`.github/workflows/submission.yml`](.github/workflows/submission.yml) | The check on a submitted report |
 
 `loop.db` isn't in git: `node loop/import.ts` builds it from `reports/`. Nor is the raw API cache.
+
+## Submit your repo
+
+Score a public repo on your machine and send its report here as a pull request, with your own `gh` sign-in:
+
+```sh
+npx @ref0/ci-doctor --repo pip/garden --submit
+```
+
+It adds one new file, `reports/pip__garden/<date>.json`, under the repo's name as GitHub spells it: the report `--json` prints, with `submitted: { by, at }`, your login and the time. An unscored report isn't sent: there's nothing in it to compare.
+
+A submission only adds a file. It never replaces a report here, measured or submitted, and the nightly measure skips a repo whose report for today is already here, so neither replaces the other. To send the same day's report again, use the pull request that's open.
+
+Nothing here scores your repo again. The [submission check](.github/workflows/submission.yml) runs [`submission/check.ts`](submission/check.ts) from this repo's default branch, reads the pull request as data and runs nothing from it. It looks at:
+
+- that the pull request adds exactly that one new file, and changes nothing else (anything else is left for a person);
+- the scorer's own `smokeCheck` on the file: its fields and types, under 1 MB; only strings that are safe to show; a score; its path matching its repo and date, today's or yesterday's in UTC; made by the current scorer release; numbers in range and in order; links only into ci-doctor's guide; and a score, parts, detail and size that agree with the report's own measures, with enough of them to score;
+- that `submitted.by` is who opened the pull request;
+- one call about the repo: it exists, is public, is spelt exactly as GitHub spells it, and its main language is one the report lists.
+
+It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit: `error` when GitHub refused one of its calls, and nothing at all when the head moved while it ran, since the newer push's own run decides. A person merges every submission. Merge one for a repo measured here outside the nightly's hours: a report the nightly writes for the same repo and day while the submission lands is left in its checkout, which then can't fast-forward until that file is removed.
+
+Once merged, the import keeps who submitted it (`reports.submitted_by`). A submitted report counts in its cohort and findings like a measured one, and a repo with only submitted reports is never measured here: the nightly queue leaves it out.
 
 ## Run it
 
@@ -29,6 +53,7 @@ node loop/import.ts      # reports/ into loop.db
 node loop/compare.ts     # the day's comparison, into digest/
 node loop/digest.ts      # the readable digest
 node --test loop/test/   # the loop's tests
+CI_DOCTOR_SCORER=<ci-doctor checkout>/scorer/src node --test submission/test/   # the submission check's
 node loop/measure.ts --dry-run --max 10   # tonight's queue, with each repo's reason
 node loop/measure.ts     # the nightly job: find, measure, store, publish (--push from main)
 node loop/prune.ts --dry-run              # what cache retention would delete

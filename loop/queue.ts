@@ -27,7 +27,9 @@ export const addDays = (date: string, n: number) => new Date(Date.parse(date) + 
 export const cohortKey = (size: string, language: string) => `${size} × ${language}`;
 
 // Tracked repos due again on `today`, adopters first, then the longest overdue. A failed check counts as an attempt,
-// so a repo that keeps failing is retried on the same cadence rather than every night.
+// so a repo that keeps failing is retried on the same cadence rather than every night. A repo whose every report was
+// submitted is never due: what it costs to measure is its submitter's, not ours. Gap discovery leaves it out too, as a
+// tracked repo.
 export function dueRefreshes(db: DatabaseSync, today: string): Entry[] {
   const rows = db
     .prepare(
@@ -35,7 +37,9 @@ export function dueRefreshes(db: DatabaseSync, today: string): Entry[] {
               (SELECT MAX(date) FROM reports r WHERE r.repo = p.repo AND r.seq = 0) AS last_report,
               (SELECT MAX(substr(at, 1, 10)) FROM checks c WHERE c.repo = p.repo AND c.report IS NULL) AS last_failed,
               EXISTS (SELECT 1 FROM adoption a WHERE a.repo = p.repo) AS adopter
-         FROM repos p`,
+         FROM repos p
+        WHERE NOT EXISTS (SELECT 1 FROM reports r WHERE r.repo = p.repo)
+           OR EXISTS (SELECT 1 FROM reports r WHERE r.repo = p.repo AND r.submitted_by IS NULL)`,
     )
     .all() as { repo: string; last_report: string | null; last_failed: string | null; adopter: number }[];
 
