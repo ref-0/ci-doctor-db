@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, existsSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, existsSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
@@ -154,6 +154,30 @@ test('a night stores each report and its check, records failures with their reas
   // A later import of the same reports adds no import checks for them.
   importReports(db, reportsDir);
   assert.equal(db.prepare(`SELECT COUNT(*) AS n FROM checks`).get()!.n, 3);
+  done();
+});
+
+test("a repo with today's report already stored isn't measured, and the log says so", async () => {
+  const { db, reportsDir, done } = setup();
+  const clock = fakeClock();
+  const today = new Date(T0).toISOString().slice(0, 10);
+  mkdirSync(join(reportsDir, 'pip__garden'), { recursive: true });
+  writeFileSync(join(reportsDir, 'pip__garden', `${today}.json`), '{}');
+  const checked: string[] = [];
+  const lines: string[] = [];
+
+  const night = await runNight(entries('pip/garden', 'mo/shed', 'a/merged'), {
+    db, reportsDir, clock, stopAt: STOP, quota: fakeQuota(clock).read, token: () => 't',
+    check: async (repo) => (checked.push(repo), { report: report(repo) }),
+    importOne, refreshRepos, log: (s) => lines.push(s),
+    // On origin/main though not in this checkout yet, as a submission merged today is.
+    stored: (file) => existsSync(join(reportsDir, file)) || file === `a__merged/${today}.json`,
+  });
+
+  assert.deepEqual(checked, ['mo/shed']);
+  assert.deepEqual(night.skipped, ['pip/garden', 'a/merged']);
+  assert.ok(lines.some((l) => l.endsWith(`gap pip/garden: skipped, reports/pip__garden/${today}.json is already there`)));
+  assert.equal(readFileSync(join(reportsDir, 'pip__garden', `${today}.json`), 'utf8'), '{}');
   done();
 });
 

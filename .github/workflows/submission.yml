@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
-      contents: read # the check's own file, and the submitted file at the head commit
+      contents: read # the check's own file, the submitted file at the head commit, and the repo's folder at the base
       pull-requests: write # the comment
       statuses: write # the `submission` status
     steps:

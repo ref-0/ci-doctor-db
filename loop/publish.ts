@@ -26,10 +26,15 @@ function onDisk(root: string): string[] {
   return out.sort();
 }
 
+// The report files on origin/main, after fetching it, as reports/<owner>__<repo>/<file>.json.
+export function publishedReports(root: string): Set<string> {
+  git(root, 'fetch', '-q', 'origin', 'main');
+  return new Set(git(root, 'ls-tree', '-r', '--name-only', 'origin/main', '--', 'reports').split('\n'));
+}
+
 // The reports origin/main doesn't have, after fetching it.
 export function unpublished(root: string): string[] {
-  git(root, 'fetch', '-q', 'origin', 'main');
-  const published = new Set(git(root, 'ls-tree', '-r', '--name-only', 'origin/main', '--', 'reports').split('\n'));
+  const published = publishedReports(root);
   return onDisk(root).filter((p) => !published.has(p));
 }
 

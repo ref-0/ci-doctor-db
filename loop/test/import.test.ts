@@ -113,6 +113,18 @@ test("a published scorer's report keeps its own stack, with no misfits", () => {
   assert.deepEqual(JSON.parse(String(row?.stack)), stack);
 });
 
+test('a submitted report keeps who sent it, and a measured one has nobody; neither has misfits', () => {
+  const report = { repo: 'pip/garden', date: '2026-11-23', scorerVersion: '0.4.0', score: 70, grade: 'C+', practices: {}, stack: {}, evidence: {}, jobGraph: {}, graphs: {}, read: { calls: 40, fromCache: 0 } };
+  const misfits: Misfit[] = [];
+
+  const submitted = reportRow('pip__garden', '2026-11-23.json', JSON.stringify({ ...report, submitted: { by: 'pip', at: '2026-11-23T10:00:00Z' } }), misfits);
+  const measured = reportRow('pip__garden', '2026-11-23.json', JSON.stringify(report), misfits);
+
+  assert.deepEqual(misfits, []);
+  assert.equal(submitted?.submitted_by, 'pip');
+  assert.equal(measured?.submitted_by, null);
+});
+
 test('a loop.db older than schema.sql is named, with how to rebuild it', async () => {
   const { DatabaseSync } = await import('node:sqlite');
   const { checkSchema, missingColumns } = await import('../db.ts');
