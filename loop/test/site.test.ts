@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { join } from 'node:path';
 import { open } from '../db.ts';
 import { importReports } from '../import.ts';
-import { changed, literal, NOT_ON_SITE, siteSql } from '../site.ts';
+import { changed, literal, NOT_ON_SITE, siteSql, STATEMENT_BYTES } from '../site.ts';
 
 const FIXTURES = join(import.meta.dirname, 'fixtures');
 
@@ -47,6 +47,28 @@ test('a push leaves D1 holding what loop.db does, and a second one sends nothing
   assert.equal(push(dbs), 6);
   assert.deepEqual(dump(dbs.site), dump(dbs.loop));
   assert.equal(push(dbs), 0);
+  assert.deepEqual(dump(dbs.site), dump(dbs.loop));
+});
+
+test("a report longer than D1's statement limit goes in pieces over the row D1 has, and D1 holds it whole", () => {
+  const dbs = both();
+  push(dbs);
+  // The first emoji's two code units sit either side of the first piece's end, so a cut by count alone would split it.
+  const libraries = Array.from({ length: 9_000 }, (_, i) => ({ name: `it's-\u{1F9EA}-${i}`, packages: i }));
+  const stack = JSON.stringify({ x: `${'a'.repeat(19_993)}\u{1F9EA}`, libraries });
+  assert.equal(stack.codePointAt(19_999), 0x1f9ea);
+  assert.ok(Buffer.byteLength(stack) > 2 * STATEMENT_BYTES);
+  dbs.loop.prepare("UPDATE reports SET stack = ?, sha256 = 'long' WHERE id = 'vitejs/vite/2026-11-19_rescored'").run(stack);
+
+  const send = changed(dbs.loop.prepare('SELECT * FROM reports').all(), shas(dbs.site));
+  const sql = siteSql(send, dbs.loop.prepare('SELECT * FROM repos').all(), dbs.loop.prepare('SELECT * FROM checks').all());
+  for (const statement of sql.split('\n')) assert.ok(Buffer.byteLength(statement) <= STATEMENT_BYTES, statement.slice(0, 80));
+
+  dbs.site.exec(sql);
+  assert.deepEqual(dump(dbs.site), dump(dbs.loop));
+
+  dbs.loop.exec("UPDATE reports SET stack = '{}', sha256 = 'short' WHERE id = 'vitejs/vite/2026-11-19_rescored'");
+  assert.equal(push(dbs), 1);
   assert.deepEqual(dump(dbs.site), dump(dbs.loop));
 });
 
