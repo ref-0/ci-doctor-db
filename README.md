@@ -17,8 +17,28 @@ Every repo here is public, and every number comes from GitHub's public API: each
 | [`NOTES.md`](NOTES.md), [`LAUNCH.md`](LAUNCH.md) | The first notes, and the launch plan |
 | [`reports/`](reports/) | Every measured report, one JSON file per repo and date: the score and its parts, PR wait percentiles, jobs, tests, practices and stack. A `_rescored` file re-scores the report it sits beside |
 | [`digest/`](digest/) | The loop's daily comparison: the numbers as JSON, and a readable digest |
+| [`submission/`](submission/), [`.github/workflows/submission.yml`](.github/workflows/submission.yml) | The check on a submitted report |
 
 `loop.db` isn't in git: `node loop/import.ts` builds it from `reports/`. Nor is the raw API cache.
+
+## Submit your repo
+
+Score a public repo on your machine and send its report here as a pull request, with your own `gh` sign-in:
+
+```sh
+npx @ref0/ci-doctor --repo pip/garden --submit
+```
+
+It adds one file, `reports/pip__garden/<date>.json`: the report `--json` prints, with `submitted: { by, at }`, your login and the time. A submitted report is marked as submitted that way, so it can be told from one measured here.
+
+Nothing here scores your repo again. The [submission check](.github/workflows/submission.yml) runs [`submission/check.ts`](submission/check.ts) from this repo's default branch, reads the pull request as data and runs nothing from it. It looks at:
+
+- that the pull request adds or replaces exactly that one file, and nothing else (anything else is left for a person);
+- the scorer's own `smokeCheck` on the file: its fields and types, under 1 MB; its path matching its repo and date, today's or yesterday's in UTC; made by the current scorer release; numbers in range; and a score, grade and parts that agree with the report's own measures;
+- that `submitted.by` is who opened the pull request;
+- one API call: the repo exists and is public.
+
+It comments what it found and sets the `submission` status on the pull request's head commit. It doesn't merge.
 
 ## Run it
 
@@ -29,6 +49,7 @@ node loop/import.ts      # reports/ into loop.db
 node loop/compare.ts     # the day's comparison, into digest/
 node loop/digest.ts      # the readable digest
 node --test loop/test/   # the loop's tests
+CI_DOCTOR_SCORER=<ci-doctor checkout>/scorer/src node --test submission/test/   # the submission check's
 node loop/measure.ts --dry-run --max 10   # tonight's queue, with each repo's reason
 node loop/measure.ts     # the nightly job: find, measure, store, publish (--push from main)
 node loop/prune.ts --dry-run              # what cache retention would delete

@@ -11,4 +11,4 @@ export const SCORER_SRC = process.env.CI_DOCTOR_SCORER ?? join(homedir(), 'ref0-
 
 const scorer = await import(pathToFileURL(join(SCORER_SRC, 'index.ts')).href);
 
-export const { scoreRepo, scoreOf, grade, band, sizeClass, expectedWait, expectedMinutesPerMergedPr, expectedVcpuMinutesPerMergedPr, BYTES_PER_LINE, CODE_EXT, MAX_SOURCE_FILE, SKIP } = scorer;
+export const { scoreRepo, scoreOf, grade, band, sizeClass, expectedWait, expectedMinutesPerMergedPr, expectedVcpuMinutesPerMergedPr, BYTES_PER_LINE, CODE_EXT, MAX_SOURCE_FILE, SKIP, smokeCheck, inputsOf, VERSION } = scorer;
