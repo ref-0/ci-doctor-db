@@ -25,17 +25,48 @@ type Row = Record<string, SQLOutputValue>;
 export const literal = (value: SQLOutputValue): string =>
   value === null ? 'NULL' : typeof value === 'string' ? `'${value.replaceAll("'", "''")}'` : String(value);
 
+/** D1 refuses a statement over 100,000 bytes, and a big monorepo's `stack` alone is longer than that. */
+export const STATEMENT_BYTES = 100_000;
+/** The most characters of one value a statement carries: at four bytes each, or every one a doubled quote, it fits. */
+const PIECE = 20_000;
+
+/** A text in pieces of at most PIECE characters, never cut inside a character that takes two code units. */
+function pieces(text: string): string[] {
+  const out: string[] = [];
+  for (let from = 0; from < text.length; ) {
+    let to = Math.min(from + PIECE, text.length);
+    const high = text.charCodeAt(to - 1);
+    if (to < text.length && high >= 0xd800 && high <= 0xdbff) to -= 1;
+
+    out.push(text.slice(from, to));
+    from = to;
+  }
+  return out;
+}
+
 /**
  * Rows of `table` written in or over D1's: an upsert on `key`, so a report D1 already has is changed in place, never
  * deleted, as a replace would, which a repo's `latest_report` or a check pointing at it forbids. `onlyNew` keeps D1's.
+ * A row too long for one statement goes as its upsert with each long text's first piece, then an update per piece
+ * that appends the rest, in order; a push is one transaction, so nothing reads the row between them.
  */
 export const upserts = (table: string, key: ReadonlyArray<string>, rows: ReadonlyArray<Row>, onlyNew = false) =>
-  rows.map((row) => {
+  rows.flatMap((row) => {
     const columns = Object.keys(row);
-    const values = columns.map((c) => literal(row[c] ?? null)).join(', ');
     const set = columns.filter((c) => !key.includes(c)).map((c) => `${c} = excluded.${c}`);
     const conflict = onlyNew || set.length === 0 ? 'DO NOTHING' : `DO UPDATE SET ${set.join(', ')}`;
-    return `INSERT INTO ${table} (${columns.join(', ')}) VALUES (${values}) ON CONFLICT (${key.join(', ')}) ${conflict};`;
+    const upsert = (values: Row) =>
+      `INSERT INTO ${table} (${columns.join(', ')}) VALUES (${columns.map((c) => literal(values[c] ?? null)).join(', ')}) ON CONFLICT (${key.join(', ')}) ${conflict};`;
+
+    const whole = upsert(row);
+    if (onlyNew || Buffer.byteLength(whole) <= STATEMENT_BYTES) return [whole];
+
+    const long = columns.filter((c) => !key.includes(c) && typeof row[c] === 'string' && (row[c] as string).length > PIECE);
+    const cut = new Map(long.map((c) => [c, pieces(row[c] as string)]));
+    const where = key.map((c) => `${c} = ${literal(row[c] ?? null)}`).join(' AND ');
+    const first = upsert({ ...row, ...Object.fromEntries(long.map((c) => [c, cut.get(c)![0]!])) });
+    const rest = long.flatMap((c) => cut.get(c)!.slice(1).map((piece) => `UPDATE ${table} SET ${c} = ${c} || ${literal(piece)} WHERE ${where};`));
+    return [first, ...rest];
   });
 
 /**
