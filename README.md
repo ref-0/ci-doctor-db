@@ -11,12 +11,12 @@ Every repo here is public, and every number comes from GitHub's public API: each
 | [`FINDINGS.md`](FINDINGS.md) | What scoring 219 repos showed, dated |
 | [`calibration.md`](calibration.md), [`calibrate.py`](calibrate.py), [`calibration/`](calibration/) | How the score's settings were chosen against labelled fast and slow repos, and how to reproduce it |
 | [`inbox/`](inbox/), [`research/`](research/) | The repo lists and their labels |
-| [`loop/`](loop/) | The learning loop: the database schema, the import, the daily comparison and digest, the push to the score site's store (`loop/site.ts`), and the [proposals](loop/proposals.md) it feeds |
+| [`loop/`](loop/) | The learning loop: the database schema, the import, the weekly comparison and digest, the push to the score site's store (`loop/site.ts`), and the [proposals](loop/proposals.md) it feeds |
 | [`LEARNING-LOOP.md`](LEARNING-LOOP.md) | The loop's plan, including field reports from people's agents |
 | [`SITE.md`](SITE.md), [`card/`](card/), [`colour.ts`](colour.ts) | The score site's design and its social cards |
 | [`NOTES.md`](NOTES.md), [`LAUNCH.md`](LAUNCH.md) | The first notes, and the launch plan |
 | [`reports/`](reports/) | Every measured report, one JSON file per repo and date: the score and its parts, PR wait percentiles, jobs, tests, practices and stack. A `_rescored` file re-scores the report it sits beside |
-| [`digest/`](digest/) | The loop's daily comparison: the numbers as JSON, and a readable digest |
+| [`digest/`](digest/) | The loop's weekly comparison: the numbers as JSON, and a readable digest |
 | [`submission/`](submission/), [`.github/workflows/submission.yml`](.github/workflows/submission.yml) | The check on a submitted report |
 
 `loop.db` isn't in git: `node loop/import.ts` builds it from `reports/`. Nor is the raw API cache.
@@ -31,7 +31,7 @@ npx @ref0/ci-doctor --repo pip/garden --submit
 
 It adds one new file, `reports/pip__garden/<date>.json`, under the repo's name as GitHub spells it: the report `--json` prints, with `submitted: { by, at }`, your login and the time. An unscored report isn't sent: there's nothing in it to compare.
 
-A submission only adds a file. It never replaces a report here, measured or submitted, and the nightly measure skips a repo whose report for today is already here, so neither replaces the other. To send the same day's report again, use the pull request that's open.
+A submission only adds a file. It never replaces a report here, measured or submitted, and the weekly measure skips a repo whose report for today is already here, so neither replaces the other. To send the same day's report again, use the pull request that's open.
 
 Nothing here scores your repo again. The [submission check](.github/workflows/submission.yml) runs [`submission/check.ts`](submission/check.ts) from this repo's default branch, reads the pull request as data and runs nothing from it. It looks at:
 
@@ -40,9 +40,9 @@ Nothing here scores your repo again. The [submission check](.github/workflows/su
 - that `submitted.by` is who opened the pull request;
 - one call about the repo: it exists, is public, is spelt exactly as GitHub spells it, and its main language is one the report lists.
 
-It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit: `error` when GitHub refused one of its calls, and nothing at all when the head moved while it ran, since the newer push's own run decides. A person merges every submission. Merge one for a repo measured here outside the nightly's hours: a report the nightly writes for the same repo and day while the submission lands is left in its checkout, which then can't fast-forward until that file is removed.
+It comments what it found, with two facts for whoever merges: whether the repo has reports here already, and whether the author owns it. It sets the `submission` status on the pull request's head commit: `error` when GitHub refused one of its calls, and nothing at all when the head moved while it ran, since the newer push's own run decides. A person merges every submission. Merge one for a repo measured here outside the weekly run's hours, Sunday 02:00 to 13:00: a report the run writes for the same repo and day while the submission lands is left in its checkout, which then can't fast-forward until that file is removed.
 
-Once merged, the import keeps who submitted it (`reports.submitted_by`). A submitted report counts in its cohort and findings like a measured one, and a repo with only submitted reports is never measured here: the nightly queue leaves it out.
+Once merged, the import keeps who submitted it (`reports.submitted_by`). A submitted report counts in its cohort and findings like a measured one, and a repo with only submitted reports is never measured here: the weekly queue leaves it out.
 
 ## Run it
 
@@ -50,16 +50,16 @@ Node 24 runs the TypeScript directly:
 
 ```sh
 node loop/import.ts      # reports/ into loop.db
-node loop/compare.ts     # the day's comparison, into digest/
-node loop/digest.ts      # the readable digest
+node loop/compare.ts     # the week's comparison, into digest/, or `no digest:` when nothing is newer than the last
+node loop/digest.ts      # the readable digest, or the same `no digest:` line
 node --test loop/test/   # the loop's tests
 CI_DOCTOR_SCORER=<ci-doctor checkout>/scorer/src node --test submission/test/   # the submission check's
-node loop/measure.ts --dry-run --max 10   # tonight's queue, with each repo's reason
-node loop/measure.ts     # the nightly job: find, measure, store, publish (--push from main)
+node loop/measure.ts --dry-run --max 10   # this week's queue, with each repo's reason
+node loop/measure.ts     # the weekly run: find, measure, store, publish (--push from main)
 node loop/prune.ts --dry-run              # what cache retention would delete
 ```
 
-The nightly job scores with ci-doctor's `main`, from its own checkout at `~/ref0-work/ci-doctor-next`, with the `ref0-ci-doctor` App's token. It runs from 02:00 to today's 05:00 (`--until`), one run at a time, and pushes every report `origin/main` lacks as one data commit made on `origin/main`. Its log goes to `logs/measure-<date>.log`. When `loop/schema.sql` changes, rebuild `loop.db` with `rm loop.db && node loop/import.ts`.
+The weekly run scores with ci-doctor's `main`, from its own checkout of it, with the `ref0-ci-doctor` App's token. It starts on Sunday at 02:00 and measures for 11 hours from its start (`--hours`), one run at a time, and pushes every report `origin/main` lacks as one data commit made on `origin/main`. Every tracked repo is due once its last report is 6 days old, adopters every run; one with no pull-request run since its last report is skipped and keeps that report, as a row in `loop.db`'s `skips`. Its log goes to `logs/measure-<date>.log`. The learn job runs at 14:00: `import.ts`, `compare.ts` and `digest.ts`, and a model writes the narrative only when `digest/<date>.md` was written. When `loop/schema.sql` adds a column, rebuild `loop.db` with `rm loop.db && node loop/import.ts`; a new table or view needs nothing, as `loop.db` gains it when next opened.
 
 Scoring a repo uses the published scorer, `npx @ref0/ci-doctor`.
 
