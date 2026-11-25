@@ -51,14 +51,15 @@ const KNOWN = new Set([
 
 type Row = Record<string, SQLInputValue>;
 export type Misfit = { path: string; what: string };
+export type Hint = { practice: string; path: string; kind: string };
 
 const num = (x: unknown): number | null => (typeof x === 'number' && Number.isFinite(x) ? x : null);
 const int = (x: unknown): number | null => (num(x) === null ? null : Math.round(x as number));
 const str = (x: unknown): string | null => (typeof x === 'string' ? x : null);
 const flag = (x: unknown): number | null => (typeof x === 'boolean' ? Number(x) : null);
 
-// One report file → its reports row, or a reason it doesn't fit.
-export function reportRow(dir: string, file: string, text: string, misfits: Misfit[]): Row | null {
+// One report file → its reports row, or a reason it doesn't fit. Its practices.hints, if any, go in `hints`.
+export function reportRow(dir: string, file: string, text: string, misfits: Misfit[], hints: Hint[] = []): Row | null {
   const path = `${dir}/${file}`;
   const stem = file.replace(/\.json$/, '');
   const m = STEM.exec(stem);
@@ -82,6 +83,12 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
   for (const [k, v] of Object.entries(p)) {
     // agentsMd is in the stack's agent files; unknown is why a practice is null, not a practice.
     if (k === 'agentsMd' || k === 'unknown') continue;
+    if (k === 'hints') {
+      const ok = Array.isArray(v) ? v.filter((h) => ['practice', 'path', 'kind'].every((f) => typeof h?.[f] === 'string')) : [];
+      if (!Array.isArray(v) || ok.length < v.length) misfits.push({ path, what: 'practices.hints holds something not { practice, path, kind }; left out' });
+      hints.push(...ok.map((h) => ({ practice: h.practice, path: h.path, kind: h.kind })));
+      continue;
+    }
     const col = PRACTICES[k];
     if (!col) {
       otherPractices[k] = v;
@@ -173,9 +180,26 @@ function upsert(db: DatabaseSync, table: string, key: string[], row: Row): numbe
   return Number(db.prepare(sql).run(...cols.map((c) => row[c])).changes);
 }
 
+// A report's hints rows made to match `hints`, touching only those that differ, so a re-import changes none.
+function syncHints(db: DatabaseSync, report: string, hints: Hint[]): number {
+  const key = (h: Hint) => JSON.stringify([h.practice, h.path, h.kind]);
+  const have = db.prepare(`SELECT practice, path, kind FROM hints WHERE report = ?`).all(report) as Hint[];
+  const want = new Map(hints.map((h) => [key(h), h]));
+  const had = new Set(have.map(key));
+
+  let changes = 0;
+  for (const h of have) {
+    if (!want.has(key(h))) changes += Number(db.prepare(`DELETE FROM hints WHERE report = ? AND practice = ? AND path = ? AND kind = ?`).run(report, h.practice, h.path, h.kind).changes);
+  }
+  for (const [k, h] of want) {
+    if (!had.has(k)) changes += Number(db.prepare(`INSERT INTO hints (report, practice, path, kind) VALUES (?, ?, ?, ?)`).run(report, h.practice, h.path, h.kind).changes);
+  }
+  return changes;
+}
+
 export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REPORTS) {
   const misfits: Misfit[] = [];
-  const rows: Row[] = [];
+  const rows: { row: Row; hints: Hint[] }[] = [];
   for (const dir of readdirSync(reportsDir).sort()) {
     let files: string[];
     try {
@@ -184,21 +208,22 @@ export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REP
       continue;
     }
     for (const file of files.filter((f) => f.endsWith('.json')).sort()) {
-      const row = reportRow(dir, file, readFileSync(join(reportsDir, dir, file), 'utf8'), misfits);
-      if (row) rows.push(row);
+      const hints: Hint[] = [];
+      const row = reportRow(dir, file, readFileSync(join(reportsDir, dir, file), 'utf8'), misfits, hints);
+      if (row) rows.push({ row, hints });
     }
   }
 
   let changes = 0;
   db.exec('BEGIN');
   try {
-    for (const row of rows) changes += upsert(db, 'reports', ['id'], row);
+    for (const { row, hints } of rows) changes += upsert(db, 'reports', ['id'], row) + syncHints(db, row.id as string, hints);
 
     // A report the measure job checked has its check already, with its reason and calls.
     const checked = new Set(
       (db.prepare(`SELECT report FROM checks WHERE reason != 'import' AND report IS NOT NULL`).all() as { report: string }[]).map((c) => c.report),
     );
-    for (const row of rows) {
+    for (const { row } of rows) {
       if (row.seq !== 0 || checked.has(row.id as string)) continue;
       changes += upsert(db, 'checks', ['repo', 'at', 'reason'], {
         repo: row.repo,
@@ -223,9 +248,11 @@ export function importReports(db: DatabaseSync, reportsDir: string = DEFAULT_REP
 // One report file the measure job just wrote, into its reports row. Its check and repo row are the caller's.
 export function importOne(db: DatabaseSync, reportsDir: string, dir: string, file: string): { id: string; misfits: Misfit[] } {
   const misfits: Misfit[] = [];
-  const row = reportRow(dir, file, readFileSync(join(reportsDir, dir, file), 'utf8'), misfits);
+  const hints: Hint[] = [];
+  const row = reportRow(dir, file, readFileSync(join(reportsDir, dir, file), 'utf8'), misfits, hints);
   if (!row) throw new Error(misfits.map((m) => m.what).join('; '));
   upsert(db, 'reports', ['id'], row);
+  syncHints(db, row.id as string, hints);
   return { id: row.id as string, misfits };
 }
 

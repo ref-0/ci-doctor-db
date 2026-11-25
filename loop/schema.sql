@@ -2,6 +2,7 @@
 -- D1 runs this file unchanged: no PRAGMAs, no extensions, JSON kept as TEXT.
 -- Full report JSON stays in reports/ (the site's R2); a report row names it by `path`.
 -- The site's D1 makes these tables with ref0's apps/ci-doctor/migrations/: change both together. loop/site.ts sends them.
+-- Except `skips`, `hints` and the `latest_age` view, which are loop.db's own: loop/site.ts doesn't send them.
 
 -- Every repo ever measured. latest_report is the newest report file, scored or not.
 CREATE TABLE IF NOT EXISTS repos (
@@ -105,6 +106,37 @@ CREATE TABLE IF NOT EXISTS checks (
 );
 
 CREATE INDEX IF NOT EXISTS checks_at ON checks (at);
+
+-- A refresh the measure run didn't check because the score had nothing new to read: no pull-request run created since
+-- the repo's latest report was measured. Not a check and not a report: the repo keeps its latest report, and is asked
+-- again next run, so a quiet repo has one row a run.
+CREATE TABLE IF NOT EXISTS skips (
+  repo     TEXT NOT NULL,
+  at       TEXT NOT NULL,                    -- ISO time it was asked
+  since    TEXT NOT NULL,                    -- ISO time it asked from: when the latest measured report was measured
+  why      TEXT NOT NULL,
+  calls    INTEGER NOT NULL,                 -- GitHub API calls the question spent
+  PRIMARY KEY (repo, at)
+);
+
+-- Each repo's latest report and how old it is: the date its window ends, its age in whole days, and the runs since then
+-- that skipped the repo as unchanged, with the last of them.
+CREATE VIEW IF NOT EXISTS latest_age AS
+SELECT p.repo, p.latest_report, r.date AS report_date,
+       CAST(julianday('now') - julianday(r.date) AS INTEGER) AS age_days,
+       (SELECT COUNT(*) FROM skips s WHERE s.repo = p.repo AND s.at > r.date) AS skips_since,
+       (SELECT MAX(s.at) FROM skips s WHERE s.repo = p.repo AND s.at > r.date) AS last_skipped
+  FROM repos p JOIN reports r ON r.id = p.latest_report;
+
+-- A report's practices.hints: each place that looks like a practice in a form the scorer doesn't recognise, which is
+-- where the next detection comes from. A report from before the field has none.
+CREATE TABLE IF NOT EXISTS hints (
+  report   TEXT NOT NULL REFERENCES reports(id),
+  practice TEXT NOT NULL,                    -- the practice it looks like, as the report names it
+  path     TEXT NOT NULL,                    -- the file it's in
+  kind     TEXT NOT NULL,                    -- what form it takes, as the scorer names it
+  PRIMARY KEY (report, practice, path, kind)
+);
 
 -- Public signals that a repo adopted ci-doctor.
 CREATE TABLE IF NOT EXISTS adoption (

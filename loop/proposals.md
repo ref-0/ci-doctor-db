@@ -1,6 +1,6 @@
 # Proposals
 
-The ledger the Sunday optimize step picks from: at most 3 a week, by expected effect on the one metric or on trust in the score. The learn job adds entries from each digest; a person or the EM changes their status.
+The ledger the weekly optimize step picks from, after Sunday's digest: at most 3 a week, by expected effect on the one metric or on trust in the score. The weekly learn job adds entries from each digest it writes, and none in a week with no digest; a maintainer changes their status.
 
 ## Format
 
