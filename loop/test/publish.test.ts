@@ -70,14 +70,14 @@ test('without --push, or with nothing new, publish pushes nothing', () => {
   done();
 });
 
-test('a push that fails leaves the reports for the next night, and no worktree behind', () => {
+test('a push that fails leaves the reports for the next run, and no worktree behind', () => {
   const { origin, root, scratch, done } = repos();
   write(root, 'reports/b__new/2026-11-20.json', '{"new":1}');
   writeFileSync(join(origin, 'hooks', 'pre-receive'), '#!/bin/sh\nexit 1\n', { mode: 0o755 });
 
   const line = publish({ root, scratch, date: '2026-11-20', push: true, log: () => {} });
 
-  assert.match(line, /1 reports not pushed .*the next night tries again/);
+  assert.match(line, /1 reports not pushed .*the next run tries again/);
   assert.deepEqual(unpublished(root), ['reports/b__new/2026-11-20.json']);
   assert.equal(git(root, 'worktree', 'list').split('\n').length, 1);
   done();

@@ -125,6 +125,34 @@ test('a submitted report keeps who sent it, and a measured one has nobody; neith
   assert.equal(measured?.submitted_by, null);
 });
 
+test("a report's practices.hints become hints rows, a second import changes none, and an entry of another shape is a misfit", async () => {
+  const { mkdirSync, mkdtempSync, rmSync, writeFileSync } = await import('node:fs');
+  const { homedir } = await import('node:os');
+  const scratch = process.env.LOOP_TEST_DIR ?? join(homedir(), '.cache', 'ci-loop-measure');
+  mkdirSync(scratch, { recursive: true });
+  const dir = mkdtempSync(join(scratch, 'hints-'));
+  const hints = [
+    { practice: 'remoteCache', path: '.github/workflows/ci.yml', kind: 'unknown-action' },
+    { practice: 'affected', path: 'package.json', kind: 'script' },
+  ];
+  mkdirSync(join(dir, 'pip__garden'));
+  writeFileSync(join(dir, 'pip__garden', '2026-11-29.json'), JSON.stringify({ repo: 'pip/garden', date: '2026-11-29', score: 70, grade: 'C+', practices: { hints: [...hints, { practice: 'x' }] }, stack: {} }));
+  const db = open(':memory:');
+
+  const first = importReports(db, dir);
+  const again = importReports(db, dir);
+
+  const rows = db.prepare(`SELECT report, practice, path, kind FROM hints ORDER BY practice`).all().map((r) => ({ ...r }));
+  assert.deepEqual(rows, [
+    { report: 'pip/garden/2026-11-29', ...hints[1] },
+    { report: 'pip/garden/2026-11-29', ...hints[0] },
+  ]);
+  assert.deepEqual(first.misfits.map((m) => m.what), ['practices.hints holds something not { practice, path, kind }; left out']);
+  assert.equal(again.changes, 0);
+  assert.equal(JSON.parse(String((latestOf(db, 'pip/garden') as Record<string, unknown>).stack)).otherPractices, undefined);
+  rmSync(dir, { recursive: true, force: true });
+});
+
 test('a loop.db older than schema.sql is named, with how to rebuild it', async () => {
   const { DatabaseSync } = await import('node:sqlite');
   const { checkSchema, missingColumns } = await import('../db.ts');
