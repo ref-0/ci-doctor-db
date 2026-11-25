@@ -1,12 +1,12 @@
 # ci-doctor's learning loop: the plan (19 Nov 2026)
 
-**The goal:** every day, ci-doctor knows more repos, measures them better, and turns what it learns into a better scorer, better guide pages and better skills. **The one metric:** how much adopters' PR wait drops against similar repos that didn't adopt, over the same weeks. Everything else serves that number or the trust in it.
+**The goal:** every week, ci-doctor knows more repos, measures them better, and turns what it learns into a better scorer, better guide pages and better skills. **The one metric:** how much adopters' PR wait drops against similar repos that didn't adopt, over the same weeks. Everything else serves that number or the trust in it.
 
 ```
    find ──► measure ──► store ──► compare ──► learn ──► optimize
-    ▲         daily       one DB     cohorts,    daily      weekly: ≤3 PRs on
-    │         02:00       + reports  movers,     digest     ci-doctor's next
-    │                                adopters    05:00      (Sunday 10:00)
+    ▲         weekly      one DB     cohorts,    weekly     weekly: ≤3 PRs on
+    │         Sun 02:00   + reports  movers,     digest     ci-doctor's main
+    │                                adopters    Sun 14:00  (after the digest)
     └──────── gaps in the dataset, new detection rules, adopters to follow ◄──┘
 ```
 
@@ -23,10 +23,10 @@
 
 ### 1. Find: which repos to measure
 
-Each night's queue, in this order, within the night's budget:
-1. **Due refreshes.** Every tracked repo again 7 days after its last report, so windows don't overlap. Adopters every 2 days, for their before and after.
+Each weekly run's queue, in this order, within the run's budget:
+1. **Due refreshes.** Every tracked repo whose last report is at least 6 days old, so one run a week covers them all, with windows that overlap by a day at most. Six, not seven: a run lasts hours and can pass UTC midnight, so a report from late in last week's run can be dated a day after this run's start. Adopters every run, for their before and after.
 2. **The site's checks,** once it's live: repos people pasted that the site couldn't score in full, or that need a fresh report.
-3. **Gaps.** Cohorts (size class × main language) with fewer than 15 scored repos get new repos from GitHub search: active in the last week, Actions on PRs, sorted by recent PR traffic. The quota per night is set by how far each cohort is under target. Today Rust, Python and Go are thin next to TypeScript (38, 25 and 18 against 108).
+3. **Gaps.** Cohorts (size class × main language) with fewer than 15 scored repos get new repos from GitHub search: active in the last week, Actions on PRs, sorted by recent PR traffic. They come after the refreshes, up to 60 new repos a run (`WEEKLY_GAPS`), shared by how far each cohort is under target. Today Rust, Python and Go are thin next to TypeScript (38, 25 and 18 against 108).
 4. **Adoption signals:** code search for ci-doctor's marker and README badge, once the skill leaves them (SITE.md). Each hit is tracked from then on.
 
 Public repos only. No people: no authors, emails or accounts stored, beyond what a report already counts.
@@ -34,7 +34,8 @@ Public repos only. No people: no authors, emails or accounts stored, beyond what
 ### 2. Measure
 
 - **One scorer.** The loop runs the published scorer (`npx @ref0/ci-doctor <repo> --json`, or its module) with the `ref0-ci-doctor` App token (`token.ts`), never a person's token. The research `score.ts` is retired once the published one holds every field it has; `calibrate.py` reads stored inputs, so it keeps working.
-- **Budget:** the App has 5,000 calls an hour and a check takes a median 66 (p90 103). The night window, 02:00–05:00, keeps 1,000 an hour spare for the site once it shares the App: about 180 checks a night. Refreshes come first, gaps get what's left. `loop/measure.ts` reads the quota before each check, pauses until the reset when fewer than 1,103 are left, and stops at 05:00.
+- **Budget:** the App has 5,000 calls an hour and a check takes a median 66 (p90 103). A run keeps 1,000 an hour spare for the site once it shares the App, and room for a p90 check, so it spends about 3,900 an hour: 59 checks at the median. A check also takes about a minute end to end, so it's about 60 an hour either way. A run lasts 11 hours by default (`--hours`, from its start, whatever the date it ends on): about 650 checks, every tracked repo with room for the week's gaps, and from Sunday's 02:00 it ends by 13:00, an hour before the learn job. Refreshes come first, gaps get what's left. `loop/measure.ts` reads the quota before each check, pauses until the reset when fewer than 1,103 are left, and stops when its hours are up.
+- **Skipping what hasn't changed:** before a full check of a repo it has measured, the run asks GitHub whether any pull-request run (`pull_request` or `pull_request_target`) was created since that report was measured: one call when there is one, two when there isn't. With none, the score has nothing new to read. Measuring it anyway, as the loop did until now, wrote an unscored report ("There were no pull-request runs of GitHub Actions in the last 7 days") that became the repo's latest, so the site showed a repo that had scored the week before as unscored. Now it isn't measured: it keeps its latest report, the skip goes in `loop.db`'s `skips` with its time and why (not as a check, so it's neither a failure nor an attempt), and it's asked again next run. A read that fails measures the repo. The `latest_age` view gives each repo's latest report, its age in days and the skips since.
 - **Stack capture:** the fields from SITE.md's "The stack" (languages, workspace tools, test runners, lint and format, libraries, runners, agent files) go into the scorer first, since comparing needs them.
 
 ### 3. Store
@@ -42,11 +43,11 @@ Public repos only. No people: no authors, emails or accounts stored, beyond what
 - **One SQLite file, `loop.db`, with the site's D1 schema:** `repos`, `reports` (one row per report: date, score, parts, size, p50/p90, stack and practice columns), `checks` (when and why each was measured), `adoption`, and `findings`. Full report JSON stays in `reports/` as the site keeps it in R2. Same schema both sides, so moving to the site's data later is a copy, not a rewrite.
 - **Import** the 243 existing repos on day one.
 - **Cache retention:** raw API responses and logs kept 14 days, then deleted, by `loop/prune.ts`. Reports are kept forever.
-- **Once the site is live,** a `pull` step copies its new `checks` and `reports` into `loop.db` each night, through an export endpoint on the site (`/api/export?since=`, behind a token). Then the site's own cron does the refreshing, and the local job only finds gaps and runs experiments.
+- **Once the site is live,** a `pull` step copies its new `checks` and `reports` into `loop.db` each run, through an export endpoint on the site (`/api/export?since=`, behind a token). Then the site's own cron does the refreshing, and the local job only finds gaps and runs experiments.
 
 ### 4. Compare
 
-Each night, from `loop.db`, computed by a script with no model:
+Each week, from `loop.db`, computed by a script with no model. "Since" means since the previous digest was made, whatever its date:
 - **Cohorts:** each size class × language × stack trait, with p10/p50/p90 of wait, score and job minutes per merged PR.
 - **Movers:** repos whose p50 moved more than its normal noise since its last report, with **what changed in its stack and practices between the two reports.** A repo that turned on a remote cache and dropped 40% is a natural experiment, which is stronger evidence than any correlation between repos.
 - **Noise:** how much a repo's p50 moves between weeks when nothing in its stack or practices changed. That number sets the "minimum sample" SITE.md's before and after still needs, and what counts as a real move.
@@ -54,8 +55,9 @@ Each night, from `loop.db`, computed by a script with no model:
 
 ### 5. Learn
 
-The 05:00 job writes `digest/YYYY-MM-DD.md` from the night's numbers, under a page:
+The Sunday 14:00 job writes `digest/YYYY-MM-DD.md` from the week's numbers, under a page. When no report is newer than the previous digest, it writes nothing: `compare.ts` and `digest.ts` each print one line starting `no digest:` and exit 0, and with no `digest/YYYY-MM-DD.md` the job calls no model.
 - **Health of the probe:** checks that failed and why; the share of repos with test timings parsed, by test runner and language (39% today); runner labels and test runners the scorer didn't recognise. Each is a candidate parser or detection rule.
+- **Practices the scorer didn't recognise:** each report's `practices.hints`, the places that look like a practice in a form the scorer doesn't recognise, counted by practice and kind over each repo's latest report, the most first, with up to three example repos. The top ones are the next detections to add. Left out when there are none.
 - **Health of the score:** separation on the trusted labels (91% of fast at 75+, 89% of slow under 50 today), and whether it's drifting as new repos come in; score stability for unchanged repos.
 - **Movers,** each with its change and size.
 - **Practice effects,** within cohorts, each with n, the date and "correlation, not cause", except where movers show the same change within repos.
@@ -64,7 +66,7 @@ The 05:00 job writes `digest/YYYY-MM-DD.md` from the night's numbers, under a pa
 
 ### 6. Optimize
 
-On Sundays the weekly job reads the week's digests and `proposals.md`, picks at most 3 by expected effect on the metric or on trust in the score, and briefs an engineer for each. Each becomes a PR on ci-doctor's `main`:
+Each week, once the learn job's digest is in, the optimize job reads it and `proposals.md`, picks at most 3 by expected effect on the metric or on trust in the score, and briefs an engineer for each. Each becomes a PR on ci-doctor's `main`:
 - **Scorer:** new parsers (`go test`, `cargo test`, JUnit), detection rules, stack fields.
 - **Calibration:** only with a re-score of every stored report attached, better separation on the trusted labels, the hold-out no worse, and the score changes listed. Nothing public moves without this.
 - **Guide pages:** a technique backed by movers or a cohort effect, cited as a dated finding with n.
@@ -114,18 +116,18 @@ Never code, file contents, paths outside the CI config, people's names or secret
 
 | When | Job | Who runs it | What it does |
 |---|---|---|---|
-| Daily 02:00 | Measure | A script, started by a scheduled agent task on a cheap model that only runs it and reports failures | Find, measure, store, then pull from the site once it's live |
-| Daily 05:00 | Learn | `loop/compare.ts` and `loop/digest.ts` write the numbers; then a model adds the narrative and proposals in the digest's marked place | Compare, digest, update `loop/proposals.md` |
-| Sunday 10:00 | Optimize | A maintainer's agent | Pick ≤3 proposals, brief coding agents, PRs on `main` |
+| Sunday 02:00 | Measure | A script, started by a scheduled task on a small model that only runs it and reports failures | `node loop/measure.ts --push --prune`: find, measure or skip what hasn't changed, store, publish, for 11 hours, then pull from the site once it's live |
+| Sunday 14:00 | Learn | `loop/import.ts`, `loop/compare.ts` and `loop/digest.ts` write the numbers; then, only when `digest/YYYY-MM-DD.md` was written, a model adds the narrative and proposals in its marked place | Compare, digest, update `loop/proposals.md` |
+| Weekly, after the learn job | Optimize | A maintainer's agent | Pick ≤3 proposals, brief coding agents, PRs on `main` |
 
-The times avoid the existing schedule: the agent spend audit at 07:00, issue triage at 07:30, slow tests at 06:00 Mon/Wed/Fri and the ci-doctor sync at 10:00 Saturday. Each job leaves nothing running and writes only under `~/ref0-work/ci-score/`.
+Each job leaves nothing running and writes only in the loop's own checkout of this repo.
 
 ## Build order
 
 Each step is one piece, brief first:
 1. **Store and import:** `loop.db`'s schema (the site's D1 tables plus stack columns), and the import of the 243 reports. With this alone, the compare script can run on what exists.
 2. **One scorer:** the published scorer gains the research one's remaining fields and the stack fields, and a batch mode that takes a list and the App token. `calibrate.py` moves to its output. The research `score.ts` is deleted.
-3. **Measure job:** the queue (refreshes, gaps by cohort, the budget), the run, the store and cache retention. Scheduled once a night has run by hand.
+3. **Measure job:** the queue (refreshes, gaps by cohort, the budget), the run, the store and cache retention. Scheduled once a run has been made by hand.
 4. **Compare and learn:** cohorts, movers, noise, health, then the digest and `proposals.md`. Scheduled after one hand run.
 5. **Optimize:** the Sunday task, once a week of digests exists.
 6. **The site's export and pull,** when the site stores reports. It's in the score site's briefs.
