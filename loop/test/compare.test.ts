@@ -1,10 +1,13 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { homedir } from 'node:os';
+import { spawnSync } from 'node:child_process';
 import { join } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
 import { open } from '../db.ts';
 import { importReports } from '../import.ts';
-import { compare, pct, trustedLabels, type Digest, type Labels } from '../compare.ts';
+import { compare, newReports, noDigest, pct, trustedLabels, type Digest, type Labels } from '../compare.ts';
 import { NARRATIVE_END, NARRATIVE_START, render } from '../digest.ts';
 
 const FIXTURES = join(import.meta.dirname, 'fixtures');
@@ -167,4 +170,84 @@ test('the digest leads with what changed, gives n with its numbers, and leaves t
   assert.match(md, /Correlations, not causes/);
   assert.ok(md.indexOf(NARRATIVE_START) < md.indexOf(NARRATIVE_END));
   assert.match(render(first, null), /First digest/);
+});
+
+test("with no report newer than the previous digest, whatever its date, there's no digest; one new report makes one", () => {
+  const db = fixtureDb();
+  const week = { date: '2026-11-29', made_at: '2026-11-29T22:00:00.000Z' };
+
+  assert.equal(noDigest(db, null), null, 'a first digest is always written');
+  assert.equal(noDigest(db, week), 'no digest: no report is newer than the 2026-11-29 digest, made 2026-11-29T22:00:00.000Z');
+  // The last reports are from 25 Nov: a digest made that evening, or four days later, has nothing newer either way.
+  assert.match(noDigest(db, { date: '2026-11-25', made_at: '2026-11-25T22:00:00.000Z' }) ?? '', /^no digest: no report is newer than the 2026-11-25 digest/);
+  db.prepare(`INSERT INTO checks (repo, at, reason, scored, report) VALUES ('vitejs/vite', '2026-12-06T10:00:00.000Z', 'refresh', 1, 'vitejs/vite/2026-11-19')`).run();
+
+  assert.equal(noDigest(db, week), null);
+  assert.equal(newReports(db, week.made_at), 1);
+  const d = compare(db, { date: '2026-12-06', labels: NO_LABELS, previous: week as never, now: Date.parse('2026-12-06T22:00:00Z') });
+  assert.deepEqual(d.new_reports, { since: '2026-11-29T22:00:00.000Z', n: 1 });
+  assert.equal(d.made_at, '2026-12-06T22:00:00.000Z');
+  assert.equal(d.probe.checks.n, 1);
+});
+
+test('the hints section counts hints by practice and kind over latest reports, most first, with up to 3 example repos', () => {
+  const db = fixtureDb();
+  for (let i = 0; i < 4; i++) clone(db, 'vitejs/vite', `pip/site-${i}`, {});
+  const hint = db.prepare(`INSERT INTO hints (report, practice, path, kind) VALUES (?, ?, ?, ?)`);
+  const latest = (repo: string) => (db.prepare(`SELECT latest_report FROM repos WHERE repo = ?`).get(repo) as { latest_report: string }).latest_report;
+  for (const repo of ['pip/site-0', 'pip/site-1', 'pip/site-2', 'pip/site-3']) hint.run(latest(repo), 'remoteCache', '.github/workflows/ci.yml', 'unknown-action');
+  hint.run(latest('pip/site-3'), 'remoteCache', '.github/workflows/release.yml', 'unknown-action');
+  hint.run(latest('astral-sh/ruff'), 'affected', 'Cargo.toml|`x`', 'script');
+  // Not a latest report: left out.
+  hint.run('vitejs/vite/2026-11-18', 'affected', 'package.json', 'script');
+
+  const d = run(db);
+  const md = render(d, null);
+
+  assert.deepEqual(d.hints.rows, [
+    { practice: 'remoteCache', kind: 'unknown-action', hints: 5, repos: 4, examples: [{ repo: 'pip/site-3', path: '.github/workflows/ci.yml' }, { repo: 'pip/site-0', path: '.github/workflows/ci.yml' }, { repo: 'pip/site-1', path: '.github/workflows/ci.yml' }] },
+    { practice: 'affected', kind: 'script', hints: 1, repos: 1, examples: [{ repo: 'astral-sh/ruff', path: 'Cargo.toml|`x`' }] },
+  ]);
+  assert.match(md, /## Practices the scorer did not recognise\n\nHints in each repo's latest report: 6 places in 5 repos/);
+  assert.match(md, /\| remoteCache \| unknown-action \| 5 \| 4 \| pip\/site-3 \(`\.github\/workflows\/ci\.yml`\), pip\/site-0/);
+  assert.match(md, /\| affected \| script \| 1 \| 1 \| astral-sh\/ruff \(`Cargo\.toml x `\) \|/);
+  assert.ok(md.indexOf('## Practices the scorer did not recognise') > md.indexOf('## Health of the probe'));
+});
+
+test('with no hints, or only reports from before the field, the hints section is left out', () => {
+  const d = run(fixtureDb());
+
+  assert.deepEqual(d.hints, { n: 0, repos: 0, rows: [] });
+  assert.doesNotMatch(render(d, null), /did not recognise/);
+});
+
+test('compare.ts and digest.ts, with nothing newer than the previous digest, each print one `no digest:` line, write nothing and exit 0', () => {
+  const scratch = process.env.LOOP_TEST_DIR ?? join(homedir(), '.cache', 'ci-loop-measure');
+  mkdirSync(scratch, { recursive: true });
+  const dir = mkdtempSync(join(scratch, 'digest-'));
+  const dbFile = join(dir, 'loop.db');
+  const db = open(dbFile);
+  importReports(db, FIXTURES);
+  importReports(db, LATER);
+  db.close();
+  const out = join(dir, 'digest');
+  mkdirSync(out);
+  writeFileSync(join(out, '2026-11-29.json'), JSON.stringify({ date: '2026-11-29', made_at: '2026-11-29T22:00:00.000Z' }));
+  const script = (name: string) => spawnSync('node', [join(import.meta.dirname, '..', name), '--db', dbFile, '--out', out, '--date', '2026-12-06'], { encoding: 'utf8', timeout: 30_000 });
+
+  for (const name of ['compare.ts', 'digest.ts']) {
+    const r = script(name);
+    assert.equal(r.status, 0, r.stderr);
+    assert.equal(r.stdout, 'no digest: no report is newer than the 2026-11-29 digest, made 2026-11-29T22:00:00.000Z\n');
+  }
+  assert.ok(!existsSync(join(out, '2026-12-06.json')) && !existsSync(join(out, '2026-12-06.md')));
+
+  // A previous digest made before ruff's 25 Nov report: both write, and digest.ts prints the .md's path.
+  rmSync(join(out, '2026-11-29.json'));
+  writeFileSync(join(out, '2026-11-22.json'), JSON.stringify({ ...run(fixtureDb({ later: false })), date: '2026-11-22', made_at: '2026-11-22T22:00:00.000Z' }));
+  assert.equal(script('compare.ts').status, 0);
+  const md = script('digest.ts');
+  assert.equal(md.stdout, `${join(out, '2026-12-06.md')}\n`);
+  assert.match(readFileSync(join(out, '2026-12-06.md'), 'utf8'), /1 reports new since the 2026-11-22 digest/);
+  rmSync(dir, { recursive: true, force: true });
 });

@@ -1,15 +1,19 @@
-// The night's queue: which repos the measure job checks, in order, and why. Computed from loop.db with no model:
-//   1. due refreshes: an adopter 2 days after its last report, every other tracked repo 7 days after it;
+// The week's queue: which repos the weekly measure run checks, in order, and why. Computed from loop.db with no model:
+//   1. due refreshes: every adopter, and every other tracked repo whose last report is at least 6 days old;
 //   2. gaps: cohorts (size class × main language, over each repo's latest scored report, as compare.ts takes them)
-//      with fewer than 15 scored repos get new repos from GitHub search, each cohort's share of what's left of the
-//      night set by how far it is under target.
+//      with fewer than 15 scored repos get new repos from GitHub search, up to WEEKLY_GAPS a run, each cohort's share
+//      of what's left of the run set by how far it is under target.
 // Usage: node loop/queue.ts --dry-run [--max <n>] [--no-search] [--db <file>]
 //   prints the queue with each repo's reason. Gaps need GitHub's repo search, with the App's token (token.ts).
 import type { DatabaseSync } from 'node:sqlite';
 
 export const TARGET = 15; // scored repos a cohort should have
-export const REFRESH_DAYS = 7; // so a repo's 7-day windows don't overlap
-export const ADOPTER_DAYS = 2; // adopters' before and after
+// A report at least this many days old is due. Not 7: a run lasts hours and can pass UTC midnight, so a report from
+// late in last week's run can be dated a day after this run's start, and at 7 it would wait a whole extra week.
+export const REFRESH_DAYS = 6;
+// New repos a run takes for the gaps, at most, after the refreshes: about an hour of the run's checks. Each one is a
+// refresh every week after, so the tracked set grows by at most this much a week, and stops when refreshes fill the run.
+export const WEEKLY_GAPS = 60;
 // The cohorts gaps fill: the main languages the dataset has, at the sizes that score. A tiny repo seldom has the
 // 5 timed PR pushes a score needs, so tiny cohorts aren't searched for.
 export const LANGUAGES = [
@@ -18,7 +22,9 @@ export const LANGUAGES = [
 export const SIZES = ['small', 'medium', 'large'] as const;
 
 export type Reason = 'refresh' | 'adoption' | 'gap';
-export type Entry = { repo: string; reason: Reason; why: string; cohort?: string; githubId?: number };
+// `since`, for a repo with a measured report: when that report was measured, an ISO time (the start of its UTC day for
+// an imported report, which has only a date). The run asks GitHub whether anything changed since then.
+export type Entry = { repo: string; reason: Reason; why: string; cohort?: string; githubId?: number; since?: string };
 export type Gap = { size: string; language: string; n: number; under: number };
 
 const DAY = 86_400_000;
@@ -26,37 +32,40 @@ const days = (from: string, to: string) => Math.round((Date.parse(to) - Date.par
 export const addDays = (date: string, n: number) => new Date(Date.parse(date) + n * DAY).toISOString().slice(0, 10);
 export const cohortKey = (size: string, language: string) => `${size} × ${language}`;
 
-// Tracked repos due again on `today`, adopters first, then the longest overdue. A failed check counts as an attempt,
-// so a repo that keeps failing is retried on the same cadence rather than every night. A repo whose every report was
-// submitted is never due: what it costs to measure is its submitter's, not ours. Gap discovery leaves it out too, as a
-// tracked repo.
+// Tracked repos due again on `today`, adopters first, then the longest overdue. Adopters are due every run, for their
+// before and after; every other repo REFRESH_DAYS after its last report. A failed check counts as an attempt, so a repo
+// that keeps failing is retried on the same cadence rather than every run; a skip, when nothing had changed, doesn't,
+// so a skipped repo is due again next run. A repo whose every report was submitted is never due: what it costs to
+// measure is its submitter's, not ours. Gap discovery leaves it out too, as a tracked repo.
 export function dueRefreshes(db: DatabaseSync, today: string): Entry[] {
   const rows = db
     .prepare(
       `SELECT p.repo,
               (SELECT MAX(date) FROM reports r WHERE r.repo = p.repo AND r.seq = 0) AS last_report,
               (SELECT MAX(substr(at, 1, 10)) FROM checks c WHERE c.repo = p.repo AND c.report IS NULL) AS last_failed,
+              (SELECT MAX(c.at) FROM checks c JOIN reports r ON r.id = c.report WHERE r.repo = p.repo AND r.seq = 0) AS measured_at,
               EXISTS (SELECT 1 FROM adoption a WHERE a.repo = p.repo) AS adopter
          FROM repos p
         WHERE NOT EXISTS (SELECT 1 FROM reports r WHERE r.repo = p.repo)
            OR EXISTS (SELECT 1 FROM reports r WHERE r.repo = p.repo AND r.submitted_by IS NULL)`,
     )
-    .all() as { repo: string; last_report: string | null; last_failed: string | null; adopter: number }[];
+    .all() as { repo: string; last_report: string | null; last_failed: string | null; measured_at: string | null; adopter: number }[];
 
   const due: (Entry & { overdue: number; adopter: number })[] = [];
   for (const r of rows) {
     const last = [r.last_report, r.last_failed].filter((d): d is string => !!d).sort().at(-1);
     if (!last) continue;
-    const every = r.adopter ? ADOPTER_DAYS : REFRESH_DAYS;
     const age = days(last, today);
-    if (age < every) continue;
+    if (!r.adopter && age < REFRESH_DAYS) continue;
     const what = last === r.last_report ? `last report ${last}` : `last check failed ${last}`;
+    const since = r.measured_at ? (r.measured_at.length === 10 ? `${r.measured_at}T00:00:00Z` : r.measured_at) : undefined;
     due.push({
       repo: r.repo,
       reason: r.adopter ? 'adoption' : 'refresh',
-      why: `${what}, ${age} days ago (every ${every})`,
-      overdue: age - every,
+      why: `${what}, ${age} days ago${r.adopter ? ', an adopter' : ` (due at ${REFRESH_DAYS})`}`,
+      overdue: age - REFRESH_DAYS,
       adopter: r.adopter,
+      ...(since && { since }),
     });
   }
   due.sort((a, b) => b.adopter - a.adopter || b.overdue - a.overdue || a.repo.localeCompare(b.repo));
@@ -126,7 +135,7 @@ export type Candidate = {
   prs: number; // PRs opened since `since`, of the newest 100
 };
 export interface GitHub {
-  // Public repos whose main language is `language`, with at least MIN_STARS stars, pushed since `since`: one page.
+  // Public repos whose main language is `language`, with at least github.ts's MIN_STARS stars, pushed since `since`: one page.
   searchRepos(language: string, since: string, page: number): Candidate[];
   prRuns(repo: string, since: string): number;
   // GitHub's numeric ids of these repos, by the names given; a renamed repo resolves to its new self.
@@ -134,7 +143,6 @@ export interface GitHub {
 }
 
 export const SEARCH_PAGES = 4; // of 50 repos, per language
-export const MIN_STARS = 100; // a search floor, so class projects and personal dashboards don't fill the gaps
 export const CANDIDATES_PER_SLOT = 4; // PR-run counts read, at most, per slot a cohort has to fill
 export const MIN_PR_RUNS = 5; // a score needs 5 timed PR pushes
 export const BYTES_PER_LINE = 30; // the scorer's: GitHub's language bytes ÷ lines
@@ -150,7 +158,7 @@ export function predictSize(lines: number, headsPerWeek: number) {
 
 // New repos for each language's cohort quotas: public repos pushed this week, the most PRs opened this week first,
 // that aren't forks, archived or tracked and ran Actions on PRs. A repo's cohort is predicted from its language bytes
-// and PRs opened; the score it gets decides where it lands, and tomorrow's quotas follow from that.
+// and PRs opened; the score it gets decides where it lands, and next week's quotas follow from that.
 // `guard`, the measure job's quota check, runs before each core call; when it says stop, discovery ends with what it has.
 export type Guard = () => Promise<boolean>;
 const always: Guard = async () => true;
@@ -226,16 +234,16 @@ export function trackedIds(db: DatabaseSync, gh: GitHub): Set<number> {
   return new Set((db.prepare(`SELECT github_id FROM repos WHERE github_id IS NOT NULL`).all() as { github_id: number }[]).map((r) => r.github_id));
 }
 
-// The night: refreshes first, then gaps in what's left of `slots`.
-export async function planNight(db: DatabaseSync, opts: { today: string; slots: number; gh?: GitHub; log?: (s: string) => void; guard?: Guard }) {
+// The week: refreshes first, then gaps in what's left of `slots`, up to WEEKLY_GAPS.
+export async function planWeek(db: DatabaseSync, opts: { today: string; slots: number; gh?: GitHub; log?: (s: string) => void; guard?: Guard }) {
   const refreshes = dueRefreshes(db, opts.today).slice(0, opts.slots);
   const gaps = cohortGaps(db);
-  const want = quotas(gaps, opts.slots - refreshes.length);
+  const want = quotas(gaps, Math.min(WEEKLY_GAPS, opts.slots - refreshes.length));
   const found = opts.gh && want.size ? await findGapRepos(opts.gh, want, trackedIds(db, opts.gh), opts.today, opts.log, opts.guard) : [];
   return { queue: [...refreshes, ...found], refreshes, gaps, quotas: want };
 }
 
-export function describe(plan: Awaited<ReturnType<typeof planNight>>): string[] {
+export function describe(plan: Awaited<ReturnType<typeof planWeek>>): string[] {
   const lines = [`quotas: ${[...plan.quotas].map(([k, n]) => `${k} ${n}`).join(', ') || 'none'}`];
   for (const e of plan.queue) lines.push(`${e.reason.padEnd(8)} ${e.repo.padEnd(40)} ${e.why}`);
   return lines;
@@ -244,6 +252,7 @@ export function describe(plan: Awaited<ReturnType<typeof planNight>>): string[] 
 if (import.meta.main) {
   const { open, DEFAULT_DB } = await import('./db.ts');
   const { liveGitHub, appToken } = await import('./github.ts');
+  const { runSlots, RUN_HOURS } = await import('./measure.ts');
   const arg = (n: string) => (process.argv.includes(n) ? process.argv[process.argv.indexOf(n) + 1] : undefined);
   if (!process.argv.includes('--dry-run')) {
     console.error('queue.ts only prints the queue: pass --dry-run. loop/measure.ts runs it.');
@@ -252,7 +261,7 @@ if (import.meta.main) {
   const db = open(arg('--db') ?? DEFAULT_DB);
   const today = new Date().toISOString().slice(0, 10);
   const gh = process.argv.includes('--no-search') ? undefined : liveGitHub(appToken());
-  const plan = await planNight(db, { today, slots: Number(arg('--max') ?? 180), gh: gh?.api, log: console.log });
+  const plan = await planWeek(db, { today, slots: Number(arg('--max') ?? runSlots(5_000, RUN_HOURS)), gh: gh?.api, log: console.log });
   for (const l of describe(plan)) console.log(l);
   if (gh) console.log(`discovery calls: ${gh.calls.core} core, ${gh.calls.graphql} GraphQL`);
   console.log(`queue: ${plan.queue.length} (${plan.refreshes.length} refreshes, ${plan.queue.length - plan.refreshes.length} gaps)`);
