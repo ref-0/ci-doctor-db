@@ -3,7 +3,7 @@
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { childEnv } from './env.ts';
-import { MIN_STARS, type GitHub } from './queue.ts';
+import type { GitHub } from './queue.ts';
 
 const ROOT = join(import.meta.dirname, '..');
 
@@ -86,6 +86,26 @@ export function coreQuota(token: string): Quota {
   const core = gh(token, 'rate_limit').resources.core;
   return { remaining: core.remaining, limit: core.limit, reset: core.reset };
 }
+
+// The events a pull request's runs come from, as the scorer reads them.
+export const PR_EVENTS = ['pull_request', 'pull_request_target'] as const;
+
+// Whether any pull-request run was created at or after `since`, an ISO time, from the runs list filtered by event and
+// date, one result a page: one core call when a `pull_request` run is there, two when it asks for
+// `pull_request_target` too. A read that fails throws, after withRetry's tries.
+export function prRunsSince(token: string, repo: string, since: string): { changed: boolean; calls: number } {
+  const created = `>=${since.replace(/\.\d+Z$/, 'Z')}`;
+  let calls = 0;
+  for (const event of PR_EVENTS) {
+    calls++;
+    if ((gh(token, `repos/${repo}/actions/runs`, { event, created, per_page: 1 }).total_count ?? 0) > 0) return { changed: true, calls };
+  }
+  return { changed: false, calls };
+}
+
+// A search floor, so class projects and personal dashboards don't fill the gaps. It lives here, not in queue.ts: this
+// file importing a value from queue.ts would leave `node loop/queue.ts --dry-run` waiting on itself.
+export const MIN_STARS = 100;
 
 // GitHub search's language qualifier takes linguist's alias where the name has symbols.
 const ALIAS: Record<string, string> = { 'C#': 'csharp', 'C++': 'cpp' };

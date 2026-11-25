@@ -1,5 +1,7 @@
 // The loop's compare step: cohorts, movers, noise, the probe's and the score's health, practice effects and adoption,
-// computed from loop.db with no model and no network, into digest/YYYY-MM-DD.json.
+// computed from loop.db with no model and no network, into digest/YYYY-MM-DD.json. Everything "since" is since the
+// previous digest was made, whatever its date. With no report newer than it, there's nothing to learn: it writes
+// nothing, prints one line starting `no digest:` and exits 0, as digest.ts does.
 // The trusted labels for separation come from the repo's own label files, as calibrate.py reads them.
 // Usage: node loop/compare.ts [--db <file>] [--out <dir>] [--date YYYY-MM-DD] [--labels <research.csv>] [--sets <sets.py>]
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -382,6 +384,36 @@ export function practiceEffects(scored: Row[]) {
   };
 }
 
+// The scorer's hints over each repo's latest report: places that look like a practice in a form it doesn't recognise,
+// counted by practice and kind, the most first, each with up to 3 example repos, those with the most hints first.
+// What tops the list is the next detection to add.
+export function hints(db: DatabaseSync) {
+  const all = db
+    .prepare(
+      `SELECT h.practice, h.kind, h.path, r.repo FROM repos p JOIN reports r ON r.id = p.latest_report JOIN hints h ON h.report = r.id
+        ORDER BY r.repo, h.path`,
+    )
+    .all() as { practice: string; kind: string; path: string; repo: string }[];
+
+  const groups = new Map<string, typeof all>();
+  for (const h of all) {
+    const k = `${h.practice}\u0000${h.kind}`;
+    groups.set(k, [...(groups.get(k) ?? []), h]);
+  }
+  const rows = [...groups.values()].map((hs) => {
+    const byRepo = count(hs, (h) => h.repo);
+    return {
+      practice: hs[0]!.practice,
+      kind: hs[0]!.kind,
+      hints: hs.length,
+      repos: byRepo.length,
+      examples: byRepo.slice(0, 3).map(({ value }) => ({ repo: value, path: hs.find((h) => h.repo === value)!.path })),
+    };
+  });
+  rows.sort((a, b) => b.hints - a.hints || b.repos - a.repos || a.practice.localeCompare(b.practice) || a.kind.localeCompare(b.kind));
+  return { n: all.length, repos: new Set(all.map((h) => h.repo)).size, rows };
+}
+
 function adoption(db: DatabaseSync) {
   const rows = db.prepare(`SELECT * FROM adoption ORDER BY first_seen, repo`).all() as Row[];
   return { n: rows.length, rows, note: rows.length ? `${rows.length} adoption signals` : 'no adoption signals yet' };
@@ -389,6 +421,7 @@ function adoption(db: DatabaseSync) {
 
 // ---------- the digest ----------
 
+// The newest digest dated before `date`, however long before.
 export function previousDigest(dir: string, date: string): Row | null {
   if (!existsSync(dir)) return null;
   const earlier = readdirSync(dir)
@@ -397,7 +430,25 @@ export function previousDigest(dir: string, date: string): Row | null {
   return earlier.length ? JSON.parse(readFileSync(join(dir, earlier.at(-1)!), 'utf8')) : null;
 }
 
-export function compare(db: DatabaseSync, opts: { date: string; labels: Labels; previous: Row | null }) {
+// When the previous digest was made, which "since" in a digest means. One made before digests kept their time has only
+// its date.
+export const digestSince = (previous: Row | null): string | null => previous?.made_at ?? previous?.date ?? null;
+
+// Reports measured or imported since `since`, by their checks' times: the measure run's are ISO times, an import's the
+// report's date. A rescore isn't a check, so it isn't counted.
+export function newReports(db: DatabaseSync, since: string | null): number {
+  return (db.prepare(`SELECT COUNT(*) AS n FROM checks WHERE report IS NOT NULL AND (? IS NULL OR at > ?)`).get(since, since) as { n: number }).n;
+}
+
+// Why there's no digest this time, when there's a previous one and no report newer than it: the one line both scripts
+// print, which the learn job tells from a digest's path.
+export function noDigest(db: DatabaseSync, previous: Row | null): string | null {
+  if (!previous || newReports(db, digestSince(previous)) > 0) return null;
+  return `no digest: no report is newer than the ${previous.date} digest, made ${digestSince(previous)}`;
+}
+
+export function compare(db: DatabaseSync, opts: { date: string; labels: Labels; previous: Row | null; now?: number }) {
+  const since = digestSince(opts.previous);
   const scored = latestScored(db);
   const totals = db
     .prepare(
@@ -409,14 +460,17 @@ export function compare(db: DatabaseSync, opts: { date: string; labels: Labels; 
 
   return {
     date: opts.date,
+    made_at: new Date(opts.now ?? Date.now()).toISOString(),
     previous: opts.previous?.date ?? null,
+    new_reports: { since, n: newReports(db, since) },
     totals: { ...totals, scored: scored.length },
     cohorts: cohorts(scored),
     movers,
     noise,
-    probe: probeHealth(db, scored, opts.previous?.date ?? null),
+    probe: probeHealth(db, scored, since),
     score: scoreHealth(scored, opts.labels, opts.previous),
     effects: practiceEffects(scored),
+    hints: hints(db),
     adoption: adoption(db),
   };
 }
@@ -436,7 +490,14 @@ if (import.meta.main) {
   const db = open(arg('--db') ?? DEFAULT_DB);
   const labels = trustedLabels(readFileSync(arg('--labels') ?? DEFAULT_LABELS, 'utf8'), readFileSync(arg('--sets') ?? DEFAULT_SETS, 'utf8'));
 
-  const digest = compare(db, { date, labels, previous: previousDigest(out, date) });
+  const previous = previousDigest(out, date);
+  const none = noDigest(db, previous);
+  if (none) {
+    console.log(none);
+    process.exit(0);
+  }
+
+  const digest = compare(db, { date, labels, previous });
   db.close();
 
   mkdirSync(out, { recursive: true });

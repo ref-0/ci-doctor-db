@@ -1,10 +1,15 @@
 // Turns digest/YYYY-MM-DD.json into digest/YYYY-MM-DD.md: what changed first, then health, then effects and movers.
 // Every number comes from the JSON, with its n. The learn job's agent adds its narrative and proposals in the
 // marked place at the end; nothing here writes prose about the numbers.
-// Usage: node loop/digest.ts [--out <dir>] [--date YYYY-MM-DD]
+// With no report newer than the previous digest, whatever its date, it writes nothing: it prints one line starting
+// `no digest:`, as compare.ts does, and exits 0, so the learn job, seeing no digest/YYYY-MM-DD.md, spends no model.
+// A digest prints its .md's path instead.
+// Usage: node loop/digest.ts [--db <file>] [--out <dir>] [--date YYYY-MM-DD]
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { DEFAULT_OUT, previousDigest, today, type Digest, type Spread } from './compare.ts';
+import { DatabaseSync } from 'node:sqlite';
+import { DEFAULT_OUT, noDigest, previousDigest, today, type Digest, type Spread } from './compare.ts';
+import { DEFAULT_DB } from './db.ts';
 
 export const NARRATIVE_START = '<!-- learn: narrative and proposals start -->';
 export const NARRATIVE_END = '<!-- learn: narrative and proposals end -->';
@@ -14,6 +19,8 @@ const sp = (s: Spread) => `${s.p10 ?? 'n/a'} / ${s.p50 ?? 'n/a'} / ${s.p90 ?? 'n
 const signed = (x: number) => (x >= 0 ? `+${x}` : `${x}`);
 const delta = (now: number, was: number | undefined) => (was === undefined ? `${now}` : `${now} (${signed(now - was)})`);
 const pct = (x: number) => `${x > 0 ? '+' : ''}${Math.round(x * 100)}%`;
+// Text from a report, such as a path, as one table cell: no pipes, backticks or line breaks.
+const cell = (s: string) => s.replace(/[|`\r\n]+/g, ' ');
 const list = (xs: { value: string; n: number }[], limit = 6) =>
   xs.length ? xs.slice(0, limit).map((x) => `${x.n} × ${x.value}`).join(', ') + (xs.length > limit ? `, and ${xs.length - limit} more` : '') : 'none';
 
@@ -35,7 +42,7 @@ function sinceLast(d: Digest, prev: Digest | null): string[] {
   const dist = d.score.distribution;
   const pd = prev.score.distribution;
   return [
-    `- **Repos** ${delta(d.totals.repos, prev.totals.repos)}, **scored** ${delta(d.totals.scored, prev.totals.scored)}, **reports** ${delta(d.totals.reports, prev.totals.reports)}.`,
+    `- **Repos** ${delta(d.totals.repos, prev.totals.repos)}, **scored** ${delta(d.totals.scored, prev.totals.scored)}, **reports** ${delta(d.totals.reports, prev.totals.reports)}; ${d.new_reports.n} reports new since the ${prev.date} digest.`,
     `- **Checks since ${prev.date}:** ${d.probe.checks.n}, of which ${d.probe.checks.failed.n} failed and ${d.probe.checks.unscored.n} unscored.`,
     `- **Separation:** fast at 75+ ${pc(ps.fast.share)} → ${pc(s.fast.share)} (n ${s.fast.n}); slow under 50 ${pc(ps.slow.share)} → ${pc(s.slow.share)} (n ${s.slow.n}).`,
     `- **Scores** p10 / p50 / p90 ${sp(pd)} → ${sp(dist)} (n ${pd.n} → ${dist.n}).`,
@@ -72,6 +79,20 @@ export function render(d: Digest, prev: Digest | null): string {
     `- **API calls per check:** p50 ${p.api_calls.p50}, p90 ${p.api_calls.p90} (n ${p.api_calls.n}).`,
     '',
   );
+
+  if (d.hints.rows.length) {
+    out.push('## Practices the scorer did not recognise', '');
+    out.push(
+      `Hints in each repo's latest report: ${d.hints.n} places in ${d.hints.repos} repos that look like a practice in a form the scorer doesn't recognise, by practice and kind, the most first. The top ones are the next detections to add.`,
+      '',
+      '| Practice | Kind | Hints | Repos | Examples |',
+      '| --- | --- | --- | --- | --- |',
+    );
+    for (const h of d.hints.rows) {
+      out.push(`| ${cell(h.practice)} | ${cell(h.kind)} | ${h.hints} | ${h.repos} | ${h.examples.map((e) => `${e.repo} (\`${cell(e.path)}\`)`).join(', ')} |`);
+    }
+    out.push('');
+  }
 
   out.push('## Health of the score', '');
   out.push(
@@ -121,9 +142,17 @@ function arg(name: string): string | undefined {
 if (import.meta.main) {
   const date = arg('--date') ?? today();
   const out = arg('--out') ?? DEFAULT_OUT;
-  const digest = JSON.parse(readFileSync(join(out, `${date}.json`), 'utf8')) as Digest;
+  const previous = previousDigest(out, date) as Digest | null;
+  const db = new DatabaseSync(arg('--db') ?? DEFAULT_DB, { readOnly: true });
+  const none = noDigest(db, previous);
+  db.close();
+  if (none) {
+    console.log(none);
+    process.exit(0);
+  }
 
+  const digest = JSON.parse(readFileSync(join(out, `${date}.json`), 'utf8')) as Digest;
   const file = join(out, `${date}.md`);
-  writeFileSync(file, render(digest, previousDigest(out, date) as Digest | null));
+  writeFileSync(file, render(digest, previous));
   console.log(file);
 }

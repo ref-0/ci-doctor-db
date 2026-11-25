@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import type { DatabaseSync } from 'node:sqlite';
 import { open } from '../db.ts';
-import { cohortGaps, dueRefreshes, findGapRepos, planNight, predictSize, quotas, TARGET, type GitHub } from '../queue.ts';
+import { cohortGaps, dueRefreshes, findGapRepos, planWeek, predictSize, quotas, TARGET, WEEKLY_GAPS, type GitHub } from '../queue.ts';
 
 // A repo with one measured report on `date`, scored unless `score` is null, or one submitted by `submittedBy`.
 function add(db: DatabaseSync, repo: string, date: string, { size = 'large', language = 'TypeScript', score = 70 as number | null, submittedBy = null as string | null } = {}) {
@@ -16,27 +16,43 @@ function add(db: DatabaseSync, repo: string, date: string, { size = 'large', lan
   ).run(repo, date, date, id);
 }
 
-test('refreshes are due 7 days after the last report, adopters 2, adopters first and then the longest overdue', () => {
+test('a repo is due when its last report is 6 days old or more, an adopter every run; adopters first, then the longest overdue', () => {
   const db = open(':memory:');
-  add(db, 'a/fresh', '2026-11-15');
-  add(db, 'a/week', '2026-11-12');
+  add(db, 'a/five', '2026-11-24');
+  add(db, 'a/six', '2026-11-23');
+  add(db, 'a/seven', '2026-11-22');
   add(db, 'a/old', '2026-11-01');
-  add(db, 'a/adopter', '2026-11-17');
+  add(db, 'a/adopter', '2026-11-28');
   db.prepare(`INSERT INTO adoption VALUES ('a/adopter', 'marker', '2026-11-10', 'https://example.com')`).run();
 
-  const due = dueRefreshes(db, '2026-11-19');
+  const due = dueRefreshes(db, '2026-11-29');
 
-  assert.deepEqual(due.map((e) => [e.repo, e.reason]), [['a/adopter', 'adoption'], ['a/old', 'refresh'], ['a/week', 'refresh']]);
-  assert.match(due[1]!.why, /last report 2026-11-01, 18 days ago/);
+  assert.deepEqual(due.map((e) => [e.repo, e.reason]), [['a/adopter', 'adoption'], ['a/old', 'refresh'], ['a/seven', 'refresh'], ['a/six', 'refresh']]);
+  assert.match(due[0]!.why, /last report 2026-11-28, 1 days ago, an adopter/);
+  assert.match(due[3]!.why, /last report 2026-11-23, 6 days ago \(due at 6\)/);
 });
 
-test('a failed check counts as an attempt, so a failing repo waits its 7 days again', () => {
+test("each due repo carries when its last report was measured, the start of its day for one with only a date", () => {
+  const db = open(':memory:');
+  add(db, 'a/imported', '2026-11-20');
+  add(db, 'a/measured', '2026-11-21');
+  db.prepare(`UPDATE checks SET at = '2026-11-21T10:42:07.512Z', reason = 'refresh' WHERE repo = 'a/measured'`).run();
+  // A gap repo whose one check failed: nothing measured to ask from.
+  db.prepare(`INSERT INTO repos (repo, first_seen, last_checked, times_checked) VALUES ('a/never', '2026-11-01', '2026-11-01', 1)`).run();
+  db.prepare(`INSERT INTO checks (repo, at, reason, scored, report, error) VALUES ('a/never', '2026-11-01T10:00:00.000Z', 'gap', 0, NULL, 'HTTP 502')`).run();
+
+  const since = Object.fromEntries(dueRefreshes(db, '2026-11-29').map((e) => [e.repo, e.since]));
+
+  assert.deepEqual(since, { 'a/imported': '2026-11-20T00:00:00Z', 'a/measured': '2026-11-21T10:42:07.512Z', 'a/never': undefined });
+});
+
+test('a failed check counts as an attempt, so a failing repo waits its 6 days again', () => {
   const db = open(':memory:');
   add(db, 'a/flaky', '2026-11-01');
   db.prepare(`INSERT INTO checks (repo, at, reason, scored, report, error) VALUES ('a/flaky', '2026-11-15T02:10:00.000Z', 'refresh', 0, NULL, 'HTTP 502')`).run();
 
-  assert.deepEqual(dueRefreshes(db, '2026-11-19'), []);
-  assert.match(dueRefreshes(db, '2026-11-22')[0]!.why, /last check failed 2026-11-15/);
+  assert.deepEqual(dueRefreshes(db, '2026-11-20'), []);
+  assert.match(dueRefreshes(db, '2026-11-21')[0]!.why, /last check failed 2026-11-15/);
 });
 
 test('a repo with only submitted reports is never due; one also measured here keeps its refresh', () => {
@@ -142,7 +158,7 @@ test('a candidate predicted into a full or other cohort is passed over', async (
   assert.deepEqual(asked, ['search Rust 1', 'runs x/mid']);
 });
 
-test('the night is refreshes first, then gaps in what is left of the slots', async () => {
+test('the week is refreshes first, then gaps in what is left of the slots', async () => {
   const db = open(':memory:');
   for (let i = 0; i < 3; i++) add(db, `old/r${i}`, '2026-11-01', { language: 'Rust' });
   // Every cohort but these is just as far under, so the two slots left go to the first in the gaps' order.
@@ -152,16 +168,26 @@ test('the night is refreshes first, then gaps in what is left of the slots', asy
     'old/r0': { prs: 3, language: 'TypeScript', bytes: 30 * 50_000 },
   });
 
-  const plan = await planNight(db, { today: '2026-11-19', slots: 5, gh });
+  const plan = await planWeek(db, { today: '2026-11-19', slots: 5, gh });
 
   assert.deepEqual(Object.fromEntries(plan.quotas), { 'small × TypeScript': 1, 'medium × TypeScript': 1 });
   assert.deepEqual(plan.queue.map((e) => [e.reason, e.repo]), [
     ['refresh', 'old/r0'], ['refresh', 'old/r1'], ['refresh', 'old/r2'], ['gap', 'new/small'], ['gap', 'new/medium'],
   ]);
 
-  const tight = await planNight(db, { today: '2026-11-19', slots: 2, gh });
+  const tight = await planWeek(db, { today: '2026-11-19', slots: 2, gh });
   assert.deepEqual(tight.queue.map((e) => e.reason), ['refresh', 'refresh']);
   assert.equal(tight.quotas.size, 0);
+});
+
+test('gaps take at most the weekly quota, however many slots are left', async () => {
+  const db = open(':memory:');
+  add(db, 'old/r0', '2026-11-01', { language: 'Rust' });
+
+  const plan = await planWeek(db, { today: '2026-11-29', slots: 600 });
+
+  assert.equal(plan.refreshes.length, 1);
+  assert.equal([...plan.quotas.values()].reduce((a, b) => a + b), WEEKLY_GAPS);
 });
 
 test('discovery asks the quota guard before each core call, and stops when it says so', async () => {
@@ -188,13 +214,13 @@ test('a renamed tracked repo is known by its id and not taken again, and ids are
   add(db, 'old-owner/tool', '2026-11-18', { language: 'Rust', size: 'medium' });
   const { gh, asked } = fakeGitHub({ 'new-owner/tool': { prs: 9, id: 77 }, 'x/fresh': { prs: 5, id: 78 } }, { 'old-owner/tool': 77 });
 
-  const plan = await planNight(db, { today: '2026-11-19', slots: 50, gh });
+  const plan = await planWeek(db, { today: '2026-11-19', slots: 50, gh });
 
   assert.ok(!plan.queue.some((e) => e.repo === 'new-owner/tool'));
   assert.ok(plan.queue.some((e) => e.repo === 'x/fresh' && e.githubId === 78));
   assert.equal(db.prepare(`SELECT github_id FROM repos WHERE repo = 'old-owner/tool'`).get()!.github_id, 77);
   // Known ids aren't looked up again.
-  await planNight(db, { today: '2026-11-19', slots: 50, gh });
+  await planWeek(db, { today: '2026-11-19', slots: 50, gh });
   assert.equal(asked.filter((a) => a.startsWith('ids')).length, 1);
 });
 

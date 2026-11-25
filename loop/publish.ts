@@ -1,7 +1,7 @@
 // Publishing: every report under reports/ that origin/main doesn't have yet, as one data commit pushed to main.
 // The commit is made in a worktree of its own on origin/main, so nothing else on the checkout's branch (a code
 // commit not yet through a PR, say) is ever pushed with it. A report it can't publish stays where it is, and the
-// next night publishes it.
+// next run publishes it.
 import { execFileSync } from 'node:child_process';
 import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -69,7 +69,7 @@ export function publish(opts: { root: string; scratch: string; date: string; pus
     git(wt, 'push', '-q', 'origin', 'HEAD:main');
   } catch (e) {
     log(`publish: ${why(e)}`);
-    return `publish: ${files.length} reports not pushed (${why(e)}); the next night tries again`;
+    return `publish: ${files.length} reports not pushed (${why(e)}); the next run tries again`;
   } finally {
     try {
       git(root, 'worktree', 'remove', '--force', wt);

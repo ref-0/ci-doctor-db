@@ -2,7 +2,7 @@
 // what's on ci-doctor's `main`, so a scorer or calibration change there is checked against every stored report before
 // it's released, and npm has only releases. Node runs the TypeScript as it is, so there's nothing to build or install.
 // CI_DOCTOR_SCORER names the checkout's scorer/src; the default is the loop's own checkout of `main`, at
-// ~/ref0-work/ci-doctor-next, which loop/measure.ts creates once and fast-forwards each night.
+// ~/ref0-work/ci-doctor-next, which loop/measure.ts creates once and fast-forwards each run.
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
