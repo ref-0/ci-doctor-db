@@ -346,6 +346,34 @@ test('a repo with no pull-request run since its last report is skipped and keeps
   done();
 });
 
+test('a read of its runs that ends at or past the stop time ends the run before the check, for a new run and for a failed read', async () => {
+  for (const outcome of ['changed', 'failed'] as const) {
+    for (const over of [0, 5_000]) {
+      const { db, reportsDir, done } = setup();
+      await measuredOnce(db, reportsDir, 'a/busy', Date.parse('2026-11-22T10:00:00Z'));
+      const clock = fakeClock(Date.parse('2026-11-29T10:00:00Z'));
+      const stopAt = clock.now() + 2_000;
+      // The read takes the 2 seconds left, or 5 more.
+      const changedSince: ChangedSince = async () => {
+        await clock.sleep(2_000 + over);
+        if (outcome === 'failed') throw new Error('gh api repos/a/busy/actions/runs: HTTP 502');
+        return { changed: true, calls: 1 };
+      };
+
+      const run = await runWeek(dueRefreshes(db, '2026-11-29'), {
+        db, reportsDir, clock, stopAt, quota: fakeQuota(clock).read, token: () => 't',
+        check: async () => assert.fail('no check starts at or past the stop time'),
+        importOne, refreshRepos, changedSince, log: () => {},
+      });
+
+      assert.equal(run.stopped, 'reached the stop time');
+      assert.deepEqual(run.outcomes, []);
+      assert.deepEqual(run.unchanged, []);
+      done();
+    }
+  }
+});
+
 test("a skipped repo isn't a failed check or an attempt: it's due again next run, and its latest report's age shows the skips", async () => {
   const { db, reportsDir, done } = setup();
   await measuredOnce(db, reportsDir, 'a/quiet', Date.parse('2026-11-22T10:00:00Z'));

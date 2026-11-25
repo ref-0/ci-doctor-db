@@ -152,6 +152,13 @@ export async function runWeek(queue: Entry[], d: RunDeps) {
       }
     }
 
+    // The read above can end at or past the stop time. No check starts then: its timeout would be zero, which Node
+    // reads as none, or negative, which it refuses, and the run would end before its store and publish stages.
+    if (d.clock.now() >= d.stopAt) {
+      stopped = 'reached the stop time';
+      break;
+    }
+
     // No check runs past the stop time: its timeout is the smaller of 10 minutes and the time left.
     const at = new Date(d.clock.now()).toISOString();
     const res = await d.check(e.repo, token, Math.min(CHECK_TIMEOUT_MS, d.stopAt - d.clock.now()));
