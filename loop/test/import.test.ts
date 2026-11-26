@@ -164,3 +164,31 @@ test('a loop.db older than schema.sql is named, with how to rebuild it', async (
   assert.throws(() => checkSchema(db, 'loop.db'), /no checks\.calls.*rm loop\.db && node loop\/import\.ts/);
   assert.doesNotThrow(() => checkSchema(open(':memory:'), 'x'));
 });
+
+test("a report changed in place, as a re-read of its practices leaves it, updates its row, practice columns and hints", async () => {
+  const { mkdirSync, mkdtempSync, rmSync, writeFileSync } = await import('node:fs');
+  const { homedir } = await import('node:os');
+  const scratch = process.env.LOOP_TEST_DIR ?? join(homedir(), '.cache', 'ci-loop-measure');
+  mkdirSync(scratch, { recursive: true });
+  const dir = mkdtempSync(join(scratch, 'in-place-'));
+  const file = join(dir, 'pip__garden', '2026-11-22.json');
+  const stored = { repo: 'pip/garden', date: '2026-11-22', score: 70, grade: 'C+', practices: { remoteCache: false, affected: false, hints: [{ practice: 'remoteCache', path: '.github/workflows/ci.yml', kind: 'unknown-action' }] }, stack: {} };
+  mkdirSync(join(dir, 'pip__garden'));
+  writeFileSync(file, JSON.stringify(stored, null, 1));
+  const db = open(':memory:');
+  importReports(db, dir);
+  const was = db.prepare(`SELECT sha256 FROM reports`).get()!.sha256;
+
+  const hints = [{ practice: 'affected', path: 'package.json', kind: 'script' }];
+  writeFileSync(file, JSON.stringify({ ...stored, practices: { remoteCache: true, affected: null, hints, where: { remoteCache: '.github/actions/setup/action.yml' } }, practicesDate: '2026-11-29' }, null, 1));
+  const again = importReports(db, dir);
+
+  const row = db.prepare(`SELECT remote_cache, affected, sha256 FROM reports WHERE id = 'pip/garden/2026-11-22'`).get()!;
+  assert.deepEqual([row.remote_cache, row.affected], [1, null]);
+  assert.notEqual(row.sha256, was);
+  assert.deepEqual(db.prepare(`SELECT practice, path, kind FROM hints`).all().map((h) => ({ ...h })), hints);
+  assert.deepEqual(again.misfits, []);
+  assert.equal(JSON.parse(String((latestOf(db, 'pip/garden') as Record<string, unknown>).stack)).otherPractices, undefined);
+  assert.equal(db.prepare(`SELECT COUNT(*) AS n FROM checks`).get()!.n, 1);
+  rmSync(dir, { recursive: true, force: true });
+});
