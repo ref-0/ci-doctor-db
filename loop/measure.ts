@@ -1,11 +1,14 @@
-// The weekly measure run: find, measure, store, publish. The scheduled job on Sunday at 02:00 runs this and nothing else.
+// The weekly measure run: find, measure, read practices again, store, publish. The scheduled job on Sunday at 02:00
+// runs this and nothing else. After the checks, while its hours and the quota last, it reads again the practices of each
+// latest report the scorer's practice detection has changed since (reread.ts), the repos it skipped included.
 // It prints one summary line per stage, writes the detail to logs/measure-<date>.log, and exits non-zero only when the
 // run couldn't start at all: no scorer checkout, no database or no token.
 // Usage: node loop/measure.ts [--max <n>] [--hours <h>] [--dry-run] [--push] [--prune]
 //   --hours     how long the run measures, from its start (default RUN_HOURS, 11); it may cross midnight
 //   --max       the most repos it queues (default: what the quota allows in --hours)
-//   --dry-run   prints the queue with each repo's reason and checks nothing
-//   --push      pushes every report origin/main lacks to main, as one data commit made on origin/main (publish.ts)
+//   --dry-run   prints the queue with each repo's reason, and how many reports' practices are due, and checks nothing
+//   --push      pushes every report origin/main lacks, or holds as HEAD does while it changed here, to main, as one
+//               data commit made on origin/main (publish.ts)
 //   --prune     really deletes the cache's old files; without it the prune stage only says what it would delete
 import { execFile, execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -14,7 +17,7 @@ import { join } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
 import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
-import { takeLock } from './lock.ts';
+import { runLock, takeLock } from './lock.ts';
 import { publish, publishedReports } from './publish.ts';
 import type { Entry } from './queue.ts';
 
@@ -72,6 +75,9 @@ export async function waitForQuota(clock: Clock, quota: () => Quota, stopAt: num
 
 export type CheckResult = { report: Record<string, any> } | { error: string };
 
+// A report as its file holds it: what the run writes for a check, and a re-read writes back in place.
+export const reportText = (report: Record<string, unknown>) => JSON.stringify(report, null, 1);
+
 // What a skip asks before a full check: whether a pull-request run was created since `since`, and the calls it spent.
 export type ChangedSince = (repo: string, since: string, token: string) => { changed: boolean; calls: number } | Promise<{ changed: boolean; calls: number }>;
 
@@ -89,6 +95,8 @@ export interface RunDeps {
   log: (s: string) => void;
   /** Whether `<owner>__<repo>/<date>.json` is stored already. Default: under reportsDir. */
   stored?: (file: string) => boolean;
+  /** Called for each report a check stored, with the check's time: the run's practice detection read its practices. */
+  readBy?: (report: string, at: string) => void;
 }
 
 export type Outcome = { repo: string; reason: Entry['reason']; at: string; outcome: 'scored' | 'unscored' | 'failed'; calls: number | null; error: string | null; file: string | null };
@@ -186,9 +194,10 @@ function record(d: RunDeps, e: Entry, at: string, res: CheckResult, before: Quot
     const dir = e.repo.replace('/', '__');
     file = `${dir}/${r.date}.json`;
     mkdirSync(join(d.reportsDir, dir), { recursive: true });
-    writeFileSync(join(d.reportsDir, file), JSON.stringify(r, null, 1));
+    writeFileSync(join(d.reportsDir, file), reportText(r));
     try {
       report = d.importOne(d.db, d.reportsDir, dir, `${r.date}.json`).id;
+      d.readBy?.(report, at);
       scored = r.score === null || r.score === undefined ? 0 : 1;
       error = r.unscored ?? null;
     } catch (err) {
@@ -265,7 +274,7 @@ async function main() {
   mkdirSync(logs, { recursive: true });
 
   // The whole run holds the lock, so a second run started meanwhile exits at once.
-  const lock = takeLock(process.env.LOOP_LOCK ?? join(logs, 'measure.lock'));
+  const lock = takeLock(runLock());
   if ('heldBy' in lock) throw new Error(`another measure run (pid ${lock.heldBy}) holds the lock; this one exits`);
   process.on('exit', lock.release);
 
@@ -285,6 +294,9 @@ async function main() {
   const { planWeek, describe } = await import('./queue.ts');
   const { appToken, coreQuota, liveGitHub, prRunsSince } = await import('./github.ts');
   const { prune, summary, DEFAULT_CACHE } = await import('./prune.ts');
+  const { childReread, detectionOf, dueReports, recordReading, rereadDue, rereadLine } = await import('./reread.ts');
+  // The practice detection this run's scorer has, which every report it measures, and every re-read, is read by.
+  const detection = detectionOf(SCORER_SRC);
 
   // This checkout's reports/ and loop.db, so the data commit holds what the run wrote.
   const reportsDir = join(ROOT, 'reports');
@@ -313,6 +325,7 @@ async function main() {
   say(`queue: ${plan.queue.length} of ${slots} slots (${byReason(plan.queue)}); discovery ${gh.calls.core} core and ${gh.calls.graphql} GraphQL calls`);
   if (dryRun) {
     for (const l of describe(plan)) console.log(`  ${l}`);
+    say(`reread: ${dueReports(db, detection).length} latest reports due for practice detection ${detection.slice(0, 12)}, less those the run measures`);
     return 0;
   }
 
@@ -332,6 +345,7 @@ async function main() {
     importOne,
     refreshRepos,
     stored: (file) => existsSync(join(reportsDir, file)) || onMain.has(`reports/${file}`),
+    readBy: (report, at) => recordReading(db, report, detection, at, 'measure'),
   });
   const count = (o: Outcome['outcome']) => outcomes.filter((x) => x.outcome === o).length;
   const calls = outcomes.reduce((s, o) => s + (o.calls ?? 0), 0);
@@ -341,6 +355,16 @@ async function main() {
       `${calls} scorer calls + ${gh.calls.core} discovery core + ${gh.calls.graphql} GraphQL; stopped: ${stopped}`,
   );
   for (const o of outcomes.filter((x) => x.outcome === 'failed')) log(`failed ${o.repo}: ${o.error}`);
+
+  // What the checks left of the hours and the quota goes to reports whose practices an older detection read.
+  const reread = await rereadDue({
+    db, reportsDir, detection, clock: realClock, stopAt, log,
+    quota: () => coreQuota(appToken()),
+    token: appToken,
+    reread: childReread(SCORER_SRC),
+    importOne,
+  });
+  say(rereadLine(reread));
 
   const after = importReports(db, reportsDir);
   say(`store: ${after.files} report files in loop.db, ${after.changes} rows changed by the import`);
