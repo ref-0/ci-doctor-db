@@ -1,0 +1,1949 @@
+{
+ "repo": "openwrt/openwrt",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 11,
+  "stars": 29290,
+  "forks": 13496,
+  "languages": [
+   [
+    "C",
+    60
+   ],
+   [
+    "Makefile",
+    23
+   ],
+   [
+    "Shell",
+    8
+   ],
+   [
+    "ucode",
+    3
+   ]
+  ],
+  "linesOfCode": 133186,
+  "files": 10927,
+  "sourceFiles": 305,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 132144,
+   "tests": 1042,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.00782238591404911,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 120.6,
+  "pace": 1.4,
+  "activeAuthors28d": "≥89",
+  "prsOpenedPerWeek": 131,
+  "prsMergedPerWeek": 73,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 83.1,
+   "p90": 1226.2,
+   "n": 73
+  },
+  "prRunsPerDay": 496.3,
+  "runsPerMergedPr": 47.6
+ },
+ "window": {
+  "days": 2,
+  "runs": 989,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 6.9
+ },
+ "size": "large",
+ "headsPerWeek": 920,
+ "score": 25,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 98,
+  "efficiency": 24
+ },
+ "detail": {
+  "speed": {
+   "wait": 1,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 96
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 9,
+   "setup": 94,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 9752.4,
+  "prBilledMinutesPerDay": 11071.9,
+  "jobMinutesPerMergedPr": 935.2,
+  "expectedMinutesPerMergedPr": 170.4,
+  "expectedWait": 11.6,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 262,
+  "timed": 88,
+  "p50": 115.55,
+  "p75": 228.33333333333334,
+  "p90": 340.4,
+  "redRate": 0.0916030534351145,
+  "rerunRate": 0.2366412213740458,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.31297709923664124,
+  "botHeads": 0,
+  "lightHeads": 5,
+  "neverRan": 0,
+  "botPushes": 2,
+  "bots": [
+   [
+    "forge-mcp-codex[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Build Kernel",
+    46
+   ],
+   [
+    "Build all core packages",
+    35
+   ],
+   [
+    "Build host tools",
+    6
+   ]
+  ],
+  "redBy": [
+   [
+    "Build Kernel",
+    21
+   ],
+   [
+    "Build PR Profile",
+    6
+   ],
+   [
+    "Build all core packages",
+    4
+   ]
+  ],
+  "leftOut": [
+   "Build check target specified in labels",
+   "Build kernel and check patches for target specified in labels"
+  ],
+  "heavyWorkflows": [
+   "Build all core packages",
+   "Build Kernel"
+  ],
+  "allPushesP50": 115.21666666666667
+ },
+ "main": {
+  "heads": 78,
+  "p50": 94.16666666666667,
+  "p90": 417.3,
+  "redRate": 0.0641025641025641,
+  "redBy": [
+   [
+    "Build Kernel",
+    5
+   ]
+  ]
+ },
+ "botRunShare": 0.22252747252747251,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 17,
+  "spanMin": 9.466666666666667,
+  "jobMinutes": 42.68333333333334,
+  "billedMinutes": 55,
+  "subMinuteJobs": 10,
+  "queueP50Sec": 3,
+  "queueP90Sec": 525,
+  "setupShare": 0.22762645914396887,
+  "critical": {
+   "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+   "minutes": 7.316666666666666,
+   "shareOfSpan": 0.8626760563380281
+  },
+  "longest": {
+   "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+   "minutes": 6.633333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    98
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/kernel.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+    "runs": 3
+   },
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+    "runs": 1
+   },
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7622) / Build mediatek/mt7622",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+    "minutes": 9.5,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 1,
+    "queueMin": 0,
+    "workMin": 7.3,
+    "setupMin": 1.7
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 9.5,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 1,
+  "workMinP50": 7.3,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   "\"Build all affected Kernels\" calls openwrt/actions-shared-workflows/.github/workflows/kernel.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 44892322437,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.9,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.5,
+      "startMin": 0.6,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.5,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.5,
+      "startMin": 0.6,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.5,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.2,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 2.3,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 1.7
+     }
+    ]
+   },
+   {
+    "id": 44892275142,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.6,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.7,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.7,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 0.9,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 1,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 1,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 1.8
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 1,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 2.2
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 1.6
+     }
+    ]
+   },
+   {
+    "id": 44883399956,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.5,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.6,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.6,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.2,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0.1,
+      "workMin": 8.2,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 1.8
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.3,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 1.7
+     }
+    ]
+   },
+   {
+    "id": 44876223166,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.3,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 0.9,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.9,
+      "startMin": 1,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0.9,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.2,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 1.9
+     }
+    ]
+   },
+   {
+    "id": 44875974334,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.7,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7622) / Build mediatek/mt7622"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.6,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Set up build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.9,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7623) / Set up build mediatek/mt7623",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.9,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7622) / Set up build mediatek/mt7622",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.9,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7629) / Set up build mediatek/mt7629",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0.8,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7629) / Build mediatek/mt7629",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7622) / Build mediatek/mt7622",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 1,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, mt7623) / Build mediatek/mt7623",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 1.6
+     }
+    ]
+   },
+   {
+    "id": 44872534044,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 31.1,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.5,
+      "startMin": 2.5,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 1.5,
+      "queueMin": 1,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.5,
+      "startMin": 2.6,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.5,
+      "queueMin": 1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 3.5,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0.6,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 11.3,
+      "endMin": 11.7,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 8.5,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 15.4,
+      "endMin": 15.6,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 12.6,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 12.4,
+      "endMin": 12.6,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 9.6,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 12.9,
+      "endMin": 13.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 10.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 15.4,
+      "endMin": 15.6,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 12.6,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 18.9,
+      "endMin": 19,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 16,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3.5,
+      "startMin": 12.6,
+      "endMin": 15.7,
+      "blockedMin": 0,
+      "hiddenMin": 3.5,
+      "queueMin": 9.1,
+      "workMin": 3.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 11.7,
+      "startMin": 23.6,
+      "endMin": 30,
+      "blockedMin": 0,
+      "hiddenMin": 11.7,
+      "queueMin": 11.9,
+      "workMin": 6.4,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.6,
+      "startMin": 23.7,
+      "endMin": 29.5,
+      "blockedMin": 0,
+      "hiddenMin": 12.6,
+      "queueMin": 11.2,
+      "workMin": 5.8,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 13.3,
+      "startMin": 24,
+      "endMin": 30.1,
+      "blockedMin": 0,
+      "hiddenMin": 13.3,
+      "queueMin": 10.8,
+      "workMin": 6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.6,
+      "startMin": 24,
+      "endMin": 31.1,
+      "blockedMin": 0,
+      "hiddenMin": 15.6,
+      "queueMin": 8.5,
+      "workMin": 7.1,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.6,
+      "startMin": 24.4,
+      "endMin": 30.1,
+      "blockedMin": 0,
+      "hiddenMin": 15.6,
+      "queueMin": 8.8,
+      "workMin": 5.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 19,
+      "startMin": 24.4,
+      "endMin": 30.7,
+      "blockedMin": 0,
+      "hiddenMin": 19,
+      "queueMin": 5.4,
+      "workMin": 6.3,
+      "setupMin": 1.5
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    60
+   ],
+   [
+    "Makefile",
+    23
+   ],
+   [
+    "Shell",
+    8
+   ],
+   [
+    "ucode",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    98
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 10927
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.4
+    },
+    {
+     "id": "Build all affected Kernels / Set targets",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.4
+    },
+    {
+     "id": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2.9
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 6.1
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.6
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.8
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.5
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.8
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x"
+   ],
+   "pathMinP50": 9.5,
+   "unknown": [
+    "\"Build all affected Kernels\" calls openwrt/actions-shared-workflows/.github/workflows/kernel.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 2.9× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 525 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 97,
+ "read": {
+  "calls": 97,
+  "fromCache": 0
+ }
+}

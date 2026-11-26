@@ -1,0 +1,4087 @@
+{
+ "repo": "esphome/esphome",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "dev",
+ "profile": {
+  "ageYears": 8.6,
+  "stars": 12131,
+  "forks": 5829,
+  "languages": [
+   [
+    "C++",
+    55
+   ],
+   [
+    "Python",
+    44
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "C",
+    0
+   ]
+  ],
+  "linesOfCode": 1294601,
+  "files": 13402,
+  "sourceFiles": 7214,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 903078,
+   "tests": 344071,
+   "integration": 46899,
+   "support": 553
+  },
+  "testShare": 0.3024275954335468,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 172.7,
+  "pace": 1.8,
+  "activeAuthors28d": "≥62",
+  "prsOpenedPerWeek": 306,
+  "prsMergedPerWeek": 199,
+  "botShareOfMergedPrs": 5,
+  "openToMergeHours": {
+   "p50": 33.5,
+   "p90": 240.2,
+   "n": 95
+  },
+  "prRunsPerDay": 2281.8,
+  "runsPerMergedPr": 80.3
+ },
+ "window": {
+  "days": 0.5,
+  "runs": 997,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 3.8
+ },
+ "size": "large",
+ "headsPerWeek": 1828,
+ "score": 84,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 86,
+  "reliability": 100,
+  "efficiency": 61
+ },
+ "detail": {
+  "speed": {
+   "wait": 82,
+   "forSize": 100,
+   "tail": 61
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 56,
+   "runsPerPr": 0,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 12826.3,
+  "prBilledMinutesPerDay": 16934.4,
+  "jobMinutesPerMergedPr": 451.2,
+  "expectedMinutesPerMergedPr": 360.9,
+  "expectedWait": 19.6,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 137,
+  "timed": 97,
+  "p50": 7.25,
+  "p75": 18.433333333333334,
+  "p90": 21.366666666666667,
+  "redRate": 0.10948905109489052,
+  "rerunRate": 0.0072992700729927005,
+  "passedOnRerunRate": 0.0072992700729927005,
+  "cancelledRate": 0.19708029197080293,
+  "botHeads": 2,
+  "lightHeads": 10,
+  "lastToFinish": [
+   [
+    "CI",
+    94
+   ],
+   [
+    "PR event",
+    2
+   ],
+   [
+    "Request Codeowner Reviews",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    15
+   ]
+  ],
+  "leftOut": [
+   "Status check labels",
+   "verify-lockfile",
+   "Auto Label PR",
+   "Codeowner Approved Label",
+   "Add External Component Comment",
+   "Request Copilot review"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 6.9
+ },
+ "main": {
+  "heads": 149,
+  "p50": 6.533333333333333,
+  "p90": 17.783333333333335,
+  "redRate": 0.006711409395973154,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.14963259853039412,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 32,
+  "spanMin": 10.783333333333333,
+  "jobMinutes": 71.75,
+  "billedMinutes": 89,
+  "subMinuteJobs": 10,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.14105007797608735,
+  "critical": {
+   "name": "CI Status",
+   "minutes": 0.05,
+   "shareOfSpan": 0.004636785162287481
+  },
+  "longest": {
+   "name": "Run pytest (3.12, macOS-latest)",
+   "minutes": 5.133333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    184
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 27,
+  "edges": 71,
+  "matrixJobs": 7,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "CI Status",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Create common environment",
+    "minutes": 0.2,
+    "share": 0.02,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Determine which jobs to run",
+    "minutes": 0.4,
+    "share": 0.04,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.4,
+    "setupMin": 0.2
+   },
+   {
+    "name": "Test components batch (web_server)",
+    "minutes": 10.9,
+    "share": 0.94,
+    "blockedMin": 0.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 10.9,
+    "setupMin": 0.8
+   },
+   {
+    "name": "CI Status",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 11.5,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 4,
+  "pathMinP50": 10.8,
+  "blockedMinP50": 10.7,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 10.6,
+  "setupInPathMinP50": 1,
+  "topBlockers": [
+   {
+    "name": "Determine which jobs to run",
+    "runs": 6,
+    "heldJobs": 30,
+    "jobs": 32,
+    "tookMin": 0.4,
+    "heldJobMin": 12.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [
+   "matrix.name"
+  ],
+  "skippedP50": 12,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44714095813,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.9,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Run pytest (3.12, macOS-latest)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check pylint",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 5.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 5.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 5.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 5.9,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44713900510,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Test components batch (web_server)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Test components batch (web_server)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 13,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 6.5,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 6.2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build PR branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build target branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 5.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 IDF",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 P4",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 C6",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.6,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for ESP8266",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for LibreTiny",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for RP2",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 Arduino",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Run script/clang-tidy for host",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 S3",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run script/clang-tidy for ZEPHYR",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.6,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Comment memory impact",
+      "needs": [
+       "common",
+       "determine-jobs",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 2.3,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 13,
+      "createdMin": 13,
+      "startMin": 13,
+      "endMin": 13,
+      "blockedMin": 13,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44713895287,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15.2,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Test components batch (wifi)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check import esphome.__main__ time",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.1,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 IDF",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 2.4,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run C++ unit tests",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Check pylint",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ZEPHYR",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 2.9,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run script/clang-tidy for LibreTiny",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.3,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0
+     },
+     {
+      "name": "Build target branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 Arduino",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for RP2",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.9,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test components batch (captive_portal wifi_signal)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 7.6,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Test components batch (espectre improv_ble)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 12.5,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run script/clang-tidy for ESP8266",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for host",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.5,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test downstream esphome/device-builder",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.3,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test components batch (wifi)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 15.1,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 4.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.2,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Test components batch (wifi_info)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 7.4,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 4.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 S3",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 2,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 4,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 5.9,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 4.5,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 C6",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 2.1,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 P4",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.9,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Build PR branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 4.5,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 3.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 2.8,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run integration tests (1/1)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Comment memory impact",
+      "needs": [
+       "common",
+       "determine-jobs",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 2,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 15.1,
+      "createdMin": 15.1,
+      "startMin": 15.2,
+      "endMin": 15.2,
+      "blockedMin": 15.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44713890403,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.6,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Test components batch (debug zephyr_coredump)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run C++ unit tests",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build target branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run integration tests (4/5)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 5.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 Arduino",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for ZEPHYR",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run integration tests (5/5)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 8.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for LibreTiny",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test components batch (logger)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 9.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 1
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0
+     },
+     {
+      "name": "Run integration tests (2/5)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 7.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 P4",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run script/clang-tidy for host",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run integration tests (1/5)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 8.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for RP2",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 IDF",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run integration tests (3/5)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 7.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test components batch (debug zephyr_coredump)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 11.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Test components batch (improv_serial syslog)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 9.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 S3",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 C6",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run CodSpeed benchmarks",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for ESP8266",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 5.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 5.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build PR branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Comment memory impact",
+      "needs": [
+       "common",
+       "determine-jobs",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 1.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 11.6,
+      "endMin": 11.6,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44713879720,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.4,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Test components batch (hitachi_ac344 climate_ir_lg delonghi whynter daikin_arc)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for host",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run C++ unit tests",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 C6",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Build target branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ZEPHYR",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Test components batch (hitachi_ac344 climate_ir_lg delonghi whynter daikin_arc)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 8.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run script/clang-tidy for RP2",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 4.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 5.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Test components batch (hitachi_ac424 daikin noblex zhlt01)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 6.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 P4",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 Arduino",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Test components batch (whirlpool airton daikin_brc tcl112 ballu)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 7.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Run script/clang-tidy for ESP8266",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 2.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 IDF",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 3.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run script/clang-tidy for LibreTiny",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 S3",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build PR branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Comment memory impact",
+      "needs": [
+       "common",
+       "determine-jobs",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 2.5,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 8.3,
+      "createdMin": 8.3,
+      "startMin": 8.3,
+      "endMin": 8.4,
+      "blockedMin": 8.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44713876122,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.8,
+    "path": [
+     "Create common environment",
+     "Determine which jobs to run",
+     "Test components batch (heatpumpir gree whirlpool airton daikin emmeti mistral_ir noblex panasonic_ir pd_pioneer_ir siemens_ira211 daikin_arc)",
+     "CI Status"
+    ],
+    "topBlocker": "Determine which jobs to run",
+    "jobs": [
+     {
+      "name": "Create common environment",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Determine which jobs to run",
+      "needs": [
+       "common"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check lint and formatting",
+      "needs": [
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.1,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 IDF",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 6.4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Build PR branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Test esp32 components with PlatformIO",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 P4",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.5,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Test components batch (toshiba hitachi_ac344 hitachi_ac424 climate_ir_lg coolix daikin_brc delonghi friedrich fujitsu_general haier_tundra islandaire midea_ir mitsubishi remko_ar715 samsung tcl112 whynter zhlt01 ballu)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 6.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Test components batch (heatpumpir gree whirlpool airton daikin emmeti mistral_ir noblex panasonic_ir pd_pioneer_ir siemens_ira211 daikin_arc)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 10.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Run script/ci-custom",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 C6",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run pytest (3.14, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run script/clang-tidy for host",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run C++ unit tests",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.14, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build target branch for memory impact",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.12, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.7,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 S3",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.6,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Run pytest (3.15, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.1,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run script/clang-tidy for RP2",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run pytest (3.13, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4.5,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for ESP32 Arduino",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Run pytest (3.14, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 2.8,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Run script/clang-tidy for LibreTiny",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.9,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Run pytest (3.12, ubuntu-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3.5,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run pytest (3.15, windows-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Run script/clang-tidy for ESP8266",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 1.2,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Run script/clang-tidy for ZEPHYR",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Run pytest (3.12, macOS-latest)",
+      "needs": [
+       "common",
+       "determine-jobs"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 3,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Comment memory impact",
+      "needs": [
+       "common",
+       "determine-jobs",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 2.5,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI Status",
+      "needs": [
+       "common",
+       "seed-apt-cache",
+       "seed-esp8266-native-cache",
+       "determine-jobs",
+       "ci-custom",
+       "pylint",
+       "lint-format",
+       "pytest",
+       "codecov-empty-upload",
+       "integration-tests",
+       "integration-ccache-prune",
+       "import-time",
+       "cpp-unit-tests",
+       "clang-tidy-single",
+       "clang-tidy-nosplit",
+       "clang-tidy-split",
+       "clang-tidy-esp32-variants",
+       "test-build-components-split",
+       "test-esp32-platformio",
+       "test-esp8266-native",
+       "test-windows",
+       "device-builder",
+       "memory-impact-target-branch",
+       "memory-impact-pr-branch",
+       "memory-impact-comment"
+      ],
+      "readyMin": 10.7,
+      "createdMin": 10.7,
+      "startMin": 10.7,
+      "endMin": 10.8,
+      "blockedMin": 10.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 32,
+  "over10s": 3,
+  "top": [
+   {
+    "file": "tests/unit_tests/test_platformio_toolchain.py",
+    "sec": 35.62,
+    "job": "Run pytest (3.12, macOS-latest)"
+   },
+   {
+    "file": "tests/unit_tests/test_happy_eyeballs.py",
+    "sec": 35.58,
+    "job": "Run pytest (3.12, macOS-latest)"
+   },
+   {
+    "file": "tests/script/test_build_language_schema.py",
+    "sec": 21.82,
+    "job": "Run pytest (3.12, macOS-latest)"
+   },
+   {
+    "file": "tests/unit_tests/test_espota2.py",
+    "sec": 9.98,
+    "job": "Run pytest (3.12, macOS-latest)"
+   },
+   {
+    "file": "tests/unit_tests/test_coroutine.py",
+    "sec": 6.35,
+    "job": "Run pytest (3.12, windows-latest)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 25,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "pytest-xdist",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    55
+   ],
+   [
+    "Python",
+    44
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "C",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    184
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   "GEMINI.md",
+   ".github/copilot-instructions.md",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "esphome",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "esphome",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "esphome"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 13402
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 27,
+    "edges": 71,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Create common environment",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Determine which jobs to run",
+     "needs": [
+      "common"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.4
+    },
+    {
+     "id": "Run script/ci-custom",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 1.2
+    },
+    {
+     "id": "Check pylint",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 2.7
+    },
+    {
+     "id": "Check lint and formatting",
+     "needs": [
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 0.6
+    },
+    {
+     "id": "Run pytest (3.12, ubuntu-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 3.5
+    },
+    {
+     "id": "Run pytest (3.14, macOS-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 2.6
+    },
+    {
+     "id": "Run pytest (3.15, windows-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 4.1
+    },
+    {
+     "id": "Run pytest (3.14, ubuntu-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 2.9
+    },
+    {
+     "id": "Run pytest (3.14, windows-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 3.5
+    },
+    {
+     "id": "Run pytest (3.12, macOS-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": true,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 5.1
+    },
+    {
+     "id": "Run pytest (3.13, ubuntu-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 3.7
+    },
+    {
+     "id": "Run pytest (3.15, ubuntu-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 2.4
+    },
+    {
+     "id": "Run pytest (3.12, windows-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 5
+    },
+    {
+     "id": "Run pytest (3.15, macOS-latest)",
+     "needs": [
+      "common",
+      "determine-jobs"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 4.3
+    },
+    {
+     "id": "CI Status",
+     "needs": [
+      "common",
+      "seed-apt-cache",
+      "seed-esp8266-native-cache",
+      "determine-jobs",
+      "ci-custom",
+      "pylint",
+      "lint-format",
+      "pytest",
+      "codecov-empty-upload",
+      "integration-tests",
+      "integration-ccache-prune",
+      "import-time",
+      "cpp-unit-tests",
+      "clang-tidy-single",
+      "clang-tidy-nosplit",
+      "clang-tidy-split",
+      "clang-tidy-esp32-variants",
+      "test-build-components-split",
+      "test-esp32-platformio",
+      "test-esp8266-native",
+      "test-windows",
+      "device-builder",
+      "memory-impact-target-branch",
+      "memory-impact-pr-branch",
+      "memory-impact-comment"
+     ],
+     "onPath": true,
+     "blockedMin": 5.8,
+     "queueMin": 0,
+     "workMin": 0.1
+    }
+   ],
+   "edges": [
+    {
+     "from": "Determine which jobs to run",
+     "to": "common"
+    },
+    {
+     "from": "Run script/ci-custom",
+     "to": "common"
+    },
+    {
+     "from": "Run script/ci-custom",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Check pylint",
+     "to": "common"
+    },
+    {
+     "from": "Check pylint",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Check lint and formatting",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.12, ubuntu-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.12, ubuntu-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.14, macOS-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.14, macOS-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.15, windows-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.15, windows-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.14, ubuntu-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.14, ubuntu-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.14, windows-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.14, windows-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.12, macOS-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.12, macOS-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.13, ubuntu-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.13, ubuntu-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.15, ubuntu-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.15, ubuntu-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.12, windows-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.12, windows-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "Run pytest (3.15, macOS-latest)",
+     "to": "common"
+    },
+    {
+     "from": "Run pytest (3.15, macOS-latest)",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "CI Status",
+     "to": "common"
+    },
+    {
+     "from": "CI Status",
+     "to": "seed-apt-cache"
+    },
+    {
+     "from": "CI Status",
+     "to": "seed-esp8266-native-cache"
+    },
+    {
+     "from": "CI Status",
+     "to": "determine-jobs"
+    },
+    {
+     "from": "CI Status",
+     "to": "ci-custom"
+    },
+    {
+     "from": "CI Status",
+     "to": "pylint"
+    },
+    {
+     "from": "CI Status",
+     "to": "lint-format"
+    },
+    {
+     "from": "CI Status",
+     "to": "pytest"
+    },
+    {
+     "from": "CI Status",
+     "to": "codecov-empty-upload"
+    },
+    {
+     "from": "CI Status",
+     "to": "integration-tests"
+    },
+    {
+     "from": "CI Status",
+     "to": "integration-ccache-prune"
+    },
+    {
+     "from": "CI Status",
+     "to": "import-time"
+    },
+    {
+     "from": "CI Status",
+     "to": "cpp-unit-tests"
+    },
+    {
+     "from": "CI Status",
+     "to": "clang-tidy-single"
+    },
+    {
+     "from": "CI Status",
+     "to": "clang-tidy-nosplit"
+    },
+    {
+     "from": "CI Status",
+     "to": "clang-tidy-split"
+    },
+    {
+     "from": "CI Status",
+     "to": "clang-tidy-esp32-variants"
+    },
+    {
+     "from": "CI Status",
+     "to": "test-build-components-split"
+    },
+    {
+     "from": "CI Status",
+     "to": "test-esp32-platformio"
+    },
+    {
+     "from": "CI Status",
+     "to": "test-esp8266-native"
+    },
+    {
+     "from": "CI Status",
+     "to": "test-windows"
+    },
+    {
+     "from": "CI Status",
+     "to": "device-builder"
+    },
+    {
+     "from": "CI Status",
+     "to": "memory-impact-target-branch"
+    },
+    {
+     "from": "CI Status",
+     "to": "memory-impact-pr-branch"
+    },
+    {
+     "from": "CI Status",
+     "to": "memory-impact-comment"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Create common environment",
+    "Determine which jobs to run",
+    "Test components batch (web_server)",
+    "CI Status"
+   ],
+   "pathMinP50": 10.8,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "3 test files take over 10 s; the slowest, tests/unit_tests/test_platformio_toolchain.py, takes 36 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "p90 is 2.9× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 77,
+ "read": {
+  "calls": 77,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,2773 @@
+{
+ "repo": "jdx/mise",
+ "date": "2026-11-26",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3.9,
+  "stars": 36528,
+  "forks": 1556,
+  "languages": [
+   [
+    "Rust",
+    81
+   ],
+   [
+    "Shell",
+    16
+   ],
+   [
+    "PowerShell",
+    2
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 830366,
+  "files": 5883,
+  "sourceFiles": 1352,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 806495,
+   "tests": 21452,
+   "integration": 2290,
+   "support": 130
+  },
+  "testShare": 0.028748634337805577,
+  "packages": {
+   "npm": 1,
+   "cargo": 22,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 112.1,
+  "pace": 1.2,
+  "activeAuthors28d": "≥9",
+  "prsOpenedPerWeek": 146.8,
+  "prsMergedPerWeek": 113.1,
+  "botShareOfMergedPrs": 7,
+  "openToMergeHours": {
+   "p50": 1.9,
+   "p90": 14.8,
+   "n": 93
+  },
+  "prRunsPerDay": 740.7,
+  "runsPerMergedPr": 45.8
+ },
+ "window": {
+  "days": 1.4,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 5.1
+ },
+ "size": "large",
+ "headsPerWeek": 653,
+ "score": 32,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 2,
+  "reliability": 94,
+  "efficiency": 58
+ },
+ "detail": {
+  "speed": {
+   "wait": 3,
+   "forSize": 0,
+   "tail": 4
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 85
+  },
+  "efficiency": {
+   "minutesPerPr": 64,
+   "runsPerPr": 11,
+   "setup": 100,
+   "queue": 13,
+   "shardIdle": null,
+   "path": null,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5370.3,
+  "prBilledMinutesPerDay": 6343.9,
+  "jobMinutesPerMergedPr": 332.4,
+  "prVcpuMinutesPerDay": 21481.3,
+  "vcpuMinutesPerMergedPr": 1329.6,
+  "expectedVcpuMinutesPerMergedPr": 1246.7,
+  "sizedShare": 0.2,
+  "expectedMinutesPerMergedPr": 311.7,
+  "expectedWait": 19.2,
+  "workflowsOnPrs": 7
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured",
+   "the runners' sizes are known for 20% of job minutes, and the rest count as standard runners"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 126,
+  "ranHeads": 126,
+  "timed": 58,
+  "p50": 95.51666666666667,
+  "p75": 124.71666666666667,
+  "p90": 137.91666666666666,
+  "redRate": 0.12698412698412698,
+  "rerunRate": 0.007936507936507936,
+  "passedOnRerunRate": 0.007936507936507936,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.48412698412698413,
+  "botHeads": 2,
+  "lightHeads": 4,
+  "neverRan": 0,
+  "botPushes": 10,
+  "bots": [
+   [
+    "renovate[bot]",
+    7
+   ],
+   [
+    "jdx-aube-lock[bot]",
+    3
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "test",
+    58
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/test.yml",
+  "redBy": [
+   [
+    "test",
+    15
+   ],
+   [
+    "docs",
+    1
+   ]
+  ],
+  "leftOut": [
+   "release",
+   "release-window"
+  ],
+  "heavyWorkflows": [
+   "test"
+  ],
+  "allPushesP50": 95.28333333333333
+ },
+ "main": {
+  "heads": 87,
+  "p50": 84.51666666666667,
+  "p90": 217.45,
+  "redRate": 0.10344827586206896,
+  "redBy": [
+   [
+    "test",
+    7
+   ],
+   [
+    "perf",
+    2
+   ],
+   [
+    "docs",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.19784449576597382,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 19.6,
+  "jobMinutes": 54.333333333333336,
+  "billedMinutes": 60,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 2,
+  "queueP90Sec": 196,
+  "setupShare": 0.02877697841726619,
+  "setupMinPerJob": 0.19393939393939394,
+  "critical": {
+   "name": "test-ci",
+   "minutes": 0.05,
+   "shareOfSpan": 0.002551020408163265
+  },
+  "longest": {
+   "name": "trusted / unit-macos",
+   "minutes": 16.366666666666667
+  },
+  "providers": [
+   [
+    "Namespace",
+    27
+   ],
+   [
+    "GitHub-hosted",
+    27
+   ],
+   [
+    "self-hosted",
+    15
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 5,
+  "runsLeftOut": 1,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 1
+   }
+  ],
+  "workflows": [
+   ".github/workflows/test.yml"
+  ],
+  "jobs": 4,
+  "edges": 3,
+  "matrixJobs": 0,
+  "reusableCalls": 2,
+  "gateEnd": [
+   {
+    "name": "test-ci",
+    "runs": 5
+   }
+  ],
+  "chain": [
+   {
+    "name": "trusted / test-ci",
+    "minutes": 17.4,
+    "share": 0.99,
+    "blockedMin": 0,
+    "hiddenMin": 17.4,
+    "queueMin": 0,
+    "workMin": 0,
+    "setupMin": 0
+   },
+   {
+    "name": "test-ci",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 17.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 2,
+  "pathMinP50": 19.6,
+  "blockedMinP50": 19.5,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 19.4,
+  "workMinP50": 0.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "trusted",
+    "runs": 4,
+    "heldJobs": 1,
+    "jobs": 11,
+    "tookMin": 17.4,
+    "heldJobMin": 17.4
+   },
+   {
+    "name": "untrusted",
+    "runs": 1,
+    "heldJobs": 1,
+    "jobs": 12,
+    "tookMin": 85.8,
+    "heldJobMin": 85.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "perf / instruction-count"
+  ],
+  "ambiguous": [],
+  "skippedP50": 2,
+  "unknown": [
+   "\"trusted\" calls $/.github/workflows/test-impl.yml, in another repo, so the jobs inside it are taken as one",
+   "\"untrusted\" calls $/.github/workflows/test-impl.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 45729354778,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.5,
+    "path": [
+     "trusted / test-ci",
+     "test-ci"
+    ],
+    "topBlocker": "trusted",
+    "jobs": [
+     {
+      "name": "trusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 3.1,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 2.8,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.6,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.3,
+      "workMin": 16.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.2,
+      "startMin": 2.3,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.2,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.2,
+      "startMin": 2.3,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 2.2,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 4.7,
+      "startMin": 4.7,
+      "endMin": 17.4,
+      "blockedMin": 0,
+      "hiddenMin": 4.7,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 17.4,
+      "startMin": 17.4,
+      "endMin": 17.4,
+      "blockedMin": 0,
+      "hiddenMin": 17.4,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 17.4,
+      "createdMin": 17.4,
+      "startMin": 17.5,
+      "endMin": 17.5,
+      "blockedMin": 17.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45716571540,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 85.9,
+    "path": [
+     "untrusted / test-ci",
+     "test-ci"
+    ],
+    "topBlocker": "untrusted",
+    "jobs": [
+     {
+      "name": "untrusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 29.6,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 29.3,
+      "setupMin": 0.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 85.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 85.4,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "untrusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 7.6,
+      "startMin": 7.6,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 7.6,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 7.6,
+      "startMin": 7.6,
+      "endMin": 23.4,
+      "blockedMin": 0,
+      "hiddenMin": 7.6,
+      "queueMin": 0.1,
+      "workMin": 15.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 7.6,
+      "startMin": 7.6,
+      "endMin": 36.4,
+      "blockedMin": 0,
+      "hiddenMin": 7.6,
+      "queueMin": 0,
+      "workMin": 28.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.4,
+      "startMin": 12.5,
+      "endMin": 23.1,
+      "blockedMin": 0,
+      "hiddenMin": 12.4,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "untrusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 85.7,
+      "startMin": 85.8,
+      "endMin": 85.8,
+      "blockedMin": 0,
+      "hiddenMin": 85.7,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 85.8,
+      "createdMin": 85.8,
+      "startMin": 85.9,
+      "endMin": 85.9,
+      "blockedMin": 85.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45637177266,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.6,
+    "path": [
+     "trusted / test-ci",
+     "test-ci"
+    ],
+    "topBlocker": "trusted",
+    "jobs": [
+     {
+      "name": "trusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.6,
+      "endMin": 18,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.4,
+      "workMin": 17.4,
+      "setupMin": 1.3,
+      "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3,
+      "startMin": 3.1,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 3,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3,
+      "startMin": 3,
+      "endMin": 14.1,
+      "blockedMin": 0,
+      "hiddenMin": 3,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3,
+      "startMin": 3,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 3,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 5.1,
+      "startMin": 5.1,
+      "endMin": 19.4,
+      "blockedMin": 0,
+      "hiddenMin": 5.1,
+      "queueMin": 0.1,
+      "workMin": 14.3,
+      "setupMin": 0.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 19.4,
+      "startMin": 19.5,
+      "endMin": 19.5,
+      "blockedMin": 0,
+      "hiddenMin": 19.4,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.6,
+      "endMin": 19.6,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45518917757,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.5,
+    "path": [
+     "trusted / test-ci",
+     "test-ci"
+    ],
+    "topBlocker": "trusted",
+    "jobs": [
+     {
+      "name": "trusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.5,
+      "endMin": 17.4,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.3,
+      "workMin": 16.9,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 4.2,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 4,
+      "workMin": 5.2,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 6.1,
+      "endMin": 14.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 5.9,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 9.4,
+      "endMin": 11.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 9.2,
+      "workMin": 2.4,
+      "setupMin": 0.3,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 2.9,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 2.9,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.4,
+      "startMin": 9.4,
+      "endMin": 20.3,
+      "blockedMin": 0,
+      "hiddenMin": 9.4,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 20.3,
+      "startMin": 20.4,
+      "endMin": 20.5,
+      "blockedMin": 0,
+      "hiddenMin": 20.3,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 20.5,
+      "endMin": 20.5,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45508587070,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16.9,
+    "path": [
+     "trusted / test-ci",
+     "test-ci"
+    ],
+    "topBlocker": "trusted",
+    "jobs": [
+     {
+      "name": "trusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 5.2,
+      "endMin": 14.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 5,
+      "workMin": 9.8,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 3.5,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 3.3,
+      "workMin": 2.9,
+      "setupMin": 0.2,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.8,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.6,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.5,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.3,
+      "workMin": 16.3,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3,
+      "startMin": 3,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 3,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 3,
+      "startMin": 3,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 3,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 16.5,
+      "blockedMin": 0,
+      "hiddenMin": 5.8,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 16.8,
+      "startMin": 16.8,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 16.8,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 16.8,
+      "createdMin": 16.8,
+      "startMin": 16.9,
+      "endMin": 16.9,
+      "blockedMin": 16.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45501804684,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 897.9,
+    "path": [
+     "perf / instruction-count"
+    ],
+    "topBlocker": "trusted",
+    "jobs": [
+     {
+      "name": "trusted / build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / classify-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / unit-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.5,
+      "endMin": 19,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.3,
+      "workMin": 18.5,
+      "setupMin": 0.9,
+      "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-unit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 8.7,
+      "endMin": 18.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 8.5,
+      "workMin": 9.4,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 13.6,
+      "endMin": 16.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 13.3,
+      "workMin": 2.5,
+      "setupMin": 0.1,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 31.9,
+      "endMin": 36.6,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 31.7,
+      "workMin": 4.7,
+      "setupMin": 0.3,
+      "runner": "jdx-win-trusted-v1",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 2.9,
+      "endMin": 18.2,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 6.9,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / bootstrap-linux-host",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 2.9,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.9,
+      "startMin": 3,
+      "endMin": 29,
+      "blockedMin": 0,
+      "hiddenMin": 2.9,
+      "queueMin": 0.1,
+      "workMin": 26,
+      "setupMin": 0.9,
+      "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "trusted / windows-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 36.6,
+      "startMin": 36.6,
+      "endMin": 49.3,
+      "blockedMin": 0,
+      "hiddenMin": 36.6,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 0.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "trusted / test-ci",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 49.3,
+      "startMin": 49.4,
+      "endMin": 49.4,
+      "blockedMin": 0,
+      "hiddenMin": 49.3,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+      "vcpus": null
+     },
+     {
+      "name": "test-ci",
+      "needs": [
+       "trusted",
+       "untrusted"
+      ],
+      "readyMin": 49.4,
+      "createdMin": 49.4,
+      "startMin": 49.4,
+      "endMin": 49.5,
+      "blockedMin": 49.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "perf / instruction-count",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 897.9,
+      "startMin": 897.9,
+      "endMin": 897.9,
+      "blockedMin": 0,
+      "hiddenMin": 897.9,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": null,
+      "vcpus": null
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 5927,
+  "over10s": 0,
+  "top": [
+   {
+    "file": "mise-system history::sync::secrets::tests::an_allowed_value_is_blanked_and_nothing_else",
+    "sec": 3.076,
+    "job": "trusted / unit-macos"
+   },
+   {
+    "file": "mise-system-packages brew::source::tests::shim_virtualenv_install_with_resources",
+    "sec": 2.943,
+    "job": "trusted / unit-macos"
+   },
+   {
+    "file": "mise-system history::shadow::tests::blob_ids_match_git_hash_object",
+    "sec": 0.931,
+    "job": "trusted / unit-macos"
+   },
+   {
+    "file": "mise errors::docs_reference::quoted_messages_are_in_the_source",
+    "sec": 0.911,
+    "job": "trusted / unit-macos"
+   },
+   {
+    "file": "mise::bin/mise cli::usage::tests::command_examples_reach_cli_help_and_markdown",
+    "sec": 0.883,
+    "job": "trusted / unit-macos"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 37,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/docs-showreel.yml",
+   "pathFilters": ".github/workflows/docs-showreel.yml",
+   "affected": ".github/workflows/aube-lock.yml",
+   "draftSkip": ".github/workflows/auto-merge-release.yml",
+   "scheduled": ".github/workflows/auto-merge-release.yml",
+   "depCache": ".github/workflows/docs-impl.yml",
+   "compilerCache": ".github/workflows/registry-impl.yml",
+   "frozenInstall": ".github/workflows/ppa-publish.yml",
+   "timeouts": ".github/workflows/aube-lock.yml",
+   "eslint": "eslint.config.mjs",
+   "depBotsBatched": ".github/renovate.json",
+   "agentRules": ".agents/skills/entire-search/SKILL.md"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    81
+   ],
+   [
+    "Shell",
+    16
+   ],
+   [
+    "PowerShell",
+    2
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 22,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test",
+   "cargo nextest",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Oxfmt",
+   "Ruff",
+   "Clippy"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "eyre",
+    "ecosystem": "cargo",
+    "packages": 14
+   },
+   {
+    "name": "log",
+    "ecosystem": "cargo",
+    "packages": 14
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 14
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 12
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "indexmap",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "strum",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "regex",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "reqwest",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "toml",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "hex",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "itertools",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "walkdir",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "nix",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "shell-words",
+    "ecosystem": "cargo",
+    "packages": 6
+   }
+  ],
+  "runners": [
+   [
+    "Namespace",
+    27
+   ],
+   [
+    "GitHub-hosted",
+    27
+   ],
+   [
+    "self-hosted",
+    15
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".cursor/rules",
+   ".agents/skills",
+   ".claude/agents"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "mise",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "aqua-registry",
+      "mise-cache-core",
+      "mise-config",
+      "mise-daemons",
+      "mise-dotenv",
+      "mise-interactive-config",
+      "mise-lsp",
+      "mise-oci",
+      "mise-settings",
+      "mise-system",
+      "mise-tls",
+      "mise-ui",
+      "mise-util",
+      "vfox"
+     ]
+    },
+    {
+     "name": "aqua-registry",
+     "path": "crates/aqua-registry/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-agent-env",
+     "path": "crates/mise-agent-env/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-bootstrap",
+     "path": "crates/mise-bootstrap/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-brew-metadata",
+     "path": "crates/mise-brew-metadata/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-brew-relocation",
+     "path": "crates/mise-brew-relocation/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-cache-core",
+     "path": "crates/mise-cache-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-tls"
+     ]
+    },
+    {
+     "name": "mise-config",
+     "path": "crates/mise-config/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-bootstrap"
+     ]
+    },
+    {
+     "name": "mise-daemons",
+     "path": "crates/mise-daemons/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-config",
+      "mise-settings",
+      "mise-util"
+     ]
+    },
+    {
+     "name": "mise-dotenv",
+     "path": "crates/mise-dotenv/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-interactive-config",
+     "path": "crates/mise-interactive-config/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-lsp",
+     "path": "crates/mise-lsp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-oci",
+     "path": "crates/mise-oci/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-config",
+      "mise-settings",
+      "mise-system",
+      "mise-ui",
+      "mise-util"
+     ]
+    },
+    {
+     "name": "mise-settings",
+     "path": "crates/mise-settings/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-cache-core",
+      "mise-config"
+     ]
+    },
+    {
+     "name": "mise-shim",
+     "path": "crates/mise-shim/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-sigstore",
+     "path": "crates/mise-sigstore/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-tls"
+     ]
+    },
+    {
+     "name": "mise-system-packages",
+     "path": "crates/mise-system-packages/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-brew-metadata",
+      "mise-brew-relocation",
+      "mise-settings",
+      "mise-ui",
+      "mise-util"
+     ]
+    },
+    {
+     "name": "mise-system",
+     "path": "crates/mise-system/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-bootstrap",
+      "mise-config",
+      "mise-settings",
+      "mise-system-packages",
+      "mise-ui",
+      "mise-util",
+      "vfox"
+     ]
+    },
+    {
+     "name": "mise-tls",
+     "path": "crates/mise-tls/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mise-ui",
+     "path": "crates/mise-ui/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-settings",
+      "mise-util"
+     ]
+    },
+    {
+     "name": "mise-util",
+     "path": "crates/mise-util/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-agent-env",
+      "mise-cache-core",
+      "mise-config",
+      "mise-settings",
+      "mise-sigstore",
+      "mise-tls"
+     ]
+    },
+    {
+     "name": "vfox",
+     "path": "crates/vfox/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mise-sigstore",
+      "mise-tls"
+     ]
+    },
+    {
+     "name": "mise",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 23,
+   "edges": 49,
+   "cycles": [],
+   "maxDepth": 8,
+   "topFanIn": [
+    {
+     "name": "mise-settings",
+     "ecosystem": "cargo",
+     "dependents": 7
+    },
+    {
+     "name": "mise-config",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "mise-util",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "mise-tls",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "mise-ui",
+     "ecosystem": "cargo",
+     "dependents": 4
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 23,
+    "edges": 49
+   },
+   "nodes": [
+    {
+     "id": "mise-settings",
+     "dir": "crates/mise-settings",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 7,
+     "depth": 2
+    },
+    {
+     "id": "mise-config",
+     "dir": "crates/mise-config",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 6,
+     "depth": 1
+    },
+    {
+     "id": "mise-util",
+     "dir": "crates/mise-util",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 6,
+     "depth": 3
+    },
+    {
+     "id": "mise-tls",
+     "dir": "crates/mise-tls",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "mise-ui",
+     "dir": "crates/mise-ui",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 4
+    },
+    {
+     "id": "mise-cache-core",
+     "dir": "crates/mise-cache-core",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "mise-bootstrap",
+     "dir": "crates/mise-bootstrap",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "mise-sigstore",
+     "dir": "crates/mise-sigstore",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "mise-system",
+     "dir": "crates/mise-system",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "vfox",
+     "dir": "crates/vfox",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "aqua-registry",
+     "dir": "crates/aqua-registry",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-agent-env",
+     "dir": "crates/mise-agent-env",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-brew-metadata",
+     "dir": "crates/mise-brew-metadata",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-brew-relocation",
+     "dir": "crates/mise-brew-relocation",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-daemons",
+     "dir": "crates/mise-daemons",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "mise-dotenv",
+     "dir": "crates/mise-dotenv",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-interactive-config",
+     "dir": "crates/mise-interactive-config",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-lsp",
+     "dir": "crates/mise-lsp",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mise-oci",
+     "dir": "crates/mise-oci",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "mise-system-packages",
+     "dir": "crates/mise-system-packages",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 5
+    },
+    {
+     "id": "mise",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "mise",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mise-shim",
+     "dir": "crates/mise-shim",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "mise",
+     "to": "aqua-registry",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-cache-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-daemons",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-dotenv",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-interactive-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-lsp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-oci",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-tls",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-ui",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise",
+     "to": "vfox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-cache-core",
+     "to": "mise-tls",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-config",
+     "to": "mise-bootstrap",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-daemons",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-daemons",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-daemons",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-oci",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-oci",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-oci",
+     "to": "mise-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-oci",
+     "to": "mise-ui",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-oci",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-settings",
+     "to": "mise-cache-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-settings",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-sigstore",
+     "to": "mise-tls",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system-packages",
+     "to": "mise-brew-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system-packages",
+     "to": "mise-brew-relocation",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system-packages",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system-packages",
+     "to": "mise-ui",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system-packages",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-bootstrap",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-system-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-ui",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-system",
+     "to": "vfox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-ui",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-ui",
+     "to": "mise-util",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-agent-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-cache-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-settings",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-sigstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mise-util",
+     "to": "mise-tls",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "vfox",
+     "to": "mise-sigstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "vfox",
+     "to": "mise-tls",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 8,
+   "chain": [
+    "mise",
+    "mise-oci",
+    "mise-system",
+    "mise-system-packages",
+    "mise-ui",
+    "mise-util",
+    "mise-settings",
+    "mise-cache-core",
+    "mise-tls"
+   ],
+   "topFanIn": [
+    {
+     "name": "mise-settings",
+     "ecosystem": "cargo",
+     "dependents": 7
+    },
+    {
+     "name": "mise-config",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "mise-util",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "mise-tls",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "mise-ui",
+     "ecosystem": "cargo",
+     "dependents": 4
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 8,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 5883
+   },
+   "nodes": [
+    {
+     "id": "mise#docs:build",
+     "pkg": "mise",
+     "name": "docs:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#docs:dev",
+     "pkg": "mise",
+     "name": "docs:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#docs:preview",
+     "pkg": "mise",
+     "name": "docs:preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#showreel:frames",
+     "pkg": "mise",
+     "name": "showreel:frames",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#showreel:video",
+     "pkg": "mise",
+     "name": "showreel:video",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#test",
+     "pkg": "mise",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#test:showreel",
+     "pkg": "mise",
+     "name": "test:showreel",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mise#typecheck:showreel",
+     "pkg": "mise",
+     "name": "typecheck:showreel",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "mise#test"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 3,
+    "runs": 5,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "trusted / build-ubuntu",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2.2,
+     "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / classify-changes",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "trusted / windows-lint",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.8,
+     "workMin": 2.6,
+     "runner": "jdx-win-trusted-v1",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / build-windows",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.4,
+     "runner": "jdx-win-trusted-v1",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / unit-macos",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 16.4,
+     "runner": "namespace-profile-endev-macos-arm64;overrides.cache-tag=cache",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / windows-unit",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.9,
+     "runner": "jdx-win-trusted-v1",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / lint",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.1,
+     "runner": "namespace-profile-endev-linux-amd64-large;overrides.cache-tag=cache",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / bootstrap-linux-host",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4,
+     "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+     "vcpus": null
+    },
+    {
+     "id": "trusted / windows-e2e",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 12.7,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "trusted / test-ci",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "namespace-profile-endev-linux-amd64;overrides.cache-tag=cache",
+     "vcpus": null
+    },
+    {
+     "id": "test-ci",
+     "needs": [
+      "trusted",
+      "untrusted"
+     ],
+     "onPath": true,
+     "blockedMin": 17.4,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "test-ci",
+     "to": "trusted"
+    },
+    {
+     "from": "test-ci",
+     "to": "untrusted"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "trusted / test-ci",
+    "test-ci"
+   ],
+   "pathMinP50": 19.6,
+   "unknown": [
+    "\"trusted\" calls $/.github/workflows/test-impl.yml, in another repo, so the jobs inside it are taken as one",
+    "\"untrusted\" calls $/.github/workflows/test-impl.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"trusted / unit-macos\" runs 16 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 196 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 116,
+ "read": {
+  "calls": 116,
+  "fromCache": 0
+ }
+}

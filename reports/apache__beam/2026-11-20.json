@@ -1,0 +1,1703 @@
+{
+ "repo": "apache/beam",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 10.8,
+  "stars": 8722,
+  "forks": 4819,
+  "languages": [
+   [
+    "Java",
+    66
+   ],
+   [
+    "Python",
+    19
+   ],
+   [
+    "Go",
+    8
+   ],
+   [
+    "TypeScript",
+    2
+   ]
+  ],
+  "linesOfCode": 2986210,
+  "files": 15931,
+  "sourceFiles": 10835,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1675238,
+   "tests": 1213156,
+   "integration": 16408,
+   "support": 81408
+  },
+  "testShare": 0.4390085238147526,
+  "packages": {
+   "npm": 5,
+   "cargo": 3,
+   "go": 4,
+   "python": 3
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 103.3,
+  "commitsPerWeekYear": 57.3,
+  "pace": 1.8,
+  "activeAuthors28d": 72,
+  "prsOpenedPerWeek": 192,
+  "prsMergedPerWeek": 119,
+  "botShareOfMergedPrs": 10,
+  "openToMergeHours": {
+   "p50": 42.6,
+   "p90": 386.8,
+   "n": 90
+  },
+  "prRunsPerDay": 966.7,
+  "runsPerMergedPr": 56.9
+ },
+ "window": {
+  "days": 1.2,
+  "runs": 997,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.5
+ },
+ "size": "large",
+ "headsPerWeek": 487,
+ "score": 76,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 88,
+  "reliability": 95,
+  "efficiency": 20
+ },
+ "detail": {
+  "speed": {
+   "wait": 95,
+   "forSize": 100,
+   "tail": 26
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 87
+  },
+  "efficiency": {
+   "minutesPerPr": 30,
+   "runsPerPr": 2,
+   "setup": 32,
+   "queue": 11,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 17304.3,
+  "prBilledMinutesPerDay": 18041.8,
+  "jobMinutesPerMergedPr": 1017.9,
+  "expectedMinutesPerMergedPr": 475.5,
+  "expectedWait": 23.8,
+  "workflowsOnPrs": 55
+ },
+ "wait": {
+  "heads": 86,
+  "timed": 54,
+  "p50": 3.933333333333333,
+  "p75": 28.283333333333335,
+  "p90": 58.03333333333333,
+  "redRate": 0.13953488372093023,
+  "rerunRate": 0.16279069767441862,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.08139534883720931,
+  "botHeads": 5,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "pr-bot-pr-updates",
+    39
+   ],
+   [
+    "CodeQL Advanced",
+    8
+   ],
+   [
+    "Python tests",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "PreCommit YAML Xlang Direct",
+    6
+   ],
+   [
+    "PreCommit Spotless",
+    2
+   ],
+   [
+    "PreCommit Java GCP IO Direct",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Gemini Enterprise Code Review",
+   "LabelPrs"
+  ],
+  "heavyWorkflows": [
+   "Python tests",
+   "CodeQL Advanced",
+   "PreCommit Python",
+   "PreCommit Python Runners",
+   "PreCommit Python Dataframes",
+   "PreCommit Python Examples",
+   "PreCommit Portable Python",
+   "PreCommit Python PVR Flink",
+   "PreCommit Xlang Generated Transforms",
+   "PreCommit Python Lint",
+   "PreCommit RAT",
+   "pr-bot-pr-updates"
+  ],
+  "allPushesP50": 3.933333333333333
+ },
+ "main": {
+  "heads": 21,
+  "p50": 52.31666666666667,
+  "p90": 74.05,
+  "redRate": 0.09523809523809523,
+  "redBy": [
+   [
+    "PreCommit Flink Container",
+    1
+   ],
+   [
+    "PreCommit Java Examples Dataflow",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.036120401337792644,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 0.6166666666666667,
+  "jobMinutes": 0.45,
+  "billedMinutes": 1,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 6,
+  "queueP90Sec": 208,
+  "setupShare": 0.5416666666666666,
+  "critical": {
+   "name": "process-pr-update",
+   "minutes": 0.45,
+   "shareOfSpan": 0.6304347826086956
+  },
+  "longest": {
+   "name": "process-pr-update",
+   "minutes": 0.45
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/pr-bot-pr-updates.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "process-pr-update",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "process-pr-update",
+    "minutes": 0.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.5,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 0.6,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.5,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44702125448,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2.1,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.7,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.7,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44680704564,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.9,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44670828903,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.6,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44646001951,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.6,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 44640137670,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.8,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44636528155,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.5,
+    "path": [
+     "process-pr-update"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "process-pr-update",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 345,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": null,
+  "remoteCache": true,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": [
+   "Read the first 40 of 345 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    66
+   ],
+   [
+    "Python",
+    19
+   ],
+   [
+    "Go",
+    8
+   ],
+   [
+    "TypeScript",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Poetry",
+    "pip",
+    "Cargo",
+    "Go modules"
+   ],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 5,
+   "cargo": 3,
+   "go": 4,
+   "python": 3
+  },
+  "testRunners": [
+   "Jest",
+   "Mocha",
+   "pytest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Ruff",
+   "Pylint",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "cloud.google.com/go/datastore",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/google/go-cmp",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "google.golang.org/grpc",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "google.golang.org/protobuf",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "gopkg.in/yaml.v3",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "@octokit/rest",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@typescript-eslint/eslint-plugin",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@typescript-eslint/parser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "js-yaml",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "proc-macro2",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "prost",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "prost-types",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "quote",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "syn",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tonic",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tonic-prost",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tonic-prost-build",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "cloud.google.com/go",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "cloud.google.com/go/bigquery",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "cloud.google.com/go/bigtable",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "beam.apache.org/learning/katas",
+     "path": "learning/katas/go/go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "github.com/apache/beam/sdks/v2"
+     ]
+    },
+    {
+     "name": "beam.apache.org/learning/tour-of-beam/backend",
+     "path": "learning/tour-of-beam/backend/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/apache/beam/release/go-licenses",
+     "path": "release/go-licenses/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "scripts/ci/issue-report/package.json",
+     "path": "scripts/ci/issue-report/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "pr-bot",
+     "path": "scripts/ci/pr-bot/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "github.com/apache/beam/sdks/v2",
+     "path": "sdks/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "apache-beam-jupyterlab-sidepanel",
+     "path": "sdks/python/apache_beam/runners/interactive/extensions/apache-beam-jupyterlab-sidepanel/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "apache-beam-jupyterlab-sidepanel",
+     "path": "sdks/python/apache_beam/runners/interactive/extensions/apache-beam-jupyterlab-sidepanel/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "sdks/python/pyproject.toml",
+     "path": "sdks/python/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "sdks/rust/Cargo.toml",
+     "path": "sdks/rust/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "apache-beam-derive",
+     "path": "sdks/rust/beam/derive/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "apache-beam-model",
+     "path": "sdks/rust/beam/model/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "apache-beam",
+     "path": "sdks/typescript/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 5,
+      "root": true
+     }
+    },
+    {
+     "name": "apache-beam-website",
+     "path": "website/www/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 14,
+   "edges": 1,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "github.com/apache/beam/sdks/v2",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 14,
+    "edges": 1
+   },
+   "nodes": [
+    {
+     "id": "github.com/apache/beam/sdks/v2",
+     "dir": "sdks",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam",
+     "dir": "sdks/typescript",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-derive",
+     "dir": "sdks/rust/beam/derive",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel",
+     "dir": "sdks/python/apache_beam/runners/interactive/extensions/apache-beam-jupyterlab-sidepanel",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel",
+     "dir": "sdks/python/apache_beam/runners/interactive/extensions/apache-beam-jupyterlab-sidepanel",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-model",
+     "dir": "sdks/rust/beam/model",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-website",
+     "dir": "website/www",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "beam.apache.org/learning/katas",
+     "dir": "learning/katas/go",
+     "ecosystem": "go",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "beam.apache.org/learning/tour-of-beam/backend",
+     "dir": "learning/tour-of-beam/backend",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/apache/beam/release/go-licenses",
+     "dir": "release/go-licenses",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "pr-bot",
+     "dir": "scripts/ci/pr-bot",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "scripts/ci/issue-report/package.json",
+     "dir": "scripts/ci/issue-report",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "sdks/python/pyproject.toml",
+     "dir": "sdks/python",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "sdks/rust/Cargo.toml",
+     "dir": "sdks/rust",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "beam.apache.org/learning/katas",
+     "to": "github.com/apache/beam/sdks/v2",
+     "ecosystem": "go"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "beam.apache.org/learning/katas",
+    "github.com/apache/beam/sdks/v2"
+   ],
+   "topFanIn": [
+    {
+     "name": "github.com/apache/beam/sdks/v2",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 7,
+    "edges": 0,
+    "packages": 5,
+    "packagesWithEntries": 3,
+    "filesRead": 2
+   },
+   "nodes": [
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#.",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "sdks/python/apache_beam/runners/interactive/extensions/apache-beam-jupyterlab-sidepanel/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "pr-bot#.",
+     "pkg": "pr-bot",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "scripts/ci/pr-bot/processNewPrs.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "apache-beam#.",
+     "pkg": "apache-beam",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "apache-beam#./*",
+     "pkg": "apache-beam",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "apache-beam#./io",
+     "pkg": "apache-beam",
+     "key": "./io",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "apache-beam#./runners",
+     "pkg": "apache-beam",
+     "key": "./runners",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "apache-beam#./transforms",
+     "pkg": "apache-beam",
+     "key": "./transforms",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "4 entries of 7 unknown, such as apache-beam#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 39,
+    "edges": 11,
+    "cached": 0,
+    "trackedFiles": 15931
+   },
+   "nodes": [
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#build",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#build:labextension",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "build:labextension",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#build:labextension:dev",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "build:labextension:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#build:lib",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "build:lib",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#build:prod",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "build:prod",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#clean",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#clean:all",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "clean:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#clean:labextension",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "clean:labextension",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#clean:lib",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "clean:lib",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#eslint",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "eslint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#eslint:check",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "eslint:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#install:extension",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "install:extension",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#prepare",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#watch",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#watch:labextension",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "watch:labextension",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-jupyterlab-sidepanel#watch:src",
+     "pkg": "apache-beam-jupyterlab-sidepanel",
+     "name": "watch:src",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-website#build",
+     "pkg": "apache-beam-website",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-website#build_code_samples",
+     "pkg": "apache-beam-website",
+     "name": "build_code_samples",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-website#develop",
+     "pkg": "apache-beam-website",
+     "name": "develop",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam-website#start",
+     "pkg": "apache-beam-website",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#build",
+     "pkg": "apache-beam",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#clean",
+     "pkg": "apache-beam",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#codecovTest",
+     "pkg": "apache-beam",
+     "name": "codecovTest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#docs",
+     "pkg": "apache-beam",
+     "name": "docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "apache-beam#lint",
+     "pkg": "apache-beam",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#predocs",
+     "pkg": "apache-beam",
+     "name": "predocs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "apache-beam#pretest",
+     "pkg": "apache-beam",
+     "name": "pretest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "apache-beam#prettier",
+     "pkg": "apache-beam",
+     "name": "prettier",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#prettier-check",
+     "pkg": "apache-beam",
+     "name": "prettier-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "apache-beam#test",
+     "pkg": "apache-beam",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "apache-beam#worker",
+     "pkg": "apache-beam",
+     "name": "worker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pr-bot#build",
+     "pkg": "pr-bot",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pr-bot#findPrsNeedingAttention",
+     "pkg": "pr-bot",
+     "name": "findPrsNeedingAttention",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "pr-bot#format",
+     "pkg": "pr-bot",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pr-bot#gatherMetrics",
+     "pkg": "pr-bot",
+     "name": "gatherMetrics",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "pr-bot#processNewPrs",
+     "pkg": "pr-bot",
+     "name": "processNewPrs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "pr-bot#processPrUpdate",
+     "pkg": "pr-bot",
+     "name": "processPrUpdate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "pr-bot#test",
+     "pkg": "pr-bot",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pr-bot#updateReviewers",
+     "pkg": "pr-bot",
+     "name": "updateReviewers",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "apache-beam-jupyterlab-sidepanel#watch",
+     "to": "apache-beam-jupyterlab-sidepanel#watch:src",
+     "how": "calls"
+    },
+    {
+     "from": "apache-beam-jupyterlab-sidepanel#watch",
+     "to": "apache-beam-jupyterlab-sidepanel#watch:labextension",
+     "how": "calls"
+    },
+    {
+     "from": "pr-bot#processNewPrs",
+     "to": "pr-bot#build",
+     "how": "calls"
+    },
+    {
+     "from": "pr-bot#processPrUpdate",
+     "to": "pr-bot#build",
+     "how": "calls"
+    },
+    {
+     "from": "pr-bot#gatherMetrics",
+     "to": "pr-bot#build",
+     "how": "calls"
+    },
+    {
+     "from": "pr-bot#updateReviewers",
+     "to": "pr-bot#build",
+     "how": "calls"
+    },
+    {
+     "from": "pr-bot#findPrsNeedingAttention",
+     "to": "pr-bot#build",
+     "how": "calls"
+    },
+    {
+     "from": "apache-beam#pretest",
+     "to": "apache-beam#build",
+     "how": "calls"
+    },
+    {
+     "from": "apache-beam#test",
+     "to": "apache-beam#pretest",
+     "how": "lifecycle"
+    },
+    {
+     "from": "apache-beam#predocs",
+     "to": "apache-beam#build",
+     "how": "calls"
+    },
+    {
+     "from": "apache-beam#docs",
+     "to": "apache-beam#predocs",
+     "how": "lifecycle"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "apache-beam#test",
+    "apache-beam#pretest",
+    "apache-beam#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "process-pr-update",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 1.7,
+     "workMin": 0.5
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "process-pr-update"
+   ],
+   "pathMinP50": 0.6,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 2,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 14.8× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 208 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 138,
+ "read": {
+  "calls": 138,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,1501 @@
+{
+ "repo": "huggingface/speech-to-speech",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Only 3 PR pushes in the window ran the main workflows; 5 are needed.",
+ "profile": {
+  "ageYears": 2.3,
+  "stars": 13786,
+  "forks": 1709,
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "Dockerfile",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 163552,
+  "files": 453,
+  "sourceFiles": 395,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 71519,
+   "tests": 92033,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.5627137194158829,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 63.8,
+  "commitsPerWeekYear": 31.7,
+  "pace": 2,
+  "activeAuthors28d": 19,
+  "prsOpenedPerWeek": 16.9,
+  "prsMergedPerWeek": 18.8,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 119.1,
+   "p90": 297.4,
+   "n": 20
+  },
+  "prRunsPerDay": 6.7,
+  "runsPerMergedPr": 2.5
+ },
+ "window": {
+  "days": 7.4,
+  "runs": 50,
+  "runsInPeriod": 50,
+  "truncated": false,
+  "mainDays": 7.4
+ },
+ "size": "small",
+ "headsPerWeek": 43,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 98,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 50,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 67,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 172.5,
+  "prBilledMinutesPerDay": 211,
+  "jobMinutesPerMergedPr": 64.2,
+  "prVcpuMinutesPerDay": 643.6,
+  "vcpuMinutesPerMergedPr": 239.4,
+  "expectedVcpuMinutesPerMergedPr": 729.3,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 182.3,
+  "expectedWait": 11.1,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 0,
+   "read": 0,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 46,
+  "ranHeads": 36,
+  "timed": 3,
+  "p50": 3.4,
+  "p75": 3.4,
+  "p90": 3.4,
+  "redRate": 0.1388888888888889,
+  "rerunRate": 0.8888888888888888,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 5,
+  "cancelledRate": 0.027777777777777776,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 1,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    3
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    5
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 3.4
+ },
+ "main": {
+  "heads": 21,
+  "p50": 3.5833333333333335,
+  "p90": 4.083333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 2,
+  "jobs": 17,
+  "spanMin": 3.3833333333333333,
+  "jobMinutes": 35.15,
+  "billedMinutes": 43,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 6,
+  "queueP90Sec": 7,
+  "setupShare": 0.6948493683187561,
+  "setupMinPerJob": 1.4019607843137254,
+  "critical": {
+   "name": "Install smoke (linux, Python 3.14)",
+   "minutes": 3,
+   "shareOfSpan": 0.8866995073891626
+  },
+  "longest": {
+   "name": "Install smoke (linux, Python 3.14)",
+   "minutes": 3
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    34
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 2,
+  "runsUsed": 2,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 7,
+  "edges": 1,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Install smoke (linux, Python 3.14)",
+    "runs": 1
+   },
+   {
+    "name": "Install smoke (linux, Python 3.11)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "package",
+    "minutes": 0.3,
+    "share": 0.08,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Install smoke (linux, Python 3.14)",
+    "minutes": 3.1,
+    "share": 0.91,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 3,
+    "setupMin": 2.9
+   }
+  ],
+  "chainRuns": 2,
+  "pathJobsP50": 2,
+  "pathMinP50": 3.4,
+  "blockedMinP50": 0.3,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 3.2,
+  "setupInPathMinP50": 2.9,
+  "topBlockers": [
+   {
+    "name": "package",
+    "runs": 2,
+    "heldJobs": 8,
+    "jobs": 17,
+    "tookMin": 0.3,
+    "heldJobMin": 2.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45206406973,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.4,
+    "path": [
+     "package",
+     "Install smoke (linux, Python 3.14)"
+    ],
+    "topBlocker": "package",
+    "jobs": [
+     {
+      "name": "Agents SDK / WebRTC",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mypy",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Agents SDK / WebSocket",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "ruff",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (linux, Python 3.14)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.14)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (linux, Python 3.13)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 2.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.11)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 1.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.13)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 1.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.12)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 2.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (linux, Python 3.11)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 2.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (linux, Python 3.12)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 2.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45193598922,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.4,
+    "path": [
+     "package",
+     "Install smoke (linux, Python 3.11)"
+    ],
+    "topBlocker": "package",
+    "jobs": [
+     {
+      "name": "Agents SDK / WebRTC",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "ruff",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mypy",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Agents SDK / WebSocket",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Pytest (Python 3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.11)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 2.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (linux, Python 3.11)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 2.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (linux, Python 3.12)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 2.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (linux, Python 3.14)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 2.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.13)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (linux, Python 3.13)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.14)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 2.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Install smoke (macos-arm64, Python 3.12)",
+      "needs": [
+       "package"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 2.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/omnivoice.yml",
+   "pathFilters": ".github/workflows/omnivoice.yml",
+   "scheduled": ".github/workflows/omnivoice.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/ci.yml",
+   "depBotsBatched": ".github/dependabot.yml"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "Dockerfile",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "Playwright",
+   "node:test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "@openai/agents",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@ricky0123/vad-web",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "hono",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "onnxruntime-web",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "zod",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "aiortc",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "anyio",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "certifi",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "chattts",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "espeakng-loader",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "fastapi",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "faster-qwen3-tts",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "faster-whisper",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "fireredvad",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "funasr",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "gradio",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "httpx2",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "huggingface-hub",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "jsonschema",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "kittenml",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    34
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "speech-to-speech-realtime-compat",
+     "path": "demo/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "speech-to-speech",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "speech-to-speech",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "speech-to-speech-realtime-compat",
+     "dir": "demo",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "speech-to-speech-realtime-compat"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 5,
+    "edges": 3,
+    "cached": 0,
+    "trackedFiles": 453
+   },
+   "nodes": [
+    {
+     "id": "speech-to-speech-realtime-compat#test:agents",
+     "pkg": "speech-to-speech-realtime-compat",
+     "name": "test:agents",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "speech-to-speech-realtime-compat#test:agents:adapter",
+     "pkg": "speech-to-speech-realtime-compat",
+     "name": "test:agents:adapter",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "speech-to-speech-realtime-compat#test:agents:webrtc",
+     "pkg": "speech-to-speech-realtime-compat",
+     "name": "test:agents:webrtc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "speech-to-speech-realtime-compat#test:agents:ws",
+     "pkg": "speech-to-speech-realtime-compat",
+     "name": "test:agents:ws",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "speech-to-speech-realtime-compat#test:ui",
+     "pkg": "speech-to-speech-realtime-compat",
+     "name": "test:ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "speech-to-speech-realtime-compat#test:agents",
+     "to": "speech-to-speech-realtime-compat#test:agents:adapter",
+     "how": "calls"
+    },
+    {
+     "from": "speech-to-speech-realtime-compat#test:agents",
+     "to": "speech-to-speech-realtime-compat#test:agents:ws",
+     "how": "calls"
+    },
+    {
+     "from": "speech-to-speech-realtime-compat#test:agents",
+     "to": "speech-to-speech-realtime-compat#test:agents:webrtc",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "speech-to-speech-realtime-compat#test:agents",
+    "speech-to-speech-realtime-compat#test:agents:adapter"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 7,
+    "edges": 1,
+    "runs": 2,
+    "runsOf": 2
+   },
+   "nodes": [
+    {
+     "id": "Agents SDK / WebRTC",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "mypy",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Pytest (Python 3.14)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Pytest (Python 3.13)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Agents SDK / WebSocket",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Pytest (Python 3.12)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Pytest (Python 3.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "ruff",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "package",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Install smoke (linux, Python 3.14)",
+     "needs": [
+      "package"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Install smoke (macos-arm64, Python 3.14)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.1,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Install smoke (linux, Python 3.13)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Install smoke (macos-arm64, Python 3.11)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Install smoke (macos-arm64, Python 3.13)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 1.4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Install smoke (macos-arm64, Python 3.12)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.3,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Install smoke (linux, Python 3.11)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Install smoke (linux, Python 3.12)",
+     "needs": [
+      "package"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Install smoke (linux, Python 3.14)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (macos-arm64, Python 3.14)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (linux, Python 3.13)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (macos-arm64, Python 3.11)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (macos-arm64, Python 3.13)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (macos-arm64, Python 3.12)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (linux, Python 3.11)",
+     "to": "package"
+    },
+    {
+     "from": "Install smoke (linux, Python 3.12)",
+     "to": "package"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "package → Install smoke (linux, Python 3.14)",
+     "numbers": {
+      "setupMin": 2.9,
+      "pathMin": 3.4
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "package",
+    "Install smoke (linux, Python 3.14)"
+   ],
+   "pathMinP50": 3.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Each job spends 1.4 minutes on setup: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "Setup on the critical path: 2.9 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 50,
+ "read": {
+  "calls": 50,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

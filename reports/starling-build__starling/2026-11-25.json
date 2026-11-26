@@ -1,0 +1,791 @@
+{
+ "repo": "starling-build/starling",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.3,
+  "stars": 418,
+  "forks": 23,
+  "languages": [
+   [
+    "Swift",
+    84
+   ],
+   [
+    "C",
+    9
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "linesOfCode": 1419425,
+  "files": 6059,
+  "sourceFiles": 2285,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1186750,
+   "tests": 231850,
+   "integration": 0,
+   "support": 824
+  },
+  "testShare": 0.16392176390123445,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 253.4,
+  "pace": 8.6,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 2680.5,
+  "prsMergedPerWeek": 1955.4,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0,
+   "p90": 2.2,
+   "n": 100
+  },
+  "prRunsPerDay": 448.3,
+  "runsPerMergedPr": 1.6
+ },
+ "window": {
+  "days": 2.2,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 2.7
+ },
+ "size": "large",
+ "headsPerWeek": 3110,
+ "score": 98,
+ "grade": "S+",
+ "band": "excellent",
+ "parts": {
+  "speed": 99,
+  "reliability": 95,
+  "efficiency": 100
+ },
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 91
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 89
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 71,
+  "prBilledMinutesPerDay": 852.2,
+  "jobMinutesPerMergedPr": 0.3,
+  "prVcpuMinutesPerDay": 284.1,
+  "vcpuMinutesPerMergedPr": 1,
+  "expectedVcpuMinutesPerMergedPr": 1488,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 372,
+  "expectedWait": 21.5,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "1 rerun's first attempt wasn't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 991,
+  "ranHeads": 991,
+  "timed": 861,
+  "p50": 0.2833333333333333,
+  "p75": 0.3333333333333333,
+  "p90": 7.683333333333334,
+  "redRate": 0.7416750756811302,
+  "rerunRate": 0.04944500504540868,
+  "passedOnRerunRate": 0.00839556004036327,
+  "rerunsUnread": 1,
+  "cancelledRate": 0.08173562058526741,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "render-gate",
+    861
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/render-gate.yml",
+  "redBy": [
+   [
+    "render-gate",
+    738
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "render-gate"
+  ],
+  "allPushesP50": 0.2833333333333333
+ },
+ "main": {
+  "heads": 300,
+  "p50": 13.433333333333334,
+  "p90": 28.333333333333332,
+  "redRate": 0.09,
+  "redBy": [
+   [
+    "render-gate-prebuild",
+    27
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 0.21666666666666667,
+  "jobMinutes": 0.13333333333333333,
+  "billedMinutes": 2,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.5,
+  "setupMinPerJob": 0.016666666666666666,
+  "critical": {
+   "name": "render-gate",
+   "minutes": 0.05,
+   "shareOfSpan": 0.15384615384615383
+  },
+  "longest": {
+   "name": "classify",
+   "minutes": 0.1
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/render-gate.yml"
+  ],
+  "jobs": 3,
+  "edges": 3,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "render-gate",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "classify",
+    "minutes": 0.1,
+    "share": 0.56,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "render-gate",
+    "minutes": 0.1,
+    "share": 0.38,
+    "blockedMin": 0.1,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 0.2,
+  "blockedMinP50": 0.1,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45284034784,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45281090527,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45281071628,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45280992890,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.4,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45280988922,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.4,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45280944079,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "classify",
+     "render-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "classify",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "render-gate",
+      "needs": [
+       "classify",
+       "render-gate-run"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 2,
+  "cancelInProgress": true,
+  "pathFilters": null,
+  "affected": true,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": null,
+  "remoteCache": null,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "pathFilters",
+    "path": ".github/workflows/render-gate.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "depCache",
+    "path": ".github/workflows/render-gate-prebuild.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "remoteCache",
+    "path": ".github/workflows/render-gate-prebuild.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/render-gate.yml",
+   "affected": ".github/workflows/render-gate.yml",
+   "mergeQueue": ".github/workflows/render-gate.yml",
+   "timeouts": ".github/workflows/render-gate-prebuild.yml",
+   "agentRules": ".claude/skills/starling-apps/SKILL.md"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "pathFilters: .github/workflows/render-gate.yml hints at it, in a form the scorer doesn't check (word)",
+   "depCache: .github/workflows/render-gate-prebuild.yml hints at it, in a form the scorer doesn't check (word)",
+   "remoteCache: .github/workflows/render-gate-prebuild.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Swift",
+    84
+   ],
+   [
+    "C",
+    9
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md",
+   ".claude/skills"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6059
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 3,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "classify",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "render-gate",
+     "needs": [
+      "classify",
+      "render-gate-run"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 0,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "render-gate",
+     "to": "classify"
+    },
+    {
+     "from": "render-gate",
+     "to": "render-gate-run"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "classify",
+    "render-gate"
+   ],
+   "pathMinP50": 0.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Swift it applies the principles, without a Swift-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 69,
+ "read": {
+  "calls": 69,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

@@ -1,0 +1,2103 @@
+{
+ "repo": "apache/nuttx",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 6.9,
+  "stars": 4120,
+  "forks": 1778,
+  "languages": [
+   [
+    "C",
+    95
+   ],
+   [
+    "Linker Script",
+    1
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "CMake",
+    1
+   ]
+  ],
+  "linesOfCode": 7431228,
+  "files": 29087,
+  "sourceFiles": 18739,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 7429733,
+   "tests": 337,
+   "integration": 1158,
+   "support": 0
+  },
+  "testShare": 0.00020110181347966262,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 116.8,
+  "pace": 3.2,
+  "activeAuthors28d": "≥77",
+  "prsOpenedPerWeek": 275,
+  "prsMergedPerWeek": 326,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 19.9,
+   "p90": 55.4,
+   "n": 100
+  },
+  "prRunsPerDay": 680.7,
+  "runsPerMergedPr": 14.6
+ },
+ "window": {
+  "days": 1.5,
+  "runs": 989,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 3.2
+ },
+ "size": "large",
+ "headsPerWeek": 756,
+ "score": 26,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 88,
+  "efficiency": 40
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 80,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 8,
+   "runsPerPr": 57,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 100766.6,
+  "prBilledMinutesPerDay": 102835.5,
+  "jobMinutesPerMergedPr": 2163.7,
+  "expectedMinutesPerMergedPr": 642.4,
+  "expectedWait": 29.4,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 157,
+  "timed": 94,
+  "p50": 590.3833333333333,
+  "p75": 806.6666666666666,
+  "p90": 843.4666666666667,
+  "redRate": 0.39490445859872614,
+  "rerunRate": 0.08280254777070063,
+  "passedOnRerunRate": 0.03184713375796178,
+  "cancelledRate": 0.16560509554140126,
+  "botHeads": 0,
+  "lightHeads": 15,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Build",
+    94
+   ]
+  ],
+  "redBy": [
+   [
+    "Build",
+    48
+   ],
+   [
+    "Check",
+    8
+   ],
+   [
+    "Build Documentation",
+    5
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Build"
+  ],
+  "allPushesP50": 480.23333333333335
+ },
+ "main": {
+  "heads": 138,
+  "p50": 19.416666666666668,
+  "p90": 119.61666666666666,
+  "redRate": 0.021739130434782608,
+  "redBy": [
+   [
+    "MemBrowse Memory Report",
+    3
+   ],
+   [
+    "Bluetooth",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 339.3333333333333,
+  "jobMinutes": 446.4,
+  "billedMinutes": 454,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 4774,
+  "queueP90Sec": 6499,
+  "setupShare": 0.03767827115899608,
+  "critical": {
+   "name": "OOT-Build",
+   "minutes": 3.3333333333333335,
+   "shareOfSpan": 0.007153020805291697
+  },
+  "longest": {
+   "name": "Linux (arm-other)",
+   "minutes": 184.38333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build.yml"
+  ],
+  "jobs": 10,
+  "edges": 13,
+  "matrixJobs": 3,
+  "reusableCalls": 4,
+  "gateEnd": [
+   {
+    "name": "OOT-Build",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Fetch-Source",
+    "minutes": 90.3,
+    "share": 0.26,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 88.5,
+    "workMin": 1.8,
+    "setupMin": 1
+   },
+   {
+    "name": "Linux-Arch / Select-Builds",
+    "minutes": 64,
+    "share": 0.15,
+    "blockedMin": 90.3,
+    "hiddenMin": 0,
+    "queueMin": 64,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Linux (sim-02)",
+    "minutes": 203.9,
+    "share": 0.56,
+    "blockedMin": 199.7,
+    "hiddenMin": 0,
+    "queueMin": 39.1,
+    "workMin": 114,
+    "setupMin": 2.6
+   },
+   {
+    "name": "OOT-Build",
+    "minutes": 3.5,
+    "share": 0.01,
+    "blockedMin": 334.6,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 3.3,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 4,
+  "pathMinP50": 339.3,
+  "blockedMinP50": 334.6,
+  "queueMinP50": 222.3,
+  "hiddenMinP50": 0,
+  "workMinP50": 118.6,
+  "setupInPathMinP50": 3.4,
+  "topBlockers": [
+   {
+    "name": "Fetch-Source",
+    "runs": 4,
+    "heldJobs": 11,
+    "jobs": 12,
+    "tookMin": 152.9,
+    "heldJobMin": 1780.5
+   },
+   {
+    "name": "Linux",
+    "runs": 2,
+    "heldJobs": 1,
+    "jobs": 9,
+    "tookMin": 47,
+    "heldJobMin": 47
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44864246643,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 52.4,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (sim-02)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Linux",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 2,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 2,
+      "endMin": 2.1,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 2,
+      "endMin": 2.1,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 2,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (sim-01)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 36,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.9,
+      "setupMin": 3.2
+     },
+     {
+      "name": "Linux (sim-02)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 49,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 46.9,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (sim-03)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 41.7,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39.6,
+      "setupMin": 3.1
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 49,
+      "createdMin": 49.1,
+      "startMin": 49.1,
+      "endMin": 52.4,
+      "blockedMin": 49,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44855926582,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 233.6,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (arm-other)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Linux",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 1.9,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 1.9,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 1.9,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 1.9,
+      "createdMin": 1.9,
+      "startMin": 1.9,
+      "endMin": 2,
+      "blockedMin": 1.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (arm-nrf)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 49,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 46.9,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-stm32h7)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 98.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 96.4,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 41.1,
+      "endMin": 230.3,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 39.1,
+      "workMin": 189.1,
+      "setupMin": 3.4
+     },
+     {
+      "name": "Linux (arm-stm32f4-2)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 67,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 64.9,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Linux (arm-stm32f0-f3)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 85.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 83.4,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Linux (arm-ti)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 66.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 64.1,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-imx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 95.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 93.1,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-stm32-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 57.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 55.5,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Linux (arm-stm32l-u-g)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 74.9,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 72.9,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Linux (arm-sam)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 64.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 62.4,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-rp2xxx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 106.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 104.8,
+      "setupMin": 2.4
+     },
+     {
+      "name": "Linux (arm-nxp)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 70,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 68,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Linux (arm-stm32f4-1)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 41.1,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39.1,
+      "setupMin": 2.7
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 230.3,
+      "createdMin": 230.3,
+      "startMin": 230.3,
+      "endMin": 233.6,
+      "blockedMin": 230.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44798391359,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 339.3,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (arm-stm32h7)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Fetch-Source",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 88.5,
+      "endMin": 90.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 88.5,
+      "workMin": 1.8,
+      "setupMin": 1
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 90.3,
+      "createdMin": 90.3,
+      "startMin": 198.6,
+      "endMin": 198.7,
+      "blockedMin": 90.3,
+      "hiddenMin": 0,
+      "queueMin": 108.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 90.3,
+      "createdMin": 90.3,
+      "startMin": 199.6,
+      "endMin": 199.7,
+      "blockedMin": 90.3,
+      "hiddenMin": 0,
+      "queueMin": 109.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 90.3,
+      "createdMin": 90.3,
+      "startMin": 201.2,
+      "endMin": 201.3,
+      "blockedMin": 90.3,
+      "hiddenMin": 0,
+      "queueMin": 110.9,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 90.3,
+      "createdMin": 90.3,
+      "startMin": 202.2,
+      "endMin": 202.3,
+      "blockedMin": 90.3,
+      "hiddenMin": 0,
+      "queueMin": 111.9,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (arm-stm32h7)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 224,
+      "endMin": 334.6,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 24.3,
+      "workMin": 110.6,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-stm32-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 225.9,
+      "endMin": 263.3,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 26.2,
+      "workMin": 37.4,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-stm32f4-2)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 227.6,
+      "endMin": 284.3,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 27.9,
+      "workMin": 56.7,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Linux (arm-stm32f4-1)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 224.8,
+      "endMin": 270.9,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 25.1,
+      "workMin": 46.1,
+      "setupMin": 3.1
+     },
+     {
+      "name": "Linux (arm-stm32l-u-g)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 227.1,
+      "endMin": 306.3,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 27.4,
+      "workMin": 79.2,
+      "setupMin": 3.4
+     },
+     {
+      "name": "Linux (arm-stm32f0-f3)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 199.7,
+      "createdMin": 199.7,
+      "startMin": 225.1,
+      "endMin": 309,
+      "blockedMin": 199.7,
+      "hiddenMin": 0,
+      "queueMin": 25.4,
+      "workMin": 83.9,
+      "setupMin": 2.6
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 334.6,
+      "createdMin": 334.6,
+      "startMin": 334.8,
+      "endMin": 339.3,
+      "blockedMin": 334.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.6,
+      "setupMin": 1.3
+     }
+    ]
+   },
+   {
+    "id": 44781810695,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 433.4,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (arm-stm32h7)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Fetch-Source",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 160.4,
+      "endMin": 161.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 160.4,
+      "workMin": 1.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 161.9,
+      "createdMin": 161.9,
+      "startMin": 225.8,
+      "endMin": 225.9,
+      "blockedMin": 161.9,
+      "hiddenMin": 0,
+      "queueMin": 64,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 161.9,
+      "createdMin": 161.9,
+      "startMin": 229,
+      "endMin": 229.1,
+      "blockedMin": 161.9,
+      "hiddenMin": 0,
+      "queueMin": 67.2,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 161.9,
+      "createdMin": 161.9,
+      "startMin": 221.2,
+      "endMin": 221.3,
+      "blockedMin": 161.9,
+      "hiddenMin": 0,
+      "queueMin": 59.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 161.9,
+      "createdMin": 161.9,
+      "startMin": 221.2,
+      "endMin": 221.2,
+      "blockedMin": 161.9,
+      "hiddenMin": 0,
+      "queueMin": 59.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (arm-stm32l-u-g)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 314.1,
+      "endMin": 403.3,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 88.2,
+      "workMin": 89.2,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Linux (arm-stm32-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 315.8,
+      "endMin": 371.5,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 89.9,
+      "workMin": 55.7,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Linux (arm-stm32f4-1)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 315.2,
+      "endMin": 353.7,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 89.3,
+      "workMin": 38.5,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Linux (arm-stm32h7)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 315.8,
+      "endMin": 429.8,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 89.9,
+      "workMin": 114,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-stm32f0-f3)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 315.9,
+      "endMin": 400.3,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 89.9,
+      "workMin": 84.5,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Linux (arm-stm32f4-2)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 225.9,
+      "createdMin": 225.9,
+      "startMin": 316,
+      "endMin": 375.7,
+      "blockedMin": 225.9,
+      "hiddenMin": 0,
+      "queueMin": 90.1,
+      "workMin": 59.7,
+      "setupMin": 2.7
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 429.8,
+      "createdMin": 429.8,
+      "startMin": 430.3,
+      "endMin": 433.4,
+      "blockedMin": 429.8,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 3.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44771971557,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 605.6,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (arm-other)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Fetch-Source",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 158.6,
+      "endMin": 160.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 158.6,
+      "workMin": 2,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 160.6,
+      "createdMin": 160.6,
+      "startMin": 249.1,
+      "endMin": 249.2,
+      "blockedMin": 160.6,
+      "hiddenMin": 0,
+      "queueMin": 88.6,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 160.6,
+      "createdMin": 160.6,
+      "startMin": 249.4,
+      "endMin": 249.5,
+      "blockedMin": 160.6,
+      "hiddenMin": 0,
+      "queueMin": 88.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 160.6,
+      "createdMin": 160.6,
+      "startMin": 249.3,
+      "endMin": 249.4,
+      "blockedMin": 160.6,
+      "hiddenMin": 0,
+      "queueMin": 88.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 160.6,
+      "createdMin": 160.6,
+      "startMin": 249.3,
+      "endMin": 249.4,
+      "blockedMin": 160.6,
+      "hiddenMin": 0,
+      "queueMin": 88.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (arm-rp2xxx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 340.6,
+      "endMin": 433.1,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 91.4,
+      "workMin": 92.4,
+      "setupMin": 3.1
+     },
+     {
+      "name": "Linux (arm-stm32h7)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 345.7,
+      "endMin": 459,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 96.5,
+      "workMin": 113.3,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-sam)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 339.1,
+      "endMin": 430.3,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 89.9,
+      "workMin": 91.2,
+      "setupMin": 3.5
+     },
+     {
+      "name": "Linux (arm-stm32f4-2)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 341.1,
+      "endMin": 411.1,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 91.9,
+      "workMin": 70.1,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-stm32-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 349.8,
+      "endMin": 394.7,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 100.6,
+      "workMin": 45,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Linux (arm-ti)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 351.7,
+      "endMin": 403.3,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 102.5,
+      "workMin": 51.6,
+      "setupMin": 3
+     },
+     {
+      "name": "Linux (arm-imx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 358.1,
+      "endMin": 439.9,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 108.9,
+      "workMin": 81.8,
+      "setupMin": 3
+     },
+     {
+      "name": "Linux (arm-stm32f4-1)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 347.1,
+      "endMin": 402.4,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 97.9,
+      "workMin": 55.3,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-nrf)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 346.4,
+      "endMin": 418.9,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 97.2,
+      "workMin": 72.5,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Linux (arm-stm32l-u-g)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 357.4,
+      "endMin": 431.8,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 108.2,
+      "workMin": 74.5,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 416.9,
+      "endMin": 601.3,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 167.7,
+      "workMin": 184.4,
+      "setupMin": 3
+     },
+     {
+      "name": "Linux (arm-stm32f0-f3)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 345,
+      "endMin": 413.1,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 95.8,
+      "workMin": 68.1,
+      "setupMin": 4.1
+     },
+     {
+      "name": "Linux (arm-nxp)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 249.2,
+      "createdMin": 249.2,
+      "startMin": 356.1,
+      "endMin": 427.8,
+      "blockedMin": 249.2,
+      "hiddenMin": 0,
+      "queueMin": 106.9,
+      "workMin": 71.7,
+      "setupMin": 2.6
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 601.3,
+      "createdMin": 601.3,
+      "startMin": 601.4,
+      "endMin": 605.6,
+      "blockedMin": 601.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 44768209250,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 590.4,
+    "path": [
+     "Fetch-Source",
+     "Linux-Arch / Select-Builds",
+     "Linux (arm-other)",
+     "OOT-Build"
+    ],
+    "topBlocker": "Fetch-Source",
+    "jobs": [
+     {
+      "name": "Fetch-Source",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 151.1,
+      "endMin": 152.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 151.1,
+      "workMin": 1.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Linux-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 152.9,
+      "createdMin": 152.9,
+      "startMin": 257.9,
+      "endMin": 258,
+      "blockedMin": 152.9,
+      "hiddenMin": 0,
+      "queueMin": 105.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "macOS-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 152.9,
+      "createdMin": 152.9,
+      "startMin": 258.6,
+      "endMin": 258.7,
+      "blockedMin": 152.9,
+      "hiddenMin": 0,
+      "queueMin": 105.7,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msvc-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 152.9,
+      "createdMin": 152.9,
+      "startMin": 259.7,
+      "endMin": 259.8,
+      "blockedMin": 152.9,
+      "hiddenMin": 0,
+      "queueMin": 106.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "msys2-Arch / Select-Builds",
+      "needs": [
+       "Fetch-Source"
+      ],
+      "readyMin": 152.9,
+      "createdMin": 152.9,
+      "startMin": 260.1,
+      "endMin": 260.2,
+      "blockedMin": 152.9,
+      "hiddenMin": 0,
+      "queueMin": 107.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Linux (arm-stm32h7)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 337.5,
+      "endMin": 451.1,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 79.4,
+      "workMin": 113.7,
+      "setupMin": 3.2
+     },
+     {
+      "name": "Linux (arm-sam)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 337.6,
+      "endMin": 413.3,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 79.6,
+      "workMin": 75.7,
+      "setupMin": 4
+     },
+     {
+      "name": "Linux (arm-ti)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 338,
+      "endMin": 374.9,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 79.9,
+      "workMin": 37,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Linux (arm-stm32f4-2)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 340.4,
+      "endMin": 410.4,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 82.4,
+      "workMin": 70,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 403.7,
+      "endMin": 586.8,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 145.6,
+      "workMin": 183.2,
+      "setupMin": 3.4
+     },
+     {
+      "name": "Linux (arm-nrf)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 333.2,
+      "endMin": 403,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 75.1,
+      "workMin": 69.8,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Linux (arm-stm32-other)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 341.8,
+      "endMin": 395.7,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 83.8,
+      "workMin": 53.9,
+      "setupMin": 3
+     },
+     {
+      "name": "Linux (arm-stm32f0-f3)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 344.7,
+      "endMin": 411.6,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 86.7,
+      "workMin": 66.9,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Linux (arm-stm32f4-1)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 338,
+      "endMin": 394,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 79.9,
+      "workMin": 56,
+      "setupMin": 3.1
+     },
+     {
+      "name": "Linux (arm-nxp)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 344,
+      "endMin": 447.3,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 86,
+      "workMin": 103.3,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Linux (arm-imx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 338.6,
+      "endMin": 414.6,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 80.6,
+      "workMin": 76,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Linux (arm-stm32l-u-g)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 342,
+      "endMin": 416.8,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 84,
+      "workMin": 74.8,
+      "setupMin": 3
+     },
+     {
+      "name": "Linux (arm-rp2xxx)",
+      "needs": [
+       "Linux-Arch"
+      ],
+      "readyMin": 258,
+      "createdMin": 258,
+      "startMin": 345.2,
+      "endMin": 430.5,
+      "blockedMin": 258,
+      "hiddenMin": 0,
+      "queueMin": 87.2,
+      "workMin": 85.3,
+      "setupMin": 2.8
+     },
+     {
+      "name": "OOT-Build",
+      "needs": [
+       "Linux"
+      ],
+      "readyMin": 586.8,
+      "createdMin": 586.8,
+      "startMin": 586.9,
+      "endMin": 590.4,
+      "blockedMin": 586.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    95
+   ],
+   [
+    "Linker Script",
+    1
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "CMake",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Pipenv",
+    "pip"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "matplotlib",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "numpy",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyelftools",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "nxgdb",
+     "path": "tools/pynuttx/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "nxgdb",
+     "dir": "tools/pynuttx",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "nxgdb"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 29087
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 10,
+    "edges": 13,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Fetch-Source",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "msys2-Arch / Select-Builds",
+     "needs": [
+      "Fetch-Source"
+     ],
+     "onPath": false,
+     "blockedMin": 1.9,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "macOS-Arch / Select-Builds",
+     "needs": [
+      "Fetch-Source"
+     ],
+     "onPath": false,
+     "blockedMin": 1.9,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Linux-Arch / Select-Builds",
+     "needs": [
+      "Fetch-Source"
+     ],
+     "onPath": true,
+     "blockedMin": 1.9,
+     "queueMin": 0.1,
+     "workMin": 0.1
+    },
+    {
+     "id": "msvc-Arch / Select-Builds",
+     "needs": [
+      "Fetch-Source"
+     ],
+     "onPath": false,
+     "blockedMin": 1.9,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Linux (sim-01)",
+     "needs": [
+      "Linux-Arch"
+     ],
+     "onPath": false,
+     "blockedMin": 2.1,
+     "queueMin": 0,
+     "workMin": 33.9
+    },
+    {
+     "id": "Linux (sim-02)",
+     "needs": [
+      "Linux-Arch"
+     ],
+     "onPath": true,
+     "blockedMin": 2.1,
+     "queueMin": 0,
+     "workMin": 46.9
+    },
+    {
+     "id": "Linux (sim-03)",
+     "needs": [
+      "Linux-Arch"
+     ],
+     "onPath": false,
+     "blockedMin": 2.1,
+     "queueMin": 0,
+     "workMin": 39.6
+    },
+    {
+     "id": "OOT-Build",
+     "needs": [
+      "Linux"
+     ],
+     "onPath": true,
+     "blockedMin": 49,
+     "queueMin": 0,
+     "workMin": 3.3
+    }
+   ],
+   "edges": [
+    {
+     "from": "msys2-Arch / Select-Builds",
+     "to": "Fetch-Source"
+    },
+    {
+     "from": "macOS-Arch / Select-Builds",
+     "to": "Fetch-Source"
+    },
+    {
+     "from": "Linux-Arch / Select-Builds",
+     "to": "Fetch-Source"
+    },
+    {
+     "from": "msvc-Arch / Select-Builds",
+     "to": "Fetch-Source"
+    },
+    {
+     "from": "Linux (sim-01)",
+     "to": "Linux-Arch"
+    },
+    {
+     "from": "Linux (sim-02)",
+     "to": "Linux-Arch"
+    },
+    {
+     "from": "Linux (sim-03)",
+     "to": "Linux-Arch"
+    },
+    {
+     "from": "OOT-Build",
+     "to": "Linux"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Fetch-Source",
+     "numbers": {
+      "heldJobs": 11,
+      "jobs": 12,
+      "heldJobMin": 1780.5,
+      "runs": 4,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "Fetch-Source",
+    "Linux-Arch / Select-Builds",
+    "Linux (sim-02)",
+    "OOT-Build"
+   ],
+   "pathMinP50": 339.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Linux (arm-other)\" runs 184 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "3% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"Fetch-Source\" holds up 11 of 12 jobs, 1780.5 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "Jobs wait 6499 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 138,
+ "read": {
+  "calls": 138,
+  "fromCache": 0
+ }
+}

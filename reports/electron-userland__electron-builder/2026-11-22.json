@@ -1,0 +1,7709 @@
+{
+ "repo": "electron-userland/electron-builder",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 11.5,
+  "stars": 14721,
+  "forks": 1900,
+  "languages": [
+   [
+    "TypeScript",
+    97
+   ],
+   [
+    "NSIS",
+    1
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "linesOfCode": 268179,
+  "files": 1825,
+  "sourceFiles": 748,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 105584,
+   "tests": 161365,
+   "integration": 0,
+   "support": 1230
+  },
+  "testShare": 0.606291279233158,
+  "packages": {
+   "npm": 16,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 37,
+  "commitsPerWeekYear": 14.8,
+  "pace": 2.5,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 27,
+  "prsMergedPerWeek": 30,
+  "botShareOfMergedPrs": 40,
+  "openToMergeHours": {
+   "p50": 27.3,
+   "p90": 190.9,
+   "n": 18
+  },
+  "prRunsPerDay": 76.7,
+  "runsPerMergedPr": 17.9
+ },
+ "window": {
+  "days": 6.5,
+  "runs": 497,
+  "runsInPeriod": 499,
+  "truncated": false,
+  "mainDays": 4.8
+ },
+ "size": "medium",
+ "headsPerWeek": 170,
+ "score": 27,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 86,
+  "efficiency": 50
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 3
+  },
+  "reliability": {
+   "flakes": 80,
+   "mainRed": 94
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 49,
+   "setup": 85,
+   "queue": 100,
+   "shardIdle": 53
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 25931.7,
+  "prBilledMinutesPerDay": 26750,
+  "jobMinutesPerMergedPr": 6050.7,
+  "expectedMinutesPerMergedPr": 214.6,
+  "expectedWait": 13.7,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 157,
+  "timed": 14,
+  "p50": 121.7,
+  "p75": 144.16666666666666,
+  "p90": 148.43333333333334,
+  "redRate": 0.27388535031847133,
+  "rerunRate": 0.09554140127388536,
+  "passedOnRerunRate": 0.03184713375796178,
+  "cancelledRate": 0.21019108280254778,
+  "botHeads": 87,
+  "lightHeads": 2,
+  "neverRan": 7,
+  "botPushes": 126,
+  "bots": [
+   [
+    "renovate[bot]",
+    67
+   ],
+   [
+    "claude[bot]",
+    36
+   ],
+   [
+    "electron-builder-release-bot[bot]",
+    23
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Test",
+    14
+   ]
+  ],
+  "redBy": [
+   [
+    "Test",
+    42
+   ],
+   [
+    "Semantic Versioning enforcer",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Test"
+  ],
+  "allPushesP50": 121.7
+ },
+ "main": {
+  "heads": 28,
+  "p50": 45.28333333333333,
+  "p90": 119.41666666666667,
+  "redRate": 0.07142857142857142,
+  "redBy": [
+   [
+    "Test",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.7233273056057866,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 44,
+  "spanMin": 43.483333333333334,
+  "jobMinutes": 799.0333333333334,
+  "billedMinutes": 818,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.27536537974148856,
+  "critical": {
+   "name": "Merge smart cache and test reports",
+   "minutes": 1.6333333333333333,
+   "shareOfSpan": 0.03613479496548924
+  },
+  "longest": {
+   "name": "Test e2e Auto Updater Linux (appimage-update)",
+   "minutes": 41.35
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    264
+   ]
+  ],
+  "shard": {
+   "name": "Test Windows (#)",
+   "shards": 10,
+   "medianMin": 28.466666666666665,
+   "maxMin": 39.733333333333334,
+   "maxOverMedian": 1.3470588235294116,
+   "idleTail": 0.2406879194630872
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test.yaml"
+  ],
+  "jobs": 11,
+  "edges": 17,
+  "matrixJobs": 5,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Merge smart cache and test reports",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Test e2e Auto Updater Linux (appimage-update)",
+    "minutes": 43.4,
+    "share": 0.95,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 43.4,
+    "setupMin": 41.3
+   },
+   {
+    "name": "Merge smart cache and test reports",
+    "minutes": 2.1,
+    "share": 0.05,
+    "blockedMin": 43.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 2.1,
+    "setupMin": 1.5
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 43.5,
+  "blockedMinP50": 41.4,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 43.4,
+  "setupInPathMinP50": 1.6,
+  "topBlockers": [
+   {
+    "name": "Validate and plan shards",
+    "runs": 6,
+    "heldJobs": 20,
+    "jobs": 44,
+    "tookMin": 1.5,
+    "heldJobMin": 29.2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [
+   "\"run-docker-build\" calls $/.github/workflows/docker-build.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 44931489282,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 52.6,
+    "path": [
+     "Test e2e Auto Updater Linux (appimage-update)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 15.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.3,
+      "setupMin": 4.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 5.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 5.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 8.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 7.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.5,
+      "setupMin": 11.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 5.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 5.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 5.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 50.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 50.9,
+      "setupMin": 49,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 17,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.9,
+      "setupMin": 16.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 23.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.7,
+      "setupMin": 22.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 5.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 5.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 11.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.6,
+      "setupMin": 2.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 26.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 24,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 25.4,
+      "setupMin": 2.6,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 21.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.7,
+      "setupMin": 2.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 15.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 30.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 29,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 11.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 24.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.1,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 20.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.6,
+      "setupMin": 2.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 43,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 41.4,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 31,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.5,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 24.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.1,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 33.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.3,
+      "setupMin": 1.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 30.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.6,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 30.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.6,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 28.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.6,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 31.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.8,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.3,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 36.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34.9,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 50.9,
+      "createdMin": 50.9,
+      "startMin": 51,
+      "endMin": 52.6,
+      "blockedMin": 50.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44915277152,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.1,
+    "path": [
+     "Validate and plan shards",
+     "Test Windows (Shard 0)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.2,
+      "setupMin": 16.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 33.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.3,
+      "setupMin": 31.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 2.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 5.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.5,
+      "setupMin": 18.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.4,
+      "setupMin": 14.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 5.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.8,
+      "setupMin": 15,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 5.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 5.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 6.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 10.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 5.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 5.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 5.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.9,
+      "setupMin": 4.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 10.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 18.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.9,
+      "setupMin": 2.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 16.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 3.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 28,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 26.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 24.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 26.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 20.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 25.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.5,
+      "setupMin": 2.7,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 25.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.8,
+      "setupMin": 2.7,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 20.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 3.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 39.6,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 38.2,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 11.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 2.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 28.3,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27,
+      "setupMin": 2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 34.3,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.9,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 23.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.5,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 31.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.1,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 29.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 28.3,
+      "setupMin": 2.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 36.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 35.5,
+      "setupMin": 2.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 28.6,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.3,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 24.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.1,
+      "setupMin": 1.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 38.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 37.6,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 39.6,
+      "createdMin": 39.6,
+      "startMin": 39.6,
+      "endMin": 41.1,
+      "blockedMin": 39.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44885486238,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 42.9,
+    "path": [
+     "Validate and plan shards",
+     "Test Windows (Shard 0)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.7,
+      "setupMin": 15.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 4.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 7.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15,
+      "setupMin": 13.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 11.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 3.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 18.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 17.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 12.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 11.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 14.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.5,
+      "setupMin": 13.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.8,
+      "setupMin": 12.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.4,
+      "setupMin": 14.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 33.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.6,
+      "setupMin": 31.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.4,
+      "setupMin": 17.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 12.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.4,
+      "setupMin": 14.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 21.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.4,
+      "setupMin": 2.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 11.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 31,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 29.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 28.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 27.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 26,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 28.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.8,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 24.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.2,
+      "setupMin": 2.9,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 20.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 1.9,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 18.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.3,
+      "setupMin": 2.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 21.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.1,
+      "setupMin": 1.9,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 33.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 31.8,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 25.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.1,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 34.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.8,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 26.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 1.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 23.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.4,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 41.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39.7,
+      "setupMin": 2.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 36.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34.7,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 26.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.6,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 31.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.3,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 38.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.7,
+      "setupMin": 2.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 41.3,
+      "createdMin": 41.3,
+      "startMin": 41.4,
+      "endMin": 42.9,
+      "blockedMin": 41.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44883961397,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 45.5,
+    "path": [
+     "Test e2e Auto Updater Linux (appimage-update)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 22,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22,
+      "setupMin": 21.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15,
+      "setupMin": 5.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 17.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.8,
+      "setupMin": 16,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 7.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.2,
+      "setupMin": 20.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 6.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 5.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 7.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 4.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 43.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 43.4,
+      "setupMin": 41.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 5.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 9.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 3.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 4.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 5.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.9,
+      "setupMin": 10.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 21.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.9,
+      "setupMin": 2.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 23.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 23.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 26.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 31.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 25.6,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 20.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.1,
+      "setupMin": 2.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 24.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.4,
+      "setupMin": 2.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 24.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.4,
+      "setupMin": 2.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 20.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.5,
+      "setupMin": 3.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 25.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24,
+      "setupMin": 3.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 31.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.1,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 42.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 41.2,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 27.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.1,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 24.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.2,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 28.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 30.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.8,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 34.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 33.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 31.6,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 27.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.8,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 32.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.6,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 43.4,
+      "createdMin": 43.4,
+      "startMin": 43.5,
+      "endMin": 45.5,
+      "blockedMin": 43.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44883388292,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 44.1,
+    "path": [
+     "Validate and plan shards",
+     "Test Windows (Shard 0)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 5.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.8,
+      "setupMin": 18.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.4,
+      "setupMin": 14.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.8,
+      "setupMin": 11.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 18.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.6,
+      "setupMin": 17.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12,
+      "setupMin": 10.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.9,
+      "setupMin": 19.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.8,
+      "setupMin": 12.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 11.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.6,
+      "setupMin": 14.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 3.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 41.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 41.4,
+      "setupMin": 39.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 8.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 12.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 11.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 11.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 21.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.4,
+      "setupMin": 2.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 11.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 25.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 28.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 25.5,
+      "setupMin": 2.7,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 23.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.9,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 22.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 22,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.4,
+      "setupMin": 3.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 20.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.8,
+      "setupMin": 2.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 18.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.9,
+      "setupMin": 2.7,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 27.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.2,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 42.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 40.8,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 30,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.4,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.1,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 27.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.9,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 29.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.9,
+      "setupMin": 2.6,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 33.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 31.9,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 23,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.5,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 33.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 31.9,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 32.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 31.3,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 25.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.3,
+      "setupMin": 1.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 26.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 1.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 42.4,
+      "createdMin": 42.4,
+      "startMin": 42.4,
+      "endMin": 44.1,
+      "blockedMin": 42.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44881465059,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 43.5,
+    "path": [
+     "Test e2e Auto Updater Linux (appimage-update)",
+     "Merge smart cache and test reports"
+    ],
+    "topBlocker": "Validate and plan shards",
+    "jobs": [
+     {
+      "name": "Validate and plan shards",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Check for Docker image changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.3,
+      "setupMin": 13.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.5,
+      "setupMin": 11.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.4,
+      "setupMin": 17.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 11.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core22)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 41.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 41.3,
+      "setupMin": 39.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 10.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 15.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (appimage-update-rules)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 3.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-dpkg)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core24)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.6,
+      "setupMin": 5.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (archlinux-pacman)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.7,
+      "setupMin": 20.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (debian-apt)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 16.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.6,
+      "setupMin": 13.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core20)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.3,
+      "setupMin": 12.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Snap (core18)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-install)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.9,
+      "setupMin": 18.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15,
+      "setupMin": 13.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Flatpak",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.7,
+      "setupMin": 2.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Updater",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 3)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 28.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 0)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 24.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 24.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 22.6,
+      "setupMin": 3.1,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 25.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.4,
+      "setupMin": 2.7,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 25.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24,
+      "setupMin": 2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test macOS (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 19.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.1,
+      "setupMin": 2.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Linux (Shard 2)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 28.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 7)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 25.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.3,
+      "setupMin": 2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Linux (Shard 1)",
+      "needs": [
+       "check-if-docker-build",
+       "run-docker-build",
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 25.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 1)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 34.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.1,
+      "setupMin": 2.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 6)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 26.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.2,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 3)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 27.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.9,
+      "setupMin": 2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 30.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.9,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 5)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 23.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.3,
+      "setupMin": 2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 2)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 30,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.5,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 34.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.9,
+      "setupMin": 2.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 9)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 35.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.7,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test macOS (Shard 0)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 16.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 2.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Test Windows (Shard 4)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 36.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 35.1,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test Windows (Shard 8)",
+      "needs": [
+       "validate-and-shard"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 28,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.4,
+      "setupMin": 2.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Merge smart cache and test reports",
+      "needs": [
+       "test-linux",
+       "test-windows",
+       "test-macos",
+       "test-e2e",
+       "test-updater",
+       "test-snap",
+       "test-flatpak"
+      ],
+      "readyMin": 41.4,
+      "createdMin": 41.4,
+      "startMin": 41.4,
+      "endMin": 43.5,
+      "blockedMin": 41.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    97
+   ],
+   [
+    "NSIS",
+    1
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm"
+   ],
+   "tools": [
+    "pnpm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 16,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest"
+  ],
+  "lintFormat": [
+   "Oxlint",
+   "Oxfmt"
+  ],
+  "libraries": [
+   {
+    "name": "fs-extra",
+    "ecosystem": "npm",
+    "packages": 7
+   },
+   {
+    "name": "chalk",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "js-yaml",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "debug",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "lazy-val",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "temp-file",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@noble/hashes",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ci-info",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "semver",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "tiny-async-pool",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "typedoc",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@aws-sdk/credential-provider-ini",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/credential-provider-sso",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/nested-clients",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/plugin-transform-modules-commonjs",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@changesets/cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/faster",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/module-type-aliases",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/plugin-client-redirects",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    264
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "docker",
+     "path": "docker/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@electron-builder/monorepo",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@electron-builder/app-builder-lib-helpers",
+     "path": "packages/app-builder-lib/helpers/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "app-builder-lib",
+     "path": "packages/app-builder-lib/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "builder-util",
+      "builder-util-runtime",
+      "dmg-builder",
+      "electron-builder-squirrel-windows",
+      "electron-publish"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "builder-util-runtime",
+     "path": "packages/builder-util-runtime/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "builder-util",
+     "path": "packages/builder-util/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "builder-util-runtime"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "dmg-builder",
+     "path": "packages/dmg-builder/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib",
+      "builder-util",
+      "builder-util-runtime"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-builder-squirrel-windows",
+     "path": "packages/electron-builder-squirrel-windows/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib",
+      "builder-util"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-builder",
+     "path": "packages/electron-builder/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib",
+      "builder-util",
+      "builder-util-runtime",
+      "dmg-builder",
+      "electron-publish"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-forge-maker-appimage",
+     "path": "packages/electron-forge-maker-appimage/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-forge-maker-nsis-web",
+     "path": "packages/electron-forge-maker-nsis-web/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-forge-maker-nsis",
+     "path": "packages/electron-forge-maker-nsis/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-forge-maker-snap",
+     "path": "packages/electron-forge-maker-snap/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "app-builder-lib"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-publish",
+     "path": "packages/electron-publish/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "builder-util",
+      "builder-util-runtime"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "electron-updater",
+     "path": "packages/electron-updater/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "builder-util-runtime"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@electron-builder/website",
+     "path": "website/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 16,
+   "edges": 23,
+   "cycles": [
+    {
+     "ecosystem": "npm",
+     "packages": [
+      "app-builder-lib",
+      "dmg-builder",
+      "electron-builder-squirrel-windows"
+     ]
+    }
+   ],
+   "maxDepth": 4,
+   "topFanIn": [
+    {
+     "name": "app-builder-lib",
+     "ecosystem": "npm",
+     "dependents": 7
+    },
+    {
+     "name": "builder-util-runtime",
+     "ecosystem": "npm",
+     "dependents": 6
+    },
+    {
+     "name": "builder-util",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "dmg-builder",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "electron-publish",
+     "ecosystem": "npm",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 16,
+    "edges": 23
+   },
+   "nodes": [
+    {
+     "id": "app-builder-lib",
+     "dir": "packages/app-builder-lib",
+     "ecosystem": "npm",
+     "dependencies": 5,
+     "dependents": 7,
+     "depth": 3
+    },
+    {
+     "id": "builder-util-runtime",
+     "dir": "packages/builder-util-runtime",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 6,
+     "depth": 0
+    },
+    {
+     "id": "builder-util",
+     "dir": "packages/builder-util",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "dmg-builder",
+     "dir": "packages/dmg-builder",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "electron-publish",
+     "dir": "packages/electron-publish",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "electron-builder-squirrel-windows",
+     "dir": "packages/electron-builder-squirrel-windows",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "@electron-builder/app-builder-lib-helpers",
+     "dir": "packages/app-builder-lib/helpers",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website",
+     "dir": "website",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "docker",
+     "dir": "docker",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "electron-builder",
+     "dir": "packages/electron-builder",
+     "ecosystem": "npm",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "electron-forge-maker-appimage",
+     "dir": "packages/electron-forge-maker-appimage",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "electron-forge-maker-nsis",
+     "dir": "packages/electron-forge-maker-nsis",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "electron-forge-maker-nsis-web",
+     "dir": "packages/electron-forge-maker-nsis-web",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "electron-forge-maker-snap",
+     "dir": "packages/electron-forge-maker-snap",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "electron-updater",
+     "dir": "packages/electron-updater",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "app-builder-lib",
+     "to": "builder-util",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "dmg-builder",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "electron-builder-squirrel-windows",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "electron-publish",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "builder-util",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "dmg-builder",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "dmg-builder",
+     "to": "builder-util",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "dmg-builder",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder-squirrel-windows",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder-squirrel-windows",
+     "to": "builder-util",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder",
+     "to": "builder-util",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder",
+     "to": "dmg-builder",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-builder",
+     "to": "electron-publish",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-forge-maker-appimage",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-forge-maker-nsis-web",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-forge-maker-nsis",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-forge-maker-snap",
+     "to": "app-builder-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-publish",
+     "to": "builder-util",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-publish",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "electron-updater",
+     "to": "builder-util-runtime",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "package-cycle",
+     "subject": "app-builder-lib ↔ dmg-builder ↔ electron-builder-squirrel-windows",
+     "numbers": {
+      "packages": 3,
+      "packagesOf": 16
+     },
+     "threshold": null,
+     "detail": "npm manifest dependencies"
+    }
+   ],
+   "flagCounts": {
+    "package-cycle": 1
+   },
+   "depth": 4,
+   "chain": [
+    "electron-builder",
+    "app-builder-lib + dmg-builder + electron-builder-squirrel-windows",
+    "electron-publish",
+    "builder-util",
+    "builder-util-runtime"
+   ],
+   "topFanIn": [
+    {
+     "name": "app-builder-lib",
+     "ecosystem": "npm",
+     "dependents": 7
+    },
+    {
+     "name": "builder-util-runtime",
+     "ecosystem": "npm",
+     "dependents": 6
+    },
+    {
+     "name": "builder-util",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "dmg-builder",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "electron-publish",
+     "ecosystem": "npm",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 21,
+    "edges": 23,
+    "packages": 16,
+    "packagesWithEntries": 12,
+    "filesRead": 168
+   },
+   "nodes": [
+    {
+     "id": "app-builder-lib#.",
+     "pkg": "app-builder-lib",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 7,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/app-builder-lib/src/index.ts",
+     "guessed": true,
+     "reexports": 80,
+     "stars": 0,
+     "barrel": false,
+     "overload": 560
+    },
+    {
+     "id": "app-builder-lib#./internal",
+     "pkg": "app-builder-lib",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 3,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/app-builder-lib/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 59,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 177,
+     "overloadAtMost": 413
+    },
+    {
+     "id": "builder-util#.",
+     "pkg": "builder-util",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 5,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/builder-util/src/util.ts",
+     "guessed": true,
+     "reexports": 31,
+     "stars": 6,
+     "barrel": false,
+     "overload": 155
+    },
+    {
+     "id": "builder-util-runtime#.",
+     "pkg": "builder-util-runtime",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 6,
+      "files": null
+     },
+     "dependents": 11,
+     "loads": null,
+     "file": "packages/builder-util-runtime/src/index.ts",
+     "guessed": true,
+     "reexports": 16,
+     "stars": 0,
+     "barrel": false,
+     "overload": 96
+    },
+    {
+     "id": "electron-publish#.",
+     "pkg": "electron-publish",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": "packages/electron-publish/src/index.ts",
+     "guessed": true,
+     "reexports": 11,
+     "stars": 0,
+     "barrel": false,
+     "overload": 22
+    },
+    {
+     "id": "builder-util#./internal",
+     "pkg": "builder-util",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 4,
+      "atMost": 5,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/builder-util/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 3,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 12,
+     "overloadAtMost": 15
+    },
+    {
+     "id": "builder-util-runtime#./internal",
+     "pkg": "builder-util-runtime",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 2,
+      "atMost": 6,
+      "files": null
+     },
+     "dependents": 11,
+     "loads": null,
+     "file": "packages/builder-util-runtime/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 4,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 8,
+     "overloadAtMost": 24
+    },
+    {
+     "id": "electron-publish#./internal",
+     "pkg": "electron-publish",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": "packages/electron-publish/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 3,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 3,
+     "overloadAtMost": 6
+    },
+    {
+     "id": "dmg-builder#./internal",
+     "pkg": "dmg-builder",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/dmg-builder/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 2,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 4
+    },
+    {
+     "id": "dmg-builder#.",
+     "pkg": "dmg-builder",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/dmg-builder/src/dmgUtil.ts",
+     "guessed": true,
+     "reexports": 1,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 2
+    },
+    {
+     "id": "electron-builder-squirrel-windows#.",
+     "pkg": "electron-builder-squirrel-windows",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/electron-builder-squirrel-windows/src/SquirrelWindowsTarget.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "electron-builder-squirrel-windows#./internal",
+     "pkg": "electron-builder-squirrel-windows",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": "packages/electron-builder-squirrel-windows/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "electron-builder#.",
+     "pkg": "electron-builder",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-builder/src/index.ts",
+     "guessed": true,
+     "reexports": 83,
+     "stars": 0,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "electron-updater#.",
+     "pkg": "electron-updater",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-updater/src/index.ts",
+     "guessed": true,
+     "reexports": 26,
+     "stars": 1,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-updater#./internal",
+     "pkg": "electron-updater",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-updater/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 4,
+     "stars": 1,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "electron-builder#./internal",
+     "pkg": "electron-builder",
+     "key": "./internal",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-builder/src/indexInternal.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-forge-maker-appimage#.",
+     "pkg": "electron-forge-maker-appimage",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-forge-maker-appimage/main.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-forge-maker-nsis-web#.",
+     "pkg": "electron-forge-maker-nsis-web",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-forge-maker-nsis-web/main.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-forge-maker-nsis#.",
+     "pkg": "electron-forge-maker-nsis",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-forge-maker-nsis/main.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-forge-maker-snap#.",
+     "pkg": "electron-forge-maker-snap",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-forge-maker-snap/main.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "electron-updater#./package.json",
+     "pkg": "electron-updater",
+     "key": "./package.json",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/electron-updater/package.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "app-builder-lib",
+     "to": "builder-util",
+     "files": null
+    },
+    {
+     "from": "dmg-builder",
+     "to": "builder-util",
+     "files": null
+    },
+    {
+     "from": "electron-builder-squirrel-windows",
+     "to": "builder-util",
+     "files": null
+    },
+    {
+     "from": "electron-builder",
+     "to": "builder-util",
+     "files": null
+    },
+    {
+     "from": "electron-publish",
+     "to": "builder-util",
+     "files": null
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "builder-util",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "dmg-builder",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "electron-builder",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "electron-publish",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "electron-updater",
+     "to": "builder-util-runtime",
+     "files": null
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "dmg-builder",
+     "files": null
+    },
+    {
+     "from": "electron-builder",
+     "to": "dmg-builder",
+     "files": null
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "electron-builder-squirrel-windows",
+     "files": null
+    },
+    {
+     "from": "app-builder-lib",
+     "to": "electron-publish",
+     "files": null
+    },
+    {
+     "from": "electron-builder",
+     "to": "electron-publish",
+     "files": null
+    },
+    {
+     "from": "dmg-builder",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-builder-squirrel-windows",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-builder",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-forge-maker-appimage",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-forge-maker-nsis-web",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-forge-maker-nsis",
+     "to": "app-builder-lib",
+     "files": null
+    },
+    {
+     "from": "electron-forge-maker-snap",
+     "to": "app-builder-lib",
+     "files": null
+    }
+   ],
+   "flags": [
+    {
+     "kind": "overloaded-entry",
+     "subject": "app-builder-lib#.",
+     "numbers": {
+      "reexports": 80,
+      "importerPackages": 7,
+      "overload": 560,
+      "dependents": 7,
+      "packagesOf": 16
+     },
+     "threshold": {
+      "reexports": 20,
+      "importerPackages": 3
+     }
+    },
+    {
+     "kind": "overloaded-entry",
+     "subject": "app-builder-lib#./internal",
+     "numbers": {
+      "reexports": 59,
+      "importerPackages": 3,
+      "importerPackagesAtMost": 7,
+      "overload": 177,
+      "dependents": 7,
+      "packagesOf": 16
+     },
+     "threshold": {
+      "reexports": 20,
+      "importerPackages": 3
+     },
+     "detail": "importers seen in the files read, so at least that many; more may import it in files not read"
+    },
+    {
+     "kind": "overloaded-entry",
+     "subject": "builder-util#.",
+     "numbers": {
+      "reexports": 31,
+      "importerPackages": 5,
+      "overload": 155,
+      "dependents": 9,
+      "packagesOf": 16
+     },
+     "threshold": {
+      "reexports": 20,
+      "importerPackages": 3
+     }
+    }
+   ],
+   "flagCounts": {
+    "overloaded-entry": 3
+   },
+   "rootBarrels": 0,
+   "withStars": 4,
+   "worst": {
+    "id": "app-builder-lib#.",
+    "reexports": 80,
+    "importerPackages": 7,
+    "exact": true,
+    "overload": 560,
+    "dependents": 7,
+    "packagesOf": 16,
+    "share": 0.4375
+   },
+   "unknown": [
+    "8 entries of 21 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 61,
+    "edges": 19,
+    "cached": 0,
+    "trackedFiles": 1825
+   },
+   "nodes": [
+    {
+     "id": "@electron-builder/monorepo#//",
+     "pkg": "@electron-builder/monorepo",
+     "name": "//",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#///",
+     "pkg": "@electron-builder/monorepo",
+     "name": "///",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#changelog",
+     "pkg": "@electron-builder/monorepo",
+     "name": "changelog",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:publish",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:publish",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:count",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:count",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:fetch-cache",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:fetch-cache",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:generate",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:merge-cache",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:merge-cache",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:merge-reports",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:merge-reports",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:clean",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:print",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:print",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:start",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:start:linux",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:start:linux",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:start:mac",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:start:mac",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:refresh:start:windows",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:refresh:start:windows",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:test:summary",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:test:summary",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:validate",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:validate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@electron-builder/monorepo#ci:version",
+     "pkg": "@electron-builder/monorepo",
+     "name": "ci:version",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@electron-builder/monorepo#compile",
+     "pkg": "@electron-builder/monorepo",
+     "name": "compile",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@electron-builder/monorepo#compile:watch",
+     "pkg": "@electron-builder/monorepo",
+     "name": "compile:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#docker-images",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docker-images",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#docs:all",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docs:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@electron-builder/monorepo#docs:build",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docs:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#docs:dev",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docs:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#docs:prebuild",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docs:prebuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#docs:preview",
+     "pkg": "@electron-builder/monorepo",
+     "name": "docs:preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#format",
+     "pkg": "@electron-builder/monorepo",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#format:check",
+     "pkg": "@electron-builder/monorepo",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#generate:all",
+     "pkg": "@electron-builder/monorepo",
+     "name": "generate:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@electron-builder/monorepo#generate:changeset",
+     "pkg": "@electron-builder/monorepo",
+     "name": "generate:changeset",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#generate:schema",
+     "pkg": "@electron-builder/monorepo",
+     "name": "generate:schema",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#lint",
+     "pkg": "@electron-builder/monorepo",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#lint-deps",
+     "pkg": "@electron-builder/monorepo",
+     "name": "lint-deps",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#pretest",
+     "pkg": "@electron-builder/monorepo",
+     "name": "pretest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@electron-builder/monorepo#test:all",
+     "pkg": "@electron-builder/monorepo",
+     "name": "test:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@electron-builder/monorepo#test:linux",
+     "pkg": "@electron-builder/monorepo",
+     "name": "test:linux",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#typecheck",
+     "pkg": "@electron-builder/monorepo",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/monorepo#typecheck:test",
+     "pkg": "@electron-builder/monorepo",
+     "name": "typecheck:test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@electron-builder/website#build",
+     "pkg": "@electron-builder/website",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website#clear",
+     "pkg": "@electron-builder/website",
+     "name": "clear",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website#docusaurus",
+     "pkg": "@electron-builder/website",
+     "name": "docusaurus",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website#serve",
+     "pkg": "@electron-builder/website",
+     "name": "serve",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website#start",
+     "pkg": "@electron-builder/website",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@electron-builder/website#swizzle",
+     "pkg": "@electron-builder/website",
+     "name": "swizzle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "app-builder-lib#build",
+     "pkg": "app-builder-lib",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "app-builder-lib#watch",
+     "pkg": "app-builder-lib",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "builder-util-runtime#build",
+     "pkg": "builder-util-runtime",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "builder-util-runtime#watch",
+     "pkg": "builder-util-runtime",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "builder-util#build",
+     "pkg": "builder-util",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "builder-util#watch",
+     "pkg": "builder-util",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "dmg-builder#build",
+     "pkg": "dmg-builder",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "dmg-builder#watch",
+     "pkg": "dmg-builder",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-builder-squirrel-windows#build",
+     "pkg": "electron-builder-squirrel-windows",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-builder-squirrel-windows#watch",
+     "pkg": "electron-builder-squirrel-windows",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-builder#build",
+     "pkg": "electron-builder",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-builder#watch",
+     "pkg": "electron-builder",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-publish#build",
+     "pkg": "electron-publish",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-publish#watch",
+     "pkg": "electron-publish",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-updater#build",
+     "pkg": "electron-updater",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "electron-updater#watch",
+     "pkg": "electron-updater",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@electron-builder/monorepo#compile",
+     "to": "@electron-builder/monorepo#ci:test:generate",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#typecheck:test",
+     "to": "@electron-builder/monorepo#ci:test:generate",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#pretest",
+     "to": "@electron-builder/monorepo#lint-deps",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#pretest",
+     "to": "@electron-builder/monorepo#lint",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#pretest",
+     "to": "@electron-builder/monorepo#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#pretest",
+     "to": "@electron-builder/monorepo#typecheck:test",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#test:all",
+     "to": "@electron-builder/monorepo#compile",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#test:all",
+     "to": "@electron-builder/monorepo#pretest",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#test:all",
+     "to": "@electron-builder/monorepo#ci:test",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:validate",
+     "to": "@electron-builder/monorepo#pretest",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:validate",
+     "to": "@electron-builder/monorepo#generate:all",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:version",
+     "to": "@electron-builder/monorepo#changelog",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:version",
+     "to": "@electron-builder/monorepo#compile",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:version",
+     "to": "@electron-builder/monorepo#generate:all",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#ci:publish",
+     "to": "@electron-builder/monorepo#compile",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#generate:all",
+     "to": "@electron-builder/monorepo#generate:schema",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#generate:all",
+     "to": "@electron-builder/monorepo#format",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#docs:all",
+     "to": "@electron-builder/monorepo#docs:prebuild",
+     "how": "calls"
+    },
+    {
+     "from": "@electron-builder/monorepo#docs:all",
+     "to": "@electron-builder/monorepo#docs:build",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 4,
+   "chain": [
+    "@electron-builder/monorepo#test:all",
+    "@electron-builder/monorepo#pretest",
+    "@electron-builder/monorepo#typecheck:test",
+    "@electron-builder/monorepo#ci:test:generate"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 11,
+    "edges": 17,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Test e2e Auto Updater Linux (archlinux-pacman)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 16.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Snap (core24)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 13.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Validate and plan shards",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Snap (core22)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 12.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Snap (core20)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 12.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-rpm-update)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Snap (core18)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 12.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (appimage-update-rules)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-yum-update)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 6.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (debian-dpkg)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-dnf-update)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 8.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (appimage-install)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 13.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-zypper-update)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-yum-signing)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-rpm-signing)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (appimage-update)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 50.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (debian-apt)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 16.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-install)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 23.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-dnf-signing)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test e2e Auto Updater Linux (rpm-zypper-signing)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Check for Docker image changes",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Updater",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 11.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Flatpak",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 19.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Linux (Shard 0)",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build",
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 26,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Linux (Shard 2)",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build",
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 25.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Linux (Shard 3)",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build",
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 22.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test macOS (Shard 2)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 25.4,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test macOS (Shard 3)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 19.7,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test macOS (Shard 1)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 14,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test Linux (Shard 1)",
+     "needs": [
+      "check-if-docker-build",
+      "run-docker-build",
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 29,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test macOS (Shard 0)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 10.2,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test macOS (Shard 5)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 23.1,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test macOS (Shard 4)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 18.6,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Test Windows (Shard 0)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 41.4,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 2)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 29.5,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 8)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 23.1,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 3)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 32.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 6)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 28.6,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 7)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 28.6,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 1)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 26.6,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 9)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 29.8,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 5)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 26.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test Windows (Shard 4)",
+     "needs": [
+      "validate-and-shard"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 34.9,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Merge smart cache and test reports",
+     "needs": [
+      "test-linux",
+      "test-windows",
+      "test-macos",
+      "test-e2e",
+      "test-updater",
+      "test-snap",
+      "test-flatpak"
+     ],
+     "onPath": true,
+     "blockedMin": 50.9,
+     "queueMin": 0,
+     "workMin": 1.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Test Updater",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Updater",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Flatpak",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Flatpak",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 0)",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 0)",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 0)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Linux (Shard 2)",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 2)",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 2)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Linux (Shard 3)",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 3)",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 3)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 2)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 3)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 1)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Linux (Shard 1)",
+     "to": "check-if-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 1)",
+     "to": "run-docker-build"
+    },
+    {
+     "from": "Test Linux (Shard 1)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 0)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 5)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test macOS (Shard 4)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 0)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 2)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 8)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 3)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 6)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 7)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 1)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 9)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 5)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Test Windows (Shard 4)",
+     "to": "validate-and-shard"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-linux"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-windows"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-macos"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-e2e"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-updater"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-snap"
+    },
+    {
+     "from": "Merge smart cache and test reports",
+     "to": "test-flatpak"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Test e2e Auto Updater Linux (appimage-update)",
+    "Merge smart cache and test reports"
+   ],
+   "pathMinP50": 43.5,
+   "unknown": [
+    "\"run-docker-build\" calls $/.github/workflows/docker-build.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 168,
+   "calls": 3
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Test Windows (#)\": the slowest shard takes 1.35× the median, 24% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "3% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Split app-builder-lib#.: it re-exports 80 modules to 7 packages, so an edit to any of them reaches all of those packages' checks; give each area its own entry, listed by name, not `export *`",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#export-paths-what-an-edit-triggers"
+  },
+  {
+   "text": "Packages depend on each other in a cycle, app-builder-lib ↔ dmg-builder ↔ electron-builder-squirrel-windows: break it, so an edit to one stops reaching the rest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#package-dependencies-declared-and-checked"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 91,
+ "read": {
+  "calls": 91,
+  "fromCache": 0
+ }
+}

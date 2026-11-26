@@ -1,0 +1,660 @@
+{
+ "repo": "pgEdge/spock",
+ "date": "2026-11-24",
+ "scorerVersion": "0.3.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3.9,
+  "stars": 770,
+  "forks": 60,
+  "languages": [
+   [
+    "C",
+    44
+   ],
+   [
+    "Perl",
+    28
+   ],
+   [
+    "Shell",
+    14
+   ],
+   [
+    "PLpgSQL",
+    14
+   ]
+  ],
+  "linesOfCode": 44204,
+  "files": 489,
+  "sourceFiles": 80,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 44204,
+   "tests": 0,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 15.3,
+  "commitsPerWeekYear": 12,
+  "pace": 0.9,
+  "activeAuthors28d": 10,
+  "prsOpenedPerWeek": 18.8,
+  "prsMergedPerWeek": 14.1,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 20.1,
+   "p90": 48.7,
+   "n": 15
+  },
+  "prRunsPerDay": 24.4,
+  "runsPerMergedPr": 12.1
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 182,
+  "runsInPeriod": 182,
+  "truncated": false,
+  "mainDays": 7.5
+ },
+ "size": "small",
+ "headsPerWeek": 37,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 17,
+  "reliability": 65,
+  "efficiency": 56
+ },
+ "detail": {
+  "speed": {
+   "wait": 23,
+   "forSize": 1,
+   "tail": 41
+  },
+  "reliability": {
+   "flakes": 39,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 64,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1363.4,
+  "prBilledMinutesPerDay": 1431.2,
+  "jobMinutesPerMergedPr": 677.4,
+  "prVcpuMinutesPerDay": 5453.7,
+  "vcpuMinutesPerMergedPr": 2709.7,
+  "expectedVcpuMinutesPerMergedPr": 473.6,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 118.4,
+  "expectedWait": 14.8,
+  "workflowsOnPrs": 6
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 39,
+  "ranHeads": 39,
+  "timed": 31,
+  "p50": 36.166666666666664,
+  "p75": 38.05,
+  "p90": 39.016666666666666,
+  "redRate": 0.3076923076923077,
+  "rerunRate": 0.1282051282051282,
+  "passedOnRerunRate": 0.07692307692307693,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.05128205128205128,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 2,
+  "bots": [
+   [
+    "coderabbitai[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "policy-ci-gate",
+    26
+   ],
+   [
+    "Running Regression Tests and Spockbench",
+    5
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/policy-ci-gate.yml",
+  "redBy": [
+   [
+    "policy-ci-gate",
+    12
+   ],
+   [
+    "Running Regression Tests and Spockbench",
+    3
+   ],
+   [
+    "Check pgindent formatting",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Running Regression Tests and Spockbench",
+   "Regression tests compiled with SPOCK_RANDOM_DELAYS",
+   "policy-ci-gate"
+  ],
+  "allPushesP50": 36.166666666666664
+ },
+ "main": {
+  "heads": 6,
+  "p50": 4.433333333333334,
+  "p90": 4.833333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.061855670103092786,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 36.68333333333333,
+  "jobMinutes": 36.65,
+  "billedMinutes": 37,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0,
+  "setupMinPerJob": 0,
+  "critical": {
+   "name": "ci-gate",
+   "minutes": 36.65,
+   "shareOfSpan": 0.9990913221263062
+  },
+  "longest": {
+   "name": "ci-gate",
+   "minutes": 36.65
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/policy-ci-gate.yml"
+  ],
+  "gateEnd": [
+   {
+    "name": "ci-gate",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "ci-gate",
+    "minutes": 36.7,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 36.7,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 36.7,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 36.7,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": [
+    {
+     "step": "ci-gate: Wait for all other checks to pass",
+     "runs": 6
+    }
+   ]
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   ".github/workflows/policy-ci-gate.yml couldn't be found, so its jobs are taken as waiting on nothing"
+  ],
+  "perRun": [
+   {
+    "id": 45357570688,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 38.9,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 38.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 38.8,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45355775293,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 40.5,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 40.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 40.4,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45354984354,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 40.4,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 40.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 40.3,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45352903283,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 30.3,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 30.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.3,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45310034605,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 29.1,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 29.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45156526852,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 36.7,
+    "path": [
+     "ci-gate"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "ci-gate",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 36.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.7,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": null,
+  "affected": null,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": true,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/release.yml",
+    "kind": "job"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/build-werror.yml",
+   "scheduled": ".github/workflows/build-werror.yml",
+   "depCache": ".github/workflows/build-werror.yml",
+   "timeouts": ".github/workflows/build-werror.yml",
+   "agentRules": ".claude/skills/spock-commit-review/SKILL.md"
+  },
+  "unknown": [
+   ".github/workflows/release.yml calls a local action that isn't in the tree",
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "affected: .github/workflows/release.yml hints at it, in a form the scorer doesn't check (job)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    44
+   ],
+   [
+    "Perl",
+    28
+   ],
+   [
+    "Shell",
+    14
+   ],
+   [
+    "PLpgSQL",
+    14
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 489
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "ci-gate",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 38.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "ci-gate"
+   ],
+   "pathMinP50": 36.7,
+   "unknown": [
+    ".github/workflows/policy-ci-gate.yml couldn't be found, so its jobs are taken as waiting on nothing"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "8% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 60,
+ "read": {
+  "calls": 60,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

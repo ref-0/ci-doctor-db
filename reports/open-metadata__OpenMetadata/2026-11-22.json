@@ -1,0 +1,2705 @@
+{
+ "repo": "open-metadata/OpenMetadata",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 5.3,
+  "stars": 15831,
+  "forks": 2531,
+  "languages": [
+   [
+    "TypeScript",
+    41
+   ],
+   [
+    "Java",
+    40
+   ],
+   [
+    "Python",
+    17
+   ],
+   [
+    "Less",
+    0
+   ]
+  ],
+  "linesOfCode": 4946390,
+  "files": 27546,
+  "sourceFiles": 17300,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2224323,
+   "tests": 2256522,
+   "integration": 449032,
+   "support": 16513
+  },
+  "testShare": 0.5503138911807023,
+  "packages": {
+   "npm": 3,
+   "cargo": 0,
+   "go": 0,
+   "python": 3
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 127.8,
+  "pace": 1.9,
+  "activeAuthors28d": "≥54",
+  "prsOpenedPerWeek": 428,
+  "prsMergedPerWeek": 351,
+  "botShareOfMergedPrs": 9,
+  "openToMergeHours": {
+   "p50": 2.7,
+   "p90": 76.1,
+   "n": 91
+  },
+  "prRunsPerDay": 1279.9,
+  "runsPerMergedPr": 25.5
+ },
+ "window": {
+  "days": 0.9,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.8
+ },
+ "size": "large",
+ "headsPerWeek": 642,
+ "score": 42,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 30,
+  "reliability": 58,
+  "efficiency": 61
+ },
+ "detail": {
+  "speed": {
+   "wait": 25,
+   "forSize": 41,
+   "tail": 20
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 34,
+   "setup": 0,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1933.6,
+  "prBilledMinutesPerDay": 2720.4,
+  "jobMinutesPerMergedPr": 38.6,
+  "expectedMinutesPerMergedPr": 561.6,
+  "expectedWait": 26.7,
+  "workflowsOnPrs": 18
+ },
+ "wait": {
+  "heads": 86,
+  "timed": 9,
+  "p50": 34.53333333333333,
+  "p75": 42.35,
+  "p90": 68.43333333333334,
+  "redRate": 0.5813953488372093,
+  "rerunRate": 0.06976744186046512,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.09302325581395349,
+  "botHeads": 27,
+  "lightHeads": 36,
+  "neverRan": 0,
+  "botPushes": 54,
+  "bots": [
+   [
+    "detail-app[bot]",
+    49
+   ],
+   [
+    "greptile-apps[bot]",
+    5
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "OpenMetadata Service Unit Tests",
+    4
+   ],
+   [
+    "py-operator-build-test",
+    4
+   ],
+   [
+    "py-tests-postgres",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "PR Metadata Validation",
+    54
+   ],
+   [
+    "OpenMetadata Service Unit Tests",
+    22
+   ],
+   [
+    "Python Checkstyle",
+    4
+   ]
+  ],
+  "leftOut": [
+   "PR Auto Assign"
+  ],
+  "heavyWorkflows": [
+   "py-operator-build-test",
+   "Maven SonarCloud CI"
+  ],
+  "allPushesP50": 2.8666666666666667
+ },
+ "main": {
+  "heads": 46,
+  "p50": 64.86666666666666,
+  "p90": 72.16666666666667,
+  "redRate": 1,
+  "redBy": [
+   [
+    "Merge Queue Dequeue Report",
+    46
+   ],
+   [
+    "Integration Tests - PostgreSQL + Elasticsearch + Redis",
+    18
+   ],
+   [
+    "Integration Tests - MySQL + Elasticsearch",
+    16
+   ]
+  ]
+ },
+ "botRunShare": 0.488,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 0.45,
+  "jobMinutes": 0.39999999999999997,
+  "billedMinutes": 2,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.9166666666666666,
+  "critical": {
+   "name": "openmetadata-service-unit-tests-status",
+   "minutes": 0.05,
+   "shareOfSpan": 0.1
+  },
+  "longest": {
+   "name": "Detect Changes",
+   "minutes": 0.3333333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/openmetadata-service-unit-tests.yml"
+  ],
+  "jobs": 5,
+  "edges": 7,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "openmetadata-service-unit-tests-status",
+    "runs": 5
+   },
+   {
+    "name": "Detect Changes",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Detect Changes",
+    "minutes": 0.4,
+    "share": 0.8,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.3
+   },
+   {
+    "name": "openmetadata-service-unit-tests-status",
+    "minutes": 0.1,
+    "share": 0.2,
+    "blockedMin": 0.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 2,
+  "pathMinP50": 0.5,
+  "blockedMinP50": 0.4,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.4,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "openmetadata-service-unit-tests",
+    "runs": 1,
+    "heldJobs": 1,
+    "jobs": 3,
+    "tookMin": 34.1,
+    "heldJobMin": 34.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44940405238,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 34.5,
+    "path": [
+     "Detect Changes",
+     "openmetadata-service-unit-tests",
+     "openmetadata-service-unit-tests-status"
+    ],
+    "topBlocker": "openmetadata-service-unit-tests",
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 34.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests-status",
+      "needs": [
+       "changes",
+       "openmetadata-service-unit-tests",
+       "k8s_operator-unit-tests",
+       "docker-image-smoke-test"
+      ],
+      "readyMin": 34.5,
+      "createdMin": 34.5,
+      "startMin": 34.5,
+      "endMin": 34.5,
+      "blockedMin": 34.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44894632130,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.5,
+    "path": [
+     "Detect Changes",
+     "openmetadata-service-unit-tests-status"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests-status",
+      "needs": [
+       "changes",
+       "openmetadata-service-unit-tests",
+       "k8s_operator-unit-tests",
+       "docker-image-smoke-test"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44894121331,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.5,
+    "path": [
+     "Detect Changes",
+     "openmetadata-service-unit-tests-status"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests-status",
+      "needs": [
+       "changes",
+       "openmetadata-service-unit-tests",
+       "k8s_operator-unit-tests",
+       "docker-image-smoke-test"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44891829923,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.5,
+    "path": [
+     "Detect Changes",
+     "openmetadata-service-unit-tests-status"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests-status",
+      "needs": [
+       "changes",
+       "openmetadata-service-unit-tests",
+       "k8s_operator-unit-tests",
+       "docker-image-smoke-test"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44891816139,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "Detect Changes"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44891805923,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.4,
+    "path": [
+     "Detect Changes",
+     "openmetadata-service-unit-tests-status"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "openmetadata-service-unit-tests-status",
+      "needs": [
+       "changes",
+       "openmetadata-service-unit-tests",
+       "k8s_operator-unit-tests",
+       "docker-image-smoke-test"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 62,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "unknown": [
+   "Read the first 40 of 62 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    41
+   ],
+   [
+    "Java",
+    40
+   ],
+   [
+    "Python",
+    17
+   ],
+   [
+    "Less",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv"
+   ],
+   "tools": [
+    "Maven",
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 3,
+   "cargo": 0,
+   "go": 0,
+   "python": 3
+  },
+  "testRunners": [
+   "Vitest",
+   "Jest",
+   "Playwright",
+   "node:test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@internationalized/date",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@react-aria/utils",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@react-stately/utils",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@tailwindcss/typography",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@tailwindcss/vite",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@testing-library/jest-dom",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@testing-library/react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@testing-library/user-event",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "echarts",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "echarts-for-react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "eslint-config-prettier",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "eslint-plugin-react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "eslint-plugin-react-hooks",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "i18next",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "i18next-json-sync",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "input-otp",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react-aria",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react-aria-components",
+    "ecosystem": "npm",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md",
+   ".claude/skills",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "mock-oidc-provider",
+     "path": "docker/development/mock-oidc-provider/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "openmetadata-ingestion",
+     "path": "ingestion/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "openmetadata-managed-apis",
+     "path": "openmetadata-airflow-apis/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "@openmetadata/ui-core-components",
+     "path": "openmetadata-ui-core-components/src/main/resources/ui/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 9,
+      "root": true
+     }
+    },
+    {
+     "name": "open-metadata",
+     "path": "openmetadata-ui/src/main/resources/ui/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@openmetadata/ui-core-components"
+     ],
+     "exports": false
+    }
+   ],
+   "count": 5,
+   "edges": 1,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "@openmetadata/ui-core-components",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 5,
+    "edges": 1
+   },
+   "nodes": [
+    {
+     "id": "@openmetadata/ui-core-components",
+     "dir": "openmetadata-ui-core-components/src/main/resources/ui",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mock-oidc-provider",
+     "dir": "docker/development/mock-oidc-provider",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "open-metadata",
+     "dir": "openmetadata-ui/src/main/resources/ui",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "openmetadata-ingestion",
+     "dir": "ingestion",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "openmetadata-managed-apis",
+     "dir": "openmetadata-airflow-apis",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "open-metadata",
+     "to": "@openmetadata/ui-core-components",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "open-metadata",
+    "@openmetadata/ui-core-components"
+   ],
+   "topFanIn": [
+    {
+     "name": "@openmetadata/ui-core-components",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 10,
+    "edges": 1,
+    "packages": 3,
+    "packagesWithEntries": 2,
+    "filesRead": 3
+   },
+   "nodes": [
+    {
+     "id": "@openmetadata/ui-core-components#./globals.css",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./globals.css",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "openmetadata-ui-core-components/src/main/resources/ui/src/styles/globals.css",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "mock-oidc-provider#.",
+     "pkg": "mock-oidc-provider",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "docker/development/mock-oidc-provider/server.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#.",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./charts",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./charts",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./colors",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./colors",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./components",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./components",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./icon",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./icon",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./icons",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./icons",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./locale",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./locale",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@openmetadata/ui-core-components#./utils",
+     "pkg": "@openmetadata/ui-core-components",
+     "key": "./utils",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "open-metadata",
+     "to": "@openmetadata/ui-core-components",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 10 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "8 entries of 10 unknown, such as @openmetadata/ui-core-components#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 91,
+    "edges": 35,
+    "cached": 0,
+    "trackedFiles": 27546
+   },
+   "nodes": [
+    {
+     "id": "@openmetadata/ui-core-components#build",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#build-storybook",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#build:watch",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "build:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#check-i18n",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "check-i18n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@openmetadata/ui-core-components#check-i18n-all",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "check-i18n-all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@openmetadata/ui-core-components#check-i18n-keys",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "check-i18n-keys",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#check-locale-parity",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "check-locale-parity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#check-translations-not-english",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "check-translations-not-english",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#clean",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#dev",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#i18n",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "i18n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#icons:generate",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "icons:generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#lint",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#lint:base",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "lint:base",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#lint:fix",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#prepublishOnly",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "prepublishOnly",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@openmetadata/ui-core-components#pretty",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "pretty",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#pretty:base",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "pretty:base",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#pretty:check",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "pretty:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#storybook",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#test",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#test:native-build",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "test:native-build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#test:watch",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#type-check",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "type-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#type-check:tsrs",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "type-check:tsrs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@openmetadata/ui-core-components#ui-checkstyle:changed",
+     "pkg": "@openmetadata/ui-core-components",
+     "name": "ui-checkstyle:changed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mock-oidc-provider#start",
+     "pkg": "mock-oidc-provider",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#analyze",
+     "pkg": "open-metadata",
+     "name": "analyze",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#build",
+     "pkg": "open-metadata",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#build-check",
+     "pkg": "open-metadata",
+     "name": "build-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#build:release",
+     "pkg": "open-metadata",
+     "name": "build:release",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#bundle:check",
+     "pkg": "open-metadata",
+     "name": "bundle:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#bundle:runtime",
+     "pkg": "open-metadata",
+     "name": "bundle:runtime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#check-i18n",
+     "pkg": "open-metadata",
+     "name": "check-i18n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#commit-check",
+     "pkg": "open-metadata",
+     "name": "commit-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#compress:brotli",
+     "pkg": "open-metadata",
+     "name": "compress:brotli",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#generate:app-docs",
+     "pkg": "open-metadata",
+     "name": "generate:app-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#generate:e2e-docs",
+     "pkg": "open-metadata",
+     "name": "generate:e2e-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#generate:playwright-rules",
+     "pkg": "open-metadata",
+     "name": "generate:playwright-rules",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#i18n",
+     "pkg": "open-metadata",
+     "name": "i18n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#js-antlr",
+     "pkg": "open-metadata",
+     "name": "js-antlr",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#knip",
+     "pkg": "open-metadata",
+     "name": "knip",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#knip:files",
+     "pkg": "open-metadata",
+     "name": "knip:files",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#license-header-check",
+     "pkg": "open-metadata",
+     "name": "license-header-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#license-header-fix",
+     "pkg": "open-metadata",
+     "name": "license-header-fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#lint",
+     "pkg": "open-metadata",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#lint:base",
+     "pkg": "open-metadata",
+     "name": "lint:base",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#lint:fix",
+     "pkg": "open-metadata",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#lint:playwright",
+     "pkg": "open-metadata",
+     "name": "lint:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#lint:playwright:suppressions",
+     "pkg": "open-metadata",
+     "name": "lint:playwright:suppressions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#lint:src:suppressions",
+     "pkg": "open-metadata",
+     "name": "lint:src:suppressions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#organize-imports",
+     "pkg": "open-metadata",
+     "name": "organize-imports",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#organize-imports:cli",
+     "pkg": "open-metadata",
+     "name": "organize-imports:cli",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#organize-imports:playwright",
+     "pkg": "open-metadata",
+     "name": "organize-imports:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#parse-schema",
+     "pkg": "open-metadata",
+     "name": "parse-schema",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#playwright:codegen",
+     "pkg": "open-metadata",
+     "name": "playwright:codegen",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#playwright:open",
+     "pkg": "open-metadata",
+     "name": "playwright:open",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#playwright:run",
+     "pkg": "open-metadata",
+     "name": "playwright:run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#playwright:visual",
+     "pkg": "open-metadata",
+     "name": "playwright:visual",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#playwright:visual:update",
+     "pkg": "open-metadata",
+     "name": "playwright:visual:update",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#postinstall",
+     "pkg": "open-metadata",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#preinstall",
+     "pkg": "open-metadata",
+     "name": "preinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#pretty",
+     "pkg": "open-metadata",
+     "name": "pretty",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#pretty:base",
+     "pkg": "open-metadata",
+     "name": "pretty:base",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#pretty:playwright",
+     "pkg": "open-metadata",
+     "name": "pretty:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#pretty:src",
+     "pkg": "open-metadata",
+     "name": "pretty:src",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "open-metadata#preview",
+     "pkg": "open-metadata",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#start",
+     "pkg": "open-metadata",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test",
+     "pkg": "open-metadata",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test:bundle-runtime",
+     "pkg": "open-metadata",
+     "name": "test:bundle-runtime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test:cov-summary",
+     "pkg": "open-metadata",
+     "name": "test:cov-summary",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test:coverage",
+     "pkg": "open-metadata",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test:eslint-rules",
+     "pkg": "open-metadata",
+     "name": "test:eslint-rules",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#test:watch",
+     "pkg": "open-metadata",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-audit",
+     "pkg": "open-metadata",
+     "name": "token-audit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-audit:report",
+     "pkg": "open-metadata",
+     "name": "token-audit:report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-drift",
+     "pkg": "open-metadata",
+     "name": "token-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-gen",
+     "pkg": "open-metadata",
+     "name": "token-gen",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-migrate",
+     "pkg": "open-metadata",
+     "name": "token-migrate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#token-test",
+     "pkg": "open-metadata",
+     "name": "token-test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tsc:check",
+     "pkg": "open-metadata",
+     "name": "tsc:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tsc:check:tsrs",
+     "pkg": "open-metadata",
+     "name": "tsc:check:tsrs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tsc:playwright",
+     "pkg": "open-metadata",
+     "name": "tsc:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tsc:playwright:tsrs",
+     "pkg": "open-metadata",
+     "name": "tsc:playwright:tsrs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tw-audit",
+     "pkg": "open-metadata",
+     "name": "tw-audit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tw-audit:report",
+     "pkg": "open-metadata",
+     "name": "tw-audit:report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#tw-guard",
+     "pkg": "open-metadata",
+     "name": "tw-guard",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#ui-checkstyle",
+     "pkg": "open-metadata",
+     "name": "ui-checkstyle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#ui-checkstyle:changed",
+     "pkg": "open-metadata",
+     "name": "ui-checkstyle:changed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "open-metadata#ui-checkstyle:playwright",
+     "pkg": "open-metadata",
+     "name": "ui-checkstyle:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "open-metadata#ui-checkstyle:playwright:changed",
+     "pkg": "open-metadata",
+     "name": "ui-checkstyle:playwright:changed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@openmetadata/ui-core-components#prepublishOnly",
+     "to": "@openmetadata/ui-core-components#clean",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#prepublishOnly",
+     "to": "@openmetadata/ui-core-components#build",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#check-i18n",
+     "to": "@openmetadata/ui-core-components#i18n",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#check-i18n-all",
+     "to": "@openmetadata/ui-core-components#check-i18n",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#check-i18n-all",
+     "to": "@openmetadata/ui-core-components#check-i18n-keys",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#check-i18n-all",
+     "to": "@openmetadata/ui-core-components#check-locale-parity",
+     "how": "calls"
+    },
+    {
+     "from": "@openmetadata/ui-core-components#check-i18n-all",
+     "to": "@openmetadata/ui-core-components#check-translations-not-english",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#build:release",
+     "to": "open-metadata#build",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#build:release",
+     "to": "open-metadata#compress:brotli",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#bundle:runtime",
+     "to": "open-metadata#test:bundle-runtime",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#postinstall",
+     "to": "open-metadata#build-check",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#preinstall",
+     "to": "open-metadata#build",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#build-check",
+     "to": "open-metadata#js-antlr",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#commit-check",
+     "to": "open-metadata#pretty",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#commit-check",
+     "to": "open-metadata#build",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#check-i18n",
+     "to": "open-metadata#i18n",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#lint",
+     "to": "open-metadata#lint:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#lint:fix",
+     "to": "open-metadata#lint:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#lint:src:suppressions",
+     "to": "open-metadata#lint",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#lint:playwright",
+     "to": "open-metadata#lint:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#lint:playwright:suppressions",
+     "to": "open-metadata#lint:playwright",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#pretty",
+     "to": "open-metadata#pretty:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#pretty:src",
+     "to": "open-metadata#pretty:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#pretty:playwright",
+     "to": "open-metadata#pretty:base",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#organize-imports",
+     "to": "open-metadata#organize-imports:cli",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#organize-imports:playwright",
+     "to": "open-metadata#organize-imports:cli",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#organize-imports",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#lint:fix",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#pretty",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#license-header-fix",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#i18n",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle",
+     "to": "open-metadata#generate:app-docs",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle:playwright",
+     "to": "open-metadata#organize-imports:playwright",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle:playwright",
+     "to": "open-metadata#lint:playwright",
+     "how": "calls"
+    },
+    {
+     "from": "open-metadata#ui-checkstyle:playwright",
+     "to": "open-metadata#pretty:playwright",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "@openmetadata/ui-core-components#check-i18n-all",
+    "@openmetadata/ui-core-components#check-i18n",
+    "@openmetadata/ui-core-components#i18n"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 5,
+    "edges": 7,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Detect Changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "openmetadata-service-unit-tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.4,
+     "queueMin": 0,
+     "workMin": 34,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "openmetadata-service-unit-tests-status",
+     "needs": [
+      "changes",
+      "openmetadata-service-unit-tests",
+      "k8s_operator-unit-tests",
+      "docker-image-smoke-test"
+     ],
+     "onPath": true,
+     "blockedMin": 34.5,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "openmetadata-service-unit-tests",
+     "to": "changes"
+    },
+    {
+     "from": "openmetadata-service-unit-tests-status",
+     "to": "changes"
+    },
+    {
+     "from": "openmetadata-service-unit-tests-status",
+     "to": "openmetadata-service-unit-tests"
+    },
+    {
+     "from": "openmetadata-service-unit-tests-status",
+     "to": "k8s_operator-unit-tests"
+    },
+    {
+     "from": "openmetadata-service-unit-tests-status",
+     "to": "docker-image-smoke-test"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Detect Changes",
+    "openmetadata-service-unit-tests-status"
+   ],
+   "pathMinP50": 0.5,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 3,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [],
+ "notes": [],
+ "apiCalls": 113,
+ "read": {
+  "calls": 113,
+  "fromCache": 0
+ }
+}

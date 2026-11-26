@@ -1,0 +1,430 @@
+{
+ "repo": "dotnet/maui",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Pull requests here wait on Azure Pipelines, outside GitHub Actions: on 2 of 3 sampled pushes it was still running when the Actions checks finished, until at least 8 minutes after the push against 0.8 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 6.6,
+  "stars": 23317,
+  "forks": 2004,
+  "languages": [
+   [
+    "C#",
+    97
+   ],
+   [
+    "PowerShell",
+    1
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 1281065,
+  "files": 26319,
+  "sourceFiles": 10475,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 596866,
+   "tests": 653863,
+   "integration": 0,
+   "support": 30336
+  },
+  "testShare": 0.5340863665280156,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 89,
+  "commitsPerWeekYear": 64.9,
+  "pace": 1.3,
+  "activeAuthors28d": 40,
+  "prsOpenedPerWeek": 177.9,
+  "prsMergedPerWeek": 126.3,
+  "botShareOfMergedPrs": 5,
+  "openToMergeHours": {
+   "p50": 7.3,
+   "p90": 50.4,
+   "n": 95
+  },
+  "prRunsPerDay": 570.7,
+  "runsPerMergedPr": 31.6
+ },
+ "window": {
+  "days": 2.1,
+  "runs": 421,
+  "runsInPeriod": 421,
+  "truncated": false,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 954,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 26,
+   "setup": null,
+   "queue": null,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 259.7,
+  "prBilledMinutesPerDay": 420.4,
+  "jobMinutesPerMergedPr": 14.4,
+  "prVcpuMinutesPerDay": 1038.8,
+  "vcpuMinutesPerMergedPr": 57.6,
+  "expectedVcpuMinutesPerMergedPr": 1438.4,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 359.6,
+  "expectedWait": 18,
+  "workflowsOnPrs": 6
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 0.9,
+  "missing": [
+   "efficiency.setup",
+   "efficiency.queue",
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "Azure Pipelines",
+     "path": ".azuredevops/dependabot.yml"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "deb105c80068ac0334c58b10ad493a8d095fa5c5",
+     "actionsMin": 0.8,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 8
+      }
+     ]
+    },
+    {
+     "sha": "d5bdb6cb8ad489cc08101ea3584d2c6141e4b7cc",
+     "actionsMin": 0.2,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 0.3
+      }
+     ]
+    },
+    {
+     "sha": "ffe9e9abf7105fc89431e3d205936629bbb18457",
+     "actionsMin": 2.8,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 18.9
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 287,
+  "ranHeads": 215,
+  "timed": 152,
+  "p50": 2.6333333333333333,
+  "p75": 2.816666666666667,
+  "p90": 3.05,
+  "redRate": 0.6465116279069767,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.09767441860465116,
+  "botHeads": 4,
+  "lightHeads": 38,
+  "neverRan": 3,
+  "botPushes": 5,
+  "bots": [
+   [
+    "dotnet-maestro[bot]",
+    4
+   ],
+   [
+    "github-actions[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "PowerShell Script Tests",
+    118
+   ],
+   [
+    "Milestone Management",
+    33
+   ],
+   [
+    "CI-fix Azure DevOps validation",
+    1
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/powershell-script-tests.yml",
+  "redBy": [
+   [
+    "PowerShell Script Tests",
+    131
+   ],
+   [
+    "Documentation Checks",
+    26
+   ],
+   [
+    "Skill Validation",
+    11
+   ]
+  ],
+  "leftOut": [
+   "Prepare signed release publication",
+   "Release Readiness",
+   "Add Dogfooding Comment",
+   "Release tracking PRs",
+   "Agentic Labeler"
+  ],
+  "heavyWorkflows": [
+   "PowerShell Script Tests",
+   "Milestone Management"
+  ],
+  "allPushesP50": 2.533333333333333
+ },
+ "main": {
+  "heads": 7,
+  "p50": 0.6,
+  "p90": 0.9333333333333333,
+  "redRate": 1,
+  "redBy": [
+   [
+    "Documentation Checks",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0.02242846094354215,
+ "practices": {
+  "workflows": 52,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": true,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/issue-duplicate-detector.lock.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/daily-template-size-tracking.yml",
+   "pathFilters": ".github/workflows/copilot-setup-steps.yml",
+   "affected": ".github/workflows/copilot-evaluate-tests.lock.yml",
+   "draftSkip": ".github/workflows/ci-status-fix-net11.lock.yml",
+   "scheduled": ".github/workflows/agentics-maintenance.yml",
+   "depCache": ".github/workflows/agentic-labeler.lock.yml",
+   "timeouts": ".github/workflows/agentic-labeler.lock.yml",
+   "testResults": ".github/workflows/daily-leak-hunter.lock.yml",
+   "depBotsBatched": ".github/dependabot.yml",
+   "agentRules": ".github/instructions/android.instructions.md"
+  },
+  "unknown": [
+   "Read the first 40 of 52 workflow files",
+   ".github/workflows/locker.yml calls a local action that isn't in the tree",
+   "shardsConfigured: .github/workflows/issue-duplicate-detector.lock.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    97
+   ],
+   [
+    "PowerShell",
+    1
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": null,
+  "lintFormat": null,
+  "libraries": [],
+  "runners": null,
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md",
+   ".github/instructions"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 26319
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": null,
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 94,
+ "read": {
+  "calls": 94,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

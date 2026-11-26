@@ -1,0 +1,789 @@
+{
+ "repo": "apache/hudi",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 9.9,
+  "stars": 6387,
+  "forks": 2545,
+  "languages": [
+   [
+    "Java",
+    70
+   ],
+   [
+    "Scala",
+    16
+   ],
+   [
+    "Jupyter Notebook",
+    10
+   ],
+   [
+    "Python",
+    2
+   ]
+  ],
+  "linesOfCode": 1733904,
+  "files": 6785,
+  "sourceFiles": 5477,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 827275,
+   "tests": 862771,
+   "integration": 325,
+   "support": 43534
+  },
+  "testShare": 0.5228834022266586,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 27.8,
+  "commitsPerWeekYear": 26.3,
+  "pace": 1.1,
+  "activeAuthors28d": 19,
+  "prsOpenedPerWeek": 100,
+  "prsMergedPerWeek": 42,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 48,
+   "p90": 1588,
+   "n": 42
+  },
+  "prRunsPerDay": 115.3,
+  "runsPerMergedPr": 19.2
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 839,
+  "runsInPeriod": 839,
+  "truncated": false,
+  "mainDays": 5
+ },
+ "size": "large",
+ "headsPerWeek": 243,
+ "score": 49,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 30,
+  "reliability": 94,
+  "efficiency": 61
+ },
+ "detail": {
+  "speed": {
+   "wait": 29,
+   "forSize": 33,
+   "tail": 29
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 86
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 46,
+   "setup": 62,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 606.9,
+  "prBilledMinutesPerDay": 657.9,
+  "jobMinutesPerMergedPr": 101.1,
+  "expectedMinutesPerMergedPr": 397.4,
+  "expectedWait": 21,
+  "workflowsOnPrs": 9
+ },
+ "wait": {
+  "heads": 253,
+  "timed": 113,
+  "p50": 31.1,
+  "p75": 38.63333333333333,
+  "p90": 53.68333333333333,
+  "redRate": 0.07905138339920949,
+  "rerunRate": 0.06324110671936758,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.21739130434782608,
+  "botHeads": 0,
+  "lightHeads": 56,
+  "neverRan": 6,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Hudi Trino E2E",
+    59
+   ],
+   [
+    "Hudi Trino Connector CI",
+    51
+   ],
+   [
+    "Java CI",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "PR and Source Validation",
+    10
+   ],
+   [
+    "Java CI",
+    6
+   ],
+   [
+    "Hudi Trino Connector CI",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Hudi Trino E2E",
+   "Hudi Trino Connector CI"
+  ],
+  "allPushesP50": 18.333333333333332
+ },
+ "main": {
+  "heads": 40,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.1,
+  "redBy": [
+   [
+    "Java CI",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0.1168421052631579,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 41.766666666666666,
+  "jobMinutes": 33.516666666666666,
+  "billedMinutes": 34,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 453,
+  "queueP90Sec": 2224,
+  "setupShare": 0.39003083247687564,
+  "critical": {
+   "name": "trino-e2e",
+   "minutes": 33.516666666666666,
+   "shareOfSpan": 0.7973802701596397
+  },
+  "longest": {
+   "name": "trino-e2e",
+   "minutes": 33.516666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ],
+   [
+    "unknown",
+    2
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 5,
+  "runsLeftOut": 1,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 1
+   }
+  ],
+  "workflows": [
+   ".github/workflows/hudi_trino_e2e.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "trino-e2e",
+    "runs": 5
+   }
+  ],
+  "chain": [
+   {
+    "name": "trino-e2e",
+    "minutes": 41.8,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 8.3,
+    "workMin": 33.5,
+    "setupMin": 13.2
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 1,
+  "pathMinP50": 41.8,
+  "blockedMinP50": 0,
+  "queueMinP50": 8.3,
+  "hiddenMinP50": 0,
+  "workMinP50": 33.5,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "CI (fork)",
+   "Coverage (fork)"
+  ],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44820119517,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.8,
+    "path": [
+     "trino-e2e"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.3,
+      "endMin": 41.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.3,
+      "workMin": 33.5,
+      "setupMin": 12.2
+     }
+    ]
+   },
+   {
+    "id": 44820086955,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 40.7,
+    "path": [
+     "trino-e2e"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.3,
+      "endMin": 40.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.3,
+      "workMin": 32.5,
+      "setupMin": 12.7
+     }
+    ]
+   },
+   {
+    "id": 44819752635,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.3,
+    "path": [
+     "trino-e2e"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.6,
+      "endMin": 41.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 33.7,
+      "setupMin": 13.2
+     }
+    ]
+   },
+   {
+    "id": 44752650973,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 70.6,
+    "path": [
+     "trino-e2e"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 37.1,
+      "endMin": 70.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 37.1,
+      "workMin": 33.5,
+      "setupMin": 13.2
+     }
+    ]
+   },
+   {
+    "id": 44748220718,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 145,
+    "path": [
+     "Coverage (fork)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.6,
+      "endMin": 38.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 34,
+      "setupMin": 12.6
+     },
+     {
+      "name": "CI (fork)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 7.1,
+      "startMin": 7.1,
+      "endMin": 86.1,
+      "blockedMin": 0,
+      "hiddenMin": 7.1,
+      "queueMin": 0,
+      "workMin": 79,
+      "setupMin": 0
+     },
+     {
+      "name": "Coverage (fork)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 145,
+      "startMin": 145,
+      "endMin": 145,
+      "blockedMin": 0,
+      "hiddenMin": 145,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44737941011,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 65.8,
+    "path": [
+     "trino-e2e"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "trino-e2e",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 31.8,
+      "endMin": 65.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 31.8,
+      "workMin": 34,
+      "setupMin": 13.4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    70
+   ],
+   [
+    "Scala",
+    16
+   ],
+   [
+    "Jupyter Notebook",
+    10
+   ],
+   [
+    "Python",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": [
+    "Maven"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [
+   "node:test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "pyarrow",
+    "ecosystem": "python",
+    "packages": 2
+   },
+   {
+    "name": "adbc-driver-manager",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "fastapi",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "fastmcp",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "httpx",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "langchain-anthropic",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "langchain-core",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "langchain-ollama",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "langchain-openai",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "langgraph",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "mypy",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pydantic",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pydantic-settings",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyspark-client",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-asyncio",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "sqlalchemy",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "sqlglot",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "sse-starlette",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "trino",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "uvicorn",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ],
+   [
+    "unknown",
+    2
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "hudi-agent-gateway",
+     "path": "hudi-agent-gateway/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "hudi-spark-connect-superset",
+     "path": "hudi-lakehouse/superset-spark-connect/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "hudi-agent-gateway",
+     "dir": "hudi-agent-gateway",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "hudi-spark-connect-superset",
+     "dir": "hudi-lakehouse/superset-spark-connect",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "hudi-agent-gateway"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6785
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 5,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "trino-e2e",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 8.3,
+     "workMin": 33.5
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "trino-e2e"
+   ],
+   "pathMinP50": 41.8,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Setup is 39% of job time: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"trino-e2e\" runs 34 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 2224 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 103,
+ "read": {
+  "calls": 103,
+  "fromCache": 0
+ }
+}

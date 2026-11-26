@@ -1,0 +1,5937 @@
+{
+ "repo": "dfed/SafeDI",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3,
+  "stars": 203,
+  "forks": 8,
+  "languages": [
+   [
+    "Swift",
+    98
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Starlark",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 913738,
+  "files": 681,
+  "sourceFiles": 479,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 134529,
+   "tests": 779209,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.8527706326246118,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 11.4,
+  "pace": 9.5,
+  "activeAuthors28d": "≥1",
+  "prsOpenedPerWeek": 248,
+  "prsMergedPerWeek": 219,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 10.8,
+   "p90": 11.2,
+   "n": 100
+  },
+  "prRunsPerDay": 161.1,
+  "runsPerMergedPr": 5.1
+ },
+ "window": {
+  "days": 6.2,
+  "runs": 992,
+  "runsInPeriod": 1294,
+  "truncated": true,
+  "mainDays": 3.2
+ },
+ "size": "large",
+ "headsPerWeek": 636,
+ "score": 38,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 9,
+  "reliability": 100,
+  "efficiency": 65
+ },
+ "detail": {
+  "speed": {
+   "wait": 14,
+   "forSize": 0,
+   "tail": 11
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 45,
+   "runsPerPr": 99,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": 76
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 15670.5,
+  "prBilledMinutesPerDay": 16937.1,
+  "jobMinutesPerMergedPr": 500.9,
+  "expectedMinutesPerMergedPr": 321.7,
+  "expectedWait": 18.1,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 560,
+  "timed": 66,
+  "p50": 47.21666666666667,
+  "p75": 66.63333333333334,
+  "p90": 87.53333333333333,
+  "redRate": 0.039285714285714285,
+  "rerunRate": 0.02142857142857143,
+  "passedOnRerunRate": 0.008928571428571428,
+  "cancelledRate": 0.8571428571428571,
+  "botHeads": 0,
+  "lightHeads": 2,
+  "lastToFinish": [
+   [
+    "CI",
+    66
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    23
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 46.46666666666667
+ },
+ "main": {
+  "heads": 106,
+  "p50": 43.03333333333333,
+  "p90": 85.4,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 57,
+  "spanMin": 72.25,
+  "jobMinutes": 511.54999999999995,
+  "billedMinutes": 543,
+  "subMinuteJobs": 11,
+  "queueP50Sec": 10,
+  "queueP90Sec": 917,
+  "setupShare": 0.019822845664987324,
+  "critical": {
+   "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+   "minutes": 26.866666666666667,
+   "shareOfSpan": 0.28925337433794635
+  },
+  "longest": {
+   "name": "Build and Test on Xcode 26",
+   "minutes": 41.1
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    282
+   ]
+  ],
+  "shard": {
+   "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (# of 4)",
+   "shards": 4,
+   "medianMin": 4.15,
+   "maxMin": 5.716666666666667,
+   "maxOverMedian": 1.2811244979919678,
+   "idleTail": 0.17319749216300936
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 25,
+  "edges": 40,
+  "matrixJobs": 4,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+    "runs": 4
+   },
+   {
+    "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+    "runs": 1
+   },
+   {
+    "name": "Check Markdown links",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Detect Changed Files",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Bazel Source Archive Check",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+    "minutes": 77.7,
+    "share": 0.99,
+    "blockedMin": 0.4,
+    "hiddenMin": 0,
+    "queueMin": 50.9,
+    "workMin": 26.9,
+    "setupMin": 0.7
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 3,
+  "pathMinP50": 72.3,
+  "blockedMinP50": 0.4,
+  "queueMinP50": 39.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 27.2,
+  "setupInPathMinP50": 0.7,
+  "topBlockers": [
+   {
+    "name": "Build Tests on Linux",
+    "runs": 5,
+    "heldJobs": 36,
+    "jobs": 57,
+    "tookMin": 18.8,
+    "heldJobMin": 582.9
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44699666672,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 72.3,
+    "path": [
+     "Detect Changed Files",
+     "Bazel Source Archive Check",
+     "Build Package, Tuist and Bazel Integrations on Xcode 26"
+    ],
+    "topBlocker": "Build Tests on Linux",
+    "jobs": [
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Release SafeDITool on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 17.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17,
+      "setupMin": 0
+     },
+     {
+      "name": "Bazel Source Archive Check",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Generate Time on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 16.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Xcode 26",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 12.4,
+      "endMin": 53.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 12.2,
+      "workMin": 41.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Tests on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 20.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift (tool)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 8.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (mocks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 16.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (seams)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (dependency-trees)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 5.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (others)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 15.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 19.9,
+      "endMin": 42.8,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 19.4,
+      "workMin": 22.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 39.5,
+      "endMin": 72.3,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 39,
+      "workMin": 32.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 36,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 4)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 34.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 1)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 34.3,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 2)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 38.7,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.9,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 27.5,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 25.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 29.1,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 23.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 25.3,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 31.7,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 25.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 27.9,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 27.5,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 30,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 28.7,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 9.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 34.5,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 25,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 23.8,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 26.8,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 27.9,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 21.2,
+      "endMin": 25.8,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 4.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 24.5,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.9,
+      "endMin": 25.3,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 5.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 24.8,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 21.4,
+      "endMin": 27.9,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 6.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 22.3,
+      "endMin": 35.1,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 12.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 3)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 22.8,
+      "endMin": 38.8,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 16.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 23.6,
+      "endMin": 27.5,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 3.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20.4,
+      "endMin": 24.5,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 25.3,
+      "endMin": 29.4,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 26,
+      "endMin": 31.9,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 6.1,
+      "workMin": 5.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [
+       "changes",
+       "linux-latest-swift-group"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 24.9,
+      "endMin": 25,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release Acceptance / Check Release Acceptance on Linux",
+      "needs": [
+       "release-acceptance/release-acceptance@Release Acceptance"
+      ],
+      "readyMin": 31.9,
+      "createdMin": 31.9,
+      "startMin": 34.8,
+      "endMin": 34.9,
+      "blockedMin": 31.9,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Graph Fuzzer Corpus on Linux",
+      "needs": [
+       "changes",
+       "graph-fuzzer"
+      ],
+      "readyMin": 35.1,
+      "createdMin": 35.1,
+      "startMin": 35.6,
+      "endMin": 35.8,
+      "blockedMin": 35.1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+      "needs": [
+       "changes",
+       "linux",
+       "graph-fuzzer"
+      ],
+      "readyMin": 36,
+      "createdMin": 36,
+      "startMin": 36.1,
+      "endMin": 37,
+      "blockedMin": 36,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Repeat Tests on Linux",
+      "needs": [
+       "changes",
+       "linux-repeat-pass"
+      ],
+      "readyMin": 38.8,
+      "createdMin": 38.8,
+      "startMin": 39.1,
+      "endMin": 39.2,
+      "blockedMin": 38.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Line Coverage on Linux",
+      "needs": [
+       "changes",
+       "spm",
+       "linux"
+      ],
+      "readyMin": 53.5,
+      "createdMin": 53.6,
+      "startMin": 53.6,
+      "endMin": 53.8,
+      "blockedMin": 53.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44697376031,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 57.1,
+    "path": [
+     "Detect Changed Files",
+     "Bazel Source Archive Check",
+     "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26"
+    ],
+    "topBlocker": "Build Tests on Linux",
+    "jobs": [
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Release SafeDITool on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Bazel Source Archive Check",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Generate Time on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Tests on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 23.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Xcode 26",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10.3,
+      "endMin": 38.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 10.1,
+      "workMin": 28.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Build and Test on Latest Swift (seams)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 23.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (mocks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (tool)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (dependency-trees)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (others)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 30.7,
+      "endMin": 57.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 30.4,
+      "workMin": 26.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 17.2,
+      "endMin": 45.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 16.9,
+      "workMin": 28.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 44.5,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 2)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 42.1,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 4)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 35.7,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 1)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 43,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 3)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 34.5,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 24.6,
+      "endMin": 25.3,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 30.6,
+      "endMin": 39.9,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 7.3,
+      "workMin": 9.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 32,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 30.6,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 32.7,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 34.1,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 30.3,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 25.3,
+      "endMin": 31.2,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 5.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 29.4,
+      "endMin": 35.4,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 6.1,
+      "workMin": 6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 30.5,
+      "endMin": 40.4,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 7.2,
+      "workMin": 9.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 28.2,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 31.1,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 25.3,
+      "endMin": 33,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 7.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 29.1,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.7,
+      "endMin": 35.8,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 12.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 28.9,
+      "endMin": 40.4,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 5.6,
+      "workMin": 11.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 31.2,
+      "endMin": 37.5,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 6.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 31.1,
+      "endMin": 37.9,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 6.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.3,
+      "endMin": 30.5,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 23.4,
+      "endMin": 28.8,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 26.7,
+      "endMin": 35.4,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 8.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 27.7,
+      "endMin": 39.7,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 4.4,
+      "workMin": 12,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 23.3,
+      "createdMin": 23.3,
+      "startMin": 31.2,
+      "endMin": 35.3,
+      "blockedMin": 23.3,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 4.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [
+       "changes",
+       "linux-latest-swift-group"
+      ],
+      "readyMin": 23.6,
+      "createdMin": 23.6,
+      "startMin": 31.3,
+      "endMin": 31.4,
+      "blockedMin": 23.6,
+      "hiddenMin": 0,
+      "queueMin": 7.7,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.3,
+      "startMin": 27.4,
+      "endMin": 31.3,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 3.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.3,
+      "startMin": 28.6,
+      "endMin": 33.9,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 5.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.3,
+      "startMin": 28.2,
+      "endMin": 32.4,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 4.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.3,
+      "startMin": 29.2,
+      "endMin": 33.5,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Release Acceptance / Check Release Acceptance on Linux",
+      "needs": [
+       "release-acceptance/release-acceptance@Release Acceptance"
+      ],
+      "readyMin": 33.9,
+      "createdMin": 33.9,
+      "startMin": 34,
+      "endMin": 34.1,
+      "blockedMin": 33.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Graph Fuzzer Corpus on Linux",
+      "needs": [
+       "changes",
+       "graph-fuzzer"
+      ],
+      "readyMin": 40.4,
+      "createdMin": 40.4,
+      "startMin": 43.6,
+      "endMin": 43.7,
+      "blockedMin": 40.4,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux",
+      "needs": [
+       "changes",
+       "linux-repeat-pass"
+      ],
+      "readyMin": 43,
+      "createdMin": 43.1,
+      "startMin": 43.8,
+      "endMin": 43.8,
+      "blockedMin": 43,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Line Coverage on Linux",
+      "needs": [
+       "changes",
+       "spm",
+       "linux"
+      ],
+      "readyMin": 44.5,
+      "createdMin": 44.5,
+      "startMin": 46.1,
+      "endMin": 46.2,
+      "blockedMin": 44.5,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+      "needs": [
+       "changes",
+       "linux",
+       "graph-fuzzer"
+      ],
+      "readyMin": 44.5,
+      "createdMin": 44.5,
+      "startMin": 46.1,
+      "endMin": 47.2,
+      "blockedMin": 44.5,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44678862998,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 78.3,
+    "path": [
+     "Detect Changed Files",
+     "Bazel Source Archive Check",
+     "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26"
+    ],
+    "topBlocker": "Build Tests on Linux",
+    "jobs": [
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Bazel Source Archive Check",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 0.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Release SafeDITool on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 16.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Xcode 26",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 1.9,
+      "endMin": 40.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 38.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Check Generate Time on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 8.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Tests on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 19.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 19.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build and Test on Latest Swift (tool)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 10,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 23.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (dependency-trees)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Latest Swift (others)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 19.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (mocks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 12.3,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 11.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 15.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (seams)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 20.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 19.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 13.6,
+      "endMin": 35.7,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 13,
+      "workMin": 22.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 51.4,
+      "endMin": 78.3,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 50.9,
+      "workMin": 26.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 45.3,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 2)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 33.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 3)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 34.3,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 4)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 31.1,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 1)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 35.6,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 20.7,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 25.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 27.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 26.4,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 27.5,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 28.5,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 20.8,
+      "endMin": 32.4,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 11.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 20.9,
+      "endMin": 25.5,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 4.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 24.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 27.5,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 28.7,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 28.8,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 27.6,
+      "endMin": 34.4,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 6.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 25.6,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 27.9,
+      "endMin": 37.1,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 9.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 29.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 20.2,
+      "endMin": 26.9,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 6.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 27.9,
+      "endMin": 34.4,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 6.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 24.2,
+      "endMin": 34.1,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 4.5,
+      "workMin": 10,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.9,
+      "endMin": 31.6,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 11.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.8,
+      "endMin": 24.7,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 25.2,
+      "endMin": 31.7,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 5.5,
+      "workMin": 6.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 24.9,
+      "endMin": 31.3,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 6.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.7,
+      "createdMin": 20.7,
+      "startMin": 24.4,
+      "endMin": 29.8,
+      "blockedMin": 20.7,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 5.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.7,
+      "createdMin": 20.7,
+      "startMin": 24,
+      "endMin": 28,
+      "blockedMin": 20.7,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.7,
+      "createdMin": 20.7,
+      "startMin": 21.1,
+      "endMin": 24.9,
+      "blockedMin": 20.7,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.7,
+      "createdMin": 20.7,
+      "startMin": 27.8,
+      "endMin": 33.6,
+      "blockedMin": 20.7,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 5.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [
+       "changes",
+       "linux-latest-swift-group"
+      ],
+      "readyMin": 23.9,
+      "createdMin": 23.9,
+      "startMin": 28,
+      "endMin": 28.1,
+      "blockedMin": 23.9,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Release Acceptance / Check Release Acceptance on Linux",
+      "needs": [
+       "release-acceptance/release-acceptance@Release Acceptance"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.6,
+      "startMin": 34.3,
+      "endMin": 34.4,
+      "blockedMin": 33.6,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux",
+      "needs": [
+       "changes",
+       "linux-repeat-pass"
+      ],
+      "readyMin": 35.6,
+      "createdMin": 35.6,
+      "startMin": 43.2,
+      "endMin": 43.2,
+      "blockedMin": 35.6,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Graph Fuzzer Corpus on Linux",
+      "needs": [
+       "changes",
+       "graph-fuzzer"
+      ],
+      "readyMin": 37.1,
+      "createdMin": 37.1,
+      "startMin": 45,
+      "endMin": 45.2,
+      "blockedMin": 37.1,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+      "needs": [
+       "changes",
+       "linux",
+       "graph-fuzzer"
+      ],
+      "readyMin": 45.3,
+      "createdMin": 45.3,
+      "startMin": 45.4,
+      "endMin": 46.7,
+      "blockedMin": 45.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Check Line Coverage on Linux",
+      "needs": [
+       "changes",
+       "spm",
+       "linux"
+      ],
+      "readyMin": 45.3,
+      "createdMin": 45.3,
+      "startMin": 46.5,
+      "endMin": 46.6,
+      "blockedMin": 45.3,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44660880132,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 123.1,
+    "path": [
+     "Detect Changed Files",
+     "Bazel Source Archive Check",
+     "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26"
+    ],
+    "topBlocker": "Build Tests on Linux",
+    "jobs": [
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Generate Time on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 9.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build Release SafeDITool on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 13.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Build and Test on Xcode 26",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 25.6,
+      "endMin": 95.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 25.4,
+      "workMin": 69.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Tests on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 18.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Bazel Source Archive Check",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [
+       "changes",
+       "linux-latest-swift-group"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 69.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 68.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 79.9,
+      "endMin": 103.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 79.5,
+      "workMin": 23.8,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 95.6,
+      "endMin": 123.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 95.2,
+      "workMin": 27.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 20.9,
+      "endMin": 65.8,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 44.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 4)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 21.5,
+      "endMin": 36.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 15.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 1)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 21.1,
+      "endMin": 39.1,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 18.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 3)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 24.2,
+      "endMin": 39,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 14.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 2)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 23.5,
+      "endMin": 38.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 15.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 19.5,
+      "endMin": 20.3,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 24.3,
+      "endMin": 33.2,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 5.5,
+      "workMin": 8.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 30.3,
+      "endMin": 38.3,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 11.4,
+      "workMin": 8.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 31,
+      "endMin": 39.8,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 12.1,
+      "workMin": 8.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 33.7,
+      "endMin": 45.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 14.8,
+      "workMin": 12.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 33,
+      "endMin": 45.7,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 14.2,
+      "workMin": 12.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 29,
+      "endMin": 34.8,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 10.2,
+      "workMin": 5.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 38.8,
+      "endMin": 44.4,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 19.9,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 34.2,
+      "endMin": 44.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 15.3,
+      "workMin": 10.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 37.5,
+      "endMin": 45.3,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 18.6,
+      "workMin": 7.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 33.1,
+      "endMin": 38.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 14.2,
+      "workMin": 5.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 36.1,
+      "endMin": 46.2,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 17.2,
+      "workMin": 10.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 31.4,
+      "endMin": 46.5,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 12.6,
+      "workMin": 15.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 35.1,
+      "endMin": 46.1,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 16.2,
+      "workMin": 11,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 35.4,
+      "endMin": 45.1,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 16.5,
+      "workMin": 9.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 40.6,
+      "endMin": 46.6,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 21.7,
+      "workMin": 6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 35.4,
+      "endMin": 39.7,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 16.5,
+      "workMin": 4.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 31.6,
+      "endMin": 36.1,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 12.7,
+      "workMin": 4.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 39.9,
+      "endMin": 48.4,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 21,
+      "workMin": 8.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 40.2,
+      "endMin": 46.9,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 21.4,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 40.1,
+      "endMin": 46.1,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 21.2,
+      "workMin": 6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 39.6,
+      "endMin": 46.3,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 20.8,
+      "workMin": 6.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 41.1,
+      "endMin": 46.4,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 22.3,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 20.9,
+      "endMin": 25.6,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 4.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 21.9,
+      "endMin": 27.5,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 23.4,
+      "endMin": 29.1,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 5.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 23.3,
+      "endMin": 29,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 5.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Check Release Acceptance on Linux",
+      "needs": [
+       "release-acceptance/release-acceptance@Release Acceptance"
+      ],
+      "readyMin": 29.1,
+      "createdMin": 29.1,
+      "startMin": 31.5,
+      "endMin": 31.6,
+      "blockedMin": 29.1,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux",
+      "needs": [
+       "changes",
+       "linux-repeat-pass"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 44.4,
+      "endMin": 44.5,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Graph Fuzzer Corpus on Linux",
+      "needs": [
+       "changes",
+       "graph-fuzzer"
+      ],
+      "readyMin": 48.4,
+      "createdMin": 48.4,
+      "startMin": 48.7,
+      "endMin": 48.8,
+      "blockedMin": 48.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+      "needs": [
+       "changes",
+       "linux",
+       "graph-fuzzer"
+      ],
+      "readyMin": 65.8,
+      "createdMin": 65.8,
+      "startMin": 66.3,
+      "endMin": 67.6,
+      "blockedMin": 65.8,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Check Line Coverage on Linux",
+      "needs": [
+       "changes",
+       "spm",
+       "linux"
+      ],
+      "readyMin": 95.6,
+      "createdMin": 95.6,
+      "startMin": 95.6,
+      "endMin": 95.8,
+      "blockedMin": 95.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44660865597,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 97.6,
+    "path": [
+     "Detect Changed Files",
+     "Bazel Source Archive Check",
+     "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26"
+    ],
+    "topBlocker": "Build Tests on Linux",
+    "jobs": [
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Generate Time on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 11.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Bazel Source Archive Check",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build and Test on Xcode 26",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 24,
+      "endMin": 79.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 23.7,
+      "workMin": 55.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Build Release SafeDITool on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 13.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift (dependency-trees)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (tool)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 6.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build Tests on Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 11.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Latest Swift (mocks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 18.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 21.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (seams)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 14.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift (others)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 18.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 49.2,
+      "endMin": 83.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 48.8,
+      "workMin": 33.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+      "needs": [
+       "changes",
+       "bazel-source-archive-check"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 69.3,
+      "endMin": 97.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 68.9,
+      "workMin": 28.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 37.7,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 25.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 3)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 30.5,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 2)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 26.7,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 1)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 31.5,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Repeat Tests on Linux (pass 4)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 31.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 12.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 18.9,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 21.6,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 16.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 19.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 20,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 17.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 13.1,
+      "endMin": 23.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 10.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 18.1,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 13.8,
+      "endMin": 23.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 9.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12.8,
+      "endMin": 19.6,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 6.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 14.3,
+      "endMin": 19.6,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 5.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 28,
+      "endMin": 34.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 16.1,
+      "workMin": 6.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 21.6,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 24.9,
+      "endMin": 33.1,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 13,
+      "workMin": 8.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 20.4,
+      "endMin": 26.6,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 8.5,
+      "workMin": 6.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 19.7,
+      "endMin": 30.2,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 10.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 27.6,
+      "endMin": 31.9,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 15.7,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 17.9,
+      "endMin": 33,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 6,
+      "workMin": 15.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 23.6,
+      "endMin": 28.9,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 11.7,
+      "workMin": 5.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 29.1,
+      "endMin": 35.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 17.2,
+      "workMin": 6.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 27.6,
+      "endMin": 38.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 15.7,
+      "workMin": 11.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+      "needs": [
+       "changes",
+       "linux-build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 29.4,
+      "endMin": 34.2,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 17.5,
+      "workMin": 4.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 12.8,
+      "createdMin": 12.8,
+      "startMin": 16.5,
+      "endMin": 21.9,
+      "blockedMin": 12.8,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 5.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 12.8,
+      "createdMin": 12.8,
+      "startMin": 12.9,
+      "endMin": 17.1,
+      "blockedMin": 12.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 12.8,
+      "createdMin": 12.8,
+      "startMin": 16.7,
+      "endMin": 21,
+      "blockedMin": 12.8,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+      "needs": [
+       "release-acceptance/release-acceptance-older-release@Release Acceptance",
+       "release-acceptance/release-acceptance-build@Release Acceptance"
+      ],
+      "readyMin": 12.8,
+      "createdMin": 12.8,
+      "startMin": 16.8,
+      "endMin": 20.9,
+      "blockedMin": 12.8,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [
+       "changes",
+       "linux-latest-swift-group"
+      ],
+      "readyMin": 21.1,
+      "createdMin": 21.1,
+      "startMin": 30.3,
+      "endMin": 30.3,
+      "blockedMin": 21.1,
+      "hiddenMin": 0,
+      "queueMin": 9.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Release Acceptance / Check Release Acceptance on Linux",
+      "needs": [
+       "release-acceptance/release-acceptance@Release Acceptance"
+      ],
+      "readyMin": 21.9,
+      "createdMin": 21.9,
+      "startMin": 23.8,
+      "endMin": 23.9,
+      "blockedMin": 21.9,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repeat Tests on Linux",
+      "needs": [
+       "changes",
+       "linux-repeat-pass"
+      ],
+      "readyMin": 31.8,
+      "createdMin": 31.8,
+      "startMin": 33.3,
+      "endMin": 33.4,
+      "blockedMin": 31.8,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+      "needs": [
+       "changes",
+       "linux",
+       "graph-fuzzer"
+      ],
+      "readyMin": 38.8,
+      "createdMin": 38.8,
+      "startMin": 39.3,
+      "endMin": 40.2,
+      "blockedMin": 38.8,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Check Graph Fuzzer Corpus on Linux",
+      "needs": [
+       "changes",
+       "graph-fuzzer"
+      ],
+      "readyMin": 38.8,
+      "createdMin": 38.8,
+      "startMin": 40,
+      "endMin": 40.2,
+      "blockedMin": 38.8,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Line Coverage on Linux",
+      "needs": [
+       "changes",
+       "spm",
+       "linux"
+      ],
+      "readyMin": 79.9,
+      "createdMin": 79.9,
+      "startMin": 81.9,
+      "endMin": 82.1,
+      "blockedMin": 79.9,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44658399401,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.5,
+    "path": [
+     "Check Markdown links"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Detect Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Update Version Script Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Version Consistency Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 8,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": "MODULE.bazel",
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Swift",
+    98
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Starlark",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Bazel"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    282
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md",
+   ".claude/skills",
+   ".claude/agents"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 681
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 25,
+    "edges": 40,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Detect Changed Files",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Update Version Script Check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Check Markdown links",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.4
+    },
+    {
+     "id": "Version Consistency Check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1
+    },
+    {
+     "id": "Build Release SafeDITool on Linux",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 17
+    },
+    {
+     "id": "Bazel Source Archive Check",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Check Generate Time on Linux",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 16.3
+    },
+    {
+     "id": "Build and Test on Xcode 26",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 12.2,
+     "workMin": 41.1
+    },
+    {
+     "id": "Lint Swift",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 1.4
+    },
+    {
+     "id": "Build Tests on Linux",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 18.8
+    },
+    {
+     "id": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 20
+    },
+    {
+     "id": "Build and Test on Latest Swift (tool)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 7.8
+    },
+    {
+     "id": "Build and Test on Latest Swift (mocks)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 11.9
+    },
+    {
+     "id": "Build and Test on Latest Swift (fuzzer-smoke)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 16.3
+    },
+    {
+     "id": "Build and Test on Latest Swift (seams)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 12.6
+    },
+    {
+     "id": "Build and Test on Latest Swift (dependency-trees)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 5.6
+    },
+    {
+     "id": "Build and Test on Latest Swift (others)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 15
+    },
+    {
+     "id": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+     "needs": [
+      "changes",
+      "bazel-source-archive-check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.5,
+     "queueMin": 19.4,
+     "workMin": 22.9
+    },
+    {
+     "id": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+     "needs": [
+      "changes",
+      "bazel-source-archive-check"
+     ],
+     "onPath": true,
+     "blockedMin": 0.5,
+     "queueMin": 39,
+     "workMin": 32.8
+    },
+    {
+     "id": "Build and Test on Linux",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 16.9
+    },
+    {
+     "id": "Repeat Tests on Linux (pass 4)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 15.4
+    },
+    {
+     "id": "Repeat Tests on Linux (pass 1)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 15.1
+    },
+    {
+     "id": "Repeat Tests on Linux (pass 2)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 19.5
+    },
+    {
+     "id": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 0.7
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 8.4
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 6.4
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 10
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 4.5
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 6.1
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 12.6
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 6.4
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 8.8
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 8.4
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 10.8
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.3,
+     "workMin": 9.3
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 15.3
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 5.8
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 4.6
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 7.7
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 8.8
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 2.1,
+     "workMin": 4.6
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 5.4
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.8,
+     "workMin": 5.3
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0.1,
+     "workMin": 5.7
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 2.3,
+     "workMin": 6.5
+    },
+    {
+     "id": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 3.2,
+     "workMin": 12.8
+    },
+    {
+     "id": "Repeat Tests on Linux (pass 3)",
+     "needs": [
+      "changes",
+      "linux-build"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 3.7,
+     "workMin": 16.1
+    },
+    {
+     "id": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+     "needs": [
+      "release-acceptance/release-acceptance-older-release@Release Acceptance",
+      "release-acceptance/release-acceptance-build@Release Acceptance"
+     ],
+     "onPath": false,
+     "blockedMin": 19.9,
+     "queueMin": 3.7,
+     "workMin": 3.9
+    },
+    {
+     "id": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+     "needs": [
+      "release-acceptance/release-acceptance-older-release@Release Acceptance",
+      "release-acceptance/release-acceptance-build@Release Acceptance"
+     ],
+     "onPath": false,
+     "blockedMin": 19.9,
+     "queueMin": 0.5,
+     "workMin": 4.2
+    },
+    {
+     "id": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+     "needs": [
+      "release-acceptance/release-acceptance-older-release@Release Acceptance",
+      "release-acceptance/release-acceptance-build@Release Acceptance"
+     ],
+     "onPath": false,
+     "blockedMin": 19.9,
+     "queueMin": 5.4,
+     "workMin": 4.1
+    },
+    {
+     "id": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+     "needs": [
+      "release-acceptance/release-acceptance-older-release@Release Acceptance",
+      "release-acceptance/release-acceptance-build@Release Acceptance"
+     ],
+     "onPath": false,
+     "blockedMin": 19.9,
+     "queueMin": 6.1,
+     "workMin": 5.9
+    },
+    {
+     "id": "Build and Test on Latest Swift",
+     "needs": [
+      "changes",
+      "linux-latest-swift-group"
+     ],
+     "onPath": false,
+     "blockedMin": 20.3,
+     "queueMin": 4.6,
+     "workMin": 0.1
+    },
+    {
+     "id": "Release Acceptance / Check Release Acceptance on Linux",
+     "needs": [
+      "release-acceptance/release-acceptance@Release Acceptance"
+     ],
+     "onPath": false,
+     "blockedMin": 31.9,
+     "queueMin": 2.9,
+     "workMin": 0.1
+    },
+    {
+     "id": "Check Graph Fuzzer Corpus on Linux",
+     "needs": [
+      "changes",
+      "graph-fuzzer"
+     ],
+     "onPath": false,
+     "blockedMin": 35.1,
+     "queueMin": 0.5,
+     "workMin": 0.1
+    },
+    {
+     "id": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+     "needs": [
+      "changes",
+      "linux",
+      "graph-fuzzer"
+     ],
+     "onPath": false,
+     "blockedMin": 36,
+     "queueMin": 0.1,
+     "workMin": 0.9
+    },
+    {
+     "id": "Repeat Tests on Linux",
+     "needs": [
+      "changes",
+      "linux-repeat-pass"
+     ],
+     "onPath": false,
+     "blockedMin": 38.8,
+     "queueMin": 0.3,
+     "workMin": 0.1
+    },
+    {
+     "id": "Check Line Coverage on Linux",
+     "needs": [
+      "changes",
+      "spm",
+      "linux"
+     ],
+     "onPath": false,
+     "blockedMin": 53.5,
+     "queueMin": 0,
+     "workMin": 0.2
+    }
+   ],
+   "edges": [
+    {
+     "from": "Build Release SafeDITool on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Bazel Source Archive Check",
+     "to": "changes"
+    },
+    {
+     "from": "Check Generate Time on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Xcode 26",
+     "to": "changes"
+    },
+    {
+     "from": "Lint Swift",
+     "to": "changes"
+    },
+    {
+     "from": "Build Tests on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (fuzzer-seam-smoke)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (tool)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (mocks)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (fuzzer-smoke)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (seams)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (dependency-trees)",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift (others)",
+     "to": "changes"
+    },
+    {
+     "from": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+     "to": "changes"
+    },
+    {
+     "from": "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26",
+     "to": "bazel-source-archive-check"
+    },
+    {
+     "from": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+     "to": "changes"
+    },
+    {
+     "from": "Build Package, Tuist and Bazel Integrations on Xcode 26",
+     "to": "bazel-source-archive-check"
+    },
+    {
+     "from": "Build and Test on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Linux",
+     "to": "linux-build"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 4)",
+     "to": "changes"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 4)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 1)",
+     "to": "changes"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 1)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 2)",
+     "to": "changes"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 2)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Release Acceptance / Build SafeDI 2.2.0 for Release Acceptance on Linux",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 1250+1250)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 500+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 0+1250)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1625+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1500+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 2500+1250)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 875+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1250+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1750+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (base seeds 3750+1250)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 750+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 500+500)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1875+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1375+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 250+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 375+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 125+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1000+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 625+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 1125+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateDependencyTree seeds 0+125)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+     "to": "changes"
+    },
+    {
+     "from": "Fuzz Dependency Graphs on Linux (generateMockPublic seeds 0+500)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 3)",
+     "to": "changes"
+    },
+    {
+     "from": "Repeat Tests on Linux (pass 3)",
+     "to": "linux-build"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+     "to": "release-acceptance/release-acceptance-older-release@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 3 of 4)",
+     "to": "release-acceptance/release-acceptance-build@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+     "to": "release-acceptance/release-acceptance-older-release@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 1 of 4)",
+     "to": "release-acceptance/release-acceptance-build@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+     "to": "release-acceptance/release-acceptance-older-release@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 0 of 4)",
+     "to": "release-acceptance/release-acceptance-build@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+     "to": "release-acceptance/release-acceptance-older-release@Release Acceptance"
+    },
+    {
+     "from": "Release Acceptance / Compare with SafeDI 2.2.0 on Linux (shard 2 of 4)",
+     "to": "release-acceptance/release-acceptance-build@Release Acceptance"
+    },
+    {
+     "from": "Build and Test on Latest Swift",
+     "to": "changes"
+    },
+    {
+     "from": "Build and Test on Latest Swift",
+     "to": "linux-latest-swift-group"
+    },
+    {
+     "from": "Release Acceptance / Check Release Acceptance on Linux",
+     "to": "release-acceptance/release-acceptance@Release Acceptance"
+    },
+    {
+     "from": "Check Graph Fuzzer Corpus on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Check Graph Fuzzer Corpus on Linux",
+     "to": "graph-fuzzer"
+    },
+    {
+     "from": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+     "to": "linux"
+    },
+    {
+     "from": "Report Changed Lines No Fuzzer Graph Executed on Linux",
+     "to": "graph-fuzzer"
+    },
+    {
+     "from": "Repeat Tests on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Repeat Tests on Linux",
+     "to": "linux-repeat-pass"
+    },
+    {
+     "from": "Check Line Coverage on Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Check Line Coverage on Linux",
+     "to": "spm"
+    },
+    {
+     "from": "Check Line Coverage on Linux",
+     "to": "linux"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Build Tests on Linux",
+     "numbers": {
+      "heldJobs": 36,
+      "jobs": 57,
+      "heldJobMin": 582.9,
+      "runs": 5,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "Detect Changed Files",
+    "Bazel Source Archive Check",
+    "Build for Apple Platforms, DocC and Xcode Projects on Xcode 26"
+   ],
+   "pathMinP50": 72.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for MODULE.bazel: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"Release Acceptance / Compare with SafeDI 2.2.0 on Linux (# of 4)\": the slowest shard takes 1.28× the median, 17% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"Build Tests on Linux\" holds up 36 of 57 jobs, 582.9 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "Jobs wait 917 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Swift it applies the principles, without a Swift-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 58,
+ "read": {
+  "calls": 58,
+  "fromCache": 0
+ }
+}

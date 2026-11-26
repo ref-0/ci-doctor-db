@@ -1,0 +1,1787 @@
+{
+ "repo": "esbmc/esbmc",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 11.4,
+  "stars": 550,
+  "forks": 156,
+  "languages": [
+   [
+    "C++",
+    46
+   ],
+   [
+    "C",
+    31
+   ],
+   [
+    "Python",
+    13
+   ],
+   [
+    "SWIG",
+    7
+   ]
+  ],
+  "linesOfCode": 1513950,
+  "files": 44586,
+  "sourceFiles": 21136,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 618478,
+   "tests": 0,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 106.5,
+  "pace": 2.2,
+  "activeAuthors28d": "≥10",
+  "prsOpenedPerWeek": 156.4,
+  "prsMergedPerWeek": 151.9,
+  "botShareOfMergedPrs": 1,
+  "openToMergeHours": {
+   "p50": 5.4,
+   "p90": 21.5,
+   "n": 99
+  },
+  "prRunsPerDay": 77.9,
+  "runsPerMergedPr": 3.6
+ },
+ "window": {
+  "days": 7.9,
+  "runs": 614,
+  "runsInPeriod": 626,
+  "truncated": false,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 393,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 71
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 35,
+   "runsPerPr": 100,
+   "setup": 52,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 16131.3,
+  "prBilledMinutesPerDay": 16364.6,
+  "jobMinutesPerMergedPr": 743.3,
+  "prVcpuMinutesPerDay": 63631.1,
+  "vcpuMinutesPerMergedPr": 2932,
+  "expectedVcpuMinutesPerMergedPr": 1519.9,
+  "sizedShare": 0.95,
+  "expectedMinutesPerMergedPr": 380,
+  "expectedWait": 30.3,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 442,
+  "ranHeads": 436,
+  "timed": 199,
+  "p50": 159.85,
+  "p75": 296.53333333333336,
+  "p90": 356.6666666666667,
+  "redRate": 0.5022935779816514,
+  "rerunRate": 0.09403669724770643,
+  "passedOnRerunRate": 0.0022935779816513763,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.43119266055045874,
+  "botHeads": 1,
+  "lightHeads": 7,
+  "neverRan": 0,
+  "botPushes": 3,
+  "bots": [
+   [
+    "github-actions[bot]",
+    3
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "PR",
+    199
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci-pull-request.yml",
+  "redBy": [
+   [
+    "PR",
+    219
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "PR"
+  ],
+  "allPushesP50": 158.46666666666667
+ },
+ "main": {
+  "heads": 172,
+  "p50": 23.15,
+  "p90": 64.53333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.005089058524173028,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 121.2,
+  "jobMinutes": 378.4666666666667,
+  "billedMinutes": 385,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.03757637847133292,
+  "setupMinPerJob": 1.3651515151515152,
+  "critical": {
+   "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+   "minutes": 140.3,
+   "shareOfSpan": 0.9997624703087886
+  },
+  "longest": {
+   "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+   "minutes": 140.3
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    65
+   ],
+   [
+    "self-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci-pull-request.yml"
+  ],
+  "jobs": 14,
+  "edges": 7,
+  "matrixJobs": 0,
+  "reusableCalls": 4,
+  "gateEnd": [
+   {
+    "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+    "runs": 4
+   },
+   {
+    "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+    "runs": 2
+   }
+  ],
+  "chain": [
+   {
+    "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+    "minutes": 140.3,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 140.3,
+    "setupMin": 0.4
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 1,
+  "pathMinP50": 121.2,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 121.2,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "Detect changed paths",
+    "runs": 2,
+    "heldJobs": 2,
+    "jobs": 13,
+    "tookMin": 0.6,
+    "heldJobMin": 1.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45578574412,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 114.8,
+    "path": [
+     "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 111.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 111.5,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56,
+      "setupMin": 10,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 18.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 56.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 114.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 114.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45567509891,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 151.5,
+    "path": [
+     "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": "Detect changed paths",
+    "jobs": [
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 68.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 68.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.1,
+      "setupMin": 9.9,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 121.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 121.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.9,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 30.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 151.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 151.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build-linux-amd64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 15.1,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Run regression/ld and ld-verify",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 14.1,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45559585771,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 121.2,
+    "path": [
+     "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 1.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.1,
+      "setupMin": 10.1,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 59.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 59.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 121.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 121.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 113.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 113.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45539691101,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 140.3,
+    "path": [
+     "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 140.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 140.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56,
+      "setupMin": 10,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 34.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 0.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 67.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 67.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 113.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 113.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45490547929,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 160.2,
+    "path": [
+     "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 66.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 66.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.1,
+      "setupMin": 10,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 116.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 116.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 1.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 24.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 160.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 160.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45418168179,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 108.5,
+    "path": [
+     "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)"
+    ],
+    "topBlocker": "Detect changed paths",
+    "jobs": [
+     {
+      "name": "Cyclomatic complexity",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check CMake style (cmakelint)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build and upload coverage to Codecov",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 56.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.5,
+      "setupMin": 10.1,
+      "runner": "Linux",
+      "vcpus": null
+     },
+     {
+      "name": "testing-tool",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check C/C++ code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Detect changed paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Check Python code style (YAPF)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 57.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 57.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 101.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 101.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 108.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 108.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build-linux-amd64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 12.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Run regression/ld and ld-verify",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 15.2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "doxygen",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 4.1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.7,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 17,
+  "cancelInProgress": true,
+  "pathFilters": null,
+  "affected": true,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": true,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": null,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": null,
+  "preCommit": null,
+  "hints": [
+   {
+    "practice": "pathFilters",
+    "path": ".github/workflows/ci-pull-request.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/aux-build-unix.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci-pull-request.yml",
+   "affected": ".github/workflows/ci-pull-request.yml",
+   "scheduled": ".github/workflows/ci-nightly.yml",
+   "depCache": ".github/workflows/aux-build-unix.yml",
+   "compilerCache": ".github/workflows/aux-build-unix.yml",
+   "timeouts": ".github/workflows/aux-symex-oracles.yml"
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "pathFilters: .github/workflows/ci-pull-request.yml hints at it, in a form the scorer doesn't check (word)",
+   "shardsConfigured: .github/workflows/aux-build-unix.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    46
+   ],
+   [
+    "C",
+    31
+   ],
+   [
+    "Python",
+    13
+   ],
+   [
+    "SWIG",
+    7
+   ]
+  ],
+  "workspace": {
+   "packageManagers": null,
+   "tools": null
+  },
+  "packages": null,
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": null,
+  "libraries": [
+   {
+    "name": "ast2json",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "hypothesis",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "mypy",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    65
+   ],
+   [
+    "self-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "esbmc",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [
+    {
+     "id": "esbmc",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": null,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 14,
+    "edges": 7,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "testing-tool",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.5,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Check Python code style (YAPF)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "static llvm-22 DebugOpt (python) / Build ESBMC (ubuntu-24.04)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 111.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Build and upload coverage to Codecov",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 56,
+     "runner": "Linux",
+     "vcpus": null
+    },
+    {
+     "id": "Detect changed paths",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Cyclomatic complexity",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.9,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Check CMake style (cmakelint)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Check C/C++ code-style",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.7,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "static llvm-22 DebugOpt (pyother) / Build ESBMC (ubuntu-24.04)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 18.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "static llvm-22 DebugOpt / Build ESBMC (ubuntu-24.04)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 56.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 114.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "static llvm-22 DebugOpt (numpy) / Build ESBMC (ubuntu-24.04)"
+   ],
+   "pathMinP50": 121.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 2.2× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 120,
+ "read": {
+  "calls": 120,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

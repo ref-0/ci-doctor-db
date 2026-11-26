@@ -1,0 +1,2928 @@
+{
+ "repo": "bartblast/hologram",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "dev",
+ "profile": {
+  "ageYears": 6.3,
+  "stars": 1586,
+  "forks": 122,
+  "languages": [
+   [
+    "Elixir",
+    57
+   ],
+   [
+    "JavaScript",
+    43
+   ],
+   [
+    "CSS",
+    0
+   ]
+  ],
+  "linesOfCode": 390174,
+  "files": 2089,
+  "sourceFiles": 1917,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 87418,
+   "tests": 270641,
+   "integration": 5113,
+   "support": 27003
+  },
+  "testShare": 0.7759520877174158,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 106,
+  "commitsPerWeekYear": 85,
+  "pace": 1.3,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 60,
+  "prsMergedPerWeek": 57,
+  "botShareOfMergedPrs": 1.8,
+  "openToMergeHours": {
+   "p50": 3,
+   "p90": 23.5,
+   "n": 56
+  },
+  "prRunsPerDay": 26.2,
+  "runsPerMergedPr": 3.2
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 183,
+  "runsInPeriod": 183,
+  "truncated": false,
+  "mainDays": 4.5
+ },
+ "size": "medium",
+ "headsPerWeek": 182,
+ "score": 53,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 42,
+  "reliability": 58,
+  "efficiency": 82
+ },
+ "detail": {
+  "speed": {
+   "wait": 45,
+   "forSize": 38,
+   "tail": 42
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 681.7,
+  "prBilledMinutesPerDay": 768.3,
+  "jobMinutesPerMergedPr": 83.7,
+  "expectedMinutesPerMergedPr": 242.9,
+  "expectedWait": 14.9,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 183,
+  "timed": 40,
+  "p50": 20.233333333333334,
+  "p75": 26.366666666666667,
+  "p90": 37.75,
+  "redRate": 0.00546448087431694,
+  "rerunRate": 0.00546448087431694,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.01092896174863388,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    40
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Fix Dependabot Lockfile"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 20.233333333333334
+ },
+ "main": {
+  "heads": 7,
+  "p50": 10.166666666666666,
+  "p90": 16.133333333333333,
+  "redRate": 0.42857142857142855,
+  "redBy": [
+   [
+    "CI",
+    3
+   ]
+  ]
+ },
+ "botRunShare": 0.015625,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 27,
+  "spanMin": 39.5,
+  "jobMinutes": 113.21666666666665,
+  "billedMinutes": 125,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 886,
+  "queueP90Sec": 2491,
+  "setupShare": 0.09827148555542126,
+  "critical": {
+   "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+   "minutes": 8.933333333333334,
+   "shareOfSpan": 0.22616033755274262
+  },
+  "longest": {
+   "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+   "minutes": 10.116666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    157
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 1,
+  "runsLeftOut": 5,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 5
+   },
+   {
+    "why": "a job GitHub created as another finished, a need the YAML lacks",
+    "runs": 5
+   }
+  ],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 9,
+  "edges": 4,
+  "matrixJobs": 9,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "minutes": 5.5,
+    "share": 0.36,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 3.7,
+    "workMin": 1.9,
+    "setupMin": 0.4
+   },
+   {
+    "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+    "minutes": 9.8,
+    "share": 0.64,
+    "blockedMin": 5.5,
+    "hiddenMin": 0,
+    "queueMin": 2.4,
+    "workMin": 7.4,
+    "setupMin": 0.5
+   }
+  ],
+  "chainRuns": 1,
+  "pathJobsP50": 2,
+  "pathMinP50": 15.3,
+  "blockedMinP50": 5.5,
+  "queueMinP50": 6.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 9.3,
+  "setupInPathMinP50": 0.5,
+  "topBlockers": [
+   {
+    "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "runs": 1,
+    "heldJobs": 4,
+    "jobs": 22,
+    "tookMin": 5.5,
+    "heldJobMin": 22.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+   "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+   "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+   "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+   "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+  ],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 43643794154,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 39.5,
+    "path": [
+     "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.6,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.2,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 3.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.8,
+      "endMin": 15.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.8,
+      "workMin": 10.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 5.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.3,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.3,
+      "workMin": 2.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.6,
+      "endMin": 19,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.6,
+      "workMin": 5.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 5.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 17.7,
+      "endMin": 22.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 17.7,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.9,
+      "endMin": 19.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.9,
+      "workMin": 5.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 17.7,
+      "endMin": 25.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 17.7,
+      "workMin": 8.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 20.4,
+      "endMin": 25.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 20.4,
+      "workMin": 4.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.3,
+      "endMin": 22.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.3,
+      "workMin": 6.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 15,
+      "endMin": 20.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 15,
+      "workMin": 5.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.5,
+      "endMin": 26.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.5,
+      "workMin": 7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.6,
+      "endMin": 16.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 8.7,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 15.9,
+      "endMin": 21.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 15.9,
+      "workMin": 5.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.9,
+      "endMin": 22.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.9,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 21.8,
+      "endMin": 25.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 21.8,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.1,
+      "endMin": 25.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.1,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 4.1,
+      "startMin": 25.8,
+      "endMin": 29.9,
+      "blockedMin": 0,
+      "hiddenMin": 4.1,
+      "queueMin": 21.7,
+      "workMin": 4.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 4.1,
+      "startMin": 25.8,
+      "endMin": 29,
+      "blockedMin": 0,
+      "hiddenMin": 4.1,
+      "queueMin": 21.7,
+      "workMin": 3.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 4.1,
+      "createdMin": 4.1,
+      "startMin": 25.8,
+      "endMin": 31.7,
+      "blockedMin": 4.1,
+      "hiddenMin": 0,
+      "queueMin": 21.8,
+      "workMin": 5.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 4.1,
+      "createdMin": 4.1,
+      "startMin": 26,
+      "endMin": 31.2,
+      "blockedMin": 4.1,
+      "hiddenMin": 0,
+      "queueMin": 21.9,
+      "workMin": 5.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 4.1,
+      "createdMin": 4.1,
+      "startMin": 29.2,
+      "endMin": 30.2,
+      "blockedMin": 4.1,
+      "hiddenMin": 0,
+      "queueMin": 25.1,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 4.1,
+      "createdMin": 4.1,
+      "startMin": 30.6,
+      "endMin": 39.5,
+      "blockedMin": 4.1,
+      "hiddenMin": 0,
+      "queueMin": 26.5,
+      "workMin": 8.9,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 43639991797,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 73,
+    "path": [
+     "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 33.9,
+      "endMin": 36.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 33.9,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.6,
+      "endMin": 38.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.6,
+      "workMin": 2.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35,
+      "endMin": 42.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35,
+      "workMin": 7.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.1,
+      "endMin": 30.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.1,
+      "workMin": 8.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 38.2,
+      "endMin": 43.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 38.2,
+      "workMin": 5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36.6,
+      "endMin": 44.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36.6,
+      "workMin": 8.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 23.4,
+      "endMin": 31.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 23.4,
+      "workMin": 8.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 33.2,
+      "endMin": 39.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 33.2,
+      "workMin": 6.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 41.5,
+      "endMin": 46.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 41.5,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 33.5,
+      "endMin": 38.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 33.5,
+      "workMin": 5.2,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 39.4,
+      "endMin": 48.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 39.4,
+      "workMin": 9.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 40,
+      "endMin": 45,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 40,
+      "workMin": 5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 44.5,
+      "endMin": 47,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 44.5,
+      "workMin": 2.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 49.1,
+      "endMin": 52,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 49.1,
+      "workMin": 2.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 43.9,
+      "endMin": 48.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 43.9,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 50.1,
+      "endMin": 55,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 50.1,
+      "workMin": 4.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 52,
+      "endMin": 58.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 52,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 53,
+      "endMin": 57.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 53,
+      "workMin": 4.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 53.1,
+      "endMin": 56.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 53.1,
+      "workMin": 3.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 58.4,
+      "endMin": 61.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 58.4,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 58.7,
+      "endMin": 61.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 58.7,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.7,
+      "startMin": 63.2,
+      "endMin": 72.1,
+      "blockedMin": 36.7,
+      "hiddenMin": 0,
+      "queueMin": 26.5,
+      "workMin": 8.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 36.7,
+      "startMin": 63.8,
+      "endMin": 67.4,
+      "blockedMin": 0,
+      "hiddenMin": 36.7,
+      "queueMin": 27.2,
+      "workMin": 3.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.7,
+      "startMin": 66,
+      "endMin": 71,
+      "blockedMin": 36.7,
+      "hiddenMin": 0,
+      "queueMin": 29.4,
+      "workMin": 5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.7,
+      "startMin": 67.4,
+      "endMin": 73,
+      "blockedMin": 36.7,
+      "hiddenMin": 0,
+      "queueMin": 30.8,
+      "workMin": 5.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.7,
+      "startMin": 67.4,
+      "endMin": 72.7,
+      "blockedMin": 36.7,
+      "hiddenMin": 0,
+      "queueMin": 30.7,
+      "workMin": 5.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 36.7,
+      "startMin": 67.8,
+      "endMin": 70.7,
+      "blockedMin": 0,
+      "hiddenMin": 36.7,
+      "queueMin": 31.1,
+      "workMin": 3,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 43639717045,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 67.5,
+    "path": [
+     "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.3,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.3,
+      "workMin": 2.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 14.1,
+      "endMin": 17.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 14.1,
+      "workMin": 3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.3,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.3,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.2,
+      "endMin": 19.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.2,
+      "workMin": 3.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.7,
+      "endMin": 26.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.7,
+      "workMin": 10.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.9,
+      "endMin": 16.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 8.6,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.9,
+      "endMin": 29.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.9,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.4,
+      "endMin": 23.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.4,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 23.6,
+      "endMin": 28.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 23.6,
+      "workMin": 4.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.9,
+      "endMin": 39.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.9,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29.6,
+      "endMin": 36.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29.6,
+      "workMin": 6.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 31.7,
+      "endMin": 37,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 31.7,
+      "workMin": 5.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 26.8,
+      "endMin": 29.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 26.8,
+      "workMin": 3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 27.5,
+      "endMin": 34.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 27.5,
+      "workMin": 6.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.4,
+      "endMin": 23.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.4,
+      "workMin": 5.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 32.8,
+      "endMin": 39.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 32.8,
+      "workMin": 6.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36.9,
+      "endMin": 42.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36.9,
+      "workMin": 5.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36.1,
+      "endMin": 38.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36.1,
+      "workMin": 2.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 34.2,
+      "endMin": 36.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 34.2,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 37,
+      "endMin": 40.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 37,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36.4,
+      "endMin": 42.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36.4,
+      "workMin": 6.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 63.6,
+      "endMin": 65.3,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 50.3,
+      "workMin": 1.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 13.2,
+      "startMin": 64.1,
+      "endMin": 64.6,
+      "blockedMin": 0,
+      "hiddenMin": 13.2,
+      "queueMin": 50.9,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 64,
+      "endMin": 64.9,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 50.8,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 64.7,
+      "endMin": 65.5,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 51.5,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 13.2,
+      "startMin": 64.2,
+      "endMin": 67.5,
+      "blockedMin": 0,
+      "hiddenMin": 13.2,
+      "queueMin": 51,
+      "workMin": 3.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 65.1,
+      "endMin": 66,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 51.8,
+      "workMin": 1,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 43637634588,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 41.3,
+    "path": [
+     "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 4.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 11.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 8.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 25.2,
+      "endMin": 28.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 25.2,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.3,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 6.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.9,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 5.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.1,
+      "endMin": 16.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.1,
+      "workMin": 5.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.8,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 26.2,
+      "endMin": 30.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 26.2,
+      "workMin": 4.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.3,
+      "endMin": 13.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 8.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.2,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 6.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 6.7,
+      "setupMin": 1
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.2,
+      "endMin": 14.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.2,
+      "workMin": 3.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.7,
+      "endMin": 17.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.7,
+      "workMin": 5.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.6,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.6,
+      "workMin": 4.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 14.8,
+      "endMin": 21.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 14.8,
+      "workMin": 6.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.1,
+      "endMin": 22.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.1,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.1,
+      "endMin": 21.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.1,
+      "workMin": 2.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.9,
+      "endMin": 23.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.9,
+      "workMin": 3.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.7,
+      "endMin": 21.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.7,
+      "workMin": 7.9,
+      "setupMin": 1
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22,
+      "endMin": 24.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.5,
+      "startMin": 28,
+      "endMin": 31.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.5,
+      "queueMin": 25.5,
+      "workMin": 3.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.5,
+      "startMin": 26.2,
+      "endMin": 30.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.5,
+      "queueMin": 23.7,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 32.3,
+      "endMin": 41.3,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 29.8,
+      "workMin": 9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 27,
+      "endMin": 31.5,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 24.4,
+      "workMin": 4.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 28,
+      "endMin": 33.5,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 25.5,
+      "workMin": 5.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 31.6,
+      "endMin": 36.7,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 29,
+      "workMin": 5.2,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 43636379560,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 15.5,
+    "path": [
+     "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.4,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 6.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.6,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.2,
+      "endMin": 11.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 8.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.7,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.7,
+      "workMin": 2.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.2,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 4.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.3,
+      "endMin": 8.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.3,
+      "workMin": 2.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.8,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.8,
+      "workMin": 4.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.2,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 4.5,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.9,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.4,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.4,
+      "workMin": 5.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.1,
+      "endMin": 14.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.1,
+      "workMin": 7.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.8,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.8,
+      "workMin": 3.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.8,
+      "endMin": 15.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.8,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Database Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.2,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.1,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.1,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.3,
+      "endMin": 14.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 9.5,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.2,
+      "endMin": 13.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 5.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.3,
+      "endMin": 14.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.3,
+      "workMin": 7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.6,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Minimal Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 6.8,
+      "startMin": 9.3,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 6.8,
+      "queueMin": 2.5,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 9.7,
+      "endMin": 10.7,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 10,
+      "endMin": 10.9,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 6.8,
+      "startMin": 9.8,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 6.8,
+      "queueMin": 3,
+      "workMin": 2.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 9.8,
+      "endMin": 11.4,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 1.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 10.7,
+      "endMin": 11.6,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 43619710354,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15.3,
+    "path": [
+     "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+    ],
+    "topBlocker": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "jobs": [
+     {
+      "name": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 4.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 10.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 5.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.6,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 4.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.3,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 2.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 2.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.3,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.3,
+      "workMin": 3.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.8,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.8,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 5.1,
+      "setupMin": 1
+     },
+     {
+      "name": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.2,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 2.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.3,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 2.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 2.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 5.5,
+      "createdMin": 5.5,
+      "startMin": 7.3,
+      "endMin": 12.2,
+      "blockedMin": 5.5,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 4.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 5.5,
+      "createdMin": 5.5,
+      "startMin": 7.1,
+      "endMin": 11.9,
+      "blockedMin": 5.5,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 4.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 5.5,
+      "createdMin": 5.5,
+      "startMin": 7.9,
+      "endMin": 13,
+      "blockedMin": 5.5,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+      "needs": [
+       "lib_checks"
+      ],
+      "readyMin": 5.5,
+      "createdMin": 5.5,
+      "startMin": 7.9,
+      "endMin": 15.3,
+      "blockedMin": 5.5,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 7.4,
+      "setupMin": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 2,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Elixir",
+    57
+   ],
+   [
+    "JavaScript",
+    43
+   ],
+   [
+    "CSS",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Mocha"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier"
+  ],
+  "libraries": [
+   {
+    "name": "chai",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jsdom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jsdom-global",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "lodash",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "sinon",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "snabbdom-to-html",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    157
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "assets/package.json",
+     "path": "assets/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "assets/package.json",
+     "dir": "assets",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "assets/package.json"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2089
+   },
+   "nodes": [
+    {
+     "id": "assets#test",
+     "pkg": "assets",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "assets#test-file",
+     "pkg": "assets",
+     "name": "test-file",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "assets#test"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 9,
+    "edges": 4,
+    "runs": 1,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Feature Tests over HTTPS on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.1,
+     "workMin": 4.1
+    },
+    {
+     "id": "Feature Tests (partition 1) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.2,
+     "workMin": 10.3
+    },
+    {
+     "id": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3,
+     "workMin": 4.1
+    },
+    {
+     "id": "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 1.9
+    },
+    {
+     "id": "Lib Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3,
+     "workMin": 4.3
+    },
+    {
+     "id": "Lib Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.1,
+     "workMin": 5.8
+    },
+    {
+     "id": "Feature Tests (partition 3) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.6,
+     "workMin": 4.8
+    },
+    {
+     "id": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.19.5, Erlang/OTP 28.5, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.3,
+     "workMin": 2.7
+    },
+    {
+     "id": "Feature Tests (partition 5) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4,
+     "workMin": 2.3
+    },
+    {
+     "id": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4.3,
+     "workMin": 3.6
+    },
+    {
+     "id": "Feature Tests (partition 6) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.8,
+     "workMin": 4
+    },
+    {
+     "id": "Lib Compile Task Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.8,
+     "workMin": 3.4
+    },
+    {
+     "id": "Feature Tests (partition 4) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4,
+     "workMin": 5
+    },
+    {
+     "id": "Lib Compile Task Tests on windows-2022, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.1,
+     "workMin": 5.1
+    },
+    {
+     "id": "Lib Tests on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 28.5, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4.2,
+     "workMin": 2.9
+    },
+    {
+     "id": "Feature Tests (partition 8) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5.3,
+     "workMin": 2.6
+    },
+    {
+     "id": "Feature Tests (partition 2) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5.4,
+     "workMin": 2.7
+    },
+    {
+     "id": "Feature Tests (partition 7) on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5,
+     "workMin": 2.8
+    },
+    {
+     "id": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [
+      "lib_checks"
+     ],
+     "onPath": false,
+     "blockedMin": 5.5,
+     "queueMin": 1.8,
+     "workMin": 4.9
+    },
+    {
+     "id": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [
+      "lib_checks"
+     ],
+     "onPath": false,
+     "blockedMin": 5.5,
+     "queueMin": 1.5,
+     "workMin": 4.9
+    },
+    {
+     "id": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [
+      "lib_checks"
+     ],
+     "onPath": false,
+     "blockedMin": 5.5,
+     "queueMin": 2.4,
+     "workMin": 5.1
+    },
+    {
+     "id": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "needs": [
+      "lib_checks"
+     ],
+     "onPath": true,
+     "blockedMin": 5.5,
+     "queueMin": 2.4,
+     "workMin": 7.4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Cluster Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "to": "lib_checks"
+    },
+    {
+     "from": "Cowboy Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "to": "lib_checks"
+    },
+    {
+     "from": "Umbrella Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "to": "lib_checks"
+    },
+    {
+     "from": "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0",
+     "to": "lib_checks"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Lib Checks on ubuntu-latest, Elixir 1.20.0, Erlang/OTP 29.0, Node.js 24.13.0",
+    "Ecosystem Tests on ubuntu-latest, Elixir 1.20.0, OTP 29.0, Node.js 24.13.0"
+   ],
+   "pathMinP50": 15.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Jobs wait 2491 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Elixir it applies the principles, without a Elixir-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 31,
+ "read": {
+  "calls": 31,
+  "fromCache": 0
+ }
+}

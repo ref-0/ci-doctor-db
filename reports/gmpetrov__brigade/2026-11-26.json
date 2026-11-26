@@ -1,0 +1,2640 @@
+{
+ "repo": "gmpetrov/brigade",
+ "date": "2026-11-26",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "116 of 116 PR pushes in the window came from bots (brigade-production[bot], dependabot[bot]), and only pushes people make are timed; 5 are needed.",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 55,
+  "forks": 3,
+  "languages": [
+   [
+    "TypeScript",
+    98
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "MDX",
+    0
+   ]
+  ],
+  "linesOfCode": 515337,
+  "files": 2186,
+  "sourceFiles": 1490,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 373971,
+   "tests": 139061,
+   "integration": 1829,
+   "support": 476
+  },
+  "testShare": 0.2743166832103221,
+  "packages": {
+   "npm": 14,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 23,
+  "pace": 5.7,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 54.6,
+  "prsMergedPerWeek": 49.7,
+  "botShareOfMergedPrs": 100,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 20.6,
+  "runsPerMergedPr": 2.9
+ },
+ "window": {
+  "days": 7,
+  "runs": 145,
+  "runsInPeriod": 145,
+  "truncated": false,
+  "mainDays": 7
+ },
+ "size": "medium",
+ "headsPerWeek": 115,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": null,
+   "forSize": null,
+   "tail": null
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 67
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": null,
+   "queue": null,
+   "shardIdle": null,
+   "path": null,
+   "graphs": 25
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 270.6,
+  "prBilledMinutesPerDay": 319.2,
+  "jobMinutesPerMergedPr": 38.1,
+  "prVcpuMinutesPerDay": 1068.9,
+  "vcpuMinutesPerMergedPr": 150.7,
+  "expectedVcpuMinutesPerMergedPr": 1065.1,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 266.3,
+  "expectedWait": 15.3,
+  "workflowsOnPrs": 3
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 0.31,
+  "missing": [
+   "speed.wait",
+   "speed.forSize",
+   "speed.tail",
+   "efficiency.setup",
+   "efficiency.queue",
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 0,
+   "read": 0,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 116,
+  "ranHeads": 116,
+  "timed": 0,
+  "p50": null,
+  "p75": null,
+  "p90": null,
+  "redRate": 0.11206896551724138,
+  "rerunRate": 0.008620689655172414,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.4396551724137931,
+  "botHeads": 64,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 116,
+  "bots": [
+   [
+    "brigade-production[bot]",
+    110
+   ],
+   [
+    "dependabot[bot]",
+    6
+   ]
+  ],
+  "lastToFinish": [],
+  "redBy": [
+   [
+    "CI",
+    12
+   ],
+   [
+    "Brigade.app",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Release Brigade.app"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": null
+ },
+ "main": {
+  "heads": 54,
+  "p50": 8.133333333333333,
+  "p90": 8.216666666666667,
+  "redRate": 0.16666666666666666,
+  "redBy": [
+   [
+    "CI",
+    9
+   ]
+  ]
+ },
+ "botRunShare": 0.9798994974874372,
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": "turbo.json",
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/desktop-release.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "pathFilters": ".github/workflows/computer-use-macos.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/ci.yml",
+   "depBotsBatched": ".github/dependabot.yml"
+  },
+  "unknown": [
+   "shardsConfigured: .github/workflows/desktop-release.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    98
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "MDX",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm"
+   ],
+   "tools": [
+    "Turborepo",
+    "pnpm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 14,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier"
+  ],
+  "libraries": [
+   {
+    "name": "tsx",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "wrangler",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "yjs",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "@blocknote/core",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@cloudflare/workers-types",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "playwright-core",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "y-prosemirror",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "y-protocols",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "zod",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@ai-sdk/harness-pi",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "better-auth",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "modern-screenshot",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react-dom",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ws",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "y-partyserver",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@ai-sdk/harness",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@ai-sdk/harness-acp",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@ai-sdk/harness-claude-code",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@ai-sdk/harness-codex",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": null,
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "@brigade/api",
+     "path": "apps/api/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@brigade/contracts",
+      "@brigade/editor",
+      "@brigade/providers"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@brigade/collab",
+     "path": "apps/collab/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/computer-use-macos",
+     "path": "apps/computer-use-macos/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/desktop",
+     "path": "apps/desktop/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/docs",
+     "path": "apps/docs/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/preview-gateway",
+     "path": "apps/preview-gateway/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/runner",
+     "path": "apps/runner/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@brigade/contracts"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@brigade/web",
+     "path": "apps/web/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@brigade/contracts",
+      "@brigade/editor",
+      "@brigade/eslint-config"
+     ],
+     "exports": false
+    },
+    {
+     "name": "brigade",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@brigade/contracts",
+     "path": "packages/contracts/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@brigade/editor",
+     "path": "packages/editor/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@brigade/contracts"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@brigade/eslint-config",
+     "path": "packages/eslint-config/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@brigade/providers",
+     "path": "packages/providers/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@brigade/contracts"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    }
+   ],
+   "count": 13,
+   "edges": 9,
+   "cycles": [],
+   "maxDepth": 2,
+   "topFanIn": [
+    {
+     "name": "@brigade/contracts",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "@brigade/editor",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "@brigade/eslint-config",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@brigade/providers",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 13,
+    "edges": 9
+   },
+   "nodes": [
+    {
+     "id": "@brigade/contracts",
+     "dir": "packages/contracts",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/editor",
+     "dir": "packages/editor",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "@brigade/eslint-config",
+     "dir": "packages/eslint-config",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/providers",
+     "dir": "packages/providers",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "@brigade/api",
+     "dir": "apps/api",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "@brigade/collab",
+     "dir": "apps/collab",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/computer-use-macos",
+     "dir": "apps/computer-use-macos",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop",
+     "dir": "apps/desktop",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/docs",
+     "dir": "apps/docs",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/preview-gateway",
+     "dir": "apps/preview-gateway",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@brigade/runner",
+     "dir": "apps/runner",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@brigade/web",
+     "dir": "apps/web",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "brigade",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/contracts",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/editor",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/providers",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/runner",
+     "to": "@brigade/contracts",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/contracts",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/editor",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/eslint-config",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/editor",
+     "to": "@brigade/contracts",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@brigade/providers",
+     "to": "@brigade/contracts",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "@brigade/api",
+    "@brigade/editor",
+    "@brigade/contracts"
+   ],
+   "topFanIn": [
+    {
+     "name": "@brigade/contracts",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "@brigade/editor",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "@brigade/eslint-config",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@brigade/providers",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 5,
+    "edges": 9,
+    "packages": 13,
+    "packagesWithEntries": 5,
+    "filesRead": 73,
+    "undecided": 0
+   },
+   "nodes": [
+    {
+     "id": "@brigade/contracts#.",
+     "pkg": "@brigade/contracts",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 5,
+      "files": null
+     },
+     "dependents": 5,
+     "loads": null,
+     "file": "packages/contracts/src/index.ts",
+     "guessed": true,
+     "reexports": 61,
+     "stars": 61,
+     "barrel": false,
+     "overload": 305
+    },
+    {
+     "id": "@brigade/providers#.",
+     "pkg": "@brigade/providers",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "packages/providers/src/index.ts",
+     "guessed": true,
+     "reexports": 4,
+     "stars": 0,
+     "barrel": false,
+     "overload": 4
+    },
+    {
+     "id": "@brigade/editor#.",
+     "pkg": "@brigade/editor",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": "packages/editor/src/index.ts",
+     "guessed": true,
+     "reexports": 2,
+     "stars": 2,
+     "barrel": true,
+     "overload": 4
+    },
+    {
+     "id": "@brigade/desktop#.",
+     "pkg": "@brigade/desktop",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "apps/desktop/src/main.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@brigade/eslint-config#.",
+     "pkg": "@brigade/eslint-config",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "packages/eslint-config/index.mjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/contracts",
+     "files": null
+    },
+    {
+     "from": "@brigade/runner",
+     "to": "@brigade/contracts",
+     "files": null
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/contracts",
+     "files": null
+    },
+    {
+     "from": "@brigade/editor",
+     "to": "@brigade/contracts",
+     "files": null
+    },
+    {
+     "from": "@brigade/providers",
+     "to": "@brigade/contracts",
+     "files": null
+    },
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/editor",
+     "files": null
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/editor",
+     "files": null
+    },
+    {
+     "from": "@brigade/api",
+     "to": "@brigade/providers",
+     "files": null
+    },
+    {
+     "from": "@brigade/web",
+     "to": "@brigade/eslint-config",
+     "files": null
+    }
+   ],
+   "flags": [
+    {
+     "kind": "overloaded-entry",
+     "subject": "@brigade/contracts#.",
+     "numbers": {
+      "reexports": 61,
+      "importerPackages": 5,
+      "overload": 305,
+      "dependents": 5,
+      "packagesOf": 13
+     },
+     "threshold": {
+      "reexports": 20,
+      "importerPackages": 3
+     }
+    },
+    {
+     "kind": "root-barrel",
+     "subject": "@brigade/editor#.",
+     "numbers": {
+      "stars": 2,
+      "reexports": 2,
+      "importerPackages": 2,
+      "packagesOf": 13
+     },
+     "threshold": null,
+     "detail": "a shared package's root re-exports with `export *`, so each importer reaches every module behind it"
+    }
+   ],
+   "flagCounts": {
+    "overloaded-entry": 1,
+    "root-barrel": 1
+   },
+   "rootBarrels": 1,
+   "withStars": 2,
+   "worst": {
+    "id": "@brigade/contracts#.",
+    "reexports": 61,
+    "importerPackages": 5,
+    "exact": true,
+    "overload": 305,
+    "dependents": 5,
+    "packagesOf": 13,
+    "share": 0.3846
+   },
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 83,
+    "edges": 72,
+    "cached": 16,
+    "trackedFiles": 2186
+   },
+   "nodes": [
+    {
+     "id": "@brigade/api#build",
+     "pkg": "@brigade/api",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "apps/api/.env*"
+      ],
+      "files": 930
+     },
+     "outputs": [
+      "apps/api/dist/**",
+      "apps/api/.next/**",
+      "!apps/api/.next/cache/**"
+     ],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/api#clean",
+     "pkg": "@brigade/api",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#db:deploy",
+     "pkg": "@brigade/api",
+     "name": "db:deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#db:migrate",
+     "pkg": "@brigade/api",
+     "name": "db:migrate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#db:seed",
+     "pkg": "@brigade/api",
+     "name": "db:seed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#dev",
+     "pkg": "@brigade/api",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/api#playbooks",
+     "pkg": "@brigade/api",
+     "name": "playbooks",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#screenshot",
+     "pkg": "@brigade/api",
+     "name": "screenshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#start",
+     "pkg": "@brigade/api",
+     "name": "start",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@brigade/api#stripe:setup",
+     "pkg": "@brigade/api",
+     "name": "stripe:setup",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#test",
+     "pkg": "@brigade/api",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/api#typecheck",
+     "pkg": "@brigade/api",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 930
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/api#vapid",
+     "pkg": "@brigade/api",
+     "name": "vapid",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/collab#clean",
+     "pkg": "@brigade/collab",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/collab#dev",
+     "pkg": "@brigade/collab",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/collab#typecheck",
+     "pkg": "@brigade/collab",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 6
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/computer-use-macos#build:app",
+     "pkg": "@brigade/computer-use-macos",
+     "name": "build:app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/computer-use-macos#install:app",
+     "pkg": "@brigade/computer-use-macos",
+     "name": "install:app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/contracts#build",
+     "pkg": "@brigade/contracts",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/contracts/.env*"
+      ],
+      "files": 92
+     },
+     "outputs": [
+      "packages/contracts/dist/**",
+      "packages/contracts/.next/**",
+      "!packages/contracts/.next/cache/**"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/contracts#clean",
+     "pkg": "@brigade/contracts",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/contracts#dev",
+     "pkg": "@brigade/contracts",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/contracts#test",
+     "pkg": "@brigade/contracts",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/contracts#typecheck",
+     "pkg": "@brigade/contracts",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 92
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#build:app",
+     "pkg": "@brigade/desktop",
+     "name": "build:app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#bundle",
+     "pkg": "@brigade/desktop",
+     "name": "bundle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#clean",
+     "pkg": "@brigade/desktop",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#dev:app",
+     "pkg": "@brigade/desktop",
+     "name": "dev:app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#smoke",
+     "pkg": "@brigade/desktop",
+     "name": "smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#test",
+     "pkg": "@brigade/desktop",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/desktop#typecheck",
+     "pkg": "@brigade/desktop",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 86
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/docs#check",
+     "pkg": "@brigade/docs",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/docs#dev",
+     "pkg": "@brigade/docs",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/editor#build",
+     "pkg": "@brigade/editor",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/editor/.env*"
+      ],
+      "files": 5
+     },
+     "outputs": [
+      "packages/editor/dist/**",
+      "packages/editor/.next/**",
+      "!packages/editor/.next/cache/**"
+     ],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/editor#clean",
+     "pkg": "@brigade/editor",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/editor#dev",
+     "pkg": "@brigade/editor",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/editor#typecheck",
+     "pkg": "@brigade/editor",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 5
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/preview-gateway#clean",
+     "pkg": "@brigade/preview-gateway",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/preview-gateway#dev",
+     "pkg": "@brigade/preview-gateway",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/preview-gateway#test",
+     "pkg": "@brigade/preview-gateway",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/preview-gateway#typecheck",
+     "pkg": "@brigade/preview-gateway",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 8
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/providers#boat",
+     "pkg": "@brigade/providers",
+     "name": "boat",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/providers#build",
+     "pkg": "@brigade/providers",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/providers/.env*"
+      ],
+      "files": 9
+     },
+     "outputs": [
+      "packages/providers/dist/**",
+      "packages/providers/.next/**",
+      "!packages/providers/.next/cache/**"
+     ],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/providers#clean",
+     "pkg": "@brigade/providers",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/providers#dev",
+     "pkg": "@brigade/providers",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/providers#test",
+     "pkg": "@brigade/providers",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/providers#typecheck",
+     "pkg": "@brigade/providers",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 9
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/runner#build",
+     "pkg": "@brigade/runner",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "apps/runner/.env*"
+      ],
+      "files": 251
+     },
+     "outputs": [
+      "apps/runner/dist/**",
+      "apps/runner/.next/**",
+      "!apps/runner/.next/cache/**"
+     ],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/runner#bundle",
+     "pkg": "@brigade/runner",
+     "name": "bundle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/runner#clean",
+     "pkg": "@brigade/runner",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/runner#dev",
+     "pkg": "@brigade/runner",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/runner#spike",
+     "pkg": "@brigade/runner",
+     "name": "spike",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/runner#start",
+     "pkg": "@brigade/runner",
+     "name": "start",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/runner#test",
+     "pkg": "@brigade/runner",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/runner#typecheck",
+     "pkg": "@brigade/runner",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 251
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@brigade/web#build",
+     "pkg": "@brigade/web",
+     "name": "build",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "apps/web/.env*"
+      ],
+      "files": 625
+     },
+     "outputs": [
+      "apps/web/dist/**",
+      "apps/web/.next/**",
+      "!apps/web/.next/cache/**"
+     ],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/web#clean",
+     "pkg": "@brigade/web",
+     "name": "clean",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/web#dev",
+     "pkg": "@brigade/web",
+     "name": "dev",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@brigade/web#lint",
+     "pkg": "@brigade/web",
+     "name": "lint",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 625
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/web#start",
+     "pkg": "@brigade/web",
+     "name": "start",
+     "runner": "turbo",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@brigade/web#test",
+     "pkg": "@brigade/web",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/web#theme",
+     "pkg": "@brigade/web",
+     "name": "theme",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@brigade/web#typecheck",
+     "pkg": "@brigade/web",
+     "name": "typecheck",
+     "runner": "turbo",
+     "cached": true,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [],
+      "files": 625
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "brigade#build",
+     "pkg": "brigade",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "brigade#cf:build:api",
+     "pkg": "brigade",
+     "name": "cf:build:api",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:build:api-front",
+     "pkg": "brigade",
+     "name": "cf:build:api-front",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:build:collab",
+     "pkg": "brigade",
+     "name": "cf:build:collab",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:build:demo",
+     "pkg": "brigade",
+     "name": "cf:build:demo",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:build:preview-gateway",
+     "pkg": "brigade",
+     "name": "cf:build:preview-gateway",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:build:web",
+     "pkg": "brigade",
+     "name": "cf:build:web",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:api",
+     "pkg": "brigade",
+     "name": "cf:deploy:api",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:api-front",
+     "pkg": "brigade",
+     "name": "cf:deploy:api-front",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:collab",
+     "pkg": "brigade",
+     "name": "cf:deploy:collab",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:demo",
+     "pkg": "brigade",
+     "name": "cf:deploy:demo",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:preview-gateway",
+     "pkg": "brigade",
+     "name": "cf:deploy:preview-gateway",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#cf:deploy:web",
+     "pkg": "brigade",
+     "name": "cf:deploy:web",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#clean",
+     "pkg": "brigade",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "brigade#demo:record",
+     "pkg": "brigade",
+     "name": "demo:record",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#dev",
+     "pkg": "brigade",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "brigade#docs",
+     "pkg": "brigade",
+     "name": "docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 4
+    },
+    {
+     "id": "brigade#format",
+     "pkg": "brigade",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#format:check",
+     "pkg": "brigade",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brigade#lint",
+     "pkg": "brigade",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "brigade#typecheck",
+     "pkg": "brigade",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    }
+   ],
+   "edges": [
+    {
+     "from": "@brigade/contracts#test",
+     "to": "@brigade/contracts#build",
+     "how": "calls"
+    },
+    {
+     "from": "@brigade/providers#build",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/providers#dev",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/providers#typecheck",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/editor#build",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/editor#dev",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/editor#typecheck",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/runner#build",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/runner#dev",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/runner#start",
+     "to": "@brigade/runner#build",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@brigade/runner#typecheck",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#build",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#build",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#build",
+     "to": "@brigade/providers#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#dev",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#dev",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#dev",
+     "to": "@brigade/providers#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#start",
+     "to": "@brigade/api#build",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@brigade/api#typecheck",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#typecheck",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/api#typecheck",
+     "to": "@brigade/providers#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#build",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#build",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#dev",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#dev",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#start",
+     "to": "@brigade/web#build",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@brigade/web#typecheck",
+     "to": "@brigade/contracts#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "@brigade/web#typecheck",
+     "to": "@brigade/editor#build",
+     "how": "dependencies"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/contracts#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/providers#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/editor#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/runner#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/api#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#build",
+     "to": "@brigade/web#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/preview-gateway#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/contracts#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/providers#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/editor#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/collab#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/runner#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/docs#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/api#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#dev",
+     "to": "@brigade/web#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/preview-gateway#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/contracts#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/providers#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/editor#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/collab#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/runner#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/docs#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/api#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "@brigade/web#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#docs",
+     "to": "brigade#dev",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/preview-gateway#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/contracts#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/providers#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/editor#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/desktop#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/collab#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/runner#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/api#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#typecheck",
+     "to": "@brigade/web#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#lint",
+     "to": "@brigade/web#lint",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/preview-gateway#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/contracts#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/providers#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/editor#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/desktop#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/collab#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/runner#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/api#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "brigade#clean",
+     "to": "@brigade/web#clean",
+     "how": "fan-out"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/api#typecheck",
+     "numbers": {
+      "files": 930,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/collab#typecheck",
+     "numbers": {
+      "files": 6,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/contracts#typecheck",
+     "numbers": {
+      "files": 92,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/desktop#typecheck",
+     "numbers": {
+      "files": 86,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/editor#typecheck",
+     "numbers": {
+      "files": 5,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/preview-gateway#typecheck",
+     "numbers": {
+      "files": 8,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/providers#typecheck",
+     "numbers": {
+      "files": 9,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/runner#typecheck",
+     "numbers": {
+      "files": 251,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/web#lint",
+     "numbers": {
+      "files": 625,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    },
+    {
+     "kind": "no-inputs",
+     "subject": "@brigade/web#typecheck",
+     "numbers": {
+      "files": 625,
+      "filesOf": 2186
+     },
+     "threshold": null,
+     "detail": "no declared inputs: turbo's default keys every file of the package, so any change there misses"
+    }
+   ],
+   "flagCounts": {
+    "no-inputs": 10
+   },
+   "depth": 5,
+   "chain": [
+    "brigade#docs",
+    "brigade#dev",
+    "@brigade/api#dev",
+    "@brigade/editor#build",
+    "@brigade/contracts#build"
+   ],
+   "runners": [
+    "turbo",
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": null,
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 73,
+   "calls": 2
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Split @brigade/contracts#.: it re-exports 61 modules to 5 packages, so an edit to any of them reaches all of those packages' checks; give each area its own entry, listed by name, not `export *`",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#export-paths-what-an-edit-triggers"
+  },
+  {
+   "text": "10 cached tasks declare no inputs, such as @brigade/api#typecheck: declare each one's inputs, so an edit it doesn't read keeps its cache",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#workspace-tasks"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 32,
+ "read": {
+  "calls": 32,
+  "fromCache": 0
+ }
+}

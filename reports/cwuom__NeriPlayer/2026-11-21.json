@@ -1,0 +1,1828 @@
+{
+ "repo": "cwuom/NeriPlayer",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 1.3,
+  "stars": 4322,
+  "forks": 173,
+  "languages": [
+   [
+    "Kotlin",
+    96
+   ],
+   [
+    "C++",
+    3
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Java",
+    0
+   ]
+  ],
+  "linesOfCode": 1415016,
+  "files": 5540,
+  "sourceFiles": 4967,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 855672,
+   "tests": 553647,
+   "integration": 261,
+   "support": 5437
+  },
+  "testShare": 0.3952920120523459,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 18.3,
+  "commitsPerWeekYear": 22.4,
+  "pace": 0.8,
+  "activeAuthors28d": 10,
+  "prsOpenedPerWeek": 18,
+  "prsMergedPerWeek": 15,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 6.4,
+   "p90": 23.3,
+   "n": 15
+  },
+  "prRunsPerDay": 10.7,
+  "runsPerMergedPr": 5
+ },
+ "window": {
+  "days": 5.6,
+  "runs": 60,
+  "runsInPeriod": 62,
+  "truncated": false,
+  "mainDays": 6
+ },
+ "size": "large",
+ "headsPerWeek": 49,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 13,
+  "reliability": 49,
+  "efficiency": 84
+ },
+ "detail": {
+  "speed": {
+   "wait": 15,
+   "forSize": 6,
+   "tail": 30
+  },
+  "reliability": {
+   "flakes": 16,
+   "mainRed": 95
+  },
+  "efficiency": {
+   "minutesPerPr": 47,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": 97
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1193.3,
+  "prBilledMinutesPerDay": 1232.5,
+  "jobMinutesPerMergedPr": 556.9,
+  "expectedMinutesPerMergedPr": 371.6,
+  "expectedWait": 20,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 39,
+  "timed": 13,
+  "p50": 45.78333333333333,
+  "p75": 47.1,
+  "p90": 52.766666666666666,
+  "redRate": 0.28205128205128205,
+  "rerunRate": 0.3333333333333333,
+  "passedOnRerunRate": 0.10256410256410256,
+  "cancelledRate": 0.20512820512820512,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 2,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "NeriPlayer Android CI",
+    13
+   ]
+  ],
+  "redBy": [
+   [
+    "NeriPlayer Android CI",
+    12
+   ],
+   [
+    "NeriPlayer Android Native CI",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "NeriPlayer Android CI"
+  ],
+  "allPushesP50": 45.78333333333333
+ },
+ "main": {
+  "heads": 15,
+  "p50": 45.6,
+  "p90": 56.95,
+  "redRate": 0.06666666666666667,
+  "redBy": [
+   [
+    "NeriPlayer Android CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 45.75,
+  "jobMinutes": 247.26666666666665,
+  "billedMinutes": 253,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.03376026272577997,
+  "critical": {
+   "name": "Verify and publish APK",
+   "minutes": 0.15,
+   "shareOfSpan": 0.003257328990228013
+  },
+  "longest": {
+   "name": "Gradle tests",
+   "minutes": 45.35
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ],
+  "shard": {
+   "name": "Android instrumented tests (#)",
+   "shards": 4,
+   "medianMin": 36.35,
+   "maxMin": 41.56666666666667,
+   "maxOverMedian": 1.1351843422849341,
+   "idleTail": 0.10974049707602342
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/android_ci.yml"
+  ],
+  "jobs": 7,
+  "edges": 9,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Verify and publish APK",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "CI tooling",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Android instrumented tests (shard 2)",
+    "minutes": 45.6,
+    "share": 0.99,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 45.6,
+    "setupMin": 0.7
+   },
+   {
+    "name": "Verify and publish APK",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 45.9,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 3,
+  "pathMinP50": 45.8,
+  "blockedMinP50": 45.6,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 45.7,
+  "setupInPathMinP50": 0.8,
+  "topBlockers": [
+   {
+    "name": "Android instrumented tests (…)",
+    "runs": 3,
+    "heldJobs": 1,
+    "jobs": 12,
+    "tookMin": 45.6,
+    "heldJobMin": 18.3
+   },
+   {
+    "name": "Gradle tests",
+    "runs": 2,
+    "heldJobs": 1,
+    "jobs": 12,
+    "tookMin": 45.4,
+    "heldJobMin": 2.3
+   },
+   {
+    "name": "CI tooling",
+    "runs": 1,
+    "heldJobs": 10,
+    "jobs": 12,
+    "tookMin": 0.2,
+    "heldJobMin": 1.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44869309988,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 36.7,
+    "path": [
+     "CI tooling",
+     "Android instrumented tests (shard 2)",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "Android instrumented tests (…)",
+    "jobs": [
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 18.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 28.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 28.2,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 36.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 31.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 31.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 25.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 13.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.6,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 36.4,
+      "createdMin": 36.4,
+      "startMin": 36.4,
+      "endMin": 36.7,
+      "blockedMin": 36.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44796575807,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 57,
+    "path": [
+     "CI tooling",
+     "Android instrumented tests (shard 2)",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "Android instrumented tests (…)",
+    "jobs": [
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.5,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 36,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 35.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 56.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 56.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 19,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.7,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 28.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.6,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 39.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 56.8,
+      "createdMin": 56.8,
+      "startMin": 56.9,
+      "endMin": 57,
+      "blockedMin": 56.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44713074710,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 46.1,
+    "path": [
+     "CI tooling",
+     "Android instrumented tests (shard 1)",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "Android instrumented tests (…)",
+    "jobs": [
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 23.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 17.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 43,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 42.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 43.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 43.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 44.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 43.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 30.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 30.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 45.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 45.6,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 45.9,
+      "createdMin": 45.9,
+      "startMin": 45.9,
+      "endMin": 46.1,
+      "blockedMin": 45.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44701430787,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 42.4,
+    "path": [
+     "CI tooling",
+     "Gradle tests",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "CI tooling",
+    "jobs": [
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.4,
+      "setupMin": 1
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 42.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 42,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 38.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 38.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 38,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 37.8,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 34.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 40.3,
+      "setupMin": 1
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 42.2,
+      "createdMin": 42.2,
+      "startMin": 42.2,
+      "endMin": 42.4,
+      "blockedMin": 42.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44537469842,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 45.8,
+    "path": [
+     "CI tooling",
+     "Gradle tests",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "Gradle tests",
+    "jobs": [
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 45.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 45.4,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 36.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 22,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.8,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 36.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 41.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 41.7,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 43.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 43.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 45.6,
+      "createdMin": 45.6,
+      "startMin": 45.6,
+      "endMin": 45.8,
+      "blockedMin": 45.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44412199410,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 48.2,
+    "path": [
+     "CI tooling",
+     "Gradle tests",
+     "Verify and publish APK"
+    ],
+    "topBlocker": "Gradle tests",
+    "jobs": [
+     {
+      "name": "Worker check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI tooling",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Release build",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 17.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Gradle tests",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 48,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 47.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (External Lyrics host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 25.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Android instrumented tests (shard 3)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 41.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 41.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (Player rotation host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 10.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 1
+     },
+     {
+      "name": "Android instrumented tests (shard 2)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 36.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 36.6,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Android instrumented tests (Glass rendering host)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 10.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 0)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 25.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Android instrumented tests (shard 1)",
+      "needs": [
+       "ci-tooling"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 40,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39.7,
+      "setupMin": 1
+     },
+     {
+      "name": "Verify and publish APK",
+      "needs": [
+       "ci-tooling",
+       "gradle-tests",
+       "worker-check",
+       "android-instrumented-tests",
+       "release-build"
+      ],
+      "readyMin": 48,
+      "createdMin": 48,
+      "startMin": 48,
+      "endMin": 48.2,
+      "blockedMin": 48,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Kotlin",
+    96
+   ],
+   [
+    "C++",
+    3
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Java",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test"
+  ],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 5540
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 7,
+    "edges": 9,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "CI tooling",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "Worker check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.3
+    },
+    {
+     "id": "Release build",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 14
+    },
+    {
+     "id": "Gradle tests",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 17.9
+    },
+    {
+     "id": "Android instrumented tests (shard 0)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 28.2
+    },
+    {
+     "id": "Android instrumented tests (shard 2)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 36.1
+    },
+    {
+     "id": "Android instrumented tests (shard 3)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 31.3
+    },
+    {
+     "id": "Android instrumented tests (shard 1)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 25.6
+    },
+    {
+     "id": "Android instrumented tests (Player rotation host)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 9.3
+    },
+    {
+     "id": "Android instrumented tests (External Lyrics host)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 13.6
+    },
+    {
+     "id": "Android instrumented tests (Glass rendering host)",
+     "needs": [
+      "ci-tooling"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 6.9
+    },
+    {
+     "id": "Verify and publish APK",
+     "needs": [
+      "ci-tooling",
+      "gradle-tests",
+      "worker-check",
+      "android-instrumented-tests",
+      "release-build"
+     ],
+     "onPath": true,
+     "blockedMin": 36.4,
+     "queueMin": 0,
+     "workMin": 0.2
+    }
+   ],
+   "edges": [
+    {
+     "from": "Release build",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Gradle tests",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (shard 0)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (shard 2)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (shard 3)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (shard 1)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (Player rotation host)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (External Lyrics host)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Android instrumented tests (Glass rendering host)",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Verify and publish APK",
+     "to": "ci-tooling"
+    },
+    {
+     "from": "Verify and publish APK",
+     "to": "gradle-tests"
+    },
+    {
+     "from": "Verify and publish APK",
+     "to": "worker-check"
+    },
+    {
+     "from": "Verify and publish APK",
+     "to": "android-instrumented-tests"
+    },
+    {
+     "from": "Verify and publish APK",
+     "to": "release-build"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "CI tooling",
+    "Android instrumented tests (shard 2)",
+    "Verify and publish APK"
+   ],
+   "pathMinP50": 45.8,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "10% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Kotlin it applies the principles, without a Kotlin-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 46,
+ "read": {
+  "calls": 46,
+  "fromCache": 0
+ }
+}

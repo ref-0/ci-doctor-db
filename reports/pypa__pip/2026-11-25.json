@@ -1,0 +1,5248 @@
+{
+ "repo": "pypa/pip",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 15.7,
+  "stars": 10327,
+  "forks": 3456,
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 230618,
+  "files": 1101,
+  "sourceFiles": 696,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 168379,
+   "tests": 61602,
+   "integration": 637,
+   "support": 0
+  },
+  "testShare": 0.26988125672197555,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 17.5,
+  "commitsPerWeekYear": 16.4,
+  "pace": 1,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 10.5,
+  "prsMergedPerWeek": 1,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 2.8,
+   "p90": 2.8,
+   "n": 1
+  },
+  "prRunsPerDay": 7.7,
+  "runsPerMergedPr": 56
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 56,
+  "runsInPeriod": 56,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "medium",
+ "headsPerWeek": 17,
+ "score": 56,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 43,
+  "reliability": 100,
+  "efficiency": 54
+ },
+ "detail": {
+  "speed": {
+   "wait": 48,
+   "forSize": 30,
+   "tail": 60
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 3,
+   "setup": 82,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 634.9,
+  "prBilledMinutesPerDay": 681.7,
+  "jobMinutesPerMergedPr": 4639.8,
+  "prVcpuMinutesPerDay": 2285.3,
+  "vcpuMinutesPerMergedPr": 16701.6,
+  "expectedVcpuMinutesPerMergedPr": 816.9,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 204.2,
+  "expectedWait": 12,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "14 pushes were timed, under 20"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 18,
+  "ranHeads": 18,
+  "timed": 14,
+  "p50": 18.516666666666666,
+  "p75": 21,
+  "p90": 22.316666666666666,
+  "redRate": 0.5,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.2222222222222222,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    14
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "PR Checklist",
+    14
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 18.516666666666666
+ },
+ "main": {
+  "heads": 1,
+  "p50": 21.383333333333333,
+  "p90": 21.383333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.19298245614035087,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 37,
+  "spanMin": 20.5,
+  "jobMinutes": 291.85,
+  "billedMinutes": 313,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.09446419502285425,
+  "setupMinPerJob": 0.7252252252252251,
+  "critical": {
+   "name": "check",
+   "minutes": 0.08333333333333333,
+   "shareOfSpan": 0.003918495297805642
+  },
+  "longest": {
+   "name": "tests / 3.14t / macos-latest",
+   "minutes": 20.933333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    230
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 5,
+  "runsLeftOut": 1,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 1
+   }
+  ],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 8,
+  "edges": 11,
+  "matrixJobs": 3,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "check",
+    "runs": 5
+   }
+  ],
+  "chain": [
+   {
+    "name": "determine-changes",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "tests / 3.10 / macos-latest",
+    "minutes": 21,
+    "share": 0.99,
+    "blockedMin": 0.1,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 20.9,
+    "setupMin": 1.6
+   },
+   {
+    "name": "check",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 21.1,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 3,
+  "pathMinP50": 21.3,
+  "blockedMinP50": 21.1,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 21.1,
+  "setupInPathMinP50": 1.6,
+  "topBlockers": [
+   {
+    "name": "tests / … / …",
+    "runs": 5,
+    "heldJobs": 1,
+    "jobs": 37,
+    "tookMin": 21,
+    "heldJobMin": 13.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "dev-lock"
+  ],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45477205141,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 20.3,
+    "path": [
+     "determine-changes",
+     "tests / 3.14t / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "dev-lock",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "vendoring",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 5.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 1.5,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 5.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.6,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 1,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 1.5,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 16.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 18.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.8,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 16.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.2,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 17.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.2,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 19.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 1.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 13,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 20.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.9,
+      "setupMin": 1.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 20.2,
+      "createdMin": 20.2,
+      "startMin": 20.2,
+      "endMin": 20.3,
+      "blockedMin": 20.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45441178088,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.5,
+    "path": [
+     "determine-changes",
+     "tests / 3.10 / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.9,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 1,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.9,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 20.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.2,
+      "setupMin": 1.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.9,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 1.5,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.6,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 20.4,
+      "createdMin": 20.4,
+      "startMin": 20.4,
+      "endMin": 20.5,
+      "blockedMin": 20.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45437571512,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22,
+    "path": [
+     "determine-changes",
+     "tests / 3.14t / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 1.1,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.6,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 16.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.3,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 16.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.1,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.9,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 21.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.7,
+      "setupMin": 1.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.2,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 21.9,
+      "createdMin": 21.9,
+      "startMin": 21.9,
+      "endMin": 22,
+      "blockedMin": 21.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45436080674,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.5,
+    "path": [
+     "determine-changes",
+     "tests / 3.14t / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 1.1,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 1.5,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.5,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.6,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 14.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 18.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.5,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.3,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.9,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.6,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 19.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.5,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 20.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.1,
+      "setupMin": 1.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.5,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 20.4,
+      "endMin": 20.5,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45381376031,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.3,
+    "path": [
+     "determine-changes",
+     "tests / 3.14t / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.5,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.7,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 17.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.5,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 16.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.2,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 16.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.6,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 22.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.9,
+      "setupMin": 1.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 22.2,
+      "createdMin": 22.2,
+      "startMin": 22.2,
+      "endMin": 22.3,
+      "blockedMin": 22.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45282051432,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21.3,
+    "path": [
+     "determine-changes",
+     "tests / 3.14t / macos-latest",
+     "check"
+    ],
+    "topBlocker": "tests / … / …",
+    "jobs": [
+     {
+      "name": "docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "determine-changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "packaging / ubuntu-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "vendoring",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / zipapp",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.2,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.9,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.7,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 1.5,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 2",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 1.3,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10 / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / Windows / 1",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.8,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14t / Windows / 3",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.4,
+      "runner": "Windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.14 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 16.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.6,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.10.4 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 2.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.13 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 18.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.3,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14t / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 21.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.9,
+      "setupMin": 1.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.10 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 16.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14 / ubuntu-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.15 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.1,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.14.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 18.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.3,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.12.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.11.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "tests / 3.12 / macos-latest",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 16.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.4,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "tests / 3.13.0 / ubuntu-24.04",
+      "needs": [
+       "determine-changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check",
+      "needs": [
+       "determine-changes",
+       "docs",
+       "packaging",
+       "tests-unix",
+       "tests-windows",
+       "tests-zipapp",
+       "vendoring"
+      ],
+      "readyMin": 21.1,
+      "createdMin": 21.1,
+      "startMin": 21.2,
+      "endMin": 21.3,
+      "blockedMin": 21.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 8,
+  "over10s": 8,
+  "top": [
+   {
+    "file": "tests/functional/test_install.py",
+    "sec": 13.85,
+    "job": "tests / 3.14t / macos-latest"
+   },
+   {
+    "file": "tests/functional/test_uninstall.py",
+    "sec": 11.91,
+    "job": "tests / 3.14t / macos-latest"
+   },
+   {
+    "file": "tests/functional/test_build_env.py",
+    "sec": 11.83,
+    "job": "tests / 3.14t / macos-latest"
+   },
+   {
+    "file": "tests/functional/test_install_extras.py",
+    "sec": 11.66,
+    "job": "tests / 3.15t / macos-latest"
+   },
+   {
+    "file": "tests/functional/test_install_upgrade.py",
+    "sec": 11.59,
+    "job": "tests / 3.15t / macos-latest"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": null,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true,
+  "hints": [
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/ci.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "pathFilters": ".github/workflows/ci.yml",
+   "affected": ".github/workflows/ci.yml",
+   "scheduled": ".github/workflows/ci.yml",
+   "depBotsBatched": ".github/dependabot.yml",
+   "preCommit": ".pre-commit-config.yaml"
+  },
+  "unknown": [
+   "shardsConfigured: .github/workflows/ci.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff",
+   "Black"
+  ],
+  "libraries": [
+   {
+    "name": "flit-core",
+    "ecosystem": "python",
+    "packages": 2
+   },
+   {
+    "name": "build",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "certifi",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cmake",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "coverage",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cryptography",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "freezegun",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "furo",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "httpx",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "installer",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "keyring",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "myst-parser",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "nox",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "packaging",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "proxy-py",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-cov",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-rerunfailures",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-subket",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-xdist",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "rich",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    230
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "build-project/pyproject.toml",
+     "path": "build-project/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "pip",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "build-project/pyproject.toml",
+     "dir": "build-project",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "pip",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "build-project/pyproject.toml"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1101
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 11,
+    "runs": 5,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "packaging / windows-latest",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.4,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "docs",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "determine-changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "packaging / ubuntu-latest",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / zipapp",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.10 / Windows / 3",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 5.3,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.10 / Windows / 1",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6.8,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14 / Windows / 3",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6.5,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.15 / Windows / 1",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 5.1,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.15 / Windows / 2",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 4.9,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.15 / Windows / 3",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 5.1,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14t / Windows / 3",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 6.6,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14t / Windows / 1",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 5.9,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14t / Windows / 2",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 5.9,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.12 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14 / Windows / 1",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14 / Windows / 2",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 6.8,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14.0 / ubuntu-24.04",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.13 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 14.9,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.15 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 7.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 15,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.12.0 / ubuntu-24.04",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 6.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.10.4 / ubuntu-24.04",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 6.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.11.0 / ubuntu-24.04",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 7.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.10 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.11 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 8,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.14t / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 9.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.11 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 8.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.10 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 20.2,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.12 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 8.9,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.13 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 8.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.13.0 / ubuntu-24.04",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.14t / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 10,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.10 / Windows / 2",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 7.3,
+     "runner": "Windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tests / 3.15 / macos-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 15.6,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "tests / 3.14 / ubuntu-latest",
+     "needs": [
+      "determine-changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 8.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "check",
+     "needs": [
+      "determine-changes",
+      "docs",
+      "packaging",
+      "tests-unix",
+      "tests-windows",
+      "tests-zipapp",
+      "vendoring"
+     ],
+     "onPath": true,
+     "blockedMin": 20.4,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "tests / zipapp",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10 / Windows / 3",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10 / Windows / 1",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14 / Windows / 3",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.15 / Windows / 1",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.15 / Windows / 2",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.15 / Windows / 3",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14t / Windows / 3",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14t / Windows / 1",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14t / Windows / 2",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.12 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14 / Windows / 1",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14 / Windows / 2",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14.0 / ubuntu-24.04",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.13 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.15 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.12.0 / ubuntu-24.04",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10.4 / ubuntu-24.04",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.11.0 / ubuntu-24.04",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.11 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14t / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.11 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.12 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.13 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.13.0 / ubuntu-24.04",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14t / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.10 / Windows / 2",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.15 / macos-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "tests / 3.14 / ubuntu-latest",
+     "to": "determine-changes"
+    },
+    {
+     "from": "check",
+     "to": "determine-changes"
+    },
+    {
+     "from": "check",
+     "to": "docs"
+    },
+    {
+     "from": "check",
+     "to": "packaging"
+    },
+    {
+     "from": "check",
+     "to": "tests-unix"
+    },
+    {
+     "from": "check",
+     "to": "tests-windows"
+    },
+    {
+     "from": "check",
+     "to": "tests-zipapp"
+    },
+    {
+     "from": "check",
+     "to": "vendoring"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "determine-changes",
+    "tests / 3.10 / macos-latest",
+    "check"
+   ],
+   "pathMinP50": 21.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "8 test files take over 10 s; the slowest, tests/functional/test_install.py, takes 14 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 37,
+ "read": {
+  "calls": 37,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

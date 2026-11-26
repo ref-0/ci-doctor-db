@@ -1,0 +1,6136 @@
+{
+ "repo": "duckdb/duckdb",
+ "date": "2026-11-26",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 8.4,
+  "stars": 43359,
+  "forks": 4203,
+  "languages": [
+   [
+    "C++",
+    92
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "C",
+    3
+   ],
+   [
+    "Swift",
+    0
+   ]
+  ],
+  "linesOfCode": 1512751,
+  "files": 18688,
+  "sourceFiles": 4654,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1248717,
+   "tests": 264034,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.1745389152269648,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 576.5,
+  "pace": 1.6,
+  "activeAuthors28d": "≥30",
+  "prsOpenedPerWeek": 282.4,
+  "prsMergedPerWeek": 205.6,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 6.7,
+   "p90": 121.5,
+   "n": 100
+  },
+  "prRunsPerDay": 292.5,
+  "runsPerMergedPr": 10
+ },
+ "window": {
+  "days": 6,
+  "runs": 886,
+  "runsInPeriod": 888,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 840,
+ "score": 40,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 13,
+  "reliability": 99,
+  "efficiency": 62
+ },
+ "detail": {
+  "speed": {
+   "wait": 11,
+   "forSize": 17,
+   "tail": 11
+  },
+  "reliability": {
+   "flakes": 99,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 12,
+   "runsPerPr": 72,
+   "setup": 100,
+   "queue": 97,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 35136.8,
+  "prBilledMinutesPerDay": 37293.2,
+  "jobMinutesPerMergedPr": 1196.4,
+  "prVcpuMinutesPerDay": 140498.5,
+  "vcpuMinutesPerMergedPr": 4784,
+  "expectedVcpuMinutesPerMergedPr": 1519.5,
+  "sizedShare": 0.01,
+  "expectedMinutesPerMergedPr": 379.9,
+  "expectedWait": 30.3,
+  "workflowsOnPrs": 8
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "the default branch's red rate and how the jobs are wired couldn't be measured",
+   "the runners' sizes are known for 1% of job minutes, and the rest count as standard runners"
+  ],
+  "measured": 0.89,
+  "missing": [
+   "reliability.mainRed",
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 725,
+  "ranHeads": 689,
+  "timed": 449,
+  "p50": 58.11666666666667,
+  "p75": 71.81666666666666,
+  "p90": 86.43333333333334,
+  "redRate": 0.28592162554426703,
+  "rerunRate": 0.03483309143686502,
+  "passedOnRerunRate": 0.011611030478955007,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.21480406386066764,
+  "botHeads": 0,
+  "lightHeads": 68,
+  "neverRan": 0,
+  "botPushes": 1,
+  "bots": [
+   [
+    "github-merge-queue[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Main",
+    445
+   ],
+   [
+    "NightlyTests",
+    2
+   ],
+   [
+    "Forward PR events to pr-tracker",
+    2
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/Main.yml",
+  "redBy": [
+   [
+    "Main",
+    196
+   ],
+   [
+    "NightlyTests",
+    3
+   ]
+  ],
+  "leftOut": [
+   "LinuxRelease",
+   "Create Documentation issue for the Needs Documentation label"
+  ],
+  "heavyWorkflows": [
+   "Main"
+  ],
+  "allPushesP50": 52.7
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0.0016968325791855204,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 40,
+  "spanMin": 65.01666666666667,
+  "jobMinutes": 396.5833333333334,
+  "billedMinutes": 419,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 8,
+  "queueP90Sec": 11,
+  "setupShare": 0.029748378300210716,
+  "setupMinPerJob": 0.25833333333333336,
+  "critical": {
+   "name": "Summary",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.0009685230024213075
+  },
+  "longest": {
+   "name": "Linux Release (musl, arm64)",
+   "minutes": 35.61666666666667
+  },
+  "providers": [
+   [
+    "Namespace",
+    240
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/Main.yml"
+  ],
+  "jobs": 30,
+  "edges": 82,
+  "matrixJobs": 6,
+  "reusableCalls": 5,
+  "gateEnd": [
+   {
+    "name": "Summary",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "prepare",
+    "minutes": 1,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.9,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Linux Release (musl, arm64)",
+    "minutes": 35.9,
+    "share": 0.55,
+    "blockedMin": 1,
+    "hiddenMin": 0,
+    "queueMin": 0.2,
+    "workMin": 35.6,
+    "setupMin": 1.9
+   },
+   {
+    "name": "Build extensions / Test Linux (linux_amd64)",
+    "minutes": 11.1,
+    "share": 0.17,
+    "blockedMin": 36.8,
+    "hiddenMin": 10.2,
+    "queueMin": 0,
+    "workMin": 0.7,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Deploy extensions",
+    "minutes": 14.9,
+    "share": 0.22,
+    "blockedMin": 49.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 14.9,
+    "setupMin": 0.4
+   },
+   {
+    "name": "Summary",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 64.9,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 5,
+  "pathMinP50": 65,
+  "blockedMinP50": 64.9,
+  "queueMinP50": 0.5,
+  "hiddenMinP50": 10.2,
+  "workMinP50": 53.9,
+  "setupInPathMinP50": 2.5,
+  "topBlockers": [
+   {
+    "name": "Linux Release (musl, arm64)",
+    "runs": 3,
+    "heldJobs": 7,
+    "jobs": 40,
+    "tookMin": 37.5,
+    "heldJobMin": 130.7
+   },
+   {
+    "name": "Linux Relassert",
+    "runs": 3,
+    "heldJobs": 22,
+    "jobs": 40,
+    "tookMin": 9,
+    "heldJobMin": 128.3
+   }
+  ],
+  "stepWaits": [
+   {
+    "job": "Build extensions",
+    "waitsOn": "Linux Release (musl, arm64)",
+    "step": "Run actions/upload-artifact@v7",
+    "earlyMin": 12.7,
+    "runs": 6,
+    "guess": true
+   }
+  ],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 8,
+  "unknown": [
+   "\"Build extensions\" calls duckdb/extension-ci-tools/.github/workflows/build.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 45705777097,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 64.7,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Release (musl, arm64)",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.2,
+      "endMin": 36.7,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 35.5,
+      "setupMin": 1.9,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 6.2,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 9.3,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.4,
+      "endMin": 19.7,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 13.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.4,
+      "endMin": 19.1,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 12.7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.4,
+      "endMin": 21.3,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.9,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.4,
+      "endMin": 24.9,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 18.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.5,
+      "endMin": 18,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 11.6,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.3,
+      "endMin": 16.8,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.3,
+      "endMin": 23.3,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.3,
+      "endMin": 27.5,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.2,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.4,
+      "endMin": 13.6,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.4,
+      "endMin": 30.1,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.4,
+      "endMin": 27,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.5,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.4,
+      "endMin": 15.2,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.7,
+      "endMin": 13.6,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.3,
+      "createdMin": 9.3,
+      "startMin": 9.8,
+      "endMin": 19.2,
+      "blockedMin": 9.3,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 9.4,
+      "setupMin": 0,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 19.1,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 17.1,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 23.9,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 24,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 20.3,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 22.6,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 20,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 18.1,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 16.4,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 29.1,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 13.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 19.6,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 18.6,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 19.8,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.7,
+      "startMin": 36.8,
+      "endMin": 36.9,
+      "blockedMin": 36.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 42.8,
+      "blockedMin": 36.7,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 41.5,
+      "blockedMin": 36.7,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 46.9,
+      "blockedMin": 36.7,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 41.1,
+      "blockedMin": 36.7,
+      "hiddenMin": 0.2,
+      "queueMin": 0.2,
+      "workMin": 4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.7,
+      "createdMin": 46.9,
+      "startMin": 47,
+      "endMin": 47.6,
+      "blockedMin": 36.7,
+      "hiddenMin": 10.2,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 47.6,
+      "createdMin": 47.6,
+      "startMin": 47.6,
+      "endMin": 64.5,
+      "blockedMin": 47.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 64.5,
+      "createdMin": 64.5,
+      "startMin": 64.6,
+      "endMin": 64.7,
+      "blockedMin": 64.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45701346889,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 66.6,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Relassert",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.2,
+      "endMin": 5.9,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 2.1,
+      "endMin": 9.9,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 7.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 2.1,
+      "endMin": 5.9,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 3.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.2,
+      "endMin": 40.8,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 39.6,
+      "setupMin": 2,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 16,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 20.4,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 15.7,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 12.9,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 22.5,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 16.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 30.7,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 14.2,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 24.9,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 24.7,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.8,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 32.3,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10.1,
+      "endMin": 16.9,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10.5,
+      "endMin": 23.9,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 13.4,
+      "setupMin": 0,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10.3,
+      "endMin": 13.1,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10.1,
+      "endMin": 15.5,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 18.8,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 16.9,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 25,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.4,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 17.6,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 24,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 20.2,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.7,
+      "endMin": 21.3,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 23.3,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 19.9,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.7,
+      "endMin": 19,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 28.8,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 19.8,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.7,
+      "endMin": 23,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7.4,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 40.8,
+      "startMin": 40.9,
+      "endMin": 41,
+      "blockedMin": 40.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 41,
+      "startMin": 41.1,
+      "endMin": 44.8,
+      "blockedMin": 40.8,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 41,
+      "startMin": 41.1,
+      "endMin": 45.1,
+      "blockedMin": 40.8,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 41,
+      "startMin": 41.2,
+      "endMin": 51.2,
+      "blockedMin": 40.8,
+      "hiddenMin": 0.2,
+      "queueMin": 0.2,
+      "workMin": 10,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 41,
+      "startMin": 41.1,
+      "endMin": 50.7,
+      "blockedMin": 40.8,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 40.8,
+      "createdMin": 51.2,
+      "startMin": 51.3,
+      "endMin": 51.9,
+      "blockedMin": 40.8,
+      "hiddenMin": 10.4,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 51.9,
+      "createdMin": 51.9,
+      "startMin": 51.9,
+      "endMin": 66.5,
+      "blockedMin": 51.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.6,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 66.5,
+      "createdMin": 66.5,
+      "startMin": 66.6,
+      "endMin": 66.6,
+      "blockedMin": 66.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45681242436,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 65,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Relassert",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.9,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.2,
+      "endMin": 9.7,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.2,
+      "endMin": 5.6,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.3,
+      "endMin": 33.6,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 32.3,
+      "setupMin": 1.8,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.6,
+      "createdMin": 5.6,
+      "startMin": 5.8,
+      "endMin": 20.4,
+      "blockedMin": 5.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.6,
+      "createdMin": 5.6,
+      "startMin": 5.6,
+      "endMin": 18.7,
+      "blockedMin": 5.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.6,
+      "createdMin": 5.6,
+      "startMin": 5.8,
+      "endMin": 20.9,
+      "blockedMin": 5.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 15.1,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.6,
+      "createdMin": 5.6,
+      "startMin": 5.8,
+      "endMin": 19.2,
+      "blockedMin": 5.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 13.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 5.6,
+      "createdMin": 5.6,
+      "startMin": 5.6,
+      "endMin": 21.4,
+      "blockedMin": 5.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.7,
+      "endMin": 17.8,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.8,
+      "endMin": 23.9,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.8,
+      "endMin": 31.2,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.4,
+      "setupMin": 0.6,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.8,
+      "endMin": 20.2,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.9,
+      "endMin": 37.2,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 27.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.8,
+      "endMin": 36.4,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 9.9,
+      "endMin": 17.7,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 10,
+      "endMin": 12.4,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.7,
+      "createdMin": 9.7,
+      "startMin": 10.3,
+      "endMin": 20.8,
+      "blockedMin": 9.7,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 10.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 23.3,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 20.9,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 21.1,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 30.5,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 21.6,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 23.2,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 19.3,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 24.6,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 29.2,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 23.3,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.9,
+      "endMin": 28.5,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 10.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 35.9,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.1,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 17.8,
+      "endMin": 28.1,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.6,
+      "startMin": 33.6,
+      "endMin": 33.7,
+      "blockedMin": 33.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.7,
+      "startMin": 33.9,
+      "endMin": 38,
+      "blockedMin": 33.6,
+      "hiddenMin": 0.1,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.7,
+      "startMin": 33.9,
+      "endMin": 43.1,
+      "blockedMin": 33.6,
+      "hiddenMin": 0.1,
+      "queueMin": 0.1,
+      "workMin": 9.3,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.7,
+      "startMin": 33.9,
+      "endMin": 40,
+      "blockedMin": 33.6,
+      "hiddenMin": 0.1,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.7,
+      "startMin": 33.9,
+      "endMin": 40.9,
+      "blockedMin": 33.6,
+      "hiddenMin": 0.1,
+      "queueMin": 0.2,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 43.1,
+      "startMin": 43.2,
+      "endMin": 43.9,
+      "blockedMin": 33.6,
+      "hiddenMin": 9.5,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 43.9,
+      "createdMin": 43.9,
+      "startMin": 43.9,
+      "endMin": 64.9,
+      "blockedMin": 43.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21,
+      "setupMin": 0.6,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 64.9,
+      "createdMin": 64.9,
+      "startMin": 65,
+      "endMin": 65,
+      "blockedMin": 64.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45680359322,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 76.5,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Release (musl, arm64)",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.5,
+      "endMin": 49.3,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 47.9,
+      "setupMin": 2.4,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.4,
+      "endMin": 5.5,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.4,
+      "endMin": 8.6,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.4,
+      "endMin": 6.2,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.3,
+      "endMin": 18.7,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.3,
+      "endMin": 13.6,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.3,
+      "endMin": 22.4,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.3,
+      "endMin": 16.5,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.3,
+      "endMin": 25.5,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.6,
+      "endMin": 14,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 30.9,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 22.2,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 24.5,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 19.4,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 25.7,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 42.9,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 34.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.8,
+      "endMin": 11.3,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 9,
+      "endMin": 18.6,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 9.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 8.6,
+      "createdMin": 8.6,
+      "startMin": 8.7,
+      "endMin": 15.4,
+      "blockedMin": 8.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 20.3,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.8,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 18.3,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 17.8,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.2,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 32.4,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 16.9,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 20.2,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 29.2,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 13.7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 20.7,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.2,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 25.5,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 10,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 21.6,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.1,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 26.2,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 10.7,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 21,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.5,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.6,
+      "endMin": 30.4,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.8,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 23.8,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.3,
+      "startMin": 49.4,
+      "endMin": 49.5,
+      "blockedMin": 49.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.5,
+      "startMin": 49.5,
+      "endMin": 58.3,
+      "blockedMin": 49.3,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.5,
+      "startMin": 49.5,
+      "endMin": 59.3,
+      "blockedMin": 49.3,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.5,
+      "startMin": 49.5,
+      "endMin": 53.7,
+      "blockedMin": 49.3,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.5,
+      "startMin": 49.5,
+      "endMin": 54.4,
+      "blockedMin": 49.3,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 59.3,
+      "startMin": 59.3,
+      "endMin": 60.8,
+      "blockedMin": 49.3,
+      "hiddenMin": 10,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 60.8,
+      "createdMin": 60.8,
+      "startMin": 60.8,
+      "endMin": 76.3,
+      "blockedMin": 60.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.5,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 76.3,
+      "createdMin": 76.3,
+      "startMin": 76.4,
+      "endMin": 76.5,
+      "blockedMin": 76.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45677446412,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 64.4,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Relassert",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 11.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.2,
+      "endMin": 36.8,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 35.6,
+      "setupMin": 1.9,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 6.6,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.6,
+      "startMin": 6.7,
+      "endMin": 20.7,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.6,
+      "startMin": 6.6,
+      "endMin": 22.9,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.3,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.6,
+      "startMin": 6.7,
+      "endMin": 26.2,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.6,
+      "startMin": 6.6,
+      "endMin": 19.6,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.6,
+      "startMin": 6.7,
+      "endMin": 23.6,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 16.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 35.1,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 29.4,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.7,
+      "setupMin": 0.6,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 16.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 18.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 30.8,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 19.1,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 35.5,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 23.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.8,
+      "endMin": 14.2,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 12.2,
+      "endMin": 21.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 9.8,
+      "setupMin": 0,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.6,
+      "startMin": 11.6,
+      "endMin": 18.1,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 22.5,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 38.4,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.2,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 26.6,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 19.7,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 23.4,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 40.2,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 32.5,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 19.8,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 35.7,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.5,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 24.9,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 22.8,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.2,
+      "endMin": 23.5,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 29.3,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 10.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 36.8,
+      "startMin": 36.8,
+      "endMin": 36.9,
+      "blockedMin": 36.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 36.9,
+      "startMin": 37,
+      "endMin": 41.3,
+      "blockedMin": 36.8,
+      "hiddenMin": 0.1,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 43.5,
+      "blockedMin": 36.8,
+      "hiddenMin": 0.1,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 36.9,
+      "startMin": 37,
+      "endMin": 47.1,
+      "blockedMin": 36.8,
+      "hiddenMin": 0.1,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 36.9,
+      "startMin": 37.1,
+      "endMin": 48.5,
+      "blockedMin": 36.8,
+      "hiddenMin": 0.1,
+      "queueMin": 0.2,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 36.8,
+      "createdMin": 48.5,
+      "startMin": 48.6,
+      "endMin": 49.3,
+      "blockedMin": 36.8,
+      "hiddenMin": 11.7,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 49.3,
+      "createdMin": 49.3,
+      "startMin": 49.4,
+      "endMin": 64.3,
+      "blockedMin": 49.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.9,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 64.3,
+      "createdMin": 64.3,
+      "startMin": 64.3,
+      "endMin": 64.4,
+      "blockedMin": 64.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45677328316,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 68.8,
+    "path": [
+     "prepare",
+     "Linux Release (musl, arm64)",
+     "Build extensions / Test Linux (linux_amd64)",
+     "Deploy extensions",
+     "Summary"
+    ],
+    "topBlocker": "Linux Release (musl, arm64)",
+    "jobs": [
+     {
+      "name": "prepare",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-slim;job.priority=1",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 9.2,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (amd64 compatibility)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 6.7,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.6,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release (musl, arm64)",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.2,
+      "endMin": 38.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 37.2,
+      "setupMin": 2.1,
+      "runner": "namespace-profile-linux-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "Tidy Check",
+      "needs": [
+       "prepare"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 5.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.4,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64-8xlarge",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Execution)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 26,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Persistence)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 29.8,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.1,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Query Verification)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 20.7,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 13.8,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Release Tests",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 19.2,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Config (Storage Engine)",
+      "needs": [
+       "prepare",
+       "linux-release"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 17.6,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No String Inline / Destroy Unpinned Blocks",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.2,
+      "endMin": 29.3,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.1,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Linux Relassert Tests",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 24.1,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.7,
+      "setupMin": 0.4,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Vector Sizes",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 24.3,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 14.9,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Wasm EH",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 14.5,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "No RTTI",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 17.6,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 8.2,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Thread Sanitizer",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 42,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 32.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "swift / Test Apple Platforms (macOS, false)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.5,
+      "endMin": 11.9,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-macos-14-arm64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Linux Base",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.2,
+      "endMin": 16.2,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "windows / Windows (64 Bit)",
+      "needs": [
+       "prepare",
+       "linux-relassert"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.6,
+      "endMin": 19.8,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 10.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-windows-x64",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Regression Tests",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 20,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 20.2,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCH-PARQUET SF1",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 20.8,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Micro",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 35.6,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench TPCDS SF10",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 33.2,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench H2OAI (small)",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 19.3,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench AoC24",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 22.2,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Parser",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.4,
+      "endMin": 17.9,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Ingestion Perf",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 24.1,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench CSV",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 21.2,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench Recursive CTE",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.4,
+      "endMin": 22.7,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.3,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench IMDB",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.3,
+      "endMin": 24.3,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "regression / Bench RealNest",
+      "needs": [
+       "regression/linux-base@regression"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.4,
+      "endMin": 41.9,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 25.5,
+      "setupMin": 0.2,
+      "runner": "namespace-profile-linux-small",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Compute matrix",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 38.5,
+      "startMin": 38.5,
+      "endMin": 38.6,
+      "blockedMin": 38.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (cloud, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 38.6,
+      "startMin": 38.6,
+      "endMin": 44.8,
+      "blockedMin": 38.5,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (scanner, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 38.6,
+      "startMin": 38.7,
+      "endMin": 44,
+      "blockedMin": 38.5,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (core, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 38.6,
+      "startMin": 38.7,
+      "endMin": 43,
+      "blockedMin": 38.5,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Build Linux (search, linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 38.6,
+      "startMin": 38.8,
+      "endMin": 53.4,
+      "blockedMin": 38.5,
+      "hiddenMin": 0.2,
+      "queueMin": 0.2,
+      "workMin": 14.6,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Build extensions / Test Linux (linux_amd64)",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-release",
+       "linux-release-musl",
+       "windows",
+       "osx"
+      ],
+      "readyMin": 38.5,
+      "createdMin": 53.4,
+      "startMin": 53.5,
+      "endMin": 54.2,
+      "blockedMin": 38.5,
+      "hiddenMin": 14.9,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Deploy extensions",
+      "needs": [
+       "prepare",
+       "extensions-build"
+      ],
+      "readyMin": 54.2,
+      "createdMin": 54.2,
+      "startMin": 54.2,
+      "endMin": 68.7,
+      "blockedMin": 54.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.5,
+      "setupMin": 0.5,
+      "runner": "namespace-profile-linux-x64",
+      "vcpus": null
+     },
+     {
+      "name": "Summary",
+      "needs": [
+       "prepare",
+       "linux-relassert",
+       "linux-relassert-tests",
+       "regression",
+       "tidy-check",
+       "extensions-build",
+       "extensions-deploy",
+       "wasm-eh",
+       "linux-release",
+       "codecov",
+       "linux-release-tests",
+       "linux-release-musl",
+       "extensions-install",
+       "swift",
+       "windows",
+       "osx",
+       "no-string-inline",
+       "no-rtti",
+       "vector-sizes",
+       "threadsan",
+       "linux-configs"
+      ],
+      "readyMin": 68.7,
+      "createdMin": 68.8,
+      "startMin": 68.8,
+      "endMin": 68.8,
+      "blockedMin": 68.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "namespace-profile-linux-slim",
+      "vcpus": null
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 27,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/Android.yml",
+   "pathFilters": ".github/workflows/Android.yml",
+   "affected": ".github/workflows/Main.yml",
+   "draftSkip": ".github/workflows/Android.yml",
+   "mergeQueue": ".github/workflows/Main.yml",
+   "depCache": ".github/workflows/Swift.yml",
+   "compilerCache": ".github/workflows/ExtendedTests.yml",
+   "shardsConfigured": ".github/workflows/NightlyTests.yml",
+   "timeouts": ".github/workflows/Main.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    92
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "C",
+    3
+   ],
+   [
+    "Swift",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Black"
+  ],
+  "libraries": [
+   {
+    "name": "capigen",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "clang-format",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cmake-format",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cxxheaderparser",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pcpp",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyyaml",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "Namespace",
+    240
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "duckdb-api-spec",
+     "path": "api_spec/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "duckdb-api-spec",
+     "dir": "api_spec",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "duckdb-api-spec"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 18688
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 30,
+    "edges": 82,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "prepare",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.9,
+     "runner": "namespace-profile-linux-slim;job.priority=1",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Release (musl, arm64)",
+     "needs": [
+      "prepare"
+     ],
+     "onPath": true,
+     "blockedMin": 1,
+     "queueMin": 0.2,
+     "workMin": 35.5,
+     "runner": "namespace-profile-linux-arm64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Release (amd64 compatibility)",
+     "needs": [
+      "prepare"
+     ],
+     "onPath": false,
+     "blockedMin": 1,
+     "queueMin": 0.2,
+     "workMin": 5.1,
+     "runner": "namespace-profile-linux-x64-8xlarge",
+     "vcpus": null
+    },
+    {
+     "id": "Tidy Check",
+     "needs": [
+      "prepare"
+     ],
+     "onPath": false,
+     "blockedMin": 1,
+     "queueMin": 0.2,
+     "workMin": 3.9,
+     "runner": "namespace-profile-linux-x64-8xlarge",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Relassert",
+     "needs": [
+      "prepare"
+     ],
+     "onPath": false,
+     "blockedMin": 1,
+     "queueMin": 0.2,
+     "workMin": 8.2,
+     "runner": "namespace-profile-linux-x64-8xlarge",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Release Tests",
+     "needs": [
+      "prepare",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 6.2,
+     "queueMin": 0.2,
+     "workMin": 13.3,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Config (Persistence)",
+     "needs": [
+      "prepare",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 6.2,
+     "queueMin": 0.2,
+     "workMin": 12.7,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Config (Query Verification)",
+     "needs": [
+      "prepare",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 6.2,
+     "queueMin": 0.2,
+     "workMin": 14.9,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Config (Execution)",
+     "needs": [
+      "prepare",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 6.2,
+     "queueMin": 0.2,
+     "workMin": 18.5,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Config (Storage Engine)",
+     "needs": [
+      "prepare",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 6.2,
+     "queueMin": 0.2,
+     "workMin": 11.6,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "No RTTI",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0,
+     "workMin": 7.4,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Vector Sizes",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0,
+     "workMin": 13.9,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Linux Relassert Tests",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0,
+     "workMin": 18.2,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Wasm EH",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.1,
+     "workMin": 4.2,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Thread Sanitizer",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.1,
+     "workMin": 20.6,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "No String Inline / Destroy Unpinned Blocks",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.1,
+     "workMin": 17.5,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Linux Base",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.1,
+     "workMin": 5.7,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "swift / Test Apple Platforms (macOS, false)",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.4,
+     "workMin": 3.9,
+     "runner": "namespace-profile-macos-14-arm64",
+     "vcpus": null
+    },
+    {
+     "id": "windows / Windows (64 Bit)",
+     "needs": [
+      "prepare",
+      "linux-relassert"
+     ],
+     "onPath": false,
+     "blockedMin": 9.3,
+     "queueMin": 0.5,
+     "workMin": 9.4,
+     "runner": "namespace-profile-windows-x64",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Regression Tests",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.1,
+     "workMin": 3.8,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench TPCH-PARQUET SF1",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 1.8,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench TPCDS SF10",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 8.6,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench IMDB",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 8.7,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench Recursive CTE",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 5,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench RealNest",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 7.3,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench Ingestion Perf",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 4.7,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench TPCH SF10",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 2.8,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench Parser",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 1.1,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench Micro",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 13.7,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench H2OAI (small)",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 4.3,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench CSV",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 3.3,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "regression / Bench AoC24",
+     "needs": [
+      "regression/linux-base@regression"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.2,
+     "workMin": 4.5,
+     "runner": "namespace-profile-linux-small",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Compute matrix",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": false,
+     "blockedMin": 36.7,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "namespace-profile-linux-slim",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": false,
+     "blockedMin": 36.7,
+     "queueMin": 0.1,
+     "workMin": 5.8,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": false,
+     "blockedMin": 36.7,
+     "queueMin": 0.1,
+     "workMin": 4.4,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Build Linux (search, linux_amd64)",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": false,
+     "blockedMin": 36.7,
+     "queueMin": 0.1,
+     "workMin": 9.8,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Build Linux (core, linux_amd64)",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": false,
+     "blockedMin": 36.7,
+     "queueMin": 0.2,
+     "workMin": 4,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Build extensions / Test Linux (linux_amd64)",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-release",
+      "linux-release-musl",
+      "windows",
+      "osx"
+     ],
+     "onPath": true,
+     "blockedMin": 36.7,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Deploy extensions",
+     "needs": [
+      "prepare",
+      "extensions-build"
+     ],
+     "onPath": true,
+     "blockedMin": 47.6,
+     "queueMin": 0,
+     "workMin": 16.9,
+     "runner": "namespace-profile-linux-x64",
+     "vcpus": null
+    },
+    {
+     "id": "Summary",
+     "needs": [
+      "prepare",
+      "linux-relassert",
+      "linux-relassert-tests",
+      "regression",
+      "tidy-check",
+      "extensions-build",
+      "extensions-deploy",
+      "wasm-eh",
+      "linux-release",
+      "codecov",
+      "linux-release-tests",
+      "linux-release-musl",
+      "extensions-install",
+      "swift",
+      "windows",
+      "osx",
+      "no-string-inline",
+      "no-rtti",
+      "vector-sizes",
+      "threadsan",
+      "linux-configs"
+     ],
+     "onPath": true,
+     "blockedMin": 64.5,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "namespace-profile-linux-slim",
+     "vcpus": null
+    }
+   ],
+   "edges": [
+    {
+     "from": "Linux Release (musl, arm64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Release (amd64 compatibility)",
+     "to": "prepare"
+    },
+    {
+     "from": "Tidy Check",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Relassert",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Release Tests",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Release Tests",
+     "to": "linux-release"
+    },
+    {
+     "from": "Linux Config (Persistence)",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Config (Persistence)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Linux Config (Query Verification)",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Config (Query Verification)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Linux Config (Execution)",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Config (Execution)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Linux Config (Storage Engine)",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Config (Storage Engine)",
+     "to": "linux-release"
+    },
+    {
+     "from": "No RTTI",
+     "to": "prepare"
+    },
+    {
+     "from": "No RTTI",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Vector Sizes",
+     "to": "prepare"
+    },
+    {
+     "from": "Vector Sizes",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Linux Relassert Tests",
+     "to": "prepare"
+    },
+    {
+     "from": "Linux Relassert Tests",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Wasm EH",
+     "to": "prepare"
+    },
+    {
+     "from": "Wasm EH",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Thread Sanitizer",
+     "to": "prepare"
+    },
+    {
+     "from": "Thread Sanitizer",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "No String Inline / Destroy Unpinned Blocks",
+     "to": "prepare"
+    },
+    {
+     "from": "No String Inline / Destroy Unpinned Blocks",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "regression / Linux Base",
+     "to": "prepare"
+    },
+    {
+     "from": "regression / Linux Base",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "regression / Linux Base",
+     "to": "linux-release"
+    },
+    {
+     "from": "swift / Test Apple Platforms (macOS, false)",
+     "to": "prepare"
+    },
+    {
+     "from": "swift / Test Apple Platforms (macOS, false)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "windows / Windows (64 Bit)",
+     "to": "prepare"
+    },
+    {
+     "from": "windows / Windows (64 Bit)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "regression / Regression Tests",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench TPCH-PARQUET SF1",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench TPCDS SF10",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench IMDB",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench Recursive CTE",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench RealNest",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench Ingestion Perf",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench TPCH SF10",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench Parser",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench Micro",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench H2OAI (small)",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench CSV",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "regression / Bench AoC24",
+     "to": "regression/linux-base@regression"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Compute matrix",
+     "to": "osx"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Build Linux (cloud, linux_amd64)",
+     "to": "osx"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Build Linux (scanner, linux_amd64)",
+     "to": "osx"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Build Linux (search, linux_amd64)",
+     "to": "osx"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Build Linux (core, linux_amd64)",
+     "to": "osx"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "prepare"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "linux-release"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "windows"
+    },
+    {
+     "from": "Build extensions / Test Linux (linux_amd64)",
+     "to": "osx"
+    },
+    {
+     "from": "Deploy extensions",
+     "to": "prepare"
+    },
+    {
+     "from": "Deploy extensions",
+     "to": "extensions-build"
+    },
+    {
+     "from": "Summary",
+     "to": "prepare"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-relassert"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-relassert-tests"
+    },
+    {
+     "from": "Summary",
+     "to": "regression"
+    },
+    {
+     "from": "Summary",
+     "to": "tidy-check"
+    },
+    {
+     "from": "Summary",
+     "to": "extensions-build"
+    },
+    {
+     "from": "Summary",
+     "to": "extensions-deploy"
+    },
+    {
+     "from": "Summary",
+     "to": "wasm-eh"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-release"
+    },
+    {
+     "from": "Summary",
+     "to": "codecov"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-release-tests"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-release-musl"
+    },
+    {
+     "from": "Summary",
+     "to": "extensions-install"
+    },
+    {
+     "from": "Summary",
+     "to": "swift"
+    },
+    {
+     "from": "Summary",
+     "to": "windows"
+    },
+    {
+     "from": "Summary",
+     "to": "osx"
+    },
+    {
+     "from": "Summary",
+     "to": "no-string-inline"
+    },
+    {
+     "from": "Summary",
+     "to": "no-rtti"
+    },
+    {
+     "from": "Summary",
+     "to": "vector-sizes"
+    },
+    {
+     "from": "Summary",
+     "to": "threadsan"
+    },
+    {
+     "from": "Summary",
+     "to": "linux-configs"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "prepare",
+    "Linux Release (musl, arm64)",
+    "Build extensions / Test Linux (linux_amd64)",
+    "Deploy extensions",
+    "Summary"
+   ],
+   "pathMinP50": 65,
+   "unknown": [
+    "\"Build extensions\" calls duckdb/extension-ci-tools/.github/workflows/build.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 159,
+ "read": {
+  "calls": 159,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

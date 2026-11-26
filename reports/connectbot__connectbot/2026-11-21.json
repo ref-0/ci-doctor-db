@@ -1,0 +1,1749 @@
+{
+ "repo": "connectbot/connectbot",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "30 of 36 PR pushes in the window came from bots (renovate[bot]), and only pushes people make are timed; 5 are needed.",
+ "profile": {
+  "ageYears": 17.8,
+  "stars": 3612,
+  "forks": 764,
+  "languages": [
+   [
+    "Kotlin",
+    97
+   ],
+   [
+    "Java",
+    2
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "C++",
+    0
+   ]
+  ],
+  "linesOfCode": 133570,
+  "files": 727,
+  "sourceFiles": 479,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 81318,
+   "tests": 52252,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.3911985791231221,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 25.8,
+  "commitsPerWeekYear": 18.9,
+  "pace": 1.3,
+  "activeAuthors28d": 6,
+  "prsOpenedPerWeek": 23,
+  "prsMergedPerWeek": 17,
+  "botShareOfMergedPrs": 88.2,
+  "openToMergeHours": {
+   "p50": 0.2,
+   "p90": 7.9,
+   "n": 2
+  },
+  "prRunsPerDay": 5.3,
+  "runsPerMergedPr": 2.2
+ },
+ "window": {
+  "days": 7,
+  "runs": 37,
+  "runsInPeriod": 37,
+  "truncated": false,
+  "mainDays": 6.8
+ },
+ "size": "small",
+ "headsPerWeek": 36,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 69,
+   "forSize": 61,
+   "tail": 83
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 81
+  },
+  "efficiency": {
+   "minutesPerPr": 89,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 259.6,
+  "prBilledMinutesPerDay": 294,
+  "jobMinutesPerMergedPr": 106.9,
+  "expectedMinutesPerMergedPr": 170.5,
+  "expectedWait": 11.7,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 36,
+  "timed": 1,
+  "p50": 10.85,
+  "p75": 10.85,
+  "p90": 10.85,
+  "redRate": 0.25,
+  "rerunRate": 0.027777777777777776,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 30,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 30,
+  "bots": [
+   [
+    "renovate[bot]",
+    30
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "PR Checks",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "PR Checks",
+    9
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "PR Checks"
+  ],
+  "allPushesP50": 10.85
+ },
+ "main": {
+  "heads": 17,
+  "p50": 13.9,
+  "p90": 16.733333333333334,
+  "redRate": 0.11764705882352941,
+  "redBy": [
+   [
+    "Continuous Integration",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.4225352112676056,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 15.366666666666667,
+  "jobMinutes": 62.833333333333336,
+  "billedMinutes": 69,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.06238767650834403,
+  "critical": {
+   "name": "Required",
+   "minutes": 0.03333333333333333,
+   "shareOfSpan": 0.0021691973969631237
+  },
+  "longest": {
+   "name": "CI / Checks and unit tests",
+   "minutes": 14.683333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    66
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/pr-checks.yml"
+  ],
+  "jobs": 11,
+  "edges": 21,
+  "matrixJobs": 2,
+  "reusableCalls": 5,
+  "gateEnd": [
+   {
+    "name": "Required",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Check changed files",
+    "minutes": 0.2,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0.1
+   },
+   {
+    "name": "CI / Checks and unit tests",
+    "minutes": 14.7,
+    "share": 0.95,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 14.7,
+    "setupMin": 0.6
+   },
+   {
+    "name": "CI / Assemble isolated analysis inputs",
+    "minutes": 0.4,
+    "share": 0.03,
+    "blockedMin": 14.9,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.4,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Required",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 15.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 4,
+  "pathMinP50": 15.4,
+  "blockedMinP50": 15.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 15.2,
+  "setupInPathMinP50": 0.8,
+  "topBlockers": [
+   {
+    "name": "CI / Checks and unit tests",
+    "runs": 4,
+    "heldJobs": 2,
+    "jobs": 11,
+    "tookMin": 14.7,
+    "heldJobMin": 5.9
+   },
+   {
+    "name": "CI / Instrumentation …",
+    "runs": 2,
+    "heldJobs": 2,
+    "jobs": 11,
+    "tookMin": 14.3,
+    "heldJobMin": 1.5
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 2,
+  "unknown": [
+   "\"Verify Actions lockfile\" calls connectbot/actions/.github/workflows/verify-lockfile.yml, in another repo, so the jobs inside it are taken as one",
+   "\"Trusted provenance ${{ matrix.flavor }}\" calls kruton/bathysign/.github/workflows/bathysign-attest.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 44871088340,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15.4,
+    "path": [
+     "Check changed files",
+     "CI / Checks and unit tests",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Checks and unit tests",
+    "jobs": [
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0
+     },
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 14.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 2
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 14.9,
+      "endMin": 15.3,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 15.3,
+      "createdMin": 15.3,
+      "startMin": 15.3,
+      "endMin": 15.4,
+      "blockedMin": 15.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44854244979,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15,
+    "path": [
+     "Check changed files",
+     "CI / Instrumentation oss",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Instrumentation …",
+    "jobs": [
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 12.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 9.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 14.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.5,
+      "endMin": 14.9,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 14.9,
+      "endMin": 15,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44727662793,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16.6,
+    "path": [
+     "Check changed files",
+     "CI / Checks and unit tests",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Checks and unit tests",
+    "jobs": [
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 16,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 16,
+      "createdMin": 16,
+      "startMin": 16,
+      "endMin": 16.5,
+      "blockedMin": 16,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 16.5,
+      "createdMin": 16.5,
+      "startMin": 16.5,
+      "endMin": 16.6,
+      "blockedMin": 16.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44684814572,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16.7,
+    "path": [
+     "Check changed files",
+     "CI / Instrumentation google",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Instrumentation …",
+    "jobs": [
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 16.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15,
+      "setupMin": 0.7
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 16.3,
+      "createdMin": 16.3,
+      "startMin": 16.3,
+      "endMin": 16.6,
+      "blockedMin": 16.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 16.6,
+      "createdMin": 16.6,
+      "startMin": 16.7,
+      "endMin": 16.7,
+      "blockedMin": 16.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44681459781,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16,
+    "path": [
+     "Check changed files",
+     "CI / Checks and unit tests",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Checks and unit tests",
+    "jobs": [
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.5,
+      "endMin": 15.9,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 15.9,
+      "createdMin": 15.9,
+      "startMin": 16,
+      "endMin": 16,
+      "blockedMin": 15.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44681449374,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.7,
+    "path": [
+     "Check changed files",
+     "CI / Checks and unit tests",
+     "CI / Assemble isolated analysis inputs",
+     "Required"
+    ],
+    "topBlocker": "CI / Checks and unit tests",
+    "jobs": [
+     {
+      "name": "Validate Renovate config",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check changed files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CI / Checks and unit tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13,
+      "setupMin": 0.7
+     },
+     {
+      "name": "CI / Release google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "CI / UUID migration API 24",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI / Instrumentation google",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Release oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI / Instrumentation oss",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.7
+     },
+     {
+      "name": "CI / Assemble isolated analysis inputs",
+      "needs": [
+       "ci/verify@CI",
+       "ci/instrumentation@CI"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.3,
+      "endMin": 13.6,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "docs",
+       "ci",
+       "lockfile",
+       "renovate"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 13.7,
+      "endMin": 13.7,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Kotlin",
+    97
+   ],
+   [
+    "Java",
+    2
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "C++",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv"
+   ],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "lxml",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "ollama",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    66
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "connectbot-translations",
+     "path": "translations/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "connectbot-translations",
+     "dir": "translations",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "connectbot-translations"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 727
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 11,
+    "edges": 21,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Validate Renovate config",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4
+    },
+    {
+     "id": "Check changed files",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Verify Actions lockfile / Verify Actions lockfile / Verify Actions lockfile",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "CI / Checks and unit tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 14.7
+    },
+    {
+     "id": "CI / Instrumentation oss",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 7.3
+    },
+    {
+     "id": "CI / Release google",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 11.8
+    },
+    {
+     "id": "CI / Instrumentation google",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 7.9
+    },
+    {
+     "id": "CI / UUID migration API 24",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 5.9
+    },
+    {
+     "id": "CI / Release oss",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 9.8
+    },
+    {
+     "id": "CI / Assemble isolated analysis inputs",
+     "needs": [
+      "ci/verify@CI",
+      "ci/instrumentation@CI"
+     ],
+     "onPath": true,
+     "blockedMin": 14.9,
+     "queueMin": 0,
+     "workMin": 0.4
+    },
+    {
+     "id": "Required",
+     "needs": [
+      "changes",
+      "docs",
+      "ci",
+      "lockfile",
+      "renovate"
+     ],
+     "onPath": true,
+     "blockedMin": 15.3,
+     "queueMin": 0,
+     "workMin": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "CI / Checks and unit tests",
+     "to": "changes"
+    },
+    {
+     "from": "CI / Instrumentation oss",
+     "to": "changes"
+    },
+    {
+     "from": "CI / Release google",
+     "to": "changes"
+    },
+    {
+     "from": "CI / Instrumentation google",
+     "to": "changes"
+    },
+    {
+     "from": "CI / UUID migration API 24",
+     "to": "changes"
+    },
+    {
+     "from": "CI / Release oss",
+     "to": "changes"
+    },
+    {
+     "from": "CI / Assemble isolated analysis inputs",
+     "to": "ci/verify@CI"
+    },
+    {
+     "from": "CI / Assemble isolated analysis inputs",
+     "to": "ci/instrumentation@CI"
+    },
+    {
+     "from": "Required",
+     "to": "changes"
+    },
+    {
+     "from": "Required",
+     "to": "docs"
+    },
+    {
+     "from": "Required",
+     "to": "ci"
+    },
+    {
+     "from": "Required",
+     "to": "lockfile"
+    },
+    {
+     "from": "Required",
+     "to": "renovate"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Check changed files",
+    "CI / Checks and unit tests",
+    "CI / Assemble isolated analysis inputs",
+    "Required"
+   ],
+   "pathMinP50": 15.4,
+   "unknown": [
+    "\"Verify Actions lockfile\" calls connectbot/actions/.github/workflows/verify-lockfile.yml, in another repo, so the jobs inside it are taken as one",
+    "\"Trusted provenance ${{ matrix.flavor }}\" calls kruton/bathysign/.github/workflows/bathysign-attest.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"CI / Checks and unit tests\" runs 15 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Kotlin it applies the principles, without a Kotlin-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 35,
+ "read": {
+  "calls": 35,
+  "fromCache": 0
+ }
+}

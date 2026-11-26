@@ -1,0 +1,942 @@
+{
+ "repo": "envoyproxy/envoy",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 10.3,
+  "stars": 29271,
+  "forks": 5745,
+  "languages": [
+   [
+    "C++",
+    86
+   ],
+   [
+    "Starlark",
+    4
+   ],
+   [
+    "Rust",
+    4
+   ],
+   [
+    "Java",
+    1
+   ]
+  ],
+  "linesOfCode": 2942177,
+  "files": 15239,
+  "sourceFiles": 8315,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1056171,
+   "tests": 1633434,
+   "integration": 215946,
+   "support": 36626
+  },
+  "testShare": 0.6410240334018374,
+  "packages": {
+   "npm": 0,
+   "cargo": 4,
+   "go": 2,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 78.8,
+  "pace": 1.7,
+  "activeAuthors28d": "≥89",
+  "prsOpenedPerWeek": 226,
+  "prsMergedPerWeek": 153,
+  "botShareOfMergedPrs": 5,
+  "openToMergeHours": {
+   "p50": 28.7,
+   "p90": 342.6,
+   "n": 95
+  },
+  "prRunsPerDay": 339.9,
+  "runsPerMergedPr": 15.6
+ },
+ "window": {
+  "days": 3.5,
+  "runs": 1000,
+  "runsInPeriod": 2220,
+  "truncated": true,
+  "mainDays": 3.7
+ },
+ "size": "large",
+ "headsPerWeek": 742,
+ "score": 93,
+ "grade": "A",
+ "band": "excellent",
+ "parts": {
+  "speed": 92,
+  "reliability": 100,
+  "efficiency": 89
+ },
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 38
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 54,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 500.3,
+  "prBilledMinutesPerDay": 862.4,
+  "jobMinutesPerMergedPr": 22.9,
+  "expectedMinutesPerMergedPr": 473.1,
+  "expectedWait": 23.7,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 373,
+  "timed": 259,
+  "p50": 1.7333333333333334,
+  "p75": 31.316666666666666,
+  "p90": 42.65,
+  "redRate": 0.06166219839142091,
+  "rerunRate": 0.029490616621983913,
+  "passedOnRerunRate": 0.00804289544235925,
+  "cancelledRate": 0.11528150134048257,
+  "botHeads": 17,
+  "lightHeads": 36,
+  "lastToFinish": [
+   [
+    "CodeQL/push",
+    214
+   ],
+   [
+    "Toolchain default behavior test",
+    29
+   ],
+   [
+    ".github/workflows/pr_notifier.yml",
+    16
+   ]
+  ],
+  "redBy": [
+   [
+    "Toolchain default behavior test",
+    20
+   ],
+   [
+    ".github/workflows/pr_notifier.yml",
+    3
+   ],
+   [
+    "CodeQL/push",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Copilot review request"
+  ],
+  "heavyWorkflows": [
+   "Toolchain default behavior test",
+   "CodeQL/push",
+   ".github/workflows/pr_notifier.yml"
+  ],
+  "allPushesP50": 1.6
+ },
+ "main": {
+  "heads": 75,
+  "p50": 2.183333333333333,
+  "p90": 40.53333333333333,
+  "redRate": 0.02666666666666667,
+  "redBy": [
+   [
+    "Scorecard supply-chain security",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.034759358288770054,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 1.45,
+  "jobMinutes": 1.4000000000000001,
+  "billedMinutes": 3,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.040889526542324243,
+  "critical": {
+   "name": "CodeQL-Noop",
+   "minutes": 1.05,
+   "shareOfSpan": 0.8
+  },
+  "longest": {
+   "name": "CodeQL-Noop",
+   "minutes": 1.05
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/codeql-push.yml"
+  ],
+  "jobs": 3,
+  "edges": 3,
+  "matrixJobs": 0,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "CodeQL-Noop",
+    "runs": 3
+   },
+   {
+    "name": "CodeQL-Build / CodeQL-Build",
+    "runs": 3
+   }
+  ],
+  "chain": [
+   {
+    "name": "targets",
+    "minutes": 0.3,
+    "share": 0.17,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.2
+   },
+   {
+    "name": "CodeQL-Noop",
+    "minutes": 1.1,
+    "share": 0.83,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.1,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 1.5,
+  "blockedMinP50": 0.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 1.4,
+  "setupInPathMinP50": 0.2,
+  "topBlockers": [
+   {
+    "name": "targets",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 2,
+    "tookMin": 0.3,
+    "heldJobMin": 0.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44715789775,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.5,
+    "path": [
+     "targets",
+     "CodeQL-Noop"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CodeQL-Noop",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44713755493,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.3,
+    "path": [
+     "targets",
+     "CodeQL-Noop"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CodeQL-Noop",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44713510171,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.3,
+    "path": [
+     "targets",
+     "CodeQL-Noop"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CodeQL-Noop",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44712915831,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 44.2,
+    "path": [
+     "targets",
+     "CodeQL-Build / CodeQL-Build"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CodeQL-Build / CodeQL-Build",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.8,
+      "startMin": 0.8,
+      "endMin": 44.2,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 43.3,
+      "setupMin": 1
+     }
+    ]
+   },
+   {
+    "id": 44690687568,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.4,
+    "path": [
+     "targets",
+     "CodeQL-Build / CodeQL-Build"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CodeQL-Build / CodeQL-Build",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.7,
+      "createdMin": 0.7,
+      "startMin": 0.7,
+      "endMin": 23.4,
+      "blockedMin": 0.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.7,
+      "setupMin": 0.8
+     }
+    ]
+   },
+   {
+    "id": 44677621942,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 29.6,
+    "path": [
+     "targets",
+     "CodeQL-Build / CodeQL-Build"
+    ],
+    "topBlocker": "targets",
+    "jobs": [
+     {
+      "name": "targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CodeQL-Build / CodeQL-Build",
+      "needs": [
+       "targets"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 29.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.9,
+      "setupMin": 0.9
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 64,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": true,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": "MODULE.bazel",
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": [
+   "Read the first 40 of 64 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    86
+   ],
+   [
+    "Starlark",
+    4
+   ],
+   [
+    "Rust",
+    4
+   ],
+   [
+    "Java",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip",
+    "Cargo",
+    "Go modules"
+   ],
+   "tools": [
+    "Bazel",
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 4,
+   "go": 2,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Black",
+   "Flake8",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "bindgen",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "hickory-resolver",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "mockall",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "smallvec",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "strum",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "strum_macros",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "time",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "github.com/envoyproxy/go-control-plane/envoy",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "go.uber.org/mock",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "google.golang.org/protobuf",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/instructions"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "github.com/envoyproxy/envoy",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "envoy-mobile-client",
+     "path": "mobile/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "envoy-dynamic-modules-builtin-extensions",
+     "path": "source/extensions/dynamic_modules/builtin_extensions/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "envoy-proxy-dynamic-modules-rust-sdk"
+     ]
+    },
+    {
+     "name": "github.com/envoyproxy/envoy/source/extensions/dynamic_modules",
+     "path": "source/extensions/dynamic_modules/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "envoy-proxy-dynamic-modules-rust-sdk",
+     "path": "source/extensions/dynamic_modules/sdk/rust/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "envoy-dynamic-modules-bindgen",
+     "path": "tools/dynamic_modules/bindgen/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    }
+   ],
+   "count": 7,
+   "edges": 1,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "envoy-proxy-dynamic-modules-rust-sdk",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 7,
+    "edges": 1
+   },
+   "nodes": [
+    {
+     "id": "envoy-proxy-dynamic-modules-rust-sdk",
+     "dir": "source/extensions/dynamic_modules/sdk/rust",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "envoy-dynamic-modules-bindgen",
+     "dir": "tools/dynamic_modules/bindgen",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "envoy-dynamic-modules-builtin-extensions",
+     "dir": "source/extensions/dynamic_modules/builtin_extensions",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "envoy-mobile-client",
+     "dir": "mobile",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/envoyproxy/envoy",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/envoyproxy/envoy/source/extensions/dynamic_modules",
+     "dir": "source/extensions/dynamic_modules",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "envoy-dynamic-modules-builtin-extensions",
+     "to": "envoy-proxy-dynamic-modules-rust-sdk",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "envoy-dynamic-modules-builtin-extensions",
+    "envoy-proxy-dynamic-modules-rust-sdk"
+   ],
+   "topFanIn": [
+    {
+     "name": "envoy-proxy-dynamic-modules-rust-sdk",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 15239
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 3,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "targets",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "CodeQL-Noop",
+     "needs": [
+      "targets"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 1.2
+    }
+   ],
+   "edges": [
+    {
+     "from": "CodeQL-Noop",
+     "to": "targets"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "targets",
+    "CodeQL-Noop"
+   ],
+   "pathMinP50": 1.5,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 24.6× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 114,
+ "read": {
+  "calls": 114,
+  "fromCache": 0
+ }
+}

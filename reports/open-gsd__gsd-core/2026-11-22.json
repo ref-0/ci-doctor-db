@@ -1,0 +1,3920 @@
+{
+ "repo": "open-gsd/gsd-core",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "next",
+ "profile": {
+  "ageYears": 0.5,
+  "stars": 11761,
+  "forks": 851,
+  "languages": [
+   [
+    "JavaScript",
+    83
+   ],
+   [
+    "TypeScript",
+    17
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 1734700,
+  "files": 4472,
+  "sourceFiles": 1914,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 494152,
+   "tests": 1229883,
+   "integration": 6042,
+   "support": 4623
+  },
+  "testShare": 0.7151369961829336,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 88,
+  "commitsPerWeekYear": 129.7,
+  "pace": 0.7,
+  "activeAuthors28d": 16,
+  "prsOpenedPerWeek": 162,
+  "prsMergedPerWeek": 152,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.9,
+   "p90": 11.4,
+   "n": 100
+  },
+  "prRunsPerDay": 1147,
+  "runsPerMergedPr": 52.8
+ },
+ "window": {
+  "days": 1,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 7.1
+ },
+ "size": "large",
+ "headsPerWeek": 843,
+ "score": 62,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 48,
+  "reliability": 99,
+  "efficiency": 69
+ },
+ "detail": {
+  "speed": {
+   "wait": 42,
+   "forSize": 55,
+   "tail": 48
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 99
+  },
+  "efficiency": {
+   "minutesPerPr": 93,
+   "runsPerPr": 5,
+   "setup": 93,
+   "queue": 86,
+   "shardIdle": 58
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 4983.9,
+  "prBilledMinutesPerDay": 6911.7,
+  "jobMinutesPerMergedPr": 229.5,
+  "expectedMinutesPerMergedPr": 397.4,
+  "expectedWait": 21,
+  "workflowsOnPrs": 16
+ },
+ "wait": {
+  "heads": 126,
+  "timed": 42,
+  "p50": 21.533333333333335,
+  "p75": 25.316666666666666,
+  "p90": 31.65,
+  "redRate": 0.30158730158730157,
+  "rerunRate": 0.015873015873015872,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.4126984126984127,
+  "botHeads": 0,
+  "lightHeads": 19,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Tests",
+    38
+   ],
+   [
+    "Mutation Testing",
+    3
+   ],
+   [
+    "Default Flip Documentation",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Changeset Required",
+    21
+   ],
+   [
+    "Docs Required",
+    17
+   ],
+   [
+    "Reviewed or Maintainer",
+    11
+   ]
+  ],
+  "leftOut": [
+   "Dependabot Auto-Merge"
+  ],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 18.216666666666665
+ },
+ "main": {
+  "heads": 145,
+  "p50": 31.133333333333333,
+  "p90": 49.666666666666664,
+  "redRate": 0.05517241379310345,
+  "redBy": [
+   [
+    "Tests",
+    8
+   ]
+  ]
+ },
+ "botRunShare": 0.10260223048327137,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 19.383333333333333,
+  "jobMinutes": 50.050000000000004,
+  "billedMinutes": 59,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 3,
+  "queueP90Sec": 16,
+  "setupShare": 0.23623500461396493,
+  "critical": {
+   "name": "Required tests",
+   "minutes": 0.05,
+   "shareOfSpan": 0.0025795356835769563
+  },
+  "longest": {
+   "name": "test (ubuntu-latest, 24, shard 1/3)",
+   "minutes": 19.133333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ],
+  "shard": {
+   "name": "test (ubuntu-latest, 24, #/3)",
+   "shards": 3,
+   "medianMin": 11.383333333333333,
+   "maxMin": 16.316666666666666,
+   "maxOverMedian": 1.4611940298507464,
+   "idleTail": 0.22662384011420414
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test.yml"
+  ],
+  "jobs": 12,
+  "edges": 25,
+  "matrixJobs": 2,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Required tests",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Detect test scope",
+    "minutes": 0.3,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.2,
+    "setupMin": 0.2
+   },
+   {
+    "name": "test (ubuntu-latest, 24, shard 1/3)",
+    "minutes": 16.4,
+    "share": 0.9,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 16.3,
+    "setupMin": 3.6
+   },
+   {
+    "name": "Coverage gate (merged shards)",
+    "minutes": 1.4,
+    "share": 0.07,
+    "blockedMin": 16.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.3,
+    "setupMin": 1.2
+   },
+   {
+    "name": "Required tests",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 18.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 4,
+  "pathMinP50": 19.4,
+  "blockedMinP50": 19.3,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 16.2,
+  "setupInPathMinP50": 2.5,
+  "topBlockers": [
+   {
+    "name": "test (…, ……)",
+    "runs": 6,
+    "heldJobs": 2,
+    "jobs": 12,
+    "tookMin": 16.4,
+    "heldJobMin": 17.8
+   }
+  ],
+  "stepWaits": [
+   {
+    "job": "Coverage gate (merged shards)",
+    "waitsOn": "test (ubuntu-latest, 24, shard 1/3)",
+    "step": "Upload compacted coverage for merge",
+    "earlyMin": 4.3,
+    "runs": 5,
+    "guess": true
+   }
+  ],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44984931725,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21,
+    "path": [
+     "Detect test scope",
+     "test (ubuntu-latest, 24, shard 1/3)",
+     "Coverage gate (merged shards)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 15.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 19.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.1,
+      "setupMin": 4.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 11,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.6,
+      "endMin": 20.9,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 20.9,
+      "createdMin": 20.9,
+      "startMin": 21,
+      "endMin": 21,
+      "blockedMin": 20.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44983040976,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.4,
+    "path": [
+     "Detect test scope",
+     "conformance test (macos-latest, 24, shard 3/3)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 10.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 16,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.6,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 11,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.2,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 5/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 12.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 6/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 13.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 3/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 13.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.7,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 7,
+      "endMin": 19.3,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 6.6,
+      "workMin": 12.3,
+      "setupMin": 1.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 7.2,
+      "endMin": 14.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 6.9,
+      "workMin": 7.6,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 5.1,
+      "endMin": 11.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 4.8,
+      "workMin": 6.7,
+      "setupMin": 1.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 2/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 15.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 4/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 16.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.2,
+      "setupMin": 1.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 1/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 12,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 16,
+      "createdMin": 16,
+      "startMin": 16,
+      "endMin": 17.2,
+      "blockedMin": 16,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 19.3,
+      "createdMin": 19.3,
+      "startMin": 19.3,
+      "endMin": 19.4,
+      "blockedMin": 19.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44982630582,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.7,
+    "path": [
+     "Detect test scope",
+     "test (ubuntu-latest, 24, shard 1/3)",
+     "Coverage gate (merged shards)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 2.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 21.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.1,
+      "setupMin": 4.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 7.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 21.4,
+      "createdMin": 21.4,
+      "startMin": 21.5,
+      "endMin": 22.7,
+      "blockedMin": 21.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 22.7,
+      "createdMin": 22.7,
+      "startMin": 22.7,
+      "endMin": 22.7,
+      "blockedMin": 22.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44980680071,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18.2,
+    "path": [
+     "Detect test scope",
+     "test (ubuntu-latest, 24, shard 1/3)",
+     "Coverage gate (merged shards)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 16.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.3,
+      "setupMin": 3.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 9.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 11.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 16.7,
+      "createdMin": 16.7,
+      "startMin": 16.8,
+      "endMin": 18.1,
+      "blockedMin": 16.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 18.1,
+      "createdMin": 18.1,
+      "startMin": 18.1,
+      "endMin": 18.2,
+      "blockedMin": 18.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44979618182,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16.4,
+    "path": [
+     "Detect test scope",
+     "test (ubuntu-latest, 24, shard 3/3)",
+     "Coverage gate (merged shards)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 15,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.2,
+      "setupMin": 3.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 15,
+      "createdMin": 15,
+      "startMin": 15,
+      "endMin": 16.3,
+      "blockedMin": 15,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 16.3,
+      "createdMin": 16.3,
+      "startMin": 16.3,
+      "endMin": 16.4,
+      "blockedMin": 16.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44979363862,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 28.6,
+    "path": [
+     "Detect test scope",
+     "conformance test (macos-latest, 24, shard 1/3)",
+     "Required tests"
+    ],
+    "topBlocker": "test (…, ……)",
+    "jobs": [
+     {
+      "name": "Detect test scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "PR mergeability / mergeability",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Base branch health",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "plugin-validate",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-tests",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "QA loop walk (smell ratchet)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 21.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.9,
+      "setupMin": 4.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 3.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 2/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 16.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 15.1,
+      "endMin": 21.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 14.9,
+      "workMin": 6.8,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 3/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 7,
+      "endMin": 14.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 6.7,
+      "workMin": 7.9,
+      "setupMin": 1.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 6/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.1,
+      "endMin": 12.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 11.8,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 3/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.1,
+      "endMin": 13.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 12.1,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 5/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 1/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.3,
+      "endMin": 15.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 14.3,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "conformance test (macos-latest, 24, shard 1/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 18.7,
+      "endMin": 28.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 18.5,
+      "workMin": 9.8,
+      "setupMin": 1.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "conformance test (windows-latest, 24, shard 4/6)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.5,
+      "endMin": 15.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 14.8,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (ubuntu-latest, 24, shard 2/3)",
+      "needs": [
+       "changes",
+       "preflight"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Coverage gate (merged shards)",
+      "needs": [
+       "changes",
+       "test",
+       "preflight"
+      ],
+      "readyMin": 21.2,
+      "createdMin": 21.2,
+      "startMin": 21.2,
+      "endMin": 22.4,
+      "blockedMin": 21.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Required tests",
+      "needs": [
+       "preflight",
+       "next-health",
+       "changes",
+       "lint-tests",
+       "test",
+       "test-inert",
+       "test-conformance",
+       "coverage-gate",
+       "qa-loop-walk"
+      ],
+      "readyMin": 28.5,
+      "createdMin": 28.5,
+      "startMin": 28.6,
+      "endMin": 28.6,
+      "blockedMin": 28.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 34,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "JavaScript",
+    83
+   ],
+   [
+    "TypeScript",
+    17
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [
+   "ESLint"
+  ],
+  "libraries": [
+   {
+    "name": "@anthropic-ai/claude-agent-sdk",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stryker-mutator/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stryker-mutator/tap-runner",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "c8",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "eslint-plugin-n",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "eslint-plugin-no-only-tests",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "espree",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "fallow",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "fast-check",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "globals",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "gpt-tokenizer",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "js-yaml",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "mutation-testing-metrics",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "re2js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "saxes",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "tap-parser",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "typescript-eslint",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "ws",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ],
+  "agentFiles": [
+   "GEMINI.md",
+   ".clinerules"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "@opengsd/gsd-core",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "gsd-core-vscode",
+     "path": "vscode/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "@opengsd/gsd-core",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "gsd-core-vscode",
+     "dir": "vscode",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "@opengsd/gsd-core"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 2,
+    "filesRead": 2
+   },
+   "nodes": [
+    {
+     "id": "@opengsd/gsd-core#.",
+     "pkg": "@opengsd/gsd-core",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": ".opencode/plugins/gsd-core.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "gsd-core-vscode#.",
+     "pkg": "gsd-core-vscode",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "vscode/extension.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 80,
+    "edges": 32,
+    "cached": 0,
+    "trackedFiles": 4472
+   },
+   "nodes": [
+    {
+     "id": "@opengsd/gsd-core#benchmark:compact-content",
+     "pkg": "@opengsd/gsd-core",
+     "name": "benchmark:compact-content",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#benchmark:compact-content-variants",
+     "pkg": "@opengsd/gsd-core",
+     "name": "benchmark:compact-content-variants",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#build",
+     "pkg": "@opengsd/gsd-core",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#build:hooks",
+     "pkg": "@opengsd/gsd-core",
+     "name": "build:hooks",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#build:lib",
+     "pkg": "@opengsd/gsd-core",
+     "name": "build:lib",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#changelog:render",
+     "pkg": "@opengsd/gsd-core",
+     "name": "changelog:render",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#changeset",
+     "pkg": "@opengsd/gsd-core",
+     "name": "changeset",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:alias-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:alias-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:contract-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:contract-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:env",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:env",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:identity-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:identity-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:integrity",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:integrity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#check:phase-id-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "check:phase-id-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#ci:test-scope",
+     "pkg": "@opengsd/gsd-core",
+     "name": "ci:test-scope",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:capability-registry",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:capability-registry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:cli-surface-manifest",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:cli-surface-manifest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:context-index",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:context-index",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:features",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:features",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:install-tree",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:install-tree",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:loop-host-contract",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:loop-host-contract",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:pi-package-skills",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:pi-package-skills",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:plugin-skills",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:plugin-skills",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:registry",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:registry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:section-manifest",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:section-manifest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#gen:state-md-docs",
+     "pkg": "@opengsd/gsd-core",
+     "name": "gen:state-md-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#generate:identity",
+     "pkg": "@opengsd/gsd-core",
+     "name": "generate:identity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:allow-test-rule-refs",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:allow-test-rule-refs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:changeset",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:changeset",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:ci",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:descriptions",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:descriptions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:docs",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:docs-command-form",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:docs-command-form",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:evaluation-scope-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:evaluation-scope-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:fix",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:frontmatter-fence-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:frontmatter-fence-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:frontmatter-scalar-broad-grep",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:frontmatter-scalar-broad-grep",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:gate-evidence-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:gate-evidence-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:gate-positive-control",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:gate-positive-control",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:generated-sync",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:generated-sync",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:hooks-runtime-build-seam",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:hooks-runtime-build-seam",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:legacy-name",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:legacy-name",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:planning-document-positive-control",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:planning-document-positive-control",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:pr-checks",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:pr-checks",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:qa-smells",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:qa-smells",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:regression-names",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:regression-names",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:removed-but-needed",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:removed-but-needed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:response-language",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:response-language",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:retired-runtime-name",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:retired-runtime-name",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:seam-enforcement",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:seam-enforcement",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:skill-deps",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:skill-deps",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:static",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:static",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:table-schema-drift",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:table-schema-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:test-file-count",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:test-file-count",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:vendored-deps",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:vendored-deps",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#lint:verify-lifecycle-writes",
+     "pkg": "@opengsd/gsd-core",
+     "name": "lint:verify-lifecycle-writes",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#prepack",
+     "pkg": "@opengsd/gsd-core",
+     "name": "prepack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#prepare",
+     "pkg": "@opengsd/gsd-core",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#prepublishOnly",
+     "pkg": "@opengsd/gsd-core",
+     "name": "prepublishOnly",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#pretest",
+     "pkg": "@opengsd/gsd-core",
+     "name": "pretest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#pretest:coverage",
+     "pkg": "@opengsd/gsd-core",
+     "name": "pretest:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@opengsd/gsd-core#regen:derived",
+     "pkg": "@opengsd/gsd-core",
+     "name": "regen:derived",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@opengsd/gsd-core#sync:launcher",
+     "pkg": "@opengsd/gsd-core",
+     "name": "sync:launcher",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@opengsd/gsd-core#test:affected",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:affected",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage:all",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage:report",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage:report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage:scripts-floor",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage:scripts-floor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage:unit",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:coverage:unit:raw",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:coverage:unit:raw",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:install",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:install",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:integration",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:integration",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:mutation",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:mutation",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:qa",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:qa",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:security",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:security",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:slow",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:slow",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#test:unit",
+     "pkg": "@opengsd/gsd-core",
+     "name": "test:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#validate:registry",
+     "pkg": "@opengsd/gsd-core",
+     "name": "validate:registry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@opengsd/gsd-core#version",
+     "pkg": "@opengsd/gsd-core",
+     "name": "version",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#generate:identity",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:section-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:context-index",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:plugin-skills",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:loop-host-contract",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:capability-registry",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#gen:pi-package-skills",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#build",
+     "to": "@opengsd/gsd-core#build:hooks",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#regen:derived",
+     "to": "@opengsd/gsd-core#build",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#regen:derived",
+     "to": "@opengsd/gsd-core#gen:registry",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#regen:derived",
+     "to": "@opengsd/gsd-core#gen:section-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#regen:derived",
+     "to": "@opengsd/gsd-core#gen:install-tree",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#prepack",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#prepare",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#prepublishOnly",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#prepublishOnly",
+     "to": "@opengsd/gsd-core#build:hooks",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#prepublishOnly",
+     "to": "@opengsd/gsd-core#gen:pi-package-skills",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#pretest",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#pretest",
+     "to": "@opengsd/gsd-core#lint:skill-deps",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#pretest:coverage",
+     "to": "@opengsd/gsd-core#build:lib",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#pretest:coverage",
+     "to": "@opengsd/gsd-core#lint:skill-deps",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:skill-deps",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:generated-sync",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:legacy-name",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:retired-runtime-name",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:hooks-runtime-build-seam",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#lint:ci",
+     "to": "@opengsd/gsd-core#lint:response-language",
+     "how": "calls"
+    },
+    {
+     "from": "@opengsd/gsd-core#test",
+     "to": "@opengsd/gsd-core#pretest",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@opengsd/gsd-core#test:coverage",
+     "to": "@opengsd/gsd-core#pretest:coverage",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@opengsd/gsd-core#test:coverage:all",
+     "to": "@opengsd/gsd-core#test:coverage",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 4,
+   "chain": [
+    "@opengsd/gsd-core#test:coverage:all",
+    "@opengsd/gsd-core#test:coverage",
+    "@opengsd/gsd-core#pretest:coverage",
+    "@opengsd/gsd-core#build:lib"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 12,
+    "edges": 25,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Detect test scope",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "PR mergeability / mergeability",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Base branch health",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "plugin-validate",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "lint-tests",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (ubuntu-latest, 24)",
+     "needs": [
+      "changes",
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 2.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "QA loop walk (smell ratchet)",
+     "needs": [
+      "changes",
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (ubuntu-latest, 24, shard 3/3)",
+     "needs": [
+      "changes",
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 15.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (ubuntu-latest, 24, shard 1/3)",
+     "needs": [
+      "changes",
+      "preflight"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 19.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (ubuntu-latest, 24, shard 2/3)",
+     "needs": [
+      "changes",
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 10.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Coverage gate (merged shards)",
+     "needs": [
+      "changes",
+      "test",
+      "preflight"
+     ],
+     "onPath": true,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 1.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Required tests",
+     "needs": [
+      "preflight",
+      "next-health",
+      "changes",
+      "lint-tests",
+      "test",
+      "test-inert",
+      "test-conformance",
+      "coverage-gate",
+      "qa-loop-walk"
+     ],
+     "onPath": true,
+     "blockedMin": 20.9,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "plugin-validate",
+     "to": "preflight"
+    },
+    {
+     "from": "lint-tests",
+     "to": "preflight"
+    },
+    {
+     "from": "test (ubuntu-latest, 24)",
+     "to": "changes"
+    },
+    {
+     "from": "test (ubuntu-latest, 24)",
+     "to": "preflight"
+    },
+    {
+     "from": "QA loop walk (smell ratchet)",
+     "to": "changes"
+    },
+    {
+     "from": "QA loop walk (smell ratchet)",
+     "to": "preflight"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 3/3)",
+     "to": "changes"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 3/3)",
+     "to": "preflight"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 1/3)",
+     "to": "changes"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 1/3)",
+     "to": "preflight"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 2/3)",
+     "to": "changes"
+    },
+    {
+     "from": "test (ubuntu-latest, 24, shard 2/3)",
+     "to": "preflight"
+    },
+    {
+     "from": "Coverage gate (merged shards)",
+     "to": "changes"
+    },
+    {
+     "from": "Coverage gate (merged shards)",
+     "to": "test"
+    },
+    {
+     "from": "Coverage gate (merged shards)",
+     "to": "preflight"
+    },
+    {
+     "from": "Required tests",
+     "to": "preflight"
+    },
+    {
+     "from": "Required tests",
+     "to": "next-health"
+    },
+    {
+     "from": "Required tests",
+     "to": "changes"
+    },
+    {
+     "from": "Required tests",
+     "to": "lint-tests"
+    },
+    {
+     "from": "Required tests",
+     "to": "test"
+    },
+    {
+     "from": "Required tests",
+     "to": "test-inert"
+    },
+    {
+     "from": "Required tests",
+     "to": "test-conformance"
+    },
+    {
+     "from": "Required tests",
+     "to": "coverage-gate"
+    },
+    {
+     "from": "Required tests",
+     "to": "qa-loop-walk"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "Detect test scope → test (ubuntu-latest, 24, shard 1/3) → Coverage gate (merged shards) → Required tests",
+     "numbers": {
+      "setupMin": 2.5,
+      "pathMin": 19.4
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "Detect test scope",
+    "test (ubuntu-latest, 24, shard 1/3)",
+    "Coverage gate (merged shards)",
+    "Required tests"
+   ],
+   "pathMinP50": 19.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 2,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"test (ubuntu-latest, 24, #/3)\": the slowest shard takes 1.46× the median, 23% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Setup on the critical path: 2.5 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 116,
+ "read": {
+  "calls": 116,
+  "fromCache": 0
+ }
+}

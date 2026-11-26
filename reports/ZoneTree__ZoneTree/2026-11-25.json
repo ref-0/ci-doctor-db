@@ -1,0 +1,873 @@
+{
+ "repo": "ZoneTree/ZoneTree",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4.4,
+  "stars": 509,
+  "forks": 41,
+  "languages": [
+   [
+    "C#",
+    88
+   ],
+   [
+    "MDX",
+    7
+   ],
+   [
+    "TypeScript",
+    4
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "linesOfCode": 141697,
+  "files": 1026,
+  "sourceFiles": 732,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 141519,
+   "tests": 178,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.0012554938146287025,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 50,
+  "commitsPerWeekYear": 8.5,
+  "pace": 5.9,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 14.3,
+  "prsMergedPerWeek": 14.3,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.3,
+   "p90": 2.5,
+   "n": 16
+  },
+  "prRunsPerDay": 6.1,
+  "runsPerMergedPr": 3
+ },
+ "window": {
+  "days": 7.9,
+  "runs": 48,
+  "runsInPeriod": 48,
+  "truncated": false,
+  "mainDays": 7.9
+ },
+ "size": "small",
+ "headsPerWeek": 25,
+ "score": 87,
+ "grade": "B+",
+ "band": "fast",
+ "parts": {
+  "speed": 79,
+  "reliability": 100,
+  "efficiency": 98
+ },
+ "detail": {
+  "speed": {
+   "wait": 80,
+   "forSize": 76,
+   "tail": 84
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 91,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 42.3,
+  "prBilledMinutesPerDay": 47.4,
+  "jobMinutesPerMergedPr": 20.7,
+  "prVcpuMinutesPerDay": 141.9,
+  "vcpuMinutesPerMergedPr": 69.6,
+  "expectedVcpuMinutesPerMergedPr": 695.6,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 173.9,
+  "expectedWait": 10.9,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 28,
+  "ranHeads": 28,
+  "timed": 27,
+  "p50": 7.983333333333333,
+  "p75": 8.8,
+  "p90": 10.25,
+  "redRate": 0,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 1,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Build and Test",
+    27
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/dotnet.yml",
+  "redBy": [],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Build and Test"
+  ],
+  "allPushesP50": 7.633333333333334
+ },
+ "main": {
+  "heads": 16,
+  "p50": 7.783333333333333,
+  "p90": 9.533333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 6.1,
+  "jobMinutes": 10.683333333333334,
+  "billedMinutes": 11,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 4,
+  "setupShare": 0.10377358490566038,
+  "setupMinPerJob": 0.6,
+  "critical": {
+   "name": "test-macos-arm64",
+   "minutes": 6.183333333333334,
+   "shareOfSpan": 0.9933554817275748
+  },
+  "longest": {
+   "name": "test-macos-arm64",
+   "minutes": 6.183333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/dotnet.yml"
+  ],
+  "jobs": 2,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "test-macos-arm64",
+    "runs": 5
+   },
+   {
+    "name": "build",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "test-macos-arm64",
+    "minutes": 6.2,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 6.2,
+    "setupMin": 0.7
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 1,
+  "pathMinP50": 6.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 5.9,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45006224941,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.2,
+    "path": [
+     "test-macos-arm64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 44748001828,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.3,
+    "path": [
+     "test-macos-arm64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44717856394,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.1,
+    "path": [
+     "test-macos-arm64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.9,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 44714965070,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.6,
+    "path": [
+     "build"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 44714727593,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10,
+    "path": [
+     "test-macos-arm64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 44706360681,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5,
+    "path": [
+     "test-macos-arm64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test-macos-arm64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "pathFilters": ".github/workflows/docs.yml",
+   "timeouts": ".github/workflows/dotnet.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    88
+   ],
+   [
+    "MDX",
+    7
+   ],
+   [
+    "TypeScript",
+    4
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "@purestack/ts-components",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@purestack/ts-minidom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@purestack/ts-style",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@purestack/ts-svg-icons",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@purestack/ts-util",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "purestack",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "regor",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "vite",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "zonetree.dev",
+     "path": "zonetree-dev/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "zonetree.dev",
+     "dir": "zonetree-dev",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "zonetree.dev"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 6,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1026
+   },
+   "nodes": [
+    {
+     "id": "zonetree.dev#build",
+     "pkg": "zonetree.dev",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "zonetree.dev#check",
+     "pkg": "zonetree.dev",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "zonetree.dev#deploy",
+     "pkg": "zonetree.dev",
+     "name": "deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "zonetree.dev#publish",
+     "pkg": "zonetree.dev",
+     "name": "publish",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "zonetree.dev#serve",
+     "pkg": "zonetree.dev",
+     "name": "serve",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "zonetree.dev#test",
+     "pkg": "zonetree.dev",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "zonetree.dev#check"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test-macos-arm64",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.2,
+     "runner": "macos-latest",
+     "vcpus": 3
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "test-macos-arm64"
+   ],
+   "pathMinP50": 6.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 36,
+ "read": {
+  "calls": 36,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

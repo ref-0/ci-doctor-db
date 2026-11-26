@@ -1,0 +1,1785 @@
+{
+ "repo": "mastodon/mastodon",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 10.8,
+  "stars": 50619,
+  "forks": 7574,
+  "languages": [
+   [
+    "Ruby",
+    61
+   ],
+   [
+    "TypeScript",
+    23
+   ],
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "SCSS",
+    5
+   ]
+  ],
+  "linesOfCode": 319190,
+  "files": 10130,
+  "sourceFiles": 4411,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 205224,
+   "tests": 113349,
+   "integration": 0,
+   "support": 617
+  },
+  "testShare": 0.35704814570794435,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 95.5,
+  "commitsPerWeekYear": 61.5,
+  "pace": 1.6,
+  "activeAuthors28d": 16,
+  "prsOpenedPerWeek": 105,
+  "prsMergedPerWeek": 91,
+  "botShareOfMergedPrs": 37.4,
+  "openToMergeHours": {
+   "p50": 2.7,
+   "p90": 197.4,
+   "n": 57
+  },
+  "prRunsPerDay": 468.9,
+  "runsPerMergedPr": 36.1
+ },
+ "window": {
+  "days": 2.1,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.4
+ },
+ "size": "large",
+ "headsPerWeek": 397,
+ "score": 73,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 65,
+  "reliability": 100,
+  "efficiency": 72
+ },
+ "detail": {
+  "speed": {
+   "wait": 63,
+   "forSize": 64,
+   "tail": 77
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 89,
+   "runsPerPr": 20,
+   "setup": 75,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1847.5,
+  "prBilledMinutesPerDay": 2253.1,
+  "jobMinutesPerMergedPr": 142.1,
+  "expectedMinutesPerMergedPr": 227.3,
+  "expectedWait": 14.2,
+  "workflowsOnPrs": 12
+ },
+ "wait": {
+  "heads": 121,
+  "timed": 35,
+  "p50": 12.65,
+  "p75": 13.666666666666666,
+  "p90": 14.016666666666667,
+  "redRate": 0.18181818181818182,
+  "rerunRate": 0.01652892561983471,
+  "passedOnRerunRate": 0.008264462809917356,
+  "cancelledRate": 0.17355371900826447,
+  "botHeads": 57,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 64,
+  "bots": [
+   [
+    "renovate[bot]",
+    62
+   ],
+   [
+    "github-actions[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Ruby Testing",
+    34
+   ],
+   [
+    "Test container image build",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Ruby Linting",
+    10
+   ],
+   [
+    "JavaScript Linting",
+    8
+   ],
+   [
+    "Ruby Testing",
+    5
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Ruby Testing",
+   "Historical data migration test",
+   "CodeQL"
+  ],
+  "allPushesP50": 12.65
+ },
+ "main": {
+  "heads": 40,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.05,
+  "redBy": [
+   [
+    "Check i18n",
+    1
+   ],
+   [
+    "Ruby Testing",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.6692307692307692,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 6,
+  "spanMin": 12.1,
+  "jobMinutes": 25.099999999999998,
+  "billedMinutes": 27,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.3258897418004187,
+  "critical": {
+   "name": "test (.ruby-version)",
+   "minutes": 10.633333333333333,
+   "shareOfSpan": 0.8827493261455525
+  },
+  "longest": {
+   "name": "test (.ruby-version)",
+   "minutes": 10.633333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    36
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test-ruby.yml"
+  ],
+  "jobs": 4,
+  "edges": 3,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "test (.ruby-version)",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "build (production)",
+    "minutes": 1.3,
+    "share": 0.11,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.3,
+    "setupMin": 0.8
+   },
+   {
+    "name": "test (.ruby-version)",
+    "minutes": 10.7,
+    "share": 0.89,
+    "blockedMin": 1.3,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 10.6,
+    "setupMin": 0.7
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 12.1,
+  "blockedMinP50": 1.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 12,
+  "setupInPathMinP50": 0.7,
+  "topBlockers": [
+   {
+    "name": "build (production)",
+    "runs": 6,
+    "heldJobs": 5,
+    "jobs": 6,
+    "tookMin": 1.3,
+    "heldJobMin": 6.7
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44979284741,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 13,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.7,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 2.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 5.1,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.2,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.3,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44977016278,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.3,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 5,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 14.3,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.5,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44959160979,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.5,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 10.5,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 5.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44959144194,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 4.3,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 4.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 12,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 4.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 1.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44959120889,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.4,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 12.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 5.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 1.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44959085653,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.1,
+    "path": [
+     "build (production)",
+     "test (.ruby-version)"
+    ],
+    "topBlocker": "build (production)",
+    "jobs": [
+     {
+      "name": "build (production)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 6.2,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "End to End testing (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 5,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 1.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (.ruby-version)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 12.1,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 5.1,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 5.3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 22,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "yarn berry",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Ruby",
+    61
+   ],
+   [
+    "TypeScript",
+    23
+   ],
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "SCSS",
+    5
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Yarn Berry",
+    "Bundler"
+   ],
+   "tools": [
+    "npm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "RSpec"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Oxfmt",
+   "Stylelint",
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@typescript/typescript6",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "globals",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "typescript-eslint",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@agulbra/uts58",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@csstools/stylelint-formatter-github",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/modifiers",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/sortable",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/utilities",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@floating-ui/react-dom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@formatjs/cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@formatjs/intl-pluralrules",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@formatjs/unplugin",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@gamestdio/websocket",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@github/webauthn-json",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@optimize-lodash/rollup-plugin",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@phosphor-icons/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@prometheus-io/client",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@react-aria/utils",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    36
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "@mastodon/mastodon",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@mastodon/streaming",
+     "path": "streaming/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "@mastodon/mastodon",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/streaming",
+     "dir": "streaming",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "@mastodon/mastodon"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 0,
+    "filesRead": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 24,
+    "edges": 7,
+    "cached": 0,
+    "trackedFiles": 10130
+   },
+   "nodes": [
+    {
+     "id": "@mastodon/mastodon#build-storybook",
+     "pkg": "@mastodon/mastodon",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#build:development",
+     "pkg": "@mastodon/mastodon",
+     "name": "build:development",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#build:production",
+     "pkg": "@mastodon/mastodon",
+     "name": "build:production",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#chromatic",
+     "pkg": "@mastodon/mastodon",
+     "name": "chromatic",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#dev",
+     "pkg": "@mastodon/mastodon",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#fix",
+     "pkg": "@mastodon/mastodon",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mastodon/mastodon#fix:css",
+     "pkg": "@mastodon/mastodon",
+     "name": "fix:css",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#fix:js",
+     "pkg": "@mastodon/mastodon",
+     "name": "fix:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#format",
+     "pkg": "@mastodon/mastodon",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#format:check",
+     "pkg": "@mastodon/mastodon",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#i18n:extract",
+     "pkg": "@mastodon/mastodon",
+     "name": "i18n:extract",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#lint",
+     "pkg": "@mastodon/mastodon",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mastodon/mastodon#lint:css",
+     "pkg": "@mastodon/mastodon",
+     "name": "lint:css",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#lint:js",
+     "pkg": "@mastodon/mastodon",
+     "name": "lint:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#postinstall",
+     "pkg": "@mastodon/mastodon",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#postversion",
+     "pkg": "@mastodon/mastodon",
+     "name": "postversion",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#start",
+     "pkg": "@mastodon/mastodon",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#storybook",
+     "pkg": "@mastodon/mastodon",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#test",
+     "pkg": "@mastodon/mastodon",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@mastodon/mastodon#test:js",
+     "pkg": "@mastodon/mastodon",
+     "name": "test:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#test:storybook",
+     "pkg": "@mastodon/mastodon",
+     "name": "test:storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/mastodon#typecheck",
+     "pkg": "@mastodon/mastodon",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/streaming#start",
+     "pkg": "@mastodon/streaming",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mastodon/streaming#typecheck",
+     "pkg": "@mastodon/streaming",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@mastodon/mastodon#fix",
+     "to": "@mastodon/mastodon#fix:js",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#fix",
+     "to": "@mastodon/mastodon#fix:css",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#lint",
+     "to": "@mastodon/mastodon#lint:js",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#lint",
+     "to": "@mastodon/mastodon#lint:css",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#test",
+     "to": "@mastodon/mastodon#lint",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#test",
+     "to": "@mastodon/mastodon#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "@mastodon/mastodon#test",
+     "to": "@mastodon/mastodon#test:js",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "@mastodon/mastodon#test",
+    "@mastodon/mastodon#lint",
+    "@mastodon/mastodon#lint:js"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 3,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "build (production)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (.ruby-version)",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 11.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "End to End testing (.ruby-version)",
+     "needs": [
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 3.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+     "needs": [
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 3.9,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+     "needs": [
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+     "needs": [
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 3.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "test (.ruby-version)",
+     "to": "build"
+    },
+    {
+     "from": "End to End testing (.ruby-version)",
+     "to": "build"
+    },
+    {
+     "from": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:8.19.23)",
+     "to": "build"
+    },
+    {
+     "from": "Elastic Search integration testing (opensearchproject/opensearch:2)",
+     "to": "build"
+    },
+    {
+     "from": "Elastic Search integration testing (docker.elastic.co/elasticsearch/elasticsearch:7.17.29)",
+     "to": "build"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "build (production)",
+     "numbers": {
+      "heldJobs": 5,
+      "jobs": 6,
+      "heldJobMin": 6.7,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "build (production)",
+    "test (.ruby-version)"
+   ],
+   "pathMinP50": 12.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"test (.ruby-version)\" runs 11 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"build (production)\" holds up 5 of 6 jobs, 6.7 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Ruby it applies the principles, without a Ruby-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 97,
+ "read": {
+  "calls": 97,
+  "fromCache": 0
+ }
+}

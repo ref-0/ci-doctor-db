@@ -1,0 +1,5175 @@
+{
+ "repo": "apache/maka",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.5,
+  "stars": 6004,
+  "forks": 581,
+  "languages": [
+   [
+    "Rust",
+    74
+   ],
+   [
+    "TypeScript",
+    21
+   ],
+   [
+    "JavaScript",
+    4
+   ],
+   [
+    "Python",
+    1
+   ]
+  ],
+  "linesOfCode": 1057644,
+  "files": 6431,
+  "sourceFiles": 2390,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 914957,
+   "tests": 112828,
+   "integration": 25287,
+   "support": 4571
+  },
+  "testShare": 0.13490967814931998,
+  "packages": {
+   "npm": 7,
+   "cargo": 77,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 154.7,
+  "pace": 1.4,
+  "activeAuthors28d": "≥15",
+  "prsOpenedPerWeek": 254.2,
+  "prsMergedPerWeek": 198.1,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 2.8,
+   "p90": 18.5,
+   "n": 100
+  },
+  "prRunsPerDay": 129.9,
+  "runsPerMergedPr": 4.6
+ },
+ "window": {
+  "days": 8,
+  "runs": 908,
+  "runsInPeriod": 908,
+  "truncated": false,
+  "mainDays": 8
+ },
+ "size": "large",
+ "headsPerWeek": 592,
+ "score": 30,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 4,
+  "reliability": 78,
+  "efficiency": 61
+ },
+ "detail": {
+  "speed": {
+   "wait": 8,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 98,
+   "mainRed": 49
+  },
+  "efficiency": {
+   "minutesPerPr": 47,
+   "runsPerPr": 100,
+   "setup": 84,
+   "queue": 18,
+   "shardIdle": 50,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 14935.2,
+  "prBilledMinutesPerDay": 15527.9,
+  "jobMinutesPerMergedPr": 527.7,
+  "prVcpuMinutesPerDay": 57646.8,
+  "vcpuMinutesPerMergedPr": 2037,
+  "expectedVcpuMinutesPerMergedPr": 1350.3,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 337.6,
+  "expectedWait": 20.3,
+  "workflowsOnPrs": 12
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 675,
+  "ranHeads": 664,
+  "timed": 371,
+  "p50": 69.95,
+  "p75": 131.25,
+  "p90": 182.46666666666667,
+  "redRate": 0.42319277108433734,
+  "rerunRate": 0.018072289156626505,
+  "passedOnRerunRate": 0.012048192771084338,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.27710843373493976,
+  "botHeads": 12,
+  "lightHeads": 85,
+  "neverRan": 2,
+  "botPushes": 14,
+  "bots": [
+   [
+    "dependabot[bot]",
+    14
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    371
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    269
+   ],
+   [
+    "Dependency audit",
+    21
+   ],
+   [
+    "CLI package validation",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Release Windows check",
+   "Release Linux check",
+   "PR effort label"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 55.96666666666667
+ },
+ "main": {
+  "heads": 70,
+  "p50": 55.333333333333336,
+  "p90": 83.51666666666667,
+  "redRate": 0.22857142857142856,
+  "redBy": [
+   [
+    "CI",
+    14
+   ],
+   [
+    "Upgrade Compatibility (Post-Merge)",
+    3
+   ]
+  ]
+ },
+ "botRunShare": 0.04409317803660566,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 13,
+  "spanMin": 37.45,
+  "jobMinutes": 143.46666666666667,
+  "billedMinutes": 152,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 46,
+  "queueP90Sec": 160,
+  "setupShare": 0.110397946084724,
+  "setupMinPerJob": 0.6911764705882353,
+  "critical": {
+   "name": "test",
+   "minutes": 0.26666666666666666,
+   "shareOfSpan": 0.006230529595015576
+  },
+  "longest": {
+   "name": "native-macos",
+   "minutes": 34.233333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    58
+   ]
+  ],
+  "shard": {
+   "name": "root-tests (native, slice:#, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+   "shards": 3,
+   "medianMin": 7.383333333333334,
+   "maxMin": 11.716666666666667,
+   "maxOverMedian": 1.2998204667863555,
+   "idleTail": 0.25021533161068044
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 0,
+  "runsLeftOut": 6,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 6
+   }
+  ],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 6,
+  "edges": 9,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [],
+  "chain": [],
+  "chainRuns": 0,
+  "pathJobsP50": null,
+  "pathMinP50": null,
+  "blockedMinP50": null,
+  "queueMinP50": null,
+  "hiddenMinP50": null,
+  "workMinP50": null,
+  "setupInPathMinP50": null,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "test",
+   "native-windows",
+   "linux-checks",
+   "native-macos",
+   "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ..."
+  ],
+  "ambiguous": [
+   "test",
+   "native-windows",
+   "linux-checks",
+   "native-macos",
+   "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ..."
+  ],
+  "skippedP50": null,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45572705081,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 37.5,
+    "path": [
+     "test"
+    ],
+    "topBlocker": "plan",
+    "jobs": [
+     {
+      "name": "plan",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 2.7,
+      "createdMin": 2.7,
+      "startMin": 6.6,
+      "endMin": 18,
+      "blockedMin": 2.7,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 11.4,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.7,
+      "startMin": 2.8,
+      "endMin": 31,
+      "blockedMin": 0,
+      "hiddenMin": 2.7,
+      "queueMin": 0.2,
+      "workMin": 28.2,
+      "setupMin": 4.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tooling",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 2.7,
+      "createdMin": 2.7,
+      "startMin": 6.8,
+      "endMin": 7.9,
+      "blockedMin": 2.7,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "linux-checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.7,
+      "startMin": 6.6,
+      "endMin": 33.8,
+      "blockedMin": 0,
+      "hiddenMin": 2.7,
+      "queueMin": 4,
+      "workMin": 27.2,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.7,
+      "startMin": 2.9,
+      "endMin": 37.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.7,
+      "queueMin": 0.2,
+      "workMin": 34.2,
+      "setupMin": 2.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.6,
+      "endMin": 26,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.7,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:2/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.4,
+      "endMin": 25.8,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.4,
+      "workMin": 5.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:1/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.6,
+      "endMin": 26.9,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.7,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (rest, slice:1/1, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ma...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.8,
+      "endMin": 24.8,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.9,
+      "workMin": 4,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.8,
+      "endMin": 32.5,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.9,
+      "workMin": 11.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:2/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 18,
+      "startMin": 20.4,
+      "endMin": 27.7,
+      "blockedMin": 0,
+      "hiddenMin": 18,
+      "queueMin": 2.4,
+      "workMin": 7.3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 37.1,
+      "startMin": 37.2,
+      "endMin": 37.5,
+      "blockedMin": 0,
+      "hiddenMin": 37.1,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45572409088,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 41.2,
+    "path": [
+     "test"
+    ],
+    "topBlocker": "plan",
+    "jobs": [
+     {
+      "name": "plan",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tooling",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 3.6,
+      "endMin": 5.1,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 1.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "linux-checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.5,
+      "startMin": 4.6,
+      "endMin": 32.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.5,
+      "queueMin": 2.1,
+      "workMin": 27.7,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.5,
+      "startMin": 2.9,
+      "endMin": 34.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.5,
+      "queueMin": 0.4,
+      "workMin": 31.2,
+      "setupMin": 7.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.5,
+      "startMin": 2.9,
+      "endMin": 40,
+      "blockedMin": 0,
+      "hiddenMin": 2.5,
+      "queueMin": 0.5,
+      "workMin": 37.1,
+      "setupMin": 2.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "root-build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 5,
+      "endMin": 15.3,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 10.3,
+      "setupMin": 1.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:2/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 16.1,
+      "endMin": 22.4,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 0.8,
+      "workMin": 6.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (rest, slice:1/1, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ma...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 16.2,
+      "endMin": 19.7,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 0.9,
+      "workMin": 3.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 17.1,
+      "endMin": 24.5,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 1.8,
+      "workMin": 7.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:2/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 17,
+      "endMin": 22.1,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 1.7,
+      "workMin": 5.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:1/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 16.7,
+      "endMin": 22.4,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 1.4,
+      "workMin": 5.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 15.3,
+      "startMin": 16.7,
+      "endMin": 25.3,
+      "blockedMin": 0,
+      "hiddenMin": 15.3,
+      "queueMin": 1.4,
+      "workMin": 8.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 40,
+      "startMin": 40.9,
+      "endMin": 41.2,
+      "blockedMin": 0,
+      "hiddenMin": 40,
+      "queueMin": 0.9,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45569423539,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 0.8,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45568744449,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 47.1,
+    "path": [
+     "test"
+    ],
+    "topBlocker": "plan",
+    "jobs": [
+     {
+      "name": "plan",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tooling",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 1,
+      "endMin": 2.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 1.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "linux-checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1,
+      "endMin": 39.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 0.6,
+      "workMin": 38.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "nsh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1,
+      "endMin": 20.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 0.6,
+      "workMin": 19.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 1.5,
+      "endMin": 25.2,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 23.7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "macos-nsh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 0.7,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 0.3,
+      "workMin": 5.1,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "native-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1.4,
+      "endMin": 46.3,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 1,
+      "workMin": 44.9,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "termina",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1.2,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 0.8,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1.4,
+      "endMin": 46.6,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 1,
+      "workMin": 45.2,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "windows-nsh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 1.5,
+      "endMin": 11.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 1.1,
+      "workMin": 10.2,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (rest, slice:1/1, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ma...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 26.7,
+      "endMin": 31.9,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 1.5,
+      "workMin": 5.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:2/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 26.7,
+      "endMin": 32.1,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 1.5,
+      "workMin": 5.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:1/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 25.6,
+      "endMin": 31.2,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 0.4,
+      "workMin": 5.6,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 25.7,
+      "endMin": 38.6,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 0.6,
+      "workMin": 12.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:2/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 27.3,
+      "endMin": 35.7,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 2.1,
+      "workMin": 8.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.2,
+      "startMin": 27.1,
+      "endMin": 34.8,
+      "blockedMin": 0,
+      "hiddenMin": 25.2,
+      "queueMin": 1.9,
+      "workMin": 7.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 46.6,
+      "startMin": 46.8,
+      "endMin": 47.1,
+      "blockedMin": 0,
+      "hiddenMin": 46.6,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45567724744,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 0.6,
+    "path": [
+     "test"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45558138332,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 43.9,
+    "path": [
+     "test"
+    ],
+    "topBlocker": "plan",
+    "jobs": [
+     {
+      "name": "plan",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 43.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0,
+      "workMin": 42.5,
+      "setupMin": 5.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 14.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "linux-checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 32.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0,
+      "workMin": 31.1,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tooling",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 2.6,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "native-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 39.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.1,
+      "queueMin": 0,
+      "workMin": 38.2,
+      "setupMin": 2.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "root-tests (rest, slice:1/1, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ma...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 18,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 26.2,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:1/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 19.8,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (cli, slice:2/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 20.1,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 23.5,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "root-tests (native, slice:2/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 19.1,
+      "blockedMin": 0,
+      "hiddenMin": 14.2,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 43.6,
+      "startMin": 43.6,
+      "endMin": 43.9,
+      "blockedMin": 0,
+      "hiddenMin": 43.6,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 110,
+  "over10s": 28,
+  "top": [
+   {
+    "file": "maka-agent-native owner::driver::tests::model_recovery::preset_acceptance::code_mode_budget::code_mode_output_budget_tail_preview_mixed_media_and_in_cell_read",
+    "sec": 78.051,
+    "job": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ..."
+   },
+   {
+    "file": "maka-cli::native-desktop terminal::desktop_new_session::desktop_resumes_live_activity_when_scrolling_back_to_latest",
+    "sec": 68.521,
+    "job": "native-macos"
+   },
+   {
+    "file": "maka-agent-native owner::driver::tests::model_recovery::preset_acceptance::product_preset_tools_manage_and_delegate_directly",
+    "sec": 62.015,
+    "job": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ..."
+   },
+   {
+    "file": "maka-cli::native-desktop terminal::desktop_new_session::desktop_remembers_folders_without_restoring_unsent_drafts",
+    "sec": 54.2,
+    "job": "native-macos"
+   },
+   {
+    "file": "maka-cli::native-desktop terminal::desktop_new_session::desktop_remembers_home_model_across_reopen_and_unavailable_fallback",
+    "sec": 52.783,
+    "job": "native-macos"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": true,
+  "hints": [
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/ci.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/copilot-auto-review.yml",
+   "pathFilters": ".github/workflows/dependency-audit.yml",
+   "draftSkip": ".github/workflows/copilot-auto-review.yml",
+   "scheduled": ".github/workflows/ci.yml",
+   "depCache": ".github/workflows/dependency-audit.yml",
+   "compilerCache": ".github/workflows/nightly.yml",
+   "frozenInstall": ".github/workflows/compat-post-merge.yml",
+   "timeouts": ".github/workflows/asf-source-candidate.yml",
+   "fastLint": "biome.jsonc",
+   "depBotsBatched": ".github/dependabot.yml",
+   "preCommit": ".husky/pre-commit"
+  },
+  "unknown": [
+   "shardsConfigured: .github/workflows/ci.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    74
+   ],
+   [
+    "TypeScript",
+    21
+   ],
+   [
+    "JavaScript",
+    4
+   ],
+   [
+    "Python",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm",
+    "Cargo"
+   ],
+   "tools": [
+    "npm workspaces",
+    "Cargo workspace",
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 7,
+   "cargo": 77,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Playwright",
+   "node:test",
+   "cargo nextest",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Biome",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 71
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 61
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 53
+   },
+   {
+    "name": "tokio-util",
+    "ecosystem": "cargo",
+    "packages": 42
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 41
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 38
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 36
+   },
+   {
+    "name": "schemars",
+    "ecosystem": "cargo",
+    "packages": 33
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 32
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 32
+   },
+   {
+    "name": "hex",
+    "ecosystem": "cargo",
+    "packages": 30
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 24
+   },
+   {
+    "name": "libc",
+    "ecosystem": "cargo",
+    "packages": 20
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 16
+   },
+   {
+    "name": "windows-sys",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "cap-std",
+    "ecosystem": "cargo",
+    "packages": 12
+   },
+   {
+    "name": "reqwest",
+    "ecosystem": "cargo",
+    "packages": 12
+   },
+   {
+    "name": "name",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "jsonschema",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "path",
+    "ecosystem": "cargo",
+    "packages": 10
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    58
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@maka-agent/cli",
+     "path": "packages/cli/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@maka-agent/plugin-sdk",
+     "path": "packages/plugin-sdk/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "maka-background-health",
+     "path": "platform/background-health/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-capabilities",
+     "path": "platform/capabilities/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-code-runtime",
+     "path": "platform/code-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-process",
+      "maka-session-state"
+     ]
+    },
+    {
+     "name": "maka-computer-use",
+     "path": "platform/computer-use/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-code-runtime",
+      "maka-i18n",
+      "maka-i18n-build",
+      "maka-js-runtime",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-event-log",
+     "path": "platform/event-log/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-host-js",
+     "path": "platform/host-js/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-host-runtime",
+      "maka-js-runtime",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-host-runtime",
+     "path": "platform/host-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-config",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-network",
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-presentation",
+      "maka-process",
+      "maka-remote-pairing",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-i18n",
+     "path": "platform/i18n/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-js-runtime",
+     "path": "platform/js-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-code-runtime",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-network",
+     "path": "platform/network/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-packages",
+     "path": "platform/packages/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-plugin-core",
+     "path": "platform/plugin-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-presentation",
+     "path": "platform/presentation/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-process",
+     "path": "platform/process/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-event-log",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-python-runtime",
+     "path": "platform/python-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-code-runtime"
+     ]
+    },
+    {
+     "name": "maka-remote-pairing",
+     "path": "platform/remote-pairing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-remote-transport",
+     "path": "platform/remote-transport/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-packages",
+      "maka-remote-pairing"
+     ]
+    },
+    {
+     "name": "maka-sandbox",
+     "path": "platform/sandbox/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-session-state",
+     "path": "platform/session-state/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-transport",
+     "path": "platform/transport/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-event-log",
+      "maka-host-runtime"
+     ]
+    },
+    {
+     "name": "maka-ui-support",
+     "path": "platform/ui-support/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-external-agent",
+     "path": "plugins/agent/acp-executor/engine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core",
+      "maka-process"
+     ]
+    },
+    {
+     "name": "maka-acp-native",
+     "path": "plugins/agent/acp-executor/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-external-agent",
+      "maka-host-runtime",
+      "maka-interactions-api",
+      "maka-plugin-core",
+      "maka-process",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-agent-api",
+     "path": "plugins/agent/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-assistant",
+      "maka-external-agent",
+      "maka-fs-tools",
+      "maka-goal",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-scheduler",
+      "maka-session-recap",
+      "maka-skills"
+     ]
+    },
+    {
+     "name": "maka-assistant",
+     "path": "plugins/agent/assistant/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-agent-authority",
+     "path": "plugins/agent/authority/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-computer-use",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-process",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-agent-engine",
+     "path": "plugins/agent/engine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-model",
+      "maka-plugin-core",
+      "maka-provider-protocol",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-agent-facts",
+     "path": "plugins/agent/facts/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-i18n",
+      "maka-i18n-build",
+      "maka-plugin-core",
+      "maka-provider-protocol",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-goal",
+     "path": "plugins/agent/goal/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-insights",
+     "path": "plugins/agent/insights/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-mcp",
+     "path": "plugins/agent/mcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-network",
+      "maka-process"
+     ]
+    },
+    {
+     "name": "maka-model",
+     "path": "plugins/agent/model/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-mock-ai",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-provider-protocol",
+      "maka-providers"
+     ]
+    },
+    {
+     "name": "maka-agent-native",
+     "path": "plugins/agent/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-engine",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-assistant",
+      "maka-capabilities",
+      "maka-code-runtime",
+      "maka-computer-use",
+      "maka-config",
+      "maka-event-log",
+      "maka-external-agent",
+      "maka-files-native",
+      "maka-fs-tools",
+      "maka-goal",
+      "maka-host-runtime",
+      "maka-interactions-api",
+      "maka-js-runtime",
+      "maka-mcp",
+      "maka-mock-ai",
+      "maka-model",
+      "maka-network",
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-presentation",
+      "maka-process",
+      "maka-processes-native",
+      "maka-providers",
+      "maka-sandbox",
+      "maka-scheduler",
+      "maka-session-import",
+      "maka-session-recap",
+      "maka-session-title",
+      "maka-settings-native",
+      "maka-skills",
+      "maka-skills-api",
+      "maka-tool-catalog",
+      "maka-tools",
+      "maka-web",
+      "maka-web-api",
+      "maka-workspace-api",
+      "maka-workspace-support"
+     ]
+    },
+    {
+     "name": "maka-agent-ports",
+     "path": "plugins/agent/ports/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-provider-protocol",
+     "path": "plugins/agent/provider-protocol/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-providers",
+     "path": "plugins/agent/providers/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core",
+      "maka-provider-protocol"
+     ]
+    },
+    {
+     "name": "maka-scheduler",
+     "path": "plugins/agent/scheduler/engine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts"
+     ]
+    },
+    {
+     "name": "maka-session-import",
+     "path": "plugins/agent/session-import/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core",
+      "maka-provider-protocol",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-session-recap",
+     "path": "plugins/agent/session-recap/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-session-title",
+     "path": "plugins/agent/session-title/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-ports"
+     ]
+    },
+    {
+     "name": "maka-agent-state",
+     "path": "plugins/agent/state/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-event-log",
+      "maka-plugin-core",
+      "maka-provider-protocol",
+      "maka-sandbox",
+      "maka-session-state"
+     ]
+    },
+    {
+     "name": "maka-tool-catalog",
+     "path": "plugins/agent/tool-catalog/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-plugin-core",
+      "maka-session-state"
+     ]
+    },
+    {
+     "name": "maka-tools",
+     "path": "plugins/agent/tools/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-agent-state",
+      "maka-code-runtime",
+      "maka-event-log",
+      "maka-js-runtime",
+      "maka-plugin-core",
+      "maka-python-runtime",
+      "maka-tool-catalog"
+     ]
+    },
+    {
+     "name": "maka-interactions-api",
+     "path": "plugins/interactions/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-interactions-native",
+     "path": "plugins/interactions/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-interactions-api",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-settings-native",
+     "path": "plugins/settings/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-config",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-model",
+      "maka-network",
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-providers",
+      "maka-skills-api",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-config",
+     "path": "plugins/settings/store/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-skills-api",
+     "path": "plugins/skills/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-skills"
+     ]
+    },
+    {
+     "name": "maka-skills",
+     "path": "plugins/skills/core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities"
+     ]
+    },
+    {
+     "name": "maka-skills-native",
+     "path": "plugins/skills/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-config",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-process",
+      "maka-sandbox",
+      "maka-skills",
+      "maka-skills-api",
+      "maka-workspace-support"
+     ]
+    },
+    {
+     "name": "maka-workspace-api",
+     "path": "plugins/workspace/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-decisions-api",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-presentation",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-workspace-support",
+     "path": "plugins/workspace/support/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-computer-native",
+     "path": "plugins/workspace/workspace-computer/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-agent-state",
+      "maka-capabilities",
+      "maka-code-runtime",
+      "maka-computer-use",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-js-runtime",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-decisions-api",
+     "path": "plugins/workspace/workspace-decisions-api/engine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-capabilities",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-decisions-api-native",
+     "path": "plugins/workspace/workspace-decisions-api/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-config",
+      "maka-decisions-api",
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-fs-tools",
+     "path": "plugins/workspace/workspace-files/engine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "apply-patch",
+      "maka-agent-facts",
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-files-native",
+     "path": "plugins/workspace/workspace-files/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-agent-state",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-workspace-api",
+      "maka-workspace-support"
+     ]
+    },
+    {
+     "name": "apply-patch",
+     "path": "plugins/workspace/workspace-files/patch/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-processes-native",
+     "path": "plugins/workspace/workspace-processes/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-config",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-presentation",
+      "maka-process",
+      "maka-sandbox",
+      "maka-web",
+      "maka-web-api",
+      "maka-workspace-api",
+      "maka-workspace-support"
+     ]
+    },
+    {
+     "name": "maka-web-api",
+     "path": "plugins/workspace/workspace-web/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-plugin-core",
+      "maka-sandbox"
+     ]
+    },
+    {
+     "name": "maka-web",
+     "path": "plugins/workspace/workspace-web/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-authority",
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-config",
+      "maka-event-log",
+      "maka-fs-tools",
+      "maka-host-runtime",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-web-api"
+     ]
+    },
+    {
+     "name": "maka-eval",
+     "path": "products/eval/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-app-client",
+      "maka-capabilities",
+      "maka-host-runtime",
+      "maka-mock-ai",
+      "maka-plugin-core",
+      "maka-sandbox",
+      "maka-settings-native"
+     ]
+    },
+    {
+     "name": "maka-acp",
+     "path": "products/maka/acp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-capabilities",
+      "maka-host-runtime",
+      "maka-plugin-core",
+      "maka-settings-native"
+     ]
+    },
+    {
+     "name": "@maka-agent/product",
+     "path": "products/maka/bundle/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "maka-cli",
+     "path": "products/maka/cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-acp",
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-native",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-app-client",
+      "maka-capabilities",
+      "maka-code-runtime",
+      "maka-computer-use",
+      "maka-config",
+      "maka-event-log",
+      "maka-external-agent",
+      "maka-fs-tools",
+      "maka-host-js",
+      "maka-host-runtime",
+      "maka-js-runtime",
+      "maka-mock-ai",
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-process",
+      "maka-product-native",
+      "maka-providers",
+      "maka-remote-pairing",
+      "maka-remote-transport",
+      "maka-sandbox",
+      "maka-schema",
+      "maka-settings-native",
+      "maka-terminal-shell",
+      "maka-tools",
+      "maka-transport",
+      "maka-ui-build",
+      "maka-updater",
+      "maka-workbench",
+      "maka-wsl-bridge"
+     ]
+    },
+    {
+     "name": "maka-app-client",
+     "path": "products/maka/client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-facts",
+      "maka-capabilities",
+      "maka-host-runtime",
+      "maka-plugin-core"
+     ]
+    },
+    {
+     "name": "maka-desktop-shell",
+     "path": "products/maka/desktop-shell/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-app-client",
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-terminal-shell",
+      "maka-ui-build",
+      "maka-updater",
+      "maka-workbench",
+      "maka-wsl-bridge"
+     ]
+    },
+    {
+     "name": "maka-host-shell",
+     "path": "products/maka/host-shell/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-product-native",
+     "path": "products/maka/native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-acp-native",
+      "maka-agent-native",
+      "maka-agent-ports",
+      "maka-agent-state",
+      "maka-capabilities",
+      "maka-computer-native",
+      "maka-config",
+      "maka-decisions-api-native",
+      "maka-event-log",
+      "maka-files-native",
+      "maka-host-runtime",
+      "maka-interactions-native",
+      "maka-model",
+      "maka-network",
+      "maka-plugin-core",
+      "maka-processes-native",
+      "maka-providers",
+      "maka-settings-native",
+      "maka-skills-native",
+      "maka-web"
+     ]
+    },
+    {
+     "name": "maka-terminal-shell",
+     "path": "products/maka/terminal-shell/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-sandbox",
+      "maka-workbench"
+     ]
+    },
+    {
+     "name": "maka-updater",
+     "path": "products/maka/updater/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-event-log",
+      "maka-host-runtime"
+     ]
+    },
+    {
+     "name": "maka-workbench",
+     "path": "products/maka/workbench/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-app-client",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-i18n",
+      "maka-packages",
+      "maka-plugin-core",
+      "maka-process",
+      "maka-settings-native",
+      "maka-ui-build",
+      "maka-ui-support",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-wsl-bridge",
+     "path": "products/maka/wsl-bridge/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-i18n-build",
+     "path": "tools/i18n-build/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "maka-mock-ai",
+     "path": "tools/mock-ai/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-provider-protocol"
+     ]
+    },
+    {
+     "name": "maka-schema",
+     "path": "tools/schema/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "maka-agent-api",
+      "maka-agent-facts",
+      "maka-agent-ports",
+      "maka-app-client",
+      "maka-capabilities",
+      "maka-event-log",
+      "maka-host-runtime",
+      "maka-interactions-api",
+      "maka-plugin-core",
+      "maka-settings-native",
+      "maka-skills-api",
+      "maka-web-api",
+      "maka-workspace-api"
+     ]
+    },
+    {
+     "name": "maka-ui-build",
+     "path": "tools/ui-build/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    }
+   ],
+   "count": 81,
+   "edges": 469,
+   "cycles": [],
+   "maxDepth": 13,
+   "topFanIn": [
+    {
+     "name": "maka-plugin-core",
+     "ecosystem": "cargo",
+     "dependents": 52
+    },
+    {
+     "name": "maka-agent-facts",
+     "ecosystem": "cargo",
+     "dependents": 50
+    },
+    {
+     "name": "maka-capabilities",
+     "ecosystem": "cargo",
+     "dependents": 32
+    },
+    {
+     "name": "maka-host-runtime",
+     "ecosystem": "cargo",
+     "dependents": 28
+    },
+    {
+     "name": "maka-sandbox",
+     "ecosystem": "cargo",
+     "dependents": 28
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 81,
+    "edges": 469
+   },
+   "nodes": [
+    {
+     "id": "maka-plugin-core",
+     "dir": "platform/plugin-core",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 52,
+     "depth": 1
+    },
+    {
+     "id": "maka-agent-facts",
+     "dir": "plugins/agent/facts",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 50,
+     "depth": 2
+    },
+    {
+     "id": "maka-capabilities",
+     "dir": "platform/capabilities",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 32,
+     "depth": 3
+    },
+    {
+     "id": "maka-host-runtime",
+     "dir": "platform/host-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 28,
+     "depth": 5
+    },
+    {
+     "id": "maka-sandbox",
+     "dir": "platform/sandbox",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 28,
+     "depth": 0
+    },
+    {
+     "id": "maka-event-log",
+     "dir": "platform/event-log",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 26,
+     "depth": 3
+    },
+    {
+     "id": "maka-agent-ports",
+     "dir": "plugins/agent/ports",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 19,
+     "depth": 4
+    },
+    {
+     "id": "maka-agent-api",
+     "dir": "plugins/agent/api",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 17,
+     "depth": 6
+    },
+    {
+     "id": "maka-fs-tools",
+     "dir": "plugins/workspace/workspace-files/engine",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 13,
+     "depth": 3
+    },
+    {
+     "id": "maka-network",
+     "dir": "platform/network",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 11,
+     "depth": 3
+    },
+    {
+     "id": "maka-process",
+     "dir": "platform/process",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 11,
+     "depth": 4
+    },
+    {
+     "id": "maka-agent-state",
+     "dir": "plugins/agent/state",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 9,
+     "depth": 4
+    },
+    {
+     "id": "maka-config",
+     "dir": "plugins/settings/store",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 9,
+     "depth": 4
+    },
+    {
+     "id": "maka-workspace-api",
+     "dir": "plugins/workspace/api",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 9,
+     "depth": 7
+    },
+    {
+     "id": "maka-agent-authority",
+     "dir": "plugins/agent/authority",
+     "ecosystem": "cargo",
+     "dependencies": 10,
+     "dependents": 7,
+     "depth": 8
+    },
+    {
+     "id": "maka-code-runtime",
+     "dir": "platform/code-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 7,
+     "depth": 5
+    },
+    {
+     "id": "maka-packages",
+     "dir": "platform/packages",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 7,
+     "depth": 2
+    },
+    {
+     "id": "maka-provider-protocol",
+     "dir": "plugins/agent/provider-protocol",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "maka-settings-native",
+     "dir": "plugins/settings/native",
+     "ecosystem": "cargo",
+     "dependencies": 15,
+     "dependents": 7,
+     "depth": 8
+    },
+    {
+     "id": "maka-js-runtime",
+     "dir": "platform/js-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 6,
+     "depth": 6
+    },
+    {
+     "id": "maka-app-client",
+     "dir": "products/maka/client",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 5,
+     "depth": 6
+    },
+    {
+     "id": "maka-providers",
+     "dir": "plugins/agent/providers",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 5,
+     "depth": 5
+    },
+    {
+     "id": "maka-computer-use",
+     "dir": "platform/computer-use",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 4,
+     "depth": 7
+    },
+    {
+     "id": "maka-external-agent",
+     "dir": "plugins/agent/acp-executor/engine",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 4,
+     "depth": 5
+    },
+    {
+     "id": "maka-interactions-api",
+     "dir": "plugins/interactions/api",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 3
+    },
+    {
+     "id": "maka-mock-ai",
+     "dir": "tools/mock-ai",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "maka-model",
+     "dir": "plugins/agent/model",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 4,
+     "depth": 6
+    },
+    {
+     "id": "maka-presentation",
+     "dir": "platform/presentation",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 3
+    },
+    {
+     "id": "maka-skills",
+     "dir": "plugins/skills/core",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 4
+    },
+    {
+     "id": "maka-skills-api",
+     "dir": "plugins/skills/api",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 4,
+     "depth": 7
+    },
+    {
+     "id": "maka-web-api",
+     "dir": "plugins/workspace/workspace-web/api",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 2
+    },
+    {
+     "id": "maka-workspace-support",
+     "dir": "plugins/workspace/support",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 4,
+     "depth": 7
+    },
+    {
+     "id": "maka-i18n",
+     "dir": "platform/i18n",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "maka-remote-pairing",
+     "dir": "platform/remote-pairing",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "maka-session-state",
+     "dir": "platform/session-state",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "maka-ui-build",
+     "dir": "tools/ui-build",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "maka-web",
+     "dir": "plugins/workspace/workspace-web/native",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "maka-workbench",
+     "dir": "products/maka/workbench",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "maka-agent-native",
+     "dir": "plugins/agent/native",
+     "ecosystem": "cargo",
+     "dependencies": 43,
+     "dependents": 2,
+     "depth": 11
+    },
+    {
+     "id": "maka-assistant",
+     "dir": "plugins/agent/assistant",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 5
+    },
+    {
+     "id": "maka-decisions-api",
+     "dir": "plugins/workspace/workspace-decisions-api/engine",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 4
+    },
+    {
+     "id": "maka-files-native",
+     "dir": "plugins/workspace/workspace-files/native",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 2,
+     "depth": 9
+    },
+    {
+     "id": "maka-goal",
+     "dir": "plugins/agent/goal",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 5
+    },
+    {
+     "id": "maka-i18n-build",
+     "dir": "tools/i18n-build",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "maka-processes-native",
+     "dir": "plugins/workspace/workspace-processes/native",
+     "ecosystem": "cargo",
+     "dependencies": 17,
+     "dependents": 2,
+     "depth": 10
+    },
+    {
+     "id": "maka-scheduler",
+     "dir": "plugins/agent/scheduler/engine",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "maka-session-recap",
+     "dir": "plugins/agent/session-recap",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 5
+    },
+    {
+     "id": "maka-terminal-shell",
+     "dir": "products/maka/terminal-shell",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 10
+    },
+    {
+     "id": "maka-tool-catalog",
+     "dir": "plugins/agent/tool-catalog",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "maka-tools",
+     "dir": "plugins/agent/tools",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 2,
+     "depth": 7
+    },
+    {
+     "id": "maka-updater",
+     "dir": "products/maka/updater",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "maka-wsl-bridge",
+     "dir": "products/maka/wsl-bridge",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "apply-patch",
+     "dir": "plugins/workspace/workspace-files/patch",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "maka-acp",
+     "dir": "products/maka/acp",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "maka-acp-native",
+     "dir": "plugins/agent/acp-executor/native",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "maka-agent-engine",
+     "dir": "plugins/agent/engine",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "maka-computer-native",
+     "dir": "plugins/workspace/workspace-computer/native",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "maka-decisions-api-native",
+     "dir": "plugins/workspace/workspace-decisions-api/native",
+     "ecosystem": "cargo",
+     "dependencies": 10,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "maka-host-js",
+     "dir": "platform/host-js",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "maka-interactions-native",
+     "dir": "plugins/interactions/native",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "maka-mcp",
+     "dir": "plugins/agent/mcp",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 5
+    },
+    {
+     "id": "maka-product-native",
+     "dir": "products/maka/native",
+     "ecosystem": "cargo",
+     "dependencies": 20,
+     "dependents": 1,
+     "depth": 12
+    },
+    {
+     "id": "maka-python-runtime",
+     "dir": "platform/python-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 6
+    },
+    {
+     "id": "maka-remote-transport",
+     "dir": "platform/remote-transport",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 6
+    },
+    {
+     "id": "maka-schema",
+     "dir": "tools/schema",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "maka-session-import",
+     "dir": "plugins/agent/session-import",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 1,
+     "depth": 5
+    },
+    {
+     "id": "maka-session-title",
+     "dir": "plugins/agent/session-title",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 5
+    },
+    {
+     "id": "maka-skills-native",
+     "dir": "plugins/skills/native",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "maka-transport",
+     "dir": "platform/transport",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 6
+    },
+    {
+     "id": "maka-ui-support",
+     "dir": "platform/ui-support",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "@maka-agent/cli",
+     "dir": "packages/cli",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/plugin-sdk",
+     "dir": "packages/plugin-sdk",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/product",
+     "dir": "products/maka/bundle",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "maka",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "maka-background-health",
+     "dir": "platform/background-health",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "maka-cli",
+     "dir": "products/maka/cli",
+     "ecosystem": "cargo",
+     "dependencies": 35,
+     "dependents": 0,
+     "depth": 13
+    },
+    {
+     "id": "maka-desktop-shell",
+     "dir": "products/maka/desktop-shell",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 0,
+     "depth": 11
+    },
+    {
+     "id": "maka-eval",
+     "dir": "products/eval",
+     "ecosystem": "cargo",
+     "dependencies": 11,
+     "dependents": 0,
+     "depth": 9
+    },
+    {
+     "id": "maka-host-shell",
+     "dir": "products/maka/host-shell",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "maka-insights",
+     "dir": "plugins/agent/insights",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 3
+    }
+   ],
+   "edges": [
+    {
+     "from": "maka-background-health",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-background-health",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-background-health",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-capabilities",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-capabilities",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-capabilities",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-code-runtime",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-code-runtime",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-code-runtime",
+     "to": "maka-session-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-i18n",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-i18n-build",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-js-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-use",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-event-log",
+     "to": "maka-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-event-log",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-event-log",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-js",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-js",
+     "to": "maka-js-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-js",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-presentation",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-remote-pairing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-host-runtime",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-js-runtime",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-js-runtime",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-js-runtime",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-network",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-network",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-packages",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-plugin-core",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-presentation",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-presentation",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-process",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-process",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-process",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-process",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-process",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-python-runtime",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-python-runtime",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-remote-transport",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-remote-transport",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-remote-transport",
+     "to": "maka-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-remote-transport",
+     "to": "maka-remote-pairing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-transport",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-transport",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-ui-support",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-ui-support",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-external-agent",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-external-agent",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-external-agent",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-external-agent",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-external-agent",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-agent-authority",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-external-agent",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-interactions-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-acp-native",
+     "to": "maka-workspace-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-assistant",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-external-agent",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-goal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-scheduler",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-session-recap",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-api",
+     "to": "maka-skills",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-assistant",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-assistant",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-assistant",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-assistant",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-computer-use",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-authority",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-agent-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-engine",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-facts",
+     "to": "maka-i18n",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-facts",
+     "to": "maka-i18n-build",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-facts",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-facts",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-facts",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-goal",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-goal",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-goal",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-goal",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-insights",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-insights",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-mcp",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-mcp",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-mcp",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-mock-ai",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-model",
+     "to": "maka-providers",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-authority",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-engine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-agent-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-assistant",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-computer-use",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-external-agent",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-files-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-goal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-interactions-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-js-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-mcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-mock-ai",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-presentation",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-processes-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-providers",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-scheduler",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-session-import",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-session-recap",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-session-title",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-settings-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-skills",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-skills-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-tool-catalog",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-web",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-web-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-workspace-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-native",
+     "to": "maka-workspace-support",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-ports",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-ports",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-ports",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-ports",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-providers",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-providers",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-providers",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-providers",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-providers",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-scheduler",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-import",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-recap",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-recap",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-recap",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-recap",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-title",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-session-title",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-provider-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-agent-state",
+     "to": "maka-session-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tool-catalog",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tool-catalog",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tool-catalog",
+     "to": "maka-session-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-agent-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-js-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-python-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-tools",
+     "to": "maka-tool-catalog",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-api",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-api",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-agent-authority",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-interactions-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-interactions-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-agent-ports",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-agent-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-packages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-providers",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-skills-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-settings-native",
+     "to": "maka-workspace-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-config",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-config",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-config",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-config",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-api",
+     "to": "maka-skills",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-process",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-skills",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-skills-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-skills-native",
+     "to": "maka-workspace-support",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-decisions-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-presentation",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-api",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-support",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-support",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-support",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-support",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-workspace-support",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-agent-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-agent-authority",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-agent-state",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-code-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-computer-use",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-fs-tools",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-js-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-sandbox",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-computer-native",
+     "to": "maka-workspace-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api",
+     "to": "maka-plugin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-agent-facts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-capabilities",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-decisions-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-event-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-host-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "maka-decisions-api-native",
+     "to": "maka-network",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 13,
+   "chain": [
+    "maka-cli",
+    "maka-product-native",
+    "maka-agent-native",
+    "maka-processes-native",
+    "maka-web",
+    "maka-agent-authority",
+    "maka-computer-use",
+    "maka-js-runtime",
+    "maka-code-runtime",
+    "maka-process",
+    "maka-event-log",
+    "maka-packages",
+    "maka-plugin-core",
+    "maka-sandbox"
+   ],
+   "topFanIn": [
+    {
+     "name": "maka-plugin-core",
+     "ecosystem": "cargo",
+     "dependents": 52
+    },
+    {
+     "name": "maka-agent-facts",
+     "ecosystem": "cargo",
+     "dependents": 50
+    },
+    {
+     "name": "maka-capabilities",
+     "ecosystem": "cargo",
+     "dependents": 32
+    },
+    {
+     "name": "maka-host-runtime",
+     "ecosystem": "cargo",
+     "dependents": 28
+    },
+    {
+     "name": "maka-sandbox",
+     "ecosystem": "cargo",
+     "dependents": 28
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "packages": 4,
+    "packagesWithEntries": 1,
+    "filesRead": 7,
+    "undecided": 1
+   },
+   "nodes": [
+    {
+     "id": "@maka-agent/plugin-sdk#.",
+     "pkg": "@maka-agent/plugin-sdk",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/plugin-sdk/src/index.ts",
+     "guessed": true,
+     "reexports": null,
+     "reexportsAtLeast": 7,
+     "unknown": "packages/plugin-sdk/src/contracts.ts, which it re-exports: it is over 1 MiB, so not parsed",
+     "stars": 1,
+     "barrel": false,
+     "overload": null
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 1,
+   "worst": null,
+   "unknown": [
+    "1 entry of 1 unknown, such as @maka-agent/plugin-sdk#.: packages/plugin-sdk/src/contracts.ts, which it re-exports: it is over 1 MiB, so not parsed"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 10,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6431
+   },
+   "nodes": [
+    {
+     "id": "@maka-agent/plugin-sdk#build",
+     "pkg": "@maka-agent/plugin-sdk",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/plugin-sdk#clean",
+     "pkg": "@maka-agent/plugin-sdk",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/plugin-sdk#schema:check",
+     "pkg": "@maka-agent/plugin-sdk",
+     "name": "schema:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/plugin-sdk#schema:generate",
+     "pkg": "@maka-agent/plugin-sdk",
+     "name": "schema:generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/plugin-sdk#typecheck",
+     "pkg": "@maka-agent/plugin-sdk",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/product#build",
+     "pkg": "@maka-agent/product",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/product#test",
+     "pkg": "@maka-agent/product",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@maka-agent/product#typecheck",
+     "pkg": "@maka-agent/product",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "maka#postinstall",
+     "pkg": "maka",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "maka#prepare",
+     "pkg": "maka",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "@maka-agent/product#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 6,
+    "edges": 9,
+    "runs": 0,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "plan",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.5,
+     "workMin": 1.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-build",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 2.7,
+     "queueMin": 3.9,
+     "workMin": 11.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "native-windows",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 28.2,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tooling",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 2.7,
+     "queueMin": 4.2,
+     "workMin": 1.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "linux-checks",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4,
+     "workMin": 27.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "native-macos",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 34.2,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "root-tests (native, slice:1/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 5.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-tests (cli, slice:2/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.4,
+     "workMin": 5.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-tests (cli, slice:1/2, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, mak...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 6.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-tests (rest, slice:1/1, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ma...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.9,
+     "workMin": 4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-tests (native, slice:3/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.9,
+     "workMin": 11.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "root-tests (native, slice:2/3, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.4,
+     "workMin": 7.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "root-build",
+     "to": "plan"
+    },
+    {
+     "from": "tooling",
+     "to": "plan"
+    }
+   ],
+   "flags": [],
+   "chain": [],
+   "pathMinP50": null,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 7,
+   "calls": 3
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"root-tests (native, slice:#, maka-cli, maka, bin-exe, target, debug/maka, maka-python-runtime, ...\": the slowest shard takes 1.30× the median, 25% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "28 test files take over 10 s; the slowest, maka-agent-native owner::driver::tests::model_recovery::preset_acceptance::code_mode_budget::code_mode_output_budget_tail_preview_mixed_media_and_in_cell_read, takes 78 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "p90 is 2.6× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 160 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 156,
+ "read": {
+  "calls": 156,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

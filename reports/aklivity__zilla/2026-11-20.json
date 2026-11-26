@@ -1,0 +1,5403 @@
+{
+ "repo": "aklivity/zilla",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "develop",
+ "profile": {
+  "ageYears": 5,
+  "stars": 1682,
+  "forks": 149,
+  "languages": [
+   [
+    "Java",
+    98
+   ],
+   [
+    "Lua",
+    1
+   ],
+   [
+    "ANTLR",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 1243980,
+  "files": 26169,
+  "sourceFiles": 4967,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 679658,
+   "tests": 506286,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.42690529395014587,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": 115,
+  "commitsPerWeekYear": 36.8,
+  "pace": 2.7,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 197,
+  "prsMergedPerWeek": 190,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 10,
+   "p90": 19.1,
+   "n": 100
+  },
+  "prRunsPerDay": 273.7,
+  "runsPerMergedPr": 10.1
+ },
+ "window": {
+  "days": 3.7,
+  "runs": 999,
+  "runsInPeriod": 1204,
+  "truncated": true,
+  "mainDays": 7.2
+ },
+ "size": "large",
+ "headsPerWeek": 932,
+ "score": 65,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 51,
+  "reliability": 87,
+  "efficiency": 88
+ },
+ "detail": {
+  "speed": {
+   "wait": 48,
+   "forSize": 60,
+   "tail": 37
+  },
+  "reliability": {
+   "flakes": 90,
+   "mainRed": 81
+  },
+  "efficiency": {
+   "minutesPerPr": 86,
+   "runsPerPr": 72,
+   "setup": 98,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6418.5,
+  "prBilledMinutesPerDay": 8809.1,
+  "jobMinutesPerMergedPr": 236.5,
+  "expectedMinutesPerMergedPr": 356.1,
+  "expectedWait": 19.5,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 486,
+  "timed": 452,
+  "p50": 18.65,
+  "p75": 40.13333333333333,
+  "p90": 43.38333333333333,
+  "redRate": 0.205761316872428,
+  "rerunRate": 0.0411522633744856,
+  "passedOnRerunRate": 0.0205761316872428,
+  "cancelledRate": 0,
+  "botHeads": 3,
+  "lightHeads": 11,
+  "lastToFinish": [
+   [
+    "build",
+    445
+   ],
+   [
+    "CodeQL",
+    7
+   ]
+  ],
+  "redBy": [
+   [
+    "build",
+    104
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "build"
+  ],
+  "allPushesP50": 18.416666666666668
+ },
+ "main": {
+  "heads": 104,
+  "p50": 22.616666666666667,
+  "p90": 44.483333333333334,
+  "redRate": 0.11538461538461539,
+  "redBy": [
+   [
+    "build",
+    12
+   ]
+  ]
+ },
+ "botRunShare": 0.004971002485501243,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 45,
+  "spanMin": 24.516666666666666,
+  "jobMinutes": 67.81666666666665,
+  "billedMinutes": 93,
+  "subMinuteJobs": 21,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.21192185007974482,
+  "critical": {
+   "name": "Examples",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.0021126760563380284
+  },
+  "longest": {
+   "name": "Build (25)",
+   "minutes": 21.983333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    252
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build.yml"
+  ],
+  "jobs": 7,
+  "edges": 8,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "cleanup",
+    "runs": 5
+   },
+   {
+    "name": "Examples",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Build (25)",
+    "minutes": 22,
+    "share": 0.9,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 22,
+    "setupMin": 0.8
+   },
+   {
+    "name": "setup-examples",
+    "minutes": 0.4,
+    "share": 0.01,
+    "blockedMin": 22,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.4,
+    "setupMin": 0.2
+   },
+   {
+    "name": "testing (llm.proxy)",
+    "minutes": 2,
+    "share": 0.08,
+    "blockedMin": 22.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.9,
+    "setupMin": 0.3
+   },
+   {
+    "name": "cleanup",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 24.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 4,
+  "pathMinP50": 24.5,
+  "blockedMinP50": 24.4,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 24.4,
+  "setupInPathMinP50": 0.5,
+  "topBlockers": [
+   {
+    "name": "Build (25)",
+    "runs": 6,
+    "heldJobs": 43,
+    "jobs": 45,
+    "tookMin": 22,
+    "heldJobMin": 924.7
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44721796706,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.5,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (llm.proxy)",
+     "cleanup"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 22,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22,
+      "setupMin": 0.8
+     },
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 22,
+      "createdMin": 22,
+      "startMin": 22,
+      "endMin": 22.4,
+      "blockedMin": 22,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (http.kafka.crud)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (grpc.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.json.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.3,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.filesystem)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.1,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.proto.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.cache)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.kafka.connect.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (llm.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 24.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.oneway.oauthbearer)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.proxy.search)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.proto.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.3,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (grpc.kafka.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.6,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (inspect.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.avro.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.6,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 24.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.8,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.metrics)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.1,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 24.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.8,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.async)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.9,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "testing (mcp.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.7,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.6,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.3,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (sse.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.sync)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.9,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "testing (grpc.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 22.9,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (sse.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.4,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.5,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (ws.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 22.4,
+      "endMin": 23.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 24.4,
+      "createdMin": 24.4,
+      "startMin": 24.5,
+      "endMin": 24.5,
+      "blockedMin": 24.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 24.4,
+      "createdMin": 24.4,
+      "startMin": 24.5,
+      "endMin": 24.5,
+      "blockedMin": 24.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44718553803,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.7,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (llm.proxy)",
+     "cleanup"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 21.2,
+      "createdMin": 21.2,
+      "startMin": 21.3,
+      "endMin": 21.7,
+      "blockedMin": 21.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (grpc.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.filesystem)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.7,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.1,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (grpc.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.9,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.8,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.metrics)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.4,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.crud)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.8,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.json.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.2,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.4,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.4,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.cache)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (grpc.kafka.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.8,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.sync)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.7,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.async)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.9,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.1,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.proto.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.9,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.proxy.search)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.1,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.kafka.connect.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.7,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.avro.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (sse.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.oneway.oauthbearer)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.3,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (http.kafka.proto.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.9,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.3,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (inspect.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.4,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (ws.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (sse.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 22.9,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (sse.kafka.fanout.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (llm.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.7,
+      "endMin": 23.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 23.6,
+      "createdMin": 23.6,
+      "startMin": 23.6,
+      "endMin": 23.7,
+      "blockedMin": 23.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 23.6,
+      "createdMin": 23.6,
+      "startMin": 23.6,
+      "endMin": 23.7,
+      "blockedMin": 23.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44712131206,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.1,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (mqtt.kafka.proxy)",
+     "cleanup"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 2.9,
+      "createdMin": 2.9,
+      "startMin": 3,
+      "endMin": 3.4,
+      "blockedMin": 2.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.5,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.4,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.5,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.5,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.2,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.3,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.4,
+      "endMin": 4.9,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 4.9,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 5.1,
+      "blockedMin": 4.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 4.9,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 5.1,
+      "blockedMin": 4.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44697220863,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.3,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (llm.proxy)",
+     "Examples"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 38.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 38.6,
+      "setupMin": 1
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 38.6,
+      "createdMin": 38.6,
+      "startMin": 38.7,
+      "endMin": 39.1,
+      "blockedMin": 38.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (grpc.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (amqp.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.8,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.filesystem)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.6,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.proto.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.1,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.async)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.json.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.1,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.oneway.oauthbearer)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.avro.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.5,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (http.kafka.sync)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.kafka.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.cache)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.1,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.8,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.metrics)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.crud)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.kafka.connect.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.2,
+      "endMin": 40.4,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.proto.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (llm.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 41.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.4,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (inspect.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.7,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.8,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (mcp.proxy.search)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (tls.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (ws.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mqtt.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (tcp.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.7,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.3,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (tls.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 39.9,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.1,
+      "createdMin": 39.1,
+      "startMin": 39.1,
+      "endMin": 40.2,
+      "blockedMin": 39.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 41.2,
+      "createdMin": 41.2,
+      "startMin": 41.3,
+      "endMin": 41.3,
+      "blockedMin": 41.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 41.2,
+      "createdMin": 41.2,
+      "startMin": 41.3,
+      "endMin": 41.3,
+      "blockedMin": 41.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44697027229,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.5,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (llm.proxy)",
+     "cleanup"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 39,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39,
+      "setupMin": 0.9
+     },
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 39,
+      "createdMin": 39,
+      "startMin": 39.1,
+      "endMin": 39.4,
+      "blockedMin": 39,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (http.json.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.kafka.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (http.kafka.crud)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (grpc.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (amqp.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.avro.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 41,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.async)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.filesystem)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.proto.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.proto.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (http.kafka.cache)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.oneway.oauthbearer)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 41.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mqtt.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.proxy.search)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.8,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (llm.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 41.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.kafka.connect.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.metrics)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (ws.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (tcp.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 41.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (tls.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (tls.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (inspect.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.sync)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.5,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 41.4,
+      "createdMin": 41.4,
+      "startMin": 41.4,
+      "endMin": 41.5,
+      "blockedMin": 41.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 41.4,
+      "createdMin": 41.4,
+      "startMin": 41.4,
+      "endMin": 41.4,
+      "blockedMin": 41.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44696834839,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41.5,
+    "path": [
+     "Build (25)",
+     "setup-examples",
+     "testing (mcp.kafka.proxy)",
+     "cleanup"
+    ],
+    "topBlocker": "Build (25)",
+    "jobs": [
+     {
+      "name": "cache-images",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Build (25)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 39,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39,
+      "setupMin": 0.8
+     },
+     {
+      "name": "setup-examples",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 39,
+      "createdMin": 39,
+      "startMin": 39,
+      "endMin": 39.4,
+      "blockedMin": 39,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (asyncapi.mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.8,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (amqp.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (grpc.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.9,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (asyncapi.mqtt.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.sse.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (asyncapi.http.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (grpc.kafka.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (grpc.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.json.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.kafka.avro.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.filesystem)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 39.9,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.proto.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.sync)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (http.kafka.async)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.crud)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.8,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "testing (http.kafka.oneway.oauthbearer)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.grpc.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.proto.json)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (http.kafka.cache)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (llm.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 41.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "testing (mqtt.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 41.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (http.metrics)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (inspect.schema)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mqtt.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.kafka.connect.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (openapi.asyncapi.kakfa.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (http.kafka.oneway)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (tcp.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (sse.proxy.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (mcp.openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.proxy.search)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.5,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (mcp.kafka.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 41.4,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (sse.kafka.fanout)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.7,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (openapi.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.1,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (ws.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (tls.echo)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "testing (tls.reflect)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.2,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "testing (mcp.http.proxy)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.3,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "testing (sse.kafka.fanout.jwt)",
+      "needs": [
+       "setup-examples",
+       "cache-images"
+      ],
+      "readyMin": 39.4,
+      "createdMin": 39.4,
+      "startMin": 39.4,
+      "endMin": 40.6,
+      "blockedMin": 39.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "cleanup",
+      "needs": [
+       "testing"
+      ],
+      "readyMin": 41.4,
+      "createdMin": 41.4,
+      "startMin": 41.4,
+      "endMin": 41.5,
+      "blockedMin": 41.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Examples",
+      "needs": [
+       "setup-examples",
+       "cache-images",
+       "testing"
+      ],
+      "readyMin": 41.4,
+      "createdMin": 41.4,
+      "startMin": 41.4,
+      "endMin": 41.5,
+      "blockedMin": 41.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": null,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": null,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": null,
+  "preCommit": null,
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    98
+   ],
+   [
+    "Lua",
+    1
+   ],
+   [
+    "ANTLR",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": null,
+   "tools": [
+    "Maven"
+   ]
+  },
+  "packages": null,
+  "testRunners": null,
+  "lintFormat": null,
+  "libraries": null,
+  "runners": [
+   [
+    "GitHub-hosted",
+    252
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": null,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 7,
+    "edges": 8,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Build (25)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 22
+    },
+    {
+     "id": "cache-images",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4
+    },
+    {
+     "id": "setup-examples",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 22,
+     "queueMin": 0,
+     "workMin": 0.3
+    },
+    {
+     "id": "testing (http.kafka.crud)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.1
+    },
+    {
+     "id": "testing (grpc.kafka.fanout)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.1
+    },
+    {
+     "id": "testing (asyncapi.http.kafka.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.4
+    },
+    {
+     "id": "testing (asyncapi.mqtt.kafka.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (http.json.schema)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.6
+    },
+    {
+     "id": "testing (asyncapi.mqtt.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 0.9
+    },
+    {
+     "id": "testing (http.filesystem)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.7
+    },
+    {
+     "id": "testing (asyncapi.sse.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.8
+    },
+    {
+     "id": "testing (http.kafka.proto.json)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (http.kafka.cache)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1
+    },
+    {
+     "id": "testing (mcp.kafka.connect.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (llm.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": true,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 2
+    },
+    {
+     "id": "testing (http.kafka.oneway.oauthbearer)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (mcp.proxy.search)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (http.proxy.jwt)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 0.8
+    },
+    {
+     "id": "testing (http.kafka.proto.oneway)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.1
+    },
+    {
+     "id": "testing (http.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 0.9
+    },
+    {
+     "id": "testing (grpc.kafka.echo)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.2
+    },
+    {
+     "id": "testing (inspect.schema)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.6
+    },
+    {
+     "id": "testing (http.kafka.avro.json)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.2
+    },
+    {
+     "id": "testing (mqtt.kafka.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.8
+    },
+    {
+     "id": "testing (http.kafka.oneway)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.4
+    },
+    {
+     "id": "testing (http.metrics)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.7
+    },
+    {
+     "id": "testing (mcp.kafka.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.8
+    },
+    {
+     "id": "testing (asyncapi.sse.kafka.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.5
+    },
+    {
+     "id": "testing (http.kafka.async)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.5
+    },
+    {
+     "id": "testing (mcp.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1
+    },
+    {
+     "id": "testing (sse.kafka.fanout.jwt)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.3
+    },
+    {
+     "id": "testing (mcp.openapi.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.2
+    },
+    {
+     "id": "testing (openapi.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.8
+    },
+    {
+     "id": "testing (mcp.http.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 0.9
+    },
+    {
+     "id": "testing (openapi.asyncapi.kakfa.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1
+    },
+    {
+     "id": "testing (mcp.grpc.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1
+    },
+    {
+     "id": "testing (mcp.proxy.jwt)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.1
+    },
+    {
+     "id": "testing (sse.kafka.fanout)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 1.2
+    },
+    {
+     "id": "testing (http.kafka.sync)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.5
+    },
+    {
+     "id": "testing (grpc.echo)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.5
+    },
+    {
+     "id": "testing (sse.proxy.jwt)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1
+    },
+    {
+     "id": "testing (grpc.proxy)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0.1,
+     "workMin": 1.1
+    },
+    {
+     "id": "testing (ws.echo)",
+     "needs": [
+      "setup-examples",
+      "cache-images"
+     ],
+     "onPath": false,
+     "blockedMin": 22.4,
+     "queueMin": 0,
+     "workMin": 0.8
+    },
+    {
+     "id": "cleanup",
+     "needs": [
+      "testing"
+     ],
+     "onPath": true,
+     "blockedMin": 24.4,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "Examples",
+     "needs": [
+      "setup-examples",
+      "cache-images",
+      "testing"
+     ],
+     "onPath": false,
+     "blockedMin": 24.4,
+     "queueMin": 0,
+     "workMin": 0.1
+    }
+   ],
+   "edges": [
+    {
+     "from": "setup-examples",
+     "to": "build"
+    },
+    {
+     "from": "testing (http.kafka.crud)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.crud)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (grpc.kafka.fanout)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (grpc.kafka.fanout)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (asyncapi.http.kafka.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (asyncapi.http.kafka.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (asyncapi.mqtt.kafka.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (asyncapi.mqtt.kafka.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.json.schema)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.json.schema)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (asyncapi.mqtt.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (asyncapi.mqtt.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.filesystem)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.filesystem)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (asyncapi.sse.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (asyncapi.sse.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.proto.json)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.proto.json)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.cache)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.cache)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.kafka.connect.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.kafka.connect.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (llm.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (llm.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.oneway.oauthbearer)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.oneway.oauthbearer)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.proxy.search)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.proxy.search)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.proxy.jwt)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.proxy.jwt)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.proto.oneway)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.proto.oneway)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (grpc.kafka.echo)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (grpc.kafka.echo)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (inspect.schema)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (inspect.schema)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.avro.json)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.avro.json)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mqtt.kafka.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mqtt.kafka.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.oneway)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.oneway)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.metrics)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.metrics)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.kafka.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.kafka.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (asyncapi.sse.kafka.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (asyncapi.sse.kafka.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.async)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.async)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (sse.kafka.fanout.jwt)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (sse.kafka.fanout.jwt)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.openapi.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.openapi.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (openapi.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (openapi.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.http.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.http.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (openapi.asyncapi.kakfa.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (openapi.asyncapi.kakfa.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.grpc.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.grpc.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (mcp.proxy.jwt)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (mcp.proxy.jwt)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (sse.kafka.fanout)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (sse.kafka.fanout)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (http.kafka.sync)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (http.kafka.sync)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (grpc.echo)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (grpc.echo)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (sse.proxy.jwt)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (sse.proxy.jwt)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (grpc.proxy)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (grpc.proxy)",
+     "to": "cache-images"
+    },
+    {
+     "from": "testing (ws.echo)",
+     "to": "setup-examples"
+    },
+    {
+     "from": "testing (ws.echo)",
+     "to": "cache-images"
+    },
+    {
+     "from": "cleanup",
+     "to": "testing"
+    },
+    {
+     "from": "Examples",
+     "to": "setup-examples"
+    },
+    {
+     "from": "Examples",
+     "to": "cache-images"
+    },
+    {
+     "from": "Examples",
+     "to": "testing"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Build (25)",
+     "numbers": {
+      "heldJobs": 43,
+      "jobs": 45,
+      "heldJobMin": 924.7,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "Build (25)",
+    "setup-examples",
+    "testing (llm.proxy)",
+    "cleanup"
+   ],
+   "pathMinP50": 24.5,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "A blocker most jobs wait on: \"Build (25)\" holds up 43 of 45 jobs, 924.7 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "p90 is 2.3× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 57,
+ "read": {
+  "calls": 57,
+  "fromCache": 0
+ }
+}

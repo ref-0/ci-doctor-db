@@ -1,0 +1,882 @@
+{
+ "repo": "kubernetes-sigs/inference-perf",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 1.9,
+  "stars": 282,
+  "forks": 156,
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "TeX",
+    0
+   ],
+   [
+    "Go Template",
+    0
+   ]
+  ],
+  "linesOfCode": 188433,
+  "files": 867,
+  "sourceFiles": 478,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 74788,
+   "tests": 94598,
+   "integration": 19047,
+   "support": 0
+  },
+  "testShare": 0.6031048408281722,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 18,
+  "commitsPerWeekYear": 6.6,
+  "pace": 2.7,
+  "activeAuthors28d": 21,
+  "prsOpenedPerWeek": 13.2,
+  "prsMergedPerWeek": 10.4,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 60.8,
+   "p90": 189.1,
+   "n": 11
+  },
+  "prRunsPerDay": 40.3,
+  "runsPerMergedPr": 27.3
+ },
+ "window": {
+  "days": 7.4,
+  "runs": 238,
+  "runsInPeriod": 239,
+  "truncated": false,
+  "mainDays": 7.4
+ },
+ "size": "medium",
+ "headsPerWeek": 58,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 5,
+  "reliability": 100,
+  "efficiency": 57
+ },
+ "detail": {
+  "speed": {
+   "wait": 6,
+   "forSize": 0,
+   "tail": 14
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 1,
+   "runsPerPr": 32,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1097.1,
+  "prBilledMinutesPerDay": 1129.5,
+  "jobMinutesPerMergedPr": 742,
+  "prVcpuMinutesPerDay": 4388.4,
+  "vcpuMinutesPerMergedPr": 2967.9,
+  "expectedVcpuMinutesPerMergedPr": 764.2,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 191,
+  "expectedWait": 11.5,
+  "workflowsOnPrs": 5
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "13 reruns' first attempts weren't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 62,
+  "ranHeads": 62,
+  "timed": 37,
+  "p50": 80.56666666666666,
+  "p75": 80.7,
+  "p90": 81.51666666666667,
+  "redRate": 0.04838709677419355,
+  "rerunRate": 0.3225806451612903,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 13,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 5,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Code Coverage",
+    33
+   ],
+   [
+    "E2E Test on change",
+    4
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/coverage.yml",
+  "redBy": [
+   [
+    "Unit Tests",
+    2
+   ],
+   [
+    "E2E Test on change",
+    1
+   ],
+   [
+    "Python Linting and Type Checks",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Code Coverage",
+   "E2E Test on change"
+  ],
+  "allPushesP50": 79.4
+ },
+ "main": {
+  "heads": 11,
+  "p50": null,
+  "p90": null,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.15492957746478872,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 56.96666666666667,
+  "jobMinutes": 72.28333333333333,
+  "billedMinutes": 73,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.009600698232598735,
+  "setupMinPerJob": 0.4,
+  "critical": {
+   "name": "mutation (3.13)",
+   "minutes": 56.916666666666664,
+   "shareOfSpan": 0.9991222937390286
+  },
+  "longest": {
+   "name": "mutation (3.13)",
+   "minutes": 56.916666666666664
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/coverage.yml"
+  ],
+  "jobs": 2,
+  "edges": 0,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "mutation (3.13)",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "mutation (3.13)",
+    "minutes": 57,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 56.9,
+    "setupMin": 0.4
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 57,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 56.9,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45393522986,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 62.8,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 62.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 62.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45345758110,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 79.4,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 14.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 79.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 79.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132892819,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 43.9,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 43.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 43.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132847089,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 57,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 57,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 56.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132796592,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.2,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 26.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132736320,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 80.5,
+    "path": [
+     "mutation (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "mutation (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 80.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 80.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "coverage (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": false,
+  "pathFilters": null,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": null,
+  "frozenInstall": false,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "pathFilters",
+    "path": ".github/workflows/coverage.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "compilerCache",
+    "path": ".github/workflows/e2e_test-on-change.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/e2e_test-on-change.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "scheduled": ".github/workflows/metric_name_drift.yml",
+   "depCache": ".github/workflows/coverage.yml",
+   "timeouts": ".github/workflows/coverage.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "pathFilters: .github/workflows/coverage.yml hints at it, in a form the scorer doesn't check (word)",
+   "compilerCache: .github/workflows/e2e_test-on-change.yml hints at it, in a form the scorer doesn't check (word)",
+   "shardsConfigured: .github/workflows/e2e_test-on-change.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    100
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "TeX",
+    0
+   ],
+   [
+    "Go Template",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "PDM",
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "aiofiles",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "aiohttp",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "av",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "backports-zstd",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "boto3",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "datasets",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "google-cloud-storage",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "hypothesis",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "ijson",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "ipykernel",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "jinja2",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "llmd-benchmark-report",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "matplotlib",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "mutmut",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "mypy",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "numpy",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "opentelemetry-api",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "opentelemetry-exporter-otlp-proto-grpc",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "opentelemetry-instrumentation",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "opentelemetry-instrumentation-aiohttp-client",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "inference-perf",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "inference-perf",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "inference-perf"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 867
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "coverage (3.13)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 13.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "mutation (3.13)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 62.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "mutation (3.13)"
+   ],
+   "pathMinP50": 57,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 75,
+ "read": {
+  "calls": 75,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

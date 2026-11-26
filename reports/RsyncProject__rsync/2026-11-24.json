@@ -1,0 +1,5699 @@
+{
+ "repo": "RsyncProject/rsync",
+ "date": "2026-11-24",
+ "scorerVersion": "0.3.0",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 6.5,
+  "stars": 5380,
+  "forks": 631,
+  "languages": [
+   [
+    "C",
+    52
+   ],
+   [
+    "Python",
+    38
+   ],
+   [
+    "HTML",
+    4
+   ],
+   [
+    "M4",
+    2
+   ]
+  ],
+  "linesOfCode": 130113,
+  "files": 856,
+  "sourceFiles": 582,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 87639,
+   "tests": 41374,
+   "integration": 0,
+   "support": 1100
+  },
+  "testShare": 0.32643718738695715,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 23.3,
+  "commitsPerWeekYear": 11.8,
+  "pace": 1.9,
+  "activeAuthors28d": 31,
+  "prsOpenedPerWeek": 21.6,
+  "prsMergedPerWeek": 43.2,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 2766.7,
+   "p90": 28600,
+   "n": 46
+  },
+  "prRunsPerDay": 20,
+  "runsPerMergedPr": 3.2
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 149,
+  "runsInPeriod": 149,
+  "truncated": false,
+  "mainDays": 7.5
+ },
+ "size": "medium",
+ "headsPerWeek": 133,
+ "score": 49,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 33,
+  "reliability": 89,
+  "efficiency": 55
+ },
+ "detail": {
+  "speed": {
+   "wait": 33,
+   "forSize": 34,
+   "tail": 28
+  },
+  "reliability": {
+   "flakes": 94,
+   "mainRed": 81
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 100,
+   "setup": 99,
+   "queue": 0,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5976.3,
+  "prBilledMinutesPerDay": 6306.7,
+  "jobMinutesPerMergedPr": 968,
+  "prVcpuMinutesPerDay": 23448.8,
+  "vcpuMinutesPerMergedPr": 3798.1,
+  "expectedVcpuMinutesPerMergedPr": 676.3,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 169.1,
+  "expectedWait": 19,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "1 rerun's first attempt wasn't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 142,
+  "ranHeads": 128,
+  "timed": 60,
+  "p50": 27.3,
+  "p75": 43.38333333333333,
+  "p90": 55.516666666666666,
+  "redRate": 0.3046875,
+  "rerunRate": 0.4296875,
+  "passedOnRerunRate": 0.01625,
+  "rerunsUnread": 1,
+  "cancelledRate": 0.1015625,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 4,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    53
+   ],
+   [
+    "pre-commit",
+    7
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    39
+   ],
+   [
+    "pre-commit",
+    7
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 27.3
+ },
+ "main": {
+  "heads": 61,
+  "p50": 28.266666666666666,
+  "p90": 105.7,
+  "redRate": 0.11475409836065574,
+  "redBy": [
+   [
+    "CI",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 41,
+  "spanMin": 47.88333333333333,
+  "jobMinutes": 361.8833333333335,
+  "billedMinutes": 386,
+  "subMinuteJobs": 6,
+  "queueP50Sec": 195,
+  "queueP90Sec": 1313,
+  "setupShare": 0.054539722572509455,
+  "setupMinPerJob": 0.5113821138211382,
+  "critical": {
+   "name": "Required",
+   "minutes": 0.1,
+   "shareOfSpan": 0.002088409328228333
+  },
+  "longest": {
+   "name": "Valgrind / Root TCP",
+   "minutes": 19.766666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    246
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 31,
+  "edges": 81,
+  "matrixJobs": 8,
+  "reusableCalls": 9,
+  "gateEnd": [
+   {
+    "name": "Required",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Changes",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "macOS / 26 X86-64",
+    "minutes": 9.7,
+    "share": 0.17,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 9.7,
+    "setupMin": 0.3
+   },
+   {
+    "name": "Android / Bionic API 24 X86-64",
+    "minutes": 3,
+    "share": 0.05,
+    "blockedMin": 9.9,
+    "hiddenMin": 0,
+    "queueMin": 2,
+    "workMin": 0.9,
+    "setupMin": 0.4
+   },
+   {
+    "name": "Android / Termux API 36 X86-64",
+    "minutes": 5.8,
+    "share": 0.12,
+    "blockedMin": 12.9,
+    "hiddenMin": 0,
+    "queueMin": 2.6,
+    "workMin": 3,
+    "setupMin": 1.3
+   },
+   {
+    "name": "Required",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 47.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 2,
+  "pathJobsP50": 4,
+  "pathMinP50": 47.9,
+  "blockedMinP50": 47.7,
+  "queueMinP50": 31.5,
+  "hiddenMinP50": 0,
+  "workMinP50": 14.2,
+  "setupInPathMinP50": 1.4,
+  "topBlockers": [
+   {
+    "name": "macOS / … …",
+    "runs": 6,
+    "heldJobs": 6,
+    "jobs": 41,
+    "tookMin": 14.2,
+    "heldJobMin": 84.9
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45181491382,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.3,
+    "path": [
+     "Changes",
+     "Valgrind / Root TCP",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.7,
+      "setupMin": 3.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 16.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.9,
+      "setupMin": 2.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 15.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 18.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.8,
+      "setupMin": 2.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 20.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.8,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 5.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.4,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 0.9,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 13,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 2.9,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 4.9,
+      "createdMin": 4.9,
+      "startMin": 5,
+      "endMin": 17.9,
+      "blockedMin": 4.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 12.8,
+      "createdMin": 12.8,
+      "startMin": 12.9,
+      "endMin": 13.3,
+      "blockedMin": 12.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.4,
+      "endMin": 19,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.4,
+      "endMin": 15.3,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.4,
+      "endMin": 15.4,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.4,
+      "endMin": 15.3,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 15.3,
+      "createdMin": 15.3,
+      "startMin": 15.3,
+      "endMin": 18.5,
+      "blockedMin": 15.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 15.3,
+      "createdMin": 15.3,
+      "startMin": 15.3,
+      "endMin": 17.8,
+      "blockedMin": 15.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 20.1,
+      "endMin": 20.3,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45142893159,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 56.5,
+    "path": [
+     "Changes",
+     "macOS / 26 X86-64",
+     "Android / Bionic API 24 X86-64",
+     "Android / Termux API 36 X86-64",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 20.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 13.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 7.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 9.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 0.3,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 19.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.9,
+      "setupMin": 4.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 5.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.1,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 11.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.2,
+      "setupMin": 3.8,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 3.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 14.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 22.6,
+      "endMin": 39.7,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 17.4,
+      "workMin": 17,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 10.9,
+      "endMin": 15.9,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 11.9,
+      "endMin": 12.9,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 19.5,
+      "endMin": 20.4,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 9.6,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 26,
+      "endMin": 28.3,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 16.1,
+      "workMin": 2.2,
+      "setupMin": 1.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 12.9,
+      "createdMin": 12.9,
+      "startMin": 44.7,
+      "endMin": 47.8,
+      "blockedMin": 12.9,
+      "hiddenMin": 0,
+      "queueMin": 31.9,
+      "workMin": 3,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 12.9,
+      "createdMin": 12.9,
+      "startMin": 33.4,
+      "endMin": 35.5,
+      "blockedMin": 12.9,
+      "hiddenMin": 0,
+      "queueMin": 20.5,
+      "workMin": 2.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 14.5,
+      "createdMin": 14.5,
+      "startMin": 25.7,
+      "endMin": 26,
+      "blockedMin": 14.5,
+      "hiddenMin": 0,
+      "queueMin": 11.3,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 47.8,
+      "createdMin": 47.8,
+      "startMin": 56.3,
+      "endMin": 56.5,
+      "blockedMin": 47.8,
+      "hiddenMin": 0,
+      "queueMin": 8.5,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45142886293,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 64.8,
+    "path": [
+     "Changes",
+     "macOS / 26 ARM64",
+     "Android / Bionic API 24 X86-64",
+     "Android / Emulator API 36 X86-64",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 12.8,
+      "endMin": 25.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 12.5,
+      "workMin": 12.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 14.6,
+      "endMin": 22.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 14.3,
+      "workMin": 7.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 25.7,
+      "endMin": 38,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 25.4,
+      "workMin": 12.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 31,
+      "endMin": 42.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 30.7,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 27.5,
+      "endMin": 40,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 27.2,
+      "workMin": 12.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 43.7,
+      "endMin": 54.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 43.4,
+      "workMin": 11.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 4.5,
+      "endMin": 17.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 12.9,
+      "setupMin": 3.5,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 11.8,
+      "endMin": 22.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 11.5,
+      "workMin": 10.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 11,
+      "endMin": 22.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.7,
+      "workMin": 11.7,
+      "setupMin": 0.5,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 10.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 1.8,
+      "endMin": 11.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 9.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.6,
+      "endMin": 10.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 10.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 17.5,
+      "endMin": 23.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 17.2,
+      "workMin": 6.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 2.6,
+      "endMin": 7.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 4.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 25.5,
+      "endMin": 25.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 25.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 11.7,
+      "endMin": 16.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 11.4,
+      "workMin": 4.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.3,
+      "endMin": 11.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9,
+      "workMin": 2.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 19.7,
+      "endMin": 20.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 19.4,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 14.8,
+      "endMin": 43.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 14.5,
+      "workMin": 28.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 7,
+      "endMin": 43.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 6.7,
+      "workMin": 36.7,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.8,
+      "endMin": 43.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 32.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 32.3,
+      "endMin": 43.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 32,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 2.8,
+      "endMin": 43.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 40.9,
+      "setupMin": 2.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.3,
+      "endMin": 22.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 12.5,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 26.1,
+      "endMin": 43.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 25.8,
+      "workMin": 17.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 14,
+      "endMin": 31,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 13.7,
+      "workMin": 17,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 26.1,
+      "endMin": 43.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 25.8,
+      "workMin": 17.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 20.3,
+      "endMin": 29.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 20,
+      "workMin": 9.5,
+      "setupMin": 0.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 27.8,
+      "endMin": 43.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 27.5,
+      "workMin": 15.8,
+      "setupMin": 2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 32,
+      "endMin": 36.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 31.7,
+      "workMin": 4.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 32.9,
+      "endMin": 46.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 32.6,
+      "workMin": 13.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 25.7,
+      "createdMin": 25.7,
+      "startMin": 44.9,
+      "endMin": 57.6,
+      "blockedMin": 25.7,
+      "hiddenMin": 0,
+      "queueMin": 19.2,
+      "workMin": 12.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 43.7,
+      "endMin": 44.8,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 13.8,
+      "workMin": 1.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 33.2,
+      "endMin": 38.3,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 47.8,
+      "endMin": 48.5,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 18,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 43.7,
+      "endMin": 44.7,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 13.8,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 43.7,
+      "createdMin": 43.7,
+      "startMin": 57.6,
+      "endMin": 58,
+      "blockedMin": 43.7,
+      "hiddenMin": 0,
+      "queueMin": 13.9,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 48.5,
+      "createdMin": 48.5,
+      "startMin": 56.7,
+      "endMin": 60.1,
+      "blockedMin": 48.5,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 3.4,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 48.5,
+      "createdMin": 48.5,
+      "startMin": 59,
+      "endMin": 61.4,
+      "blockedMin": 48.5,
+      "hiddenMin": 0,
+      "queueMin": 10.4,
+      "workMin": 2.5,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 61.4,
+      "createdMin": 61.5,
+      "startMin": 64.7,
+      "endMin": 64.8,
+      "blockedMin": 61.4,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132686441,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 51.5,
+    "path": [
+     "Changes",
+     "Diagnostics / Python 3.7",
+     "Diagnostics / Archived peers",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10,
+      "endMin": 19.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 9.8,
+      "workMin": 9.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 18.9,
+      "endMin": 31.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 18.7,
+      "workMin": 12.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 6.1,
+      "endMin": 13.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 5.9,
+      "workMin": 7.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 11.7,
+      "endMin": 24.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 11.5,
+      "workMin": 12.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.4,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 4.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 12.8,
+      "endMin": 15.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 12.6,
+      "workMin": 2.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 6,
+      "endMin": 19.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 5.8,
+      "workMin": 13.2,
+      "setupMin": 2.9,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10.1,
+      "endMin": 21.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 9.9,
+      "workMin": 11.5,
+      "setupMin": 0.3,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 25.4,
+      "endMin": 30.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 25.2,
+      "workMin": 4.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 5.6,
+      "endMin": 14.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 8.8,
+      "setupMin": 0.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10.7,
+      "endMin": 21.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 10.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 29.9,
+      "endMin": 34.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 29.7,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 22.1,
+      "endMin": 22.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 21.9,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 21.4,
+      "endMin": 33.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 21.2,
+      "workMin": 12,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 30.2,
+      "endMin": 43,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 30,
+      "workMin": 12.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 33.5,
+      "endMin": 34.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 33.3,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 19.5,
+      "endMin": 30.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 19.3,
+      "workMin": 10.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 31.7,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 31.5,
+      "workMin": 8.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10.8,
+      "endMin": 22,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 10.6,
+      "workMin": 11.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 23.8,
+      "endMin": 42.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 23.6,
+      "workMin": 19.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 21.7,
+      "endMin": 33.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 21.5,
+      "workMin": 11.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 10,
+      "endMin": 16.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 9.8,
+      "workMin": 6.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 24.8,
+      "endMin": 40.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 24.6,
+      "workMin": 15.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 7.7,
+      "endMin": 18.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 7.5,
+      "workMin": 11,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 22.1,
+      "endMin": 33.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 21.9,
+      "workMin": 11.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 2.6,
+      "endMin": 12.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 10.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 31.2,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 31,
+      "workMin": 9.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 7.5,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 7.3,
+      "workMin": 33.1,
+      "setupMin": 2.2,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 18.9,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 18.7,
+      "workMin": 21.6,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 27.5,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 27.3,
+      "workMin": 12.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 19.2,
+      "endMin": 40.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 19,
+      "workMin": 21.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 30,
+      "endMin": 30.8,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 8.4,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 30.5,
+      "endMin": 35.6,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 8.9,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 41.8,
+      "endMin": 42.8,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 20.2,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 37.4,
+      "endMin": 38.5,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 15.8,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 30.8,
+      "createdMin": 30.8,
+      "startMin": 43.1,
+      "endMin": 46.3,
+      "blockedMin": 30.8,
+      "hiddenMin": 0,
+      "queueMin": 12.3,
+      "workMin": 3.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 30.8,
+      "createdMin": 30.8,
+      "startMin": 43.2,
+      "endMin": 45.5,
+      "blockedMin": 30.8,
+      "hiddenMin": 0,
+      "queueMin": 12.4,
+      "workMin": 2.3,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 34.5,
+      "createdMin": 34.5,
+      "startMin": 38.3,
+      "endMin": 51.3,
+      "blockedMin": 34.5,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 13,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 40.5,
+      "createdMin": 40.5,
+      "startMin": 44.1,
+      "endMin": 44.3,
+      "blockedMin": 40.5,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 51.3,
+      "createdMin": 51.3,
+      "startMin": 51.4,
+      "endMin": 51.5,
+      "blockedMin": 51.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45132662351,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 47.9,
+    "path": [
+     "Changes",
+     "macOS / 26 X86-64",
+     "Android / Bionic API 24 X86-64",
+     "Android / Termux API 36 X86-64",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 9.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 0.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 13.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 3.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 4.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 7.5,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 7.3,
+      "workMin": 11.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 25.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 19.4,
+      "endMin": 31.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 19.2,
+      "workMin": 12.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 5.8,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 5.5,
+      "workMin": 13.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 8.9,
+      "endMin": 18.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 8.6,
+      "workMin": 9.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 13.3,
+      "endMin": 26.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 13.1,
+      "workMin": 13.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.3,
+      "endMin": 22.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 12,
+      "setupMin": 0.8,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.2,
+      "endMin": 26.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 15.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 30.9,
+      "endMin": 42,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 30.7,
+      "workMin": 11.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.6,
+      "endMin": 18.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.4,
+      "workMin": 9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 13.9,
+      "endMin": 24.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 13.6,
+      "workMin": 10.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.8,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 23.1,
+      "endMin": 24.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 22.8,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.2,
+      "endMin": 13.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 18.7,
+      "endMin": 34,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 18.4,
+      "workMin": 15.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.5,
+      "endMin": 10.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.3,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.2,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 8.9,
+      "workMin": 10,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 8.6,
+      "endMin": 19.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 8.4,
+      "workMin": 11.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 19.4,
+      "endMin": 23.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 19.2,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 4.5,
+      "endMin": 15,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.3,
+      "workMin": 10.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 20.6,
+      "endMin": 25,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 20.3,
+      "workMin": 4.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 5.6,
+      "endMin": 16,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 10.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 2.7,
+      "endMin": 19.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 16.5,
+      "setupMin": 2.2,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.3,
+      "endMin": 22.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.1,
+      "workMin": 12.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 19.2,
+      "createdMin": 19.2,
+      "startMin": 27.4,
+      "endMin": 27.7,
+      "blockedMin": 19.2,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 22.3,
+      "createdMin": 22.3,
+      "startMin": 41,
+      "endMin": 41.9,
+      "blockedMin": 22.3,
+      "hiddenMin": 0,
+      "queueMin": 18.8,
+      "workMin": 0.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 22.3,
+      "createdMin": 22.3,
+      "startMin": 43.2,
+      "endMin": 44.3,
+      "blockedMin": 22.3,
+      "hiddenMin": 0,
+      "queueMin": 20.9,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 22.3,
+      "createdMin": 22.3,
+      "startMin": 39.5,
+      "endMin": 41,
+      "blockedMin": 22.3,
+      "hiddenMin": 0,
+      "queueMin": 17.3,
+      "workMin": 1.5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 22.3,
+      "createdMin": 22.3,
+      "startMin": 24.5,
+      "endMin": 29.5,
+      "blockedMin": 22.3,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 5.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 25,
+      "createdMin": 25,
+      "startMin": 30.5,
+      "endMin": 43.2,
+      "blockedMin": 25,
+      "hiddenMin": 0,
+      "queueMin": 5.6,
+      "workMin": 12.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 41.9,
+      "createdMin": 41.9,
+      "startMin": 44.3,
+      "endMin": 46.4,
+      "blockedMin": 41.9,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 2.1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 41.9,
+      "createdMin": 41.9,
+      "startMin": 44.6,
+      "endMin": 47.7,
+      "blockedMin": 41.9,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 3.2,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 47.7,
+      "createdMin": 47.8,
+      "startMin": 47.8,
+      "endMin": 47.9,
+      "blockedMin": 47.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45126568346,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.6,
+    "path": [
+     "Changes",
+     "Diagnostics / Lint",
+     "Diagnostics / Archived peers",
+     "Required"
+    ],
+    "topBlocker": "macOS / … …",
+    "jobs": [
+     {
+      "name": "Changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.8,
+      "endMin": 14,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 13.2,
+      "setupMin": 2.9,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Other / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 19.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 14.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 10.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Root pipe",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 15.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-32",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10,
+      "endMin": 23.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.7,
+      "workMin": 13.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / AlmaLinux 8 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.9,
+      "endMin": 15,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.6,
+      "workMin": 5.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 4.4,
+      "endMin": 16.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 12.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 4.9,
+      "endMin": 15.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 10.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Alpine 3.24.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.8,
+      "endMin": 22,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.5,
+      "workMin": 12.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Valgrind / Non-root TCP",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 4.4,
+      "endMin": 19.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 15.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.7,
+      "endMin": 20.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.4,
+      "workMin": 11.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Python 3.7",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 3.5,
+      "endMin": 13.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 9.6,
+      "setupMin": 0.3,
+      "runner": "macos-26-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 6,
+      "endMin": 20.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 14.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 22.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 2.7,
+      "endMin": 13.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 11.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / ASan + UBSan",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 4.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux / Ubuntu 24.04 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.2,
+      "endMin": 20.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.9,
+      "workMin": 10.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS / 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 3.8,
+      "endMin": 13.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 9.4,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux / Ubuntu 26.04 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 1.6,
+      "endMin": 11.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 10.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Static analysis",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 7.3,
+      "endMin": 9.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 2.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "BSD / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.4,
+      "endMin": 17.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.1,
+      "workMin": 7.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.6,
+      "endMin": 9.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.3,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / NetBSD 11.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.8,
+      "endMin": 20.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.5,
+      "workMin": 10.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Cygwin X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 7.9,
+      "endMin": 20.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 12.9,
+      "setupMin": 3.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Diagnostics / Coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / FreeBSD 15.1 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 11.6,
+      "endMin": 20.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 11.3,
+      "workMin": 9.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Solaris 11.4 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.7,
+      "endMin": 20.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.4,
+      "workMin": 10,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / OpenBSD 8.0 X86-64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 10.8,
+      "endMin": 20.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 9.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / macOS 26 ARM64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 8.3,
+      "endMin": 20.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 8,
+      "workMin": 12.5,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Diagnostics / Archived peers",
+      "needs": [
+       "diagnostics/lint@Diagnostics",
+       "diagnostics/python_37@Diagnostics",
+       "diagnostics/asan@Diagnostics",
+       "diagnostics/coverage@Diagnostics",
+       "diagnostics/static_analysis@Diagnostics"
+      ],
+      "readyMin": 9.9,
+      "createdMin": 9.9,
+      "startMin": 11.8,
+      "endMin": 26.3,
+      "blockedMin": 9.9,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 14.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARM64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 14.1,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Archive / Ubuntu 24.04 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 18.3,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 ARMv7",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 14.2,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Bionic API 24 X86-64",
+      "needs": [
+       "changes",
+       "macos"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 14.2,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Emulator API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 16.1,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Android / Termux API 36 X86-64",
+      "needs": [
+       "android/x86_64@Android"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 17.3,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Interoperability / Result",
+      "needs": [
+       "interoperability/linux@Interoperability",
+       "interoperability/freebsd@Interoperability",
+       "interoperability/netbsd@Interoperability",
+       "interoperability/openbsd@Interoperability",
+       "interoperability/macos@Interoperability",
+       "interoperability/solaris@Interoperability",
+       "interoperability/cygwin@Interoperability"
+      ],
+      "readyMin": 20.8,
+      "createdMin": 20.8,
+      "startMin": 20.9,
+      "endMin": 21.3,
+      "blockedMin": 20.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required",
+      "needs": [
+       "changes",
+       "linux",
+       "bsd",
+       "macos",
+       "other",
+       "android",
+       "archive",
+       "diagnostics",
+       "valgrind",
+       "interoperability"
+      ],
+      "readyMin": 26.3,
+      "createdMin": 26.3,
+      "startMin": 26.4,
+      "endMin": 26.6,
+      "blockedMin": 26.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": true,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": null,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "depCache",
+    "path": ".github/workflows/bsd.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "affected": ".github/workflows/ci.yml",
+   "scheduled": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/android.yml",
+   "testResults": ".github/workflows/android.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "depCache: .github/workflows/bsd.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    52
+   ],
+   [
+    "Python",
+    38
+   ],
+   [
+    "HTML",
+    4
+   ],
+   [
+    "M4",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    246
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 856
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 31,
+    "edges": 81,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Other / Solaris 11.4 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Other / Cygwin X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 11.7,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "Valgrind / Non-root pipe",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 15.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Valgrind / Non-root TCP",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 15.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "BSD / FreeBSD 15.1 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 7.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Valgrind / Root pipe",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 17.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Valgrind / Root TCP",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 19.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / AlmaLinux 8 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 5.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "macOS / 26 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 14,
+     "runner": "macos-26-intel",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Alpine 3.24.4 X86-32",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Diagnostics / Python 3.7",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "macOS / 26 ARM64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 8.8,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Diagnostics / Lint",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / macOS 26 ARM64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.4,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Interoperability / FreeBSD 15.1 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Ubuntu 24.04 ARM64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 10.5,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / Cygwin X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Ubuntu 26.04 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 10.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Ubuntu 26.04 ARM64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 10.4,
+     "runner": "ubuntu-26.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / OpenBSD 8.0 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Ubuntu 24.04 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 11.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / Solaris 11.4 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "BSD / NetBSD 11.1 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 8.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "BSD / OpenBSD 8.0 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 14.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Diagnostics / ASan + UBSan",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Alpine 3.24.4 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / Ubuntu 24.04 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / NetBSD 11.1 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 12.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Linux / Ubuntu 22.04 X86-64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 11,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Diagnostics / Static analysis",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 2.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Diagnostics / Coverage",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Diagnostics / Archived peers",
+     "needs": [
+      "diagnostics/lint@Diagnostics",
+      "diagnostics/python_37@Diagnostics",
+      "diagnostics/asan@Diagnostics",
+      "diagnostics/coverage@Diagnostics",
+      "diagnostics/static_analysis@Diagnostics"
+     ],
+     "onPath": false,
+     "blockedMin": 4.9,
+     "queueMin": 0.1,
+     "workMin": 12.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Interoperability / Result",
+     "needs": [
+      "interoperability/linux@Interoperability",
+      "interoperability/freebsd@Interoperability",
+      "interoperability/netbsd@Interoperability",
+      "interoperability/openbsd@Interoperability",
+      "interoperability/macos@Interoperability",
+      "interoperability/solaris@Interoperability",
+      "interoperability/cygwin@Interoperability"
+     ],
+     "onPath": false,
+     "blockedMin": 12.8,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Archive / Ubuntu 24.04 X86-64",
+     "needs": [
+      "changes",
+      "macos"
+     ],
+     "onPath": false,
+     "blockedMin": 14.4,
+     "queueMin": 0.1,
+     "workMin": 4.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Android / Bionic API 24 X86-64",
+     "needs": [
+      "changes",
+      "macos"
+     ],
+     "onPath": false,
+     "blockedMin": 14.4,
+     "queueMin": 0.1,
+     "workMin": 0.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Android / Bionic API 24 ARM64",
+     "needs": [
+      "changes",
+      "macos"
+     ],
+     "onPath": false,
+     "blockedMin": 14.4,
+     "queueMin": 0.1,
+     "workMin": 1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Android / Bionic API 24 ARMv7",
+     "needs": [
+      "changes",
+      "macos"
+     ],
+     "onPath": false,
+     "blockedMin": 14.4,
+     "queueMin": 0.1,
+     "workMin": 0.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Android / Termux API 36 X86-64",
+     "needs": [
+      "android/x86_64@Android"
+     ],
+     "onPath": false,
+     "blockedMin": 15.3,
+     "queueMin": 0.1,
+     "workMin": 3.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Android / Emulator API 36 X86-64",
+     "needs": [
+      "android/x86_64@Android"
+     ],
+     "onPath": false,
+     "blockedMin": 15.3,
+     "queueMin": 0.1,
+     "workMin": 2.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Required",
+     "needs": [
+      "changes",
+      "linux",
+      "bsd",
+      "macos",
+      "other",
+      "android",
+      "archive",
+      "diagnostics",
+      "valgrind",
+      "interoperability"
+     ],
+     "onPath": true,
+     "blockedMin": 20.1,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Other / Solaris 11.4 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Other / Cygwin X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Valgrind / Non-root pipe",
+     "to": "changes"
+    },
+    {
+     "from": "Valgrind / Non-root TCP",
+     "to": "changes"
+    },
+    {
+     "from": "BSD / FreeBSD 15.1 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Valgrind / Root pipe",
+     "to": "changes"
+    },
+    {
+     "from": "Valgrind / Root TCP",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / AlmaLinux 8 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "macOS / 26 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Alpine 3.24.4 X86-32",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / Python 3.7",
+     "to": "changes"
+    },
+    {
+     "from": "macOS / 26 ARM64",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / Lint",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / macOS 26 ARM64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / FreeBSD 15.1 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Ubuntu 24.04 ARM64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / Cygwin X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Ubuntu 26.04 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Ubuntu 26.04 ARM64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / OpenBSD 8.0 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Ubuntu 24.04 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / Solaris 11.4 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "BSD / NetBSD 11.1 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "BSD / OpenBSD 8.0 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / ASan + UBSan",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Alpine 3.24.4 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / Ubuntu 24.04 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Interoperability / NetBSD 11.1 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Linux / Ubuntu 22.04 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / Static analysis",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / Coverage",
+     "to": "changes"
+    },
+    {
+     "from": "Diagnostics / Archived peers",
+     "to": "diagnostics/lint@Diagnostics"
+    },
+    {
+     "from": "Diagnostics / Archived peers",
+     "to": "diagnostics/python_37@Diagnostics"
+    },
+    {
+     "from": "Diagnostics / Archived peers",
+     "to": "diagnostics/asan@Diagnostics"
+    },
+    {
+     "from": "Diagnostics / Archived peers",
+     "to": "diagnostics/coverage@Diagnostics"
+    },
+    {
+     "from": "Diagnostics / Archived peers",
+     "to": "diagnostics/static_analysis@Diagnostics"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/linux@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/freebsd@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/netbsd@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/openbsd@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/macos@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/solaris@Interoperability"
+    },
+    {
+     "from": "Interoperability / Result",
+     "to": "interoperability/cygwin@Interoperability"
+    },
+    {
+     "from": "Archive / Ubuntu 24.04 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Archive / Ubuntu 24.04 X86-64",
+     "to": "macos"
+    },
+    {
+     "from": "Android / Bionic API 24 X86-64",
+     "to": "changes"
+    },
+    {
+     "from": "Android / Bionic API 24 X86-64",
+     "to": "macos"
+    },
+    {
+     "from": "Android / Bionic API 24 ARM64",
+     "to": "changes"
+    },
+    {
+     "from": "Android / Bionic API 24 ARM64",
+     "to": "macos"
+    },
+    {
+     "from": "Android / Bionic API 24 ARMv7",
+     "to": "changes"
+    },
+    {
+     "from": "Android / Bionic API 24 ARMv7",
+     "to": "macos"
+    },
+    {
+     "from": "Android / Termux API 36 X86-64",
+     "to": "android/x86_64@Android"
+    },
+    {
+     "from": "Android / Emulator API 36 X86-64",
+     "to": "android/x86_64@Android"
+    },
+    {
+     "from": "Required",
+     "to": "changes"
+    },
+    {
+     "from": "Required",
+     "to": "linux"
+    },
+    {
+     "from": "Required",
+     "to": "bsd"
+    },
+    {
+     "from": "Required",
+     "to": "macos"
+    },
+    {
+     "from": "Required",
+     "to": "other"
+    },
+    {
+     "from": "Required",
+     "to": "android"
+    },
+    {
+     "from": "Required",
+     "to": "archive"
+    },
+    {
+     "from": "Required",
+     "to": "diagnostics"
+    },
+    {
+     "from": "Required",
+     "to": "valgrind"
+    },
+    {
+     "from": "Required",
+     "to": "interoperability"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Changes",
+    "macOS / 26 X86-64",
+    "Android / Bionic API 24 X86-64",
+    "Android / Termux API 36 X86-64",
+    "Required"
+   ],
+   "pathMinP50": 47.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Valgrind / Root TCP\" runs 20 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.0× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 1313 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 73,
+ "read": {
+  "calls": 73,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

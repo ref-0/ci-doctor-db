@@ -1,0 +1,7127 @@
+{
+ "repo": "block/buzz",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.7,
+  "stars": 37648,
+  "forks": 4963,
+  "languages": [
+   [
+    "Rust",
+    48
+   ],
+   [
+    "TypeScript",
+    22
+   ],
+   [
+    "Dart",
+    19
+   ],
+   [
+    "JavaScript",
+    8
+   ]
+  ],
+  "linesOfCode": 2400910,
+  "files": 7176,
+  "sourceFiles": 5720,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1733355,
+   "tests": 492723,
+   "integration": 156485,
+   "support": 18346
+  },
+  "testShare": 0.2780421852907244,
+  "packages": {
+   "npm": 5,
+   "cargo": 37,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 70.2,
+  "pace": 2.3,
+  "activeAuthors28d": "≥42",
+  "prsOpenedPerWeek": 310,
+  "prsMergedPerWeek": 194,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 3.4,
+   "p90": 45.5,
+   "n": 100
+  },
+  "prRunsPerDay": 601.2,
+  "runsPerMergedPr": 21.7
+ },
+ "window": {
+  "days": 2,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 2.2
+ },
+ "size": "large",
+ "headsPerWeek": 1315,
+ "score": 61,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 45,
+  "reliability": 98,
+  "efficiency": 69
+ },
+ "detail": {
+  "speed": {
+   "wait": 38,
+   "forSize": 54,
+   "tail": 49
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 95
+  },
+  "efficiency": {
+   "minutesPerPr": 69,
+   "runsPerPr": 41,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": 32
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 11615.9,
+  "prBilledMinutesPerDay": 12843.5,
+  "jobMinutesPerMergedPr": 419.1,
+  "expectedMinutesPerMergedPr": 442.4,
+  "expectedWait": 22.6,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 375,
+  "timed": 202,
+  "p50": 23.916666666666668,
+  "p75": 27.633333333333333,
+  "p90": 30.883333333333333,
+  "redRate": 0.032,
+  "rerunRate": 0.010666666666666666,
+  "passedOnRerunRate": 0.008,
+  "cancelledRate": 0.2906666666666667,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 3,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    192
+   ],
+   [
+    "Mesh Lifecycle",
+    7
+   ],
+   [
+    "Docker image",
+    3
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    12
+   ]
+  ],
+  "leftOut": [
+   "Auto-tag on Release PR Merge",
+   "Desktop Release Candidate",
+   "Codex Security Review"
+  ],
+  "heavyWorkflows": [
+   "CI",
+   "Docker image"
+  ],
+  "allPushesP50": 23.916666666666668
+ },
+ "main": {
+  "heads": 60,
+  "p50": 25.866666666666667,
+  "p90": 37.416666666666664,
+  "redRate": 0.06666666666666667,
+  "redBy": [
+   [
+    "CI",
+    4
+   ],
+   [
+    "Docker image",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 45,
+  "spanMin": 26,
+  "jobMinutes": 152.81666666666666,
+  "billedMinutes": 184,
+  "subMinuteJobs": 24,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.11236452112364521,
+  "critical": {
+   "name": "Desktop E2E Integration",
+   "minutes": 0.03333333333333333,
+   "shareOfSpan": 0.0011961722488038277
+  },
+  "longest": {
+   "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+   "minutes": 17.5
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    208
+   ]
+  ],
+  "shard": {
+   "name": "Relay and PostgreSQL / Desktop E2E Integration (#)",
+   "shards": 3,
+   "medianMin": 4.65,
+   "maxMin": 8.483333333333333,
+   "maxOverMedian": 1.6986754966887418,
+   "idleTail": 0.3053931124106563
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 70,
+  "edges": 174,
+  "matrixJobs": 15,
+  "reusableCalls": 11,
+  "gateEnd": [
+   {
+    "name": "Relay E2E",
+    "runs": 3
+   },
+   {
+    "name": "Mobile Swift Domain / Results",
+    "runs": 2
+   },
+   {
+    "name": "PostgreSQL Tests",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Detect Changed Paths",
+    "minutes": 1.5,
+    "share": 0.05,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.4,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+    "minutes": 17.5,
+    "share": 0.63,
+    "blockedMin": 1.5,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 17.5,
+    "setupMin": 0.6
+   },
+   {
+    "name": "Relay Artifact Producer / Results",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 19,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+    "minutes": 8.5,
+    "share": 0.31,
+    "blockedMin": 19.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 8.5,
+    "setupMin": 0.6
+   },
+   {
+    "name": "Relay and PostgreSQL / Desktop E2E Integration",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 27.6,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Relay and PostgreSQL / Results",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 27.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Relay E2E",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 27.8,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 6,
+  "pathMinP50": 26,
+  "blockedMinP50": 25.9,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 25.7,
+  "setupInPathMinP50": 1.2,
+  "topBlockers": [
+   {
+    "name": "Detect Changed Paths",
+    "runs": 4,
+    "heldJobs": 41,
+    "jobs": 45,
+    "tookMin": 1.5,
+    "heldJobMin": 32.8
+   },
+   {
+    "name": "Mobile Swift Domain / Mobile Swift (…)",
+    "runs": 2,
+    "heldJobs": 1,
+    "jobs": 14,
+    "tookMin": 16,
+    "heldJobMin": 16
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 32,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44964322195,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 28.8,
+    "path": [
+     "Detect Changed Paths",
+     "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "Relay Artifact Producer / Results",
+     "PostgreSQL Domain / PostgreSQL Tests",
+     "PostgreSQL Domain / Results",
+     "PostgreSQL Tests"
+    ],
+    "topBlocker": "Detect Changed Paths",
+    "jobs": [
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Rust)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 2.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Desktop Build (macOS)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 11.6,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 1.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Desktop Domain / Desktop JS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 9.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (compiled-flags)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 13.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 4.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (core)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 11.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 14.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (mesh)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 6.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Unit Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 19.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.5,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 13.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.7,
+      "setupMin": 2.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Rust Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Security",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 6.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 19.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Results",
+      "needs": [
+       "security-domain/security@Security Domain"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 2.4,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security",
+      "needs": [
+       "changes",
+       "security-domain"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 2.5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Results",
+      "needs": [
+       "rust-cross-compile-domain/rust-lint@Rust Cross-Compile",
+       "rust-cross-compile-domain/unit-tests@Rust Cross-Compile",
+       "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile",
+       "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 4.2,
+      "endMin": 4.3,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Results",
+      "needs": [
+       "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+      ],
+      "readyMin": 11.6,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 11.7,
+      "blockedMin": 11.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Build (macOS)",
+      "needs": [
+       "changes",
+       "desktop-macos-domain"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 11.7,
+      "endMin": 11.8,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop",
+      "needs": [
+       "desktop-domain/desktop-js@Desktop Domain",
+       "desktop-domain/desktop-tauri@Desktop Domain",
+       "desktop-domain/desktop-smoke-e2e@Desktop Domain",
+       "desktop-domain/desktop-windows-build@Desktop Domain"
+      ],
+      "readyMin": 13.4,
+      "createdMin": 13.4,
+      "startMin": 13.4,
+      "endMin": 13.5,
+      "blockedMin": 13.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Results",
+      "needs": [
+       "desktop-domain/desktop@Desktop Domain"
+      ],
+      "readyMin": 13.5,
+      "createdMin": 13.5,
+      "startMin": 13.5,
+      "endMin": 13.6,
+      "blockedMin": 13.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop",
+      "needs": [
+       "changes",
+       "desktop-domain"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 13.6,
+      "endMin": 13.6,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Results",
+      "needs": [
+       "rust/rust-lint@Rust",
+       "rust/unit-tests@Rust",
+       "rust/server-cross-compile@Rust",
+       "rust/windows-rust@Rust"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.2,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Lint",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.2,
+      "createdMin": 19.2,
+      "startMin": 19.2,
+      "endMin": 19.3,
+      "blockedMin": 19.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.2,
+      "createdMin": 19.2,
+      "startMin": 19.2,
+      "endMin": 19.3,
+      "blockedMin": 19.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Unit Tests",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.2,
+      "createdMin": 19.2,
+      "startMin": 19.2,
+      "endMin": 19.3,
+      "blockedMin": 19.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Results",
+      "needs": [
+       "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer",
+       "relay-artifacts-domain/postgres-tests@Relay Artifact Producer",
+       "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/backend-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 19.5,
+      "endMin": 19.5,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Relay",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 19.6,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 21.5,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 27.8,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 24.1,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 21.5,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 28.7,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 24.2,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration",
+      "needs": [
+       "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+      ],
+      "readyMin": 27.8,
+      "createdMin": 27.8,
+      "startMin": 27.8,
+      "endMin": 27.9,
+      "blockedMin": 27.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Results",
+      "needs": [
+       "relay-domain/desktop-e2e-relay@Relay and PostgreSQL",
+       "relay-domain/postgres-tests@Relay and PostgreSQL",
+       "relay-domain/desktop-e2e-integration@Relay and PostgreSQL",
+       "relay-domain/backend-integration@Relay and PostgreSQL",
+       "relay-domain/relay-e2e@Relay and PostgreSQL"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 27.9,
+      "endMin": 27.9,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Integration",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 28,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 28,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 28,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / Results",
+      "needs": [
+       "postgres-domain/desktop-e2e-relay@PostgreSQL Domain",
+       "postgres-domain/postgres-tests@PostgreSQL Domain",
+       "postgres-domain/desktop-e2e-integration@PostgreSQL Domain",
+       "postgres-domain/backend-integration@PostgreSQL Domain",
+       "postgres-domain/relay-e2e@PostgreSQL Domain"
+      ],
+      "readyMin": 28.7,
+      "createdMin": 28.7,
+      "startMin": 28.7,
+      "endMin": 28.8,
+      "blockedMin": 28.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "postgres-domain"
+      ],
+      "readyMin": 28.8,
+      "createdMin": 28.8,
+      "startMin": 28.8,
+      "endMin": 28.8,
+      "blockedMin": 28.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44964319031,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 27.9,
+    "path": [
+     "Detect Changed Paths",
+     "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "Relay Artifact Producer / Results",
+     "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "Relay and PostgreSQL / Desktop E2E Integration",
+     "Relay and PostgreSQL / Results",
+     "Relay E2E"
+    ],
+    "topBlocker": "Detect Changed Paths",
+    "jobs": [
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Rust)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Security",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 2.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Desktop Build (macOS)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 11.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 1.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 4.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Unit Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 15.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Rust Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 4.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 19,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.5,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 4.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop JS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 9.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 13.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (core)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 10.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 5.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (compiled-flags)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 13.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (mesh)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 19,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Results",
+      "needs": [
+       "security-domain/security@Security Domain"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 2.3,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security",
+      "needs": [
+       "changes",
+       "security-domain"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.4,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Results",
+      "needs": [
+       "rust-cross-compile-domain/rust-lint@Rust Cross-Compile",
+       "rust-cross-compile-domain/unit-tests@Rust Cross-Compile",
+       "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile",
+       "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+      ],
+      "readyMin": 4.6,
+      "createdMin": 4.6,
+      "startMin": 4.6,
+      "endMin": 4.7,
+      "blockedMin": 4.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Results",
+      "needs": [
+       "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 11.9,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Build (macOS)",
+      "needs": [
+       "changes",
+       "desktop-macos-domain"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 11.9,
+      "endMin": 12,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop",
+      "needs": [
+       "desktop-domain/desktop-js@Desktop Domain",
+       "desktop-domain/desktop-tauri@Desktop Domain",
+       "desktop-domain/desktop-smoke-e2e@Desktop Domain",
+       "desktop-domain/desktop-windows-build@Desktop Domain"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 13.2,
+      "endMin": 13.2,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Results",
+      "needs": [
+       "desktop-domain/desktop@Desktop Domain"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 13.3,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop",
+      "needs": [
+       "changes",
+       "desktop-domain"
+      ],
+      "readyMin": 13.3,
+      "createdMin": 13.3,
+      "startMin": 13.3,
+      "endMin": 13.4,
+      "blockedMin": 13.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Results",
+      "needs": [
+       "rust/rust-lint@Rust",
+       "rust/unit-tests@Rust",
+       "rust/server-cross-compile@Rust",
+       "rust/windows-rust@Rust"
+      ],
+      "readyMin": 19,
+      "createdMin": 19,
+      "startMin": 19,
+      "endMin": 19.1,
+      "blockedMin": 19,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Results",
+      "needs": [
+       "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer",
+       "relay-artifacts-domain/postgres-tests@Relay Artifact Producer",
+       "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/backend-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+      ],
+      "readyMin": 19,
+      "createdMin": 19,
+      "startMin": 19.1,
+      "endMin": 19.1,
+      "blockedMin": 19,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Unit Tests",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.2,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.2,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Lint",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.2,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Relay",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 19.2,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 27.3,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 21.3,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 23.4,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.1,
+      "endMin": 21.1,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 27.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.2,
+      "endMin": 23.4,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / Results",
+      "needs": [
+       "postgres-domain/desktop-e2e-relay@PostgreSQL Domain",
+       "postgres-domain/postgres-tests@PostgreSQL Domain",
+       "postgres-domain/desktop-e2e-integration@PostgreSQL Domain",
+       "postgres-domain/backend-integration@PostgreSQL Domain",
+       "postgres-domain/relay-e2e@PostgreSQL Domain"
+      ],
+      "readyMin": 27.3,
+      "createdMin": 27.3,
+      "startMin": 27.3,
+      "endMin": 27.4,
+      "blockedMin": 27.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "postgres-domain"
+      ],
+      "readyMin": 27.4,
+      "createdMin": 27.4,
+      "startMin": 27.4,
+      "endMin": 27.5,
+      "blockedMin": 27.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration",
+      "needs": [
+       "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+      ],
+      "readyMin": 27.6,
+      "createdMin": 27.6,
+      "startMin": 27.7,
+      "endMin": 27.7,
+      "blockedMin": 27.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Results",
+      "needs": [
+       "relay-domain/desktop-e2e-relay@Relay and PostgreSQL",
+       "relay-domain/postgres-tests@Relay and PostgreSQL",
+       "relay-domain/desktop-e2e-integration@Relay and PostgreSQL",
+       "relay-domain/backend-integration@Relay and PostgreSQL",
+       "relay-domain/relay-e2e@Relay and PostgreSQL"
+      ],
+      "readyMin": 27.7,
+      "createdMin": 27.7,
+      "startMin": 27.8,
+      "endMin": 27.8,
+      "blockedMin": 27.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.8,
+      "createdMin": 27.8,
+      "startMin": 27.8,
+      "endMin": 27.9,
+      "blockedMin": 27.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.8,
+      "createdMin": 27.8,
+      "startMin": 27.8,
+      "endMin": 27.9,
+      "blockedMin": 27.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Integration",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 27.8,
+      "createdMin": 27.8,
+      "startMin": 27.8,
+      "endMin": 27.9,
+      "blockedMin": 27.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44964315919,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 28.8,
+    "path": [
+     "Detect Changed Paths",
+     "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "Relay Artifact Producer / Results",
+     "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "Relay and PostgreSQL / Desktop E2E Integration",
+     "Relay and PostgreSQL / Results",
+     "Relay E2E"
+    ],
+    "topBlocker": "Detect Changed Paths",
+    "jobs": [
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Rust)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop JS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 9.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (mesh)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 7.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (compiled-flags)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 15.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.8,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Desktop Build (macOS)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 6.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Security Domain / Security",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 2.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 4.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 20.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 12.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 7.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 19.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Unit Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 18.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (core)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 9.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Rust Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 4.5,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Results",
+      "needs": [
+       "security-domain/security@Security Domain"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 2.3,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security",
+      "needs": [
+       "changes",
+       "security-domain"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.4,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Results",
+      "needs": [
+       "rust-cross-compile-domain/rust-lint@Rust Cross-Compile",
+       "rust-cross-compile-domain/unit-tests@Rust Cross-Compile",
+       "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile",
+       "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+      ],
+      "readyMin": 4.4,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 4.5,
+      "blockedMin": 4.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Results",
+      "needs": [
+       "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+      ],
+      "readyMin": 6.2,
+      "createdMin": 6.2,
+      "startMin": 6.2,
+      "endMin": 6.3,
+      "blockedMin": 6.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Build (macOS)",
+      "needs": [
+       "changes",
+       "desktop-macos-domain"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.3,
+      "endMin": 6.4,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop",
+      "needs": [
+       "desktop-domain/desktop-js@Desktop Domain",
+       "desktop-domain/desktop-tauri@Desktop Domain",
+       "desktop-domain/desktop-smoke-e2e@Desktop Domain",
+       "desktop-domain/desktop-windows-build@Desktop Domain"
+      ],
+      "readyMin": 15.4,
+      "createdMin": 15.4,
+      "startMin": 15.4,
+      "endMin": 15.5,
+      "blockedMin": 15.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Results",
+      "needs": [
+       "desktop-domain/desktop@Desktop Domain"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.5,
+      "endMin": 15.5,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop",
+      "needs": [
+       "changes",
+       "desktop-domain"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.6,
+      "endMin": 15.6,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Results",
+      "needs": [
+       "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer",
+       "relay-artifacts-domain/postgres-tests@Relay Artifact Producer",
+       "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/backend-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+      ],
+      "readyMin": 19.8,
+      "createdMin": 19.8,
+      "startMin": 19.9,
+      "endMin": 19.9,
+      "blockedMin": 19.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Relay",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 20,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 22.1,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 28.5,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 21.8,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 28,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 25,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 20,
+      "endMin": 24.2,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Results",
+      "needs": [
+       "rust/rust-lint@Rust",
+       "rust/unit-tests@Rust",
+       "rust/server-cross-compile@Rust",
+       "rust/windows-rust@Rust"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 20.5,
+      "endMin": 20.6,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 20.6,
+      "createdMin": 20.6,
+      "startMin": 20.6,
+      "endMin": 20.6,
+      "blockedMin": 20.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Lint",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 20.6,
+      "createdMin": 20.6,
+      "startMin": 20.6,
+      "endMin": 20.6,
+      "blockedMin": 20.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Unit Tests",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 20.6,
+      "createdMin": 20.6,
+      "startMin": 20.6,
+      "endMin": 20.6,
+      "blockedMin": 20.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / Results",
+      "needs": [
+       "postgres-domain/desktop-e2e-relay@PostgreSQL Domain",
+       "postgres-domain/postgres-tests@PostgreSQL Domain",
+       "postgres-domain/desktop-e2e-integration@PostgreSQL Domain",
+       "postgres-domain/backend-integration@PostgreSQL Domain",
+       "postgres-domain/relay-e2e@PostgreSQL Domain"
+      ],
+      "readyMin": 28,
+      "createdMin": 28,
+      "startMin": 28.1,
+      "endMin": 28.1,
+      "blockedMin": 28,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "postgres-domain"
+      ],
+      "readyMin": 28.1,
+      "createdMin": 28.1,
+      "startMin": 28.1,
+      "endMin": 28.2,
+      "blockedMin": 28.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration",
+      "needs": [
+       "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+      ],
+      "readyMin": 28.5,
+      "createdMin": 28.5,
+      "startMin": 28.5,
+      "endMin": 28.6,
+      "blockedMin": 28.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Results",
+      "needs": [
+       "relay-domain/desktop-e2e-relay@Relay and PostgreSQL",
+       "relay-domain/postgres-tests@Relay and PostgreSQL",
+       "relay-domain/desktop-e2e-integration@Relay and PostgreSQL",
+       "relay-domain/backend-integration@Relay and PostgreSQL",
+       "relay-domain/relay-e2e@Relay and PostgreSQL"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 28.6,
+      "endMin": 28.7,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 28.7,
+      "createdMin": 28.7,
+      "startMin": 28.7,
+      "endMin": 28.8,
+      "blockedMin": 28.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 28.7,
+      "createdMin": 28.7,
+      "startMin": 28.7,
+      "endMin": 28.8,
+      "blockedMin": 28.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Integration",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 28.7,
+      "createdMin": 28.7,
+      "startMin": 28.7,
+      "endMin": 28.8,
+      "blockedMin": 28.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44955426948,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.8,
+    "path": [
+     "Detect Changed Paths",
+     "Mobile Swift Domain / Mobile Swift (Native)",
+     "Mobile Swift Domain / Results"
+    ],
+    "topBlocker": "Mobile Swift Domain / Mobile Swift (…)",
+    "jobs": [
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Flutter)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 2.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Checks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Android)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.9,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile Swift Domain / Mobile Swift (Native)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 19.7,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.7,
+      "setupMin": 2.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Clients / Mobile (Tests 2/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.8,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Tests 1/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 6.7,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile Swift Domain / Mobile Swift (Release)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 11.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.1,
+      "setupMin": 2.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Clients / Mobile (Tests 3/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.9,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Results",
+      "needs": [
+       "clients/web@Clients",
+       "clients/mobile@Clients",
+       "clients/mobile-swift@Clients"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.7,
+      "endMin": 6.7,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile",
+      "needs": [
+       "changes",
+       "clients"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 6.8,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile Swift Domain / Results",
+      "needs": [
+       "mobile-swift-domain/web@Mobile Swift Domain",
+       "mobile-swift-domain/mobile@Mobile Swift Domain",
+       "mobile-swift-domain/mobile-swift@Mobile Swift Domain"
+      ],
+      "readyMin": 19.7,
+      "createdMin": 19.7,
+      "startMin": 19.7,
+      "endMin": 19.8,
+      "blockedMin": 19.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44954555492,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.1,
+    "path": [
+     "Detect Changed Paths",
+     "Mobile Swift Domain / Mobile Swift (Native)",
+     "Mobile Swift Domain / Results"
+    ],
+    "topBlocker": "Mobile Swift Domain / Mobile Swift (…)",
+    "jobs": [
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Flutter)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 2.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile Swift Domain / Mobile Swift (Native)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 17,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16,
+      "setupMin": 2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Mobile Swift Domain / Mobile Swift (Release)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 5.3,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Clients / Mobile (Tests 3/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 6.3,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Checks)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 5.6,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Android)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 7.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 1.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Tests 1/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 6.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Mobile (Tests 2/3)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 6.1,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Clients / Results",
+      "needs": [
+       "clients/web@Clients",
+       "clients/mobile@Clients",
+       "clients/mobile-swift@Clients"
+      ],
+      "readyMin": 7.1,
+      "createdMin": 7.1,
+      "startMin": 7.1,
+      "endMin": 7.1,
+      "blockedMin": 7.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile",
+      "needs": [
+       "changes",
+       "clients"
+      ],
+      "readyMin": 7.1,
+      "createdMin": 7.2,
+      "startMin": 7.2,
+      "endMin": 7.3,
+      "blockedMin": 7.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Mobile Swift Domain / Results",
+      "needs": [
+       "mobile-swift-domain/web@Mobile Swift Domain",
+       "mobile-swift-domain/mobile@Mobile Swift Domain",
+       "mobile-swift-domain/mobile-swift@Mobile Swift Domain"
+      ],
+      "readyMin": 17,
+      "createdMin": 17,
+      "startMin": 17.1,
+      "endMin": 17.1,
+      "blockedMin": 17,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44952819212,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26,
+    "path": [
+     "Detect Changed Paths",
+     "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "Relay Artifact Producer / Results",
+     "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "Relay and PostgreSQL / Desktop E2E Integration",
+     "Relay and PostgreSQL / Results",
+     "Relay E2E"
+    ],
+    "topBlocker": "Detect Changed Paths",
+    "jobs": [
+     {
+      "name": "Detect Changed Paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check selection",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Dead Token Reference Guard",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Flake Check / Flake check (Rust)",
+      "needs": [
+       "flake-check/flake-select@Flake Check"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 16.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.7,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Unit Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 18.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.2,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Desktop Build (macOS)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 4.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 4.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Rust Lint",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 4.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop JS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (compiled-flags)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 15,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (core)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Security",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 2.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 13.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop Tauri (mesh)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 17.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Domain / Results",
+      "needs": [
+       "security-domain/security@Security Domain"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 2.2,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Security",
+      "needs": [
+       "changes",
+       "security-domain"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 2.3,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Cross-Compile / Results",
+      "needs": [
+       "rust-cross-compile-domain/rust-lint@Rust Cross-Compile",
+       "rust-cross-compile-domain/unit-tests@Rust Cross-Compile",
+       "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile",
+       "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+      ],
+      "readyMin": 4.6,
+      "createdMin": 4.6,
+      "startMin": 4.6,
+      "endMin": 4.7,
+      "blockedMin": 4.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop macOS Domain / Results",
+      "needs": [
+       "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.2,
+      "endMin": 12.2,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Build (macOS)",
+      "needs": [
+       "changes",
+       "desktop-macos-domain"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.3,
+      "endMin": 12.3,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Desktop",
+      "needs": [
+       "desktop-domain/desktop-js@Desktop Domain",
+       "desktop-domain/desktop-tauri@Desktop Domain",
+       "desktop-domain/desktop-smoke-e2e@Desktop Domain",
+       "desktop-domain/desktop-windows-build@Desktop Domain"
+      ],
+      "readyMin": 15,
+      "createdMin": 15.1,
+      "startMin": 15.1,
+      "endMin": 15.1,
+      "blockedMin": 15,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop Domain / Results",
+      "needs": [
+       "desktop-domain/desktop@Desktop Domain"
+      ],
+      "readyMin": 15.1,
+      "createdMin": 15.1,
+      "startMin": 15.2,
+      "endMin": 15.2,
+      "blockedMin": 15.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop",
+      "needs": [
+       "changes",
+       "desktop-domain"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.3,
+      "endMin": 15.3,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay Artifact Producer / Results",
+      "needs": [
+       "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer",
+       "relay-artifacts-domain/postgres-tests@Relay Artifact Producer",
+       "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/backend-integration@Relay Artifact Producer",
+       "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+      ],
+      "readyMin": 17.1,
+      "createdMin": 17.1,
+      "startMin": 17.2,
+      "endMin": 17.2,
+      "blockedMin": 17.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Relay",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 17.3,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 25.3,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 19.2,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 25.7,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 19.2,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 22.3,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 17.2,
+      "endMin": 21,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust / Results",
+      "needs": [
+       "rust/rust-lint@Rust",
+       "rust/unit-tests@Rust",
+       "rust/server-cross-compile@Rust",
+       "rust/windows-rust@Rust"
+      ],
+      "readyMin": 18.6,
+      "createdMin": 18.7,
+      "startMin": 18.7,
+      "endMin": 18.7,
+      "blockedMin": 18.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Rust Lint",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 18.7,
+      "createdMin": 18.7,
+      "startMin": 18.8,
+      "endMin": 18.8,
+      "blockedMin": 18.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Unit Tests",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 18.7,
+      "createdMin": 18.7,
+      "startMin": 18.8,
+      "endMin": 18.8,
+      "blockedMin": 18.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows Rust (x86_64-pc-windows-msvc)",
+      "needs": [
+       "changes",
+       "rust"
+      ],
+      "readyMin": 18.7,
+      "createdMin": 18.7,
+      "startMin": 18.8,
+      "endMin": 18.8,
+      "blockedMin": 18.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Domain / Results",
+      "needs": [
+       "postgres-domain/desktop-e2e-relay@PostgreSQL Domain",
+       "postgres-domain/postgres-tests@PostgreSQL Domain",
+       "postgres-domain/desktop-e2e-integration@PostgreSQL Domain",
+       "postgres-domain/backend-integration@PostgreSQL Domain",
+       "postgres-domain/relay-e2e@PostgreSQL Domain"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.3,
+      "startMin": 25.4,
+      "endMin": 25.4,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "PostgreSQL Tests",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "postgres-domain"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 25.4,
+      "endMin": 25.5,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Desktop E2E Integration",
+      "needs": [
+       "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+      ],
+      "readyMin": 25.7,
+      "createdMin": 25.7,
+      "startMin": 25.8,
+      "endMin": 25.8,
+      "blockedMin": 25.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay and PostgreSQL / Results",
+      "needs": [
+       "relay-domain/desktop-e2e-relay@Relay and PostgreSQL",
+       "relay-domain/postgres-tests@Relay and PostgreSQL",
+       "relay-domain/desktop-e2e-integration@Relay and PostgreSQL",
+       "relay-domain/backend-integration@Relay and PostgreSQL",
+       "relay-domain/relay-e2e@Relay and PostgreSQL"
+      ],
+      "readyMin": 25.8,
+      "createdMin": 25.8,
+      "startMin": 25.9,
+      "endMin": 25.9,
+      "blockedMin": 25.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Backend Integration (relay e2e)",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 25.9,
+      "createdMin": 25.9,
+      "startMin": 25.9,
+      "endMin": 26,
+      "blockedMin": 25.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop E2E Integration",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 25.9,
+      "createdMin": 25.9,
+      "startMin": 25.9,
+      "endMin": 26,
+      "blockedMin": 25.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Relay E2E",
+      "needs": [
+       "changes",
+       "relay-artifacts-domain",
+       "relay-domain"
+      ],
+      "readyMin": 25.9,
+      "createdMin": 25.9,
+      "startMin": 26,
+      "endMin": 26,
+      "blockedMin": 25.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 3565,
+  "over10s": 8,
+  "top": [
+   {
+    "file": "buzz-acp pool::tests::channel_prompt_commits_delivery_state_only_after_acp_success",
+    "sec": 39.153,
+    "job": "Rust / Unit Tests"
+   },
+   {
+    "file": "buzz-acp relay::recovery_tests::wake::review_recurring_headroom_between_ticks_gets_an_attempt",
+    "sec": 25.51,
+    "job": "Rust / Unit Tests"
+   },
+   {
+    "file": "buzz-acp::run_task blocked_configuration_reads_are_cancellable_and_bounded",
+    "sec": 20.733,
+    "job": "Rust / Unit Tests"
+   },
+   {
+    "file": "buzz-test-client loadgen::seed::tests::no_channel_creator_signs_more_seed_writes_than_one_minute_of_its_quota",
+    "sec": 12.424,
+    "job": "Rust / Unit Tests"
+   },
+   {
+    "file": "buzz-dev-mcp view_image::tests::oversize_png_with_alpha_resizes_to_png",
+    "sec": 10.538,
+    "job": "Rust / Unit Tests"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 30,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    48
+   ],
+   [
+    "TypeScript",
+    22
+   ],
+   [
+    "Dart",
+    19
+   ],
+   [
+    "JavaScript",
+    8
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm",
+    "uv",
+    "Cargo"
+   ],
+   "tools": [
+    "pnpm workspaces",
+    "Cargo workspace",
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 5,
+   "cargo": 37,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test",
+   "cargo nextest",
+   "cargo test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "Biome",
+   "Ruff",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 31
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 26
+   },
+   {
+    "name": "nostr",
+    "ecosystem": "cargo",
+    "packages": 24
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 23
+   },
+   {
+    "name": "hex",
+    "ecosystem": "cargo",
+    "packages": 21
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 21
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 20
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "chrono",
+    "ecosystem": "cargo",
+    "packages": 16
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 14
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 13
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 13
+   },
+   {
+    "name": "reqwest",
+    "ecosystem": "cargo",
+    "packages": 12
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "rand",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "rustls",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "sqlx",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "tokio-tungstenite",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "axum",
+    "ecosystem": "cargo",
+    "packages": 8
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    208
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".claude/skills",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-admin-web",
+     "path": "admin-web/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "buzz-acp",
+     "path": "crates/buzz-acp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-persona",
+      "buzz-sdk",
+      "git-credential-nostr",
+      "git-sign-nostr"
+     ]
+    },
+    {
+     "name": "buzz-admin",
+     "path": "crates/buzz-admin/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-audit",
+      "buzz-auth",
+      "buzz-core",
+      "buzz-db",
+      "buzz-deletion",
+      "buzz-media",
+      "buzz-pubsub",
+      "buzz-search",
+      "buzz-workflow"
+     ]
+    },
+    {
+     "name": "buzz-agent",
+     "path": "crates/buzz-agent/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-audio-client",
+     "path": "crates/buzz-audio-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-audit",
+     "path": "crates/buzz-audit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-datastore-tracing",
+      "buzz-db"
+     ]
+    },
+    {
+     "name": "buzz-auth",
+     "path": "crates/buzz-auth/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-backend-kubernetes",
+     "path": "crates/buzz-backend-kubernetes/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-cli",
+     "path": "crates/buzz-cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-persona",
+      "buzz-sdk",
+      "buzz-ws-client"
+     ]
+    },
+    {
+     "name": "buzz-conformance",
+     "path": "crates/buzz-conformance/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-core",
+     "path": "crates/buzz-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-datastore-tracing",
+     "path": "crates/buzz-datastore-tracing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-db",
+     "path": "crates/buzz-db/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-datastore-tracing"
+     ]
+    },
+    {
+     "name": "buzz-deletion",
+     "path": "crates/buzz-deletion/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-db",
+      "buzz-media",
+      "buzz-pubsub"
+     ]
+    },
+    {
+     "name": "buzz-dev-mcp",
+     "path": "crates/buzz-dev-mcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-cli",
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-feature-flags",
+     "path": "crates/buzz-feature-flags/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-media",
+     "path": "crates/buzz-media/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-mesh-smoke",
+     "path": "crates/buzz-mesh-smoke/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-test-client"
+     ]
+    },
+    {
+     "name": "buzz-pair-relay",
+     "path": "crates/buzz-pair-relay/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-pairing-cli",
+     "path": "crates/buzz-pairing-cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-persona",
+     "path": "crates/buzz-persona/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-pubsub",
+     "path": "crates/buzz-pubsub/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-auth",
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-push-gateway",
+     "path": "crates/buzz-push-gateway/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-relay-mesh",
+     "path": "crates/buzz-relay-mesh/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-pubsub"
+     ]
+    },
+    {
+     "name": "buzz-relay",
+     "path": "crates/buzz-relay/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-audit",
+      "buzz-auth",
+      "buzz-cli",
+      "buzz-conformance",
+      "buzz-core",
+      "buzz-datastore-tracing",
+      "buzz-db",
+      "buzz-deletion",
+      "buzz-feature-flags",
+      "buzz-media",
+      "buzz-pubsub",
+      "buzz-relay-mesh",
+      "buzz-sdk",
+      "buzz-search",
+      "buzz-workflow"
+     ]
+    },
+    {
+     "name": "buzz-sdk",
+     "path": "crates/buzz-sdk/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core"
+     ]
+    },
+    {
+     "name": "buzz-search",
+     "path": "crates/buzz-search/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-datastore-tracing",
+      "buzz-db"
+     ]
+    },
+    {
+     "name": "buzz-test-client",
+     "path": "crates/buzz-test-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-media",
+      "buzz-sdk",
+      "buzz-ws-client"
+     ]
+    },
+    {
+     "name": "buzz-voice",
+     "path": "crates/buzz-voice/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-workflow",
+     "path": "crates/buzz-workflow/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-core",
+      "buzz-db",
+      "buzz-deletion"
+     ]
+    },
+    {
+     "name": "buzz-ws-client",
+     "path": "crates/buzz-ws-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "git-credential-nostr",
+     "path": "crates/git-credential-nostr/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "git-sign-nostr",
+     "path": "crates/git-sign-nostr/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "ifc-core",
+     "path": "crates/ifc-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "sprig",
+     "path": "crates/sprig/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-acp",
+      "buzz-agent",
+      "buzz-dev-mcp"
+     ]
+    },
+    {
+     "name": "buzz",
+     "path": "desktop/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "buzz-desktop",
+     "path": "desktop/src-tauri/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "buzz-agent",
+      "buzz-audio-client",
+      "buzz-core",
+      "buzz-media",
+      "buzz-persona",
+      "buzz-sdk",
+      "buzz-terminal",
+      "buzz-voice",
+      "buzz-ws-client"
+     ]
+    },
+    {
+     "name": "buzz-terminal",
+     "path": "desktop/src-tauri/crates/buzz-terminal/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "buzz-workspace",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "buzz-web",
+     "path": "web/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 41,
+   "edges": 76,
+   "cycles": [],
+   "maxDepth": 5,
+   "topFanIn": [
+    {
+     "name": "buzz-core",
+     "ecosystem": "cargo",
+     "dependents": 19
+    },
+    {
+     "name": "buzz-db",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "buzz-media",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "buzz-sdk",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "buzz-datastore-tracing",
+     "ecosystem": "cargo",
+     "dependents": 4
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 41,
+    "edges": 76
+   },
+   "nodes": [
+    {
+     "id": "buzz-core",
+     "dir": "crates/buzz-core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 19,
+     "depth": 0
+    },
+    {
+     "id": "buzz-db",
+     "dir": "crates/buzz-db",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 6,
+     "depth": 1
+    },
+    {
+     "id": "buzz-media",
+     "dir": "crates/buzz-media",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "buzz-sdk",
+     "dir": "crates/buzz-sdk",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "buzz-datastore-tracing",
+     "dir": "crates/buzz-datastore-tracing",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "buzz-pubsub",
+     "dir": "crates/buzz-pubsub",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 2
+    },
+    {
+     "id": "buzz-auth",
+     "dir": "crates/buzz-auth",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "buzz-deletion",
+     "dir": "crates/buzz-deletion",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 3,
+     "depth": 3
+    },
+    {
+     "id": "buzz-persona",
+     "dir": "crates/buzz-persona",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "buzz-ws-client",
+     "dir": "crates/buzz-ws-client",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "buzz-agent",
+     "dir": "crates/buzz-agent",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "buzz-audit",
+     "dir": "crates/buzz-audit",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "buzz-cli",
+     "dir": "crates/buzz-cli",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "buzz-search",
+     "dir": "crates/buzz-search",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "buzz-workflow",
+     "dir": "crates/buzz-workflow",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 4
+    },
+    {
+     "id": "buzz-acp",
+     "dir": "crates/buzz-acp",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 2
+    },
+    {
+     "id": "buzz-audio-client",
+     "dir": "crates/buzz-audio-client",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "buzz-conformance",
+     "dir": "crates/buzz-conformance",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "buzz-dev-mcp",
+     "dir": "crates/buzz-dev-mcp",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "buzz-feature-flags",
+     "dir": "crates/buzz-feature-flags",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "buzz-relay-mesh",
+     "dir": "crates/buzz-relay-mesh",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "buzz-terminal",
+     "dir": "desktop/src-tauri/crates/buzz-terminal",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "buzz-test-client",
+     "dir": "crates/buzz-test-client",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 2
+    },
+    {
+     "id": "buzz-voice",
+     "dir": "crates/buzz-voice",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "git-credential-nostr",
+     "dir": "crates/git-credential-nostr",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "git-sign-nostr",
+     "dir": "crates/git-sign-nostr",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "buzz",
+     "dir": "desktop",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin",
+     "dir": "crates/buzz-admin",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "buzz-admin-web",
+     "dir": "admin-web",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "buzz-backend-kubernetes",
+     "dir": "crates/buzz-backend-kubernetes",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "buzz-desktop",
+     "dir": "desktop/src-tauri",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "buzz-mesh-smoke",
+     "dir": "crates/buzz-mesh-smoke",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 3
+    },
+    {
+     "id": "buzz-pair-relay",
+     "dir": "crates/buzz-pair-relay",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "buzz-pairing-cli",
+     "dir": "crates/buzz-pairing-cli",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "buzz-push-gateway",
+     "dir": "crates/buzz-push-gateway",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "buzz-relay",
+     "dir": "crates/buzz-relay",
+     "ecosystem": "cargo",
+     "dependencies": 15,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "buzz-web",
+     "dir": "web",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "buzz-workspace",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "ifc-core",
+     "dir": "crates/ifc-core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "sprig",
+     "dir": "crates/sprig",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "buzz-acp",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-acp",
+     "to": "buzz-persona",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-acp",
+     "to": "buzz-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-acp",
+     "to": "git-credential-nostr",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-acp",
+     "to": "git-sign-nostr",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-audit",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-deletion",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-media",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-pubsub",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-search",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-admin",
+     "to": "buzz-workflow",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-audit",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-audit",
+     "to": "buzz-datastore-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-audit",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-auth",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-cli",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-cli",
+     "to": "buzz-persona",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-cli",
+     "to": "buzz-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-cli",
+     "to": "buzz-ws-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-db",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-db",
+     "to": "buzz-datastore-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-deletion",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-deletion",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-deletion",
+     "to": "buzz-media",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-deletion",
+     "to": "buzz-pubsub",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-dev-mcp",
+     "to": "buzz-cli",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-dev-mcp",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-feature-flags",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-media",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-mesh-smoke",
+     "to": "buzz-test-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-pair-relay",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-pairing-cli",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-pubsub",
+     "to": "buzz-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-pubsub",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay-mesh",
+     "to": "buzz-pubsub",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-audit",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-cli",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-conformance",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-datastore-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-deletion",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-feature-flags",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-media",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-pubsub",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-relay-mesh",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-search",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-relay",
+     "to": "buzz-workflow",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-sdk",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-search",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-search",
+     "to": "buzz-datastore-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-search",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-test-client",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-test-client",
+     "to": "buzz-media",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-test-client",
+     "to": "buzz-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-test-client",
+     "to": "buzz-ws-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-workflow",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-workflow",
+     "to": "buzz-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-workflow",
+     "to": "buzz-deletion",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sprig",
+     "to": "buzz-acp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sprig",
+     "to": "buzz-agent",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sprig",
+     "to": "buzz-dev-mcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-agent",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-audio-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-media",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-persona",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-terminal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-voice",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "buzz-desktop",
+     "to": "buzz-ws-client",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 5,
+   "chain": [
+    "buzz-admin",
+    "buzz-workflow",
+    "buzz-deletion",
+    "buzz-pubsub",
+    "buzz-auth",
+    "buzz-core"
+   ],
+   "topFanIn": [
+    {
+     "name": "buzz-core",
+     "ecosystem": "cargo",
+     "dependents": 19
+    },
+    {
+     "name": "buzz-db",
+     "ecosystem": "cargo",
+     "dependents": 6
+    },
+    {
+     "name": "buzz-media",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "buzz-sdk",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "buzz-datastore-tracing",
+     "ecosystem": "cargo",
+     "dependents": 4
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 4,
+    "packagesWithEntries": 0,
+    "filesRead": 3
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 39,
+    "edges": 15,
+    "cached": 0,
+    "trackedFiles": 7176
+   },
+   "nodes": [
+    {
+     "id": "buzz-admin-web#build",
+     "pkg": "buzz-admin-web",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin-web#check",
+     "pkg": "buzz-admin-web",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz-admin-web#dev",
+     "pkg": "buzz-admin-web",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin-web#format",
+     "pkg": "buzz-admin-web",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin-web#lint",
+     "pkg": "buzz-admin-web",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin-web#test",
+     "pkg": "buzz-admin-web",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-admin-web#test:e2e",
+     "pkg": "buzz-admin-web",
+     "name": "test:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz-admin-web#typecheck",
+     "pkg": "buzz-admin-web",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#build",
+     "pkg": "buzz-web",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#check",
+     "pkg": "buzz-web",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz-web#check:file-sizes",
+     "pkg": "buzz-web",
+     "name": "check:file-sizes",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#check:pubkey-truncation",
+     "pkg": "buzz-web",
+     "name": "check:pubkey-truncation",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#dev",
+     "pkg": "buzz-web",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#format",
+     "pkg": "buzz-web",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#lint",
+     "pkg": "buzz-web",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#preview",
+     "pkg": "buzz-web",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-web#test:e2e",
+     "pkg": "buzz-web",
+     "name": "test:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz-web#test:e2e:smoke",
+     "pkg": "buzz-web",
+     "name": "test:e2e:smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz-web#typecheck",
+     "pkg": "buzz-web",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz-workspace#check",
+     "pkg": "buzz-workspace",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "buzz#build",
+     "pkg": "buzz",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#build:e2e",
+     "pkg": "buzz",
+     "name": "build:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#check",
+     "pkg": "buzz",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz#check:file-sizes",
+     "pkg": "buzz",
+     "name": "check:file-sizes",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#check:pubkey-truncation",
+     "pkg": "buzz",
+     "name": "check:pubkey-truncation",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#check:px-text",
+     "pkg": "buzz",
+     "name": "check:px-text",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#dev",
+     "pkg": "buzz",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#format",
+     "pkg": "buzz",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#lint",
+     "pkg": "buzz",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#preview",
+     "pkg": "buzz",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#tauri",
+     "pkg": "buzz",
+     "name": "tauri",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#tauri:build",
+     "pkg": "buzz",
+     "name": "tauri:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#test",
+     "pkg": "buzz",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#test:e2e",
+     "pkg": "buzz",
+     "name": "test:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz#test:e2e:integration",
+     "pkg": "buzz",
+     "name": "test:e2e:integration",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz#test:e2e:release-smoke",
+     "pkg": "buzz",
+     "name": "test:e2e:release-smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz#test:e2e:report",
+     "pkg": "buzz",
+     "name": "test:e2e:report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "buzz#test:e2e:smoke",
+     "pkg": "buzz",
+     "name": "test:e2e:smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "buzz#typecheck",
+     "pkg": "buzz",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "buzz-admin-web#check",
+     "to": "buzz-admin-web#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-admin-web#check",
+     "to": "buzz-admin-web#test",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-admin-web#test:e2e",
+     "to": "buzz-admin-web#build",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#check",
+     "to": "buzz#check:px-text",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#check",
+     "to": "buzz#check:pubkey-truncation",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#test:e2e",
+     "to": "buzz#build:e2e",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#test:e2e:smoke",
+     "to": "buzz#build:e2e",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#test:e2e:integration",
+     "to": "buzz#build:e2e",
+     "how": "calls"
+    },
+    {
+     "from": "buzz#test:e2e:release-smoke",
+     "to": "buzz#build:e2e",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-web#check",
+     "to": "buzz-web#check:pubkey-truncation",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-web#test:e2e",
+     "to": "buzz-web#build",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-web#test:e2e:smoke",
+     "to": "buzz-web#build",
+     "how": "calls"
+    },
+    {
+     "from": "buzz-workspace#check",
+     "to": "buzz-admin-web#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "buzz-workspace#check",
+     "to": "buzz#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "buzz-workspace#check",
+     "to": "buzz-web#check",
+     "how": "fan-out"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "buzz-workspace#check",
+    "buzz-admin-web#check",
+    "buzz-admin-web#typecheck"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 70,
+    "edges": 174,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Dead Token Reference Guard",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Detect Changed Paths",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Flake Check / Flake check selection",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Flake Check / Flake check (Rust)",
+     "needs": [
+      "flake-check/flake-select@Flake Check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 2.3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop macOS Domain / Desktop Build (macOS)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0.1,
+     "workMin": 10,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Desktop Domain / Desktop JS",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Domain / Desktop Tauri (compiled-flags)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 11.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 2.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Domain / Desktop Tauri (core)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0.1,
+     "workMin": 9.7,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 12.5,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Domain / Desktop Tauri (mesh)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 4.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust / Unit Tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 17.5,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 11.7,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust / Rust Lint",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 3.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Security Domain / Security",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 0.7,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 4.5,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 2.3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 1.6,
+     "queueMin": 0,
+     "workMin": 17.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Security Domain / Results",
+     "needs": [
+      "security-domain/security@Security Domain"
+     ],
+     "onPath": false,
+     "blockedMin": 2.3,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Security",
+     "needs": [
+      "changes",
+      "security-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 2.4,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust Cross-Compile / Results",
+     "needs": [
+      "rust-cross-compile-domain/rust-lint@Rust Cross-Compile",
+      "rust-cross-compile-domain/unit-tests@Rust Cross-Compile",
+      "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile",
+      "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+     ],
+     "onPath": false,
+     "blockedMin": 4.2,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop macOS Domain / Results",
+     "needs": [
+      "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+     ],
+     "onPath": false,
+     "blockedMin": 11.6,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Build (macOS)",
+     "needs": [
+      "changes",
+      "desktop-macos-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 11.7,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Domain / Desktop",
+     "needs": [
+      "desktop-domain/desktop-js@Desktop Domain",
+      "desktop-domain/desktop-tauri@Desktop Domain",
+      "desktop-domain/desktop-smoke-e2e@Desktop Domain",
+      "desktop-domain/desktop-windows-build@Desktop Domain"
+     ],
+     "onPath": false,
+     "blockedMin": 13.4,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop Domain / Results",
+     "needs": [
+      "desktop-domain/desktop@Desktop Domain"
+     ],
+     "onPath": false,
+     "blockedMin": 13.5,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop",
+     "needs": [
+      "changes",
+      "desktop-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 13.6,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust / Results",
+     "needs": [
+      "rust/rust-lint@Rust",
+      "rust/unit-tests@Rust",
+      "rust/server-cross-compile@Rust",
+      "rust/windows-rust@Rust"
+     ],
+     "onPath": false,
+     "blockedMin": 19.1,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Rust Lint",
+     "needs": [
+      "changes",
+      "rust"
+     ],
+     "onPath": false,
+     "blockedMin": 19.2,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows Rust (x86_64-pc-windows-msvc)",
+     "needs": [
+      "changes",
+      "rust"
+     ],
+     "onPath": false,
+     "blockedMin": 19.2,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Unit Tests",
+     "needs": [
+      "changes",
+      "rust"
+     ],
+     "onPath": false,
+     "blockedMin": 19.2,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay Artifact Producer / Results",
+     "needs": [
+      "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer",
+      "relay-artifacts-domain/postgres-tests@Relay Artifact Producer",
+      "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer",
+      "relay-artifacts-domain/backend-integration@Relay Artifact Producer",
+      "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+     ],
+     "onPath": true,
+     "blockedMin": 19.4,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop E2E Relay",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 8.3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 4.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Relay E2E",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "PostgreSQL Domain / PostgreSQL Tests",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": true,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 9.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 19.5,
+     "queueMin": 0,
+     "workMin": 4.7,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Desktop E2E Integration",
+     "needs": [
+      "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+     ],
+     "onPath": false,
+     "blockedMin": 27.8,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay and PostgreSQL / Results",
+     "needs": [
+      "relay-domain/desktop-e2e-relay@Relay and PostgreSQL",
+      "relay-domain/postgres-tests@Relay and PostgreSQL",
+      "relay-domain/desktop-e2e-integration@Relay and PostgreSQL",
+      "relay-domain/backend-integration@Relay and PostgreSQL",
+      "relay-domain/relay-e2e@Relay and PostgreSQL"
+     ],
+     "onPath": false,
+     "blockedMin": 27.9,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop E2E Integration",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain",
+      "relay-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 27.9,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Backend Integration (relay e2e)",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain",
+      "relay-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 27.9,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Relay E2E",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain",
+      "relay-domain"
+     ],
+     "onPath": false,
+     "blockedMin": 27.9,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "PostgreSQL Domain / Results",
+     "needs": [
+      "postgres-domain/desktop-e2e-relay@PostgreSQL Domain",
+      "postgres-domain/postgres-tests@PostgreSQL Domain",
+      "postgres-domain/desktop-e2e-integration@PostgreSQL Domain",
+      "postgres-domain/backend-integration@PostgreSQL Domain",
+      "postgres-domain/relay-e2e@PostgreSQL Domain"
+     ],
+     "onPath": true,
+     "blockedMin": 28.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "PostgreSQL Tests",
+     "needs": [
+      "changes",
+      "relay-artifacts-domain",
+      "postgres-domain"
+     ],
+     "onPath": true,
+     "blockedMin": 28.8,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Flake Check / Flake check (Rust)",
+     "to": "flake-check/flake-select@Flake Check"
+    },
+    {
+     "from": "Desktop macOS Domain / Desktop Build (macOS)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop Domain / Desktop JS",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop Domain / Desktop Tauri (compiled-flags)",
+     "to": "changes"
+    },
+    {
+     "from": "Rust Cross-Compile / Server Cross-Compile (aarch64-unknown-linux-musl)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop Domain / Desktop Tauri (core)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay Artifact Producer / Desktop E2E Relay (backend-integration-tests)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop Domain / Desktop Tauri (mesh)",
+     "to": "changes"
+    },
+    {
+     "from": "Rust / Unit Tests",
+     "to": "changes"
+    },
+    {
+     "from": "Rust / Windows Rust (x86_64-pc-windows-msvc)",
+     "to": "changes"
+    },
+    {
+     "from": "Rust / Rust Lint",
+     "to": "changes"
+    },
+    {
+     "from": "Security Domain / Security",
+     "to": "changes"
+    },
+    {
+     "from": "Relay Artifact Producer / Desktop E2E Relay (relay-binaries)",
+     "to": "changes"
+    },
+    {
+     "from": "Rust Cross-Compile / Server Cross-Compile (x86_64-unknown-linux-musl)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+     "to": "changes"
+    },
+    {
+     "from": "Security Domain / Results",
+     "to": "security-domain/security@Security Domain"
+    },
+    {
+     "from": "Security",
+     "to": "changes"
+    },
+    {
+     "from": "Security",
+     "to": "security-domain"
+    },
+    {
+     "from": "Rust Cross-Compile / Results",
+     "to": "rust-cross-compile-domain/rust-lint@Rust Cross-Compile"
+    },
+    {
+     "from": "Rust Cross-Compile / Results",
+     "to": "rust-cross-compile-domain/unit-tests@Rust Cross-Compile"
+    },
+    {
+     "from": "Rust Cross-Compile / Results",
+     "to": "rust-cross-compile-domain/server-cross-compile@Rust Cross-Compile"
+    },
+    {
+     "from": "Rust Cross-Compile / Results",
+     "to": "rust-cross-compile-domain/windows-rust@Rust Cross-Compile"
+    },
+    {
+     "from": "Desktop macOS Domain / Results",
+     "to": "desktop-macos-domain/desktop-build-macos@Desktop macOS Domain"
+    },
+    {
+     "from": "Desktop Build (macOS)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop Build (macOS)",
+     "to": "desktop-macos-domain"
+    },
+    {
+     "from": "Desktop Domain / Desktop",
+     "to": "desktop-domain/desktop-js@Desktop Domain"
+    },
+    {
+     "from": "Desktop Domain / Desktop",
+     "to": "desktop-domain/desktop-tauri@Desktop Domain"
+    },
+    {
+     "from": "Desktop Domain / Desktop",
+     "to": "desktop-domain/desktop-smoke-e2e@Desktop Domain"
+    },
+    {
+     "from": "Desktop Domain / Desktop",
+     "to": "desktop-domain/desktop-windows-build@Desktop Domain"
+    },
+    {
+     "from": "Desktop Domain / Results",
+     "to": "desktop-domain/desktop@Desktop Domain"
+    },
+    {
+     "from": "Desktop",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop",
+     "to": "desktop-domain"
+    },
+    {
+     "from": "Rust / Results",
+     "to": "rust/rust-lint@Rust"
+    },
+    {
+     "from": "Rust / Results",
+     "to": "rust/unit-tests@Rust"
+    },
+    {
+     "from": "Rust / Results",
+     "to": "rust/server-cross-compile@Rust"
+    },
+    {
+     "from": "Rust / Results",
+     "to": "rust/windows-rust@Rust"
+    },
+    {
+     "from": "Rust Lint",
+     "to": "changes"
+    },
+    {
+     "from": "Rust Lint",
+     "to": "rust"
+    },
+    {
+     "from": "Windows Rust (x86_64-pc-windows-msvc)",
+     "to": "changes"
+    },
+    {
+     "from": "Windows Rust (x86_64-pc-windows-msvc)",
+     "to": "rust"
+    },
+    {
+     "from": "Unit Tests",
+     "to": "changes"
+    },
+    {
+     "from": "Unit Tests",
+     "to": "rust"
+    },
+    {
+     "from": "Relay Artifact Producer / Results",
+     "to": "relay-artifacts-domain/desktop-e2e-relay@Relay Artifact Producer"
+    },
+    {
+     "from": "Relay Artifact Producer / Results",
+     "to": "relay-artifacts-domain/postgres-tests@Relay Artifact Producer"
+    },
+    {
+     "from": "Relay Artifact Producer / Results",
+     "to": "relay-artifacts-domain/desktop-e2e-integration@Relay Artifact Producer"
+    },
+    {
+     "from": "Relay Artifact Producer / Results",
+     "to": "relay-artifacts-domain/backend-integration@Relay Artifact Producer"
+    },
+    {
+     "from": "Relay Artifact Producer / Results",
+     "to": "relay-artifacts-domain/relay-e2e@Relay Artifact Producer"
+    },
+    {
+     "from": "Desktop E2E Relay",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop E2E Relay",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay and PostgreSQL / Backend Integration (relay e2e)",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (3/3)",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Relay E2E",
+     "to": "changes"
+    },
+    {
+     "from": "Relay and PostgreSQL / Relay E2E",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "PostgreSQL Domain / PostgreSQL Tests",
+     "to": "changes"
+    },
+    {
+     "from": "PostgreSQL Domain / PostgreSQL Tests",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+     "to": "changes"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration (2/3)",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay and PostgreSQL / Desktop E2E Integration",
+     "to": "relay-domain/desktop-e2e-integration-shard@Relay and PostgreSQL"
+    },
+    {
+     "from": "Relay and PostgreSQL / Results",
+     "to": "relay-domain/desktop-e2e-relay@Relay and PostgreSQL"
+    },
+    {
+     "from": "Relay and PostgreSQL / Results",
+     "to": "relay-domain/postgres-tests@Relay and PostgreSQL"
+    },
+    {
+     "from": "Relay and PostgreSQL / Results",
+     "to": "relay-domain/desktop-e2e-integration@Relay and PostgreSQL"
+    },
+    {
+     "from": "Relay and PostgreSQL / Results",
+     "to": "relay-domain/backend-integration@Relay and PostgreSQL"
+    },
+    {
+     "from": "Relay and PostgreSQL / Results",
+     "to": "relay-domain/relay-e2e@Relay and PostgreSQL"
+    },
+    {
+     "from": "Desktop E2E Integration",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop E2E Integration",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Desktop E2E Integration",
+     "to": "relay-domain"
+    },
+    {
+     "from": "Backend Integration (relay e2e)",
+     "to": "changes"
+    },
+    {
+     "from": "Backend Integration (relay e2e)",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Backend Integration (relay e2e)",
+     "to": "relay-domain"
+    },
+    {
+     "from": "Relay E2E",
+     "to": "changes"
+    },
+    {
+     "from": "Relay E2E",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "Relay E2E",
+     "to": "relay-domain"
+    },
+    {
+     "from": "PostgreSQL Domain / Results",
+     "to": "postgres-domain/desktop-e2e-relay@PostgreSQL Domain"
+    },
+    {
+     "from": "PostgreSQL Domain / Results",
+     "to": "postgres-domain/postgres-tests@PostgreSQL Domain"
+    },
+    {
+     "from": "PostgreSQL Domain / Results",
+     "to": "postgres-domain/desktop-e2e-integration@PostgreSQL Domain"
+    },
+    {
+     "from": "PostgreSQL Domain / Results",
+     "to": "postgres-domain/backend-integration@PostgreSQL Domain"
+    },
+    {
+     "from": "PostgreSQL Domain / Results",
+     "to": "postgres-domain/relay-e2e@PostgreSQL Domain"
+    },
+    {
+     "from": "PostgreSQL Tests",
+     "to": "changes"
+    },
+    {
+     "from": "PostgreSQL Tests",
+     "to": "relay-artifacts-domain"
+    },
+    {
+     "from": "PostgreSQL Tests",
+     "to": "postgres-domain"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Detect Changed Paths",
+    "Relay Artifact Producer / Desktop E2E Relay (postgres-tests)",
+    "Relay Artifact Producer / Results",
+    "Relay and PostgreSQL / Desktop E2E Integration (1/3)",
+    "Relay and PostgreSQL / Desktop E2E Integration",
+    "Relay and PostgreSQL / Results",
+    "Relay E2E"
+   ],
+   "pathMinP50": 26,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 3,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Relay and PostgreSQL / Desktop E2E Integration (#)\": the slowest shard takes 1.70× the median, 31% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "8 test files take over 10 s; the slowest, buzz-acp pool::tests::channel_prompt_commits_delivery_state_only_after_acp_success, takes 39 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 91,
+ "read": {
+  "calls": 91,
+  "fromCache": 0
+ }
+}

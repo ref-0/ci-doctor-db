@@ -1,0 +1,1149 @@
+{
+ "repo": "dotnet/runtime",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Pull requests here wait on Azure Pipelines, outside GitHub Actions: on 2 of 3 sampled pushes it was still running when the Actions checks finished, until at least 124 minutes after the push against 10 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 7.2,
+  "stars": 18464,
+  "forks": 5771,
+  "languages": [
+   [
+    "C#",
+    76
+   ],
+   [
+    "C++",
+    9
+   ],
+   [
+    "IL Assembly",
+    7
+   ],
+   [
+    "C",
+    7
+   ]
+  ],
+  "linesOfCode": 20116009,
+  "files": 48548,
+  "sourceFiles": 31923,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 8032382,
+   "tests": 5373757,
+   "integration": 5623,
+   "support": 15107
+  },
+  "testShare": 0.40176811724203954,
+  "packages": {
+   "npm": 4,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 131.5,
+  "pace": 1.3,
+  "activeAuthors28d": "≥99",
+  "prsOpenedPerWeek": 286.1,
+  "prsMergedPerWeek": 243.1,
+  "botShareOfMergedPrs": 14,
+  "openToMergeHours": {
+   "p50": 67.6,
+   "p90": 355.2,
+   "n": 86
+  },
+  "prRunsPerDay": 485.9,
+  "runsPerMergedPr": 14
+ },
+ "window": {
+  "days": 2.4,
+  "runs": 427,
+  "runsInPeriod": 427,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 813,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 65,
+   "forSize": 100,
+   "tail": 79
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 59,
+   "setup": 89,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 781,
+  "prBilledMinutesPerDay": 846.6,
+  "jobMinutesPerMergedPr": 22.5,
+  "prVcpuMinutesPerDay": 3123.9,
+  "vcpuMinutesPerMergedPr": 90,
+  "expectedVcpuMinutesPerMergedPr": 3569.1,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 892.3,
+  "expectedWait": 34,
+  "workflowsOnPrs": 4
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 0.92,
+  "missing": [
+   "reliability.mainRed"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "Azure Pipelines",
+     "path": ".azuredevops/dependabot.yml"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "b5a956174c29ddfb02b54a9fc549570cf8f42e31",
+     "actionsMin": 0.6,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 0.3
+      }
+     ]
+    },
+    {
+     "sha": "77a4dfa81eb913021cb36218a96505886eb6f3fa",
+     "actionsMin": 10.4,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 124.3
+      }
+     ]
+    },
+    {
+     "sha": "247041e49473e5809463be53b85d0ed9e51f8cce",
+     "actionsMin": 12.5,
+     "ci": [
+      {
+       "name": "Azure Pipelines",
+       "minutes": 130.6
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 283,
+  "ranHeads": 152,
+  "timed": 97,
+  "p50": 12.133333333333333,
+  "p75": 12.616666666666667,
+  "p90": 12.8,
+  "redRate": 0.046052631578947366,
+  "rerunRate": 0.013157894736842105,
+  "passedOnRerunRate": 0.006578947368421052,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.05921052631578947,
+  "botHeads": 0,
+  "lightHeads": 44,
+  "neverRan": 0,
+  "botPushes": 22,
+  "bots": [
+   [
+    "dotnet-policy-service[bot]",
+    22
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Format jit codebase",
+    97
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/jit-format.yml",
+  "redBy": [
+   [
+    "Format jit codebase",
+    7
+   ]
+  ],
+  "leftOut": [
+   "check-no-merge-label",
+   "check-service-labels",
+   "Labeler: Predict (Pulls)",
+   "Locker - Lock stale issues and PRs, unlock reopened ones"
+  ],
+  "heavyWorkflows": [
+   "Format jit codebase"
+  ],
+  "allPushesP50": 10.366666666666667
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0.08108108108108109,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 10.35,
+  "jobMinutes": 17.21666666666667,
+  "billedMinutes": 18,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.07326007326007326,
+  "setupMinPerJob": 0.6333333333333333,
+  "critical": {
+   "name": "Format jit codebase windows",
+   "minutes": 10.316666666666666,
+   "shareOfSpan": 0.9967793880837359
+  },
+  "longest": {
+   "name": "Format jit codebase windows",
+   "minutes": 10.316666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/jit-format.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Format jit codebase windows",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Format jit codebase windows",
+    "minutes": 10.4,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 10.3,
+    "setupMin": 0.7
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 10.4,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 10.3,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45574755662,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.4,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 0.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45557255954,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.5,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45551857930,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.3,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45537106639,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.7,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45533538677,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.6,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45532680869,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.1,
+    "path": [
+     "Format jit codebase windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Format jit codebase linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Format jit codebase windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 25,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": null,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": true,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": null,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": null,
+  "hints": [
+   {
+    "practice": "depCache",
+    "path": ".github/workflows/breaking-change-doc.lock.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/breaking-change-doc.lock.yml",
+   "pathFilters": ".github/workflows/jit-format.yml",
+   "affected": ".github/workflows/holistic-review.lock.yml",
+   "scheduled": ".github/workflows/backport.yml",
+   "frozenInstall": ".github/workflows/ci-eval.yml",
+   "timeouts": ".github/workflows/breaking-change-doc.lock.yml",
+   "agentRules": ".github/instructions/cdac.instructions.md"
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "depCache: .github/workflows/breaking-change-doc.lock.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    76
+   ],
+   [
+    "C++",
+    9
+   ],
+   [
+    "IL Assembly",
+    7
+   ],
+   [
+    "C",
+    7
+   ]
+  ],
+  "workspace": {
+   "packageManagers": null,
+   "tools": null
+  },
+  "packages": null,
+  "testRunners": [
+   "node:test"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Pylint"
+  ],
+  "libraries": [
+   {
+    "name": "@rollup/plugin-node-resolve",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "rollup",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@rollup/plugin-terser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@rollup/plugin-typescript",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@rollup/plugin-virtual",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@typescript-eslint/eslint-plugin",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@typescript-eslint/parser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "fast-glob",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "git-commit-info",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "magic-string",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "rollup-plugin-dts",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "terser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "tslib",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "wasm-feature-detect",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@babel/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-babel",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-commonjs",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-image",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-replace",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rollup/plugin-url",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md",
+   ".github/instructions"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "@microsoft/dotnet-runtime",
+     "path": "src/mono/browser/runtime/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "src/mono/sample/wasm/console-node/wwwroot/package.json",
+     "path": "src/mono/sample/wasm/console-node/wwwroot/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "project1",
+     "path": "src/mono/wasm/testassets/JavascriptBundlers/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@microsoft/dotnet-runtime",
+     "path": "src/native/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [
+    {
+     "id": "@microsoft/dotnet-runtime",
+     "dir": "src/mono/browser/runtime",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime",
+     "dir": "src/native",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "project1",
+     "dir": "src/mono/wasm/testassets/JavascriptBundlers",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "src/mono/sample/wasm/console-node/wwwroot/package.json",
+     "dir": "src/mono/sample/wasm/console-node/wwwroot",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 3,
+    "edges": null,
+    "packages": 4,
+    "packagesWithEntries": 2,
+    "filesRead": 1,
+    "undecided": 3
+   },
+   "nodes": [
+    {
+     "id": "@microsoft/dotnet-runtime#.",
+     "pkg": "@microsoft/dotnet-runtime",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "src/mono/browser/runtime/dotnet.d.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime#.",
+     "pkg": "@microsoft/dotnet-runtime",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "project1#.",
+     "pkg": "project1",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show",
+    "2 entries of 3 unknown, such as @microsoft/dotnet-runtime#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 10,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#format",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#lint",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#rollup:cmake",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "rollup:cmake",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#rollup:debug",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "rollup:debug",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#rollup:release",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "rollup:release",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime (src/native/)#rollup:stub",
+     "pkg": "@microsoft/dotnet-runtime (src/native/)",
+     "name": "rollup:stub",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime#format",
+     "pkg": "@microsoft/dotnet-runtime",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime#lint",
+     "pkg": "@microsoft/dotnet-runtime",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@microsoft/dotnet-runtime#rollup",
+     "pkg": "@microsoft/dotnet-runtime",
+     "name": "rollup",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "project1#build",
+     "pkg": "project1",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "project1#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Format jit codebase windows",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 10.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Format jit codebase linux",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Format jit codebase windows"
+   ],
+   "pathMinP50": 10.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 81,
+ "read": {
+  "calls": 81,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

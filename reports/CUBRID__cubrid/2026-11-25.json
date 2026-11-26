@@ -1,0 +1,1084 @@
+{
+ "repo": "CUBRID/cubrid",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "develop",
+ "unscored": "The repo keeps a config for CircleCI and Jenkins (`.circleci/config.yml`), and its GitHub Actions checks on pull requests are small for its size: a wait of 1.9 minutes, where about 34 minutes is typical for 1,588,000 lines. Its main checks likely run outside GitHub Actions, where the score can't read them.",
+ "profile": {
+  "ageYears": 10.8,
+  "stars": 291,
+  "forks": 143,
+  "languages": [
+   [
+    "C",
+    73
+   ],
+   [
+    "C++",
+    19
+   ],
+   [
+    "Java",
+    3
+   ],
+   [
+    "Yacc",
+    1
+   ]
+  ],
+  "linesOfCode": 1587577,
+  "files": 2517,
+  "sourceFiles": 1924,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1579532,
+   "tests": 8045,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.005067177113331224,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 77,
+  "commitsPerWeekYear": 19.5,
+  "pace": 3.6,
+  "activeAuthors28d": 25,
+  "prsOpenedPerWeek": 138.1,
+  "prsMergedPerWeek": 134.6,
+  "botShareOfMergedPrs": 6,
+  "openToMergeHours": {
+   "p50": 124.6,
+   "p90": 337.5,
+   "n": 94
+  },
+  "prRunsPerDay": 253.1,
+  "runsPerMergedPr": 13.2
+ },
+ "window": {
+  "days": 6.7,
+  "runs": 844,
+  "runsInPeriod": 844,
+  "truncated": false,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 802,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 24,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 61,
+   "setup": 100,
+   "queue": 90,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 375.1,
+  "prBilledMinutesPerDay": 859.5,
+  "jobMinutesPerMergedPr": 19.5,
+  "prVcpuMinutesPerDay": 1500.2,
+  "vcpuMinutesPerMergedPr": 78,
+  "expectedVcpuMinutesPerMergedPr": 1544,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 386,
+  "expectedWait": 33.8,
+  "workflowsOnPrs": 4
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "CircleCI",
+     "path": ".circleci/config.yml"
+    },
+    {
+     "ci": "Jenkins",
+     "path": "Jenkinsfile"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "37d85cef35e657314f9569d20f2c6415de0a74b7",
+     "actionsMin": 0.3,
+     "ci": [
+      {
+       "name": "AppVeyor",
+       "minutes": 0
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 768,
+  "ranHeads": 768,
+  "timed": 605,
+  "p50": 1.8666666666666667,
+  "p75": 2.0833333333333335,
+  "p90": 2.4166666666666665,
+  "redRate": 0.8216145833333334,
+  "rerunRate": 0.1015625,
+  "passedOnRerunRate": 0.09375,
+  "rerunsUnread": 47,
+  "cancelledRate": 0.013020833333333334,
+  "botHeads": 3,
+  "lightHeads": 72,
+  "neverRan": 0,
+  "botPushes": 3,
+  "bots": [
+   [
+    "cubrid-submodule-bot[bot]",
+    3
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "github-checks",
+    551
+   ],
+   [
+    "TC Merge Gate",
+    48
+   ],
+   [
+    "TC Branch Finalize",
+    4
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/check.yml",
+  "redBy": [
+   [
+    "TC Merge Gate",
+    633
+   ],
+   [
+    "github-checks",
+    25
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "github-checks"
+  ],
+  "allPushesP50": 1.8333333333333333
+ },
+ "main": {
+  "heads": 123,
+  "p50": 3.466666666666667,
+  "p90": 4.966666666666667,
+  "redRate": 0.032520325203252036,
+  "redBy": [
+   [
+    "gha-ci",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0.011494252873563218,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 1.9333333333333333,
+  "jobMinutes": 2.916666666666667,
+  "billedMinutes": 6,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 12,
+  "queueP90Sec": 14,
+  "setupShare": 0.7844311377245509,
+  "setupMinPerJob": 0.44000000000000006,
+  "critical": {
+   "name": "cppcheck",
+   "minutes": 1.7833333333333334,
+   "shareOfSpan": 0.9043478260869565
+  },
+  "longest": {
+   "name": "cppcheck",
+   "minutes": 1.7833333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/check.yml"
+  ],
+  "jobs": 5,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "cppcheck",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "cppcheck",
+    "minutes": 1.9,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.2,
+    "workMin": 1.8,
+    "setupMin": 1.5
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 1.9,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 1.8,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45693852844,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.9,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45692904151,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.9,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45668515663,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.9,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.7,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45652019682,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2.3,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.1,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45650216827,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45648972856,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2.1,
+    "path": [
+     "cppcheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "memory-monitor-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "code-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cppcheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.9,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-style",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "license",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 8,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": null,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/tc-branch-sync.yml",
+    "kind": "job"
+   },
+   {
+    "practice": "depCache",
+    "path": ".github/workflows/gha-ci.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/gha-ci-suite.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/gha-ci.yml",
+   "pathFilters": ".github/workflows/check.yml",
+   "draftSkip": ".github/workflows/tc-merge-gate.yml",
+   "scheduled": ".github/workflows/gha-ci.yml",
+   "compilerCache": ".github/workflows/gha-ci.yml",
+   "timeouts": ".github/workflows/gha-ci-suite.yml",
+   "testResults": ".github/workflows/gha-ci-suite.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "affected: .github/workflows/tc-branch-sync.yml hints at it, in a form the scorer doesn't check (job)",
+   "depCache: .github/workflows/gha-ci.yml hints at it, in a form the scorer doesn't check (word)",
+   "shardsConfigured: .github/workflows/gha-ci-suite.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    73
+   ],
+   [
+    "C++",
+    19
+   ],
+   [
+    "Java",
+    3
+   ],
+   [
+    "Yacc",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2517
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 5,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "pr-style",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "license",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "memory-monitor-check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "cppcheck",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "code-style",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "cppcheck"
+   ],
+   "pathMinP50": 1.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "9% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 89,
+ "read": {
+  "calls": 89,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

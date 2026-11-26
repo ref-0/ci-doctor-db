@@ -1,0 +1,3277 @@
+{
+ "repo": "rustfs/rustfs",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3,
+  "stars": 36493,
+  "forks": 1688,
+  "languages": [
+   [
+    "Rust",
+    94
+   ],
+   [
+    "Python",
+    4
+   ],
+   [
+    "Shell",
+    2
+   ],
+   [
+    "Makefile",
+    0
+   ]
+  ],
+  "linesOfCode": 2831170,
+  "files": 4114,
+  "sourceFiles": 2729,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2360556,
+   "tests": 274123,
+   "integration": 195427,
+   "support": 1063
+  },
+  "testShare": 0.16622569657225406,
+  "packages": {
+   "npm": 0,
+   "cargo": 60,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 123.8,
+  "pace": 2,
+  "activeAuthors28d": "≥15",
+  "prsOpenedPerWeek": 99.3,
+  "prsMergedPerWeek": 105,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 9.2,
+   "p90": 119.6,
+   "n": 100
+  },
+  "prRunsPerDay": 228,
+  "runsPerMergedPr": 15.2
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 1000,
+  "runsInPeriod": 1046,
+  "truncated": true,
+  "mainDays": 2.8
+ },
+ "size": "large",
+ "headsPerWeek": 423,
+ "score": 28,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 1,
+  "reliability": 58,
+  "efficiency": 78
+ },
+ "detail": {
+  "speed": {
+   "wait": 2,
+   "forSize": 0,
+   "tail": 4
+  },
+  "reliability": {
+   "flakes": 72,
+   "mainRed": 38
+  },
+  "efficiency": {
+   "minutesPerPr": 47,
+   "runsPerPr": 55,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 10530.5,
+  "prBilledMinutesPerDay": 10915.9,
+  "jobMinutesPerMergedPr": 702,
+  "prVcpuMinutesPerDay": 42121.9,
+  "vcpuMinutesPerMergedPr": 2807.9,
+  "expectedVcpuMinutesPerMergedPr": 1868.7,
+  "sizedShare": 0.28,
+  "expectedMinutesPerMergedPr": 467.2,
+  "expectedWait": 25.4,
+  "workflowsOnPrs": 6
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "the runners' sizes are known for 28% of job minutes, and the rest count as standard runners",
+   "9 reruns' first attempts weren't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 428,
+  "ranHeads": 421,
+  "timed": 213,
+  "p50": 108.28333333333333,
+  "p75": 124.08333333333333,
+  "p90": 137.65,
+  "redRate": 0.5581947743467933,
+  "rerunRate": 0.14014251781472684,
+  "passedOnRerunRate": 0.04071937563624024,
+  "rerunsUnread": 9,
+  "cancelledRate": 0.34441805225653205,
+  "botHeads": 1,
+  "lightHeads": 3,
+  "neverRan": 0,
+  "botPushes": 2,
+  "bots": [
+   [
+    "cursor[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Continuous Integration",
+    191
+   ],
+   [
+    "Windows Filesystem Tests",
+    18
+   ],
+   [
+    "S3-over-RDMA feature check",
+    4
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "Continuous Integration",
+    209
+   ],
+   [
+    "Windows Filesystem Tests",
+    23
+   ],
+   [
+    "Security Audit",
+    21
+   ]
+  ],
+  "leftOut": [
+   "CLA Check"
+  ],
+  "heavyWorkflows": [
+   "Continuous Integration"
+  ],
+  "allPushesP50": 107.55
+ },
+ "main": {
+  "heads": 205,
+  "p50": 32.45,
+  "p90": 165.4,
+  "redRate": 0.2682926829268293,
+  "redBy": [
+   [
+    "Continuous Integration",
+    53
+   ],
+   [
+    "Security Audit",
+    3
+   ],
+   [
+    "Cache Warm",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.004699738903394256,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 0.08333333333333333,
+  "jobMinutes": 0.05,
+  "billedMinutes": 1,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 1,
+  "setupMinPerJob": 0,
+  "critical": {
+   "name": "Cancel Closed PR Runs",
+   "minutes": 0.05,
+   "shareOfSpan": 0.5
+  },
+  "longest": {
+   "name": "Cancel Closed PR Runs",
+   "minutes": 0.05
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 22,
+  "edges": 64,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Cancel Closed PR Runs",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Cancel Closed PR Runs",
+    "minutes": 0.1,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 0.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 21,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45513516896,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45507043789,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45506986918,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45506966332,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45499830280,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45499795658,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "Cancel Closed PR Runs"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Cancel Closed PR Runs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 71,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/ci.yml",
+    "kind": "job"
+   },
+   {
+    "practice": "remoteCache",
+    "path": ".github/actions/setup/action.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/agent-v1-protocol-regression.yml",
+   "pathFilters": ".github/workflows/agent-v1-protocol-regression.yml",
+   "mergeQueue": ".github/workflows/ci.yml",
+   "scheduled": ".github/workflows/audit.yml",
+   "depCache": ".github/workflows/agent-v1-protocol-regression.yml",
+   "compilerCache": ".github/workflows/audit.yml",
+   "frozenInstall": ".github/workflows/build.yml",
+   "shardsConfigured": ".github/workflows/e2e-s3tests.yml",
+   "timeouts": ".github/workflows/agent-v1-protocol-regression.yml",
+   "testResults": ".github/workflows/ci.yml",
+   "depBotsBatched": ".github/dependabot.yml",
+   "agentRules": ".agents/skills/issue-triage/SKILL.md",
+   "preCommit": ".pre-commit-config.yaml"
+  },
+  "unknown": [
+   "Read the first 40 of 71 workflow files",
+   "affected: .github/workflows/ci.yml hints at it, in a form the scorer doesn't check (job)",
+   "remoteCache: .github/actions/setup/action.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    94
+   ],
+   [
+    "Python",
+    4
+   ],
+   [
+    "Shell",
+    2
+   ],
+   [
+    "Makefile",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip",
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace",
+    "just",
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 60,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "cargo nextest",
+   "cargo test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 44
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 42
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 41
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 34
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 33
+   },
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 24
+   },
+   {
+    "name": "hotpath",
+    "ecosystem": "cargo",
+    "packages": 24
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 22
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 22
+   },
+   {
+    "name": "http",
+    "ecosystem": "cargo",
+    "packages": 20
+   },
+   {
+    "name": "base64-simd",
+    "ecosystem": "cargo",
+    "packages": 19
+   },
+   {
+    "name": "futures",
+    "ecosystem": "cargo",
+    "packages": 19
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 19
+   },
+   {
+    "name": "async-trait",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "metrics",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "time",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "temp-env",
+    "ecosystem": "cargo",
+    "packages": 17
+   },
+   {
+    "name": "jiff",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "tokio-util",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 15
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-audit",
+     "path": "crates/audit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-s3-types",
+      "rustfs-targets"
+     ]
+    },
+    {
+     "name": "rustfs-checksums",
+     "path": "crates/checksums/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-common",
+     "path": "crates/common/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-concurrency",
+     "path": "crates/concurrency/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-io-core"
+     ]
+    },
+    {
+     "name": "rustfs-config",
+     "path": "crates/config/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-connect-symbol-catalog",
+     "path": "crates/connect-symbol-catalog/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-credentials",
+     "path": "crates/credentials/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-crypto",
+     "path": "crates/crypto/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-cuobject-sys",
+     "path": "crates/cuobject-sys/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-cuobject",
+     "path": "crates/cuobject/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-cuobject-sys"
+     ]
+    },
+    {
+     "name": "rustfs-data-usage",
+     "path": "crates/data-usage/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-filemeta"
+     ]
+    },
+    {
+     "name": "e2e_test",
+     "path": "crates/e2e_test/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-data-usage",
+      "rustfs-ecstore",
+      "rustfs-filemeta",
+      "rustfs-heal",
+      "rustfs-lock",
+      "rustfs-madmin",
+      "rustfs-protos",
+      "rustfs-rio",
+      "rustfs-s3-types",
+      "rustfs-signer",
+      "rustfs-utils",
+      "zstd"
+     ]
+    },
+    {
+     "name": "rustfs-ecstore",
+     "path": "crates/ecstore/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-concurrency",
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-crypto",
+      "rustfs-data-usage",
+      "rustfs-filemeta",
+      "rustfs-heal-contracts",
+      "rustfs-io-metrics",
+      "rustfs-lifecycle",
+      "rustfs-lock",
+      "rustfs-madmin",
+      "rustfs-object-capacity",
+      "rustfs-object-data-cache",
+      "rustfs-policy",
+      "rustfs-protos",
+      "rustfs-replication",
+      "rustfs-rio",
+      "rustfs-rio-v2",
+      "rustfs-s3-client",
+      "rustfs-s3-ops",
+      "rustfs-s3-types",
+      "rustfs-scanner-metrics",
+      "rustfs-signer",
+      "rustfs-storage-api",
+      "rustfs-tls-runtime",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-extension-schema",
+     "path": "crates/extension-schema/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-filemeta",
+     "path": "crates/filemeta/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-gateway-adapter",
+     "path": "crates/gateway-adapter/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-credentials",
+      "rustfs-iam",
+      "rustfs-keystone",
+      "rustfs-policy"
+     ]
+    },
+    {
+     "name": "rustfs-heal-contracts",
+     "path": "crates/heal-contracts/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-heal",
+     "path": "crates/heal/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-concurrency",
+      "rustfs-config",
+      "rustfs-ecstore",
+      "rustfs-filemeta",
+      "rustfs-heal-contracts",
+      "rustfs-io-metrics",
+      "rustfs-lock",
+      "rustfs-madmin",
+      "rustfs-rio",
+      "rustfs-storage-api",
+      "rustfs-test-utils",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-iam",
+     "path": "crates/iam/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-crypto",
+      "rustfs-ecstore",
+      "rustfs-io-metrics",
+      "rustfs-madmin",
+      "rustfs-policy",
+      "rustfs-storage-api",
+      "rustfs-test-utils",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-io-core",
+     "path": "crates/io-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-io-metrics"
+     ]
+    },
+    {
+     "name": "rustfs-io-metrics",
+     "path": "crates/io-metrics/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-s3-ops"
+     ]
+    },
+    {
+     "name": "rustfs-keystone",
+     "path": "crates/keystone/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-credentials",
+      "rustfs-policy",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-kms",
+     "path": "crates/kms/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-s3-types",
+      "rustfs-security-governance",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-license",
+     "path": "crates/license/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-lifecycle",
+     "path": "crates/lifecycle/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-replication",
+      "rustfs-scanner-metrics",
+      "rustfs-storage-api"
+     ]
+    },
+    {
+     "name": "rustfs-lock",
+     "path": "crates/lock/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-io-metrics",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-log-analyzer",
+     "path": "crates/log-analyzer/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "zstd"
+     ]
+    },
+    {
+     "name": "rustfs-madmin",
+     "path": "crates/madmin/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-signer"
+     ]
+    },
+    {
+     "name": "rustfs-nixl",
+     "path": "crates/nixl/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-notify",
+     "path": "crates/notify/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-ecstore",
+      "rustfs-s3-ops",
+      "rustfs-s3-types",
+      "rustfs-targets",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-object-capacity",
+     "path": "crates/object-capacity/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-io-metrics",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-object-data-cache",
+     "path": "crates/object-data-cache/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-obs",
+     "path": "crates/obs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-audit",
+      "rustfs-common",
+      "rustfs-config",
+      "rustfs-ecstore",
+      "rustfs-heal-contracts",
+      "rustfs-iam",
+      "rustfs-io-metrics",
+      "rustfs-notify",
+      "rustfs-scanner-metrics",
+      "rustfs-security-governance",
+      "rustfs-storage-api",
+      "rustfs-utils",
+      "zstd"
+     ]
+    },
+    {
+     "name": "rustfs-policy",
+     "path": "crates/policy/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-crypto"
+     ]
+    },
+    {
+     "name": "rustfs-protocols",
+     "path": "crates/protocols/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-ecstore",
+      "rustfs-iam",
+      "rustfs-keystone",
+      "rustfs-policy",
+      "rustfs-rio",
+      "rustfs-s3-types",
+      "rustfs-storage-api",
+      "rustfs-test-utils",
+      "rustfs-tls-runtime",
+      "rustfs-trusted-proxies",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-protos",
+     "path": "crates/protos/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-config",
+      "rustfs-heal-contracts",
+      "rustfs-io-metrics",
+      "rustfs-tls-runtime",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-replication",
+     "path": "crates/replication/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-rio-v2",
+     "path": "crates/rio-v2/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-filemeta",
+      "rustfs-rio",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-rio",
+     "path": "crates/rio/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-io-metrics",
+      "rustfs-tls-runtime",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-s3-client",
+     "path": "crates/s3-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-checksums",
+      "rustfs-config",
+      "rustfs-rio",
+      "rustfs-s3-types",
+      "rustfs-signer",
+      "rustfs-storage-api",
+      "rustfs-tls-runtime",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-s3-ops",
+     "path": "crates/s3-ops/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-s3-types"
+     ]
+    },
+    {
+     "name": "rustfs-s3-types",
+     "path": "crates/s3-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-s3select-api",
+     "path": "crates/s3select-api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-ecstore",
+      "rustfs-s3-types",
+      "rustfs-storage-api",
+      "rustfs-test-utils"
+     ]
+    },
+    {
+     "name": "rustfs-s3select-query",
+     "path": "crates/s3select-query/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-s3select-api",
+      "rustfs-test-utils"
+     ]
+    },
+    {
+     "name": "rustfs-scanner-metrics",
+     "path": "crates/scanner-metrics/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-heal-contracts"
+     ]
+    },
+    {
+     "name": "rustfs-scanner",
+     "path": "crates/scanner/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-concurrency",
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-data-usage",
+      "rustfs-ecstore",
+      "rustfs-filemeta",
+      "rustfs-heal",
+      "rustfs-heal-contracts",
+      "rustfs-lifecycle",
+      "rustfs-lock",
+      "rustfs-obs",
+      "rustfs-s3-types",
+      "rustfs-scanner-metrics",
+      "rustfs-storage-api",
+      "rustfs-test-utils",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-security-governance",
+     "path": "crates/security-governance/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-signer",
+     "path": "crates/signer/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-s3-types",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-sse",
+     "path": "crates/sse/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-kms",
+      "rustfs-policy",
+      "rustfs-s3-types",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-storage-api",
+     "path": "crates/storage-api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-filemeta"
+     ]
+    },
+    {
+     "name": "rustfs-targets",
+     "path": "crates/targets/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-extension-schema",
+      "rustfs-s3-types",
+      "rustfs-tls-runtime",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-test-utils",
+     "path": "crates/test-utils/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-data-usage",
+      "rustfs-ecstore",
+      "rustfs-storage-api"
+     ]
+    },
+    {
+     "name": "rustfs-tls-runtime",
+     "path": "crates/tls-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-common",
+      "rustfs-config"
+     ]
+    },
+    {
+     "name": "rustfs-trusted-proxies",
+     "path": "crates/trusted-proxies/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-config",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs-utils",
+     "path": "crates/utils/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "zstd"
+     ]
+    },
+    {
+     "name": "rustfs-zip",
+     "path": "crates/zip/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-rio"
+     ]
+    },
+    {
+     "name": "zstd",
+     "path": "crates/zstd-compat/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "rustfs-fuzz",
+     "path": "fuzz/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-ecstore",
+      "rustfs-filemeta",
+      "rustfs-policy",
+      "rustfs-security-governance",
+      "rustfs-utils"
+     ]
+    },
+    {
+     "name": "rustfs",
+     "path": "rustfs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "rustfs-audit",
+      "rustfs-common",
+      "rustfs-concurrency",
+      "rustfs-config",
+      "rustfs-credentials",
+      "rustfs-crypto",
+      "rustfs-cuobject",
+      "rustfs-data-usage",
+      "rustfs-ecstore",
+      "rustfs-extension-schema",
+      "rustfs-filemeta",
+      "rustfs-gateway-adapter",
+      "rustfs-heal",
+      "rustfs-heal-contracts",
+      "rustfs-iam",
+      "rustfs-io-core",
+      "rustfs-io-metrics",
+      "rustfs-keystone",
+      "rustfs-kms",
+      "rustfs-license",
+      "rustfs-lock",
+      "rustfs-log-analyzer",
+      "rustfs-madmin",
+      "rustfs-nixl",
+      "rustfs-notify",
+      "rustfs-object-capacity",
+      "rustfs-object-data-cache",
+      "rustfs-obs",
+      "rustfs-policy",
+      "rustfs-protocols",
+      "rustfs-protos",
+      "rustfs-rio",
+      "rustfs-s3-client",
+      "rustfs-s3-ops",
+      "rustfs-s3-types",
+      "rustfs-s3select-api",
+      "rustfs-s3select-query",
+      "rustfs-scanner",
+      "rustfs-scanner-metrics",
+      "rustfs-security-governance",
+      "rustfs-signer",
+      "rustfs-sse",
+      "rustfs-storage-api",
+      "rustfs-targets",
+      "rustfs-test-utils",
+      "rustfs-tls-runtime",
+      "rustfs-trusted-proxies",
+      "rustfs-utils",
+      "rustfs-zip",
+      "zstd"
+     ]
+    }
+   ],
+   "count": 60,
+   "edges": 255,
+   "cycles": [],
+   "maxDepth": 10,
+   "topFanIn": [
+    {
+     "name": "rustfs-utils",
+     "ecosystem": "cargo",
+     "dependents": 23
+    },
+    {
+     "name": "rustfs-config",
+     "ecosystem": "cargo",
+     "dependents": 21
+    },
+    {
+     "name": "rustfs-s3-types",
+     "ecosystem": "cargo",
+     "dependents": 14
+    },
+    {
+     "name": "rustfs-ecstore",
+     "ecosystem": "cargo",
+     "dependents": 11
+    },
+    {
+     "name": "rustfs-storage-api",
+     "ecosystem": "cargo",
+     "dependents": 11
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 60,
+    "edges": 255
+   },
+   "nodes": [
+    {
+     "id": "rustfs-utils",
+     "dir": "crates/utils",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 23,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-config",
+     "dir": "crates/config",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 21,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-s3-types",
+     "dir": "crates/s3-types",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 14,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-ecstore",
+     "dir": "crates/ecstore",
+     "ecosystem": "cargo",
+     "dependencies": 27,
+     "dependents": 11,
+     "depth": 5
+    },
+    {
+     "id": "rustfs-storage-api",
+     "dir": "crates/storage-api",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 11,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-io-metrics",
+     "dir": "crates/io-metrics",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 10,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-common",
+     "dir": "crates/common",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 9,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-credentials",
+     "dir": "crates/credentials",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 9,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-filemeta",
+     "dir": "crates/filemeta",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 9,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-policy",
+     "dir": "crates/policy",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 8,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-rio",
+     "dir": "crates/rio",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 8,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-heal-contracts",
+     "dir": "crates/heal-contracts",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-test-utils",
+     "dir": "crates/test-utils",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 7,
+     "depth": 6
+    },
+    {
+     "id": "rustfs-tls-runtime",
+     "dir": "crates/tls-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 7,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-data-usage",
+     "dir": "crates/data-usage",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-lock",
+     "dir": "crates/lock",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 5,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-madmin",
+     "dir": "crates/madmin",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-scanner-metrics",
+     "dir": "crates/scanner-metrics",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-signer",
+     "dir": "crates/signer",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 5,
+     "depth": 2
+    },
+    {
+     "id": "zstd",
+     "dir": "crates/zstd-compat",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-concurrency",
+     "dir": "crates/concurrency",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 4
+    },
+    {
+     "id": "rustfs-crypto",
+     "dir": "crates/crypto",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-iam",
+     "dir": "crates/iam",
+     "ecosystem": "cargo",
+     "dependencies": 10,
+     "dependents": 4,
+     "depth": 7
+    },
+    {
+     "id": "rustfs-s3-ops",
+     "dir": "crates/s3-ops",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-security-governance",
+     "dir": "crates/security-governance",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-heal",
+     "dir": "crates/heal",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 3,
+     "depth": 7
+    },
+    {
+     "id": "rustfs-keystone",
+     "dir": "crates/keystone",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-protos",
+     "dir": "crates/protos",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 3,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-targets",
+     "dir": "crates/targets",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-audit",
+     "dir": "crates/audit",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-extension-schema",
+     "dir": "crates/extension-schema",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-io-core",
+     "dir": "crates/io-core",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-kms",
+     "dir": "crates/kms",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-lifecycle",
+     "dir": "crates/lifecycle",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 4
+    },
+    {
+     "id": "rustfs-notify",
+     "dir": "crates/notify",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "rustfs-object-capacity",
+     "dir": "crates/object-capacity",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-object-data-cache",
+     "dir": "crates/object-data-cache",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-obs",
+     "dir": "crates/obs",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 2,
+     "depth": 8
+    },
+    {
+     "id": "rustfs-replication",
+     "dir": "crates/replication",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-s3-client",
+     "dir": "crates/s3-client",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 2,
+     "depth": 4
+    },
+    {
+     "id": "rustfs-s3select-api",
+     "dir": "crates/s3select-api",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 2,
+     "depth": 7
+    },
+    {
+     "id": "rustfs-trusted-proxies",
+     "dir": "crates/trusted-proxies",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "rustfs-checksums",
+     "dir": "crates/checksums",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-cuobject",
+     "dir": "crates/cuobject",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-cuobject-sys",
+     "dir": "crates/cuobject-sys",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-gateway-adapter",
+     "dir": "crates/gateway-adapter",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "rustfs-license",
+     "dir": "crates/license",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-log-analyzer",
+     "dir": "crates/log-analyzer",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "rustfs-nixl",
+     "dir": "crates/nixl",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-protocols",
+     "dir": "crates/protocols",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "rustfs-rio-v2",
+     "dir": "crates/rio-v2",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "rustfs-s3select-query",
+     "dir": "crates/s3select-query",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "rustfs-scanner",
+     "dir": "crates/scanner",
+     "ecosystem": "cargo",
+     "dependencies": 17,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "rustfs-sse",
+     "dir": "crates/sse",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "rustfs-zip",
+     "dir": "crates/zip",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "e2e_test",
+     "dir": "crates/e2e_test",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "rustfs",
+     "dir": "rustfs",
+     "ecosystem": "cargo",
+     "dependencies": 50,
+     "dependents": 0,
+     "depth": 10
+    },
+    {
+     "id": "rustfs-connect-symbol-catalog",
+     "dir": "crates/connect-symbol-catalog",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "rustfs-fuzz",
+     "dir": "fuzz",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 6
+    }
+   ],
+   "edges": [
+    {
+     "from": "rustfs-audit",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-audit",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-audit",
+     "to": "rustfs-targets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-concurrency",
+     "to": "rustfs-io-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-cuobject",
+     "to": "rustfs-cuobject-sys",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-data-usage",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-data-usage",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-heal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-lock",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-madmin",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-protos",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-signer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "e2e_test",
+     "to": "zstd",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-concurrency",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-crypto",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-data-usage",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-lifecycle",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-lock",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-madmin",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-object-capacity",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-object-data-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-protos",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-replication",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-rio-v2",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-s3-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-s3-ops",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-scanner-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-signer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-ecstore",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-filemeta",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-filemeta",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-gateway-adapter",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-gateway-adapter",
+     "to": "rustfs-iam",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-gateway-adapter",
+     "to": "rustfs-keystone",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-gateway-adapter",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-concurrency",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-lock",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-madmin",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-heal",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-crypto",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-madmin",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-iam",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-io-core",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-io-metrics",
+     "to": "rustfs-s3-ops",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-keystone",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-keystone",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-keystone",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-kms",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-kms",
+     "to": "rustfs-security-governance",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-kms",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lifecycle",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lifecycle",
+     "to": "rustfs-replication",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lifecycle",
+     "to": "rustfs-scanner-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lifecycle",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lock",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lock",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-lock",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-log-analyzer",
+     "to": "zstd",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-madmin",
+     "to": "rustfs-signer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-s3-ops",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-targets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-notify",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-object-capacity",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-object-capacity",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-object-capacity",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-audit",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-iam",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-notify",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-scanner-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-security-governance",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-obs",
+     "to": "zstd",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-policy",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-policy",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-policy",
+     "to": "rustfs-crypto",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-iam",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-keystone",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-trusted-proxies",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protocols",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-protos",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio-v2",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio-v2",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio-v2",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-rio",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-checksums",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-signer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-client",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3-ops",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-api",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-api",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-api",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-api",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-api",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-query",
+     "to": "rustfs-s3select-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-s3select-query",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner-metrics",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-concurrency",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-data-usage",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-heal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-lifecycle",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-lock",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-obs",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-scanner-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-scanner",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-signer",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-signer",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-sse",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-sse",
+     "to": "rustfs-kms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-sse",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-sse",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-sse",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-storage-api",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-targets",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-targets",
+     "to": "rustfs-extension-schema",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-targets",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-targets",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-targets",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-test-utils",
+     "to": "rustfs-data-usage",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-test-utils",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-test-utils",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-tls-runtime",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-tls-runtime",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-trusted-proxies",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-trusted-proxies",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-utils",
+     "to": "zstd",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-zip",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-fuzz",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-fuzz",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-fuzz",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-fuzz",
+     "to": "rustfs-security-governance",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs-fuzz",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-audit",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-concurrency",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-credentials",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-crypto",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-cuobject",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-data-usage",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-ecstore",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-extension-schema",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-filemeta",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-gateway-adapter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-heal",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-heal-contracts",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-iam",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-io-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-io-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-keystone",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-kms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-license",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-lock",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-log-analyzer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-madmin",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-nixl",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-notify",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-object-capacity",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-object-data-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-obs",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-policy",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-protocols",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-protos",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-rio",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-s3-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-s3-ops",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-s3-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-s3select-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-s3select-query",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-scanner",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-scanner-metrics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-security-governance",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-signer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-sse",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-storage-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-targets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-test-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-tls-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-trusted-proxies",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "rustfs-zip",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "rustfs",
+     "to": "zstd",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 10,
+   "chain": [
+    "rustfs",
+    "rustfs-scanner",
+    "rustfs-obs",
+    "rustfs-iam",
+    "rustfs-test-utils",
+    "rustfs-ecstore",
+    "rustfs-concurrency",
+    "rustfs-io-core",
+    "rustfs-io-metrics",
+    "rustfs-s3-ops",
+    "rustfs-s3-types"
+   ],
+   "topFanIn": [
+    {
+     "name": "rustfs-utils",
+     "ecosystem": "cargo",
+     "dependents": 23
+    },
+    {
+     "name": "rustfs-config",
+     "ecosystem": "cargo",
+     "dependents": 21
+    },
+    {
+     "name": "rustfs-s3-types",
+     "ecosystem": "cargo",
+     "dependents": 14
+    },
+    {
+     "name": "rustfs-ecstore",
+     "ecosystem": "cargo",
+     "dependents": 11
+    },
+    {
+     "name": "rustfs-storage-api",
+     "ecosystem": "cargo",
+     "dependents": 11
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 4114
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 22,
+    "edges": 64,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Cancel Closed PR Runs",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Cancel Closed PR Runs"
+   ],
+   "pathMinP50": 0.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 186,
+ "read": {
+  "calls": 186,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

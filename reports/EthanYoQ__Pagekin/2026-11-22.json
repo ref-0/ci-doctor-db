@@ -1,0 +1,2069 @@
+{
+ "repo": "EthanYoQ/Pagekin",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 0.4,
+  "stars": 2771,
+  "forks": 333,
+  "languages": [
+   [
+    "TypeScript",
+    77
+   ],
+   [
+    "JavaScript",
+    20
+   ],
+   [
+    "PowerShell",
+    2
+   ],
+   [
+    "CSS",
+    1
+   ]
+  ],
+  "linesOfCode": 788755,
+  "files": 2473,
+  "sourceFiles": 1725,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 391609,
+   "tests": 374570,
+   "integration": 12935,
+   "support": 9641
+  },
+  "testShare": 0.5035095389984182,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 101.5,
+  "pace": 7,
+  "activeAuthors28d": "≥1",
+  "prsOpenedPerWeek": 88,
+  "prsMergedPerWeek": 94,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.9,
+   "p90": 12.5,
+   "n": 94
+  },
+  "prRunsPerDay": 41.7,
+  "runsPerMergedPr": 3.1
+ },
+ "window": {
+  "days": 7,
+  "runs": 290,
+  "runsInPeriod": 290,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 292,
+ "score": 71,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 56,
+  "reliability": 100,
+  "efficiency": 85
+ },
+ "detail": {
+  "speed": {
+   "wait": 52,
+   "forSize": 60,
+   "tail": 64
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": 0
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1270.1,
+  "prBilledMinutesPerDay": 1402.1,
+  "jobMinutesPerMergedPr": 94.6,
+  "expectedMinutesPerMergedPr": 306.4,
+  "expectedWait": 17.5,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 290,
+  "timed": 197,
+  "p50": 16.766666666666666,
+  "p75": 18.45,
+  "p90": 19.783333333333335,
+  "redRate": 0.034482758620689655,
+  "rerunRate": 0.0034482758620689655,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.31724137931034485,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "PR CI",
+    197
+   ]
+  ],
+  "redBy": [
+   [
+    "PR CI",
+    10
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "PR CI"
+  ],
+  "allPushesP50": 16.766666666666666
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 6,
+  "spanMin": 17.9,
+  "jobMinutes": 39.71666666666666,
+  "billedMinutes": 43,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.05306603773584906,
+  "critical": {
+   "name": "Desktop PR CI (Windows)",
+   "minutes": 0.05,
+   "shareOfSpan": 0.00272975432211101
+  },
+  "longest": {
+   "name": "Windows tests (1/4)",
+   "minutes": 17.583333333333332
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    36
+   ]
+  ],
+  "shard": {
+   "name": "Windows tests (#)",
+   "shards": 4,
+   "medianMin": 6.766666666666667,
+   "maxMin": 17.583333333333332,
+   "maxOverMedian": 2.418859649122807,
+   "idleTail": 0.41885766092475063
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/pr-ci.yml"
+  ],
+  "jobs": 4,
+  "edges": 5,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Desktop PR CI (Windows)",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Detect docs-only changes",
+    "minutes": 0.2,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0
+   },
+   {
+    "name": "Windows tests (1/4)",
+    "minutes": 17.6,
+    "share": 0.98,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 17.6,
+    "setupMin": 0.7
+   },
+   {
+    "name": "Desktop PR CI (Windows)",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 17.8,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 3,
+  "pathMinP50": 17.9,
+  "blockedMinP50": 17.8,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 17.8,
+  "setupInPathMinP50": 0.7,
+  "topBlockers": [
+   {
+    "name": "Windows tests (…/…)",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 6,
+    "tookMin": 17.6,
+    "heldJobMin": 17.6
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44976190271,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.9,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.4,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 17.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.6,
+      "setupMin": 0.8,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 17.8,
+      "createdMin": 17.8,
+      "startMin": 17.9,
+      "endMin": 17.9,
+      "blockedMin": 17.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44951071893,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.5,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 20.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.1,
+      "setupMin": 0.8,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.4,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 20.4,
+      "createdMin": 20.4,
+      "startMin": 20.4,
+      "endMin": 20.5,
+      "blockedMin": 20.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44945530848,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18.3,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.6,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18,
+      "setupMin": 0.7,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.4,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 0.6,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 18.2,
+      "createdMin": 18.2,
+      "startMin": 18.3,
+      "endMin": 18.3,
+      "blockedMin": 18.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44941728009,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.4,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 16.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.6,
+      "setupMin": 0.6,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 16.9,
+      "createdMin": 16.9,
+      "startMin": 16.9,
+      "endMin": 17,
+      "blockedMin": 16.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44941089952,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15.2,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.4,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.1,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 15.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.9,
+      "setupMin": 0.6,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 15.1,
+      "createdMin": 15.1,
+      "startMin": 15.2,
+      "endMin": 15.2,
+      "blockedMin": 15.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44939544306,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18.8,
+    "path": [
+     "Detect docs-only changes",
+     "Windows tests (1/4)",
+     "Desktop PR CI (Windows)"
+    ],
+    "topBlocker": "Windows tests (…/…)",
+    "jobs": [
+     {
+      "name": "Detect docs-only changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 10.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 0.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows tests (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 18.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.4,
+      "setupMin": 0.8,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "Desktop PR CI (Windows)",
+      "needs": [
+       "changes",
+       "desktop-tests",
+       "docs-tests"
+      ],
+      "readyMin": 18.8,
+      "createdMin": 18.8,
+      "startMin": 18.8,
+      "endMin": 18.8,
+      "blockedMin": 18.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 281,
+  "over10s": 20,
+  "top": [
+   {
+    "file": "electron/services/__tests__/project-archive-service.test.ts",
+    "sec": 101.316,
+    "job": "Windows tests (4/4)"
+   },
+   {
+    "file": "scripts/__tests__/smoke-win-installer.test.ts",
+    "sec": 96.469,
+    "job": "Windows tests (4/4)"
+   },
+   {
+    "file": "electron/services/__tests__/main-generation-owner.test.ts",
+    "sec": 83.439,
+    "job": "Windows tests (4/4)"
+   },
+   {
+    "file": "scripts/__tests__/release-win-verify.test.ts",
+    "sec": 67.059,
+    "job": "Windows tests (4/4)"
+   },
+   {
+    "file": "electron/services/__tests__/project-peek-readonly.test.ts",
+    "sec": 51.03,
+    "job": "Windows tests (1/4)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    77
+   ],
+   [
+    "JavaScript",
+    20
+   ],
+   [
+    "PowerShell",
+    2
+   ],
+   [
+    "CSS",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm"
+   ],
+   "tools": [
+    "pnpm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test"
+  ],
+  "lintFormat": [
+   "ESLint"
+  ],
+  "libraries": [
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "react-dom",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@chromatic-com/storybook",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/lang-markdown",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/language",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/language-data",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/search",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/state",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@codemirror/view",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/cordis",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/cordis-plugin-include",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/cordis-plugin-loader",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-agent",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-agent-instructions",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-agent-loop",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-agent-presets",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-api-gateway",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-atomic-write",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-attachment",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@deepseek-ai/dsh-brand",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    36
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".claude/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "ai-novel-writer",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@ethanyoq/dsh-ai-novel-writer",
+     "path": "plugins/dsh-ai-novel-writer/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 6,
+      "root": true
+     }
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer",
+     "dir": "plugins/dsh-ai-novel-writer",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "ai-novel-writer"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 7,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 2,
+    "filesRead": 12
+   },
+   "nodes": [
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#.",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/dsh-ai-novel-writer/src/index.ts",
+     "guessed": true,
+     "reexports": 6,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#./agent",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": "./agent",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/dsh-ai-novel-writer/src/agent.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#./agent-v2",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": "./agent-v2",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/dsh-ai-novel-writer/src/agent-v2.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#./cordis.patch.yml",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": "./cordis.patch.yml",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/dsh-ai-novel-writer/cordis.patch.yml",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#./package.json",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": "./package.json",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/dsh-ai-novel-writer/package.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#./client",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "key": "./client",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "ai-novel-writer#.",
+     "pkg": "ai-novel-writer",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "2 entries of 7 unknown, such as @ethanyoq/dsh-ai-novel-writer#./client: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 32,
+    "edges": 10,
+    "cached": 0,
+    "trackedFiles": 2473
+   },
+   "nodes": [
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#build",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#bundle",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "name": "bundle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#qualify",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "name": "qualify",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#test",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@ethanyoq/dsh-ai-novel-writer#typecheck",
+     "pkg": "@ethanyoq/dsh-ai-novel-writer",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#build",
+     "pkg": "ai-novel-writer",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#build-storybook",
+     "pkg": "ai-novel-writer",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#build:mac:arm64:artifacts",
+     "pkg": "ai-novel-writer",
+     "name": "build:mac:arm64:artifacts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "ai-novel-writer#build:mac:artifacts",
+     "pkg": "ai-novel-writer",
+     "name": "build:mac:artifacts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "ai-novel-writer#build:mac:x64:artifacts",
+     "pkg": "ai-novel-writer",
+     "name": "build:mac:x64:artifacts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "ai-novel-writer#build:win",
+     "pkg": "ai-novel-writer",
+     "name": "build:win",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "ai-novel-writer#build:win-dir",
+     "pkg": "ai-novel-writer",
+     "name": "build:win-dir",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "ai-novel-writer#build:win:artifacts",
+     "pkg": "ai-novel-writer",
+     "name": "build:win:artifacts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#check:i18n",
+     "pkg": "ai-novel-writer",
+     "name": "check:i18n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#clean:build",
+     "pkg": "ai-novel-writer",
+     "name": "clean:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#dev",
+     "pkg": "ai-novel-writer",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#lint",
+     "pkg": "ai-novel-writer",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#postinstall",
+     "pkg": "ai-novel-writer",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#preview",
+     "pkg": "ai-novel-writer",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#release:win:verify",
+     "pkg": "ai-novel-writer",
+     "name": "release:win:verify",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#smoke:mac-dmg",
+     "pkg": "ai-novel-writer",
+     "name": "smoke:mac-dmg",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#smoke:win-app",
+     "pkg": "ai-novel-writer",
+     "name": "smoke:win-app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#smoke:win-installer",
+     "pkg": "ai-novel-writer",
+     "name": "smoke:win-installer",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#smoke:win-v025-upgrade",
+     "pkg": "ai-novel-writer",
+     "name": "smoke:win-v025-upgrade",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#storybook",
+     "pkg": "ai-novel-writer",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#test",
+     "pkg": "ai-novel-writer",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#test:browser",
+     "pkg": "ai-novel-writer",
+     "name": "test:browser",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#typecheck",
+     "pkg": "ai-novel-writer",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#verify:drive",
+     "pkg": "ai-novel-writer",
+     "name": "verify:drive",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#verify:github-update-release",
+     "pkg": "ai-novel-writer",
+     "name": "verify:github-update-release",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#verify:win-package",
+     "pkg": "ai-novel-writer",
+     "name": "verify:win-package",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "ai-novel-writer#verify:win-update-artifacts",
+     "pkg": "ai-novel-writer",
+     "name": "verify:win-update-artifacts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@ethanyoq/dsh-ai-novel-writer#test",
+     "to": "@ethanyoq/dsh-ai-novel-writer#build",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:win",
+     "to": "ai-novel-writer#release:win:verify",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:win-dir",
+     "to": "ai-novel-writer#clean:build",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:win-dir",
+     "to": "ai-novel-writer#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:win-dir",
+     "to": "ai-novel-writer#verify:win-package",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:mac:artifacts",
+     "to": "ai-novel-writer#build:mac:arm64:artifacts",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:mac:arm64:artifacts",
+     "to": "ai-novel-writer#clean:build",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:mac:arm64:artifacts",
+     "to": "ai-novel-writer#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:mac:x64:artifacts",
+     "to": "ai-novel-writer#clean:build",
+     "how": "calls"
+    },
+    {
+     "from": "ai-novel-writer#build:mac:x64:artifacts",
+     "to": "ai-novel-writer#typecheck",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "ai-novel-writer#build:mac:artifacts",
+    "ai-novel-writer#build:mac:arm64:artifacts",
+    "ai-novel-writer#clean:build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 5,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Detect docs-only changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows tests (3/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 6.8,
+     "runner": "windows-2022",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows tests (4/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 11.4,
+     "runner": "windows-2022",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows tests (2/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 6.2,
+     "runner": "windows-2022",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows tests (1/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 17.6,
+     "runner": "windows-2022",
+     "vcpus": 4
+    },
+    {
+     "id": "Desktop PR CI (Windows)",
+     "needs": [
+      "changes",
+      "desktop-tests",
+      "docs-tests"
+     ],
+     "onPath": true,
+     "blockedMin": 17.8,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Windows tests (3/4)",
+     "to": "changes"
+    },
+    {
+     "from": "Windows tests (4/4)",
+     "to": "changes"
+    },
+    {
+     "from": "Windows tests (2/4)",
+     "to": "changes"
+    },
+    {
+     "from": "Windows tests (1/4)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop PR CI (Windows)",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop PR CI (Windows)",
+     "to": "desktop-tests"
+    },
+    {
+     "from": "Desktop PR CI (Windows)",
+     "to": "docs-tests"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Detect docs-only changes",
+    "Windows tests (1/4)",
+    "Desktop PR CI (Windows)"
+   ],
+   "pathMinP50": 17.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 12,
+   "calls": 2
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Windows tests (#)\": the slowest shard takes 2.42× the median, 42% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "20 test files take over 10 s; the slowest, electron/services/__tests__/project-archive-service.test.ts, takes 101 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 39,
+ "read": {
+  "calls": 39,
+  "fromCache": 0
+ }
+}

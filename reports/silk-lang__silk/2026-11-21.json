@@ -1,0 +1,2397 @@
+{
+ "repo": "silk-lang/silk",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.3,
+  "stars": 105,
+  "forks": 3,
+  "languages": [
+   [
+    "C",
+    56
+   ],
+   [
+    "TypeScript",
+    21
+   ],
+   [
+    "JavaScript",
+    12
+   ],
+   [
+    "Python",
+    6
+   ]
+  ],
+  "linesOfCode": 107586,
+  "files": 6213,
+  "sourceFiles": 150,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 91838,
+   "tests": 6233,
+   "integration": 5427,
+   "support": 4087
+  },
+  "testShare": 0.1463718493819365,
+  "packages": {
+   "npm": 1,
+   "cargo": 1,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 198.7,
+  "pace": 1.3,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 169,
+  "prsMergedPerWeek": 160,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 1.7,
+   "p90": 7.5,
+   "n": 100
+  },
+  "prRunsPerDay": 136.7,
+  "runsPerMergedPr": 6
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 943,
+  "runsInPeriod": 944,
+  "truncated": false,
+  "mainDays": 6.8
+ },
+ "size": "large",
+ "headsPerWeek": 521,
+ "score": 41,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 11,
+  "reliability": 100,
+  "efficiency": 72
+ },
+ "detail": {
+  "speed": {
+   "wait": 14,
+   "forSize": 0,
+   "tail": 28
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 26,
+   "runsPerPr": 93,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 8521.1,
+  "prBilledMinutesPerDay": 8880,
+  "jobMinutesPerMergedPr": 372.8,
+  "expectedMinutesPerMergedPr": 158.8,
+  "expectedWait": 11.1,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 514,
+  "timed": 211,
+  "p50": 46.55,
+  "p75": 50.8,
+  "p90": 54.88333333333333,
+  "redRate": 0.07782101167315175,
+  "rerunRate": 0.009727626459143969,
+  "passedOnRerunRate": 0.009727626459143969,
+  "cancelledRate": 0.3832684824902724,
+  "botHeads": 0,
+  "lightHeads": 1,
+  "neverRan": 0,
+  "botPushes": 100,
+  "bots": [
+   [
+    "github-actions[bot]",
+    100
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Selfhost Silk",
+    209
+   ],
+   [
+    "Bundled LLVM",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Selfhost Silk",
+    40
+   ],
+   [
+    "Bundled LLVM",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Selfhost Silk"
+  ],
+  "allPushesP50": 46.53333333333333
+ },
+ "main": {
+  "heads": 150,
+  "p50": 0.5833333333333334,
+  "p90": 21.866666666666667,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.16090104585679807,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 15,
+  "spanMin": 49.3,
+  "jobMinutes": 186.6333333333333,
+  "billedMinutes": 196,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.11044880785413745,
+  "critical": {
+   "name": "Focused Linux Silk",
+   "minutes": 0.06666666666666667,
+   "shareOfSpan": 0.001352265043948614
+  },
+  "longest": {
+   "name": "Selfhost native corpus",
+   "minutes": 32.733333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/selfhost.yml"
+  ],
+  "jobs": 13,
+  "edges": 25,
+  "matrixJobs": 2,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Focused Linux Silk",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Native N1 from pinned seed",
+    "minutes": 8.7,
+    "share": 0.16,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 8.6,
+    "setupMin": 1.6
+   },
+   {
+    "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+    "minutes": 19.9,
+    "share": 0.37,
+    "blockedMin": 8.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 19.8,
+    "setupMin": 1.4
+   },
+   {
+    "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+    "minutes": 19.5,
+    "share": 0.4,
+    "blockedMin": 28.6,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 19.4,
+    "setupMin": 2.2
+   },
+   {
+    "name": "Focused Linux Silk",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 49.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 4,
+  "pathMinP50": 49.3,
+  "blockedMinP50": 49.2,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 49.1,
+  "setupInPathMinP50": 3.6,
+  "topBlockers": [
+   {
+    "name": "release-cross / Cross-build the release archive on Linux / …",
+    "runs": 6,
+    "heldJobs": 5,
+    "jobs": 15,
+    "tookMin": 19.9,
+    "heldJobMin": 82.6
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44867327892,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 54.5,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / aarch64-apple-darwin",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 43,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 34.5,
+      "setupMin": 1
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 14.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 12.6,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 26.6,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.1,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 19.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 1
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 29.7,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.3,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 19.9,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 22.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.3,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.5,
+      "endMin": 16.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.7,
+      "createdMin": 29.7,
+      "startMin": 29.8,
+      "endMin": 54.4,
+      "blockedMin": 29.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.6,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.7,
+      "createdMin": 29.7,
+      "startMin": 29.8,
+      "endMin": 46.1,
+      "blockedMin": 29.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.3,
+      "setupMin": 1.6
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.7,
+      "createdMin": 29.7,
+      "startMin": 29.8,
+      "endMin": 49.1,
+      "blockedMin": 29.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.3,
+      "setupMin": 2.1
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.7,
+      "createdMin": 29.7,
+      "startMin": 29.8,
+      "endMin": 46.5,
+      "blockedMin": 29.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.7,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 54.4,
+      "createdMin": 54.4,
+      "startMin": 54.5,
+      "endMin": 54.5,
+      "blockedMin": 54.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44849166063,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 46.7,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / aarch64-apple-darwin",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.3,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 32,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.6,
+      "setupMin": 2
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 20.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.9,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 12.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 14.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 1.7
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 18.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 23,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.6,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 27.9,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.5,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 17.2,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.4,
+      "endMin": 18,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 27.9,
+      "endMin": 42.4,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.5,
+      "setupMin": 1.6
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 46.6,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.6,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 39,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 1.1
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 28,
+      "endMin": 35.6,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 46.6,
+      "createdMin": 46.6,
+      "startMin": 46.6,
+      "endMin": 46.7,
+      "blockedMin": 46.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44821323734,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 48.5,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 2
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 21.7,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 16.1,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 44,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 34.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 13.2,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 28.9,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.8,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 23.5,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.4,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 20.5,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 1.3
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 17.8,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 1.7
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 9.1,
+      "createdMin": 9.1,
+      "startMin": 9.1,
+      "endMin": 21.1,
+      "blockedMin": 9.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12,
+      "setupMin": 2.1
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.9,
+      "createdMin": 29,
+      "startMin": 29,
+      "endMin": 48.4,
+      "blockedMin": 28.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.4,
+      "setupMin": 2.3
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.9,
+      "createdMin": 29,
+      "startMin": 29,
+      "endMin": 38.8,
+      "blockedMin": 28.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 1.6
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.9,
+      "createdMin": 29,
+      "startMin": 29,
+      "endMin": 40.6,
+      "blockedMin": 28.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.9,
+      "createdMin": 29,
+      "startMin": 29,
+      "endMin": 45.4,
+      "blockedMin": 28.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 48.4,
+      "createdMin": 48.4,
+      "startMin": 48.5,
+      "endMin": 48.5,
+      "blockedMin": 48.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44810655426,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 49.3,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8,
+      "endMin": 40.8,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.7,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8.1,
+      "endMin": 12.1,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8,
+      "endMin": 22.5,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8,
+      "endMin": 14.1,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8.1,
+      "endMin": 19.3,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8.1,
+      "endMin": 18.6,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8.1,
+      "endMin": 29.9,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8,
+      "endMin": 18.4,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 1.6
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8,
+      "createdMin": 8,
+      "startMin": 8,
+      "endMin": 24.8,
+      "blockedMin": 8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.8,
+      "setupMin": 1
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 30,
+      "endMin": 42,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.1,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 30,
+      "endMin": 49.2,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.2,
+      "setupMin": 2.3
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 30.1,
+      "endMin": 41.6,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 11.5,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 29.9,
+      "createdMin": 29.9,
+      "startMin": 30,
+      "endMin": 47.2,
+      "blockedMin": 29.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.2,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 49.2,
+      "createdMin": 49.2,
+      "startMin": 49.2,
+      "endMin": 49.3,
+      "blockedMin": 49.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44803635637,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 52.1,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 33.4,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.5,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 20.7,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 14.2,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 15.4,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 19,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.1,
+      "setupMin": 1.4
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 19.3,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 20.1,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 22.9,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 27.6,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.7,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.6,
+      "createdMin": 27.6,
+      "startMin": 27.6,
+      "endMin": 46.2,
+      "blockedMin": 27.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.6,
+      "createdMin": 27.6,
+      "startMin": 27.6,
+      "endMin": 52,
+      "blockedMin": 27.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.4,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.6,
+      "createdMin": 27.6,
+      "startMin": 27.6,
+      "endMin": 39.1,
+      "blockedMin": 27.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.5,
+      "setupMin": 1.1
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 27.6,
+      "createdMin": 27.6,
+      "startMin": 27.6,
+      "endMin": 38.7,
+      "blockedMin": 27.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 52,
+      "createdMin": 52,
+      "startMin": 52,
+      "endMin": 52.1,
+      "blockedMin": 52,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44802277341,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 53.4,
+    "path": [
+     "Native N1 from pinned seed",
+     "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "Focused Linux Silk"
+    ],
+    "topBlocker": "release-cross / Cross-build the release archive on Linux / …",
+    "jobs": [
+     {
+      "name": "Native N1 from pinned seed",
+      "needs": [
+       "release-plan"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Native N1 tool and runtime checks",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 20.5,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Selfhost native corpus",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 31.7,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Incremental replay budgets",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 12.7,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Native selfhost cases",
+      "needs": [
+       "native-n1"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 16.2,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 28.6,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.9,
+      "setupMin": 1.4
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 19.2,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 2
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 18.1,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 1.6
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 22.9,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 1.9
+     },
+     {
+      "name": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-plan",
+       "native-n1",
+       "compiler-profile"
+      ],
+      "readyMin": 8.7,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 19.3,
+      "blockedMin": 8.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 1.5
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 28.6,
+      "endMin": 53.3,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 2.2
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 28.6,
+      "endMin": 39.5,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "release-cross / Check the archive natively / aarch64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 28.6,
+      "endMin": 46.5,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.9,
+      "setupMin": 1.8
+     },
+     {
+      "name": "release-cross / Check the archive natively / x86_64-apple-darwin",
+      "needs": [
+       "release-cross/cross@release-cross"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 28.6,
+      "endMin": 36.6,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Focused Linux Silk",
+      "needs": [
+       "native-n1",
+       "n1-checks",
+       "corpus",
+       "incremental",
+       "native-cases",
+       "release-cross"
+      ],
+      "readyMin": 53.3,
+      "createdMin": 53.3,
+      "startMin": 53.4,
+      "endMin": 53.4,
+      "blockedMin": 53.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    56
+   ],
+   [
+    "TypeScript",
+    21
+   ],
+   [
+    "JavaScript",
+    12
+   ],
+   [
+    "Python",
+    6
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm",
+    "Cargo"
+   ],
+   "tools": [
+    "pnpm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 1,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "http-body-util",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "hyper",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "hyper-util",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "@effect/platform-node",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "effect",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    90
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".claude/skills",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "effect-http-hyper",
+     "path": "compiler/profiling/effect-combinators/http/hyper/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "silklang",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "effect-http-hyper",
+     "dir": "compiler/profiling/effect-combinators/http/hyper",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "silklang",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "effect-http-hyper"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6213
+   },
+   "nodes": [
+    {
+     "id": "silklang#test:scripts",
+     "pkg": "silklang",
+     "name": "test:scripts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "silklang#test:scripts"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 13,
+    "edges": 25,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Native N1 from pinned seed",
+     "needs": [
+      "release-plan"
+     ],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 8.4
+    },
+    {
+     "id": "Selfhost native corpus",
+     "needs": [
+      "native-n1"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0,
+     "workMin": 34.5
+    },
+    {
+     "id": "Native selfhost cases",
+     "needs": [
+      "native-n1"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0,
+     "workMin": 6.4
+    },
+    {
+     "id": "Incremental replay budgets",
+     "needs": [
+      "native-n1"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0.1,
+     "workMin": 4.1
+    },
+    {
+     "id": "Native N1 tool and runtime checks",
+     "needs": [
+      "native-n1"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0.1,
+     "workMin": 18.1
+    },
+    {
+     "id": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+     "needs": [
+      "release-plan",
+      "native-n1",
+      "compiler-profile"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0,
+     "workMin": 10.9
+    },
+    {
+     "id": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "needs": [
+      "release-plan",
+      "native-n1",
+      "compiler-profile"
+     ],
+     "onPath": true,
+     "blockedMin": 8.4,
+     "queueMin": 0,
+     "workMin": 21.3
+    },
+    {
+     "id": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+     "needs": [
+      "release-plan",
+      "native-n1",
+      "compiler-profile"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0.1,
+     "workMin": 11.4
+    },
+    {
+     "id": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+     "needs": [
+      "release-plan",
+      "native-n1",
+      "compiler-profile"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0.1,
+     "workMin": 14.3
+    },
+    {
+     "id": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+     "needs": [
+      "release-plan",
+      "native-n1",
+      "compiler-profile"
+     ],
+     "onPath": false,
+     "blockedMin": 8.4,
+     "queueMin": 0,
+     "workMin": 8.4
+    },
+    {
+     "id": "release-cross / Check the archive natively / aarch64-apple-darwin",
+     "needs": [
+      "release-cross/cross@release-cross"
+     ],
+     "onPath": true,
+     "blockedMin": 29.7,
+     "queueMin": 0.1,
+     "workMin": 24.6
+    },
+    {
+     "id": "release-cross / Check the archive natively / x86_64-apple-darwin",
+     "needs": [
+      "release-cross/cross@release-cross"
+     ],
+     "onPath": false,
+     "blockedMin": 29.7,
+     "queueMin": 0,
+     "workMin": 16.3
+    },
+    {
+     "id": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "needs": [
+      "release-cross/cross@release-cross"
+     ],
+     "onPath": false,
+     "blockedMin": 29.7,
+     "queueMin": 0,
+     "workMin": 19.3
+    },
+    {
+     "id": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+     "needs": [
+      "release-cross/cross@release-cross"
+     ],
+     "onPath": false,
+     "blockedMin": 29.7,
+     "queueMin": 0.1,
+     "workMin": 16.7
+    },
+    {
+     "id": "Focused Linux Silk",
+     "needs": [
+      "native-n1",
+      "n1-checks",
+      "corpus",
+      "incremental",
+      "native-cases",
+      "release-cross"
+     ],
+     "onPath": true,
+     "blockedMin": 54.4,
+     "queueMin": 0,
+     "workMin": 0.1
+    }
+   ],
+   "edges": [
+    {
+     "from": "Native N1 from pinned seed",
+     "to": "release-plan"
+    },
+    {
+     "from": "Selfhost native corpus",
+     "to": "native-n1"
+    },
+    {
+     "from": "Native selfhost cases",
+     "to": "native-n1"
+    },
+    {
+     "from": "Incremental replay budgets",
+     "to": "native-n1"
+    },
+    {
+     "from": "Native N1 tool and runtime checks",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+     "to": "release-plan"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-unknown-linux-gnu",
+     "to": "compiler-profile"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "to": "release-plan"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+     "to": "compiler-profile"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+     "to": "release-plan"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-pc-windows-msvc",
+     "to": "compiler-profile"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+     "to": "release-plan"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / x86_64-apple-darwin",
+     "to": "compiler-profile"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+     "to": "release-plan"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+     "to": "native-n1"
+    },
+    {
+     "from": "release-cross / Cross-build the release archive on Linux / aarch64-apple-darwin",
+     "to": "compiler-profile"
+    },
+    {
+     "from": "release-cross / Check the archive natively / aarch64-apple-darwin",
+     "to": "release-cross/cross@release-cross"
+    },
+    {
+     "from": "release-cross / Check the archive natively / x86_64-apple-darwin",
+     "to": "release-cross/cross@release-cross"
+    },
+    {
+     "from": "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+     "to": "release-cross/cross@release-cross"
+    },
+    {
+     "from": "release-cross / Check the archive natively / aarch64-unknown-linux-gnu",
+     "to": "release-cross/cross@release-cross"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "native-n1"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "n1-checks"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "corpus"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "incremental"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "native-cases"
+    },
+    {
+     "from": "Focused Linux Silk",
+     "to": "release-cross"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Native N1 from pinned seed",
+    "release-cross / Cross-build the release archive on Linux / x86_64-unknown-linux-gnu",
+    "release-cross / Check the archive natively / x86_64-pc-windows-msvc",
+    "Focused Linux Silk"
+   ],
+   "pathMinP50": 49.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Selfhost native corpus\" runs 33 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 57,
+ "read": {
+  "calls": 57,
+  "fromCache": 0
+ }
+}

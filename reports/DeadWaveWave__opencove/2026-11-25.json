@@ -1,0 +1,2802 @@
+{
+ "repo": "DeadWaveWave/opencove",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.7,
+  "stars": 1653,
+  "forks": 149,
+  "languages": [
+   [
+    "TypeScript",
+    94
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "CSS",
+    2
+   ],
+   [
+    "PowerShell",
+    0
+   ]
+  ],
+  "linesOfCode": 867941,
+  "files": 5420,
+  "sourceFiles": 5124,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 369772,
+   "tests": 355234,
+   "integration": 142058,
+   "support": 877
+  },
+  "testShare": 0.5739659943846411,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 62.3,
+  "commitsPerWeekYear": 16.6,
+  "pace": 3.8,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 6.2,
+  "prsMergedPerWeek": 3.5,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 4,
+   "n": 4
+  },
+  "prRunsPerDay": 3.3,
+  "runsPerMergedPr": 6.5
+ },
+ "window": {
+  "days": 8,
+  "runs": 26,
+  "runsInPeriod": 26,
+  "truncated": false,
+  "mainDays": 8
+ },
+ "size": "medium",
+ "headsPerWeek": 11,
+ "score": 65,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 46,
+  "reliability": 100,
+  "efficiency": 88
+ },
+ "detail": {
+  "speed": {
+   "wait": 44,
+   "forSize": 46,
+   "tail": 54
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 90,
+   "runsPerPr": 89,
+   "setup": 66,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 99.6,
+  "prBilledMinutesPerDay": 107.3,
+  "jobMinutesPerMergedPr": 198.1,
+  "prVcpuMinutesPerDay": 394.3,
+  "vcpuMinutesPerMergedPr": 784.3,
+  "expectedVcpuMinutesPerMergedPr": 1265,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 316.3,
+  "expectedWait": 17.2,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "low",
+  "reasons": [
+   "7 pushes were timed, under 10"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 12,
+  "ranHeads": 10,
+  "timed": 7,
+  "p50": 20.6,
+  "p75": 22.65,
+  "p90": 26.066666666666666,
+  "redRate": 0.1,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.1,
+  "botHeads": 0,
+  "lightHeads": 2,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    7
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "PR Template Check",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 20.033333333333335
+ },
+ "main": {
+  "heads": 4,
+  "p50": 33.2,
+  "p90": 36.38333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 20,
+  "jobMinutes": 107.45,
+  "billedMinutes": 112,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.08738481093104544,
+  "setupMinPerJob": 1.0185185185185184,
+  "critical": {
+   "name": "e2e-duration-summary",
+   "minutes": 0.15,
+   "shareOfSpan": 0.008419083255378858
+  },
+  "longest": {
+   "name": "e2e-ubuntu (4)",
+   "minutes": 17.6
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 8,
+  "edges": 8,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "e2e-duration-summary",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "e2e-ubuntu (3)",
+    "minutes": 19.8,
+    "share": 0.99,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 19.8,
+    "setupMin": 0.8
+   },
+   {
+    "name": "e2e-duration-summary",
+    "minutes": 0.2,
+    "share": 0.01,
+    "blockedMin": 19.8,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 20,
+  "blockedMinP50": 19.8,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 20,
+  "setupInPathMinP50": 0.1,
+  "topBlockers": [
+   {
+    "name": "e2e-ubuntu",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 9,
+    "tookMin": 19.8,
+    "heldJobMin": 19.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 2,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45132609454,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.8,
+    "path": [
+     "e2e-ubuntu (3)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.2,
+      "setupMin": 2.7,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 20.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 20.4,
+      "createdMin": 20.4,
+      "startMin": 20.5,
+      "endMin": 20.8,
+      "blockedMin": 20.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45105953225,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17,
+    "path": [
+     "e2e-ubuntu (2)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 2.2,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.9,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.7,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.6,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.3,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 16.8,
+      "createdMin": 16.8,
+      "startMin": 16.8,
+      "endMin": 17,
+      "blockedMin": 16.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44987484249,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20,
+    "path": [
+     "e2e-ubuntu (2)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 1.7,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.1,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 19.8,
+      "createdMin": 19.9,
+      "startMin": 19.9,
+      "endMin": 20,
+      "blockedMin": 19.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44901897250,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.3,
+    "path": [
+     "e2e-ubuntu (1)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 20.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 13.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 2.6,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 20.1,
+      "endMin": 20.3,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44744969134,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.8,
+    "path": [
+     "e2e-ubuntu (4)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 2.9,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 16.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 17.6,
+      "createdMin": 17.6,
+      "startMin": 17.7,
+      "endMin": 17.8,
+      "blockedMin": 17.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44221785136,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.1,
+    "path": [
+     "e2e-ubuntu (4)",
+     "e2e-duration-summary"
+    ],
+    "topBlocker": "e2e-ubuntu",
+    "jobs": [
+     {
+      "name": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "e2e-ubuntu (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "ci-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "web-canvas-continuity-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 17.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 25.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.8,
+      "setupMin": 9.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-ubuntu (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 22.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.3,
+      "setupMin": 6.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "platform-e2e-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 2.5,
+      "runner": "windows-2022",
+      "vcpus": 4
+     },
+     {
+      "name": "e2e-duration-summary",
+      "needs": [
+       "e2e-ubuntu",
+       "ci-macos"
+      ],
+      "readyMin": 25.9,
+      "createdMin": 25.9,
+      "startMin": 25.9,
+      "endMin": 26.1,
+      "blockedMin": 25.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": null,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "pathFilters",
+    "path": ".github/workflows/pr-template-check.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "draftSkip": ".github/workflows/pr-template-check.yml",
+   "scheduled": ".github/workflows/nightly.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "shardsConfigured": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/ci.yml",
+   "fastLint": ".oxlintrc.json",
+   "testResults": ".github/workflows/ci.yml",
+   "depBotsBatched": ".github/dependabot.yml"
+  },
+  "unknown": [
+   "pathFilters: .github/workflows/pr-template-check.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    94
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "CSS",
+    2
+   ],
+   [
+    "PowerShell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright"
+  ],
+  "lintFormat": [
+   "Oxlint",
+   "Prettier"
+  ],
+  "libraries": [
+   {
+    "name": "@dnd-kit/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/sortable",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@dnd-kit/utilities",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@electron-toolkit/tsconfig",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@electron-toolkit/utils",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@secretlint/secretlint-rule-preset-recommend",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@testing-library/jest-dom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@testing-library/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@vitejs/plugin-react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@vitest/coverage-v8",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-fit",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-ligatures",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-search",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-serialize",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-unicode11",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/addon-webgl",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xterm/xterm",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xyflow/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "better-sqlite3",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "clsx",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "opencove",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "opencove",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "opencove"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 1,
+    "filesRead": 0,
+    "undecided": 1
+   },
+   "nodes": [
+    {
+     "id": "opencove#.",
+     "pkg": "opencove",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 1 unknown, such as opencove#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 68,
+    "edges": 41,
+    "cached": 0,
+    "trackedFiles": 5420
+   },
+   "nodes": [
+    {
+     "id": "opencove#arch:audit",
+     "pkg": "opencove",
+     "name": "arch:audit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#arch:check",
+     "pkg": "opencove",
+     "name": "arch:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#arch:ratchet",
+     "pkg": "opencove",
+     "name": "arch:ratchet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#arch:test",
+     "pkg": "opencove",
+     "name": "arch:test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build",
+     "pkg": "opencove",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build:cli",
+     "pkg": "opencove",
+     "name": "build:cli",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build:linux",
+     "pkg": "opencove",
+     "name": "build:linux",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:mac",
+     "pkg": "opencove",
+     "name": "build:mac",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:mac:arm64",
+     "pkg": "opencove",
+     "name": "build:mac:arm64",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:mac:unsigned",
+     "pkg": "opencove",
+     "name": "build:mac:unsigned",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:mac:x64",
+     "pkg": "opencove",
+     "name": "build:mac:x64",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:managed-ssh",
+     "pkg": "opencove",
+     "name": "build:managed-ssh",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build:release-manifest",
+     "pkg": "opencove",
+     "name": "build:release-manifest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build:standalone",
+     "pkg": "opencove",
+     "name": "build:standalone",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:standalone:asset",
+     "pkg": "opencove",
+     "name": "build:standalone:asset",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#build:unpack",
+     "pkg": "opencove",
+     "name": "build:unpack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#build:win",
+     "pkg": "opencove",
+     "name": "build:win",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "opencove#canvas:state-check",
+     "pkg": "opencove",
+     "name": "canvas:state-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#canvas:state-ratchet",
+     "pkg": "opencove",
+     "name": "canvas:state-ratchet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#check",
+     "pkg": "opencove",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#compat:check",
+     "pkg": "opencove",
+     "name": "compat:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#deadcode:check",
+     "pkg": "opencove",
+     "name": "deadcode:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#deadcode:ratchet",
+     "pkg": "opencove",
+     "name": "deadcode:ratchet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#design:tokens",
+     "pkg": "opencove",
+     "name": "design:tokens",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#dev",
+     "pkg": "opencove",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#e2e:budget",
+     "pkg": "opencove",
+     "name": "e2e:budget",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#e2e:budget:update",
+     "pkg": "opencove",
+     "name": "e2e:budget:update",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#format",
+     "pkg": "opencove",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#format-check:staged",
+     "pkg": "opencove",
+     "name": "format-check:staged",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#format:check",
+     "pkg": "opencove",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#impact",
+     "pkg": "opencove",
+     "name": "impact",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#impact:index",
+     "pkg": "opencove",
+     "name": "impact:index",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#line-check",
+     "pkg": "opencove",
+     "name": "line-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#lint",
+     "pkg": "opencove",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#lint:fix",
+     "pkg": "opencove",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#naming-check",
+     "pkg": "opencove",
+     "name": "naming-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#opencove",
+     "pkg": "opencove",
+     "name": "opencove",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#postinstall",
+     "pkg": "opencove",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#pre-commit",
+     "pkg": "opencove",
+     "name": "pre-commit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 4
+    },
+    {
+     "id": "opencove#preview",
+     "pkg": "opencove",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#profile:terminal:display-parity",
+     "pkg": "opencove",
+     "name": "profile:terminal:display-parity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#ratchet:rises",
+     "pkg": "opencove",
+     "name": "ratchet:rises",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#recover:opencove-db",
+     "pkg": "opencove",
+     "name": "recover:opencove-db",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#release:major",
+     "pkg": "opencove",
+     "name": "release:major",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#release:minor",
+     "pkg": "opencove",
+     "name": "release:minor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#release:patch",
+     "pkg": "opencove",
+     "name": "release:patch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#release:version",
+     "pkg": "opencove",
+     "name": "release:version",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#secret-check:staged",
+     "pkg": "opencove",
+     "name": "secret-check:staged",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#secrets:scan",
+     "pkg": "opencove",
+     "name": "secrets:scan",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test",
+     "pkg": "opencove",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test-gates:check",
+     "pkg": "opencove",
+     "name": "test-gates:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test-gates:ratchet",
+     "pkg": "opencove",
+     "name": "test-gates:ratchet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:contract:worker-cli",
+     "pkg": "opencove",
+     "name": "test:contract:worker-cli",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:coverage",
+     "pkg": "opencove",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:e2e",
+     "pkg": "opencove",
+     "name": "test:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:e2e:pre-commit",
+     "pkg": "opencove",
+     "name": "test:e2e:pre-commit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:e2e:web-canvas",
+     "pkg": "opencove",
+     "name": "test:e2e:web-canvas",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:e2e:web-shell",
+     "pkg": "opencove",
+     "name": "test:e2e:web-shell",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:perf",
+     "pkg": "opencove",
+     "name": "test:perf",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:staged",
+     "pkg": "opencove",
+     "name": "test:staged",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:terminal-recovery:native",
+     "pkg": "opencove",
+     "name": "test:terminal-recovery:native",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#test:terminal:presentation",
+     "pkg": "opencove",
+     "name": "test:terminal:presentation",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#ui:style-check",
+     "pkg": "opencove",
+     "name": "ui:style-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#ui:style-ratchet",
+     "pkg": "opencove",
+     "name": "ui:style-ratchet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "opencove#verify:checks",
+     "pkg": "opencove",
+     "name": "verify:checks",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "opencove#verify:full",
+     "pkg": "opencove",
+     "name": "verify:full",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "opencove#verify:quick",
+     "pkg": "opencove",
+     "name": "verify:quick",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "opencove#verify:repo",
+     "pkg": "opencove",
+     "name": "verify:repo",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "opencove#build:standalone",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:standalone",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:standalone",
+     "to": "opencove#build:standalone:asset",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:unpack",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:unpack",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:arm64",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:arm64",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:x64",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:x64",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:unsigned",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:mac:unsigned",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:win",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:win",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:linux",
+     "to": "opencove#build",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#build:linux",
+     "to": "opencove#build:release-manifest",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#pre-commit",
+     "to": "opencove#verify:quick",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#line-check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#naming-check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#ui:style-check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#canvas:state-check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#arch:check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#deadcode:check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#compat:check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:repo",
+     "to": "opencove#test-gates:check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#verify:repo",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#secret-check:staged",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#lint:fix",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#lint",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#format-check:staged",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:checks",
+     "to": "opencove#check",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:quick",
+     "to": "opencove#verify:checks",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:quick",
+     "to": "opencove#test:staged",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:quick",
+     "to": "opencove#test:terminal-recovery:native",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:quick",
+     "to": "opencove#test:e2e:pre-commit",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:quick",
+     "to": "opencove#impact",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:full",
+     "to": "opencove#verify:checks",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:full",
+     "to": "opencove#test",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:full",
+     "to": "opencove#test:terminal-recovery:native",
+     "how": "calls"
+    },
+    {
+     "from": "opencove#verify:full",
+     "to": "opencove#test:e2e:pre-commit",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 5,
+   "chain": [
+    "opencove#pre-commit",
+    "opencove#verify:quick",
+    "opencove#verify:checks",
+    "opencove#verify:repo",
+    "opencove#line-check"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 8,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "platform-e2e-windows",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 12.2,
+     "runner": "windows-2022",
+     "vcpus": 4
+    },
+    {
+     "id": "e2e-ubuntu (4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 16.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "ci-ubuntu",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 14.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "e2e-ubuntu (2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 16.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "macOS platform (Worker CLI contracts, macOS-only and core E2E)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "e2e-ubuntu (3)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 20.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "e2e-ubuntu (1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 14.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "web-canvas-continuity-ubuntu",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "e2e-duration-summary",
+     "needs": [
+      "e2e-ubuntu",
+      "ci-macos"
+     ],
+     "onPath": true,
+     "blockedMin": 20.4,
+     "queueMin": 0.1,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "e2e-duration-summary",
+     "to": "e2e-ubuntu"
+    },
+    {
+     "from": "e2e-duration-summary",
+     "to": "ci-macos"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "e2e-ubuntu (3)",
+    "e2e-duration-summary"
+   ],
+   "pathMinP50": 20,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Each job spends 1.0 minutes on setup: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 36,
+ "read": {
+  "calls": 36,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

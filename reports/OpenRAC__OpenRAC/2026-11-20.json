@@ -1,0 +1,2023 @@
+{
+ "repo": "OpenRAC/OpenRAC",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "develop",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 224,
+  "forks": 30,
+  "languages": [
+   [
+    "C++",
+    50
+   ],
+   [
+    "Python",
+    17
+   ],
+   [
+    "C",
+    16
+   ],
+   [
+    "Rust",
+    7
+   ]
+  ],
+  "linesOfCode": 917322,
+  "files": 3685,
+  "sourceFiles": 2513,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 726431,
+   "tests": 189252,
+   "integration": 1639,
+   "support": 0
+  },
+  "testShare": 0.20809592439212762,
+  "packages": {
+   "npm": 1,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 20.5,
+  "pace": 8,
+  "activeAuthors28d": "≥18",
+  "prsOpenedPerWeek": 150,
+  "prsMergedPerWeek": 153,
+  "botShareOfMergedPrs": 1,
+  "openToMergeHours": {
+   "p50": 0.9,
+   "p90": 9.3,
+   "n": 99
+  },
+  "prRunsPerDay": 53.4,
+  "runsPerMergedPr": 2.4
+ },
+ "window": {
+  "days": 7.2,
+  "runs": 387,
+  "runsInPeriod": 387,
+  "truncated": false,
+  "mainDays": 7.1
+ },
+ "size": "large",
+ "headsPerWeek": 280,
+ "score": 47,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 26,
+  "reliability": 70,
+  "efficiency": 89
+ },
+ "detail": {
+  "speed": {
+   "wait": 29,
+   "forSize": 25,
+   "tail": 16
+  },
+  "reliability": {
+   "flakes": 68,
+   "mainRed": 72
+  },
+  "efficiency": {
+   "minutesPerPr": 72,
+   "runsPerPr": 100,
+   "setup": 94,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6349.8,
+  "prBilledMinutesPerDay": 6725.2,
+  "jobMinutesPerMergedPr": 290.5,
+  "expectedMinutesPerMergedPr": 322.1,
+  "expectedWait": 18.1,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 290,
+  "timed": 184,
+  "p50": 30.516666666666666,
+  "p75": 46.583333333333336,
+  "p90": 76.03333333333333,
+  "redRate": 0.23793103448275862,
+  "rerunRate": 0.05517241379310345,
+  "passedOnRerunRate": 0.04482758620689655,
+  "cancelledRate": 0.2827586206896552,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "checks",
+    183
+   ],
+   [
+    "sdk",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "checks",
+    66
+   ],
+   [
+    "sdk",
+    6
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "checks"
+  ],
+  "allPushesP50": 30.516666666666666
+ },
+ "main": {
+  "heads": 136,
+  "p50": 98.03333333333333,
+  "p90": 158.95,
+  "redRate": 0.14705882352941177,
+  "redBy": [
+   [
+    "launcher",
+    13
+   ],
+   [
+    "checks",
+    11
+   ]
+  ]
+ },
+ "botRunShare": 0.0015151515151515152,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 7,
+  "spanMin": 6.333333333333333,
+  "jobMinutes": 17.383333333333333,
+  "billedMinutes": 23,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.22896698615548455,
+  "critical": {
+   "name": "Launcher / Windows",
+   "minutes": 5.983333333333333,
+   "shareOfSpan": 0.967654986522911
+  },
+  "longest": {
+   "name": "Launcher / Windows",
+   "minutes": 5.983333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    64
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/checks.yml"
+  ],
+  "jobs": 11,
+  "edges": 12,
+  "matrixJobs": 3,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Launcher / Windows",
+    "runs": 3
+   },
+   {
+    "name": "Port / Enhanced Vulkan",
+    "runs": 2
+   },
+   {
+    "name": "Launcher / Linux",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Which checks run",
+    "minutes": 0.2,
+    "share": 0.02,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Launcher / Linux",
+    "minutes": 6,
+    "share": 0.97,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 6,
+    "setupMin": 1.9
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 2,
+  "pathMinP50": 6.3,
+  "blockedMinP50": 0.2,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 6.2,
+  "setupInPathMinP50": 2.8,
+  "topBlockers": [
+   {
+    "name": "Which checks run",
+    "runs": 4,
+    "heldJobs": 3,
+    "jobs": 7,
+    "tookMin": 0.2,
+    "heldJobMin": 0.5
+   },
+   {
+    "name": "Port / Enhanced Vulkan build",
+    "runs": 2,
+    "heldJobs": 4,
+    "jobs": 15,
+    "tookMin": 19.3,
+    "heldJobMin": 71.4
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 5,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44718372541,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.2,
+    "path": [
+     "Which checks run",
+     "Launcher / Linux"
+    ],
+    "topBlocker": "Which checks run",
+    "jobs": [
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Launcher / Pages (lint, unit tests, Android layout)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44694479544,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.5,
+    "path": [
+     "Which checks run",
+     "Launcher / Windows"
+    ],
+    "topBlocker": "Which checks run",
+    "jobs": [
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Launcher / Pages (lint, unit tests, Android layout)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44692840030,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 33.7,
+    "path": [
+     "Which checks run",
+     "Port / Enhanced Vulkan build",
+     "Port / Enhanced Vulkan tests (vulkan)",
+     "Port / Enhanced Vulkan"
+    ],
+    "topBlocker": "Port / Enhanced Vulkan build",
+    "jobs": [
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Port / Enhanced Vulkan build",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 19.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 3.1
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Port / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 17.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Port / Linux (rac1-pal)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 12.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Port / Linux (common)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 15.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.2,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Port / Linux (rac2-pal)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Port / Linux (rac1-ntsc)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 20.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Port / Linux (rac2-ntsc)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Port / Fedora",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 20.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Launcher / Pages (lint, unit tests, Android layout)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Port / Linux (rac4-ntsc)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 8.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Port / Linux (rac3-pal)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Port / Linux (rac2-ntsc2)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 12.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (equivalence)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 19.4,
+      "endMin": 26.6,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 6.9
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (vulkan)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 19.4,
+      "endMin": 33.6,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 13.8
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (cpu-baker)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 19.4,
+      "endMin": 21.5,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 20.5,
+      "endMin": 20.6,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 33.6,
+      "createdMin": 33.6,
+      "startMin": 33.6,
+      "endMin": 33.7,
+      "blockedMin": 33.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44683251483,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.2,
+    "path": [
+     "Which checks run",
+     "Launcher / Windows"
+    ],
+    "topBlocker": "Which checks run",
+    "jobs": [
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Launcher / Pages (lint, unit tests, Android layout)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44679649754,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.3,
+    "path": [
+     "Which checks run",
+     "Launcher / Windows"
+    ],
+    "topBlocker": "Which checks run",
+    "jobs": [
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Launcher / Pages (lint, unit tests, Android layout)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44675063377,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 33,
+    "path": [
+     "Which checks run",
+     "Port / Enhanced Vulkan build",
+     "Port / Enhanced Vulkan tests (vulkan)",
+     "Port / Enhanced Vulkan"
+    ],
+    "topBlocker": "Port / Enhanced Vulkan build",
+    "jobs": [
+     {
+      "name": "Which checks run",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Repository (tools, tables, conventions)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Port / Fedora",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Port / Linux (rac3-ntsc)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 14.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Port / Enhanced Vulkan build",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 19.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Port / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 24.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.1,
+      "setupMin": 1
+     },
+     {
+      "name": "Launcher / Windows",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 6.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Port / Linux (common)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Launcher / Linux",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Port / Linux (rac3-pal)",
+      "needs": [
+       "scope"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Port / Linux",
+      "needs": [
+       "scope",
+       "port-part"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 15,
+      "endMin": 15,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (vulkan)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 32.9,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 13
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (cpu-baker)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 21,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Port / Enhanced Vulkan tests (equivalence)",
+      "needs": [
+       "port-vulkan-enhanced-build"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 26.7,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 6.8
+     },
+     {
+      "name": "Port / Enhanced Vulkan",
+      "needs": [
+       "scope",
+       "port-vulkan-enhanced-build",
+       "port-vulkan-enhanced-tests"
+      ],
+      "readyMin": 32.9,
+      "createdMin": 32.9,
+      "startMin": 32.9,
+      "endMin": 33,
+      "blockedMin": 32.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 5,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    50
+   ],
+   [
+    "Python",
+    17
+   ],
+   [
+    "C",
+    16
+   ],
+   [
+    "Rust",
+    7
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "chd",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "flate2",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "minisign-verify",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "proptest",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-build",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-plugin-deep-link",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-plugin-dialog",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-plugin-opener",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-plugin-single-instance",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "tauri-plugin-updater",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "ts-rs",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "windows-registry",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "zip",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    64
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "launcher/Cargo.toml",
+     "path": "launcher/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "openrac-launcher-core",
+     "path": "launcher/core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "openrac-launcher-ios",
+     "path": "launcher/ios/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "openrac-launcher-core"
+     ]
+    },
+    {
+     "name": "openrac-launcher",
+     "path": "launcher/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "openrac-launcher",
+     "path": "launcher/src-tauri/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "openrac-launcher-core"
+     ]
+    }
+   ],
+   "count": 5,
+   "edges": 2,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "openrac-launcher-core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 5,
+    "edges": 2
+   },
+   "nodes": [
+    {
+     "id": "openrac-launcher-core",
+     "dir": "launcher/core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "launcher/Cargo.toml",
+     "dir": "launcher",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher",
+     "dir": "launcher",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher",
+     "dir": "launcher/src-tauri",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "openrac-launcher-ios",
+     "dir": "launcher/ios",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "openrac-launcher-ios",
+     "to": "openrac-launcher-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "openrac-launcher",
+     "to": "openrac-launcher-core",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "openrac-launcher-ios",
+    "openrac-launcher-core"
+   ],
+   "topFanIn": [
+    {
+     "name": "openrac-launcher-core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 11,
+    "edges": 4,
+    "cached": 0,
+    "trackedFiles": 3685
+   },
+   "nodes": [
+    {
+     "id": "openrac-launcher#build",
+     "pkg": "openrac-launcher",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#dev",
+     "pkg": "openrac-launcher",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#format",
+     "pkg": "openrac-launcher",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#format:check",
+     "pkg": "openrac-launcher",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#lint",
+     "pkg": "openrac-launcher",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#preview",
+     "pkg": "openrac-launcher",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#tauri",
+     "pkg": "openrac-launcher",
+     "name": "tauri",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#test",
+     "pkg": "openrac-launcher",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#test:android",
+     "pkg": "openrac-launcher",
+     "name": "test:android",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#typecheck",
+     "pkg": "openrac-launcher",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "openrac-launcher#verify",
+     "pkg": "openrac-launcher",
+     "name": "verify",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "openrac-launcher#verify",
+     "to": "openrac-launcher#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "openrac-launcher#verify",
+     "to": "openrac-launcher#lint",
+     "how": "calls"
+    },
+    {
+     "from": "openrac-launcher#verify",
+     "to": "openrac-launcher#format:check",
+     "how": "calls"
+    },
+    {
+     "from": "openrac-launcher#verify",
+     "to": "openrac-launcher#test",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "openrac-launcher#verify",
+    "openrac-launcher#typecheck"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 11,
+    "edges": 12,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Repository (tools, tables, conventions)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.4
+    },
+    {
+     "id": "Which checks run",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2
+    },
+    {
+     "id": "Launcher / Pages (lint, unit tests, Android layout)",
+     "needs": [
+      "scope"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 3.6
+    },
+    {
+     "id": "Launcher / Windows",
+     "needs": [
+      "scope"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 5.8
+    },
+    {
+     "id": "Launcher / Linux",
+     "needs": [
+      "scope"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 9
+    },
+    {
+     "id": "Port / Linux",
+     "needs": [
+      "scope",
+      "port-part"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0
+    },
+    {
+     "id": "Port / Enhanced Vulkan",
+     "needs": [
+      "scope",
+      "port-vulkan-enhanced-build",
+      "port-vulkan-enhanced-tests"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "Launcher / Pages (lint, unit tests, Android layout)",
+     "to": "scope"
+    },
+    {
+     "from": "Launcher / Windows",
+     "to": "scope"
+    },
+    {
+     "from": "Launcher / Linux",
+     "to": "scope"
+    },
+    {
+     "from": "Port / Linux",
+     "to": "scope"
+    },
+    {
+     "from": "Port / Linux",
+     "to": "port-part"
+    },
+    {
+     "from": "Port / Enhanced Vulkan",
+     "to": "scope"
+    },
+    {
+     "from": "Port / Enhanced Vulkan",
+     "to": "port-vulkan-enhanced-build"
+    },
+    {
+     "from": "Port / Enhanced Vulkan",
+     "to": "port-vulkan-enhanced-tests"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "Which checks run → Launcher / Linux",
+     "numbers": {
+      "setupMin": 2.8,
+      "pathMin": 6.3
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "Which checks run",
+    "Launcher / Linux"
+   ],
+   "pathMinP50": 6.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Setup on the critical path: 2.8 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 60,
+ "read": {
+  "calls": 60,
+  "fromCache": 0
+ }
+}

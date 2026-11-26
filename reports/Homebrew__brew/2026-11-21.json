@@ -1,0 +1,3795 @@
+{
+ "repo": "Homebrew/brew",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 10.7,
+  "stars": 50393,
+  "forks": 11437,
+  "languages": [
+   [
+    "Ruby",
+    95
+   ],
+   [
+    "Shell",
+    3
+   ],
+   [
+    "Roff",
+    1
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "linesOfCode": 425151,
+  "files": 3536,
+  "sourceFiles": 2073,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 200402,
+   "tests": 221500,
+   "integration": 568,
+   "support": 2680
+  },
+  "testShare": 0.528632498199855,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 130,
+  "pace": 1.5,
+  "activeAuthors28d": "≥19",
+  "prsOpenedPerWeek": 104,
+  "prsMergedPerWeek": 94,
+  "botShareOfMergedPrs": 4.3,
+  "openToMergeHours": {
+   "p50": 11.2,
+   "p90": 37.5,
+   "n": 90
+  },
+  "prRunsPerDay": 389.6,
+  "runsPerMergedPr": 29
+ },
+ "window": {
+  "days": 3,
+  "runs": 1000,
+  "runsInPeriod": 2093,
+  "truncated": true,
+  "mainDays": 3.9
+ },
+ "size": "large",
+ "headsPerWeek": 509,
+ "score": 54,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 38,
+  "reliability": 100,
+  "efficiency": 56
+ },
+ "detail": {
+  "speed": {
+   "wait": 39,
+   "forSize": 30,
+   "tail": 53
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 8,
+   "runsPerPr": 29,
+   "setup": 90,
+   "queue": 100,
+   "shardIdle": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 11407.3,
+  "prBilledMinutesPerDay": 12642.3,
+  "jobMinutesPerMergedPr": 849.5,
+  "expectedMinutesPerMergedPr": 249.9,
+  "expectedWait": 15.2,
+  "workflowsOnPrs": 13
+ },
+ "wait": {
+  "heads": 220,
+  "timed": 108,
+  "p50": 23.366666666666667,
+  "p75": 25.116666666666667,
+  "p90": 26.866666666666667,
+  "redRate": 0.05454545454545454,
+  "rerunRate": 0.01818181818181818,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.1318181818181818,
+  "botHeads": 3,
+  "lightHeads": 71,
+  "neverRan": 0,
+  "botPushes": 6,
+  "bots": [
+   [
+    "github-actions[bot]",
+    2
+   ],
+   [
+    "dependabot[bot]",
+    2
+   ],
+   [
+    "brew-commit-app[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    107
+   ],
+   [
+    "brew doctor",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    12
+   ],
+   [
+    "Documentation",
+    1
+   ],
+   [
+    "Vendor Gems",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Copilot Setup Steps"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 21.466666666666665
+ },
+ "main": {
+  "heads": 48,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.020833333333333332,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.2401894451962111,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 32,
+  "spanMin": 23.133333333333333,
+  "jobMinutes": 223.23333333333332,
+  "billedMinutes": 239,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.2499810964083176,
+  "critical": {
+   "name": "tests (macOS, 1/2)",
+   "minutes": 23.066666666666666,
+   "shareOfSpan": 0.997338065661047
+  },
+  "longest": {
+   "name": "tests (macOS, 1/2)",
+   "minutes": 23.066666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ],
+  "shard": {
+   "name": "tests (macOS, #)",
+   "shards": 2,
+   "medianMin": 18.866666666666667,
+   "maxMin": 23.066666666666666,
+   "maxOverMedian": 1.184404636459431,
+   "idleTail": 0.077846975088968
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/tests.yml"
+  ],
+  "jobs": 10,
+  "edges": 8,
+  "matrixJobs": 6,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "tests (macOS, 1/2)",
+    "runs": 5
+   },
+   {
+    "name": "tests (macOS, 2/2)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "tests (macOS, 2/2)",
+    "minutes": 23.1,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 23.1,
+    "setupMin": 6.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 23.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 23.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "syntax",
+    "runs": 6,
+    "heldJobs": 20,
+    "jobs": 32,
+    "tookMin": 2,
+    "heldJobMin": 39.7
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44895027337,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.3,
+    "path": [
+     "tests (macOS, 2/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 16.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.4,
+      "setupMin": 4.4
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 24.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.2,
+      "setupMin": 6.1
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 2.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 11.9,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 7.3
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 4.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 2.1,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 2.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 3.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 1.1
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 7.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 11.3,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 6.5
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 4.3,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.7,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 9.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 4.4
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.1,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 14,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.2,
+      "setupMin": 7.4
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 8.1,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.3,
+      "setupMin": 3.8
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 12.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 6.1
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 3.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44894527752,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.5,
+    "path": [
+     "tests (macOS, 1/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 26.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.4,
+      "setupMin": 6.9
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 1
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 23,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23,
+      "setupMin": 6.4
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13,
+      "setupMin": 1.1
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 12.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 7.2
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.3,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1.4
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6.1,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 2.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 5.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 11.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 6.3
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 2.4,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 2.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 7.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 10.1,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 4.6
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 13.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 6.7
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 6.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 5.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 13.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 6.8
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 9.3,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 4.4
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.9,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44890884463,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21.6,
+    "path": [
+     "tests (macOS, 1/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 1.1
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 21.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.6,
+      "setupMin": 6
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.3,
+      "setupMin": 1
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 21.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21,
+      "setupMin": 5.4
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 10,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 5.3
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 3,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 2.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 4.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 4.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 2.4,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 4.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 13.9,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 8.5
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6.7,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 10,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 4.6
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.8,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.5,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 15.4,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.3,
+      "setupMin": 8
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 10.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.5,
+      "setupMin": 5.1
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 11.9,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 6.4
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 6.2,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2.1,
+      "endMin": 5.1,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44887520468,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.1,
+    "path": [
+     "tests (macOS, 1/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 0.8
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 23.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.1,
+      "setupMin": 6.4
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 14.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 19.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.3,
+      "setupMin": 5.7
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 13.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 7.4
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 3.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 10.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 5.9
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 12.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 6.1
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 6.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 2.8
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 5.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 8.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 3.9
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 12.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 6.1
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 6.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 44887515919,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18.8,
+    "path": [
+     "tests (macOS, 1/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 14.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.8,
+      "setupMin": 1.2
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 18.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.7,
+      "setupMin": 3.7
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 15.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 15.8,
+      "setupMin": 4.8
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 14,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 15.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.1,
+      "setupMin": 9
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 7.9,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 3.1,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 4.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 1.1
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 2.9,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 3.2,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 13.7,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.2,
+      "setupMin": 7.9
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 6.3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 4.9,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 6.1,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 5.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 10.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 4.6
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 9.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.1,
+      "setupMin": 4.3
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 5.3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 6.2,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 6.3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 5.9,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 12.5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 5.7
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.5,
+      "endMin": 11.4,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 4.5
+     }
+    ]
+   },
+   {
+    "id": 44850549923,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.3,
+    "path": [
+     "tests (macOS, 1/2)"
+    ],
+    "topBlocker": "syntax",
+    "jobs": [
+     {
+      "name": "syntax",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "tests (load-only macOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (generic OS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 1
+     },
+     {
+      "name": "tests (Linux, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "tests (generic OS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (online, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 1
+     },
+     {
+      "name": "tests (macOS, 2/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 18.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.9,
+      "setupMin": 6
+     },
+     {
+      "name": "tests (macOS, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 23.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 23.2,
+      "setupMin": 6.9
+     },
+     {
+      "name": "tests (load-only Linux)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "tests (Linux, 1/2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tests (no Sorbet)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "formula audit",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 7.7,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "cask audit (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 9.9,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 5.3
+     },
+     {
+      "name": "update-test (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.6,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "vendored gems",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 3.2,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.8
+     },
+     {
+      "name": "bundle and services (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 4.4,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (Linux arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 6.1,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "analytics (macOS)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.9,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "analytics (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.7,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "cask audit (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 4.1,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "update-test (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 2.8,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "tap syntax",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 10.8,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 5.2
+     },
+     {
+      "name": "bundle and services (Linux)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 4.5,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (Linux x86_64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 5.6,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (Linux x86_64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 6.1,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-bot (no Sorbet)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 5.8,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-bot (Linux Homebrew glibc)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 11.3,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 5.6
+     },
+     {
+      "name": "test-bot (Linux containerless)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 7,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 2.7
+     },
+     {
+      "name": "test-bot (Linux arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 6,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test-bot (macOS arm64)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 12.6,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 5.9
+     },
+     {
+      "name": "test-bot (macOS arm64, padded prefix)",
+      "needs": [
+       "syntax"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.3,
+      "endMin": 13.9,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.5,
+      "setupMin": 6.1
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 24,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Ruby",
+    95
+   ],
+   [
+    "Shell",
+    3
+   ],
+   [
+    "Roff",
+    1
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv",
+    "Bundler"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "RSpec",
+   "Minitest"
+  ],
+  "lintFormat": [
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "yard",
+    "ecosystem": "ruby",
+    "packages": 2
+   },
+   {
+    "name": "yard-sorbet",
+    "ecosystem": "ruby",
+    "packages": 2
+   },
+   {
+    "name": "influxdb3-python",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "concurrent-ruby",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "csv",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "html-proofer",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "irb",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-optional-front-matter",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-redirect-from",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-relative-links",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-seo-tag",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-sitemap",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "jekyll-titles-from-headings",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "json_schemer",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "kramdown",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "mdl",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "parallel_tests",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "patchelf",
+    "ecosystem": "ruby",
+    "packages": 1
+   },
+   {
+    "name": "plist",
+    "ecosystem": "ruby",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "formula-analytics",
+     "path": "Library/Homebrew/formula-analytics/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "formula-analytics",
+     "dir": "Library/Homebrew/formula-analytics",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "formula-analytics"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 3536
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 10,
+    "edges": 8,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "syntax",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.7
+    },
+    {
+     "id": "tests (generic OS, 1/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 10.6
+    },
+    {
+     "id": "tests (macOS, 1/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 16.4
+    },
+    {
+     "id": "tests (generic OS, 2/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 9.8
+    },
+    {
+     "id": "tests (no Sorbet)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 10.6
+    },
+    {
+     "id": "tests (online, 1/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 8.3
+    },
+    {
+     "id": "tests (online, 2/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 11.9
+    },
+    {
+     "id": "tests (Linux, 1/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 11.9
+    },
+    {
+     "id": "tests (load-only Linux)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.5
+    },
+    {
+     "id": "tests (macOS, 2/2)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 24.2
+    },
+    {
+     "id": "tests (load-only macOS)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.6
+    },
+    {
+     "id": "tests (Linux, 2/2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 10.3
+    },
+    {
+     "id": "vendored gems",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 0.7
+    },
+    {
+     "id": "tap syntax",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 10.2
+    },
+    {
+     "id": "bundle and services (macOS)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 2.9
+    },
+    {
+     "id": "update-test (Linux)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 0.3
+    },
+    {
+     "id": "analytics (macOS)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 3.6
+    },
+    {
+     "id": "update-test (macOS)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 0.6
+    },
+    {
+     "id": "cask audit (Linux)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 2.1
+    },
+    {
+     "id": "formula audit",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 5.6
+    },
+    {
+     "id": "cask audit (macOS)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 9.6
+    },
+    {
+     "id": "test-bot (Linux arm64)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 3.8
+    },
+    {
+     "id": "analytics (Linux)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 2.6
+    },
+    {
+     "id": "test-bot (no Sorbet)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 3.7
+    },
+    {
+     "id": "test-bot (Linux x86_64, padded prefix)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 3.9
+    },
+    {
+     "id": "test-bot (Linux containerless)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 7.8
+    },
+    {
+     "id": "test-bot (Linux x86_64)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 3.4
+    },
+    {
+     "id": "test-bot (macOS arm64)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 12.2
+    },
+    {
+     "id": "test-bot (Linux Homebrew glibc)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 6.3
+    },
+    {
+     "id": "test-bot (macOS arm64, padded prefix)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 10.6
+    },
+    {
+     "id": "test-bot (Linux arm64, padded prefix)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0.1,
+     "workMin": 3.6
+    },
+    {
+     "id": "bundle and services (Linux)",
+     "needs": [
+      "syntax"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 1.9
+    }
+   ],
+   "edges": [
+    {
+     "from": "vendored gems",
+     "to": "syntax"
+    },
+    {
+     "from": "tap syntax",
+     "to": "syntax"
+    },
+    {
+     "from": "bundle and services (macOS)",
+     "to": "syntax"
+    },
+    {
+     "from": "update-test (Linux)",
+     "to": "syntax"
+    },
+    {
+     "from": "analytics (macOS)",
+     "to": "syntax"
+    },
+    {
+     "from": "update-test (macOS)",
+     "to": "syntax"
+    },
+    {
+     "from": "cask audit (Linux)",
+     "to": "syntax"
+    },
+    {
+     "from": "formula audit",
+     "to": "syntax"
+    },
+    {
+     "from": "cask audit (macOS)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux arm64)",
+     "to": "syntax"
+    },
+    {
+     "from": "analytics (Linux)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (no Sorbet)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux x86_64, padded prefix)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux containerless)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux x86_64)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (macOS arm64)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux Homebrew glibc)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (macOS arm64, padded prefix)",
+     "to": "syntax"
+    },
+    {
+     "from": "test-bot (Linux arm64, padded prefix)",
+     "to": "syntax"
+    },
+    {
+     "from": "bundle and services (Linux)",
+     "to": "syntax"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "syntax",
+     "numbers": {
+      "heldJobs": 20,
+      "jobs": 32,
+      "heldJobMin": 39.7,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "tests (macOS, 2/2)"
+   ],
+   "pathMinP50": 23.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "A blocker most jobs wait on: \"syntax\" holds up 20 of 32 jobs, 39.7 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Ruby it applies the principles, without a Ruby-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 112,
+ "read": {
+  "calls": 112,
+  "fromCache": 0
+ }
+}
