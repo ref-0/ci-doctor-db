@@ -55,11 +55,13 @@ node loop/digest.ts      # the readable digest, or the same `no digest:` line
 node --test loop/test/   # the loop's tests
 CI_DOCTOR_SCORER=<ci-doctor checkout>/scorer/src node --test submission/test/   # the submission check's
 node loop/measure.ts --dry-run --max 10   # this week's queue, with each repo's reason
-node loop/measure.ts     # the weekly run: find, measure, store, publish (--push from main)
+node loop/measure.ts     # the weekly run: find, measure, read practices again, store, publish (--push from main)
+node loop/reread.ts --dry-run             # the latest reports whose practices the scorer's current detection hasn't read
+node loop/reread.ts      # read them again and write each back in place (--all for every one, --push from main)
 node loop/prune.ts --dry-run              # what cache retention would delete
 ```
 
-The weekly run scores with ci-doctor's `main`, from its own checkout of it, with the `ref0-ci-doctor` App's token. It starts on Sunday at 02:00 and measures for 11 hours from its start (`--hours`), one run at a time, and pushes every report `origin/main` lacks as one data commit made on `origin/main`. Every tracked repo is due once its last report is 6 days old, adopters every run; one with no pull-request run since its last report is skipped and keeps that report, as a row in `loop.db`'s `skips`. Its log goes to `logs/measure-<date>.log`. The learn job runs at 14:00: `import.ts`, `compare.ts` and `digest.ts`, and a model writes the narrative only when `digest/<date>.md` was written. When `loop/schema.sql` adds a column, rebuild `loop.db` with `rm loop.db && node loop/import.ts`; a new table or view needs nothing, as `loop.db` gains it when next opened.
+The weekly run scores with ci-doctor's `main`, from its own checkout of it, with the `ref0-ci-doctor` App's token. It starts on Sunday at 02:00 and measures for 11 hours from its start (`--hours`), one run at a time, and pushes every report `origin/main` lacks, or holds at other content, as one data commit made on `origin/main`. Every tracked repo is due once its last report is 6 days old, adopters every run; one with no pull-request run since its last report is skipped and keeps that report, as a row in `loop.db`'s `skips`. After the checks, while its hours last, it reads again the practices of each latest report that an older version of the scorer's practice detection read, and logs each verdict that changed; `loop.db`'s `readings` says which detection read each one. Its log goes to `logs/measure-<date>.log`. The learn job runs at 14:00: `import.ts`, `compare.ts` and `digest.ts`, and a model writes the narrative only when `digest/<date>.md` was written. When `loop/schema.sql` adds a column, rebuild `loop.db` with `rm loop.db && node loop/import.ts`; a new table or view needs nothing, as `loop.db` gains it when next opened. A rebuilt `loop.db` has no `skips` or `readings`, which the import can't rebuild, so its next run reads every latest report's practices again.
 
 Scoring a repo uses the published scorer, `npx @ref0/ci-doctor`.
 
