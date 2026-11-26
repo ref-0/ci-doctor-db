@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { spawnSync } from 'node:child_process';
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { chmodSync, cpSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { open } from '../db.ts';
 import { importOne, importReports, refreshRepos } from '../import.ts';
 import { KEEP, CHECK_P90, reportText, runWeek, type CheckResult, type Clock } from '../measure.ts';
-import { detectionOf, dueReports, recordReading, rereadDue, rereadLine, verdictChanges, type Reread, type RereadDeps } from '../reread.ts';
+import { detectionOf, dueReports, partialOf, recordReading, rereadDue, rereadLine, verdictChanges, type Reread, type RereadDeps } from '../reread.ts';
 import type { Quota } from '../github.ts';
 
 const FIXTURE = JSON.parse(readFileSync(join(import.meta.dirname, 'fixtures', 'vitejs__vite', '2026-11-19.json'), 'utf8'));
@@ -58,26 +58,42 @@ const deps = (db: RereadDeps['db'], reportsDir: string, reread: Reread, extra: P
   db, reportsDir, detection: NEW, clock: fakeClock(), stopAt: STOP, quota: plenty, token: () => 't', reread, importOne, log: () => {}, ...extra,
 });
 
-test("the detection's sha256 follows practices.ts and the code it imports, not its type imports or other files", () => {
+test("the detection's sha256 follows index.ts and the code it reaches at runtime, not type imports or other files", () => {
   mkdirSync(SCRATCH, { recursive: true });
   const src = mkdtempSync(join(SCRATCH, 'scorer-'));
   const put = (name: string, text: string) => writeFileSync(join(src, name), text);
+  put('index.ts', "export { scoreRepo } from './score.ts';\nexport type { Hint } from './hint.ts';\n");
+  put('score.ts', "import { githubSource, type Tree } from './source.ts';\nimport { practices } from './practices.ts';\nexport const s = 1;\n");
+  put('source.ts', 'export const githubSource = 1;\n');
   put('practices.ts', "import { parse } from './yaml.ts';\nimport type { Source } from './source.ts';\nexport const p = 1;\n");
   put('yaml.ts', "import {\n  vcpus,\n} from './runners.ts';\nexport const parse = 1;\n");
   put('runners.ts', 'export const vcpus = 1;\n');
-  put('source.ts', 'export type Source = 1;\n');
-  put('score.ts', 'export const s = 1;\n');
+  put('hint.ts', 'export type Hint = 1;\n');
+  put('cli.ts', "import { scoreRepo } from './index.ts';\n");
   const first = detectionOf(src);
 
-  put('source.ts', 'export type Source = 2;\n');
-  put('score.ts', 'export const s = 2;\n');
+  // The same files in another folder hash the same: nothing absolute goes in.
+  const copy = mkdtempSync(join(SCRATCH, 'scorer-copy-'));
+  cpSync(src, copy, { recursive: true });
+  assert.equal(detectionOf(copy), first);
+  rmSync(copy, { recursive: true, force: true });
+
+  put('hint.ts', 'export type Hint = 2;\n');
+  put('cli.ts', "import { scoreRepo } from './index.ts';\nscoreRepo;\n");
   assert.equal(detectionOf(src), first);
 
-  put('runners.ts', 'export const vcpus = 2;\n');
-  const second = detectionOf(src);
-  assert.notEqual(second, first);
-  put('practices.ts', "import { parse } from './yaml.ts';\nimport type { Source } from './source.ts';\nexport const p = 2;\n");
-  assert.notEqual(detectionOf(src), second);
+  const seen = new Set([first]);
+  for (const [name, text] of [
+    ['score.ts', "import { githubSource, type Tree } from './source.ts';\nimport { practices } from './practices.ts';\nexport const s = 2;\n"],
+    ['source.ts', 'export const githubSource = 2;\n'],
+    ['runners.ts', 'export const vcpus = 2;\n'],
+    ['practices.ts', "import { parse } from './yaml.ts';\nimport type { Source } from './source.ts';\nexport const p = 2;\n"],
+  ]) {
+    put(name!, text!);
+    const now = detectionOf(src);
+    assert.ok(!seen.has(now), `a change to ${name} changes the detection`);
+    seen.add(now);
+  }
   assert.match(first, /^[0-9a-f]{64}$/);
   rmSync(src, { recursive: true, force: true });
 });
@@ -179,11 +195,40 @@ test("a re-read that fails leaves the report untouched, is counted, and is due a
   const r = await rereadDue(deps(db, reportsDir, reread, { log: (s) => lines.push(s) }));
 
   assert.deepEqual(asked, ['mo/kiln', 'pip/garden']);
-  assert.deepEqual([r.read, r.changed, r.failed, r.left], [1, 1, 1, 0]);
+  assert.deepEqual([r.read, r.changed, r.failed, r.left], [1, 1, 1, 1]);
   assert.equal(readFileSync(file, 'utf8'), before);
   assert.ok(lines.some((l) => /reread pip\/garden\/2026-11-22: failed, left as it was \(GitHub answered 502/.test(l)));
   assert.deepEqual(dueReports(db, NEW).map((d) => d.id), ['pip/garden/2026-11-22']);
-  assert.match(rereadLine(r), /^reread: 1 of 2 due reports' practices read again \(1 with a verdict changed, 1 failed\); 0 left for the next run/);
+  assert.match(rereadLine(r), /^reread: 1 of 2 due reports' practices read again \(1 with a verdict changed, 1 failed\); 1 left for the next run/);
+  done();
+});
+
+test("a re-read that can't write leaves the original bytes; a killed one's partial file is no report and goes next run", async () => {
+  const { db, reportsDir, done } = setup([report('pip/garden', '2026-11-22')]);
+  const folder = join(reportsDir, 'pip__garden');
+  const file = join(folder, '2026-11-22.json');
+  const before = readFileSync(file, 'utf8');
+
+  // A folder it can't write in: the partial can't be made, and the report is as it was.
+  chmodSync(folder, 0o555);
+  const r = await rereadDue(deps(db, reportsDir, fakeScorer({ remoteCache: true }).reread));
+  chmodSync(folder, 0o755);
+  assert.deepEqual([r.read, r.failed, r.left], [0, 1, 1]);
+  assert.equal(readFileSync(file, 'utf8'), before);
+  assert.deepEqual(readdirSync(folder), ['2026-11-22.json']);
+
+  // What a kill mid-write leaves: a partial sibling, which import never takes for a report (nor the site, which sends
+  // loop.db's rows; publish.test.ts has publish's side).
+  const partial = partialOf(file);
+  assert.equal(dirname(partial), folder);
+  assert.doesNotMatch(partial, /\.json$/);
+  writeFileSync(partial.replace(/\d+$/, '1'), '{"repo": "pip/gar');
+  assert.equal(importReports(db, reportsDir).files, 1);
+
+  const next = await rereadDue(deps(db, reportsDir, fakeScorer({ remoteCache: true }).reread));
+  assert.equal(next.read, 1);
+  assert.deepEqual(readdirSync(folder), ['2026-11-22.json']);
+  assert.equal(JSON.parse(readFileSync(file, 'utf8')).practices.remoteCache, true);
   done();
 });
 
