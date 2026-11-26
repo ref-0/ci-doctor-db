@@ -1,6 +1,10 @@
 // One measure run at a time: two at once would score the same repos and overwrite each other's reports. The lock is a
 // file made with O_EXCL holding the owner's pid; a lock whose pid is gone is stale and is taken over.
 import { openSync, readFileSync, unlinkSync, writeSync, closeSync } from 'node:fs';
+import { join } from 'node:path';
+
+// The lock the measure run and a re-read (reread.ts) both take, so neither runs while the other does.
+export const runLock = () => process.env.LOOP_LOCK ?? join(import.meta.dirname, '..', 'logs', 'measure.lock');
 
 const alive = (pid: number) => {
   try {

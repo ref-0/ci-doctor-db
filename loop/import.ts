@@ -45,8 +45,9 @@ const KNOWN = new Set([
   'repo', 'date', 'profile', 'window', 'size', 'headsPerWeek', 'score', 'grade', 'band', 'parts', 'detail',
   'efficiency', 'wait', 'main', 'botRunShare', 'jobs', 'tests', 'practices', 'fixes', 'notes', 'apiCalls',
   'rescored', 'unscored', 'checkout', 'defaultBranch', 'stack', 'read', 'submitted',
-  // In the JSON file only: which scorer made it, and what the evidence and the graphs say.
-  'scorerVersion', 'evidence', 'jobGraph', 'graphs',
+  // In the JSON file only: which scorer made it, what the evidence and the graphs say, and the day its practices were
+  // last read, by a re-read (loop/reread.ts).
+  'scorerVersion', 'evidence', 'jobGraph', 'graphs', 'practicesDate',
 ]);
 
 type Row = Record<string, SQLInputValue>;
@@ -81,8 +82,9 @@ export function reportRow(dir: string, file: string, text: string, misfits: Misf
   const practices: Row = {};
   const otherPractices: Record<string, unknown> = {};
   for (const [k, v] of Object.entries(p)) {
-    // agentsMd is in the stack's agent files; unknown is why a practice is null, not a practice.
-    if (k === 'agentsMd' || k === 'unknown') continue;
+    // agentsMd is in the stack's agent files; unknown is why a practice is null, and where the file each was found in:
+    // neither is a practice, and both stay in the JSON file.
+    if (k === 'agentsMd' || k === 'unknown' || k === 'where') continue;
     if (k === 'hints') {
       const ok = Array.isArray(v) ? v.filter((h) => ['practice', 'path', 'kind'].every((f) => typeof h?.[f] === 'string')) : [];
       if (!Array.isArray(v) || ok.length < v.length) misfits.push({ path, what: 'practices.hints holds something not { practice, path, kind }; left out' });

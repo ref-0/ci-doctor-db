@@ -2,7 +2,7 @@
 -- D1 runs this file unchanged: no PRAGMAs, no extensions, JSON kept as TEXT.
 -- Full report JSON stays in reports/ (the site's R2); a report row names it by `path`.
 -- The site's D1 makes these tables with ref0's apps/ci-doctor/migrations/: change both together. loop/site.ts sends them.
--- Except `skips`, `hints` and the `latest_age` view, which are loop.db's own: loop/site.ts doesn't send them.
+-- Except `skips`, `readings`, `hints` and the `latest_age` view, which are loop.db's own: loop/site.ts doesn't send them.
 
 -- Every repo ever measured. latest_report is the newest report file, scored or not.
 CREATE TABLE IF NOT EXISTS repos (
@@ -127,6 +127,17 @@ SELECT p.repo, p.latest_report, r.date AS report_date,
        (SELECT COUNT(*) FROM skips s WHERE s.repo = p.repo AND s.at > r.date) AS skips_since,
        (SELECT MAX(s.at) FROM skips s WHERE s.repo = p.repo AND s.at > r.date) AS last_skipped
   FROM repos p JOIN reports r ON r.id = p.latest_report;
+
+-- Which practice detection last read each report's practices: the measure run that wrote it, or a re-read since
+-- (loop/reread.ts). A latest report is due for a re-read when no row names it with the detection the scorer has now.
+-- Like `skips`, the import can't rebuild it: a rebuilt loop.db has none, and its next run reads every latest report again.
+CREATE TABLE IF NOT EXISTS readings (
+  report    TEXT PRIMARY KEY REFERENCES reports(id),
+  detection TEXT NOT NULL,                   -- sha256 of the scorer's practices.ts and the modules it imports code from
+  at        TEXT NOT NULL,                   -- ISO time it was read
+  how       TEXT NOT NULL CHECK (how IN ('measure', 'reread')),
+  changed   INTEGER                          -- verdicts a re-read changed; NULL for a measure
+);
 
 -- A report's practices.hints: each place that looks like a practice in a form the scorer doesn't recognise, which is
 -- where the next detection comes from. A report from before the field has none.
