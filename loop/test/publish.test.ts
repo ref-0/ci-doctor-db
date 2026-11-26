@@ -60,6 +60,23 @@ test("publish fast-forwards a checkout's main that has nothing of its own", () =
   done();
 });
 
+test('a report changed in place since origin/main had it is pushed too, and the checkout is fast-forwarded', () => {
+  const { origin, root, scratch, done } = repos();
+  write(root, 'reports/a__old/2026-11-12.json', '{"old":1,"practicesDate":"2026-11-29"}');
+  write(root, 'reports/b__new/2026-11-20.json', '{"new":1}');
+
+  assert.deepEqual(unpublished(root), ['reports/a__old/2026-11-12.json', 'reports/b__new/2026-11-20.json']);
+  assert.match(publish({ root, scratch, date: '2026-11-29', push: false, log: () => {} }), /2 reports not on origin\/main yet \(1 changed since origin\/main had them\); not pushed/);
+  const line = publish({ root, scratch, date: '2026-11-29', push: true, log: () => {} });
+
+  assert.match(line, /2 reports pushed to main as \w+ \(1 changed since origin\/main had them\); the checkout is fast-forwarded/);
+  assert.equal(git(origin, 'show', 'main:reports/a__old/2026-11-12.json'), '{"old":1,"practicesDate":"2026-11-29"}');
+  assert.match(git(origin, 'log', '-1', '--format=%s', 'main'), /^Reports: 1 checks and 1 changed in place, published 2026-11-29$/);
+  assert.equal(git(root, 'status', '--porcelain'), '');
+  assert.deepEqual(unpublished(root), []);
+  done();
+});
+
 test('without --push, or with nothing new, publish pushes nothing', () => {
   const { origin, root, scratch, done } = repos();
   assert.equal(publish({ root, scratch, date: '2026-11-20', push: true, log: () => {} }), 'publish: every report is on origin/main');

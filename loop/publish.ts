@@ -1,4 +1,5 @@
-// Publishing: every report under reports/ that origin/main doesn't have yet, as one data commit pushed to main.
+// Publishing: every report under reports/ that origin/main doesn't have yet, or has with other content, such as one whose
+// practices were read again in place (reread.ts), as one data commit pushed to main.
 // The commit is made in a worktree of its own on origin/main, so nothing else on the checkout's branch (a code
 // commit not yet through a PR, say) is ever pushed with it. A report it can't publish stays where it is, and the
 // next run publishes it.
@@ -12,6 +13,19 @@ const TRAILER = 'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>';
 
 const git = (dir: string, ...a: string[]) =>
   execFileSync('git', ['-C', dir, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: childEnv() }).trim();
+// Each path's blob id as git would store it, in one git call.
+const blobIds = (dir: string, paths: string[]): string[] =>
+  paths.length
+    ? execFileSync('git', ['-C', dir, 'hash-object', '--stdin-paths'], { input: paths.join('\n') + '\n', encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'], env: childEnv() }).trim().split('\n')
+    : [];
+// The report files at `rev`, by path, with their blob ids.
+const reportsAt = (dir: string, rev: string) =>
+  new Map(
+    git(dir, 'ls-tree', '-r', rev, '--', 'reports')
+      .split('\n')
+      .filter(Boolean)
+      .map((l) => [l.slice(l.indexOf('\t') + 1), l.split(/\s+/)[2]!] as const),
+  );
 const why = (e: unknown) => String((e as { stderr?: string }).stderr ?? '').trim().split('\n').at(-1) || (e as Error).message.split('\n')[0];
 
 // Report files on disk, as paths relative to the checkout: reports/<owner>__<repo>/<file>.json.
@@ -26,28 +40,42 @@ function onDisk(root: string): string[] {
   return out.sort();
 }
 
-// The report files on origin/main, after fetching it, as reports/<owner>__<repo>/<file>.json.
-export function publishedReports(root: string): Set<string> {
+// The report files on origin/main, after fetching it, by path (reports/<owner>__<repo>/<file>.json) with their blob ids.
+function onMain(root: string): Map<string, string> {
   git(root, 'fetch', '-q', 'origin', 'main');
-  return new Set(git(root, 'ls-tree', '-r', '--name-only', 'origin/main', '--', 'reports').split('\n'));
+  return reportsAt(root, 'origin/main');
 }
 
-// The reports origin/main doesn't have, after fetching it.
+export const publishedReports = (root: string): Set<string> => new Set(onMain(root).keys());
+
+// The reports origin/main doesn't have, and those it has with other content, after fetching it.
+export function pending(root: string): { added: string[]; changed: string[] } {
+  const published = onMain(root);
+  const files = onDisk(root);
+  const both = files.filter((p) => published.has(p));
+  const ids = blobIds(root, both);
+  return { added: files.filter((p) => !published.has(p)), changed: both.filter((p, i) => ids[i] !== published.get(p)) };
+}
+
 export function unpublished(root: string): string[] {
-  const published = publishedReports(root);
-  return onDisk(root).filter((p) => !published.has(p));
+  const { added, changed } = pending(root);
+  return [...added, ...changed].sort();
 }
 
 export function publish(opts: { root: string; scratch: string; date: string; push: boolean; log: (s: string) => void }): string {
   const { root, scratch, date, push, log } = opts;
   let files: string[];
+  let changed: number;
   try {
-    files = unpublished(root);
+    const p = pending(root);
+    files = [...p.added, ...p.changed].sort();
+    changed = p.changed.length;
   } catch (e) {
     return `publish: couldn't read origin/main (${why(e)}); nothing pushed`;
   }
   if (!files.length) return 'publish: every report is on origin/main';
-  if (!push) return `publish: ${files.length} reports not on origin/main yet; not pushed (--push publishes them)`;
+  const of = changed ? ` (${changed} changed since origin/main had them)` : '';
+  if (!push) return `publish: ${files.length} reports not on origin/main yet${of}; not pushed (--push publishes them)`;
 
   mkdirSync(scratch, { recursive: true });
   const wt = join(scratch, `publish-${process.pid}`);
@@ -63,7 +91,8 @@ export function publish(opts: { root: string; scratch: string; date: string; pus
       copyFileSync(join(root, f), join(wt, f));
     }
     git(wt, 'add', '--', ...files);
-    const message = `Reports: ${files.length} checks, published ${date}\n\n${TRAILER}`;
+    const what = changed ? `${files.length - changed} checks and ${changed} changed in place` : `${files.length} checks`;
+    const message = `Reports: ${what}, published ${date}\n\n${TRAILER}`;
     git(wt, ...IDENTITY, 'commit', '-q', '-m', message);
     sha = git(wt, 'rev-parse', '--short', 'HEAD');
     git(wt, 'push', '-q', 'origin', 'HEAD:main');
@@ -79,12 +108,13 @@ export function publish(opts: { root: string; scratch: string; date: string; pus
     }
   }
 
-  return `publish: ${files.length} reports pushed to main as ${sha}${catchUp(root, files, log)}`;
+  return `publish: ${files.length} reports pushed to main as ${sha}${of}${catchUp(root, files, log)}`;
 }
 
 // The checkout's main, when it has nothing of its own, fast-forwarded to what was pushed. Its copies of the reports
-// are untracked and would block the merge, so they're removed first, and only when each is byte for byte the pushed
-// one; if the merge fails they're put back from origin/main.
+// would block the merge, a new one untracked and a changed one modified, so they're set aside first, and only when
+// each is byte for byte the pushed one: a new one removed, a changed one put back as HEAD has it. If the merge fails,
+// they're put back from origin/main.
 function catchUp(root: string, files: string[], log: (s: string) => void): string {
   try {
     git(root, 'fetch', '-q', 'origin', 'main');
@@ -94,8 +124,14 @@ function catchUp(root: string, files: string[], log: (s: string) => void): strin
     } catch {
       return "; the checkout's main has commits of its own, so it wasn't fast-forwarded";
     }
-    for (const f of files) if (git(root, 'hash-object', f) !== git(root, 'rev-parse', `origin/main:${f}`)) return `; ${f} differs from the pushed copy, so the checkout wasn't fast-forwarded`;
-    for (const f of files) rmSync(join(root, f));
+    const pushed = reportsAt(root, 'origin/main');
+    const ids = blobIds(root, files);
+    const differs = files.find((f, i) => ids[i] !== pushed.get(f));
+    if (differs) return `; ${differs} differs from the pushed copy, so the checkout wasn't fast-forwarded`;
+    const tracked = reportsAt(root, 'HEAD');
+    const restore = files.filter((f) => tracked.has(f));
+    for (const f of files) if (!tracked.has(f)) rmSync(join(root, f));
+    if (restore.length) git(root, 'checkout', '-q', 'HEAD', '--', ...restore);
     try {
       git(root, 'merge', '-q', '--ff-only', 'origin/main');
     } catch (e) {
