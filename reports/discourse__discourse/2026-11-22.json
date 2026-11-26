@@ -1,0 +1,4382 @@
+{
+ "repo": "discourse/discourse",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 13.9,
+  "stars": 48105,
+  "forks": 9062,
+  "languages": [
+   [
+    "Ruby",
+    60
+   ],
+   [
+    "JavaScript",
+    30
+   ],
+   [
+    "TypeScript",
+    4
+   ],
+   [
+    "SCSS",
+    2
+   ]
+  ],
+  "linesOfCode": 2364887,
+  "files": 28328,
+  "sourceFiles": 17785,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 983292,
+   "tests": 1247424,
+   "integration": 97551,
+   "support": 36620
+  },
+  "testShare": 0.584211997622381,
+  "packages": {
+   "npm": 57,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 150.3,
+  "pace": 1.4,
+  "activeAuthors28d": "≥42",
+  "prsOpenedPerWeek": 435,
+  "prsMergedPerWeek": 336,
+  "botShareOfMergedPrs": 15,
+  "openToMergeHours": {
+   "p50": 3.3,
+   "p90": 70.5,
+   "n": 85
+  },
+  "prRunsPerDay": 508.3,
+  "runsPerMergedPr": 10.6
+ },
+ "window": {
+  "days": 2.4,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.4
+ },
+ "size": "large",
+ "headsPerWeek": 750,
+ "score": 85,
+ "grade": "B+",
+ "band": "fast",
+ "parts": {
+  "speed": 81,
+  "reliability": 91,
+  "efficiency": 93
+ },
+ "detail": {
+  "speed": {
+   "wait": 68,
+   "forSize": 100,
+   "tail": 76
+  },
+  "reliability": {
+   "flakes": 84,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 70,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5641.4,
+  "prBilledMinutesPerDay": 5997.2,
+  "jobMinutesPerMergedPr": 117.5,
+  "expectedMinutesPerMergedPr": 440.2,
+  "expectedWait": 22.6,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 253,
+  "timed": 114,
+  "p50": 11.166666666666666,
+  "p75": 12.116666666666667,
+  "p90": 14.383333333333333,
+  "redRate": 0.1225296442687747,
+  "rerunRate": 0.05928853754940711,
+  "passedOnRerunRate": 0.02766798418972332,
+  "cancelledRate": 0.09881422924901186,
+  "botHeads": 13,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 20,
+  "bots": [
+   [
+    "discourse-patch-triage[bot]",
+    9
+   ],
+   [
+    "dependabot[bot]",
+    7
+   ],
+   [
+    "clarity-fleet[bot]",
+    4
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Tests",
+    114
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests",
+    27
+   ],
+   [
+    "Linting",
+    7
+   ],
+   [
+    "Licenses",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Bundle analysis",
+   "Developer Docs Publish",
+   "Pull Request Labeler"
+  ],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 11.166666666666666
+ },
+ "main": {
+  "heads": 59,
+  "p50": 12.916666666666666,
+  "p90": 21.916666666666668,
+  "redRate": 0.01694915254237288,
+  "redBy": [
+   [
+    "Tests",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.06466666666666666,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 10.8,
+  "jobMinutes": 75.43333333333334,
+  "billedMinutes": 81,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 2.4533072989353313e-10,
+  "critical": {
+   "name": "JS deprecation report",
+   "minutes": 0.2833333333333333,
+   "shareOfSpan": 0.026729559748427674
+  },
+  "longest": {
+   "name": "plugins backend",
+   "minutes": 10.5
+  },
+  "providers": [
+   [
+    "cdck-linux-8-core",
+    42
+   ],
+   [
+    "cdck-linux-16-core",
+    18
+   ],
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/tests.yml"
+  ],
+  "jobs": 3,
+  "edges": 2,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "JS deprecation report",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "plugins backend",
+    "minutes": 10.5,
+    "share": 0.97,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 10.5,
+    "setupMin": 0.5
+   },
+   {
+    "name": "JS deprecation report",
+    "minutes": 0.3,
+    "share": 0.03,
+    "blockedMin": 10.5,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 10.8,
+  "blockedMinP50": 10.5,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 10.8,
+  "setupInPathMinP50": 0.2,
+  "topBlockers": [
+   {
+    "name": "… …",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 11,
+    "tookMin": 10.5,
+    "heldJobMin": 10.5
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44971033110,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.9,
+    "path": [
+     "plugins backend",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.8,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.7,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.7,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 11.5,
+      "endMin": 11.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44970949360,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.6,
+    "path": [
+     "plugins backend",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.7,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.7,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.7,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.8,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 11.1,
+      "createdMin": 11.1,
+      "startMin": 11.2,
+      "endMin": 11.6,
+      "blockedMin": 11.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44961029559,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.3,
+    "path": [
+     "plugins backend",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 10,
+      "endMin": 10.3,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44960609317,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.6,
+    "path": [
+     "core system",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 0.3,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 10.3,
+      "createdMin": 10.3,
+      "startMin": 10.3,
+      "endMin": 10.6,
+      "blockedMin": 10.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44938047215,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.1,
+    "path": [
+     "core system",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.4,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 10.7,
+      "createdMin": 10.7,
+      "startMin": 10.8,
+      "endMin": 11.1,
+      "blockedMin": 10.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44938043797,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.8,
+    "path": [
+     "plugins backend",
+     "JS deprecation report"
+    ],
+    "topBlocker": "… …",
+    "jobs": [
+     {
+      "name": "plugins (core) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.3,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "plugins backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (official) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-16-core",
+      "vcpus": 16
+     },
+     {
+      "name": "themes frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "themes system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "plugins (chat) system",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "core backend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.5,
+      "runner": "cdck-linux-8-core",
+      "vcpus": 8
+     },
+     {
+      "name": "JS deprecation report",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.6,
+      "endMin": 10.8,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 23,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Ruby",
+    60
+   ],
+   [
+    "JavaScript",
+    30
+   ],
+   [
+    "TypeScript",
+    4
+   ],
+   [
+    "SCSS",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm",
+    "Bundler"
+   ],
+   "tools": [
+    "pnpm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 57,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test",
+   "RSpec"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Stylelint",
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "rolldown",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "source-map-js",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "xss",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@babel/core",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@babel/plugin-transform-typescript",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@discourse/lint-configs",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@embroider/addon-shim",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@glimmer/syntax",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@glint/ember-tsc",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@rollup/plugin-babel",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "babel-plugin-ember-template-compilation",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "content-tag",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "core-js",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "decorator-transforms",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ember-cli-htmlbars",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ember-source",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "markdown-it",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "postcss-value-parser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "strip-test-selectors",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "vite",
+    "ecosystem": "npm",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "cdck-linux-8-core",
+    42
+   ],
+   [
+    "cdck-linux-16-core",
+    18
+   ],
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   "GEMINI.md",
+   ".github/instructions",
+   ".cursor/rules"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "discourse-developer-docs",
+     "path": "docs/developer-guides/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "asset-processor",
+     "path": "frontend/asset-processor/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "discourse"
+     ],
+     "exports": false
+    },
+    {
+     "name": "deprecation-silencer",
+     "path": "frontend/deprecation-silencer/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "discourse-i18n",
+     "path": "frontend/discourse-i18n/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "discourse-markdown-it",
+     "path": "frontend/discourse-markdown-it/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "discourse",
+      "discourse-i18n"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@discourse/types",
+     "path": "frontend/discourse-types/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 12,
+      "root": false
+     }
+    },
+    {
+     "name": "discourse",
+     "path": "frontend/discourse/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "deprecation-silencer",
+      "discourse-i18n",
+      "discourse-markdown-it"
+     ],
+     "exports": {
+      "entries": 9,
+      "root": false
+     }
+    },
+    {
+     "name": "@discourse/playwright-runner",
+     "path": "frontend/playwright-runner/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "pretty-text-processor",
+     "path": "frontend/pretty-text-processor/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "discourse",
+      "discourse-markdown-it"
+     ],
+     "exports": false
+    },
+    {
+     "name": "package.json",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "plugins/automation/package.json",
+     "path": "plugins/automation/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/blog/package.json",
+     "path": "plugins/blog/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/boards/package.json",
+     "path": "plugins/boards/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/chat/package.json",
+     "path": "plugins/chat/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/checklist/package.json",
+     "path": "plugins/checklist/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-adplugin/package.json",
+     "path": "plugins/discourse-adplugin/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-affiliate/package.json",
+     "path": "plugins/discourse-affiliate/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-ai/package.json",
+     "path": "plugins/discourse-ai/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-apple-auth/package.json",
+     "path": "plugins/discourse-apple-auth/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-assign/package.json",
+     "path": "plugins/discourse-assign/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-cakeday/package.json",
+     "path": "plugins/discourse-cakeday/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-captcha/package.json",
+     "path": "plugins/discourse-captcha/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-chat-integration/package.json",
+     "path": "plugins/discourse-chat-integration/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-data-explorer/package.json",
+     "path": "plugins/discourse-data-explorer/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-details/package.json",
+     "path": "plugins/discourse-details/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-events/package.json",
+     "path": "plugins/discourse-events/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-gamification/package.json",
+     "path": "plugins/discourse-gamification/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-github/package.json",
+     "path": "plugins/discourse-github/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-graphviz/package.json",
+     "path": "plugins/discourse-graphviz/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-lazy-videos/package.json",
+     "path": "plugins/discourse-lazy-videos/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-local-dates/package.json",
+     "path": "plugins/discourse-local-dates/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-login-with-amazon/package.json",
+     "path": "plugins/discourse-login-with-amazon/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-lti/package.json",
+     "path": "plugins/discourse-lti/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-math/package.json",
+     "path": "plugins/discourse-math/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-microsoft-auth/package.json",
+     "path": "plugins/discourse-microsoft-auth/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-narrative-bot/package.json",
+     "path": "plugins/discourse-narrative-bot/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-oauth2-basic/package.json",
+     "path": "plugins/discourse-oauth2-basic/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-openid-connect/package.json",
+     "path": "plugins/discourse-openid-connect/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-patreon/package.json",
+     "path": "plugins/discourse-patreon/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-policy/package.json",
+     "path": "plugins/discourse-policy/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-post-voting/package.json",
+     "path": "plugins/discourse-post-voting/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-presence/package.json",
+     "path": "plugins/discourse-presence/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-reactions/package.json",
+     "path": "plugins/discourse-reactions/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-rss-polling/package.json",
+     "path": "plugins/discourse-rss-polling/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-solved/package.json",
+     "path": "plugins/discourse-solved/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-subscriptions/package.json",
+     "path": "plugins/discourse-subscriptions/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-templates/package.json",
+     "path": "plugins/discourse-templates/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-topic-voting/package.json",
+     "path": "plugins/discourse-topic-voting/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-user-notes/package.json",
+     "path": "plugins/discourse-user-notes/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/discourse-zendesk-plugin/package.json",
+     "path": "plugins/discourse-zendesk-plugin/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/footnote/package.json",
+     "path": "plugins/footnote/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/live/package.json",
+     "path": "plugins/live/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/poll/package.json",
+     "path": "plugins/poll/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/spoiler-alert/package.json",
+     "path": "plugins/spoiler-alert/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "plugins/styleguide/package.json",
+     "path": "plugins/styleguide/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "themes/horizon/package.json",
+     "path": "themes/horizon/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@discourse/types"
+     ],
+     "exports": false
+    }
+   ],
+   "count": 56,
+   "edges": 54,
+   "cycles": [
+    {
+     "ecosystem": "npm",
+     "packages": [
+      "discourse",
+      "discourse-markdown-it"
+     ]
+    }
+   ],
+   "maxDepth": 2,
+   "topFanIn": [
+    {
+     "name": "@discourse/types",
+     "ecosystem": "npm",
+     "dependents": 46
+    },
+    {
+     "name": "discourse",
+     "ecosystem": "npm",
+     "dependents": 3
+    },
+    {
+     "name": "discourse-i18n",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "discourse-markdown-it",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "deprecation-silencer",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 56,
+    "edges": 54
+   },
+   "nodes": [
+    {
+     "id": "@discourse/types",
+     "dir": "frontend/discourse-types",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 46,
+     "depth": 0
+    },
+    {
+     "id": "discourse",
+     "dir": "frontend/discourse",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "discourse-i18n",
+     "dir": "frontend/discourse-i18n",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "discourse-markdown-it",
+     "dir": "frontend/discourse-markdown-it",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "deprecation-silencer",
+     "dir": "frontend/deprecation-silencer",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@discourse/playwright-runner",
+     "dir": "frontend/playwright-runner",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "asset-processor",
+     "dir": "frontend/asset-processor",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "discourse-developer-docs",
+     "dir": "docs/developer-guides",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "package.json",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "plugins/automation/package.json",
+     "dir": "plugins/automation",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/blog/package.json",
+     "dir": "plugins/blog",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/boards/package.json",
+     "dir": "plugins/boards",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/chat/package.json",
+     "dir": "plugins/chat",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/checklist/package.json",
+     "dir": "plugins/checklist",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-adplugin/package.json",
+     "dir": "plugins/discourse-adplugin",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-affiliate/package.json",
+     "dir": "plugins/discourse-affiliate",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-ai/package.json",
+     "dir": "plugins/discourse-ai",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-apple-auth/package.json",
+     "dir": "plugins/discourse-apple-auth",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-assign/package.json",
+     "dir": "plugins/discourse-assign",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-cakeday/package.json",
+     "dir": "plugins/discourse-cakeday",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-captcha/package.json",
+     "dir": "plugins/discourse-captcha",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-chat-integration/package.json",
+     "dir": "plugins/discourse-chat-integration",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-data-explorer/package.json",
+     "dir": "plugins/discourse-data-explorer",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-details/package.json",
+     "dir": "plugins/discourse-details",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-events/package.json",
+     "dir": "plugins/discourse-events",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-gamification/package.json",
+     "dir": "plugins/discourse-gamification",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-github/package.json",
+     "dir": "plugins/discourse-github",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-graphviz/package.json",
+     "dir": "plugins/discourse-graphviz",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-lazy-videos/package.json",
+     "dir": "plugins/discourse-lazy-videos",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-local-dates/package.json",
+     "dir": "plugins/discourse-local-dates",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-login-with-amazon/package.json",
+     "dir": "plugins/discourse-login-with-amazon",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-lti/package.json",
+     "dir": "plugins/discourse-lti",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-math/package.json",
+     "dir": "plugins/discourse-math",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-microsoft-auth/package.json",
+     "dir": "plugins/discourse-microsoft-auth",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-narrative-bot/package.json",
+     "dir": "plugins/discourse-narrative-bot",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-oauth2-basic/package.json",
+     "dir": "plugins/discourse-oauth2-basic",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-openid-connect/package.json",
+     "dir": "plugins/discourse-openid-connect",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-patreon/package.json",
+     "dir": "plugins/discourse-patreon",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-policy/package.json",
+     "dir": "plugins/discourse-policy",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-post-voting/package.json",
+     "dir": "plugins/discourse-post-voting",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-presence/package.json",
+     "dir": "plugins/discourse-presence",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-reactions/package.json",
+     "dir": "plugins/discourse-reactions",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-rss-polling/package.json",
+     "dir": "plugins/discourse-rss-polling",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-solved/package.json",
+     "dir": "plugins/discourse-solved",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-subscriptions/package.json",
+     "dir": "plugins/discourse-subscriptions",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-templates/package.json",
+     "dir": "plugins/discourse-templates",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-topic-voting/package.json",
+     "dir": "plugins/discourse-topic-voting",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-user-notes/package.json",
+     "dir": "plugins/discourse-user-notes",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/discourse-zendesk-plugin/package.json",
+     "dir": "plugins/discourse-zendesk-plugin",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/footnote/package.json",
+     "dir": "plugins/footnote",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/live/package.json",
+     "dir": "plugins/live",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/poll/package.json",
+     "dir": "plugins/poll",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/spoiler-alert/package.json",
+     "dir": "plugins/spoiler-alert",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "plugins/styleguide/package.json",
+     "dir": "plugins/styleguide",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "pretty-text-processor",
+     "dir": "frontend/pretty-text-processor",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "themes/horizon/package.json",
+     "dir": "themes/horizon",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "asset-processor",
+     "to": "discourse",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "discourse-markdown-it",
+     "to": "discourse",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "discourse-markdown-it",
+     "to": "discourse-i18n",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "discourse",
+     "to": "deprecation-silencer",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "discourse",
+     "to": "discourse-i18n",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "discourse",
+     "to": "discourse-markdown-it",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "pretty-text-processor",
+     "to": "discourse",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "pretty-text-processor",
+     "to": "discourse-markdown-it",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/automation/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/blog/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/boards/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/chat/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/checklist/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-adplugin/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-affiliate/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-ai/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-apple-auth/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-assign/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-cakeday/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-captcha/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-chat-integration/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-data-explorer/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-details/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-events/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-gamification/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-github/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-graphviz/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-lazy-videos/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-local-dates/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-login-with-amazon/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-lti/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-math/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-microsoft-auth/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-narrative-bot/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-oauth2-basic/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-openid-connect/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-patreon/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-policy/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-post-voting/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-presence/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-reactions/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-rss-polling/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-solved/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-subscriptions/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-templates/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-topic-voting/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-user-notes/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/discourse-zendesk-plugin/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/footnote/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/live/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/poll/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/spoiler-alert/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "plugins/styleguide/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "themes/horizon/package.json",
+     "to": "@discourse/types",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "package-cycle",
+     "subject": "discourse ↔ discourse-markdown-it",
+     "numbers": {
+      "packages": 2,
+      "packagesOf": 56
+     },
+     "threshold": null,
+     "detail": "npm manifest dependencies"
+    }
+   ],
+   "flagCounts": {
+    "package-cycle": 1
+   },
+   "depth": 2,
+   "chain": [
+    "asset-processor",
+    "discourse + discourse-markdown-it",
+    "deprecation-silencer"
+   ],
+   "topFanIn": [
+    {
+     "name": "@discourse/types",
+     "ecosystem": "npm",
+     "dependents": 46
+    },
+    {
+     "name": "discourse",
+     "ecosystem": "npm",
+     "dependents": 3
+    },
+    {
+     "name": "discourse-i18n",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "discourse-markdown-it",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "deprecation-silencer",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 26,
+    "edges": 54,
+    "packages": 56,
+    "packagesWithEntries": 4,
+    "filesRead": 16
+   },
+   "nodes": [
+    {
+     "id": "discourse#./truth-helpers",
+     "pkg": "discourse",
+     "key": "./truth-helpers",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": "frontend/discourse/truth-helpers/index.ts",
+     "reexports": 11,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 33
+    },
+    {
+     "id": "@discourse/types#./tsconfig-plugin",
+     "pkg": "@discourse/types",
+     "key": "./tsconfig-plugin",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "file": "frontend/discourse-types/tsconfig-plugin.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "discourse-i18n#.",
+     "pkg": "discourse-i18n",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "frontend/discourse-i18n/src/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "discourse-i18n#./addon-main.js",
+     "pkg": "discourse-i18n",
+     "key": "./addon-main.js",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "frontend/discourse-i18n/addon-main.cjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "discourse-markdown-it#.",
+     "pkg": "discourse-markdown-it",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": "frontend/discourse-markdown-it/src/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "discourse-markdown-it#./addon-main.js",
+     "pkg": "discourse-markdown-it",
+     "key": "./addon-main.js",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": "frontend/discourse-markdown-it/addon-main.cjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@discourse/types#./*",
+     "pkg": "@discourse/types",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./admin/*",
+     "pkg": "@discourse/types",
+     "key": "./admin/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./admin/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./blocks",
+     "pkg": "@discourse/types",
+     "key": "./blocks",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@discourse/types#./blocks/conditions",
+     "pkg": "@discourse/types",
+     "key": "./blocks/conditions",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@discourse/types#./dialog-holder/*",
+     "pkg": "@discourse/types",
+     "key": "./dialog-holder/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./dialog-holder/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./float-kit/*",
+     "pkg": "@discourse/types",
+     "key": "./float-kit/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./float-kit/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./lib/blocks",
+     "pkg": "@discourse/types",
+     "key": "./lib/blocks",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@discourse/types#./select-kit/*",
+     "pkg": "@discourse/types",
+     "key": "./select-kit/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./select-kit/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./tests/*",
+     "pkg": "@discourse/types",
+     "key": "./tests/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./tests/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@discourse/types#./truth-helpers",
+     "pkg": "@discourse/types",
+     "key": "./truth-helpers",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@discourse/types#./truth-helpers/*",
+     "pkg": "@discourse/types",
+     "key": "./truth-helpers/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 46,
+      "files": null
+     },
+     "dependents": 46,
+     "loads": null,
+     "pattern": "./truth-helpers/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse-markdown-it#./*",
+     "pkg": "discourse-markdown-it",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 27,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./*",
+     "pkg": "discourse",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 2142,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./admin/*",
+     "pkg": "discourse",
+     "key": "./admin/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./admin/*",
+     "subpaths": 863,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./dialog-holder/*",
+     "pkg": "discourse",
+     "key": "./dialog-holder/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./dialog-holder/*",
+     "subpaths": 3,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./float-kit/*",
+     "pkg": "discourse",
+     "key": "./float-kit/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./float-kit/*",
+     "subpaths": 32,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./pretty-text/*",
+     "pkg": "discourse",
+     "key": "./pretty-text/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./pretty-text/*",
+     "subpaths": 13,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./select-kit/*",
+     "pkg": "discourse",
+     "key": "./select-kit/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./select-kit/*",
+     "subpaths": 97,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./tests/*",
+     "pkg": "discourse",
+     "key": "./tests/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./tests/*",
+     "subpaths": 1095,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "discourse#./truth-helpers/*",
+     "pkg": "discourse",
+     "key": "./truth-helpers/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 3,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "pattern": "./truth-helpers/*",
+     "subpaths": 13,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    }
+   ],
+   "edges": [
+    {
+     "from": "asset-processor",
+     "to": "discourse",
+     "files": null
+    },
+    {
+     "from": "discourse-markdown-it",
+     "to": "discourse",
+     "files": null
+    },
+    {
+     "from": "pretty-text-processor",
+     "to": "discourse",
+     "files": null
+    },
+    {
+     "from": "discourse-markdown-it",
+     "to": "discourse-i18n",
+     "files": null
+    },
+    {
+     "from": "discourse",
+     "to": "discourse-i18n",
+     "files": null
+    },
+    {
+     "from": "discourse",
+     "to": "deprecation-silencer",
+     "files": null
+    },
+    {
+     "from": "discourse",
+     "to": "discourse-markdown-it",
+     "files": null
+    },
+    {
+     "from": "pretty-text-processor",
+     "to": "discourse-markdown-it",
+     "files": null
+    },
+    {
+     "from": "plugins/automation/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/blog/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/boards/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/chat/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/checklist/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-adplugin/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-affiliate/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-ai/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-apple-auth/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-assign/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-cakeday/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-captcha/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-chat-integration/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-data-explorer/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-details/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-events/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-gamification/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-github/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-graphviz/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-lazy-videos/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-local-dates/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-login-with-amazon/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-lti/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-math/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-microsoft-auth/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-narrative-bot/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-oauth2-basic/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-openid-connect/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-patreon/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-policy/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-post-voting/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-presence/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-reactions/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-rss-polling/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-solved/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-subscriptions/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-templates/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-topic-voting/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-user-notes/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/discourse-zendesk-plugin/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/footnote/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/live/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/poll/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/spoiler-alert/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "plugins/styleguide/package.json",
+     "to": "@discourse/types",
+     "files": null
+    },
+    {
+     "from": "themes/horizon/package.json",
+     "to": "@discourse/types",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "6 entries of 26 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "4 entries of 26 unknown, such as @discourse/types#./blocks: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 30,
+    "edges": 5,
+    "cached": 0,
+    "trackedFiles": 28328
+   },
+   "nodes": [
+    {
+     "id": "(root)#build",
+     "pkg": "(root)",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#dev",
+     "pkg": "(root)",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint",
+     "pkg": "(root)",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint-progress",
+     "pkg": "(root)",
+     "name": "lint-progress",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "(root)#lint:css",
+     "pkg": "(root)",
+     "name": "lint:css",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:css:fix",
+     "pkg": "(root)",
+     "name": "lint:css:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:fix",
+     "pkg": "(root)",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:js",
+     "pkg": "(root)",
+     "name": "lint:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:js:fix",
+     "pkg": "(root)",
+     "name": "lint:js:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:prettier",
+     "pkg": "(root)",
+     "name": "lint:prettier",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:prettier:fix",
+     "pkg": "(root)",
+     "name": "lint:prettier:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:types",
+     "pkg": "(root)",
+     "name": "lint:types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lttf:ignore",
+     "pkg": "(root)",
+     "name": "lttf:ignore",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lttf:output",
+     "pkg": "(root)",
+     "name": "lttf:output",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#playwright-install",
+     "pkg": "(root)",
+     "name": "playwright-install",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#postinstall",
+     "pkg": "(root)",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#prepare",
+     "pkg": "(root)",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "(root)#start",
+     "pkg": "(root)",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#types:generate",
+     "pkg": "(root)",
+     "name": "types:generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#types:watch",
+     "pkg": "(root)",
+     "name": "types:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@discourse/types#compile-dts-generator",
+     "pkg": "@discourse/types",
+     "name": "compile-dts-generator",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@discourse/types#generate-external",
+     "pkg": "@discourse/types",
+     "name": "generate-external",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@discourse/types#generate-external-types",
+     "pkg": "@discourse/types",
+     "name": "generate-external-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@discourse/types#test",
+     "pkg": "@discourse/types",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "asset-processor#test",
+     "pkg": "asset-processor",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "discourse-developer-docs#lint",
+     "pkg": "discourse-developer-docs",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "discourse-developer-docs#lint:fix",
+     "pkg": "discourse-developer-docs",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "discourse#build",
+     "pkg": "discourse",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "discourse#start",
+     "pkg": "discourse",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "plugins/live#live:bots",
+     "pkg": "plugins/live",
+     "name": "live:bots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@discourse/types#generate-external",
+     "to": "@discourse/types#compile-dts-generator",
+     "how": "calls"
+    },
+    {
+     "from": "@discourse/types#generate-external",
+     "to": "@discourse/types#generate-external-types",
+     "how": "calls"
+    },
+    {
+     "from": "(root)#prepare",
+     "to": "(root)#types:generate",
+     "how": "calls"
+    },
+    {
+     "from": "(root)#types:watch",
+     "to": "(root)#types:generate",
+     "how": "calls"
+    },
+    {
+     "from": "(root)#lint-progress",
+     "to": "(root)#lttf:output",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "@discourse/types#generate-external",
+    "@discourse/types#compile-dts-generator"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 2,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "plugins (chat) system",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.3,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "themes system",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.4,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "core frontend",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.6,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "plugins (official) system",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.6,
+     "runner": "cdck-linux-16-core",
+     "vcpus": 16
+    },
+    {
+     "id": "core backend",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.5,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "core system",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 10.2,
+     "runner": "cdck-linux-16-core",
+     "vcpus": 16
+    },
+    {
+     "id": "themes frontend",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "plugins (core) system",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.8,
+     "runner": "cdck-linux-16-core",
+     "vcpus": 16
+    },
+    {
+     "id": "plugins backend",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 11.5,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "plugins frontend",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.7,
+     "runner": "cdck-linux-8-core",
+     "vcpus": 8
+    },
+    {
+     "id": "JS deprecation report",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 11.5,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "JS deprecation report",
+     "to": "build"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "plugins backend",
+    "JS deprecation report"
+   ],
+   "pathMinP50": 10.8,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 16,
+   "calls": 2
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"plugins backend\" runs 11 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Packages depend on each other in a cycle, discourse ↔ discourse-markdown-it: break it, so an edit to one stops reaching the rest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#package-dependencies-declared-and-checked"
+  },
+  {
+   "text": "Lint with Oxlint or Biome",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Ruby it applies the principles, without a Ruby-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 90,
+ "read": {
+  "calls": 90,
+  "fromCache": 0
+ }
+}

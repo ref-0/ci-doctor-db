@@ -1,0 +1,2578 @@
+{
+ "repo": "apache/paimon",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 4.9,
+  "stars": 3454,
+  "forks": 1438,
+  "languages": [
+   [
+    "Java",
+    68
+   ],
+   [
+    "Python",
+    25
+   ],
+   [
+    "Scala",
+    7
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 2389072,
+  "files": 8391,
+  "sourceFiles": 7393,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1023484,
+   "tests": 1360832,
+   "integration": 3611,
+   "support": 1144
+  },
+  "testShare": 0.5715975551511555,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 83,
+  "commitsPerWeekYear": 66.6,
+  "pace": 1.3,
+  "activeAuthors28d": 58,
+  "prsOpenedPerWeek": 129,
+  "prsMergedPerWeek": 92,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 12.6,
+   "p90": 52,
+   "n": 92
+  },
+  "prRunsPerDay": 61.3,
+  "runsPerMergedPr": 4.7
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 448,
+  "runsInPeriod": 451,
+  "truncated": false,
+  "mainDays": 7.2
+ },
+ "size": "large",
+ "headsPerWeek": 415,
+ "score": 31,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 4,
+  "reliability": 96,
+  "efficiency": 47
+ },
+ "detail": {
+  "speed": {
+   "wait": 8,
+   "forSize": 0,
+   "tail": 4
+  },
+  "reliability": {
+   "flakes": 99,
+   "mainRed": 92
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 23080.1,
+  "prBilledMinutesPerDay": 23501.6,
+  "jobMinutesPerMergedPr": 1756.1,
+  "expectedMinutesPerMergedPr": 441.7,
+  "expectedWait": 22.6,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 433,
+  "timed": 264,
+  "p50": 71.63333333333334,
+  "p75": 91.65,
+  "p90": 133.3,
+  "redRate": 0.21939953810623555,
+  "rerunRate": 0.018475750577367205,
+  "passedOnRerunRate": 0.011547344110854504,
+  "cancelledRate": 0.371824480369515,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    264
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    95
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 71.63333333333334
+ },
+ "main": {
+  "heads": 90,
+  "p50": 86.95,
+  "p90": 178.8,
+  "redRate": 0.07777777777777778,
+  "redBy": [
+   [
+    "CI",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 18,
+  "spanMin": 68.38333333333334,
+  "jobMinutes": 349.65000000000003,
+  "billedMinutes": 357,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 94,
+  "queueP90Sec": 1998,
+  "setupShare": 0.016078255003373062,
+  "critical": {
+   "name": "CI result",
+   "minutes": 0.05,
+   "shareOfSpan": 0.0006549860815457672
+  },
+  "longest": {
+   "name": "Java / Spark 3 / Scala 2.12",
+   "minutes": 66.41666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    98
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 13,
+  "edges": 27,
+  "matrixJobs": 4,
+  "reusableCalls": 4,
+  "gateEnd": [
+   {
+    "name": "CI result",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Select tests and validate CI",
+    "minutes": 0.3,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.2
+   },
+   {
+    "name": "Java / Spark 3 / Scala 2.12",
+    "minutes": 68,
+    "share": 0.99,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 66.4,
+    "setupMin": 0.5
+   },
+   {
+    "name": "CI result",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 68.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 3,
+  "pathMinP50": 68.4,
+  "blockedMinP50": 68.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 66.4,
+  "setupInPathMinP50": 0.5,
+  "topBlockers": [
+   {
+    "name": "Java / …",
+    "runs": 4,
+    "heldJobs": 1,
+    "jobs": 11,
+    "tookMin": 65.7,
+    "heldJobMin": 49.5
+   },
+   {
+    "name": "Select tests and validate CI",
+    "runs": 2,
+    "heldJobs": 18,
+    "jobs": 19,
+    "tookMin": 4.5,
+    "heldJobMin": 89.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 8,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44863779057,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 68.4,
+    "path": [
+     "Select tests and validate CI",
+     "Java / Spark 3 / Scala 2.12",
+     "CI result"
+    ],
+    "topBlocker": "Java / …",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Documentation / build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Licensing / Artifact licensing",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 13.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / Flink 1 / Common",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 51.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 50.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / E2E / Flink 1 and Spark interoperability",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 24.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Flink 1 / Connectors and CDC",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 19.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / ESLib / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Java / Full text / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Flink 2 / Common and connectors",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 47.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 46.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 68.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 68,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Core and integrations / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 52.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 52.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / Spark 4 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 43,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 42.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Iceberg GA / JDK 17",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Spark 4.3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 7.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Java / Core and integrations / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 39.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 39.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / E2E / Flink 2",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 12,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 50.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 50.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Spark 4.2 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 9.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 68.3,
+      "createdMin": 68.3,
+      "startMin": 68.3,
+      "endMin": 68.4,
+      "blockedMin": 68.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44860121251,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 66.1,
+    "path": [
+     "Select tests and validate CI",
+     "Java / Spark 3 / Scala 2.12",
+     "CI result"
+    ],
+    "topBlocker": "Java / …",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Licensing / Artifact licensing",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 16.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / Core and integrations / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 48.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 47.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Java / Spark 4.2 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Flink 1 / Common",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 48.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 47.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Flink 1 / Connectors and CDC",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 23.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Flink 2 / Common and connectors",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 46.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 46.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / ESLib / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 66,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 65.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Spark 4 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 58.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 58.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Core and integrations / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 39.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 38.7,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Java / Spark 4.3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 7.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 64.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 64.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Full text / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Iceberg GA / JDK 17",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 5.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / E2E / Flink 2",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 15.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Java / E2E / Flink 1 and Spark interoperability",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 26.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 66,
+      "createdMin": 66,
+      "startMin": 66.1,
+      "endMin": 66.1,
+      "blockedMin": 66,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44849409392,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 59.8,
+    "path": [
+     "Select tests and validate CI",
+     "Java / Spark 4 / Scala 2.13",
+     "CI result"
+    ],
+    "topBlocker": "Java / …",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Licensing / Artifact licensing",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 12,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Java / Core and integrations / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 47.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 47.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Java / Spark 4.2 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 9.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / E2E / Flink 1 and Spark interoperability",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 19.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 53.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 52.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 52,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 51.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Java / Core and integrations / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 52.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 52.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / Spark 4 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 59.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 59.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Spark 4.3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 10.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 59.6,
+      "createdMin": 59.6,
+      "startMin": 59.7,
+      "endMin": 59.8,
+      "blockedMin": 59.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44778416697,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 101.8,
+    "path": [
+     "Select tests and validate CI",
+     "Java / Spark 3 / Scala 2.12",
+     "CI result"
+    ],
+    "topBlocker": "Select tests and validate CI",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.2,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.2,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Documentation / build",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.4,
+      "endMin": 33,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 19.9,
+      "workMin": 1.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Licensing / Artifact licensing",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.5,
+      "endMin": 43.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20,
+      "workMin": 12.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Java / Flink 2 / Common and connectors",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 28.1,
+      "endMin": 77.4,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 16.7,
+      "workMin": 49.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Core and integrations / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.4,
+      "endMin": 78.1,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 19.9,
+      "workMin": 46.7,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Java / Flink 1 / Common",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 29.5,
+      "endMin": 72.8,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 18,
+      "workMin": 43.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Flink 1 / Connectors and CDC",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.5,
+      "endMin": 52.8,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20,
+      "workMin": 21.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 32.5,
+      "endMin": 98.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 21,
+      "workMin": 66.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Spark 4 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 32,
+      "endMin": 92.1,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.5,
+      "workMin": 60.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Spark 4.3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.5,
+      "endMin": 41.7,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20,
+      "workMin": 10.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / E2E / Flink 1 and Spark interoperability",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 30.2,
+      "endMin": 48.4,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 18.7,
+      "workMin": 18.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / Iceberg GA / JDK 17",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.9,
+      "endMin": 36.2,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.5,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Java / Core and integrations / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 32.1,
+      "endMin": 80.9,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.6,
+      "workMin": 48.8,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Java / Spark 4.2 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.8,
+      "endMin": 41.2,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.3,
+      "workMin": 9.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 32.1,
+      "endMin": 76.2,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.6,
+      "workMin": 44.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Java / ESLib / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.9,
+      "endMin": 34,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.5,
+      "workMin": 2.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Java / E2E / Flink 2",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 31.8,
+      "endMin": 47.4,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.4,
+      "workMin": 15.6,
+      "setupMin": 1
+     },
+     {
+      "name": "Java / Full text / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 32.2,
+      "endMin": 35.6,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 20.8,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 98.9,
+      "createdMin": 98.9,
+      "startMin": 101.7,
+      "endMin": 101.8,
+      "blockedMin": 98.9,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44749937902,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 121.6,
+    "path": [
+     "Select tests and validate CI",
+     "Python / Native / Python 3.13",
+     "CI result"
+    ],
+    "topBlocker": "Select tests and validate CI",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Python / PyTorch / Python 3.10",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 9.2,
+      "endMin": 13.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 4.7,
+      "workMin": 4.7,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Python / Compatibility / PyArrow 21.0.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 9.4,
+      "endMin": 10.3,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 4.9,
+      "workMin": 0.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Python / Legacy Python / Python 3.7",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 19,
+      "endMin": 34.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 14.5,
+      "workMin": 15.9,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Python / Python Execution",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 13.8,
+      "endMin": 38.4,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 9.3,
+      "workMin": 24.6,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Python / Video / PyAV 14.2",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 9.9,
+      "endMin": 10.5,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 0.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Python / LeRobot 0.6.1 / Python 3.12 / TorchCodec 0.3.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 6,
+      "endMin": 9.5,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 3.5,
+      "setupMin": 2
+     },
+     {
+      "name": "Python / Compatibility / PyArrow 22.0.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 21.2,
+      "endMin": 21.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 16.8,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Python / LeRobot 0.4.4 / Python 3.10 / TorchCodec 0.3.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 6.5,
+      "endMin": 10.4,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 4,
+      "setupMin": 1.8
+     },
+     {
+      "name": "Python / Compatibility / PyArrow 16.1.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 39.5,
+      "endMin": 40.1,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 35.1,
+      "workMin": 0.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Python / Native temporal casts",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 36.4,
+      "endMin": 37.2,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 31.9,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Python / Compatibility / PyArrow 20.0.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 36.4,
+      "endMin": 37,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 31.9,
+      "workMin": 0.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Python / LeRobot 0.6.0 / Python 3.12 / TorchCodec 0.3.0",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 11.5,
+      "endMin": 14.2,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 2.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Python / Native / Python 3.11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 25.3,
+      "endMin": 76.8,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 20.8,
+      "workMin": 51.6,
+      "setupMin": 1.8
+     },
+     {
+      "name": "Python / Native / Python 3.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 39.4,
+      "endMin": 105.4,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 34.9,
+      "workMin": 66,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Python / Package and Ray compatibility",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 8.3,
+      "endMin": 14,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 5.6,
+      "setupMin": 3.3
+     },
+     {
+      "name": "Python / LeRobot 0.4.4 / Python 3.10 / TorchCodec 0.2.1",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 8.4,
+      "endMin": 10.5,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 2.2,
+      "setupMin": 2
+     },
+     {
+      "name": "Python / Legacy Python / Python 3.6.15",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 39.2,
+      "endMin": 48.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 34.7,
+      "workMin": 9.7,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Python / Native / Python 3.10",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 38.8,
+      "endMin": 101.1,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 34.3,
+      "workMin": 62.3,
+      "setupMin": 3.7
+     },
+     {
+      "name": "Python / Native / Python 3.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 37.8,
+      "endMin": 84.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 33.3,
+      "workMin": 47.2,
+      "setupMin": 1.7
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 105.4,
+      "createdMin": 105.4,
+      "startMin": 121.6,
+      "endMin": 121.6,
+      "blockedMin": 105.4,
+      "hiddenMin": 0,
+      "queueMin": 16.2,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44747352900,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 118.4,
+    "path": [
+     "Select tests and validate CI",
+     "Java / Spark 3 / Scala 2.12",
+     "CI result"
+    ],
+    "topBlocker": "Java / …",
+    "jobs": [
+     {
+      "name": "Select tests and validate CI",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.9,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.9,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Licensing / Artifact licensing",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 36.9,
+      "endMin": 53.1,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 31.8,
+      "workMin": 16.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / Spark 4 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 41,
+      "endMin": 105.3,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 35.9,
+      "workMin": 64.2,
+      "setupMin": 1
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.12",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 38.4,
+      "endMin": 106.7,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 33.2,
+      "workMin": 68.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Spark 4.2 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 39,
+      "endMin": 45.1,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 33.9,
+      "workMin": 6.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Java / Core and integrations / JDK 8",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 41.2,
+      "endMin": 95.8,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 36,
+      "workMin": 54.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Java / Spark 3 / Scala 2.13",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 37.2,
+      "endMin": 100.4,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 32.1,
+      "workMin": 63.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Java / Core and integrations / JDK 11",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 38.7,
+      "endMin": 91.2,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 33.5,
+      "workMin": 52.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Java / E2E / Flink 1 and Spark interoperability",
+      "needs": [
+       "plan"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 41.5,
+      "endMin": 65.8,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 36.3,
+      "workMin": 24.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "CI result",
+      "needs": [
+       "plan",
+       "java",
+       "python",
+       "docs",
+       "licensing"
+      ],
+      "readyMin": 106.7,
+      "createdMin": 106.7,
+      "startMin": 118.4,
+      "endMin": 118.4,
+      "blockedMin": 106.7,
+      "hiddenMin": 0,
+      "queueMin": 11.7,
+      "workMin": 0,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    68
+   ],
+   [
+    "Python",
+    25
+   ],
+   [
+    "Scala",
+    7
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Maven"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Flake8"
+  ],
+  "libraries": [
+   {
+    "name": "@docusaurus/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/module-type-aliases",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/plugin-client-redirects",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/preset-classic",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@docusaurus/types",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@easyops-cn/docusaurus-search-local",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@mdx-js/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "clsx",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "js-yaml",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "prism-react-renderer",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "raw-loader",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "react-dom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "av",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "backports-zstd",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "boto3",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "build",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cachetools",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "cramjam",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "daft",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    98
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "paimon-docs",
+     "path": "docs/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "pypaimon",
+     "path": "paimon-python/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "paimon-docs",
+     "dir": "docs",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "pypaimon",
+     "dir": "paimon-python",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "paimon-docs"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 8,
+    "edges": 1,
+    "cached": 0,
+    "trackedFiles": 8391
+   },
+   "nodes": [
+    {
+     "id": "paimon-docs#build",
+     "pkg": "paimon-docs",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "paimon-docs#clear",
+     "pkg": "paimon-docs",
+     "name": "clear",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#deploy",
+     "pkg": "paimon-docs",
+     "name": "deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#docusaurus",
+     "pkg": "paimon-docs",
+     "name": "docusaurus",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#serve",
+     "pkg": "paimon-docs",
+     "name": "serve",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#start",
+     "pkg": "paimon-docs",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#swizzle",
+     "pkg": "paimon-docs",
+     "name": "swizzle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "paimon-docs#test:rest-openapi",
+     "pkg": "paimon-docs",
+     "name": "test:rest-openapi",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "paimon-docs#build",
+     "to": "paimon-docs#test:rest-openapi",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "paimon-docs#build",
+    "paimon-docs#test:rest-openapi"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 13,
+    "edges": 27,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Select tests and validate CI",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.3
+    },
+    {
+     "id": "Documentation / build",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 1.1
+    },
+    {
+     "id": "Licensing / Artifact licensing",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 13.4
+    },
+    {
+     "id": "Java / Flink 1 / Common",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 50.9
+    },
+    {
+     "id": "Java / E2E / Flink 1 and Spark interoperability",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 24.5
+    },
+    {
+     "id": "Java / Flink 1 / Connectors and CDC",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 18.9
+    },
+    {
+     "id": "Java / ESLib / JDK 11",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 1.6
+    },
+    {
+     "id": "Java / Full text / JDK 8",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 2.6
+    },
+    {
+     "id": "Java / Flink 2 / Common and connectors",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 46.8
+    },
+    {
+     "id": "Java / Spark 3 / Scala 2.12",
+     "needs": [
+      "plan"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 68
+    },
+    {
+     "id": "Java / Core and integrations / JDK 8",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 52.2
+    },
+    {
+     "id": "Java / Spark 4 / Scala 2.13",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 42.7
+    },
+    {
+     "id": "Java / Iceberg GA / JDK 17",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 4.7
+    },
+    {
+     "id": "Java / Spark 4.3 / Scala 2.13",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 7.3
+    },
+    {
+     "id": "Java / Core and integrations / JDK 11",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 39.3
+    },
+    {
+     "id": "Java / E2E / Flink 2",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 11.7
+    },
+    {
+     "id": "Java / Spark 3 / Scala 2.13",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0,
+     "workMin": 50.3
+    },
+    {
+     "id": "Java / Spark 4.2 / Scala 2.13",
+     "needs": [
+      "plan"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 9.4
+    },
+    {
+     "id": "CI result",
+     "needs": [
+      "plan",
+      "java",
+      "python",
+      "docs",
+      "licensing"
+     ],
+     "onPath": true,
+     "blockedMin": 68.3,
+     "queueMin": 0,
+     "workMin": 0.1
+    }
+   ],
+   "edges": [
+    {
+     "from": "Documentation / build",
+     "to": "plan"
+    },
+    {
+     "from": "Licensing / Artifact licensing",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Flink 1 / Common",
+     "to": "plan"
+    },
+    {
+     "from": "Java / E2E / Flink 1 and Spark interoperability",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Flink 1 / Connectors and CDC",
+     "to": "plan"
+    },
+    {
+     "from": "Java / ESLib / JDK 11",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Full text / JDK 8",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Flink 2 / Common and connectors",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Spark 3 / Scala 2.12",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Core and integrations / JDK 8",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Spark 4 / Scala 2.13",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Iceberg GA / JDK 17",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Spark 4.3 / Scala 2.13",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Core and integrations / JDK 11",
+     "to": "plan"
+    },
+    {
+     "from": "Java / E2E / Flink 2",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Spark 3 / Scala 2.13",
+     "to": "plan"
+    },
+    {
+     "from": "Java / Spark 4.2 / Scala 2.13",
+     "to": "plan"
+    },
+    {
+     "from": "CI result",
+     "to": "plan"
+    },
+    {
+     "from": "CI result",
+     "to": "java"
+    },
+    {
+     "from": "CI result",
+     "to": "python"
+    },
+    {
+     "from": "CI result",
+     "to": "docs"
+    },
+    {
+     "from": "CI result",
+     "to": "licensing"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Select tests and validate CI",
+    "Java / Spark 3 / Scala 2.12",
+    "CI result"
+   ],
+   "pathMinP50": 68.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Java / Spark 3 / Scala 2.12\" runs 66 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 1998 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 106,
+ "read": {
+  "calls": 106,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,2524 @@
+{
+ "repo": "egoist/mygo",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.2,
+  "stars": 6848,
+  "forks": 449,
+  "languages": [
+   [
+    "Go",
+    92
+   ],
+   [
+    "TypeScript",
+    3
+   ],
+   [
+    "Swift",
+    2
+   ],
+   [
+    "Kotlin",
+    2
+   ]
+  ],
+  "linesOfCode": 786535,
+  "files": 3114,
+  "sourceFiles": 2518,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 535349,
+   "tests": 224319,
+   "integration": 25912,
+   "support": 954
+  },
+  "testShare": 0.3193566631003895,
+  "packages": {
+   "npm": 15,
+   "cargo": 1,
+   "go": 1,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 33.8,
+  "pace": 6.6,
+  "activeAuthors28d": "≥77",
+  "prsOpenedPerWeek": 251.7,
+  "prsMergedPerWeek": 214.3,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.9,
+   "p90": 162.8,
+   "n": 100
+  },
+  "prRunsPerDay": 64.8,
+  "runsPerMergedPr": 2.1
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 485,
+  "runsInPeriod": 501,
+  "truncated": false,
+  "mainDays": 4.8
+ },
+ "size": "large",
+ "headsPerWeek": 452,
+ "score": 43,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 24,
+  "reliability": 73,
+  "efficiency": 72
+ },
+ "detail": {
+  "speed": {
+   "wait": 30,
+   "forSize": 20,
+   "tail": 9
+  },
+  "reliability": {
+   "flakes": 66,
+   "mainRed": 83
+  },
+  "efficiency": {
+   "minutesPerPr": 96,
+   "runsPerPr": 100,
+   "setup": 18,
+   "queue": 0,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5497.3,
+  "prBilledMinutesPerDay": 5692,
+  "jobMinutesPerMergedPr": 179.6,
+  "prVcpuMinutesPerDay": 20198.6,
+  "vcpuMinutesPerMergedPr": 659.8,
+  "expectedVcpuMinutesPerMergedPr": 1224.6,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 306.1,
+  "expectedWait": 16.5,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "31 reruns' first attempts weren't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 483,
+  "ranHeads": 471,
+  "timed": 331,
+  "p50": 29.75,
+  "p75": 55.8,
+  "p90": 98.36666666666666,
+  "redRate": 0.14225053078556263,
+  "rerunRate": 0.1592356687898089,
+  "passedOnRerunRate": 0.04755838641188959,
+  "rerunsUnread": 31,
+  "cancelledRate": 0.13800424628450106,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 6,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    331
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    67
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 29.75
+ },
+ "main": {
+  "heads": 148,
+  "p50": 27.9,
+  "p90": 64.25,
+  "redRate": 0.10810810810810811,
+  "redBy": [
+   [
+    "CI",
+    16
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 125.4,
+  "jobMinutes": 103.33333333333333,
+  "billedMinutes": 107,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3017,
+  "queueP90Sec": 6198,
+  "setupShare": 0.22602837895943814,
+  "setupMinPerJob": 2.7518518518518515,
+  "critical": {
+   "name": "macOS",
+   "minutes": 25.4,
+   "shareOfSpan": 0.2006880733944954
+  },
+  "longest": {
+   "name": "macOS",
+   "minutes": 25.4
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 4,
+  "edges": 0,
+  "matrixJobs": 3,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "macOS",
+    "runs": 3
+   },
+   {
+    "name": "Native modules on iOS",
+    "runs": 1
+   },
+   {
+    "name": "Linux",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Linux",
+    "minutes": 125.4,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 103.3,
+    "workMin": 22.1,
+    "setupMin": 1.7
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 1,
+  "pathMinP50": 125.4,
+  "blockedMinP50": 0,
+  "queueMinP50": 103.3,
+  "hiddenMinP50": 0,
+  "workMinP50": 21.3,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45576657486,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 144.8,
+    "path": [
+     "Native modules on iOS"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 47.6,
+      "endMin": 61.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 47.6,
+      "workMin": 14.2,
+      "setupMin": 3.1,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 63.5,
+      "endMin": 87.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 63.5,
+      "workMin": 23.6,
+      "setupMin": 1.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85.9,
+      "endMin": 87.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85.9,
+      "workMin": 2,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 48.1,
+      "endMin": 66.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 48.1,
+      "workMin": 18.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 88.1,
+      "endMin": 95.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 88.1,
+      "workMin": 7.2,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 65.9,
+      "endMin": 72.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 65.9,
+      "workMin": 6.5,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 141.8,
+      "endMin": 144.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 141.8,
+      "workMin": 3,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 108.6,
+      "endMin": 113.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 108.6,
+      "workMin": 5.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 94.4,
+      "endMin": 113.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 94.4,
+      "workMin": 19,
+      "setupMin": 2.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45575309634,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 145.4,
+    "path": [
+     "Linux"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.5,
+      "endMin": 62.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.5,
+      "workMin": 27.2,
+      "setupMin": 16.4,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.8,
+      "endMin": 22.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.8,
+      "workMin": 3.4,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 34.6,
+      "endMin": 40.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 34.6,
+      "workMin": 6.1,
+      "setupMin": 2.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 67.3,
+      "endMin": 89.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 67.3,
+      "workMin": 22,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 59.8,
+      "endMin": 65.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 59.8,
+      "workMin": 5.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 89.3,
+      "endMin": 100.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 89.3,
+      "workMin": 11.4,
+      "setupMin": 2.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.5,
+      "endMin": 91.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.5,
+      "workMin": 5.2,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 87.7,
+      "endMin": 88.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 87.7,
+      "workMin": 1.2,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 124.2,
+      "endMin": 145.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 124.2,
+      "workMin": 21.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45574722199,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 121.3,
+    "path": [
+     "macOS"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.6,
+      "endMin": 32.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.6,
+      "workMin": 23.2,
+      "setupMin": 12.6,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 60.8,
+      "endMin": 67,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 60.8,
+      "workMin": 6.3,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 81.4,
+      "endMin": 91.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 81.4,
+      "workMin": 10.5,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 48.7,
+      "endMin": 63.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 48.7,
+      "workMin": 15.2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85.9,
+      "endMin": 90.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85.9,
+      "workMin": 5,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 34,
+      "endMin": 49.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 34,
+      "workMin": 15.8,
+      "setupMin": 2.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 44.8,
+      "endMin": 49.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 44.8,
+      "workMin": 4.9,
+      "setupMin": 1.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 95.9,
+      "endMin": 121.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 95.9,
+      "workMin": 25.4,
+      "setupMin": 1.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 92.2,
+      "endMin": 94.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 92.2,
+      "workMin": 2.1,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 45574294459,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 130.8,
+    "path": [
+     "macOS"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 27.1,
+      "endMin": 49.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 27.1,
+      "workMin": 22.6,
+      "setupMin": 11.9,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 49.5,
+      "endMin": 62.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 49.5,
+      "workMin": 13,
+      "setupMin": 2.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.9,
+      "endMin": 17.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.9,
+      "workMin": 4.8,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 71.4,
+      "endMin": 76.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 71.4,
+      "workMin": 5.5,
+      "setupMin": 2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 73,
+      "endMin": 74,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 73,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 52.8,
+      "endMin": 59.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 52.8,
+      "workMin": 6.9,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 97.2,
+      "endMin": 101.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 97.2,
+      "workMin": 4,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 93.9,
+      "endMin": 113.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 93.9,
+      "workMin": 19.8,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 104.6,
+      "endMin": 130.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 104.6,
+      "workMin": 26.3,
+      "setupMin": 1.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 45574182566,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 55.8,
+    "path": [
+     "Native modules on Android"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.6,
+      "endMin": 20.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 16,
+      "setupMin": 1.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.5,
+      "endMin": 23.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.5,
+      "workMin": 5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29.5,
+      "endMin": 40.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29.5,
+      "workMin": 11.1,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 20.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 15.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.8,
+      "endMin": 41,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.8,
+      "workMin": 27.2,
+      "setupMin": 16.9,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 21.4,
+      "endMin": 26.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 21.4,
+      "workMin": 5.3,
+      "setupMin": 2.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 40.6,
+      "endMin": 42.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 40.6,
+      "workMin": 1.9,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 23.5,
+      "endMin": 34.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 23.5,
+      "workMin": 10.8,
+      "setupMin": 1.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 50.3,
+      "endMin": 55.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 50.3,
+      "workMin": 5.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45574072959,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 125.4,
+    "path": [
+     "macOS"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "iOS app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 21.3,
+      "endMin": 23.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 21.3,
+      "workMin": 2.2,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Windows ARM64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.2,
+      "endMin": 37,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.2,
+      "workMin": 25.7,
+      "setupMin": 14.4,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 103.3,
+      "endMin": 125.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 103.3,
+      "workMin": 22.1,
+      "setupMin": 2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.4,
+      "endMin": 14.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.4,
+      "workMin": 5.1,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on iOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 62.9,
+      "endMin": 74.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 62.9,
+      "workMin": 11.6,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Android app on Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 46,
+      "endMin": 53.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 46,
+      "workMin": 7.4,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native modules on Android",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 106.3,
+      "endMin": 113,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 106.3,
+      "workMin": 6.7,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 37,
+      "endMin": 53.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 37,
+      "workMin": 16.3,
+      "setupMin": 2.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 17.7,
+      "endMin": 37.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 17.7,
+      "workMin": 20.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 121,
+  "over10s": 18,
+  "top": [
+   {
+    "file": "github.com/egoist/mygo/cmd/mygo",
+    "sec": 617.686,
+    "job": "macOS"
+   },
+   {
+    "file": "github.com/egoist/mygo/internal/nativegen",
+    "sec": 357.181,
+    "job": "Windows"
+   },
+   {
+    "file": "github.com/egoist/mygo/internal/e2e",
+    "sec": 231.437,
+    "job": "macOS"
+   },
+   {
+    "file": "github.com/egoist/mygo/internal/gpu/metal",
+    "sec": 180.222,
+    "job": "macOS"
+   },
+   {
+    "file": "github.com/egoist/mygo/ui",
+    "sec": 179.343,
+    "job": "Windows"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 5,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "bun",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "pathFilters": ".github/workflows/ci.yml",
+   "depCache": ".github/workflows/bench.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/bench.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Go",
+    92
+   ],
+   [
+    "TypeScript",
+    3
+   ],
+   [
+    "Swift",
+    2
+   ],
+   [
+    "Kotlin",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Bun",
+    "Cargo",
+    "Go modules"
+   ],
+   "tools": [
+    "npm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 15,
+   "cargo": 1,
+   "go": 1,
+   "python": 0
+  },
+  "testRunners": [
+   "Bun test",
+   "go test"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "github.com/ebitengine/purego",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/go-text/typesetting",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/hajimehoshi/go-mp3",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/jfreymuth/oggvorbis",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/mewkiz/flac",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/tphakala/go-aac",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "go.digitalxero.dev/rpm",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "golang.org/x/image",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "golang.org/x/net",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "golang.org/x/text",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "@base-ui/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@fontsource-variable/geist",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@fontsource-variable/geist-mono",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@shikijs/magic-move",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tailwindcss/vite",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tanstack/react-router",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tanstack/react-start",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tanstack/start-static-server-functions",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@vitejs/plugin-react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "class-variance-authority",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/egoist/mygo",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "roundtrip",
+     "path": "native/internal/roundtrip/rust/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mygo-dev",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "mygo-bridge",
+     "path": "packages/bridge/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-arm64",
+     "path": "packages/cli/npm/darwin-arm64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-x64",
+     "path": "packages/cli/npm/darwin-x64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-arm64",
+     "path": "packages/cli/npm/linux-arm64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-x64",
+     "path": "packages/cli/npm/linux-x64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-win32-arm64",
+     "path": "packages/cli/npm/win32-arm64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@egoist/mygo-cli-win32-x64",
+     "path": "packages/cli/npm/win32-x64/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "mygo-cli",
+     "path": "packages/cli/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@egoist/mygo-cli-darwin-arm64",
+      "@egoist/mygo-cli-darwin-x64",
+      "@egoist/mygo-cli-linux-arm64",
+      "@egoist/mygo-cli-linux-x64",
+      "@egoist/mygo-cli-win32-arm64",
+      "@egoist/mygo-cli-win32-x64"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "mygo-runtime",
+     "path": "packages/runtime/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "@mygo-plugins/fetch",
+     "path": "plugins/fetch/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "mygo-runtime"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@mygo-plugins/sqlite",
+     "path": "plugins/sqlite/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "mygo-runtime"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@mygo-plugins/watch",
+     "path": "plugins/watch/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "mygo-runtime"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@mygo-plugins/websocket",
+     "path": "plugins/websocket/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "mygo-runtime"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "mygo-website",
+     "path": "website/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 17,
+   "edges": 10,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "mygo-runtime",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-arm64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-x64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-arm64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-x64",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 17,
+    "edges": 10
+   },
+   "nodes": [
+    {
+     "id": "mygo-runtime",
+     "dir": "packages/runtime",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-darwin-arm64",
+     "dir": "packages/cli/npm/darwin-arm64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-darwin-x64",
+     "dir": "packages/cli/npm/darwin-x64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-linux-arm64",
+     "dir": "packages/cli/npm/linux-arm64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-linux-x64",
+     "dir": "packages/cli/npm/linux-x64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-win32-arm64",
+     "dir": "packages/cli/npm/win32-arm64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@egoist/mygo-cli-win32-x64",
+     "dir": "packages/cli/npm/win32-x64",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/fetch",
+     "dir": "plugins/fetch",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@mygo-plugins/sqlite",
+     "dir": "plugins/sqlite",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@mygo-plugins/watch",
+     "dir": "plugins/watch",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@mygo-plugins/websocket",
+     "dir": "plugins/websocket",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "github.com/egoist/mygo",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mygo-bridge",
+     "dir": "packages/bridge",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mygo-cli",
+     "dir": "packages/cli",
+     "ecosystem": "npm",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "mygo-dev",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mygo-website",
+     "dir": "website",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "roundtrip",
+     "dir": "native/internal/roundtrip/rust",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-darwin-arm64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-darwin-x64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-linux-arm64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-linux-x64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-win32-arm64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-win32-x64",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mygo-plugins/fetch",
+     "to": "mygo-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mygo-plugins/sqlite",
+     "to": "mygo-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mygo-plugins/watch",
+     "to": "mygo-runtime",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mygo-plugins/websocket",
+     "to": "mygo-runtime",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "mygo-cli",
+    "@egoist/mygo-cli-darwin-arm64"
+   ],
+   "topFanIn": [
+    {
+     "name": "mygo-runtime",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-arm64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-darwin-x64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-arm64",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "@egoist/mygo-cli-linux-x64",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 7,
+    "edges": 10,
+    "packages": 15,
+    "packagesWithEntries": 6,
+    "filesRead": 8,
+    "undecided": 0
+   },
+   "nodes": [
+    {
+     "id": "mygo-runtime#./i18n",
+     "pkg": "mygo-runtime",
+     "key": "./i18n",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/runtime/src/i18n.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@mygo-plugins/fetch#.",
+     "pkg": "@mygo-plugins/fetch",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/fetch/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@mygo-plugins/sqlite#.",
+     "pkg": "@mygo-plugins/sqlite",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/sqlite/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@mygo-plugins/watch#.",
+     "pkg": "@mygo-plugins/watch",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/watch/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@mygo-plugins/websocket#.",
+     "pkg": "@mygo-plugins/websocket",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "plugins/websocket/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "mygo-cli#.",
+     "pkg": "mygo-cli",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/cli/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "mygo-runtime#.",
+     "pkg": "mygo-runtime",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/runtime/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-darwin-arm64",
+     "files": null
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-darwin-x64",
+     "files": null
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-linux-arm64",
+     "files": null
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-linux-x64",
+     "files": null
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-win32-arm64",
+     "files": null
+    },
+    {
+     "from": "mygo-cli",
+     "to": "@egoist/mygo-cli-win32-x64",
+     "files": null
+    },
+    {
+     "from": "@mygo-plugins/fetch",
+     "to": "mygo-runtime",
+     "files": null
+    },
+    {
+     "from": "@mygo-plugins/sqlite",
+     "to": "mygo-runtime",
+     "files": null
+    },
+    {
+     "from": "@mygo-plugins/watch",
+     "to": "mygo-runtime",
+     "files": null
+    },
+    {
+     "from": "@mygo-plugins/websocket",
+     "to": "mygo-runtime",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 7 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 22,
+    "edges": 7,
+    "cached": 0,
+    "trackedFiles": 3114
+   },
+   "nodes": [
+    {
+     "id": "@mygo-plugins/fetch#build",
+     "pkg": "@mygo-plugins/fetch",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/fetch#test",
+     "pkg": "@mygo-plugins/fetch",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/sqlite#build",
+     "pkg": "@mygo-plugins/sqlite",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/sqlite#test",
+     "pkg": "@mygo-plugins/sqlite",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/watch#build",
+     "pkg": "@mygo-plugins/watch",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/watch#test",
+     "pkg": "@mygo-plugins/watch",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/websocket#build",
+     "pkg": "@mygo-plugins/websocket",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mygo-plugins/websocket#test",
+     "pkg": "@mygo-plugins/websocket",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-bridge#build",
+     "pkg": "mygo-bridge",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-bridge#test",
+     "pkg": "mygo-bridge",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-cli#binaries",
+     "pkg": "mygo-cli",
+     "name": "binaries",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-cli#test",
+     "pkg": "mygo-cli",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-dev#build",
+     "pkg": "mygo-dev",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mygo-dev#test",
+     "pkg": "mygo-dev",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-dev#typecheck",
+     "pkg": "mygo-dev",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-runtime#build",
+     "pkg": "mygo-runtime",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-runtime#test",
+     "pkg": "mygo-runtime",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-website#build",
+     "pkg": "mygo-website",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-website#deploy",
+     "pkg": "mygo-website",
+     "name": "deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-website#dev",
+     "pkg": "mygo-website",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-website#preview",
+     "pkg": "mygo-website",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mygo-website#typecheck",
+     "pkg": "mygo-website",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "mygo-dev#build",
+     "to": "@mygo-plugins/websocket#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "mygo-runtime#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "mygo-bridge#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "@mygo-plugins/sqlite#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "@mygo-plugins/fetch#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "@mygo-plugins/watch#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mygo-dev#build",
+     "to": "mygo-website#build",
+     "how": "fan-out"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "mygo-dev#build",
+    "@mygo-plugins/websocket#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Windows ARM64",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 47.6,
+     "workMin": 14.2,
+     "runner": "windows-11-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "macOS",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 63.5,
+     "workMin": 23.6,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "iOS app",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 85.9,
+     "workMin": 2,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Linux",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 48.1,
+     "workMin": 18.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Native modules on Android",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 88.1,
+     "workMin": 7.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Android app on Windows",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 65.9,
+     "workMin": 6.5,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Native modules on iOS",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 141.8,
+     "workMin": 3,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Android app",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 108.6,
+     "workMin": 5.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Windows",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 94.4,
+     "workMin": 19,
+     "runner": "windows-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Linux"
+   ],
+   "pathMinP50": 125.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 8,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Each job spends 2.8 minutes on setup: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "\"macOS\" runs 25 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "18 test files take over 10 s; the slowest, github.com/egoist/mygo/cmd/mygo, takes 618 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "p90 is 3.3× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 6198 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Go it applies the principles, without a Go-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 82,
+ "read": {
+  "calls": 82,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

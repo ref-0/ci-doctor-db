@@ -1,0 +1,3266 @@
+{
+ "repo": "X11Libre/xserver",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 1.8,
+  "stars": 4830,
+  "forks": 251,
+  "languages": [
+   [
+    "C",
+    94
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Roff",
+    1
+   ],
+   [
+    "Objective-C",
+    1
+   ]
+  ],
+  "linesOfCode": 529460,
+  "files": 1797,
+  "sourceFiles": 1321,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 507091,
+   "tests": 22370,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.04224974458272359,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 15,
+  "commitsPerWeekYear": 36.7,
+  "pace": 0.3,
+  "activeAuthors28d": 6,
+  "prsOpenedPerWeek": 98,
+  "prsMergedPerWeek": 56,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 4.1,
+   "p90": 29.5,
+   "n": 56
+  },
+  "prRunsPerDay": 17.3,
+  "runsPerMergedPr": 2.2
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 119,
+  "runsInPeriod": 119,
+  "truncated": false,
+  "mainDays": 6.7
+ },
+ "size": "medium",
+ "headsPerWeek": 66,
+ "score": 55,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 38,
+  "reliability": 82,
+  "efficiency": 82
+ },
+ "detail": {
+  "speed": {
+   "wait": 43,
+   "forSize": 40,
+   "tail": 8
+  },
+  "reliability": {
+   "flakes": 95,
+   "mainRed": 63
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 189.8,
+  "prBilledMinutesPerDay": 215.9,
+  "jobMinutesPerMergedPr": 23.7,
+  "expectedMinutesPerMergedPr": 268.7,
+  "expectedWait": 16,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 65,
+  "timed": 58,
+  "p50": 20.916666666666668,
+  "p75": 77.9,
+  "p90": 105.8,
+  "redRate": 0.6615384615384615,
+  "rerunRate": 0.06153846153846154,
+  "passedOnRerunRate": 0.015384615384615385,
+  "cancelledRate": 0.03076923076923077,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Build X servers",
+    56
+   ],
+   [
+    "ABI check",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Build X servers",
+    43
+   ],
+   [
+    "ABI check",
+    20
+   ],
+   [
+    "Check PR Sign-off",
+    2
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Build X servers",
+   "ABI check"
+  ],
+  "allPushesP50": 20.916666666666668
+ },
+ "main": {
+  "heads": 28,
+  "p50": 69.16666666666667,
+  "p90": 103.95,
+  "redRate": 0.17857142857142858,
+  "redBy": [
+   [
+    "Build X servers",
+    3
+   ],
+   [
+    "Build foreign architectures",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 8,
+  "spanMin": 24.05,
+  "jobMinutes": 50.3,
+  "billedMinutes": 53,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 515,
+  "queueP90Sec": 4884,
+  "setupShare": 0.13646702047005307,
+  "critical": {
+   "name": "xserver-build-hurd",
+   "minutes": 13.283333333333333,
+   "shareOfSpan": 0.9108571428571428
+  },
+  "longest": {
+   "name": "drivers-build-ubuntu",
+   "minutes": 6.6
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    170
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 4,
+  "runsLeftOut": 2,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 2
+   },
+   {
+    "why": "a job GitHub created as another finished, a need the YAML lacks",
+    "runs": 1
+   }
+  ],
+  "workflows": [
+   ".github/workflows/build-xserver.yml"
+  ],
+  "jobs": 24,
+  "edges": 18,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "xserver-build-hurd",
+    "runs": 1
+   },
+   {
+    "name": "xserver-build-cygwin",
+    "runs": 1
+   },
+   {
+    "name": "drivers-build-ubuntu",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "xserver-build-hurd",
+    "minutes": 14.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 1.3,
+    "workMin": 13.3,
+    "setupMin": 0.4
+   }
+  ],
+  "chainRuns": 1,
+  "pathJobsP50": 1,
+  "pathMinP50": 24.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 18,
+  "hiddenMinP50": 0,
+  "workMinP50": 11.7,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "gentoo-deps-image",
+    "runs": 1,
+    "heldJobs": 1,
+    "jobs": 21,
+    "tookMin": 0.2,
+    "heldJobMin": 0.2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "drivers-prepare-ubuntu"
+  ],
+  "ambiguous": [],
+  "skippedP50": 16,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44846759301,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.6,
+    "path": [
+     "xserver-build-hurd"
+    ],
+    "topBlocker": "gentoo-deps-image",
+    "jobs": [
+     {
+      "name": "xserver-build-ubuntu-no-gbm",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "xserver-build-ubuntu-debug",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "abi-changes-check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "xserver-build-openbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-dragonflybsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-mingw32-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Check Signed-Off-By",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-freebsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-cygwin",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 2.4
+     },
+     {
+      "name": "gentoo-deps-image",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-rhel (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1
+     },
+     {
+      "name": "xserver-build-solaris",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-arch",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "xserver-build-ubuntu-valgrind",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "xserver-build-alpine",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 1.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-netbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-hurd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 14.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 13.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "xserver-build-rhel (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 1.4,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 7.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "xserver-build-gentoo",
+      "needs": [
+       "gentoo-deps-image"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.4,
+      "endMin": 4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 2.7,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44812602357,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 15.9,
+    "path": [
+     "drivers-build-ubuntu (video-vesa:25.0.0)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.7,
+      "setupMin": 1
+     },
+     {
+      "name": "xserver-build-arch",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check Signed-Off-By",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-ubuntu-no-gbm",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "xserver-build-freebsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "drivers-prepare-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "xserver-build-alpine",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 6.5
+     },
+     {
+      "name": "xserver-build-dragonflybsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-cygwin",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 10.9,
+      "setupMin": 2.1
+     },
+     {
+      "name": "xserver-build-mingw32-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.7,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.7,
+      "workMin": 5.5,
+      "setupMin": 1
+     },
+     {
+      "name": "xserver-build-netbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.8,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 5.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "drivers-build-ubuntu (input-joystick:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.9,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3.1,
+      "workMin": 1.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (input-synaptics:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 3.9,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ast:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7.9,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (input-void:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-amdgpu:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.7,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.9,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (input-elographics:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.3,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.5,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-apm:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.5,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.7,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-i128:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.8,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3,
+      "workMin": 1.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (input-wacom:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 3.3,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 1.5,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-dummy:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.6,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.8,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (input-vmmouse:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.7,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.9,
+      "workMin": 1.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (input-libinput:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 3.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 1.3,
+      "workMin": 1.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ark:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 3.9,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.1,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-i740:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 5.1,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3.3,
+      "workMin": 1.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-fbdev:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.4,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.6,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-freedreno:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ati:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 4.1,
+      "endMin": 13,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 2.3,
+      "workMin": 8.9,
+      "setupMin": 8.2
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sunleo:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7.9,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.1,
+      "workMin": 3.2,
+      "setupMin": 2.6
+     },
+     {
+      "name": "drivers-build-ubuntu (input-keyboard:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7.3,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 5.5,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-chips:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.7,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.9,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (input-mouse:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 5.2,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (input-evdev:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 5.4,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3.6,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-qxl:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.6,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.8,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-siliconmotion:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 5.6,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3.8,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sis:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 3.5,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 1.7,
+      "workMin": 0.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-omap:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 6.4,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 4.6,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-mga:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.5,
+      "endMin": 10.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.7,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-intel:25.0.3)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10.6,
+      "endMin": 12,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8.8,
+      "workMin": 1.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-cirrus:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7.2,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 5.4,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-geode:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 6.6,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 4.8,
+      "workMin": 1.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nv:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 5.5,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 3.7,
+      "workMin": 1.8,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-neomagic:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.4,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.6,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg3:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.5,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.7,
+      "workMin": 1.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nouveau:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 6.2,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 4.4,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sunffb:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 6.7,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 4.9,
+      "workMin": 1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nested:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.3,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.5,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vbox:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.7,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.9,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vmware:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10.1,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8.3,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-s3virge:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10.4,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8.6,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-rendition:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.3,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.5,
+      "workMin": 1.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sisusb:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 6.4,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 4.6,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vesa:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.4,
+      "endMin": 15.9,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.6,
+      "workMin": 6.5,
+      "setupMin": 6.1
+     },
+     {
+      "name": "drivers-build-ubuntu (video-trident:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 7.4,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 5.6,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-r128:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.8,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7,
+      "workMin": 0.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-savage:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 8.7,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 6.9,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-mach64:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.7,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.9,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg14:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.8,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg6:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.4,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.6,
+      "workMin": 1.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "drivers-build-ubuntu (video-voodoo:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 9.4,
+      "endMin": 13.7,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 7.6,
+      "workMin": 4.3,
+      "setupMin": 3.9
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suntcx:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8.2,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-xgi:25.0.2)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10.3,
+      "endMin": 12,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 8.5,
+      "workMin": 1.6,
+      "setupMin": 1
+     },
+     {
+      "name": "drivers-build-ubuntu (video-tdfx:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 11,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 9.2,
+      "workMin": 1.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-v4l:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 1.8,
+      "startMin": 10.9,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 1.8,
+      "queueMin": 9.1,
+      "workMin": 0.6,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 43914172090,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways",
+     "a job GitHub created as another finished, a need the YAML lacks"
+    ],
+    "spanMin": 103.6,
+    "path": [
+     "drivers-build-ubuntu (video-suntcx:25.0.0)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "xserver-build-mingw32-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 81,
+      "endMin": 87.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 81,
+      "workMin": 6.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "xserver-build-alpine",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 81.4,
+      "endMin": 83,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 81.4,
+      "workMin": 1.6,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-netbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85.9,
+      "endMin": 94.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85.9,
+      "workMin": 8.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 80.9,
+      "endMin": 83.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 80.9,
+      "workMin": 2.7,
+      "setupMin": 1.2
+     },
+     {
+      "name": "drivers-prepare-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 83.3,
+      "endMin": 84.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 83.3,
+      "workMin": 1.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "xserver-build-ubuntu-no-gbm",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85.6,
+      "endMin": 92.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85.6,
+      "workMin": 6.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Check Signed-Off-By",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.2,
+      "endMin": 86.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.2,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "xserver-build-dragonflybsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.2,
+      "endMin": 89.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.2,
+      "workMin": 3.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.3,
+      "endMin": 93.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.3,
+      "workMin": 7.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "xserver-build-freebsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.7,
+      "endMin": 88.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.7,
+      "workMin": 2.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "xserver-build-arch",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.6,
+      "endMin": 91.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.6,
+      "workMin": 4.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "xserver-build-cygwin",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 81.6,
+      "endMin": 89.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 81.6,
+      "workMin": 7.8,
+      "setupMin": 1.9
+     },
+     {
+      "name": "drivers-build-ubuntu (video-amdgpu:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 92.8,
+      "endMin": 93.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 8.1,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (input-mouse:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 93.3,
+      "endMin": 94.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 8.5,
+      "workMin": 1.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "drivers-build-ubuntu (input-vmmouse:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 93.7,
+      "endMin": 94.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 8.9,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (input-wacom:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94,
+      "endMin": 95.1,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.2,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (input-synaptics:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.2,
+      "endMin": 96.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.4,
+      "workMin": 2,
+      "setupMin": 1.2
+     },
+     {
+      "name": "drivers-build-ubuntu (input-elographics:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 97.2,
+      "endMin": 98.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.4,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (input-keyboard:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 97,
+      "endMin": 98.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.2,
+      "workMin": 1.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "drivers-build-ubuntu (input-joystick:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.5,
+      "endMin": 95.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.7,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (input-void:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.6,
+      "endMin": 101.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.9,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ast:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 95,
+      "endMin": 96.1,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10.2,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ark:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94,
+      "endMin": 94.8,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.2,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nested:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 97.5,
+      "endMin": 98.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.7,
+      "workMin": 1.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-i128:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 93.6,
+      "endMin": 94.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 8.8,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-mach64:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.6,
+      "endMin": 95.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.8,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-r128:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.8,
+      "endMin": 95.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-dummy:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 98.4,
+      "endMin": 99.1,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 13.6,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-fbdev:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.5,
+      "endMin": 101.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.7,
+      "workMin": 1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-chips:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 96.9,
+      "endMin": 97.9,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.1,
+      "workMin": 1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-freedreno:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.7,
+      "endMin": 95.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nv:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.8,
+      "endMin": 95.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10.1,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-nouveau:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 95.8,
+      "endMin": 96.8,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 11,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-omap:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 97.9,
+      "endMin": 98.8,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 13.2,
+      "workMin": 0.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vmware:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 95.7,
+      "endMin": 97.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10.9,
+      "workMin": 1.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "drivers-build-ubuntu (video-geode:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.4,
+      "endMin": 101.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.7,
+      "workMin": 0.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-siliconmotion:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.7,
+      "endMin": 101.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sunleo:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.7,
+      "endMin": 95.3,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.9,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-savage:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94,
+      "endMin": 94.9,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 9.3,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sisusb:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.9,
+      "endMin": 102.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.1,
+      "workMin": 2.3,
+      "setupMin": 1.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-tdfx:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.3,
+      "endMin": 101.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.6,
+      "workMin": 1.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vesa:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 96.9,
+      "endMin": 97.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.1,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-qxl:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.7,
+      "endMin": 102.8,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.9,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg14:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.8,
+      "endMin": 101.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15,
+      "workMin": 1.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sis:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.3,
+      "endMin": 102,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.5,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-rendition:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 97.8,
+      "endMin": 98.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 13,
+      "workMin": 0.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-sunffb:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 94.8,
+      "endMin": 95.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 10,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-cirrus:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 98,
+      "endMin": 99.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 13.2,
+      "workMin": 1.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-apm:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 96.8,
+      "endMin": 97.9,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.1,
+      "workMin": 1.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg6:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100,
+      "endMin": 102.1,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.3,
+      "workMin": 2.1,
+      "setupMin": 1.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-v4l:25.0.1)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.6,
+      "endMin": 101.9,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.9,
+      "workMin": 1.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-trident:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 98.1,
+      "endMin": 99.1,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 13.3,
+      "workMin": 1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-mga:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.5,
+      "endMin": 102.9,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.8,
+      "workMin": 1.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "drivers-build-ubuntu (video-i740:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.1,
+      "endMin": 99.8,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 14.3,
+      "workMin": 0.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suntcx:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.5,
+      "endMin": 103.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.8,
+      "workMin": 2,
+      "setupMin": 1.3
+     },
+     {
+      "name": "drivers-build-ubuntu (video-voodoo:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 96.9,
+      "endMin": 97.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 12.1,
+      "workMin": 0.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "drivers-build-ubuntu (video-xgi:25.0.2)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.7,
+      "endMin": 101.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-suncg3:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 96.6,
+      "endMin": 98.4,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 11.9,
+      "workMin": 1.7,
+      "setupMin": 1.2
+     },
+     {
+      "name": "drivers-build-ubuntu (video-intel:25.0.3)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.4,
+      "endMin": 101.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.7,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-s3virge:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.7,
+      "endMin": 100.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15,
+      "workMin": 0.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "drivers-build-ubuntu (video-vbox:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.9,
+      "endMin": 100.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.2,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (input-libinput:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 99.9,
+      "endMin": 100.6,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 15.1,
+      "workMin": 0.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (input-evdev:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.4,
+      "endMin": 102.2,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.6,
+      "workMin": 0.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "drivers-build-ubuntu (video-ati:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 101.4,
+      "endMin": 102.5,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.7,
+      "workMin": 1.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "drivers-build-ubuntu (video-neomagic:25.0.0)",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 84.8,
+      "startMin": 100.9,
+      "endMin": 101.7,
+      "blockedMin": 0,
+      "hiddenMin": 84.8,
+      "queueMin": 16.1,
+      "workMin": 0.8,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 43912076543,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 97.8,
+    "path": [
+     "xserver-build-cygwin"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "drivers-build-ubuntu",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 84.9,
+      "endMin": 97,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 84.9,
+      "workMin": 12.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "xserver-build-dragonflybsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 84.8,
+      "endMin": 87.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 84.8,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-freebsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 84.7,
+      "endMin": 86.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 84.7,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-cygwin",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85.1,
+      "endMin": 97.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85.1,
+      "workMin": 12.7,
+      "setupMin": 3.4
+     },
+     {
+      "name": "xserver-build-mingw32-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85,
+      "endMin": 90.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85,
+      "workMin": 5.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86.6,
+      "endMin": 94.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86.6,
+      "workMin": 8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 84.2,
+      "endMin": 87.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 84.2,
+      "workMin": 2.9,
+      "setupMin": 1.3
+     },
+     {
+      "name": "xserver-build-netbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 86,
+      "endMin": 90.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 86,
+      "workMin": 4.8,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 43886492156,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 79.5,
+    "path": [
+     "drivers-build-ubuntu"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 38.3,
+      "endMin": 46.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 38.3,
+      "workMin": 8.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "xserver-build-cygwin",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 32.6,
+      "endMin": 39.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 32.6,
+      "workMin": 7.3,
+      "setupMin": 2.1
+     },
+     {
+      "name": "xserver-build-netbsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 61.4,
+      "endMin": 65.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 61.4,
+      "workMin": 4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-dragonflybsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 44.3,
+      "endMin": 46.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 44.3,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "xserver-build-freebsd",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 72.6,
+      "endMin": 74.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 72.6,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "drivers-build-ubuntu",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 67.7,
+      "endMin": 79.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 67.7,
+      "workMin": 11.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "xserver-build-mingw32-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 48.2,
+      "endMin": 53.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 48.2,
+      "workMin": 5.5,
+      "setupMin": 1
+     },
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 69.9,
+      "endMin": 72.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 69.9,
+      "workMin": 2.9,
+      "setupMin": 1.5
+     }
+    ]
+   },
+   {
+    "id": 43885297179,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.1,
+    "path": [
+     "xserver-build-ubuntu"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "xserver-build-macos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.7,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.7,
+      "workMin": 3.3,
+      "setupMin": 1.8
+     },
+     {
+      "name": "drivers-build-ubuntu",
+      "needs": [
+       "build-sdk-image",
+       "abi-changes-check"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.3,
+      "endMin": 17.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.3,
+      "workMin": 6.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "xserver-build-ubuntu",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18,
+      "endMin": 24.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18,
+      "workMin": 6.1,
+      "setupMin": 0.7
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    94
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Roff",
+    1
+   ],
+   [
+    "Objective-C",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    170
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1797
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 24,
+    "edges": 18,
+    "runs": 4,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "xserver-build-ubuntu-no-gbm",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.3
+    },
+    {
+     "id": "xserver-build-ubuntu-debug",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 8.1
+    },
+    {
+     "id": "abi-changes-check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.3
+    },
+    {
+     "id": "xserver-build-openbsd",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.8
+    },
+    {
+     "id": "xserver-build-dragonflybsd",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2.5
+    },
+    {
+     "id": "xserver-build-mingw32-ubuntu",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.9
+    },
+    {
+     "id": "Check Signed-Off-By",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "xserver-build-freebsd",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 2.1
+    },
+    {
+     "id": "xserver-build-cygwin",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.3
+    },
+    {
+     "id": "gentoo-deps-image",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "xserver-build-rhel (10)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.5
+    },
+    {
+     "id": "xserver-build-macos",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "xserver-build-solaris",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.8
+    },
+    {
+     "id": "xserver-build-arch",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.8
+    },
+    {
+     "id": "xserver-build-ubuntu-valgrind",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.1
+    },
+    {
+     "id": "xserver-build-alpine",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.8,
+     "workMin": 1.3
+    },
+    {
+     "id": "xserver-build-netbsd",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 9.4
+    },
+    {
+     "id": "xserver-build-hurd",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 1.3,
+     "workMin": 13.3
+    },
+    {
+     "id": "xserver-build-rhel (9)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.9,
+     "workMin": 1.4
+    },
+    {
+     "id": "xserver-build-ubuntu",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.3,
+     "workMin": 7.1
+    },
+    {
+     "id": "xserver-build-gentoo",
+     "needs": [
+      "gentoo-deps-image"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 1.2,
+     "workMin": 2.7
+    }
+   ],
+   "edges": [
+    {
+     "from": "xserver-build-gentoo",
+     "to": "gentoo-deps-image"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "xserver-build-hurd"
+   ],
+   "pathMinP50": 24.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 5.1× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 4884 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 55,
+ "read": {
+  "calls": 55,
+  "fromCache": 0
+ }
+}

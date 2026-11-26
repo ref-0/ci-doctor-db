@@ -1,0 +1,2707 @@
+{
+ "repo": "tokio-rs/axum",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 5.5,
+  "stars": 27955,
+  "forks": 1566,
+  "languages": [
+   [
+    "Rust",
+    100
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "linesOfCode": 48882,
+  "files": 508,
+  "sourceFiles": 310,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 44035,
+   "tests": 4644,
+   "integration": 0,
+   "support": 202
+  },
+  "testShare": 0.09914514993971861,
+  "packages": {
+   "npm": 0,
+   "cargo": 5,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 5,
+  "commitsPerWeekYear": 4.7,
+  "pace": 1,
+  "activeAuthors28d": 11,
+  "prsOpenedPerWeek": 1.9,
+  "prsMergedPerWeek": 3.8,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 96.8,
+   "p90": 754.6,
+   "n": 4
+  },
+  "prRunsPerDay": 2.5,
+  "runsPerMergedPr": 4.5
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 18,
+  "runsInPeriod": 18,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "small",
+ "headsPerWeek": 17,
+ "score": 98,
+ "grade": "S+",
+ "band": "excellent",
+ "parts": {
+  "speed": 97,
+  "reliability": 100,
+  "efficiency": 97
+ },
+ "detail": {
+  "speed": {
+   "wait": 95,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 99,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 75
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 33.9,
+  "prBilledMinutesPerDay": 49.6,
+  "jobMinutesPerMergedPr": 62.2,
+  "prVcpuMinutesPerDay": 135.5,
+  "vcpuMinutesPerMergedPr": 248.7,
+  "expectedVcpuMinutesPerMergedPr": 489.6,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 122.4,
+  "expectedWait": 10,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "14 pushes were timed, under 20"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 18,
+  "ranHeads": 14,
+  "timed": 14,
+  "p50": 3.9166666666666665,
+  "p75": 4.15,
+  "p90": 4.283333333333333,
+  "redRate": 0,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 4,
+  "bots": [
+   [
+    "github-actions[bot]",
+    4
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    14
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/CI.yml",
+  "redBy": [],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 3.9166666666666665
+ },
+ "main": {
+  "heads": 4,
+  "p50": 3.8833333333333333,
+  "p90": 6.9,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.15384615384615385,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 17,
+  "spanMin": 4,
+  "jobMinutes": 17.666666666666668,
+  "billedMinutes": 26,
+  "subMinuteJobs": 9,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.2714708785784798,
+  "setupMinPerJob": 0.2696078431372549,
+  "critical": {
+   "name": "test-msrv",
+   "minutes": 2.2333333333333334,
+   "shareOfSpan": 0.5524193548387096
+  },
+  "longest": {
+   "name": "test-msrv",
+   "minutes": 2.2333333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    102
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/CI.yml"
+  ],
+  "jobs": 12,
+  "edges": 5,
+  "matrixJobs": 3,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "test-msrv",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "check (examples)",
+    "minutes": 1.7,
+    "share": 0.42,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 1.6,
+    "setupMin": 0.3
+   },
+   {
+    "name": "test-msrv",
+    "minutes": 2.3,
+    "share": 0.56,
+    "blockedMin": 1.7,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 2.2,
+    "setupMin": 0.4
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 4,
+  "blockedMinP50": 1.7,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 3.9,
+  "setupInPathMinP50": 0.4,
+  "topBlockers": [
+   {
+    "name": "check",
+    "runs": 6,
+    "heldJobs": 8,
+    "jobs": 17,
+    "tookMin": 1.7,
+    "heldJobMin": 13.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45565100912,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2.8,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 2.8,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 2,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1.6,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 1.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 1.7,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45457162104,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.1,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 2.3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 2.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.2,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 4,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 4.1,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45371521421,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.1,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 2.4,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.6,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 4.1,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.8,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.2,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 2.5,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 3.2,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45370970753,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.9,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 2.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 2.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 2.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.7,
+      "endMin": 3.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45186863688,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.3,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 2.5,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 4.3,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 4.2,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.1,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 4,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.7,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 2.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.2,
+      "blockedMin": 2.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45117294569,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4,
+    "path": [
+     "check (examples)",
+     "test-msrv"
+    ],
+    "topBlocker": "check",
+    "jobs": [
+     {
+      "name": "check-docs",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Spell Check with Typos",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-hack",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "external-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (advisories)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "dependencies-are-sorted",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (examples)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "cargo-deny check (bans licenses sources)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check (.)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-msrv",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "wasm32-unknown-unknown",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 2.2,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "armv5te-unknown-linux-musleabi",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 2.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-nightly",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 3.2,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 3.7,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, examples)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 2.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (stable, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 2.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test-versions (beta, .)",
+      "needs": [
+       "check"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 3.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 2,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "depCache": ".github/workflows/CI.yml",
+   "compilerCache": ".github/workflows/CI.yml",
+   "frozenInstall": ".github/workflows/CI.yml"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    100
+   ],
+   [
+    "HTML",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 5,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "futures-core",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "http",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "http-body",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "http-body-util",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "hyper",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "mime",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "pin-project-lite",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tower-http",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tower-layer",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tower-service",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "form_urlencoded",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "memchr",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "multer",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "percent-encoding",
+    "ecosystem": "cargo",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    102
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "axum-core",
+     "path": "axum-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "axum",
+      "axum-extra",
+      "axum-macros"
+     ]
+    },
+    {
+     "name": "axum-extra",
+     "path": "axum-extra/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "axum",
+      "axum-core",
+      "axum-macros"
+     ]
+    },
+    {
+     "name": "axum-macros",
+     "path": "axum-macros/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "axum",
+      "axum-extra"
+     ]
+    },
+    {
+     "name": "axum",
+     "path": "axum/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "axum-core",
+      "axum-extra",
+      "axum-macros"
+     ]
+    }
+   ],
+   "count": 5,
+   "edges": 11,
+   "cycles": [
+    {
+     "ecosystem": "cargo",
+     "packages": [
+      "axum",
+      "axum-core",
+      "axum-extra",
+      "axum-macros"
+     ]
+    }
+   ],
+   "maxDepth": 0,
+   "topFanIn": [
+    {
+     "name": "axum",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-extra",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-macros",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 5,
+    "edges": 11
+   },
+   "nodes": [
+    {
+     "id": "axum",
+     "dir": "axum",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "axum-extra",
+     "dir": "axum-extra",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "axum-macros",
+     "dir": "axum-macros",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "axum-core",
+     "dir": "axum-core",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "axum-core",
+     "to": "axum",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-core",
+     "to": "axum-extra",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-core",
+     "to": "axum-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-extra",
+     "to": "axum",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-extra",
+     "to": "axum-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-extra",
+     "to": "axum-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-macros",
+     "to": "axum",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum-macros",
+     "to": "axum-extra",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum",
+     "to": "axum-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum",
+     "to": "axum-extra",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "axum",
+     "to": "axum-macros",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "package-cycle",
+     "subject": "axum ↔ axum-core ↔ axum-extra ↔ axum-macros",
+     "numbers": {
+      "packages": 4,
+      "packagesOf": 5
+     },
+     "threshold": null,
+     "detail": "cargo manifest dependencies"
+    }
+   ],
+   "flagCounts": {
+    "package-cycle": 1
+   },
+   "depth": 0,
+   "chain": [
+    "Cargo.toml"
+   ],
+   "topFanIn": [
+    {
+     "name": "axum",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-extra",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-macros",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "axum-core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 508
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 12,
+    "edges": 5,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "cargo-hack",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Spell Check with Typos",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check (.)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-docs",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "cargo-deny check (bans licenses sources)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "external-types",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "cargo-deny check (advisories)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "dependencies-are-sorted",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check (examples)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.5,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "wasm32-unknown-unknown",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-msrv",
+     "needs": [
+      "check"
+     ],
+     "onPath": true,
+     "blockedMin": 0.6,
+     "queueMin": 0,
+     "workMin": 2.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-nightly",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 1.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "armv5te-unknown-linux-musleabi",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 0.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-versions (stable, .)",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 0.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-versions (stable, examples)",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 0.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-versions (beta, examples)",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test-versions (beta, .)",
+     "needs": [
+      "check"
+     ],
+     "onPath": false,
+     "blockedMin": 0.6,
+     "queueMin": 0.1,
+     "workMin": 1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "wasm32-unknown-unknown",
+     "to": "check"
+    },
+    {
+     "from": "test-msrv",
+     "to": "check"
+    },
+    {
+     "from": "test-nightly",
+     "to": "check"
+    },
+    {
+     "from": "armv5te-unknown-linux-musleabi",
+     "to": "check"
+    },
+    {
+     "from": "test-versions (stable, .)",
+     "to": "check"
+    },
+    {
+     "from": "test-versions (stable, examples)",
+     "to": "check"
+    },
+    {
+     "from": "test-versions (beta, examples)",
+     "to": "check"
+    },
+    {
+     "from": "test-versions (beta, .)",
+     "to": "check"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "check (examples)",
+    "test-msrv"
+   ],
+   "pathMinP50": 4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Packages depend on each other in a cycle, axum ↔ axum-core ↔ axum-extra ↔ axum-macros: break it, so an edit to one stops reaching the rest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#package-dependencies-declared-and-checked"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 28,
+ "read": {
+  "calls": 28,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

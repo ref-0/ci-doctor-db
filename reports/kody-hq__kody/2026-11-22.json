@@ -1,0 +1,7664 @@
+{
+ "repo": "kody-hq/kody",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.7,
+  "stars": 985,
+  "forks": 96,
+  "languages": [
+   [
+    "TypeScript",
+    93
+   ],
+   [
+    "JavaScript",
+    6
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 1556715,
+  "files": 8049,
+  "sourceFiles": 6587,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 969391,
+   "tests": 564289,
+   "integration": 22975,
+   "support": 60
+  },
+  "testShare": 0.3772843192843732,
+  "packages": {
+   "npm": 16,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 95.2,
+  "pace": 2.4,
+  "activeAuthors28d": "≥3",
+  "prsOpenedPerWeek": 291,
+  "prsMergedPerWeek": 274,
+  "botShareOfMergedPrs": 95,
+  "openToMergeHours": {
+   "p50": 80.8,
+   "p90": 174.9,
+   "n": 5
+  },
+  "prRunsPerDay": 219.3,
+  "runsPerMergedPr": 5.6
+ },
+ "window": {
+  "days": 5.5,
+  "runs": 1000,
+  "runsInPeriod": 1578,
+  "truncated": true,
+  "mainDays": 2.4
+ },
+ "size": "large",
+ "headsPerWeek": 463,
+ "score": 71,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 67,
+  "reliability": 69,
+  "efficiency": 88
+ },
+ "detail": {
+  "speed": {
+   "wait": 59,
+   "forSize": 81,
+   "tail": 57
+  },
+  "reliability": {
+   "flakes": 46,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 95,
+   "setup": 100,
+   "queue": 25,
+   "shardIdle": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5308.8,
+  "prBilledMinutesPerDay": 5971.4,
+  "jobMinutesPerMergedPr": 135.6,
+  "expectedMinutesPerMergedPr": 383.5,
+  "expectedWait": 20.5,
+  "workflowsOnPrs": 160
+ },
+ "wait": {
+  "heads": 362,
+  "timed": 20,
+  "p50": 13.95,
+  "p75": 17.266666666666666,
+  "p90": 24.25,
+  "redRate": 0.16574585635359115,
+  "rerunRate": 0.09116022099447514,
+  "passedOnRerunRate": 0.06906077348066299,
+  "cancelledRate": 0.281767955801105,
+  "botHeads": 190,
+  "lightHeads": 17,
+  "neverRan": 2,
+  "botPushes": 208,
+  "bots": [
+   [
+    "devin-ai-integration[bot]",
+    206
+   ],
+   [
+    "cursor[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "✅ Validate",
+    19
+   ],
+   [
+    "Desktop binaries",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "✅ Validate",
+    43
+   ],
+   [
+    "Desktop binaries",
+    13
+   ],
+   [
+    "Let any package code emit its package's events",
+    2
+   ]
+  ],
+  "leftOut": [
+   "fix(packages): link the published app at the name being published",
+   "docs: split storage architecture and refresh publish and purge comments",
+   "fix(cli): build publishes without reaching npm and push with a freshly minted remote",
+   "Keep durable publish HEAD races off Sentry and reopen reconcile",
+   "ci(deploy): check kody.codes/health from Europe and the US after production deploy",
+   "docs(status): retrospective for the 2026-11-20 Western Europe outage and a publish workflow",
+   "test: share one repo session mock setup across the publish gate tests",
+   "Require an exit condition on legacy and compatibility comments",
+   "Document narrow-only access and test it across every resourceLock kind",
+   "Redraw sidebar Hide and Auto mode icons to match the Keep open lock",
+   "Require owner approval to widen a locked integration or MCP server",
+   "perf(execute): reuse execute bundle and package graph caches, one-batch CLI auth, package-bound packageContext, publish builds need git",
+   "fix(publish): fail durable publish once on isolate memory/CPU limits",
+   "feat(cli): package checks and publishes run as polled durable workflows",
+   "ci(publish-cli): serialize releases so back-to-back merges do not race npm",
+   "feat(admin): adminFeatureFlagDeleteStale capability for stale flag rows",
+   "Resume uploaded publishes after approval and report finalization failures",
+   "fix(publish-cli): wait for dev-runtime to resolve on npm before publishing the CLI",
+   "Fix durable publish of uploaded package builds",
+   "Split oversized Mailbox and RunLog owner dumps into parts instead of skipping them",
+   "Make package publish finalization safe to retry",
+   "fix(dr): export oversized storage dumps in parts instead of skipping them",
+   "fix(publish-offload): store sealed build documents in R2, not D1",
+   "fix(publish): keep the serving commit's runtime through an unfinished publish, and let finalize resume finish published-only tips (#5305)",
+   "🔎 Preview",
+   "fix(publish): pass body/path/query credential placeholders the credential already allows; link owner approval for the rest",
+   "fix(ci): retry Mac packaging hiccups in Desktop release and fix two Windows CLI test flakes",
+   "docs: match RunLog SQL stats, lazy parse checks, and shared UI comments",
+   "fix(open-api): packageCheck accepts a package tree as large as the publish checks accept",
+   "feat(limits): denial-of-wallet guards cap runaway git, execute, publish, check, and run-read calls per person and per org",
+   "fix(storage): storage.sql meters CREATE TABLE AS VALUES, and reads with a comment or replace() stay reads",
+   "fix(package-apps): a publish never clears the runs-as person an owner chose",
+   "fix(package-apps): realtime sockets and runtime credential checks read the commit everyone runs while a republish is held",
+   "✍️ CLA"
+  ],
+  "heavyWorkflows": [
+   "✅ Validate"
+  ],
+  "allPushesP50": 13.95
+ },
+ "main": {
+  "heads": 85,
+  "p50": 6.066666666666666,
+  "p90": 23.766666666666666,
+  "redRate": 0.047058823529411764,
+  "redBy": [
+   [
+    "🖥️ macOS host commands (main)",
+    2
+   ],
+   [
+    "Desktop binaries",
+    1
+   ],
+   [
+    "✅ Validate",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.6626666666666666,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 19,
+  "spanMin": 12.35,
+  "jobMinutes": 78.38333333333333,
+  "billedMinutes": 88,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 2,
+  "queueP90Sec": 127,
+  "setupShare": 0.17370791336049754,
+  "critical": {
+   "name": "✅ Validate",
+   "minutes": 0.26666666666666666,
+   "shareOfSpan": 0.02009456264775414
+  },
+  "longest": {
+   "name": "🎭 E2E (1/2)",
+   "minutes": 12.9
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ],
+  "shard": {
+   "name": "🎭 E2E (#)",
+   "shards": 2,
+   "medianMin": 9.116666666666667,
+   "maxMin": 11.233333333333333,
+   "maxOverMedian": 1.1902654867256637,
+   "idleTail": 0.07992565055762083
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/validate.yml"
+  ],
+  "jobs": 16,
+  "edges": 31,
+  "matrixJobs": 6,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "✅ Validate",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "🎭 E2E (1/2)",
+    "minutes": 11.3,
+    "share": 0.91,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 11.2,
+    "setupMin": 0.7
+   },
+   {
+    "name": "🎭 E2E Report",
+    "minutes": 0.8,
+    "share": 0.06,
+    "blockedMin": 11.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.8,
+    "setupMin": 0.7
+   },
+   {
+    "name": "✅ Validate",
+    "minutes": 0.3,
+    "share": 0.02,
+    "blockedMin": 12,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 3,
+  "pathMinP50": 12.4,
+  "blockedMinP50": 12,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 12.2,
+  "setupInPathMinP50": 0.9,
+  "topBlockers": [
+   {
+    "name": "🎭 E2E (…/2)",
+    "runs": 6,
+    "heldJobs": 2,
+    "jobs": 19,
+    "tookMin": 11.3,
+    "heldJobMin": 12
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44974439283,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.2,
+    "path": [
+     "🎭 E2E (1/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.6,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 2.9,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 9,
+      "createdMin": 9,
+      "startMin": 9.1,
+      "endMin": 10,
+      "blockedMin": 9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 10,
+      "endMin": 10.2,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44968305201,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.1,
+    "path": [
+     "🎭 E2E (1/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 7.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.4,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 8.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 6.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.2,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 4.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.9,
+      "endMin": 14.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 12,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 16.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 14.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 6.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 1.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.6,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.6,
+      "workMin": 1.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.3,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.4,
+      "setupMin": 0.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.5,
+      "setupMin": 3.3,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 1.6,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 16.1,
+      "createdMin": 16.1,
+      "startMin": 16.1,
+      "endMin": 16.9,
+      "blockedMin": 16.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 16.9,
+      "createdMin": 16.9,
+      "startMin": 16.9,
+      "endMin": 17.1,
+      "blockedMin": 16.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44967910887,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.1,
+    "path": [
+     "🎭 E2E (1/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.7,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.7,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 2.8,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 1.1,
+      "setupMin": 0.1,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 1.5,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.3,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 5.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 12.9,
+      "createdMin": 12.9,
+      "startMin": 13,
+      "endMin": 13.8,
+      "blockedMin": 12.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 13.8,
+      "createdMin": 13.8,
+      "startMin": 13.8,
+      "endMin": 14.1,
+      "blockedMin": 13.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44966791148,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.7,
+    "path": [
+     "🎭 E2E (1/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 2.8,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 1.6,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 4.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 6.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 7.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.8,
+      "endMin": 16,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 14.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 16,
+      "createdMin": 16,
+      "startMin": 16.5,
+      "endMin": 17.4,
+      "blockedMin": 16,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 0.8,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 17.4,
+      "createdMin": 17.4,
+      "startMin": 17.4,
+      "endMin": 17.7,
+      "blockedMin": 17.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44963600313,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.4,
+    "path": [
+     "🎭 E2E (2/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.7,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.7,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.3,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 3,
+      "setupMin": 2.8,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 1.6,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 11.3,
+      "createdMin": 11.3,
+      "startMin": 11.3,
+      "endMin": 12,
+      "blockedMin": 11.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12,
+      "endMin": 12.4,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44959267543,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.3,
+    "path": [
+     "🎭 E2E (2/2)",
+     "🎭 E2E Report",
+     "✅ Validate"
+    ],
+    "topBlocker": "🎭 E2E (…/2)",
+    "jobs": [
+     {
+      "name": "☁️ Workers (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 Node (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧹 Static",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "☁️ Workers (1/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖼️ UI verify",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧪 kody dev runtime",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-11-arm)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 2.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (macos-15)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.2,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "🖥️ Host commands (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🔌 MCP",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🪟 CLI (windows-latest)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 1.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🧰 CLI",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 1.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🖥️ Host commands (ubuntu-24.04)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E (2/2)",
+      "needs": [
+       "tested_tree"
+      ],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 11.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 10.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "🎭 E2E Report",
+      "needs": [
+       "e2e"
+      ],
+      "readyMin": 11.2,
+      "createdMin": 11.2,
+      "startMin": 11.2,
+      "endMin": 12,
+      "blockedMin": 11.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "✅ Validate",
+      "needs": [
+       "tested_tree",
+       "static",
+       "node",
+       "workers",
+       "mcp",
+       "e2e",
+       "e2e_report",
+       "ui_verify",
+       "cli",
+       "cli_windows",
+       "dev_runtime",
+       "host_commands",
+       "workers_retry",
+       "host_commands_macos",
+       "host_commands_macos_fallback"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12,
+      "endMin": 12.3,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 1038,
+  "over10s": 23,
+  "top": [
+   {
+    "file": "packages/worker/src/package-runtime/locked-credential-attribution.workers.test.ts",
+    "sec": 30.658,
+    "job": "☁️ Workers (2/2)"
+   },
+   {
+    "file": "tools/check-stale-local-migrations.node.test.ts",
+    "sec": 27.772,
+    "job": "🧪 Node (1/2)"
+   },
+   {
+    "file": "packages/worker/src/run-records/run-records.workers.test.ts",
+    "sec": 23.656,
+    "job": "☁️ Workers (2/2)"
+   },
+   {
+    "file": "packages/worker/src/package-runtime/ghsa-5fv3-review-variants.workers.test.ts",
+    "sec": 20.697,
+    "job": "☁️ Workers (2/2)"
+   },
+   {
+    "file": "packages/worker/src/package-runtime/package-secret-authority.workers.test.ts",
+    "sec": 18.877,
+    "job": "☁️ Workers (2/2)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 26,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": "nx.json",
+  "packageManager": "npm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    93
+   ],
+   [
+    "JavaScript",
+    6
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": [
+    "Nx",
+    "npm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 16,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test"
+  ],
+  "lintFormat": [
+   "Oxlint",
+   "Oxfmt"
+  ],
+  "libraries": [
+   {
+    "name": "xstate",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "@cloudflare/workers-types",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "remix",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@modelcontextprotocol/sdk",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@sentry/cloudflare",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@sentry/core",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ignore",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "msw",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "set-cookie-parser",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "tldts",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "wrangler",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "yjs",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "zod",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@axe-core/playwright",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/parser",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@base-ui/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@cloudflare/codemode",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@cloudflare/shell",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@cloudflare/vite-plugin",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "kody",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/api-docs-worker",
+     "path": "packages/api-docs-worker/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@kody/api-worker",
+     "path": "packages/api-worker/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/backup-control-plane",
+     "path": "packages/backup-control-plane/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kodycodes/cli",
+     "path": "packages/cli/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@kodycodes/desktop",
+     "path": "packages/desktop/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kodycodes/cli"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kodycodes/dev-runtime",
+     "path": "packages/dev-runtime/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@kody/highlight-worker",
+     "path": "packages/highlight-worker/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@kody/jobs-worker",
+     "path": "packages/jobs-worker/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/mock-cloudflare",
+     "path": "packages/mock-servers/cloudflare/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/mock-oauth",
+     "path": "packages/mock-servers/oauth/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@kody/nx-cache",
+     "path": "packages/nx-cache/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/push-queue-worker",
+     "path": "packages/push-queue-worker/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody-internal/shared",
+     "path": "packages/shared/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": false
+     }
+    },
+    {
+     "name": "@kody/status",
+     "path": "packages/status/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@kody/worker",
+     "path": "packages/worker/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@kody-internal/shared"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": false
+     }
+    }
+   ],
+   "count": 16,
+   "edges": 10,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "@kody-internal/shared",
+     "ecosystem": "npm",
+     "dependents": 9
+    },
+    {
+     "name": "@kodycodes/cli",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 16,
+    "edges": 10
+   },
+   "nodes": [
+    {
+     "id": "@kody-internal/shared",
+     "dir": "packages/shared",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 9,
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli",
+     "dir": "packages/cli",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-docs-worker",
+     "dir": "packages/api-docs-worker",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-worker",
+     "dir": "packages/api-worker",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/backup-control-plane",
+     "dir": "packages/backup-control-plane",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/highlight-worker",
+     "dir": "packages/highlight-worker",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@kody/jobs-worker",
+     "dir": "packages/jobs-worker",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/mock-cloudflare",
+     "dir": "packages/mock-servers/cloudflare",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/mock-oauth",
+     "dir": "packages/mock-servers/oauth",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@kody/nx-cache",
+     "dir": "packages/nx-cache",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/push-queue-worker",
+     "dir": "packages/push-queue-worker",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/status",
+     "dir": "packages/status",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kody/worker",
+     "dir": "packages/worker",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kodycodes/desktop",
+     "dir": "packages/desktop",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@kodycodes/dev-runtime",
+     "dir": "packages/dev-runtime",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "kody",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "kody",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/api-worker",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/backup-control-plane",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kodycodes/desktop",
+     "to": "@kodycodes/cli",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/jobs-worker",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/mock-cloudflare",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/nx-cache",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/push-queue-worker",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/status",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@kody/worker",
+     "to": "@kody-internal/shared",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "kody",
+    "@kody-internal/shared"
+   ],
+   "topFanIn": [
+    {
+     "name": "@kody-internal/shared",
+     "ecosystem": "npm",
+     "dependents": 9
+    },
+    {
+     "name": "@kodycodes/cli",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 5,
+    "edges": 10,
+    "packages": 16,
+    "packagesWithEntries": 5,
+    "filesRead": 21
+   },
+   "nodes": [
+    {
+     "id": "@kodycodes/cli#.",
+     "pkg": "@kodycodes/cli",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "packages/cli/src/cli.ts",
+     "guessed": true,
+     "reexports": 4,
+     "stars": 0,
+     "barrel": false,
+     "overload": 4
+    },
+    {
+     "id": "@kodycodes/desktop#.",
+     "pkg": "@kodycodes/desktop",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/desktop/main.cjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@kodycodes/dev-runtime#.",
+     "pkg": "@kodycodes/dev-runtime",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/dev-runtime/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@kody-internal/shared#./*",
+     "pkg": "@kody-internal/shared",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 10,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 135,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@kody/worker#./*",
+     "pkg": "@kody/worker",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 3905,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    }
+   ],
+   "edges": [
+    {
+     "from": "kody",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/api-worker",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/backup-control-plane",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/jobs-worker",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/mock-cloudflare",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/nx-cache",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/push-queue-worker",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/status",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kody/worker",
+     "to": "@kody-internal/shared",
+     "files": null
+    },
+    {
+     "from": "@kodycodes/desktop",
+     "to": "@kodycodes/cli",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": {
+    "id": "@kodycodes/cli#.",
+    "reexports": 4,
+    "importerPackages": 1,
+    "exact": true,
+    "overload": 4,
+    "dependents": 1,
+    "packagesOf": 16,
+    "share": 0.0625
+   },
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 180,
+    "edges": 33,
+    "cached": 49,
+    "trackedFiles": 8049
+   },
+   "nodes": [
+    {
+     "id": "@kody/api-docs-worker#build",
+     "pkg": "@kody/api-docs-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/api-docs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 675
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-docs-worker#deploy",
+     "pkg": "@kody/api-docs-worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/api-docs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-docs-worker#test",
+     "pkg": "@kody/api-docs-worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-docs-worker#typecheck",
+     "pkg": "@kody/api-docs-worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/api-docs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6281
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-worker#build",
+     "pkg": "@kody/api-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/api-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 674
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-worker#deploy",
+     "pkg": "@kody/api-worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/api-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-worker#test",
+     "pkg": "@kody/api-worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/api-worker#typecheck",
+     "pkg": "@kody/api-worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/api-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6280
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/backup-control-plane#test",
+     "pkg": "@kody/backup-control-plane",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/backup-control-plane#typecheck",
+     "pkg": "@kody/backup-control-plane",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/backup-control-plane/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6342
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/highlight-worker#build",
+     "pkg": "@kody/highlight-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/highlight-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 677
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/highlight-worker#deploy",
+     "pkg": "@kody/highlight-worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/highlight-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/highlight-worker#test",
+     "pkg": "@kody/highlight-worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/highlight-worker#typecheck",
+     "pkg": "@kody/highlight-worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/highlight-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6283
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/jobs-worker#build",
+     "pkg": "@kody/jobs-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/jobs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 700
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/jobs-worker#deploy",
+     "pkg": "@kody/jobs-worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/jobs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/jobs-worker#test",
+     "pkg": "@kody/jobs-worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/jobs-worker#typecheck",
+     "pkg": "@kody/jobs-worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/jobs-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6306
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/mock-cloudflare#dev",
+     "pkg": "@kody/mock-cloudflare",
+     "name": "dev",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/mock-servers/cloudflare/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/nx-cache#smoke-probe",
+     "pkg": "@kody/nx-cache",
+     "name": "smoke-probe",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/nx-cache/project.json",
+       "packages/nx-cache/smoke-probe.ts"
+      ],
+      "files": 2
+     },
+     "outputs": [
+      ".tmp/nx-cache-smoke-probe.txt"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@kody/nx-cache#test",
+     "pkg": "@kody/nx-cache",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/nx-cache#typecheck",
+     "pkg": "@kody/nx-cache",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/nx-cache/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6288
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/push-queue-worker#build",
+     "pkg": "@kody/push-queue-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/push-queue-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 676
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/push-queue-worker#deploy",
+     "pkg": "@kody/push-queue-worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/push-queue-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/push-queue-worker#test",
+     "pkg": "@kody/push-queue-worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/push-queue-worker#typecheck",
+     "pkg": "@kody/push-queue-worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/push-queue-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6282
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/status#test",
+     "pkg": "@kody/status",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/status#typecheck",
+     "pkg": "@kody/status",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/status/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6325
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#build",
+     "pkg": "@kody/worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 6783
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#deploy",
+     "pkg": "@kody/worker",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#dev",
+     "pkg": "@kody/worker",
+     "name": "dev",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#dev-client",
+     "pkg": "@kody/worker",
+     "name": "dev-client",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#dev-worker",
+     "pkg": "@kody/worker",
+     "name": "dev-worker",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#generate-types",
+     "pkg": "@kody/worker",
+     "name": "generate-types",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#migrate-e2e",
+     "pkg": "@kody/worker",
+     "name": "migrate-e2e",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#migrate-local",
+     "pkg": "@kody/worker",
+     "name": "migrate-local",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#prepare-e2e-env",
+     "pkg": "@kody/worker",
+     "name": "prepare-e2e-env",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "tools/prepare-e2e-env.ts",
+       "packages/worker/.env.example",
+       "packages/worker/.env"
+      ],
+      "files": 2
+     },
+     "outputs": [
+      "packages/worker/.env"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#prepare-playwright",
+     "pkg": "@kody/worker",
+     "name": "prepare-playwright",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "tools/ensure-playwright-browser.ts",
+       "tools/install-playwright-browsers-unzip.ts",
+       "tools/control-kody/playwright-browsers.ts"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#preview",
+     "pkg": "@kody/worker",
+     "name": "preview",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#preview-e2e",
+     "pkg": "@kody/worker",
+     "name": "preview-e2e",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#test",
+     "pkg": "@kody/worker",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#test-e2e",
+     "pkg": "@kody/worker",
+     "name": "test-e2e",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "vitest*.ts",
+       "vite.config.ts",
+       "wrangler-env.ts",
+       "tools/**/*",
+       "docs/**/*",
+       "packages/mock-servers/**/*",
+       "packages/jobs-worker/**/*",
+       "packages/highlight-worker/**/*"
+      ],
+      "files": 7471,
+      "globsOf": 18
+     },
+     "outputs": [
+      "playwright-report",
+      "test-results",
+      "blob-report"
+     ],
+     "depth": 1
+    },
+    {
+     "id": "@kody/worker#test-mcp",
+     "pkg": "@kody/worker",
+     "name": "test-mcp",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "vitest*.ts",
+       "vite.config.ts",
+       "wrangler-env.ts",
+       "tools/**/*",
+       "docs/**/*",
+       "packages/mock-servers/**/*",
+       "packages/jobs-worker/**/*",
+       "packages/highlight-worker/**/*"
+      ],
+      "files": 7301,
+      "globsOf": 16
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kody/worker#test-node",
+     "pkg": "@kody/worker",
+     "name": "test-node",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [
+      ".tmp/test-module-map/node-unit.json"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#test-workers",
+     "pkg": "@kody/worker",
+     "name": "test-workers",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "vitest*.ts",
+       "vite.config.ts",
+       "wrangler-env.ts",
+       "tools/**/*",
+       "docs/**/*",
+       "packages/mock-servers/**/*",
+       "packages/jobs-worker/**/*",
+       "packages/highlight-worker/**/*"
+      ],
+      "files": 7301,
+      "globsOf": 16
+     },
+     "outputs": [
+      ".tmp/test-module-map/workers-unit.json"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#typecheck",
+     "pkg": "@kody/worker",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6272
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@kody/worker#typecheck-client-test",
+     "pkg": "@kody/worker",
+     "name": "typecheck-client-test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6272
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#typecheck-src",
+     "pkg": "@kody/worker",
+     "name": "typecheck-src",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6272
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#typecheck-start",
+     "pkg": "@kody/worker",
+     "name": "typecheck-start",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*",
+       "tools/run-tsc.ts",
+       "tools/node-runtime.ts",
+       "!packages/worker/.generated/start-types/**/*"
+      ],
+      "files": 6274
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kody/worker#typecheck-start-server",
+     "pkg": "@kody/worker",
+     "name": "typecheck-start-server",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*",
+       "tools/run-tsc.ts",
+       "tools/node-runtime.ts",
+       "!packages/worker/.generated/start-types/**/*"
+      ],
+      "files": 6274
+     },
+     "outputs": [
+      "packages/worker/.generated/start-types"
+     ],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#typecheck-start-server-tests",
+     "pkg": "@kody/worker",
+     "name": "typecheck-start-server-tests",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*",
+       "tools/run-tsc.ts",
+       "tools/node-runtime.ts",
+       "!packages/worker/.generated/start-types/**/*"
+      ],
+      "files": 6274
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kody/worker#typecheck-start-tests",
+     "pkg": "@kody/worker",
+     "name": "typecheck-start-tests",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*",
+       "tools/run-tsc.ts",
+       "tools/node-runtime.ts",
+       "!packages/worker/.generated/start-types/**/*"
+      ],
+      "files": 6274
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kody/worker#typecheck-worker-test",
+     "pkg": "@kody/worker",
+     "name": "typecheck-worker-test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6272
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#bench",
+     "pkg": "@kodycodes/cli",
+     "name": "bench",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#build",
+     "pkg": "@kodycodes/cli",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 920
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#prepare",
+     "pkg": "@kodycodes/cli",
+     "name": "prepare",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kodycodes/cli#test",
+     "pkg": "@kodycodes/cli",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#test:windows",
+     "pkg": "@kodycodes/cli",
+     "name": "test:windows",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#typecheck",
+     "pkg": "@kodycodes/cli",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6526
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/cli#validate",
+     "pkg": "@kodycodes/cli",
+     "name": "validate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/cli/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kodycodes/desktop#dist",
+     "pkg": "@kodycodes/desktop",
+     "name": "dist",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#dist:release",
+     "pkg": "@kodycodes/desktop",
+     "name": "dist:release",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#pack",
+     "pkg": "@kodycodes/desktop",
+     "name": "pack",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#start",
+     "pkg": "@kodycodes/desktop",
+     "name": "start",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test",
+     "pkg": "@kodycodes/desktop",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:browser-login",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:browser-login",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:execution-shell",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:execution-shell",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:execution-ui",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:execution-ui",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:explorer",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:explorer",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:in-app-approval",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:in-app-approval",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:packaged-cli",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:packaged-cli",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:smoke",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:smoke",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#test:windows",
+     "pkg": "@kodycodes/desktop",
+     "name": "test:windows",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/desktop#validate",
+     "pkg": "@kodycodes/desktop",
+     "name": "validate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "packages/desktop/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/cli/**/*"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@kodycodes/dev-runtime#build",
+     "pkg": "@kodycodes/dev-runtime",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/dev-runtime/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 677
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/dev-runtime#test",
+     "pkg": "@kodycodes/dev-runtime",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@kodycodes/dev-runtime#typecheck",
+     "pkg": "@kodycodes/dev-runtime",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/dev-runtime/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "packages/worker/**/*",
+       "packages/shared/**/*",
+       "packages/mock-servers/**/*"
+      ],
+      "files": 6283
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#api-docs:build",
+     "pkg": "kody",
+     "name": "api-docs:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#api-docs:deploy",
+     "pkg": "kody",
+     "name": "api-docs:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#api:build",
+     "pkg": "kody",
+     "name": "api:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#api:deploy",
+     "pkg": "kody",
+     "name": "api:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#audit:prod",
+     "pkg": "kody",
+     "name": "audit:prod",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#backup:build",
+     "pkg": "kody",
+     "name": "backup:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#backup:deploy",
+     "pkg": "kody",
+     "name": "backup:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#backup:readiness",
+     "pkg": "kody",
+     "name": "backup:readiness",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#backup:resources",
+     "pkg": "kody",
+     "name": "backup:resources",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#backup:restore-drill",
+     "pkg": "kody",
+     "name": "backup:restore-drill",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#build",
+     "pkg": "kody",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#capabilities:manifest",
+     "pkg": "kody",
+     "name": "capabilities:manifest",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#cli:openapi:check",
+     "pkg": "kody",
+     "name": "cli:openapi:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#cli:validate",
+     "pkg": "kody",
+     "name": "cli:validate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "kody#control-kody",
+     "pkg": "kody",
+     "name": "control-kody",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#deploy",
+     "pkg": "kody",
+     "name": "deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#deploy-guardrails:check",
+     "pkg": "kody",
+     "name": "deploy-guardrails:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#deps:check",
+     "pkg": "kody",
+     "name": "deps:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#desktop:dev",
+     "pkg": "kody",
+     "name": "desktop:dev",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#desktop:pack",
+     "pkg": "kody",
+     "name": "desktop:pack",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#desktop:validate",
+     "pkg": "kody",
+     "name": "desktop:validate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "kody#dev",
+     "pkg": "kody",
+     "name": "dev",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#dev:client",
+     "pkg": "kody",
+     "name": "dev:client",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#dev:ensure",
+     "pkg": "kody",
+     "name": "dev:ensure",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#dev:mock-cloudflare",
+     "pkg": "kody",
+     "name": "dev:mock-cloudflare",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#dev:vite",
+     "pkg": "kody",
+     "name": "dev:vite",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#dev:worker",
+     "pkg": "kody",
+     "name": "dev:worker",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#docs:check",
+     "pkg": "kody",
+     "name": "docs:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#e2e:context-commands",
+     "pkg": "kody",
+     "name": "e2e:context-commands",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#e2e:web-server",
+     "pkg": "kody",
+     "name": "e2e:web-server",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#error-agent-prompt:check",
+     "pkg": "kody",
+     "name": "error-agent-prompt:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#feature-map:check",
+     "pkg": "kody",
+     "name": "feature-map:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#files:spike",
+     "pkg": "kody",
+     "name": "files:spike",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#files:spike:agent",
+     "pkg": "kody",
+     "name": "files:spike:agent",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#files:spike:build",
+     "pkg": "kody",
+     "name": "files:spike:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#files:spike:check",
+     "pkg": "kody",
+     "name": "files:spike:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#format",
+     "pkg": "kody",
+     "name": "format",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#format:check",
+     "pkg": "kody",
+     "name": "format:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#generate-types",
+     "pkg": "kody",
+     "name": "generate-types",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#generate-types:check",
+     "pkg": "kody",
+     "name": "generate-types:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#highlight:build",
+     "pkg": "kody",
+     "name": "highlight:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#highlight:deploy",
+     "pkg": "kody",
+     "name": "highlight:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#hooks:ensure",
+     "pkg": "kody",
+     "name": "hooks:ensure",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#install:check",
+     "pkg": "kody",
+     "name": "install:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#jobs:build",
+     "pkg": "kody",
+     "name": "jobs:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#jobs:deploy",
+     "pkg": "kody",
+     "name": "jobs:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#knip",
+     "pkg": "kody",
+     "name": "knip",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#latency-bench",
+     "pkg": "kody",
+     "name": "latency-bench",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#lint",
+     "pkg": "kody",
+     "name": "lint",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#lint:fix",
+     "pkg": "kody",
+     "name": "lint:fix",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#local-execute:upload-memory",
+     "pkg": "kody",
+     "name": "local-execute:upload-memory",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#maintenance-mode",
+     "pkg": "kody",
+     "name": "maintenance-mode",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#migrate:e2e",
+     "pkg": "kody",
+     "name": "migrate:e2e",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#migrate:local",
+     "pkg": "kody",
+     "name": "migrate:local",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#migrations:check",
+     "pkg": "kody",
+     "name": "migrations:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#mockup",
+     "pkg": "kody",
+     "name": "mockup",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#nx-cache:build",
+     "pkg": "kody",
+     "name": "nx-cache:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#nx-cache:deploy",
+     "pkg": "kody",
+     "name": "nx-cache:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#nx-cache:smoke",
+     "pkg": "kody",
+     "name": "nx-cache:smoke",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#nx:graph",
+     "pkg": "kody",
+     "name": "nx:graph",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#nx:show-projects",
+     "pkg": "kody",
+     "name": "nx:show-projects",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#origin-production-exports:check",
+     "pkg": "kody",
+     "name": "origin-production-exports:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#platform:build",
+     "pkg": "kody",
+     "name": "platform:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#postinstall",
+     "pkg": "kody",
+     "name": "postinstall",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#prepare",
+     "pkg": "kody",
+     "name": "prepare",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#prevalidate",
+     "pkg": "kody",
+     "name": "prevalidate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#preview",
+     "pkg": "kody",
+     "name": "preview",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#preview:e2e",
+     "pkg": "kody",
+     "name": "preview:e2e",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#preview:manual-test",
+     "pkg": "kody",
+     "name": "preview:manual-test",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#primitives:check",
+     "pkg": "kody",
+     "name": "primitives:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#primitives:classify",
+     "pkg": "kody",
+     "name": "primitives:classify",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#push-queue:build",
+     "pkg": "kody",
+     "name": "push-queue:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#push-queue:deploy",
+     "pkg": "kody",
+     "name": "push-queue:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#routes:generate",
+     "pkg": "kody",
+     "name": "routes:generate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#routes:generate:check",
+     "pkg": "kody",
+     "name": "routes:generate:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#runtime:build",
+     "pkg": "kody",
+     "name": "runtime:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#sentry:upload-sourcemaps",
+     "pkg": "kody",
+     "name": "sentry:upload-sourcemaps",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#site-perf",
+     "pkg": "kody",
+     "name": "site-perf",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#slop-ratchet:check",
+     "pkg": "kody",
+     "name": "slop-ratchet:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#soft-delete-read-filter:check",
+     "pkg": "kody",
+     "name": "soft-delete-read-filter:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#state-machines:check",
+     "pkg": "kody",
+     "name": "state-machines:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#state-machines:generate",
+     "pkg": "kody",
+     "name": "state-machines:generate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#status:build",
+     "pkg": "kody",
+     "name": "status:build",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#status:deploy",
+     "pkg": "kody",
+     "name": "status:deploy",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test",
+     "pkg": "kody",
+     "name": "test",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "**/*",
+       ".agents/**/*",
+       ".cursor/**/*",
+       ".github/**/*",
+       ".husky/**/*"
+      ],
+      "files": 8049
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:e2e:ensure",
+     "pkg": "kody",
+     "name": "test:e2e:ensure",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:e2e:run",
+     "pkg": "kody",
+     "name": "test:e2e:run",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:e2e:ui",
+     "pkg": "kody",
+     "name": "test:e2e:ui",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:mcp",
+     "pkg": "kody",
+     "name": "test:mcp",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:node",
+     "pkg": "kody",
+     "name": "test:node",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:push",
+     "pkg": "kody",
+     "name": "test:push",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#test:workers",
+     "pkg": "kody",
+     "name": "test:workers",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#typecheck",
+     "pkg": "kody",
+     "name": "typecheck",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "*.ts",
+       "tools/**/*",
+       "e2e/**/*",
+       ".agents/**/*",
+       "packages/**/*"
+      ],
+      "files": 7657
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#typecheck:start",
+     "pkg": "kody",
+     "name": "typecheck:start",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#ui:verify",
+     "pkg": "kody",
+     "name": "ui:verify",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#validate",
+     "pkg": "kody",
+     "name": "validate",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "kody#validate:fix",
+     "pkg": "kody",
+     "name": "validate:fix",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "kody#viewers:measure",
+     "pkg": "kody",
+     "name": "viewers:measure",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#worker-startup-bundles:check",
+     "pkg": "kody",
+     "name": "worker-startup-bundles:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#worker-startup-time:check",
+     "pkg": "kody",
+     "name": "worker-startup-time:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kody#workflows:check",
+     "pkg": "kody",
+     "name": "workflows:check",
+     "runner": "nx",
+     "cached": false,
+     "inputs": {
+      "mode": "package-default",
+      "globs": [
+       "**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json"
+      ],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "platform-worker#build",
+     "pkg": "platform-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/platform-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 669
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "runtime-worker#build",
+     "pkg": "runtime-worker",
+     "name": "build",
+     "runner": "nx",
+     "cached": true,
+     "inputs": {
+      "mode": "declared",
+      "globs": [
+       "packages/runtime-worker/**/*",
+       "package.json",
+       "package-lock.json",
+       "tsconfig*.json",
+       "docs/guides/**/*",
+       "tools/**/*",
+       "vite.config.ts",
+       "wrangler-env.ts"
+      ],
+      "files": 669
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@kodycodes/desktop#validate",
+     "to": "@kodycodes/desktop#test",
+     "how": "calls"
+    },
+    {
+     "from": "@kodycodes/cli#prepare",
+     "to": "@kodycodes/cli#build",
+     "how": "calls"
+    },
+    {
+     "from": "@kodycodes/cli#validate",
+     "to": "@kodycodes/cli#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "@kodycodes/cli#validate",
+     "to": "@kodycodes/cli#test",
+     "how": "calls"
+    },
+    {
+     "from": "@kodycodes/cli#validate",
+     "to": "@kodycodes/cli#build",
+     "how": "calls"
+    },
+    {
+     "from": "kody#files:spike:check",
+     "to": "kody#files:spike:build",
+     "how": "calls"
+    },
+    {
+     "from": "kody#files:spike",
+     "to": "kody#files:spike:build",
+     "how": "calls"
+    },
+    {
+     "from": "kody#cli:validate",
+     "to": "@kodycodes/desktop#validate",
+     "how": "fan-out"
+    },
+    {
+     "from": "kody#cli:validate",
+     "to": "@kodycodes/cli#validate",
+     "how": "fan-out"
+    },
+    {
+     "from": "kody#cli:validate",
+     "to": "kody#validate",
+     "how": "fan-out"
+    },
+    {
+     "from": "kody#preview",
+     "to": "kody#migrate:local",
+     "how": "calls"
+    },
+    {
+     "from": "kody#preview",
+     "to": "kody#dev:vite",
+     "how": "calls"
+    },
+    {
+     "from": "kody#preview:e2e",
+     "to": "kody#migrate:e2e",
+     "how": "calls"
+    },
+    {
+     "from": "kody#preview:e2e",
+     "to": "kody#dev:vite",
+     "how": "calls"
+    },
+    {
+     "from": "kody#typecheck",
+     "to": "kody#typecheck:start",
+     "how": "calls"
+    },
+    {
+     "from": "kody#prevalidate",
+     "to": "kody#install:check",
+     "how": "calls"
+    },
+    {
+     "from": "kody#validate",
+     "to": "kody#prevalidate",
+     "how": "lifecycle"
+    },
+    {
+     "from": "kody#validate:fix",
+     "to": "kody#lint:fix",
+     "how": "calls"
+    },
+    {
+     "from": "kody#validate:fix",
+     "to": "kody#format",
+     "how": "calls"
+    },
+    {
+     "from": "kody#desktop:dev",
+     "to": "kody#build",
+     "how": "calls"
+    },
+    {
+     "from": "kody#desktop:pack",
+     "to": "kody#build",
+     "how": "calls"
+    },
+    {
+     "from": "kody#desktop:validate",
+     "to": "kody#validate",
+     "how": "calls"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-src",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-worker-test",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-client-test",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-start",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-start-tests",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck",
+     "to": "@kody/worker#typecheck-start-server-tests",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck-start",
+     "to": "@kody/worker#typecheck-start-server",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#typecheck-start-tests",
+     "to": "@kody/worker#typecheck-start-server",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#test-mcp",
+     "to": "@kody/worker#prepare-e2e-env",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#test-e2e",
+     "to": "@kody/worker#prepare-e2e-env",
+     "how": "dependsOn"
+    },
+    {
+     "from": "@kody/worker#test-e2e",
+     "to": "@kody/worker#prepare-playwright",
+     "how": "dependsOn"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/api-docs-worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/api-docs-worker#typecheck",
+     "numbers": {
+      "files": 6281,
+      "filesOf": 8049,
+      "share": 0.7803
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/api-worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/api-worker#typecheck",
+     "numbers": {
+      "files": 6280,
+      "filesOf": 8049,
+      "share": 0.7802
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/backup-control-plane#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/backup-control-plane#typecheck",
+     "numbers": {
+      "files": 6342,
+      "filesOf": 8049,
+      "share": 0.7879
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/highlight-worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/highlight-worker#typecheck",
+     "numbers": {
+      "files": 6283,
+      "filesOf": 8049,
+      "share": 0.7806
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/jobs-worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/jobs-worker#typecheck",
+     "numbers": {
+      "files": 6306,
+      "filesOf": 8049,
+      "share": 0.7835
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/nx-cache#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/nx-cache#typecheck",
+     "numbers": {
+      "files": 6288,
+      "filesOf": 8049,
+      "share": 0.7812
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/push-queue-worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/push-queue-worker#typecheck",
+     "numbers": {
+      "files": 6282,
+      "filesOf": 8049,
+      "share": 0.7805
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/status#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/status#typecheck",
+     "numbers": {
+      "files": 6325,
+      "filesOf": 8049,
+      "share": 0.7858
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/worker#build",
+     "numbers": {
+      "files": 6783,
+      "filesOf": 8049,
+      "share": 0.8427
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/worker#test",
+     "numbers": {
+      "files": 8049,
+      "filesOf": 8049,
+      "share": 1
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/worker#test-e2e",
+     "numbers": {
+      "files": 7471,
+      "filesOf": 8049,
+      "share": 0.9282
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    },
+    {
+     "kind": "wide-inputs",
+     "subject": "@kody/worker#test-mcp",
+     "numbers": {
+      "files": 7301,
+      "filesOf": 8049,
+      "share": 0.9071
+     },
+     "threshold": {
+      "share": 0.5
+     }
+    }
+   ],
+   "flagCounts": {
+    "wide-inputs": 38
+   },
+   "depth": 4,
+   "chain": [
+    "kody#cli:validate",
+    "kody#validate",
+    "kody#prevalidate",
+    "kody#install:check"
+   ],
+   "runners": [
+    "nx"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 16,
+    "edges": 31,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "☁️ Workers (2/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🖥️ Host commands (windows-latest)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.2,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🖥️ Host commands (macos-15)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.1,
+     "runner": "macos-15",
+     "vcpus": 3
+    },
+    {
+     "id": "🖥️ Host commands (windows-11-arm)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.4,
+     "runner": "windows-11-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "☁️ Workers (1/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🎭 E2E (1/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🧪 kody dev runtime",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🪟 CLI (windows-11-arm)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.2,
+     "runner": "windows-11-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "🧰 CLI",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🎭 E2E (2/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🔌 MCP",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🖼️ UI verify",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 8.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🧪 Node (2/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🧪 Node (1/2)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🧹 Static",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🖥️ Host commands (ubuntu-24.04)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "🪟 CLI (windows-latest)",
+     "needs": [
+      "tested_tree"
+     ],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.6,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "🎭 E2E Report",
+     "needs": [
+      "e2e"
+     ],
+     "onPath": true,
+     "blockedMin": 9,
+     "queueMin": 0,
+     "workMin": 0.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "✅ Validate",
+     "needs": [
+      "tested_tree",
+      "static",
+      "node",
+      "workers",
+      "mcp",
+      "e2e",
+      "e2e_report",
+      "ui_verify",
+      "cli",
+      "cli_windows",
+      "dev_runtime",
+      "host_commands",
+      "workers_retry",
+      "host_commands_macos",
+      "host_commands_macos_fallback"
+     ],
+     "onPath": true,
+     "blockedMin": 10,
+     "queueMin": 0,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "☁️ Workers (2/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🖥️ Host commands (windows-latest)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🖥️ Host commands (macos-15)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🖥️ Host commands (windows-11-arm)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "☁️ Workers (1/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🎭 E2E (1/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🧪 kody dev runtime",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🪟 CLI (windows-11-arm)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🧰 CLI",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🎭 E2E (2/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🔌 MCP",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🖼️ UI verify",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🧪 Node (2/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🧪 Node (1/2)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🧹 Static",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🖥️ Host commands (ubuntu-24.04)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🪟 CLI (windows-latest)",
+     "to": "tested_tree"
+    },
+    {
+     "from": "🎭 E2E Report",
+     "to": "e2e"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "tested_tree"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "static"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "node"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "workers"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "mcp"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "e2e"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "e2e_report"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "ui_verify"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "cli"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "cli_windows"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "dev_runtime"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "host_commands"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "workers_retry"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "host_commands_macos"
+    },
+    {
+     "from": "✅ Validate",
+     "to": "host_commands_macos_fallback"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "🎭 E2E (1/2)",
+    "🎭 E2E Report",
+    "✅ Validate"
+   ],
+   "pathMinP50": 12.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 21,
+   "calls": 2
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Share a remote cache for nx.json: it has none in CI",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "23 test files take over 10 s; the slowest, packages/worker/src/package-runtime/locked-credential-attribution.workers.test.ts, takes 31 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "7% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Jobs wait 127 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "@kody/api-docs-worker#test's inputs cover 8049 of 8049 files: narrow them to what it reads",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#workspace-tasks"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 135,
+ "read": {
+  "calls": 135,
+  "fromCache": 0
+ }
+}

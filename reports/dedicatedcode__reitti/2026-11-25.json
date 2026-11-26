@@ -1,0 +1,799 @@
+{
+ "repo": "dedicatedcode/reitti",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 1.5,
+  "stars": 2730,
+  "forks": 90,
+  "languages": [
+   [
+    "Java",
+    67
+   ],
+   [
+    "HTML",
+    15
+   ],
+   [
+    "JavaScript",
+    13
+   ],
+   [
+    "CSS",
+    5
+   ]
+  ],
+  "linesOfCode": 153255,
+  "files": 2834,
+  "sourceFiles": 689,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 110287,
+   "tests": 35813,
+   "integration": 7154,
+   "support": 0
+  },
+  "testShare": 0.2803652312547647,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 32.8,
+  "commitsPerWeekYear": 11.1,
+  "pace": 3,
+  "activeAuthors28d": 7,
+  "prsOpenedPerWeek": 5.3,
+  "prsMergedPerWeek": 5.3,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.3,
+   "p90": 1.3,
+   "n": 6
+  },
+  "prRunsPerDay": 1.5,
+  "runsPerMergedPr": 2
+ },
+ "window": {
+  "days": 7.9,
+  "runs": 12,
+  "runsInPeriod": 12,
+  "truncated": false,
+  "mainDays": 7.9
+ },
+ "size": "small",
+ "headsPerWeek": 11,
+ "score": 82,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 72,
+  "reliability": 100,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 72,
+   "forSize": 68,
+   "tail": 83
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 98,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 67,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 14.8,
+  "prBilledMinutesPerDay": 16.6,
+  "jobMinutesPerMergedPr": 19.6,
+  "prVcpuMinutesPerDay": 59.2,
+  "vcpuMinutesPerMergedPr": 78.3,
+  "expectedVcpuMinutesPerMergedPr": 713.8,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 178.5,
+  "expectedWait": 11.8,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "12 pushes were timed, under 20"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 12,
+  "ranHeads": 12,
+  "timed": 12,
+  "p50": 9.866666666666667,
+  "p75": 10.066666666666666,
+  "p90": 10.6,
+  "redRate": 0,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    12
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 9.866666666666667
+ },
+ "main": {
+  "heads": 6,
+  "p50": 10.25,
+  "p90": 10.516666666666667,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 9.616666666666667,
+  "jobMinutes": 9.533333333333333,
+  "billedMinutes": 10,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.10915492957746478,
+  "setupMinPerJob": 0.525,
+  "critical": {
+   "name": "unit-tests",
+   "minutes": 8.733333333333333,
+   "shareOfSpan": 0.88663282571912
+  },
+  "longest": {
+   "name": "unit-tests",
+   "minutes": 8.733333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 2,
+  "edges": 1,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "unit-tests",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "build",
+    "minutes": 1,
+    "share": 0.1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.9,
+    "setupMin": 0.1
+   },
+   {
+    "name": "unit-tests",
+    "minutes": 8.8,
+    "share": 0.89,
+    "blockedMin": 1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 8.7,
+    "setupMin": 0.9
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 9.6,
+  "blockedMinP50": 1,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 9.5,
+  "setupInPathMinP50": 0.9,
+  "topBlockers": [
+   {
+    "name": "build",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 2,
+    "tookMin": 1,
+    "heldJobMin": 1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45405355144,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.9,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 9.9,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45400134819,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.6,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 10.6,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45348112968,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.6,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 0.8,
+      "createdMin": 0.9,
+      "startMin": 0.9,
+      "endMin": 9.6,
+      "blockedMin": 0.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45338629228,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.5,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 10.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44870854950,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.1,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 9.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44870028414,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.8,
+    "path": [
+     "build",
+     "unit-tests"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "unit-tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 0.9,
+      "endMin": 8.8,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.9,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "remoteCache",
+    "path": ".github/actions/save-maven-cache/action.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "depCache": ".github/actions/setup-maven/action.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "remoteCache: .github/actions/save-maven-cache/action.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    67
+   ],
+   [
+    "HTML",
+    15
+   ],
+   [
+    "JavaScript",
+    13
+   ],
+   [
+    "CSS",
+    5
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Maven"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    12
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2834
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 2,
+    "edges": 1,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "build",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "unit-tests",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 1.1,
+     "queueMin": 0,
+     "workMin": 8.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "unit-tests",
+     "to": "build"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "build",
+     "numbers": {
+      "heldJobs": 1,
+      "jobs": 2,
+      "heldJobMin": 1,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "build",
+    "unit-tests"
+   ],
+   "pathMinP50": 9.6,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"unit-tests\" runs 9 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"build\" holds up 1 of 2 jobs, 1.0 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 31,
+ "read": {
+  "calls": 31,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

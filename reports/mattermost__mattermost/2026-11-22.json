@@ -1,0 +1,5893 @@
+{
+ "repo": "mattermost/mattermost",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 11.4,
+  "stars": 39687,
+  "forks": 9123,
+  "languages": [
+   [
+    "TypeScript",
+    50
+   ],
+   [
+    "Go",
+    42
+   ],
+   [
+    "JavaScript",
+    4
+   ],
+   [
+    "SCSS",
+    2
+   ]
+  ],
+  "linesOfCode": 2702382,
+  "files": 16353,
+  "sourceFiles": 9442,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1280840,
+   "tests": 1047845,
+   "integration": 330250,
+   "support": 43446
+  },
+  "testShare": 0.5260328071337268,
+  "packages": {
+   "npm": 13,
+   "cargo": 0,
+   "go": 8,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 98.3,
+  "commitsPerWeekYear": 45.9,
+  "pace": 2.2,
+  "activeAuthors28d": 44,
+  "prsOpenedPerWeek": 213,
+  "prsMergedPerWeek": 172,
+  "botShareOfMergedPrs": 38,
+  "openToMergeHours": {
+   "p50": 13.3,
+   "p90": 398.5,
+   "n": 62
+  },
+  "prRunsPerDay": 610.8,
+  "runsPerMergedPr": 24.9
+ },
+ "window": {
+  "days": 1.6,
+  "runs": 993,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1.9
+ },
+ "size": "large",
+ "headsPerWeek": 590,
+ "score": 72,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 61,
+  "reliability": 90,
+  "efficiency": 87
+ },
+ "detail": {
+  "speed": {
+   "wait": 50,
+   "forSize": 74,
+   "tail": 65
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 77
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 35,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": 97
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3736.5,
+  "prBilledMinutesPerDay": 4366.1,
+  "jobMinutesPerMergedPr": 152.1,
+  "expectedMinutesPerMergedPr": 460.1,
+  "expectedWait": 23.3,
+  "workflowsOnPrs": 15
+ },
+ "wait": {
+  "heads": 137,
+  "timed": 70,
+  "p50": 17.583333333333332,
+  "p75": 19.033333333333335,
+  "p90": 19.366666666666667,
+  "redRate": 0.16058394160583941,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.19708029197080293,
+  "botHeads": 11,
+  "lightHeads": 6,
+  "neverRan": 0,
+  "botPushes": 8,
+  "bots": [
+   [
+    "cursor[bot]",
+    8
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Web App CI",
+    40
+   ],
+   [
+    "Server CI",
+    20
+   ],
+   [
+    "CodeQL",
+    10
+   ]
+  ],
+  "redBy": [
+   [
+    "Web App CI",
+    10
+   ],
+   [
+    "Server CI",
+    7
+   ],
+   [
+    "Test Surface Scan",
+    4
+   ]
+  ],
+  "leftOut": [
+   "docs-preview",
+   "docs-preview-cleanup",
+   "Docs Editor Review Label"
+  ],
+  "heavyWorkflows": [
+   "Web App CI",
+   "CodeQL",
+   "i18n CI PR"
+  ],
+  "allPushesP50": 17.433333333333334
+ },
+ "main": {
+  "heads": 46,
+  "p50": 15.533333333333333,
+  "p90": 17.383333333333333,
+  "redRate": 0.13043478260869565,
+  "redBy": [
+   [
+    "Web App CI",
+    6
+   ]
+  ]
+ },
+ "botRunShare": 0.05877803557617943,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 13,
+  "spanMin": 15.983333333333333,
+  "jobMinutes": 53.88333333333333,
+  "billedMinutes": 60,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.11630009038867128,
+  "critical": {
+   "name": "upload-coverage",
+   "minutes": 1.0333333333333334,
+   "shareOfSpan": 0.07494407158836688
+  },
+  "longest": {
+   "name": "test (channels shard 4/4)",
+   "minutes": 11.466666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    78
+   ]
+  ],
+  "shard": {
+   "name": "test (channels #/4)",
+   "shards": 4,
+   "medianMin": 9.9,
+   "maxMin": 11.433333333333334,
+   "maxOverMedian": 1.121212121212121,
+   "idleTail": 0.10920698924731184
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/webapp-ci.yml"
+  ],
+  "jobs": 10,
+  "edges": 9,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "upload-coverage",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "check-lint",
+    "minutes": 3.1,
+    "share": 0.17,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 3.1,
+    "setupMin": 0.5
+   },
+   {
+    "name": "test (channels shard 4/4)",
+    "minutes": 11.5,
+    "share": 0.72,
+    "blockedMin": 3.1,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 11.4,
+    "setupMin": 0.4
+   },
+   {
+    "name": "upload-coverage",
+    "minutes": 1.2,
+    "share": 0.08,
+    "blockedMin": 15,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1,
+    "setupMin": 0.6
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 3,
+  "pathMinP50": 16,
+  "blockedMinP50": 15,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 15.8,
+  "setupInPathMinP50": 1.1,
+  "topBlockers": [
+   {
+    "name": "check-lint",
+    "runs": 6,
+    "heldJobs": 10,
+    "jobs": 13,
+    "tookMin": 3.1,
+    "heldJobMin": 31
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44982558372,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18,
+    "path": [
+     "check-lint",
+     "test (channels shard 4/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 5,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 4.9,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 5.2,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 14.4,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 6.8,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 13.5,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 13.4,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 15.6,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 1.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 5,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 15.6,
+      "createdMin": 15.6,
+      "startMin": 15.6,
+      "endMin": 18,
+      "blockedMin": 15.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44982548755,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.9,
+    "path": [
+     "check-lint",
+     "test (channels shard 2/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 2.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 5.1,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 5.1,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.7,
+      "endMin": 6.3,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 7.7,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 1.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 5.5,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 12.2,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 15.5,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 1.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 13.1,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 1.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.6,
+      "endMin": 13.6,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 1.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.5,
+      "endMin": 17.9,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44943891539,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16,
+    "path": [
+     "check-lint",
+     "test (channels shard 4/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 4.3,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 5.1,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.1,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 6.5,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.3,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 14.4,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 14.2,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 15,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 14.3,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 15,
+      "createdMin": 15,
+      "startMin": 15,
+      "endMin": 16,
+      "blockedMin": 15,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44940708226,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16,
+    "path": [
+     "check-lint",
+     "test (channels shard 4/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.1,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 13.9,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 15,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.4,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.8,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 4.2,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 14.6,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 13,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.5,
+      "endMin": 5.8,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 15,
+      "createdMin": 15,
+      "startMin": 15,
+      "endMin": 16,
+      "blockedMin": 15,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44939636760,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.6,
+    "path": [
+     "check-lint",
+     "test (channels shard 3/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 3.7,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 3.4,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 3.3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 11,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 11.3,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 4.9,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 12.5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 10.5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 13.6,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44936507437,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.9,
+    "path": [
+     "check-lint",
+     "test (channels shard 2/4)",
+     "upload-coverage"
+    ],
+    "topBlocker": "check-lint",
+    "jobs": [
+     {
+      "name": "check-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-lockfile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-types",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (platform)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 3.3,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-i18n",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 3.2,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-external-links",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 3.2,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 5.6,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (mattermost-redux)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 4,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 3/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 10.1,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 1/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 13.6,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 4/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 12.5,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test (channels shard 2/4)",
+      "needs": [
+       "check-lint"
+      ],
+      "readyMin": 2.6,
+      "createdMin": 2.6,
+      "startMin": 2.6,
+      "endMin": 13.7,
+      "blockedMin": 2.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "upload-coverage",
+      "needs": [
+       "test-platform",
+       "test-mattermost-redux",
+       "test-channels"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.8,
+      "startMin": 13.8,
+      "endMin": 14.9,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 61,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": true,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": true,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": [
+   "Read the first 40 of 61 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    50
+   ],
+   [
+    "Go",
+    42
+   ],
+   [
+    "JavaScript",
+    4
+   ],
+   [
+    "SCSS",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 13,
+   "cargo": 0,
+   "go": 8,
+   "python": 0
+  },
+  "testRunners": [
+   "Jest",
+   "Playwright",
+   "Cypress",
+   "Mocha",
+   "node:test"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Stylelint",
+   "golangci-lint"
+  ],
+  "libraries": [
+   {
+    "name": "github.com/stretchr/testify",
+    "ecosystem": "go",
+    "packages": 5
+   },
+   {
+    "name": "@typescript/typescript6",
+    "ecosystem": "npm",
+    "packages": 5
+   },
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 5
+   },
+   {
+    "name": "chalk",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "react-dom",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "react-intl",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "github.com/mattermost/go-i18n",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "github.com/pkg/errors",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "golang.org/x/tools",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "@floating-ui/react",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@mattermost/compass-ui",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@testing-library/jest-dom",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "classnames",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "cross-env",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "jest-environment-jsdom",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "lodash",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "luxon",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "moment-timezone",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "shallow-equals",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "timezones.json",
+    "ecosystem": "npm",
+    "packages": 3
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    78
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "mattermost-api-reference",
+     "path": "api/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "github.com/mattermost/mattermost/api/internal",
+     "path": "api/server/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "@mattermost/docs-site",
+     "path": "docs/site/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "github.com/mattermost/mattermost/docs/site/scripts/gen-plugin-godocs",
+     "path": "docs/site/scripts/gen-plugin-godocs/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/mattermost/mattermost/docs/site/scripts/gen-plugin-manifest-docs",
+     "path": "docs/site/scripts/gen-plugin-manifest-docs/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "cypress",
+     "path": "e2e-tests/cypress/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/client",
+      "@mattermost/eslint-plugin",
+      "@mattermost/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@mattermost/playwright-lib",
+     "path": "e2e-tests/playwright/lib/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/client",
+      "@mattermost/types"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "mattermost-playwright",
+     "path": "e2e-tests/playwright/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/client",
+      "@mattermost/eslint-plugin",
+      "@mattermost/playwright-lib",
+      "@mattermost/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "github.com/mattermost/mattermost/server/v8",
+     "path": "server/go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "github.com/mattermost/mattermost/server/public"
+     ]
+    },
+    {
+     "name": "github.com/mattermost/mattermost/server/public",
+     "path": "server/public/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/mattermost/mattermost/tools/mattermost-govet",
+     "path": "tools/mattermost-govet/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/mattermost/mattermost/tools/mmgotool",
+     "path": "tools/mmgotool/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/mattermost/mattermost/tools/sharedchannel-test",
+     "path": "tools/sharedchannel-test/go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "github.com/mattermost/mattermost/server/public"
+     ]
+    },
+    {
+     "name": "mattermost-webapp",
+     "path": "webapp/channels/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/client",
+      "@mattermost/eslint-plugin",
+      "@mattermost/shared",
+      "@mattermost/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@mattermost/webapp",
+     "path": "webapp/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@mattermost/client",
+     "path": "webapp/platform/client/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@mattermost/components",
+     "path": "webapp/platform/components/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/shared"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@mattermost/eslint-plugin",
+     "path": "webapp/platform/eslint-plugin/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "mattermost-redux",
+     "path": "webapp/platform/mattermost-redux/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/client",
+      "@mattermost/types"
+     ],
+     "exports": {
+      "entries": 12,
+      "root": false
+     }
+    },
+    {
+     "name": "@mattermost/shared",
+     "path": "webapp/platform/shared/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@mattermost/eslint-plugin",
+      "@mattermost/types"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@mattermost/types",
+     "path": "webapp/platform/types/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": false
+     }
+    }
+   ],
+   "count": 21,
+   "edges": 21,
+   "cycles": [],
+   "maxDepth": 3,
+   "topFanIn": [
+    {
+     "name": "@mattermost/types",
+     "ecosystem": "npm",
+     "dependents": 7
+    },
+    {
+     "name": "@mattermost/client",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "@mattermost/eslint-plugin",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@mattermost/shared",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "github.com/mattermost/mattermost/server/public",
+     "ecosystem": "go",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 21,
+    "edges": 21
+   },
+   "nodes": [
+    {
+     "id": "@mattermost/types",
+     "dir": "webapp/platform/types",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client",
+     "dir": "webapp/platform/client",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/eslint-plugin",
+     "dir": "webapp/platform/eslint-plugin",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared",
+     "dir": "webapp/platform/shared",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "github.com/mattermost/mattermost/server/public",
+     "dir": "server/public",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib",
+     "dir": "e2e-tests/playwright/lib",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 2
+    },
+    {
+     "id": "@mattermost/components",
+     "dir": "webapp/platform/components",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "@mattermost/docs-site",
+     "dir": "docs/site",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp",
+     "dir": "webapp",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "cypress",
+     "dir": "e2e-tests/cypress",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "github.com/mattermost/mattermost/api/internal",
+     "dir": "api/server",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/mattermost/mattermost/docs/site/scripts/gen-plugin-godocs",
+     "dir": "docs/site/scripts/gen-plugin-godocs",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/mattermost/mattermost/docs/site/scripts/gen-plugin-manifest-docs",
+     "dir": "docs/site/scripts/gen-plugin-manifest-docs",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/mattermost/mattermost/server/v8",
+     "dir": "server",
+     "ecosystem": "go",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "github.com/mattermost/mattermost/tools/mattermost-govet",
+     "dir": "tools/mattermost-govet",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/mattermost/mattermost/tools/mmgotool",
+     "dir": "tools/mmgotool",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/mattermost/mattermost/tools/sharedchannel-test",
+     "dir": "tools/sharedchannel-test",
+     "ecosystem": "go",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "mattermost-api-reference",
+     "dir": "api",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright",
+     "dir": "e2e-tests/playwright",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 3
+    },
+    {
+     "id": "mattermost-redux",
+     "dir": "webapp/platform/mattermost-redux",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "mattermost-webapp",
+     "dir": "webapp/channels",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 2
+    }
+   ],
+   "edges": [
+    {
+     "from": "cypress",
+     "to": "@mattermost/client",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "cypress",
+     "to": "@mattermost/eslint-plugin",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "cypress",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/playwright-lib",
+     "to": "@mattermost/client",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/playwright-lib",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/client",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/eslint-plugin",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/playwright-lib",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "github.com/mattermost/mattermost/server/v8",
+     "to": "github.com/mattermost/mattermost/server/public",
+     "ecosystem": "go"
+    },
+    {
+     "from": "github.com/mattermost/mattermost/tools/sharedchannel-test",
+     "to": "github.com/mattermost/mattermost/server/public",
+     "ecosystem": "go"
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/client",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/eslint-plugin",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/client",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/components",
+     "to": "@mattermost/shared",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-redux",
+     "to": "@mattermost/client",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "mattermost-redux",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/shared",
+     "to": "@mattermost/eslint-plugin",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@mattermost/shared",
+     "to": "@mattermost/types",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "mattermost-playwright",
+    "@mattermost/playwright-lib",
+    "@mattermost/client",
+    "@mattermost/types"
+   ],
+   "topFanIn": [
+    {
+     "name": "@mattermost/types",
+     "ecosystem": "npm",
+     "dependents": 7
+    },
+    {
+     "name": "@mattermost/client",
+     "ecosystem": "npm",
+     "dependents": 5
+    },
+    {
+     "name": "@mattermost/eslint-plugin",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@mattermost/shared",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "github.com/mattermost/mattermost/server/public",
+     "ecosystem": "go",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 21,
+    "edges": 19,
+    "packages": 13,
+    "packagesWithEntries": 8,
+    "filesRead": 18
+   },
+   "nodes": [
+    {
+     "id": "@mattermost/client#.",
+     "pkg": "@mattermost/client",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 5,
+      "files": null
+     },
+     "dependents": 5,
+     "loads": null,
+     "file": "webapp/platform/client/src/index.ts",
+     "guessed": true,
+     "reexports": 4,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 20
+    },
+    {
+     "id": "@mattermost/shared#./build/webpack-web-app-externals",
+     "pkg": "@mattermost/shared",
+     "key": "./build/webpack-web-app-externals",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": "webapp/platform/shared/build/webpack-web-app-externals.cjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@mattermost/components#.",
+     "pkg": "@mattermost/components",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "webapp/platform/components/src/index.tsx",
+     "guessed": true,
+     "reexports": 10,
+     "stars": 0,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "@mattermost/eslint-plugin#.",
+     "pkg": "@mattermost/eslint-plugin",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 4,
+      "files": null
+     },
+     "dependents": 5,
+     "loads": null,
+     "file": "webapp/platform/eslint-plugin/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#.",
+     "pkg": "@mattermost/playwright-lib",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@mattermost/shared#.",
+     "pkg": "@mattermost/shared",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@mattermost/shared#./*",
+     "pkg": "@mattermost/shared",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 9,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@mattermost/types#./*",
+     "pkg": "@mattermost/types",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 7,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "mattermost-api-reference#.",
+     "pkg": "mattermost-api-reference",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./*",
+     "pkg": "mattermost-redux",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "mattermost-redux#./action_types",
+     "pkg": "mattermost-redux",
+     "key": "./action_types",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./actions",
+     "pkg": "mattermost-redux",
+     "key": "./actions",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./client",
+     "pkg": "mattermost-redux",
+     "key": "./client",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./constants",
+     "pkg": "mattermost-redux",
+     "key": "./constants",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./reducers",
+     "pkg": "mattermost-redux",
+     "key": "./reducers",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./reducers/entities",
+     "pkg": "mattermost-redux",
+     "key": "./reducers/entities",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./reducers/entities/threads",
+     "pkg": "mattermost-redux",
+     "key": "./reducers/entities/threads",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./reducers/errors",
+     "pkg": "mattermost-redux",
+     "key": "./reducers/errors",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./reducers/requests",
+     "pkg": "mattermost-redux",
+     "key": "./reducers/requests",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./selectors/create_selector",
+     "pkg": "mattermost-redux",
+     "key": "./selectors/create_selector",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "mattermost-redux#./store",
+     "pkg": "mattermost-redux",
+     "key": "./store",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "cypress",
+     "to": "@mattermost/client",
+     "files": null
+    },
+    {
+     "from": "@mattermost/playwright-lib",
+     "to": "@mattermost/client",
+     "files": null
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/client",
+     "files": null
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/client",
+     "files": null
+    },
+    {
+     "from": "mattermost-redux",
+     "to": "@mattermost/client",
+     "files": null
+    },
+    {
+     "from": "cypress",
+     "to": "@mattermost/eslint-plugin",
+     "files": null
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/eslint-plugin",
+     "files": null
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/eslint-plugin",
+     "files": null
+    },
+    {
+     "from": "@mattermost/shared",
+     "to": "@mattermost/eslint-plugin",
+     "files": null
+    },
+    {
+     "from": "cypress",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "@mattermost/playwright-lib",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "@mattermost/client",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "mattermost-redux",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "@mattermost/shared",
+     "to": "@mattermost/types",
+     "files": null
+    },
+    {
+     "from": "mattermost-playwright",
+     "to": "@mattermost/playwright-lib",
+     "files": null
+    },
+    {
+     "from": "mattermost-webapp",
+     "to": "@mattermost/shared",
+     "files": null
+    },
+    {
+     "from": "@mattermost/components",
+     "to": "@mattermost/shared",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "2 entries of 21 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "14 entries of 21 unknown, such as @mattermost/playwright-lib#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 149,
+    "edges": 112,
+    "cached": 0,
+    "trackedFiles": 16353
+   },
+   "nodes": [
+    {
+     "id": "@mattermost/client#build",
+     "pkg": "@mattermost/client",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#check",
+     "pkg": "@mattermost/client",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#clean",
+     "pkg": "@mattermost/client",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#fix",
+     "pkg": "@mattermost/client",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#run",
+     "pkg": "@mattermost/client",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#test",
+     "pkg": "@mattermost/client",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/client#test-ci",
+     "pkg": "@mattermost/client",
+     "name": "test-ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#build",
+     "pkg": "@mattermost/components",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#check",
+     "pkg": "@mattermost/components",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#check-types",
+     "pkg": "@mattermost/components",
+     "name": "check-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#clean",
+     "pkg": "@mattermost/components",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#fix",
+     "pkg": "@mattermost/components",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#run",
+     "pkg": "@mattermost/components",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#test",
+     "pkg": "@mattermost/components",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/components#test-ci",
+     "pkg": "@mattermost/components",
+     "name": "test-ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build",
+     "pkg": "@mattermost/docs-site",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@mattermost/docs-site#build:openapi",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:openapi",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/docs-site#build:openapi:docs",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:openapi:docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build:openapi:spec",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:openapi:spec",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build:plugin-docs",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:plugin-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/docs-site#build:plugin-godocs",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:plugin-godocs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build:plugin-jsdocs",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:plugin-jsdocs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build:plugin-manifest-docs",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:plugin-manifest-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#build:sidebars",
+     "pkg": "@mattermost/docs-site",
+     "name": "build:sidebars",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#check:absolute-links",
+     "pkg": "@mattermost/docs-site",
+     "name": "check:absolute-links",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#check:base-url-attrs",
+     "pkg": "@mattermost/docs-site",
+     "name": "check:base-url-attrs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#check:egress",
+     "pkg": "@mattermost/docs-site",
+     "name": "check:egress",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#clear",
+     "pkg": "@mattermost/docs-site",
+     "name": "clear",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#deploy",
+     "pkg": "@mattermost/docs-site",
+     "name": "deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#docusaurus",
+     "pkg": "@mattermost/docs-site",
+     "name": "docusaurus",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#postbuild",
+     "pkg": "@mattermost/docs-site",
+     "name": "postbuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#prebuild",
+     "pkg": "@mattermost/docs-site",
+     "name": "prebuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@mattermost/docs-site#prestart",
+     "pkg": "@mattermost/docs-site",
+     "name": "prestart",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@mattermost/docs-site#render:ime",
+     "pkg": "@mattermost/docs-site",
+     "name": "render:ime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#serve",
+     "pkg": "@mattermost/docs-site",
+     "name": "serve",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#stage:agents-docs",
+     "pkg": "@mattermost/docs-site",
+     "name": "stage:agents-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#start",
+     "pkg": "@mattermost/docs-site",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@mattermost/docs-site#swizzle",
+     "pkg": "@mattermost/docs-site",
+     "name": "swizzle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#test:egress",
+     "pkg": "@mattermost/docs-site",
+     "name": "test:egress",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#typecheck",
+     "pkg": "@mattermost/docs-site",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#write-heading-ids",
+     "pkg": "@mattermost/docs-site",
+     "name": "write-heading-ids",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/docs-site#write-translations",
+     "pkg": "@mattermost/docs-site",
+     "name": "write-translations",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/eslint-plugin#check",
+     "pkg": "@mattermost/eslint-plugin",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/eslint-plugin#clean",
+     "pkg": "@mattermost/eslint-plugin",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/eslint-plugin#fix",
+     "pkg": "@mattermost/eslint-plugin",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/eslint-plugin#test",
+     "pkg": "@mattermost/eslint-plugin",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#build",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#build-tsc",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "build-tsc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#build-tsc:watch",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "build-tsc:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#build:watch",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "build:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/playwright-lib#clean",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/playwright-lib#tsc",
+     "pkg": "@mattermost/playwright-lib",
+     "name": "tsc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#build",
+     "pkg": "@mattermost/shared",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#check",
+     "pkg": "@mattermost/shared",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/shared#check-types",
+     "pkg": "@mattermost/shared",
+     "name": "check-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#check:eslint",
+     "pkg": "@mattermost/shared",
+     "name": "check:eslint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#check:stylelint",
+     "pkg": "@mattermost/shared",
+     "name": "check:stylelint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#clean",
+     "pkg": "@mattermost/shared",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#fix",
+     "pkg": "@mattermost/shared",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#run",
+     "pkg": "@mattermost/shared",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#test",
+     "pkg": "@mattermost/shared",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/shared#test-ci",
+     "pkg": "@mattermost/shared",
+     "name": "test-ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/types#build",
+     "pkg": "@mattermost/types",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/types#check",
+     "pkg": "@mattermost/types",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/types#clean",
+     "pkg": "@mattermost/types",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/types#fix",
+     "pkg": "@mattermost/types",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/types#run",
+     "pkg": "@mattermost/types",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#build",
+     "pkg": "@mattermost/webapp",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#check",
+     "pkg": "@mattermost/webapp",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@mattermost/webapp#check-external-links",
+     "pkg": "@mattermost/webapp",
+     "name": "check-external-links",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#check-types",
+     "pkg": "@mattermost/webapp",
+     "name": "check-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/webapp#clean",
+     "pkg": "@mattermost/webapp",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/webapp#dev-server",
+     "pkg": "@mattermost/webapp",
+     "name": "dev-server",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#fix",
+     "pkg": "@mattermost/webapp",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/webapp#gen-lang-imports",
+     "pkg": "@mattermost/webapp",
+     "name": "gen-lang-imports",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#i18n-extract",
+     "pkg": "@mattermost/webapp",
+     "name": "i18n-extract",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/webapp#i18n-extract:check",
+     "pkg": "@mattermost/webapp",
+     "name": "i18n-extract:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@mattermost/webapp#postinstall",
+     "pkg": "@mattermost/webapp",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@mattermost/webapp#run",
+     "pkg": "@mattermost/webapp",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@mattermost/webapp#test",
+     "pkg": "@mattermost/webapp",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 6
+    },
+    {
+     "id": "@mattermost/webapp#test-ci",
+     "pkg": "@mattermost/webapp",
+     "name": "test-ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "cypress#benchmarks:run-server",
+     "pkg": "cypress",
+     "name": "benchmarks:run-server",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#check",
+     "pkg": "cypress",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#check-types",
+     "pkg": "cypress",
+     "name": "check-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:open",
+     "pkg": "cypress",
+     "name": "cypress:open",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:run",
+     "pkg": "cypress",
+     "name": "cypress:run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:run:chrome",
+     "pkg": "cypress",
+     "name": "cypress:run:chrome",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:run:edge",
+     "pkg": "cypress",
+     "name": "cypress:run:edge",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:run:electron",
+     "pkg": "cypress",
+     "name": "cypress:run:electron",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#cypress:run:firefox",
+     "pkg": "cypress",
+     "name": "cypress:run:firefox",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#fix",
+     "pkg": "cypress",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#pretest",
+     "pkg": "cypress",
+     "name": "pretest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#start:webhook",
+     "pkg": "cypress",
+     "name": "start:webhook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#test",
+     "pkg": "cypress",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "cypress#test:ci",
+     "pkg": "cypress",
+     "name": "test:ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#test:smoke",
+     "pkg": "cypress",
+     "name": "test:smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "cypress#uniq-meta",
+     "pkg": "cypress",
+     "name": "uniq-meta",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-api-reference#test",
+     "pkg": "mattermost-api-reference",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#build",
+     "pkg": "mattermost-playwright",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 4
+    },
+    {
+     "id": "mattermost-playwright#build:watch",
+     "pkg": "mattermost-playwright",
+     "name": "build:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "mattermost-playwright#check",
+     "pkg": "mattermost-playwright",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "mattermost-playwright#clean",
+     "pkg": "mattermost-playwright",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-playwright#codegen",
+     "pkg": "mattermost-playwright",
+     "name": "codegen",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#lint",
+     "pkg": "mattermost-playwright",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#lint:test-docs",
+     "pkg": "mattermost-playwright",
+     "name": "lint:test-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#percy:docker",
+     "pkg": "mattermost-playwright",
+     "name": "percy:docker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#playwright-ui",
+     "pkg": "mattermost-playwright",
+     "name": "playwright-ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#postinstall",
+     "pkg": "mattermost-playwright",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#prettier",
+     "pkg": "mattermost-playwright",
+     "name": "prettier",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#prettier:fix",
+     "pkg": "mattermost-playwright",
+     "name": "prettier:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#show-report",
+     "pkg": "mattermost-playwright",
+     "name": "show-report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#start:libretranslate-mock",
+     "pkg": "mattermost-playwright",
+     "name": "start:libretranslate-mock",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#tc:down",
+     "pkg": "mattermost-playwright",
+     "name": "tc:down",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-playwright#tc:up",
+     "pkg": "mattermost-playwright",
+     "name": "tc:up",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 6
+    },
+    {
+     "id": "mattermost-playwright#test",
+     "pkg": "mattermost-playwright",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:a11y-update-snapshots",
+     "pkg": "mattermost-playwright",
+     "name": "test:a11y-update-snapshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:ci",
+     "pkg": "mattermost-playwright",
+     "name": "test:ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:full",
+     "pkg": "mattermost-playwright",
+     "name": "test:full",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:slomo",
+     "pkg": "mattermost-playwright",
+     "name": "test:slomo",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:smoke",
+     "pkg": "mattermost-playwright",
+     "name": "test:smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:update-snapshots",
+     "pkg": "mattermost-playwright",
+     "name": "test:update-snapshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:upgrade:from",
+     "pkg": "mattermost-playwright",
+     "name": "test:upgrade:from",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:upgrade:to",
+     "pkg": "mattermost-playwright",
+     "name": "test:upgrade:to",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:visual",
+     "pkg": "mattermost-playwright",
+     "name": "test:visual",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#test:visual-update-snapshots",
+     "pkg": "mattermost-playwright",
+     "name": "test:visual-update-snapshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#testcontainers:down",
+     "pkg": "mattermost-playwright",
+     "name": "testcontainers:down",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-playwright#testcontainers:up",
+     "pkg": "mattermost-playwright",
+     "name": "testcontainers:up",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 5
+    },
+    {
+     "id": "mattermost-playwright#tsc",
+     "pkg": "mattermost-playwright",
+     "name": "tsc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-redux#build",
+     "pkg": "mattermost-redux",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-redux#clean",
+     "pkg": "mattermost-redux",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-redux#postbuild",
+     "pkg": "mattermost-redux",
+     "name": "postbuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#build",
+     "pkg": "mattermost-webapp",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#check",
+     "pkg": "mattermost-webapp",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-webapp#check-types",
+     "pkg": "mattermost-webapp",
+     "name": "check-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#check:eslint",
+     "pkg": "mattermost-webapp",
+     "name": "check:eslint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#check:stylelint",
+     "pkg": "mattermost-webapp",
+     "name": "check:stylelint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#clean",
+     "pkg": "mattermost-webapp",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#dev-server",
+     "pkg": "mattermost-webapp",
+     "name": "dev-server",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#fix",
+     "pkg": "mattermost-webapp",
+     "name": "fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#i18n-extract",
+     "pkg": "mattermost-webapp",
+     "name": "i18n-extract",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#i18n-extract:check",
+     "pkg": "mattermost-webapp",
+     "name": "i18n-extract:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "mattermost-webapp#i18n-verify-translations",
+     "pkg": "mattermost-webapp",
+     "name": "i18n-verify-translations",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#make-emojis",
+     "pkg": "mattermost-webapp",
+     "name": "make-emojis",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#run",
+     "pkg": "mattermost-webapp",
+     "name": "run",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#stats",
+     "pkg": "mattermost-webapp",
+     "name": "stats",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#test",
+     "pkg": "mattermost-webapp",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#test-ci",
+     "pkg": "mattermost-webapp",
+     "name": "test-ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#test:debug",
+     "pkg": "mattermost-webapp",
+     "name": "test:debug",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mattermost-webapp#test:watch",
+     "pkg": "mattermost-webapp",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "mattermost-redux#build",
+     "to": "mattermost-redux#postbuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@mattermost/playwright-lib#build:watch",
+     "to": "@mattermost/playwright-lib#build",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/shared#check",
+     "to": "@mattermost/shared#check:eslint",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/shared#check",
+     "to": "@mattermost/shared#check:stylelint",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#postinstall",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "mattermost-redux#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/components#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/playwright-lib#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/client#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/shared#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/types#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "mattermost-webapp#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/docs-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build",
+     "to": "@mattermost/webapp#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#build:watch",
+     "to": "@mattermost/playwright-lib#build:watch",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#tsc",
+     "to": "@mattermost/playwright-lib#tsc",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#check",
+     "to": "mattermost-playwright#lint",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#check",
+     "to": "mattermost-playwright#prettier",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#check",
+     "to": "mattermost-playwright#tsc",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#check",
+     "to": "mattermost-playwright#lint:test-docs",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:smoke",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:ci",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:a11y-update-snapshots",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:visual",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:visual-update-snapshots",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:update-snapshots",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:slomo",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:full",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:upgrade:from",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#test:upgrade:to",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#testcontainers:up",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#tc:up",
+     "to": "mattermost-playwright#testcontainers:up",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#tc:down",
+     "to": "mattermost-playwright#testcontainers:down",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#percy:docker",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#codegen",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#playwright-ui",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#show-report",
+     "to": "mattermost-playwright#build",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "mattermost-redux#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/eslint-plugin#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/components#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/playwright-lib#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/client#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/shared#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/types#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "mattermost-webapp#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "mattermost-playwright#clean",
+     "to": "@mattermost/webapp#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "cypress#test",
+     "to": "cypress#pretest",
+     "how": "lifecycle"
+    },
+    {
+     "from": "mattermost-webapp#check",
+     "to": "mattermost-webapp#check:eslint",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-webapp#check",
+     "to": "mattermost-webapp#check:stylelint",
+     "how": "calls"
+    },
+    {
+     "from": "mattermost-webapp#i18n-extract:check",
+     "to": "mattermost-webapp#i18n-extract",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#start",
+     "to": "@mattermost/docs-site#prestart",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@mattermost/docs-site#build",
+     "to": "@mattermost/docs-site#prebuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@mattermost/docs-site#build",
+     "to": "@mattermost/docs-site#postbuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@mattermost/docs-site#build:openapi",
+     "to": "@mattermost/docs-site#build:openapi:spec",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#build:openapi",
+     "to": "@mattermost/docs-site#build:openapi:docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#build:plugin-docs",
+     "to": "@mattermost/docs-site#build:plugin-godocs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#build:plugin-docs",
+     "to": "@mattermost/docs-site#build:plugin-jsdocs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#build:plugin-docs",
+     "to": "@mattermost/docs-site#build:plugin-manifest-docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prestart",
+     "to": "@mattermost/docs-site#stage:agents-docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prestart",
+     "to": "@mattermost/docs-site#build:sidebars",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prestart",
+     "to": "@mattermost/docs-site#build:openapi:spec",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prestart",
+     "to": "@mattermost/docs-site#build:openapi:docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prestart",
+     "to": "@mattermost/docs-site#build:plugin-docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prebuild",
+     "to": "@mattermost/docs-site#check:base-url-attrs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prebuild",
+     "to": "@mattermost/docs-site#stage:agents-docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prebuild",
+     "to": "@mattermost/docs-site#build:sidebars",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prebuild",
+     "to": "@mattermost/docs-site#build:openapi",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/docs-site#prebuild",
+     "to": "@mattermost/docs-site#build:plugin-docs",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/webapp#postinstall",
+     "to": "@mattermost/webapp#build",
+     "how": "calls"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "@mattermost/eslint-plugin#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "@mattermost/components#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "@mattermost/client#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "@mattermost/shared#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "mattermost-playwright#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "cypress#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "mattermost-webapp#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test",
+     "to": "mattermost-api-reference#test",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test-ci",
+     "to": "@mattermost/components#test-ci",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test-ci",
+     "to": "@mattermost/client#test-ci",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test-ci",
+     "to": "@mattermost/shared#test-ci",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#test-ci",
+     "to": "mattermost-webapp#test-ci",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "@mattermost/eslint-plugin#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "@mattermost/components#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "@mattermost/client#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "@mattermost/shared#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "@mattermost/types#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "mattermost-playwright#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "cypress#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check",
+     "to": "mattermost-webapp#check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "@mattermost/eslint-plugin#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "@mattermost/components#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "@mattermost/client#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "@mattermost/shared#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "@mattermost/types#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "cypress#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#fix",
+     "to": "mattermost-webapp#fix",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check-types",
+     "to": "@mattermost/components#check-types",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check-types",
+     "to": "@mattermost/shared#check-types",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check-types",
+     "to": "cypress#check-types",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#check-types",
+     "to": "mattermost-webapp#check-types",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#i18n-extract",
+     "to": "mattermost-webapp#i18n-extract",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#i18n-extract:check",
+     "to": "mattermost-webapp#i18n-extract:check",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "mattermost-redux#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/eslint-plugin#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/components#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/playwright-lib#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/client#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/shared#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "@mattermost/types#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "mattermost-playwright#clean",
+     "how": "fan-out"
+    },
+    {
+     "from": "@mattermost/webapp#clean",
+     "to": "mattermost-webapp#clean",
+     "how": "fan-out"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "task-cycle",
+     "subject": "@mattermost/webapp#clean ↔ mattermost-playwright#clean",
+     "numbers": {
+      "tasks": 2
+     },
+     "threshold": null
+    },
+    {
+     "kind": "deep-chain",
+     "subject": "mattermost-playwright#tc:up → mattermost-playwright#testcontainers:up → mattermost-playwright#build → @mattermost/docs-site#build → @mattermost/docs-site#prebuild → @mattermost/docs-site#build:openapi → @mattermost/docs-site#build:openapi:spec",
+     "numbers": {
+      "tasks": 7
+     },
+     "threshold": {
+      "tasks": 6
+     }
+    }
+   ],
+   "flagCounts": {
+    "task-cycle": 1,
+    "deep-chain": 1
+   },
+   "depth": 7,
+   "chain": [
+    "mattermost-playwright#tc:up",
+    "mattermost-playwright#testcontainers:up",
+    "mattermost-playwright#build",
+    "@mattermost/docs-site#build",
+    "@mattermost/docs-site#prebuild",
+    "@mattermost/docs-site#build:openapi",
+    "@mattermost/docs-site#build:openapi:spec"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 10,
+    "edges": 9,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "check-lint",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-lockfile",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-types",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (mattermost-redux)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 1.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-external-links",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-i18n",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (channels shard 1/4)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 11.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "build",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 3.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (channels shard 2/4)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 10.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (channels shard 3/4)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 10.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (channels shard 4/4)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": true,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 12.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test (platform)",
+     "needs": [
+      "check-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 3.1,
+     "queueMin": 0.1,
+     "workMin": 1.9,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "upload-coverage",
+     "needs": [
+      "test-platform",
+      "test-mattermost-redux",
+      "test-channels"
+     ],
+     "onPath": true,
+     "blockedMin": 15.6,
+     "queueMin": 0.1,
+     "workMin": 2.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "test (mattermost-redux)",
+     "to": "check-lint"
+    },
+    {
+     "from": "check-external-links",
+     "to": "check-lint"
+    },
+    {
+     "from": "check-i18n",
+     "to": "check-lint"
+    },
+    {
+     "from": "test (channels shard 1/4)",
+     "to": "check-lint"
+    },
+    {
+     "from": "build",
+     "to": "check-lint"
+    },
+    {
+     "from": "test (channels shard 2/4)",
+     "to": "check-lint"
+    },
+    {
+     "from": "test (channels shard 3/4)",
+     "to": "check-lint"
+    },
+    {
+     "from": "test (channels shard 4/4)",
+     "to": "check-lint"
+    },
+    {
+     "from": "test (platform)",
+     "to": "check-lint"
+    },
+    {
+     "from": "upload-coverage",
+     "to": "test-platform"
+    },
+    {
+     "from": "upload-coverage",
+     "to": "test-mattermost-redux"
+    },
+    {
+     "from": "upload-coverage",
+     "to": "test-channels"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "check-lint",
+     "numbers": {
+      "heldJobs": 10,
+      "jobs": 13,
+      "heldJobMin": 31,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "check-lint",
+    "test (channels shard 4/4)",
+    "upload-coverage"
+   ],
+   "pathMinP50": 16,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 18,
+   "calls": 2
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "A blocker most jobs wait on: \"check-lint\" holds up 10 of 13 jobs, 31.0 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "A chain of 7 tasks runs one after another on a cache miss: cut the `dependsOn` edges a task doesn't need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#workspace-tasks"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 113,
+ "read": {
+  "calls": 113,
+  "fromCache": 0
+ }
+}

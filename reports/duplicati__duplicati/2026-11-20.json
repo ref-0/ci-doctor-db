@@ -1,0 +1,1047 @@
+{
+ "repo": "duplicati/duplicati",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 12.3,
+  "stars": 15218,
+  "forks": 1097,
+  "languages": [
+   [
+    "C#",
+    96
+   ],
+   [
+    "JavaScript",
+    2
+   ],
+   [
+    "HTML",
+    1
+   ],
+   [
+    "Less",
+    0
+   ]
+  ],
+  "linesOfCode": 762159,
+  "files": 3236,
+  "sourceFiles": 2097,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 748336,
+   "tests": 0,
+   "integration": 1843,
+   "support": 11980
+  },
+  "testShare": 0.018136599728140596,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 63.6,
+  "pace": 2.9,
+  "activeAuthors28d": "≥7",
+  "prsOpenedPerWeek": 136,
+  "prsMergedPerWeek": 143,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 8.5,
+   "p90": 23,
+   "n": 100
+  },
+  "prRunsPerDay": 146.6,
+  "runsPerMergedPr": 7.2
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 992,
+  "runsInPeriod": 1093,
+  "truncated": true,
+  "mainDays": 7
+ },
+ "size": "medium",
+ "headsPerWeek": 206,
+ "score": 33,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 63
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 54,
+   "runsPerPr": 85,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 7979.4,
+  "prBilledMinutesPerDay": 8159.6,
+  "jobMinutesPerMergedPr": 390.6,
+  "expectedMinutesPerMergedPr": 303,
+  "expectedWait": 17.4,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 199,
+  "timed": 152,
+  "p50": 347.75,
+  "p75": 480.55,
+  "p90": 699.7333333333333,
+  "redRate": 0.32663316582914576,
+  "rerunRate": 0.010050251256281407,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.21608040201005024,
+  "botHeads": 0,
+  "lightHeads": 2,
+  "lastToFinish": [
+   [
+    "Tests",
+    97
+   ],
+   [
+    "Secret Provider SetSecret Tests",
+    41
+   ],
+   [
+    "Backend Live Tests",
+    13
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests",
+    64
+   ],
+   [
+    "Backend Live Tests",
+    6
+   ],
+   [
+    "Secret Provider SetSecret Tests",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 338.4166666666667
+ },
+ "main": {
+  "heads": 143,
+  "p50": 1.2,
+  "p90": 71.1,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 110.23333333333333,
+  "jobMinutes": 134.73333333333335,
+  "billedMinutes": 136,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 9402,
+  "setupShare": 0.009530882534967198,
+  "critical": {
+   "name": "Build packages (macos-latest)",
+   "minutes": 70.01666666666667,
+   "shareOfSpan": 0.9899074852817493
+  },
+  "longest": {
+   "name": "Build packages (macos-latest)",
+   "minutes": 70.01666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    27
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build-packages.yml",
+   ".github/workflows/tests.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Build packages (macos-latest)",
+    "runs": 3
+   },
+   {
+    "name": "Unit tests (windows-latest)",
+    "runs": 1
+   },
+   {
+    "name": "Integration tests (macos-latest)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Build packages (macos-latest)",
+    "minutes": 70.1,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.6,
+    "workMin": 70,
+    "setupMin": 0.3
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 1,
+  "pathMinP50": 110.2,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.6,
+  "hiddenMinP50": 0,
+  "workMinP50": 70,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44709360707,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 59.5,
+    "path": [
+     "Build packages (macos-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build packages (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 59.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 58.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build packages (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.9,
+      "endMin": 40.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 36.3,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44698255074,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 110.2,
+    "path": [
+     "Unit tests (windows-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Playwright UI tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Integration tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Unit tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 110.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 110.2,
+      "setupMin": 2.2
+     },
+     {
+      "name": "Unit tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 73.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 73.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Unit tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 98.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 98.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Integration tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Integration tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.8
+     }
+    ]
+   },
+   {
+    "id": 44698255059,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 70.1,
+    "path": [
+     "Build packages (macos-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build packages (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 64.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 64.7,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build packages (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 70.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 70,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 44610131626,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 234.3,
+    "path": [
+     "Build packages (macos-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build packages (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 156.7,
+      "endMin": 234.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 156.7,
+      "workMin": 77.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build packages (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.9,
+      "endMin": 53.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 50.4,
+      "setupMin": 0.7
+     }
+    ]
+   },
+   {
+    "id": 44610131580,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 323.4,
+    "path": [
+     "Integration tests (macos-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Unit tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 100.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 100.6,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Playwright UI tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.4,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.4,
+      "workMin": 4.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Integration tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 8.6,
+      "setupMin": 2.2
+     },
+     {
+      "name": "Integration tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Unit tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 33.5,
+      "endMin": 137.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 33.5,
+      "workMin": 104.1,
+      "setupMin": 1
+     },
+     {
+      "name": "Unit tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2,
+      "endMin": 84.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 82.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Integration tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 315.5,
+      "endMin": 323.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 315.5,
+      "workMin": 7.9,
+      "setupMin": 0.8
+     }
+    ]
+   },
+   {
+    "id": 44609092275,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 327.9,
+    "path": [
+     "Unit tests (macos-latest)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Integration tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 1.8
+     },
+     {
+      "name": "Unit tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 79.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 79.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Playwright UI tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Integration tests (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Unit tests (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 112.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 112.2,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Integration tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 96.2,
+      "endMin": 103.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 96.2,
+      "workMin": 7.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Unit tests (macos-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 231.3,
+      "endMin": 327.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 231.3,
+      "workMin": 96.6,
+      "setupMin": 0.9
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 9,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    96
+   ],
+   [
+    "JavaScript",
+    2
+   ],
+   [
+    "HTML",
+    1
+   ],
+   [
+    "Less",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Playwright"
+  ],
+  "lintFormat": [
+   "Stylelint"
+  ],
+  "libraries": [
+   {
+    "name": "@duplicati/ngclient",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "autoprefixer",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "less",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "less-plugin-clean-css",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "postcss",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "postcss-cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "stylelint-config-standard-less",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    27
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "ngclient",
+     "path": "Duplicati/Server/webroot/ngclient/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "package.json",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "ngclient",
+     "dir": "Duplicati/Server/webroot/ngclient",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "package.json",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "ngclient"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 5,
+    "edges": 2,
+    "cached": 0,
+    "trackedFiles": 3236
+   },
+   "nodes": [
+    {
+     "id": "(root)#build:style",
+     "pkg": "(root)",
+     "name": "build:style",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "(root)#build:style:css",
+     "pkg": "(root)",
+     "name": "build:style:css",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:style",
+     "pkg": "(root)",
+     "name": "lint:style",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#lint:style-fix",
+     "pkg": "(root)",
+     "name": "lint:style-fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "(root)#test:playwright",
+     "pkg": "(root)",
+     "name": "test:playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "(root)#build:style",
+     "to": "(root)#lint:style-fix",
+     "how": "calls"
+    },
+    {
+     "from": "(root)#build:style",
+     "to": "(root)#build:style:css",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "(root)#build:style",
+    "(root)#lint:style-fix"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Build packages (macos-latest)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.6,
+     "workMin": 58.9
+    },
+    {
+     "id": "Build packages (windows-latest)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.9,
+     "workMin": 36.3
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Build packages (macos-latest)"
+   ],
+   "pathMinP50": 110.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Build packages (macos-latest)\" runs 70 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.0× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 9402 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 68,
+ "read": {
+  "calls": 68,
+  "fromCache": 0
+ }
+}

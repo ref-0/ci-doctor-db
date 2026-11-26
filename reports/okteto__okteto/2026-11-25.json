@@ -1,0 +1,815 @@
+{
+ "repo": "okteto/okteto",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "master",
+ "unscored": "Pull requests here wait on CircleCI, outside GitHub Actions: on 3 of 3 sampled pushes it was still running when the Actions checks finished, until at least 30 minutes after the push against 0.4 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 8.3,
+  "stars": 3558,
+  "forks": 324,
+  "languages": [
+   [
+    "Go",
+    99
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "Dockerfile",
+    0
+   ],
+   [
+    "Makefile",
+    0
+   ]
+  ],
+  "linesOfCode": 160039,
+  "files": 934,
+  "sourceFiles": 756,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 71371,
+   "tests": 75414,
+   "integration": 13254,
+   "support": 0
+  },
+  "testShare": 0.5540431473725275,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 11.3,
+  "commitsPerWeekYear": 6.7,
+  "pace": 1.7,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 18.7,
+  "prsMergedPerWeek": 17.8,
+  "botShareOfMergedPrs": 10.5,
+  "openToMergeHours": {
+   "p50": 35.4,
+   "p90": 172.5,
+   "n": 17
+  },
+  "prRunsPerDay": 38.9,
+  "runsPerMergedPr": 15.3
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 231,
+  "runsInPeriod": 231,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "small",
+ "headsPerWeek": 48,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 55,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6.7,
+  "prBilledMinutesPerDay": 6.7,
+  "jobMinutesPerMergedPr": 2.7,
+  "prVcpuMinutesPerDay": 27,
+  "vcpuMinutesPerMergedPr": 10.6,
+  "expectedVcpuMinutesPerMergedPr": 724.1,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 181,
+  "expectedWait": 11.4,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 0.92,
+  "missing": [
+   "reliability.mainRed"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "CircleCI",
+     "path": ".circleci/config.yml"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "cf1c1904ba0130201fe71656c458cdb2c486c504",
+     "actionsMin": 0.4,
+     "ci": [
+      {
+       "name": "CircleCI",
+       "minutes": 29.7
+      }
+     ]
+    },
+    {
+     "sha": "706bf81bd5ef56bce7bcab34b54763d52dc94dae",
+     "actionsMin": 0.4,
+     "ci": [
+      {
+       "name": "CircleCI",
+       "minutes": 35.5
+      }
+     ]
+    },
+    {
+     "sha": "f6eb1f58e2df49e935a9140575965f08d86d82a4",
+     "actionsMin": 0.4,
+     "ci": [
+      {
+       "name": "CircleCI",
+       "minutes": 26.6
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 51,
+  "ranHeads": 51,
+  "timed": 47,
+  "p50": 0.5666666666666667,
+  "p75": 1.2333333333333334,
+  "p90": 1.4166666666666667,
+  "redRate": 0.0392156862745098,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.0196078431372549,
+  "botHeads": 3,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 3,
+  "bots": [
+   [
+    "devin-ai-integration[bot]",
+    2
+   ],
+   [
+    "dependabot[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "pre-commit",
+    47
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/pre-commit.yml",
+  "redBy": [
+   [
+    "pre-commit",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labels",
+   "Run CircleCI from label",
+   "Backport"
+  ],
+  "heavyWorkflows": [
+   "pre-commit"
+  ],
+  "allPushesP50": 0.5666666666666667
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0.061855670103092786,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 0.38333333333333336,
+  "jobMinutes": 0.35,
+  "billedMinutes": 1,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.25396825396825395,
+  "setupMinPerJob": 0.23333333333333334,
+  "critical": {
+   "name": "Run pre-commit",
+   "minutes": 0.35,
+   "shareOfSpan": 0.95
+  },
+  "longest": {
+   "name": "Run pre-commit",
+   "minutes": 0.35
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/pre-commit.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Run pre-commit",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Run pre-commit",
+    "minutes": 0.4,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.4,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 0.4,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.4,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45595278529,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.4,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45433244136,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.4,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45364610210,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45324598497,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.3,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45323727411,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45278700158,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.2,
+    "path": [
+     "Run pre-commit"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Run pre-commit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": true,
+  "preCommit": true,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/pre-commit.yml",
+   "scheduled": ".github/workflows/renovate.yml",
+   "depCache": ".github/workflows/pre-commit.yml",
+   "depBotsBatched": ".github/renovate.json",
+   "agentRules": ".claude/agents/committer.md",
+   "preCommit": ".pre-commit-config.yaml"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Go",
+    99
+   ],
+   [
+    "Shell",
+    1
+   ],
+   [
+    "Dockerfile",
+    0
+   ],
+   [
+    "Makefile",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "testRunners": [
+   "go test"
+  ],
+  "lintFormat": [
+   "Prettier",
+   "golangci-lint"
+  ],
+  "libraries": [
+   {
+    "name": "github.com/gliderlabs/ssh",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/google/uuid",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/shirou/gopsutil",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/sirupsen/logrus",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "golang.org/x/crypto",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "al.essio.dev/pkg/shellescape",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/a8m/envsubst",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/agext/levenshtein",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/bluekeyes/go-gitdiff",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/briandowns/spinner",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/chainguard-dev/git-urls",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/cheggaaa/pb/v3",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/chzyer/readline",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/compose-spec/godotenv",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/creack/pty",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/denisbrodbeck/machineid",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/docker/cli",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/docker/docker-credential-helpers",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/dukex/mixpanel",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/fatih/color",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md",
+   ".claude/skills",
+   ".claude/agents"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/okteto/okteto",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/okteto/tools",
+     "path": "tools/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "github.com/okteto/okteto",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/okteto/tools",
+     "dir": "tools",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "github.com/okteto/okteto"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 934
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Run pre-commit",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Run pre-commit"
+   ],
+   "pathMinP50": 0.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Go it applies the principles, without a Go-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 37,
+ "read": {
+  "calls": 37,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

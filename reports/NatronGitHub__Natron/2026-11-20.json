@@ -1,0 +1,892 @@
+{
+ "repo": "NatronGitHub/Natron",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "RB-2.6",
+ "profile": {
+  "ageYears": 8.9,
+  "stars": 5747,
+  "forks": 455,
+  "languages": [
+   [
+    "C++",
+    87
+   ],
+   [
+    "C",
+    5
+   ],
+   [
+    "Shell",
+    4
+   ],
+   [
+    "Tcl",
+    2
+   ]
+  ],
+  "linesOfCode": 826058,
+  "files": 4722,
+  "sourceFiles": 1815,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 803187,
+   "tests": 22872,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.027687520917617496,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 15,
+  "pace": 12.4,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 218,
+  "prsMergedPerWeek": 187,
+  "botShareOfMergedPrs": 1,
+  "openToMergeHours": {
+   "p50": 9.9,
+   "p90": 40.5,
+   "n": 99
+  },
+  "prRunsPerDay": 113.8,
+  "runsPerMergedPr": 4.3
+ },
+ "window": {
+  "days": 5.6,
+  "runs": 642,
+  "runsInPeriod": 645,
+  "truncated": false,
+  "mainDays": 3.9
+ },
+ "size": "large",
+ "headsPerWeek": 746,
+ "score": 45,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 9,
+  "reliability": 100,
+  "efficiency": 96
+ },
+ "detail": {
+  "speed": {
+   "wait": 16,
+   "forSize": 1,
+   "tail": 7
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 98,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 80,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 4370.6,
+  "prBilledMinutesPerDay": 4489.3,
+  "jobMinutesPerMergedPr": 163.6,
+  "expectedMinutesPerMergedPr": 311.1,
+  "expectedWait": 17.7,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 601,
+  "timed": 270,
+  "p50": 43.68333333333333,
+  "p75": 55.166666666666664,
+  "p90": 108.55,
+  "redRate": 0.12479201331114809,
+  "rerunRate": 0.016638935108153077,
+  "passedOnRerunRate": 0.0066555740432612314,
+  "cancelledRate": 0.4425956738768719,
+  "botHeads": 1,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "Tests",
+    268
+   ],
+   [
+    "Build pacman repo",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests",
+    73
+   ],
+   [
+    "Build pacman repo",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 43.95
+ },
+ "main": {
+  "heads": 174,
+  "p50": 46.166666666666664,
+  "p90": 96.5,
+  "redRate": 0.04597701149425287,
+  "redBy": [
+   [
+    "Build Installer",
+    7
+   ],
+   [
+    "Tests",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.0031847133757961785,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 3,
+  "spanMin": 39.9,
+  "jobMinutes": 63.2,
+  "billedMinutes": 64,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 20,
+  "setupShare": 0.12807770499209398,
+  "critical": {
+   "name": "Test macos-15 arm64 MacPorts Python 3.11",
+   "minutes": 16.716666666666665,
+   "shareOfSpan": 0.3645224171539961
+  },
+  "longest": {
+   "name": "Test windows-latest UCRT64 Python 3.14",
+   "minutes": 24.866666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    18
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 4,
+  "edges": 3,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Test macos-15 arm64 MacPorts Python 3.11",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Test windows-latest UCRT64 Python 3.14",
+    "minutes": 24.9,
+    "share": 0.62,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 24.9,
+    "setupMin": 2.4
+   },
+   {
+    "name": "Test macos-15 arm64 MacPorts Python 3.11",
+    "minutes": 16.8,
+    "share": 0.37,
+    "blockedMin": 24.9,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 16.7,
+    "setupMin": 5.4
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 2,
+  "pathMinP50": 39.9,
+  "blockedMinP50": 24.9,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 39.5,
+  "setupInPathMinP50": 5.1,
+  "topBlockers": [
+   {
+    "name": "Test windows-latest UCRT64 Python 3.14",
+    "runs": 4,
+    "heldJobs": 1,
+    "jobs": 3,
+    "tookMin": 24.9,
+    "heldJobMin": 2.9
+   },
+   {
+    "name": "Test ubuntu-24.04 Python 3.12",
+    "runs": 2,
+    "heldJobs": 1,
+    "jobs": 3,
+    "tookMin": 21.7,
+    "heldJobMin": 2.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44702470744,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 42.7,
+    "path": [
+     "Test windows-latest UCRT64 Python 3.14",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test windows-latest UCRT64 Python 3.14",
+    "jobs": [
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 21.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 24.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.9,
+      "setupMin": 2.2
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 24.9,
+      "createdMin": 24.9,
+      "startMin": 25,
+      "endMin": 42.7,
+      "blockedMin": 24.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.7,
+      "setupMin": 6.6
+     }
+    ]
+   },
+   {
+    "id": 44699427305,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 39.2,
+    "path": [
+     "Test ubuntu-24.04 Python 3.12",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test ubuntu-24.04 Python 3.12",
+    "jobs": [
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.7,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 19.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.4,
+      "setupMin": 2.1
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 21.7,
+      "createdMin": 21.7,
+      "startMin": 21.8,
+      "endMin": 39.2,
+      "blockedMin": 21.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.4,
+      "setupMin": 5.1
+     }
+    ]
+   },
+   {
+    "id": 44694325099,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 49.3,
+    "path": [
+     "Test windows-latest UCRT64 Python 3.14",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test windows-latest UCRT64 Python 3.14",
+    "jobs": [
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 29.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 32.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 32.5,
+      "setupMin": 2.9
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 32.5,
+      "createdMin": 32.5,
+      "startMin": 32.6,
+      "endMin": 49.3,
+      "blockedMin": 32.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.7,
+      "setupMin": 5.4
+     }
+    ]
+   },
+   {
+    "id": 44691284599,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 39,
+    "path": [
+     "Test ubuntu-24.04 Python 3.12",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test ubuntu-24.04 Python 3.12",
+    "jobs": [
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 25,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 24.8,
+      "setupMin": 2.5
+     },
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.7,
+      "endMin": 29.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 28.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 29.2,
+      "createdMin": 29.2,
+      "startMin": 29.2,
+      "endMin": 39,
+      "blockedMin": 29.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 3.5
+     }
+    ]
+   },
+   {
+    "id": 44691276884,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 39.9,
+    "path": [
+     "Test windows-latest UCRT64 Python 3.14",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test windows-latest UCRT64 Python 3.14",
+    "jobs": [
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 24.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.6,
+      "setupMin": 2.4
+     },
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 23.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 23.7,
+      "setupMin": 3.8
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 24.6,
+      "createdMin": 24.6,
+      "startMin": 25,
+      "endMin": 39.9,
+      "blockedMin": 24.6,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 15,
+      "setupMin": 4.8
+     }
+    ]
+   },
+   {
+    "id": 44689888541,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 51.3,
+    "path": [
+     "Test windows-latest UCRT64 Python 3.14",
+     "Test macos-15 arm64 MacPorts Python 3.11"
+    ],
+    "topBlocker": "Test windows-latest UCRT64 Python 3.14",
+    "jobs": [
+     {
+      "name": "Test ubuntu-24.04 Python 3.12",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 23,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Test windows-latest UCRT64 Python 3.14",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 32.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 32.5,
+      "setupMin": 3
+     },
+     {
+      "name": "Test macos-15 arm64 MacPorts Python 3.11",
+      "needs": [
+       "changes",
+       "unix_test",
+       "win-test"
+      ],
+      "readyMin": 32.5,
+      "createdMin": 32.6,
+      "startMin": 32.6,
+      "endMin": 51.3,
+      "blockedMin": 32.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 18.7,
+      "setupMin": 5.7
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 4,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    87
+   ],
+   [
+    "C",
+    5
+   ],
+   [
+    "Shell",
+    4
+   ],
+   [
+    "Tcl",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "@mermaid-js/mermaid-cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "mermaid",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "puppeteer",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    18
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "natron-documentation-tools",
+     "path": "Documentation/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "natron-documentation-tools",
+     "dir": "Documentation",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "natron-documentation-tools"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 4722
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 3,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Test ubuntu-24.04 Python 3.12",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 21.6
+    },
+    {
+     "id": "Test windows-latest UCRT64 Python 3.14",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 24.9
+    },
+    {
+     "id": "Test macos-15 arm64 MacPorts Python 3.11",
+     "needs": [
+      "changes",
+      "unix_test",
+      "win-test"
+     ],
+     "onPath": true,
+     "blockedMin": 24.9,
+     "queueMin": 0.1,
+     "workMin": 17.7
+    }
+   ],
+   "edges": [
+    {
+     "from": "Test macos-15 arm64 MacPorts Python 3.11",
+     "to": "changes"
+    },
+    {
+     "from": "Test macos-15 arm64 MacPorts Python 3.11",
+     "to": "unix_test"
+    },
+    {
+     "from": "Test macos-15 arm64 MacPorts Python 3.11",
+     "to": "win-test"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "Test windows-latest UCRT64 Python 3.14 → Test macos-15 arm64 MacPorts Python 3.11",
+     "numbers": {
+      "setupMin": 5.1,
+      "pathMin": 39.9
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "Test windows-latest UCRT64 Python 3.14",
+    "Test macos-15 arm64 MacPorts Python 3.11"
+   ],
+   "pathMinP50": 39.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Test windows-latest UCRT64 Python 3.14\" runs 25 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Setup on the critical path: 5.1 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 50,
+ "read": {
+  "calls": 50,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,2538 @@
+{
+ "repo": "code-dot-org/code-dot-org",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "staging",
+ "unscored": "Pull requests here wait on Drone, outside GitHub Actions: on 2 of 3 sampled pushes it was still running when the Actions checks finished, until at least 28 minutes after the push against 3.2 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 12.2,
+  "stars": 906,
+  "forks": 537,
+  "languages": [
+   [
+    "JavaScript",
+    38
+   ],
+   [
+    "TypeScript",
+    27
+   ],
+   [
+    "Ruby",
+    26
+   ],
+   [
+    "SCSS",
+    3
+   ]
+  ],
+  "linesOfCode": 1947976,
+  "files": 54556,
+  "sourceFiles": 8095,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 938653,
+   "tests": 302785,
+   "integration": 16399,
+   "support": 16
+  },
+  "testShare": 0.2537654470681089,
+  "packages": {
+   "npm": 9,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 162.9,
+  "pace": 1.4,
+  "activeAuthors28d": "≥29",
+  "prsOpenedPerWeek": 245.6,
+  "prsMergedPerWeek": 218,
+  "botShareOfMergedPrs": 1,
+  "openToMergeHours": {
+   "p50": 3.6,
+   "p90": 165.6,
+   "n": 99
+  },
+  "prRunsPerDay": 146.3,
+  "runsPerMergedPr": 4.7
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 1000,
+  "runsInPeriod": 1285,
+  "truncated": true,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 503,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 91,
+   "forSize": 100,
+   "tail": 78
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 94
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 70,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 33,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 204.3,
+  "prBilledMinutesPerDay": 262.3,
+  "jobMinutesPerMergedPr": 6.6,
+  "prVcpuMinutesPerDay": 817.3,
+  "vcpuMinutesPerMergedPr": 26.2,
+  "expectedVcpuMinutesPerMergedPr": 1651.8,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 412.9,
+  "expectedWait": 17,
+  "workflowsOnPrs": 6
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "Drone",
+     "path": ".drone.yml"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "eec32ff9bd8ff8447ad07ccb4284a45937554c78",
+     "actionsMin": 13,
+     "ci": [
+      {
+       "name": "Drone",
+       "minutes": 28.1
+      }
+     ]
+    },
+    {
+     "sha": "106febf129bc9d18b3ad1b88f60615b76ffd1853",
+     "actionsMin": 3.2,
+     "ci": [
+      {
+       "name": "Drone",
+       "minutes": 37.8
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 491,
+  "ranHeads": 89,
+  "timed": 69,
+  "p50": 4.683333333333334,
+  "p75": 10.166666666666666,
+  "p90": 13.316666666666666,
+  "redRate": 0.06741573033707865,
+  "rerunRate": 0.011235955056179775,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.07865168539325842,
+  "botHeads": 2,
+  "lightHeads": 10,
+  "neverRan": 0,
+  "botPushes": 13,
+  "bots": [
+   [
+    "claude[bot]",
+    7
+   ],
+   [
+    "dependabot[bot]",
+    6
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Frontend-CI",
+    52
+   ],
+   [
+    "cdo-deps-image",
+    13
+   ],
+   [
+    "cdo-devdb-image",
+    4
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/frontend-ci.yml",
+  "redBy": [
+   [
+    "Frontend-CI",
+    3
+   ],
+   [
+    "cdo-rails-image",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Assign Reviewer for Dependabot",
+   "Check for manual deployment requirements"
+  ],
+  "heavyWorkflows": [
+   "Frontend-CI",
+   "cdo-devdb-image",
+   "cdo-deps-image"
+  ],
+  "allPushesP50": 4.433333333333334
+ },
+ "main": {
+  "heads": 157,
+  "p50": 5.316666666666666,
+  "p90": 9.8,
+  "redRate": 0.07006369426751592,
+  "redBy": [
+   [
+    "Frontend-CI",
+    6
+   ],
+   [
+    "cdo-rails-image",
+    4
+   ],
+   [
+    "cdo-deps-image",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.02531645569620253,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 7,
+  "spanMin": 3.716666666666667,
+  "jobMinutes": 11.033333333333333,
+  "billedMinutes": 14,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.6080870917573873,
+  "setupMinPerJob": 0.930952380952381,
+  "critical": {
+   "name": "teardown",
+   "minutes": 0.05,
+   "shareOfSpan": 0.012552301255230125
+  },
+  "longest": {
+   "name": "release:dryrun",
+   "minutes": 2.783333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    42
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/frontend-ci.yml"
+  ],
+  "jobs": 6,
+  "edges": 7,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "teardown",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "changes",
+    "minutes": 1.2,
+    "share": 0.35,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.1,
+    "setupMin": 1
+   },
+   {
+    "name": "test:ui:ci design-system-storybook",
+    "minutes": 2.1,
+    "share": 0.63,
+    "blockedMin": 1.2,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 2.1,
+    "setupMin": 1.3
+   },
+   {
+    "name": "teardown",
+    "minutes": 0.1,
+    "share": 0.02,
+    "blockedMin": 3.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 3,
+  "pathMinP50": 3.7,
+  "blockedMinP50": 3.6,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 3.6,
+  "setupInPathMinP50": 1.2,
+  "topBlockers": [
+   {
+    "name": "changes",
+    "runs": 6,
+    "heldJobs": 6,
+    "jobs": 7,
+    "tookMin": 1.2,
+    "heldJobMin": 6.5
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 2,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45616923465,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13,
+    "path": [
+     "changes",
+     "test:ui:ci design-system-storybook",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 6.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 6.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 4.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.5,
+      "endMin": 12.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 3.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 12.9,
+      "createdMin": 12.9,
+      "startMin": 12.9,
+      "endMin": 13,
+      "blockedMin": 12.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45562919433,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.2,
+    "path": [
+     "changes",
+     "test:ui:ci design-system-storybook",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 2.5,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.1,
+      "startMin": 3.2,
+      "endMin": 3.2,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45558822159,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.4,
+    "path": [
+     "changes",
+     "test:ui:ci oceans-lab",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 2.6,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.2,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.2,
+      "endMin": 3.3,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 3.4,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45558081504,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.4,
+    "path": [
+     "changes",
+     "release:dryrun",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 4.3,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 2.9,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 2.8,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 2.9,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.2,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 4.3,
+      "createdMin": 4.3,
+      "startMin": 4.4,
+      "endMin": 4.4,
+      "blockedMin": 4.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45503766737,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4,
+    "path": [
+     "changes",
+     "release:dryrun",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.9,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.1,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.1,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.1,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.1,
+      "createdMin": 1.1,
+      "startMin": 1.1,
+      "endMin": 3.2,
+      "blockedMin": 1.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 3.9,
+      "createdMin": 3.9,
+      "startMin": 3.9,
+      "endMin": 4,
+      "blockedMin": 3.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45502293909,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.7,
+    "path": [
+     "changes",
+     "release:dryrun",
+     "teardown"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "release:dryrun",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 3.6,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci users",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci markdown",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci design-system-storybook",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 3.1,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "test:ui:ci oceans-lab",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1.2,
+      "createdMin": 1.2,
+      "startMin": 1.3,
+      "endMin": 3.2,
+      "blockedMin": 1.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "teardown",
+      "needs": [
+       "release-dryrun",
+       "test-ui"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.7,
+      "endMin": 3.7,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 201,
+  "over10s": 3,
+  "top": [
+   {
+    "file": "src/__tests__/UsersSettingsPage.axe.test.tsx",
+    "sec": 36.808,
+    "job": "release:dryrun"
+   },
+   {
+    "file": "src/__tests__/UsersSettingsPage.scenarios.test.tsx",
+    "sec": 17.025,
+    "job": "release:dryrun"
+   },
+   {
+    "file": "src/__tests__/UsersSettingsPage.test.tsx",
+    "sec": 16.384,
+    "job": "release:dryrun"
+   },
+   {
+    "file": "src/plugins/analytics/__tests__/analytics.test.ts",
+    "sec": 8.513,
+    "job": "release:dryrun"
+   },
+   {
+    "file": "src/components/__tests__/UpdateSchoolModal.test.tsx",
+    "sec": 7.13,
+    "job": "release:dryrun"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 18,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": true,
+  "testRunner": null,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": null,
+  "hints": [
+   {
+    "practice": "compilerCache",
+    "path": ".github/workflows/cdo-base-image.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "shardsConfigured",
+    "path": ".github/workflows/cdo-rails-image.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/cdo-base-image.yml",
+   "pathFilters": ".github/workflows/cdo-base-image.yml",
+   "affected": ".github/workflows/frontend-ci.yml",
+   "scheduled": ".github/workflows/cdo-base-image.yml",
+   "depCache": ".github/workflows/assign-dependabot-reviewer.yml",
+   "timeouts": ".github/workflows/cdo-devdb-image.yml",
+   "eslint": ".eslintrc.js",
+   "testResults": ".github/workflows/frontend-ci.yml",
+   "depBotsBatched": ".github/dependabot.yml",
+   "agentRules": ".agents/skills/README.md"
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "compilerCache: .github/workflows/cdo-base-image.yml hints at it, in a form the scorer doesn't check (word)",
+   "shardsConfigured: .github/workflows/cdo-rails-image.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "JavaScript",
+    38
+   ],
+   [
+    "TypeScript",
+    27
+   ],
+   [
+    "Ruby",
+    26
+   ],
+   [
+    "SCSS",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Bundler"
+   ],
+   "tools": null
+  },
+  "packages": null,
+  "testRunners": [
+   "Jest",
+   "Mocha",
+   "RSpec",
+   "Minitest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Stylelint",
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "aws-sdk",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "chai",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "sinon",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "process",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "puppeteer",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "sinon-chai",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "uglify-js",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "yargs",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@ai-sdk/google",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@ai-sdk/openai",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/client-cloudwatch",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/client-rds",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/client-s3",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@aws-sdk/client-secrets-manager",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/eslint-parser",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/plugin-proposal-object-rest-spread",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/plugin-proposal-optional-chaining",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/plugin-syntax-dynamic-import",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/plugin-transform-class-properties",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    42
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md",
+   ".github/instructions",
+   ".agents/skills",
+   ".claude/agents"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "eslint-plugin-cdo-custom-rules",
+     "path": "apps/eslint/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "blockly-mooc",
+     "path": "apps/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "eslint-plugin-cdo-custom-rules"
+     ],
+     "exports": false
+    },
+    {
+     "name": "sql-user",
+     "path": "aws/cloudformation/lambdas/sql-user/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@cdo/lambda",
+     "path": "aws/cloudformation/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "scripts",
+     "path": "aws/cloudformation/standalone/gen_ai_curriculum/monitoring/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "verify-aurora-backups",
+     "path": "aws/offsite/aurora-snapshots-fargate/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "hello_world",
+     "path": "aws/offsite/prune-aurora-backups/src/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "scrape-page",
+     "path": "bin/aidiff_embeddings/scrape-page/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "generate-pdf",
+     "path": "bin/generate-pdf/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [
+    {
+     "id": "eslint-plugin-cdo-custom-rules",
+     "dir": "apps/eslint",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@cdo/lambda",
+     "dir": "aws/cloudformation",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc",
+     "dir": "apps",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "generate-pdf",
+     "dir": "bin/generate-pdf",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "hello_world",
+     "dir": "aws/offsite/prune-aurora-backups/src",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "scrape-page",
+     "dir": "bin/aidiff_embeddings/scrape-page",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "scripts",
+     "dir": "aws/cloudformation/standalone/gen_ai_curriculum/monitoring",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "sql-user",
+     "dir": "aws/cloudformation/lambdas/sql-user",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "verify-aurora-backups",
+     "dir": "aws/offsite/aurora-snapshots-fargate",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "blockly-mooc",
+     "to": "eslint-plugin-cdo-custom-rules",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 7,
+    "edges": null,
+    "packages": 9,
+    "packagesWithEntries": 7,
+    "filesRead": 6,
+    "undecided": 3
+   },
+   "nodes": [
+    {
+     "id": "eslint-plugin-cdo-custom-rules#.",
+     "pkg": "eslint-plugin-cdo-custom-rules",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "apps/eslint/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "generate-pdf#.",
+     "pkg": "generate-pdf",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "bin/generate-pdf/generatePdf.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "scrape-page#.",
+     "pkg": "scrape-page",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "bin/aidiff_embeddings/scrape-page/scrapePage.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "sql-user#.",
+     "pkg": "sql-user",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "aws/cloudformation/lambdas/sql-user/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "verify-aurora-backups#.",
+     "pkg": "verify-aurora-backups",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": "aws/offsite/aurora-snapshots-fargate/restore-and-verify-backup.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0
+    },
+    {
+     "id": "hello_world#.",
+     "pkg": "hello_world",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "scripts#.",
+     "pkg": "scripts",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "blockly-mooc",
+     "to": "eslint-plugin-cdo-custom-rules",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show",
+    "2 entries of 7 unknown, such as hello_world#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 37,
+    "edges": 16,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [
+    {
+     "id": "@cdo/lambda#test",
+     "pkg": "@cdo/lambda",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#build",
+     "pkg": "blockly-mooc",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#build:analyze",
+     "pkg": "blockly-mooc",
+     "name": "build:analyze",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#build:dist",
+     "pkg": "blockly-mooc",
+     "name": "build:dist",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#build:dist:analyze",
+     "pkg": "blockly-mooc",
+     "name": "build:dist:analyze",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#build:dist:debug",
+     "pkg": "blockly-mooc",
+     "name": "build:dist:debug",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#build:dist:profile",
+     "pkg": "blockly-mooc",
+     "name": "build:dist:profile",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#clean",
+     "pkg": "blockly-mooc",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#grunt",
+     "pkg": "blockly-mooc",
+     "name": "grunt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#lint",
+     "pkg": "blockly-mooc",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#lint:fix",
+     "pkg": "blockly-mooc",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#lint:js",
+     "pkg": "blockly-mooc",
+     "name": "lint:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#lint:js:fix",
+     "pkg": "blockly-mooc",
+     "name": "lint:js:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#lint:js:ts",
+     "pkg": "blockly-mooc",
+     "name": "lint:js:ts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#lint:jsx:tsx",
+     "pkg": "blockly-mooc",
+     "name": "lint:jsx:tsx",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#lint:scss",
+     "pkg": "blockly-mooc",
+     "name": "lint:scss",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#start",
+     "pkg": "blockly-mooc",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:applab",
+     "pkg": "blockly-mooc",
+     "name": "start:applab",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:cheap",
+     "pkg": "blockly-mooc",
+     "name": "start:cheap",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:cheapest",
+     "pkg": "blockly-mooc",
+     "name": "start:cheapest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:craft",
+     "pkg": "blockly-mooc",
+     "name": "start:craft",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:gamelab",
+     "pkg": "blockly-mooc",
+     "name": "start:gamelab",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#start:statsig",
+     "pkg": "blockly-mooc",
+     "name": "start:statsig",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "blockly-mooc#storybook",
+     "pkg": "blockly-mooc",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#storybook:deploy",
+     "pkg": "blockly-mooc",
+     "name": "storybook:deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#test",
+     "pkg": "blockly-mooc",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#test:integration",
+     "pkg": "blockly-mooc",
+     "name": "test:integration",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#test:storybook",
+     "pkg": "blockly-mooc",
+     "name": "test:storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#test:unit",
+     "pkg": "blockly-mooc",
+     "name": "test:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#typecheck",
+     "pkg": "blockly-mooc",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "blockly-mooc#update-ai-gateway-schema-snapshots",
+     "pkg": "blockly-mooc",
+     "name": "update-ai-gateway-schema-snapshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "generate-pdf#test",
+     "pkg": "generate-pdf",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "hello_world#test",
+     "pkg": "hello_world",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "scrape-page#test",
+     "pkg": "scrape-page",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "scripts#test",
+     "pkg": "scripts",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "sql-user#test",
+     "pkg": "sql-user",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "verify-aurora-backups#test",
+     "pkg": "verify-aurora-backups",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "blockly-mooc#lint",
+     "to": "blockly-mooc#lint:scss",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#lint",
+     "to": "blockly-mooc#lint:js",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#lint:fix",
+     "to": "blockly-mooc#lint:scss",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#lint:fix",
+     "to": "blockly-mooc#lint:js:fix",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#build",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#build:analyze",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#build:dist:debug",
+     "to": "blockly-mooc#build:dist",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#build:dist:analyze",
+     "to": "blockly-mooc#build:dist",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#build:dist:profile",
+     "to": "blockly-mooc#build:dist",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:cheap",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:cheapest",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:applab",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:gamelab",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:craft",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    },
+    {
+     "from": "blockly-mooc#start:statsig",
+     "to": "blockly-mooc#grunt",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "blockly-mooc#lint",
+    "blockly-mooc#lint:scss"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 6,
+    "edges": 7,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.4,
+     "workMin": 1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "release:dryrun",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.4,
+     "queueMin": 0.1,
+     "workMin": 5.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test:ui:ci markdown",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.4,
+     "queueMin": 0,
+     "workMin": 5.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test:ui:ci users",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.4,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test:ui:ci design-system-storybook",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 1.4,
+     "queueMin": 0.1,
+     "workMin": 11.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "test:ui:ci oceans-lab",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 1.4,
+     "queueMin": 0,
+     "workMin": 1.7,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "teardown",
+     "needs": [
+      "release-dryrun",
+      "test-ui"
+     ],
+     "onPath": true,
+     "blockedMin": 12.9,
+     "queueMin": 0,
+     "workMin": 0,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "release:dryrun",
+     "to": "changes"
+    },
+    {
+     "from": "test:ui:ci markdown",
+     "to": "changes"
+    },
+    {
+     "from": "test:ui:ci users",
+     "to": "changes"
+    },
+    {
+     "from": "test:ui:ci design-system-storybook",
+     "to": "changes"
+    },
+    {
+     "from": "test:ui:ci oceans-lab",
+     "to": "changes"
+    },
+    {
+     "from": "teardown",
+     "to": "release-dryrun"
+    },
+    {
+     "from": "teardown",
+     "to": "test-ui"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "changes",
+     "numbers": {
+      "heldJobs": 6,
+      "jobs": 7,
+      "heldJobMin": 6.5,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    },
+    {
+     "kind": "setup-in-path",
+     "subject": "changes → test:ui:ci design-system-storybook → teardown",
+     "numbers": {
+      "setupMin": 1.2,
+      "pathMin": 3.7
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "changes",
+    "test:ui:ci design-system-storybook",
+    "teardown"
+   ],
+   "pathMinP50": 3.7,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 6,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "3 test files take over 10 s; the slowest, src/__tests__/UsersSettingsPage.axe.test.tsx, takes 37 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "Setup on the critical path: 1.2 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"changes\" holds up 6 of 7 jobs, 6.5 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "p90 is 2.8× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 77,
+ "read": {
+  "calls": 77,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

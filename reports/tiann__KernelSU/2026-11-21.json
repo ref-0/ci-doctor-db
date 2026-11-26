@@ -1,0 +1,2814 @@
+{
+ "repo": "tiann/KernelSU",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4,
+  "stars": 20839,
+  "forks": 5184,
+  "languages": [
+   [
+    "Kotlin",
+    57
+   ],
+   [
+    "C",
+    22
+   ],
+   [
+    "Rust",
+    15
+   ],
+   [
+    "CSS",
+    1
+   ]
+  ],
+  "linesOfCode": 106421,
+  "files": 803,
+  "sourceFiles": 470,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 103519,
+   "tests": 2902,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.027270002245798057,
+  "packages": {
+   "npm": 2,
+   "cargo": 3,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 7.8,
+  "commitsPerWeekYear": 11.5,
+  "pace": 0.7,
+  "activeAuthors28d": 17,
+  "prsOpenedPerWeek": 19,
+  "prsMergedPerWeek": 6,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 16.3,
+   "p90": 58.3,
+   "n": 6
+  },
+  "prRunsPerDay": 5.1,
+  "runsPerMergedPr": 6
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 35,
+  "runsInPeriod": 35,
+  "truncated": false,
+  "mainDays": 7
+ },
+ "size": "small",
+ "headsPerWeek": 21,
+ "score": 87,
+ "grade": "B+",
+ "band": "fast",
+ "parts": {
+  "speed": 83,
+  "reliability": 91,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 86,
+   "forSize": 93,
+   "tail": 43
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 79
+  },
+  "efficiency": {
+   "minutesPerPr": 97,
+   "runsPerPr": 93,
+   "setup": 91,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 71.7,
+  "prBilledMinutesPerDay": 91.1,
+  "jobMinutesPerMergedPr": 83.7,
+  "expectedMinutesPerMergedPr": 158.2,
+  "expectedWait": 11.1,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 21,
+  "timed": 5,
+  "p50": 6.15,
+  "p75": 6.816666666666666,
+  "p90": 36.8,
+  "redRate": 0.14285714285714285,
+  "rerunRate": 0.14285714285714285,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 3,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 3,
+  "bots": [
+   [
+    "dependabot[bot]",
+    3
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Build Manager",
+    5
+   ]
+  ],
+  "redBy": [
+   [
+    "Build Manager",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Publish NPM package"
+  ],
+  "heavyWorkflows": [
+   "Build Manager"
+  ],
+  "allPushesP50": 6.15
+ },
+ "main": {
+  "heads": 8,
+  "p50": 7.266666666666667,
+  "p90": 10.766666666666667,
+  "redRate": 0.125,
+  "redBy": [
+   [
+    "Clippy check",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.14,
+ "jobs": {
+  "runsSampled": 5,
+  "jobs": 21,
+  "spanMin": 6.416666666666667,
+  "jobMinutes": 44.45000000000001,
+  "billedMinutes": 56,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.24605920799692427,
+  "critical": {
+   "name": "repack-manager",
+   "minutes": 0.35,
+   "shareOfSpan": 0.05737704918032787
+  },
+  "longest": {
+   "name": "build-manager",
+   "minutes": 4.3
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    105
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 5,
+  "runsUsed": 5,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build-manager.yml"
+  ],
+  "jobs": 8,
+  "edges": 15,
+  "matrixJobs": 0,
+  "reusableCalls": 5,
+  "gateEnd": [
+   {
+    "name": "repack-manager",
+    "runs": 3
+   },
+   {
+    "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+    "runs": 1
+   },
+   {
+    "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "generate-key",
+    "minutes": 0.1,
+    "share": 0.02,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+    "minutes": 3.1,
+    "share": 0.49,
+    "blockedMin": 0.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 3.1,
+    "setupMin": 0
+   },
+   {
+    "name": "build-ksud (x86_64-linux-android) / build",
+    "minutes": 2.8,
+    "share": 0.43,
+    "blockedMin": 3.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 2.8,
+    "setupMin": 0.9
+   },
+   {
+    "name": "repack-manager",
+    "minutes": 0.4,
+    "share": 0.06,
+    "blockedMin": 6.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.4,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 4,
+  "pathMinP50": 6.4,
+  "blockedMinP50": 5.7,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 6.3,
+  "setupInPathMinP50": 1.2,
+  "topBlockers": [
+   {
+    "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+    "runs": 3,
+    "heldJobs": 9,
+    "jobs": 21,
+    "tookMin": 3.1,
+    "heldJobMin": 5.6
+   },
+   {
+    "name": "generate-key",
+    "runs": 2,
+    "heldJobs": 18,
+    "jobs": 21,
+    "tookMin": 0.1,
+    "heldJobMin": 1.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44875691831,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.8,
+    "path": [
+     "generate-key",
+     "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+     "build-ksud (x86_64-linux-android) / build",
+     "repack-manager"
+    ],
+    "topBlocker": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+    "jobs": [
+     {
+      "name": "generate-key",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksuinit / build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "build-ksuinit / build-riscv64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "build-manager",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksud (aarch64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 6.2,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (x86_64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 6.4,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (riscv64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 6.1,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 6.4,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 1.3
+     },
+     {
+      "name": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 5.8,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 5.9,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 1.2
+     },
+     {
+      "name": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 6,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.5,
+      "createdMin": 3.5,
+      "startMin": 3.6,
+      "endMin": 5.9,
+      "blockedMin": 3.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "repack-manager",
+      "needs": [
+       "build-manager",
+       "build-ksud",
+       "generate-key"
+      ],
+      "readyMin": 6.4,
+      "createdMin": 6.4,
+      "startMin": 6.4,
+      "endMin": 6.8,
+      "blockedMin": 6.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44295103195,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.8,
+    "path": [
+     "generate-key",
+     "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+     "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build"
+    ],
+    "topBlocker": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+    "jobs": [
+     {
+      "name": "generate-key",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksuinit / build-riscv64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksuinit / build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-manager",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-ksud (riscv64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 6,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (x86_64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.1,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud (aarch64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.1,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.4,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.8,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 6.6,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1.8
+     },
+     {
+      "name": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.5,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.1,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 6.8,
+      "blockedMin": 3.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 2
+     },
+     {
+      "name": "repack-manager",
+      "needs": [
+       "build-manager",
+       "build-ksud",
+       "generate-key"
+      ],
+      "readyMin": 6,
+      "createdMin": 6,
+      "startMin": 6,
+      "endMin": 6.2,
+      "blockedMin": 6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 43620030778,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.1,
+    "path": [
+     "generate-key",
+     "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+     "build-ksud (riscv64-linux-android) / build",
+     "repack-manager"
+    ],
+    "topBlocker": "generate-key",
+    "jobs": [
+     {
+      "name": "generate-key",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksuinit / build-riscv64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksuinit / build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1.1
+     },
+     {
+      "name": "build-manager",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksud (riscv64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 5.7,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud (x86_64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 4.7,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (aarch64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 4.9,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 5.7,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.6
+     },
+     {
+      "name": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 4.7,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 5.9,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 1.6
+     },
+     {
+      "name": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 5.3,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 2.8,
+      "createdMin": 2.8,
+      "startMin": 2.8,
+      "endMin": 5.1,
+      "blockedMin": 2.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "repack-manager",
+      "needs": [
+       "build-manager",
+       "build-ksud",
+       "generate-key"
+      ],
+      "readyMin": 5.7,
+      "createdMin": 5.7,
+      "startMin": 5.8,
+      "endMin": 6.1,
+      "blockedMin": 5.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 43593538163,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.1,
+    "path": [
+     "generate-key",
+     "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+     "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build"
+    ],
+    "topBlocker": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+    "jobs": [
+     {
+      "name": "generate-key",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksuinit / build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksuinit / build-riscv64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-manager",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-ksud (x86_64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.5,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.8,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (riscv64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.7,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (aarch64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.4,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 6.1,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.6
+     },
+     {
+      "name": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.3,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.6,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.2,
+      "createdMin": 3.2,
+      "startMin": 3.2,
+      "endMin": 5.8,
+      "blockedMin": 3.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "repack-manager",
+      "needs": [
+       "build-manager",
+       "build-ksud",
+       "generate-key"
+      ],
+      "readyMin": 5.7,
+      "createdMin": 5.7,
+      "startMin": 5.8,
+      "endMin": 6,
+      "blockedMin": 5.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 43582290697,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.4,
+    "path": [
+     "generate-key",
+     "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+     "build-ksud (riscv64-linux-android) / build",
+     "repack-manager"
+    ],
+    "topBlocker": "generate-key",
+    "jobs": [
+     {
+      "name": "generate-key",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksuinit / build-riscv64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksuinit / build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-manager",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+      "needs": [
+       "generate-key"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0
+     },
+     {
+      "name": "build-ksud (aarch64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 5.6,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build-ksud (x86_64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 5.6,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud (riscv64-linux-android) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 6.1,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 5.7,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 6.1,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 1.7
+     },
+     {
+      "name": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 5.4,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 5.8,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 1
+     },
+     {
+      "name": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+      "needs": [
+       "build-lkm",
+       "build-ksuinit"
+      ],
+      "readyMin": 3.3,
+      "createdMin": 3.3,
+      "startMin": 3.3,
+      "endMin": 6.1,
+      "blockedMin": 3.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 1.6
+     },
+     {
+      "name": "repack-manager",
+      "needs": [
+       "build-manager",
+       "build-ksud",
+       "generate-key"
+      ],
+      "readyMin": 6.1,
+      "createdMin": 6.1,
+      "startMin": 6.1,
+      "endMin": 6.4,
+      "blockedMin": 6.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 13,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Kotlin",
+    57
+   ],
+   [
+    "C",
+    22
+   ],
+   [
+    "Rust",
+    15
+   ],
+   [
+    "CSS",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace",
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 3,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "anyhow",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "log",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "rustix",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "adb_client",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "android_logger",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "android-bootimg",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "base16ct",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "bindgen",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "chrono",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "clap",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "const_format",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "derive-new",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "encoding_rs",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "env_logger",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "extattr",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "getopts",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "goblin",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "humansize",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "is_executable",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "java-properties",
+    "ecosystem": "cargo",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    105
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "kernelsu",
+     "path": "js/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "ksud",
+     "path": "userspace/ksud/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ksuinit"
+     ]
+    },
+    {
+     "name": "ksuinit",
+     "path": "userspace/ksuinit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "KernelSU_website",
+     "path": "website/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 5,
+   "edges": 1,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "ksuinit",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 5,
+    "edges": 1
+   },
+   "nodes": [
+    {
+     "id": "ksuinit",
+     "dir": "userspace/ksuinit",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "kernelsu",
+     "dir": "js",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "KernelSU_website",
+     "dir": "website",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "ksud",
+     "dir": "userspace/ksud",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "ksud",
+     "to": "ksuinit",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "ksud",
+    "ksuinit"
+   ],
+   "topFanIn": [
+    {
+     "name": "ksuinit",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 2,
+    "filesRead": 1
+   },
+   "nodes": [
+    {
+     "id": "kernelsu#.",
+     "pkg": "kernelsu",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "js/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "KernelSU_website#.",
+     "pkg": "KernelSU_website",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 2 unknown, such as KernelSU_website#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 4,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 803
+   },
+   "nodes": [
+    {
+     "id": "KernelSU_website#docs:build",
+     "pkg": "KernelSU_website",
+     "name": "docs:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "KernelSU_website#docs:dev",
+     "pkg": "KernelSU_website",
+     "name": "docs:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "KernelSU_website#docs:preview",
+     "pkg": "KernelSU_website",
+     "name": "docs:preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "kernelsu#test",
+     "pkg": "kernelsu",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "KernelSU_website#docs:dev"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 15,
+    "runs": 5,
+    "runsOf": 5
+   },
+   "nodes": [
+    {
+     "id": "generate-key",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1
+    },
+    {
+     "id": "build-ksuinit / build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.2
+    },
+    {
+     "id": "build-ksuinit / build-riscv64",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.3
+    },
+    {
+     "id": "build-manager",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 4
+    },
+    {
+     "id": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 1.8
+    },
+    {
+     "id": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 2
+    },
+    {
+     "id": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 2.4
+    },
+    {
+     "id": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 1.8
+    },
+    {
+     "id": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": true,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 3.4
+    },
+    {
+     "id": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+     "needs": [
+      "generate-key"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 2
+    },
+    {
+     "id": "build-ksud (aarch64-linux-android) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.6
+    },
+    {
+     "id": "build-ksud (x86_64-linux-android) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": true,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.8
+    },
+    {
+     "id": "build-ksud (riscv64-linux-android) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.5
+    },
+    {
+     "id": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0.1,
+     "workMin": 2.8
+    },
+    {
+     "id": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.3
+    },
+    {
+     "id": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0.1,
+     "workMin": 2.3
+    },
+    {
+     "id": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.4
+    },
+    {
+     "id": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+     "needs": [
+      "build-lkm",
+      "build-ksuinit"
+     ],
+     "onPath": false,
+     "blockedMin": 3.5,
+     "queueMin": 0,
+     "workMin": 2.4
+    },
+    {
+     "id": "repack-manager",
+     "needs": [
+      "build-manager",
+      "build-ksud",
+      "generate-key"
+     ],
+     "onPath": true,
+     "blockedMin": 6.4,
+     "queueMin": 0,
+     "workMin": 0.4
+    }
+   ],
+   "edges": [
+    {
+     "from": "build-manager",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android13-5.15) / Build kernelsu.ko for android13-5.15",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android14-5.15) / Build kernelsu.ko for android14-5.15",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android12-5.10) / Build kernelsu.ko for android12-5.10",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android15-6.6) / Build kernelsu.ko for android15-6.6",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android17-6.18) / Build kernelsu.ko for android17-6.18",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android13-5.10) / Build kernelsu.ko for android13-5.10",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-lkm / build-lkm (android14-6.1) / Build kernelsu.ko for android14-6.1",
+     "to": "generate-key"
+    },
+    {
+     "from": "build-ksud (aarch64-linux-android) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud (aarch64-linux-android) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud (x86_64-linux-android) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud (x86_64-linux-android) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud (riscv64-linux-android) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud (riscv64-linux-android) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud-extra (aarch64-apple-darwin, macos-latest) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-unknown-linux-musl, ubuntu-latest) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-apple-darwin, macos-latest) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud-extra (aarch64-unknown-linux-musl, ubuntu-latest) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+     "to": "build-lkm"
+    },
+    {
+     "from": "build-ksud-extra (x86_64-pc-windows-gnu, ubuntu-latest) / build",
+     "to": "build-ksuinit"
+    },
+    {
+     "from": "repack-manager",
+     "to": "build-manager"
+    },
+    {
+     "from": "repack-manager",
+     "to": "build-ksud"
+    },
+    {
+     "from": "repack-manager",
+     "to": "generate-key"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "generate-key → build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12 → build-ksud (x86_64-linux-android) / build → repack-manager",
+     "numbers": {
+      "setupMin": 1.2,
+      "pathMin": 6.4
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "generate-key",
+    "build-lkm / build-lkm (android16-6.12) / Build kernelsu.ko for android16-6.12",
+    "build-ksud (x86_64-linux-android) / build",
+    "repack-manager"
+   ],
+   "pathMinP50": 6.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Setup on the critical path: 1.2 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "p90 is 6.0× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Kotlin it applies the principles, without a Kotlin-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 42,
+ "read": {
+  "calls": 42,
+  "fromCache": 0
+ }
+}

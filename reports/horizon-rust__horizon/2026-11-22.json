@@ -1,0 +1,4724 @@
+{
+ "repo": "horizon-rust/horizon",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.1,
+  "stars": 11662,
+  "forks": 2044,
+  "languages": [
+   [
+    "Rust",
+    85
+   ],
+   [
+    "Python",
+    11
+   ],
+   [
+    "Java",
+    3
+   ],
+   [
+    "WGSL",
+    0
+   ]
+  ],
+  "linesOfCode": 3981535,
+  "files": 11761,
+  "sourceFiles": 9491,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 3456415,
+   "tests": 499122,
+   "integration": 5545,
+   "support": 20454
+  },
+  "testShare": 0.13188889879573246,
+  "packages": {
+   "npm": 0,
+   "cargo": 100,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 962.9,
+  "pace": 12,
+  "activeAuthors28d": "≥62",
+  "prsOpenedPerWeek": 1641,
+  "prsMergedPerWeek": 1022,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 6,
+   "p90": 74,
+   "n": 100
+  },
+  "prRunsPerDay": 1016.6,
+  "runsPerMergedPr": 7
+ },
+ "window": {
+  "days": 1.2,
+  "runs": 999,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 1
+ },
+ "size": "large",
+ "headsPerWeek": 3472,
+ "score": 95,
+ "grade": "A+",
+ "band": "excellent",
+ "parts": {
+  "speed": 93,
+  "reliability": 100,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 90,
+   "forSize": 100,
+   "tail": 80
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 86,
+   "setup": 91,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 5802.9,
+  "prBilledMinutesPerDay": 8319.5,
+  "jobMinutesPerMergedPr": 39.7,
+  "expectedMinutesPerMergedPr": 522.8,
+  "expectedWait": 25.4,
+  "workflowsOnPrs": 8
+ },
+ "wait": {
+  "heads": 585,
+  "timed": 478,
+  "p50": 4.916666666666667,
+  "p75": 8.833333333333334,
+  "p90": 12.333333333333334,
+  "redRate": 0.22393162393162394,
+  "rerunRate": 0.08717948717948718,
+  "passedOnRerunRate": 0.0017094017094017094,
+  "cancelledRate": 0.04786324786324787,
+  "botHeads": 0,
+  "lightHeads": 14,
+  "neverRan": 1,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "checks",
+    466
+   ],
+   [
+    "wasm std hosts",
+    5
+   ],
+   [
+    "cancel-on-close",
+    4
+   ]
+  ],
+  "redBy": [
+   [
+    "checks",
+    130
+   ],
+   [
+    "run-parity",
+    1
+   ]
+  ],
+  "leftOut": [
+   "pr labels"
+  ],
+  "heavyWorkflows": [
+   "checks"
+  ],
+  "allPushesP50": 4.8
+ },
+ "main": {
+  "heads": 123,
+  "p50": 130.51666666666668,
+  "p90": 375.51666666666665,
+  "redRate": 0.04878048780487805,
+  "redBy": [
+   [
+    "checks",
+    5
+   ],
+   [
+    "parity-main",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.11029411764705882,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 4.4,
+  "jobMinutes": 15.15,
+  "billedMinutes": 20,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 5,
+  "queueP90Sec": 6,
+  "setupShare": 0.24334975369458128,
+  "critical": {
+   "name": "verify",
+   "minutes": 0.08333333333333333,
+   "shareOfSpan": 0.018939393939393936
+  },
+  "longest": {
+   "name": "verify (mod API)",
+   "minutes": 3.8666666666666667
+  },
+  "providers": [
+   [
+    "Blacksmith",
+    48
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 14,
+  "edges": 16,
+  "matrixJobs": 0,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "verify",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "verify (which parts run)",
+    "minutes": 0.3,
+    "share": 0.06,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "verify (mod API)",
+    "minutes": 4,
+    "share": 0.9,
+    "blockedMin": 0.3,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 3.9,
+    "setupMin": 0.6
+   },
+   {
+    "name": "verify",
+    "minutes": 0.2,
+    "share": 0.04,
+    "blockedMin": 4.2,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 3,
+  "pathMinP50": 4.4,
+  "blockedMinP50": 4.2,
+  "queueMinP50": 0.3,
+  "hiddenMinP50": 0,
+  "workMinP50": 4.1,
+  "setupInPathMinP50": 0.6,
+  "topBlockers": [
+   {
+    "name": "verify (which parts run)",
+    "runs": 5,
+    "heldJobs": 6,
+    "jobs": 9,
+    "tookMin": 0.3,
+    "heldJobMin": 1.6
+   },
+   {
+    "name": "verify (mod API)",
+    "runs": 1,
+    "heldJobs": 1,
+    "jobs": 5,
+    "tookMin": 3.1,
+    "heldJobMin": 2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 5,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44980678974,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.5,
+    "path": [
+     "verify (which parts run)",
+     "verify (mod API)",
+     "verify"
+    ],
+    "topBlocker": "verify (mod API)",
+    "jobs": [
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "parity-scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 3.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.4,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 3.4,
+      "createdMin": 3.4,
+      "startMin": 3.5,
+      "endMin": 3.5,
+      "blockedMin": 3.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   },
+   {
+    "id": 44980676097,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.4,
+    "path": [
+     "verify (which parts run)",
+     "verify (mod API)",
+     "verify"
+    ],
+    "topBlocker": "verify (which parts run)",
+    "jobs": [
+     {
+      "name": "parity-scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (format and lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.6,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (Rust tests)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.8,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (server build lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.3,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (launcher)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.8,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 5.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.6,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.4,
+      "endMin": 5.4,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   },
+   {
+    "id": 44980674375,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.4,
+    "path": [
+     "verify (which parts run)",
+     "verify (Rust tests)",
+     "verify"
+    ],
+    "topBlocker": "verify (which parts run)",
+    "jobs": [
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.4,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "parity-scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.6,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (launcher)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.7,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (Rust tests)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.6,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (server build lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.5,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (format and lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.6,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 4.3,
+      "endMin": 4.4,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   },
+   {
+    "id": 44980674298,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.6,
+    "path": [
+     "verify (which parts run)",
+     "verify (Rust tests)",
+     "verify"
+    ],
+    "topBlocker": "verify (which parts run)",
+    "jobs": [
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "parity-scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (launcher)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.6,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (format and lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.6,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (server build lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 1.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (Rust tests)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.7,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.6,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 4.4,
+      "createdMin": 4.4,
+      "startMin": 4.5,
+      "endMin": 4.6,
+      "blockedMin": 4.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   },
+   {
+    "id": 44980674008,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.4,
+    "path": [
+     "verify (which parts run)",
+     "verify (mod API)",
+     "verify"
+    ],
+    "topBlocker": "verify (which parts run)",
+    "jobs": [
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.4,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "parity-scope",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (launcher)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.7,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.9,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (server build lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.3,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (Rust tests)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 4.1,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.6,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (format and lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.5,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.3,
+      "startMin": 4.3,
+      "endMin": 4.4,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   },
+   {
+    "id": 44980119610,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.8,
+    "path": [
+     "verify (which parts run)",
+     "verify (Rust tests)",
+     "verify"
+    ],
+    "topBlocker": "verify (which parts run)",
+    "jobs": [
+     {
+      "name": "verify (tree and Python tests)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.3,
+      "runner": "blacksmith-8vcpu-ubuntu-2404",
+      "vcpus": 8
+     },
+     {
+      "name": "verify (which parts run)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     },
+     {
+      "name": "verify (format and lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.5,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (mod API)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.6,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify (Rust tests)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 3.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.7,
+      "runner": "blacksmith-16vcpu-ubuntu-2404",
+      "vcpus": 16
+     },
+     {
+      "name": "verify (server build lint)",
+      "needs": [
+       "verify-scope"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.4,
+      "runner": "blacksmith-4vcpu-ubuntu-2404",
+      "vcpus": 4
+     },
+     {
+      "name": "verify",
+      "needs": [
+       "verify-scope",
+       "verify-tree",
+       "verify-lint",
+       "verify-server",
+       "verify-launcher",
+       "verify-test",
+       "verify-mod-api",
+       "verify-windows-wasm-cache"
+      ],
+      "readyMin": 3.6,
+      "createdMin": 3.6,
+      "startMin": 3.7,
+      "endMin": 3.8,
+      "blockedMin": 3.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "blacksmith-2vcpu-ubuntu-2404",
+      "vcpus": 2
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 30,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    85
+   ],
+   [
+    "Python",
+    11
+   ],
+   [
+    "Java",
+    3
+   ],
+   [
+    "WGSL",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 100,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 43
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 31
+   },
+   {
+    "name": "log",
+    "ecosystem": "cargo",
+    "packages": 29
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "zip",
+    "ecosystem": "cargo",
+    "packages": 14
+   },
+   {
+    "name": "toml",
+    "ecosystem": "cargo",
+    "packages": 13
+   },
+   {
+    "name": "ureq",
+    "ecosystem": "cargo",
+    "packages": 13
+   },
+   {
+    "name": "getrandom",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "png",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "flate2",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "glam",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "libc",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "name",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "syn",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "quote",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "sha1",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "windows-sys",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "bytemuck",
+    "ecosystem": "cargo",
+    "packages": 7
+   }
+  ],
+  "runners": [
+   [
+    "Blacksmith",
+    48
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".claude/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "cargo-horizon-mod",
+     "path": "crates/cargo-horizon-mod/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-mod-package",
+      "horizon-mod-source",
+      "horizon-mod-surface",
+      "horizon-mod-vocab",
+      "horizon-port-pack",
+      "horizon-release-sign"
+     ]
+    },
+    {
+     "name": "horizon-addresses",
+     "path": "crates/horizon-addresses/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-anticheat",
+     "path": "crates/horizon-anticheat/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-assets",
+     "path": "crates/horizon-assets/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core"
+     ]
+    },
+    {
+     "name": "horizon-bench",
+     "path": "crates/horizon-bench/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-system"
+     ]
+    },
+    {
+     "name": "horizon-bots",
+     "path": "crates/horizon-bots/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-protocol"
+     ]
+    },
+    {
+     "name": "horizon-chat-filter",
+     "path": "crates/horizon-chat-filter/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-server-files"
+     ]
+    },
+    {
+     "name": "horizon-client-core",
+     "path": "crates/horizon-client-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-assets",
+      "horizon-core",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-client-gameplay",
+     "path": "crates/horizon-client-gameplay/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-lib",
+      "horizon-core",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-client-input",
+     "path": "crates/horizon-client-input/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-core",
+      "horizon-engine-slots",
+      "horizon-hooks",
+      "horizon-mod-api-macros",
+      "horizon-theme"
+     ]
+    },
+    {
+     "name": "horizon-client-lib",
+     "path": "crates/horizon-client-lib/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-anticheat",
+      "horizon-assets",
+      "horizon-bench",
+      "horizon-client-core",
+      "horizon-client-input",
+      "horizon-client-render",
+      "horizon-command",
+      "horizon-core",
+      "horizon-engine-slots",
+      "horizon-game-discovery",
+      "horizon-guest-stack",
+      "horizon-hdr",
+      "horizon-hooks",
+      "horizon-items",
+      "horizon-java-properties",
+      "horizon-mcp",
+      "horizon-mod-api",
+      "horizon-mod-api-macros",
+      "horizon-mod-package",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab",
+      "horizon-mod-wasm",
+      "horizon-narrator",
+      "horizon-optifine",
+      "horizon-perf",
+      "horizon-perf-format",
+      "horizon-protocol",
+      "horizon-server-files",
+      "horizon-shader-api",
+      "horizon-shaders",
+      "horizon-telemetry",
+      "horizon-theme",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-client-render",
+     "path": "crates/horizon-client-render/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-assets",
+      "horizon-client-core",
+      "horizon-client-input",
+      "horizon-command",
+      "horizon-core",
+      "horizon-engine-slots",
+      "horizon-guest-stack",
+      "horizon-hdr",
+      "horizon-hooks",
+      "horizon-items",
+      "horizon-mod-api",
+      "horizon-mod-api-macros",
+      "horizon-mod-package",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab",
+      "horizon-narrator",
+      "horizon-optifine",
+      "horizon-perf",
+      "horizon-perf-format",
+      "horizon-polytone",
+      "horizon-protocol",
+      "horizon-shader-api",
+      "horizon-shaders",
+      "horizon-system",
+      "horizon-theme",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-client",
+     "path": "crates/horizon-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-anticheat",
+      "horizon-assets",
+      "horizon-bench",
+      "horizon-chat-filter",
+      "horizon-client-core",
+      "horizon-client-gameplay",
+      "horizon-client-input",
+      "horizon-client-lib",
+      "horizon-client-render",
+      "horizon-command",
+      "horizon-core",
+      "horizon-cosmetics",
+      "horizon-dualsense",
+      "horizon-engine-slots",
+      "horizon-friends",
+      "horizon-game-discovery",
+      "horizon-gameplay",
+      "horizon-guest-stack",
+      "horizon-hooks",
+      "horizon-items",
+      "horizon-java-properties",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-package",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab",
+      "horizon-mod-wasm",
+      "horizon-narrator",
+      "horizon-optifine",
+      "horizon-perf",
+      "horizon-perf-format",
+      "horizon-protocol",
+      "horizon-server-files",
+      "horizon-shader-api",
+      "horizon-shaders",
+      "horizon-system",
+      "horizon-telemetry",
+      "horizon-theme",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-command",
+     "path": "crates/horizon-command/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-core",
+      "horizon-core",
+      "horizon-items",
+      "horizon-protocol",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-core",
+     "path": "crates/horizon-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-cosmetics",
+     "path": "crates/horizon-cosmetics/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses"
+     ]
+    },
+    {
+     "name": "horizon-discord",
+     "path": "crates/horizon-discord/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-dualsense",
+     "path": "crates/horizon-dualsense/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-engine-slots",
+     "path": "crates/horizon-engine-slots/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-mod-api-gen",
+      "horizon-mod-vocab"
+     ]
+    },
+    {
+     "name": "horizon-friends",
+     "path": "crates/horizon-friends/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-game-discovery",
+     "path": "crates/horizon-game-discovery/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-mod-source"
+     ]
+    },
+    {
+     "name": "horizon-game",
+     "path": "crates/horizon-game/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client",
+      "horizon-core",
+      "horizon-guest-stack",
+      "horizon-mod-host",
+      "horizon-mod-package",
+      "horizon-protocol"
+     ]
+    },
+    {
+     "name": "horizon-gameplay",
+     "path": "crates/horizon-gameplay/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-assets",
+      "horizon-client-core",
+      "horizon-client-lib",
+      "horizon-command",
+      "horizon-core",
+      "horizon-engine-slots",
+      "horizon-items",
+      "horizon-mod-package",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab",
+      "horizon-protocol",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-guest-stack",
+     "path": "crates/horizon-guest-stack/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-hdr",
+     "path": "crates/horizon-hdr/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-heartbeat",
+     "path": "crates/horizon-heartbeat/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-platform",
+      "horizon-telemetry"
+     ]
+    },
+    {
+     "name": "horizon-hooks",
+     "path": "crates/horizon-hooks/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-hot-paths-game",
+     "path": "crates/horizon-hot-paths-game/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client",
+      "horizon-guest-stack",
+      "horizon-mod-api",
+      "horizon-mod-host",
+      "horizon-mod-package"
+     ]
+    },
+    {
+     "name": "horizon-internals",
+     "path": "crates/horizon-internals/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-items",
+     "path": "crates/horizon-items/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-core",
+      "horizon-core",
+      "horizon-mod-package",
+      "horizon-mod-vocab",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-java-properties",
+     "path": "crates/horizon-java-properties/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-mcp",
+     "path": "crates/horizon-mcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-mod-api-gen",
+     "path": "crates/horizon-mod-api-gen/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-game-discovery",
+      "horizon-mod-point-shape",
+      "horizon-mod-source",
+      "horizon-mod-surface"
+     ]
+    },
+    {
+     "name": "horizon-mod-api-gen-tests",
+     "path": "crates/horizon-mod-api-gen/dispatch-tests/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-core",
+      "horizon-core",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-runtime"
+     ]
+    },
+    {
+     "name": "horizon-mod-api-macros",
+     "path": "crates/horizon-mod-api-macros/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-mod-point-shape"
+     ]
+    },
+    {
+     "name": "horizon-mod-api",
+     "path": "crates/horizon-mod-api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab"
+     ]
+    },
+    {
+     "name": "horizon-mod-deps",
+     "path": "crates/horizon-mod-deps/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-mod-dimension-game",
+     "path": "crates/horizon-mod-dimension-game/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client",
+      "horizon-mod-api",
+      "horizon-mod-host",
+      "horizon-mod-package",
+      "horizon-mod-wasm"
+     ]
+    },
+    {
+     "name": "horizon-mod-host",
+     "path": "crates/horizon-mod-host/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client",
+      "horizon-engine-slots",
+      "horizon-guest-stack",
+      "horizon-mod-api",
+      "horizon-mod-package",
+      "horizon-mod-points",
+      "horizon-mod-render",
+      "horizon-mod-wasm"
+     ]
+    },
+    {
+     "name": "horizon-mod-package",
+     "path": "crates/horizon-mod-package/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-mod-api",
+      "horizon-mod-api-macros",
+      "horizon-mod-point-shape",
+      "horizon-mod-surface",
+      "horizon-mod-vocab",
+      "horizon-shader-api"
+     ]
+    },
+    {
+     "name": "horizon-mod-point-shape",
+     "path": "crates/horizon-mod-point-shape/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-mod-points",
+     "path": "crates/horizon-mod-points/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-engine-slots",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-point-shape"
+     ]
+    },
+    {
+     "name": "horizon-mod-registry",
+     "path": "crates/horizon-mod-registry/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-platform",
+      "horizon-release-sign"
+     ]
+    },
+    {
+     "name": "horizon-mod-render",
+     "path": "crates/horizon-mod-render/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-render",
+      "horizon-engine-slots",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros"
+     ]
+    },
+    {
+     "name": "horizon-mod-runtime",
+     "path": "crates/horizon-mod-runtime/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core"
+     ]
+    },
+    {
+     "name": "horizon-mod-source",
+     "path": "crates/horizon-mod-source/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-mod-surface"
+     ]
+    },
+    {
+     "name": "horizon-mod-surface",
+     "path": "crates/horizon-mod-surface/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-mod-vocab",
+     "path": "crates/horizon-mod-vocab/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-items",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-runtime"
+     ]
+    },
+    {
+     "name": "horizon-mod-wasm",
+     "path": "crates/horizon-mod-wasm/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-client-core",
+      "horizon-core",
+      "horizon-engine-slots",
+      "horizon-guest-stack",
+      "horizon-java-properties",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-api-macros",
+      "horizon-mod-package",
+      "horizon-mod-points",
+      "horizon-mod-runtime",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-mod-wasm-wire-loopback",
+     "path": "crates/horizon-mod-wasm/wire-loopback/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-game-discovery",
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-runtime",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-narrator",
+     "path": "crates/horizon-narrator/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-official-servers",
+     "path": "crates/horizon-official-servers/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-official",
+     "path": "crates/horizon-official/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-discord",
+      "horizon-friends",
+      "horizon-game",
+      "horizon-heartbeat",
+      "horizon-official-servers",
+      "horizon-perf-share",
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-optifine",
+     "path": "crates/horizon-optifine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-assets",
+      "horizon-core",
+      "horizon-system"
+     ]
+    },
+    {
+     "name": "horizon-perf-format",
+     "path": "crates/horizon-perf-format/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-perf-share",
+     "path": "crates/horizon-perf-share/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-perf",
+     "path": "crates/horizon-perf/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-bench",
+      "horizon-perf-format",
+      "horizon-perf-share"
+     ]
+    },
+    {
+     "name": "horizon-platform",
+     "path": "crates/horizon-platform/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-bench",
+      "horizon-core",
+      "horizon-guest-stack",
+      "horizon-hooks",
+      "horizon-java-properties",
+      "horizon-mod-api-gen",
+      "horizon-mod-package",
+      "horizon-mod-point-shape",
+      "horizon-perf-format",
+      "horizon-prepare",
+      "horizon-protocol",
+      "horizon-server-files",
+      "horizon-system",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-polytone",
+     "path": "crates/horizon-polytone/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-port-pack-cli",
+     "path": "crates/horizon-port-pack-cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-port-pack"
+     ]
+    },
+    {
+     "name": "horizon-port-pack",
+     "path": "crates/horizon-port-pack/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-mod-api",
+      "horizon-mod-api-gen",
+      "horizon-mod-package"
+     ]
+    },
+    {
+     "name": "horizon-prepare",
+     "path": "crates/horizon-prepare/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-protocol",
+     "path": "crates/horizon-protocol/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-mod-runtime",
+      "horizon-threads",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "protocol-retained-gen",
+     "path": "crates/horizon-protocol/tools/retained-gen/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-relay",
+     "path": "crates/horizon-relay/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-friends"
+     ]
+    },
+    {
+     "name": "horizon-release-sign",
+     "path": "crates/horizon-release-sign/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-server-files",
+     "path": "crates/horizon-server-files/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-java-properties",
+      "horizon-protocol",
+      "horizon-world"
+     ]
+    },
+    {
+     "name": "horizon-server-launch",
+     "path": "crates/horizon-server-launch/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-anticheat",
+      "horizon-chat-filter",
+      "horizon-core",
+      "horizon-platform",
+      "horizon-server-files"
+     ]
+    },
+    {
+     "name": "horizon-server",
+     "path": "crates/horizon-server/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-anticheat",
+      "horizon-chat-filter",
+      "horizon-mcp",
+      "horizon-platform",
+      "horizon-release-sign",
+      "horizon-server-launch"
+     ]
+    },
+    {
+     "name": "horizon-shader-api",
+     "path": "crates/horizon-shader-api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-shaders",
+     "path": "crates/horizon-shaders/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core"
+     ]
+    },
+    {
+     "name": "horizon-system",
+     "path": "crates/horizon-system/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-telemetry-server",
+     "path": "crates/horizon-telemetry-server/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-telemetry"
+     ]
+    },
+    {
+     "name": "horizon-telemetry",
+     "path": "crates/horizon-telemetry/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-platform"
+     ]
+    },
+    {
+     "name": "horizon-theme",
+     "path": "crates/horizon-theme/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "horizon-threads",
+     "path": "crates/horizon-threads/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-guest-stack"
+     ]
+    },
+    {
+     "name": "horizon-world",
+     "path": "crates/horizon-world/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-assets",
+      "horizon-core",
+      "horizon-threads"
+     ]
+    },
+    {
+     "name": "horizon-launcher",
+     "path": "launcher/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-cosmetics",
+      "horizon-friends",
+      "horizon-launcher-scenery",
+      "horizon-mcp",
+      "horizon-mod-api-gen",
+      "horizon-mod-vocab",
+      "horizon-platform",
+      "horizon-port-pack",
+      "horizon-release-sign",
+      "horizon-server-launch",
+      "horizon-shader-api",
+      "horizon-telemetry",
+      "horizon-theme"
+     ]
+    },
+    {
+     "name": "horizon-launcher-scenery",
+     "path": "launcher/scenery/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-theme"
+     ]
+    },
+    {
+     "name": "join-locate-probe",
+     "path": "tools/join-locate-probe/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-core",
+      "horizon-mod-runtime",
+      "horizon-mod-vocab"
+     ]
+    },
+    {
+     "name": "xtask",
+     "path": "xtask/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "horizon-addresses",
+      "horizon-mod-api-gen",
+      "horizon-mod-package",
+      "horizon-theme"
+     ]
+    }
+   ],
+   "count": 82,
+   "edges": 328,
+   "cycles": [
+    {
+     "ecosystem": "cargo",
+     "packages": [
+      "horizon-items",
+      "horizon-mod-api",
+      "horizon-mod-package",
+      "horizon-mod-vocab"
+     ]
+    }
+   ],
+   "maxDepth": 14,
+   "topFanIn": [
+    {
+     "name": "horizon-core",
+     "ecosystem": "cargo",
+     "dependents": 25
+    },
+    {
+     "name": "horizon-mod-package",
+     "ecosystem": "cargo",
+     "dependents": 14
+    },
+    {
+     "name": "horizon-mod-api",
+     "ecosystem": "cargo",
+     "dependents": 13
+    },
+    {
+     "name": "horizon-mod-api-gen",
+     "ecosystem": "cargo",
+     "dependents": 13
+    },
+    {
+     "name": "horizon-world",
+     "ecosystem": "cargo",
+     "dependents": 13
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 82,
+    "edges": 328
+   },
+   "nodes": [
+    {
+     "id": "horizon-core",
+     "dir": "crates/horizon-core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 25,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-package",
+     "dir": "crates/horizon-mod-package",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 14,
+     "depth": 4
+    },
+    {
+     "id": "horizon-mod-api",
+     "dir": "crates/horizon-mod-api",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 13,
+     "depth": 4
+    },
+    {
+     "id": "horizon-mod-api-gen",
+     "dir": "crates/horizon-mod-api-gen",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 13,
+     "depth": 3
+    },
+    {
+     "id": "horizon-world",
+     "dir": "crates/horizon-world",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 13,
+     "depth": 2
+    },
+    {
+     "id": "horizon-mod-api-macros",
+     "dir": "crates/horizon-mod-api-macros",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 11,
+     "depth": 1
+    },
+    {
+     "id": "horizon-mod-runtime",
+     "dir": "crates/horizon-mod-runtime",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 11,
+     "depth": 1
+    },
+    {
+     "id": "horizon-mod-vocab",
+     "dir": "crates/horizon-mod-vocab",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 11,
+     "depth": 4
+    },
+    {
+     "id": "horizon-platform",
+     "dir": "crates/horizon-platform",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 11,
+     "depth": 5
+    },
+    {
+     "id": "horizon-addresses",
+     "dir": "crates/horizon-addresses",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 10,
+     "depth": 0
+    },
+    {
+     "id": "horizon-client-core",
+     "dir": "crates/horizon-client-core",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 9,
+     "depth": 3
+    },
+    {
+     "id": "horizon-engine-slots",
+     "dir": "crates/horizon-engine-slots",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 9,
+     "depth": 5
+    },
+    {
+     "id": "horizon-guest-stack",
+     "dir": "crates/horizon-guest-stack",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 9,
+     "depth": 0
+    },
+    {
+     "id": "horizon-protocol",
+     "dir": "crates/horizon-protocol",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 9,
+     "depth": 3
+    },
+    {
+     "id": "horizon-assets",
+     "dir": "crates/horizon-assets",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 7,
+     "depth": 1
+    },
+    {
+     "id": "horizon-theme",
+     "dir": "crates/horizon-theme",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "horizon-threads",
+     "dir": "crates/horizon-threads",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 7,
+     "depth": 1
+    },
+    {
+     "id": "horizon-items",
+     "dir": "crates/horizon-items",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 6,
+     "depth": 4
+    },
+    {
+     "id": "horizon-hooks",
+     "dir": "crates/horizon-hooks",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-java-properties",
+     "dir": "crates/horizon-java-properties",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-point-shape",
+     "dir": "crates/horizon-mod-point-shape",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-perf-format",
+     "dir": "crates/horizon-perf-format",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-server-files",
+     "dir": "crates/horizon-server-files",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 5,
+     "depth": 4
+    },
+    {
+     "id": "horizon-shader-api",
+     "dir": "crates/horizon-shader-api",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-system",
+     "dir": "crates/horizon-system",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "horizon-telemetry",
+     "dir": "crates/horizon-telemetry",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 5,
+     "depth": 6
+    },
+    {
+     "id": "horizon-anticheat",
+     "dir": "crates/horizon-anticheat",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "horizon-bench",
+     "dir": "crates/horizon-bench",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "horizon-client",
+     "dir": "crates/horizon-client",
+     "ecosystem": "cargo",
+     "dependencies": 41,
+     "dependents": 4,
+     "depth": 11
+    },
+    {
+     "id": "horizon-command",
+     "dir": "crates/horizon-command",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 4,
+     "depth": 5
+    },
+    {
+     "id": "horizon-friends",
+     "dir": "crates/horizon-friends",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 6
+    },
+    {
+     "id": "horizon-game-discovery",
+     "dir": "crates/horizon-game-discovery",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 2
+    },
+    {
+     "id": "horizon-mod-surface",
+     "dir": "crates/horizon-mod-surface",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-wasm",
+     "dir": "crates/horizon-mod-wasm",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 4,
+     "depth": 7
+    },
+    {
+     "id": "horizon-release-sign",
+     "dir": "crates/horizon-release-sign",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "horizon-chat-filter",
+     "dir": "crates/horizon-chat-filter",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 5
+    },
+    {
+     "id": "horizon-client-input",
+     "dir": "crates/horizon-client-input",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 3,
+     "depth": 6
+    },
+    {
+     "id": "horizon-client-lib",
+     "dir": "crates/horizon-client-lib",
+     "ecosystem": "cargo",
+     "dependencies": 34,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "horizon-client-render",
+     "dir": "crates/horizon-client-render",
+     "ecosystem": "cargo",
+     "dependencies": 27,
+     "dependents": 3,
+     "depth": 8
+    },
+    {
+     "id": "horizon-mcp",
+     "dir": "crates/horizon-mcp",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-host",
+     "dir": "crates/horizon-mod-host",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 3,
+     "depth": 12
+    },
+    {
+     "id": "horizon-mod-source",
+     "dir": "crates/horizon-mod-source",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "horizon-narrator",
+     "dir": "crates/horizon-narrator",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "horizon-optifine",
+     "dir": "crates/horizon-optifine",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "horizon-perf",
+     "dir": "crates/horizon-perf",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 7
+    },
+    {
+     "id": "horizon-port-pack",
+     "dir": "crates/horizon-port-pack",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 5
+    },
+    {
+     "id": "horizon-shaders",
+     "dir": "crates/horizon-shaders",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "horizon-cosmetics",
+     "dir": "crates/horizon-cosmetics",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "horizon-hdr",
+     "dir": "crates/horizon-hdr",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-points",
+     "dir": "crates/horizon-mod-points",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "horizon-perf-share",
+     "dir": "crates/horizon-perf-share",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "horizon-server-launch",
+     "dir": "crates/horizon-server-launch",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "horizon-client-gameplay",
+     "dir": "crates/horizon-client-gameplay",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 10
+    },
+    {
+     "id": "horizon-discord",
+     "dir": "crates/horizon-discord",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 6
+    },
+    {
+     "id": "horizon-dualsense",
+     "dir": "crates/horizon-dualsense",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "horizon-game",
+     "dir": "crates/horizon-game",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 1,
+     "depth": 13
+    },
+    {
+     "id": "horizon-gameplay",
+     "dir": "crates/horizon-gameplay",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 1,
+     "depth": 10
+    },
+    {
+     "id": "horizon-heartbeat",
+     "dir": "crates/horizon-heartbeat",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "horizon-launcher-scenery",
+     "dir": "launcher/scenery",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "horizon-mod-render",
+     "dir": "crates/horizon-mod-render",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "horizon-official-servers",
+     "dir": "crates/horizon-official-servers",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 6
+    },
+    {
+     "id": "horizon-polytone",
+     "dir": "crates/horizon-polytone",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "horizon-prepare",
+     "dir": "crates/horizon-prepare",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "cargo-horizon-mod",
+     "dir": "crates/cargo-horizon-mod",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 0,
+     "depth": 6
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "horizon-bots",
+     "dir": "crates/horizon-bots",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "horizon-hot-paths-game",
+     "dir": "crates/horizon-hot-paths-game",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 13
+    },
+    {
+     "id": "horizon-internals",
+     "dir": "crates/horizon-internals",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "horizon-launcher",
+     "dir": "launcher",
+     "ecosystem": "cargo",
+     "dependencies": 14,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "horizon-mod-api-gen-tests",
+     "dir": "crates/horizon-mod-api-gen/dispatch-tests",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "horizon-mod-deps",
+     "dir": "crates/horizon-mod-deps",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "horizon-mod-dimension-game",
+     "dir": "crates/horizon-mod-dimension-game",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 13
+    },
+    {
+     "id": "horizon-mod-registry",
+     "dir": "crates/horizon-mod-registry",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 6
+    },
+    {
+     "id": "horizon-mod-wasm-wire-loopback",
+     "dir": "crates/horizon-mod-wasm/wire-loopback",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "horizon-official",
+     "dir": "crates/horizon-official",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 0,
+     "depth": 14
+    },
+    {
+     "id": "horizon-port-pack-cli",
+     "dir": "crates/horizon-port-pack-cli",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 6
+    },
+    {
+     "id": "horizon-relay",
+     "dir": "crates/horizon-relay",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "horizon-server",
+     "dir": "crates/horizon-server",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "horizon-telemetry-server",
+     "dir": "crates/horizon-telemetry-server",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "join-locate-probe",
+     "dir": "tools/join-locate-probe",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "protocol-retained-gen",
+     "dir": "crates/horizon-protocol/tools/retained-gen",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "xtask",
+     "dir": "xtask",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 5
+    }
+   ],
+   "edges": [
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-mod-source",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-mod-surface",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-port-pack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-horizon-mod",
+     "to": "horizon-release-sign",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-assets",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-bench",
+     "to": "horizon-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-bots",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-chat-filter",
+     "to": "horizon-server-files",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-core",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-core",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-core",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-gameplay",
+     "to": "horizon-client-lib",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-gameplay",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-gameplay",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-input",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-input",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-input",
+     "to": "horizon-hooks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-input",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-input",
+     "to": "horizon-theme",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-anticheat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-bench",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-client-input",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-client-render",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-command",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-game-discovery",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-hdr",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-hooks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-java-properties",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-mod-wasm",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-narrator",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-optifine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-perf",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-perf-format",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-server-files",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-shader-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-shaders",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-telemetry",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-theme",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-lib",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-client-input",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-command",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-hdr",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-hooks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-narrator",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-optifine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-perf",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-perf-format",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-polytone",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-shader-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-shaders",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-theme",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client-render",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-anticheat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-bench",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-chat-filter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-client-gameplay",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-client-input",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-client-lib",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-client-render",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-command",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-cosmetics",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-dualsense",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-friends",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-game-discovery",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-gameplay",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-hooks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-java-properties",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-mod-wasm",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-narrator",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-optifine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-perf",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-perf-format",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-server-files",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-shader-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-shaders",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-telemetry",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-theme",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-client",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-command",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-command",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-command",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-command",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-command",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-cosmetics",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-discord",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-engine-slots",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-engine-slots",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-friends",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-friends",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game-discovery",
+     "to": "horizon-mod-source",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-mod-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-game",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-client-lib",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-command",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-gameplay",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-heartbeat",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-heartbeat",
+     "to": "horizon-telemetry",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-hot-paths-game",
+     "to": "horizon-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-hot-paths-game",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-hot-paths-game",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-hot-paths-game",
+     "to": "horizon-mod-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-hot-paths-game",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-items",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-items",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-items",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-items",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-items",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen",
+     "to": "horizon-game-discovery",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen",
+     "to": "horizon-mod-point-shape",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen",
+     "to": "horizon-mod-source",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen",
+     "to": "horizon-mod-surface",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen-tests",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen-tests",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen-tests",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen-tests",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-gen-tests",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api-macros",
+     "to": "horizon-mod-point-shape",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-api",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-dimension-game",
+     "to": "horizon-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-dimension-game",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-dimension-game",
+     "to": "horizon-mod-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-dimension-game",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-dimension-game",
+     "to": "horizon-mod-wasm",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-mod-points",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-mod-render",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-host",
+     "to": "horizon-mod-wasm",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-mod-point-shape",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-mod-surface",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-mod-vocab",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-package",
+     "to": "horizon-shader-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-points",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-points",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-points",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-points",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-points",
+     "to": "horizon-mod-point-shape",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-registry",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-registry",
+     "to": "horizon-release-sign",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-render",
+     "to": "horizon-client-render",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-render",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-render",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-render",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-render",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-runtime",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-source",
+     "to": "horizon-mod-surface",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-items",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-vocab",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-client-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-engine-slots",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-java-properties",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-api-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-points",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-game-discovery",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-mod-wasm-wire-loopback",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official-servers",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official-servers",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-discord",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-friends",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-game",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-heartbeat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-official-servers",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-perf-share",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-official",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-optifine",
+     "to": "horizon-assets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-optifine",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-optifine",
+     "to": "horizon-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-perf-share",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-perf-share",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-perf",
+     "to": "horizon-bench",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-perf",
+     "to": "horizon-perf-format",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-perf",
+     "to": "horizon-perf-share",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-bench",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-guest-stack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-hooks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-java-properties",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-mod-point-shape",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-perf-format",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-prepare",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-server-files",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-system",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-platform",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-port-pack-cli",
+     "to": "horizon-addresses",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-port-pack-cli",
+     "to": "horizon-port-pack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-port-pack",
+     "to": "horizon-mod-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-port-pack",
+     "to": "horizon-mod-api-gen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-port-pack",
+     "to": "horizon-mod-package",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-protocol",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-protocol",
+     "to": "horizon-mod-runtime",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-protocol",
+     "to": "horizon-threads",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-protocol",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-relay",
+     "to": "horizon-friends",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-files",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-files",
+     "to": "horizon-java-properties",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-files",
+     "to": "horizon-protocol",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-files",
+     "to": "horizon-world",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-launch",
+     "to": "horizon-anticheat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-launch",
+     "to": "horizon-chat-filter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-launch",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-launch",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server-launch",
+     "to": "horizon-server-files",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-anticheat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-chat-filter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-mcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-platform",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-release-sign",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-server",
+     "to": "horizon-server-launch",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-shaders",
+     "to": "horizon-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "horizon-telemetry-server",
+     "to": "horizon-telemetry",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "package-cycle",
+     "subject": "horizon-items ↔ horizon-mod-api ↔ horizon-mod-package ↔ horizon-mod-vocab",
+     "numbers": {
+      "packages": 4,
+      "packagesOf": 82
+     },
+     "threshold": null,
+     "detail": "cargo manifest dependencies"
+    }
+   ],
+   "flagCounts": {
+    "package-cycle": 1
+   },
+   "depth": 14,
+   "chain": [
+    "horizon-official",
+    "horizon-game",
+    "horizon-mod-host",
+    "horizon-client",
+    "horizon-client-gameplay",
+    "horizon-client-lib",
+    "horizon-client-render",
+    "horizon-perf",
+    "horizon-perf-share",
+    "horizon-platform",
+    "horizon-items + horizon-mod-api + horizon-mod-package + horizon-mod-vocab",
+    "horizon-client-core",
+    "horizon-world",
+    "horizon-assets",
+    "horizon-core"
+   ],
+   "topFanIn": [
+    {
+     "name": "horizon-core",
+     "ecosystem": "cargo",
+     "dependents": 25
+    },
+    {
+     "name": "horizon-mod-package",
+     "ecosystem": "cargo",
+     "dependents": 14
+    },
+    {
+     "name": "horizon-mod-api",
+     "ecosystem": "cargo",
+     "dependents": 13
+    },
+    {
+     "name": "horizon-mod-api-gen",
+     "ecosystem": "cargo",
+     "dependents": 13
+    },
+    {
+     "name": "horizon-world",
+     "ecosystem": "cargo",
+     "dependents": 13
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 11761
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 14,
+    "edges": 16,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "verify (tree and Python tests)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.3,
+     "runner": "blacksmith-8vcpu-ubuntu-2404",
+     "vcpus": 8
+    },
+    {
+     "id": "parity-scope",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "blacksmith-2vcpu-ubuntu-2404",
+     "vcpus": 2
+    },
+    {
+     "id": "verify (which parts run)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "blacksmith-2vcpu-ubuntu-2404",
+     "vcpus": 2
+    },
+    {
+     "id": "verify (mod API)",
+     "needs": [
+      "verify-scope"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.1,
+     "workMin": 3,
+     "runner": "blacksmith-4vcpu-ubuntu-2404",
+     "vcpus": 4
+    },
+    {
+     "id": "verify",
+     "needs": [
+      "verify-scope",
+      "verify-tree",
+      "verify-lint",
+      "verify-server",
+      "verify-launcher",
+      "verify-test",
+      "verify-mod-api",
+      "verify-windows-wasm-cache"
+     ],
+     "onPath": true,
+     "blockedMin": 3.4,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "blacksmith-2vcpu-ubuntu-2404",
+     "vcpus": 2
+    }
+   ],
+   "edges": [
+    {
+     "from": "verify (mod API)",
+     "to": "verify-scope"
+    },
+    {
+     "from": "verify",
+     "to": "verify-scope"
+    },
+    {
+     "from": "verify",
+     "to": "verify-tree"
+    },
+    {
+     "from": "verify",
+     "to": "verify-lint"
+    },
+    {
+     "from": "verify",
+     "to": "verify-server"
+    },
+    {
+     "from": "verify",
+     "to": "verify-launcher"
+    },
+    {
+     "from": "verify",
+     "to": "verify-test"
+    },
+    {
+     "from": "verify",
+     "to": "verify-mod-api"
+    },
+    {
+     "from": "verify",
+     "to": "verify-windows-wasm-cache"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "verify (which parts run)",
+    "verify (mod API)",
+    "verify"
+   ],
+   "pathMinP50": 4.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Packages depend on each other in a cycle, horizon-items ↔ horizon-mod-api ↔ horizon-mod-package ↔ horizon-mod-vocab: break it, so an edit to one stops reaching the rest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#package-dependencies-declared-and-checked"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 117,
+ "read": {
+  "calls": 117,
+  "fromCache": 0
+ }
+}

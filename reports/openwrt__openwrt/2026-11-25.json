@@ -1,0 +1,1617 @@
+{
+ "repo": "openwrt/openwrt",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 11.1,
+  "stars": 29355,
+  "forks": 13519,
+  "languages": [
+   [
+    "C",
+    60
+   ],
+   [
+    "Makefile",
+    23
+   ],
+   [
+    "Shell",
+    8
+   ],
+   [
+    "ucode",
+    3
+   ]
+  ],
+  "linesOfCode": 133185,
+  "files": 10950,
+  "sourceFiles": 305,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 132143,
+   "tests": 1042,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.007822436816084261,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 119.2,
+  "pace": 1,
+  "activeAuthors28d": "≥103",
+  "prsOpenedPerWeek": 131.3,
+  "prsMergedPerWeek": 57.3,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 56.5,
+   "p90": 1350.2,
+   "n": 65
+  },
+  "prRunsPerDay": 448,
+  "runsPerMergedPr": 54.7
+ },
+ "window": {
+  "days": 2.2,
+  "runs": 997,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 849,
+ "score": 25,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 3,
+  "reliability": 92,
+  "efficiency": 24
+ },
+ "detail": {
+  "speed": {
+   "wait": 7,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 80
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 4,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 9992.9,
+  "prBilledMinutesPerDay": 10729.2,
+  "jobMinutesPerMergedPr": 1220.9,
+  "prVcpuMinutesPerDay": 39205.2,
+  "vcpuMinutesPerMergedPr": 4789.9,
+  "expectedVcpuMinutesPerMergedPr": 681.5,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 170.4,
+  "expectedWait": 19.1,
+  "workflowsOnPrs": 5
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured",
+   "17 reruns' first attempts weren't read"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 270,
+  "ranHeads": 250,
+  "timed": 111,
+  "p50": 77.46666666666667,
+  "p75": 192.31666666666666,
+  "p90": 308.1166666666667,
+  "redRate": 0.188,
+  "rerunRate": 0.236,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 17,
+  "cancelledRate": 0.296,
+  "botHeads": 0,
+  "lightHeads": 6,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Build Kernel",
+    69
+   ],
+   [
+    "Build all core packages",
+    34
+   ],
+   [
+    "Build host tools",
+    6
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/kernel.yml",
+  "redBy": [
+   [
+    "Build Kernel",
+    41
+   ],
+   [
+    "Build all core packages",
+    13
+   ],
+   [
+    "Build PR Profile",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Build check target specified in labels",
+   "Build kernel and check patches for target specified in labels"
+  ],
+  "heavyWorkflows": [
+   "Build Kernel",
+   "Build all core packages"
+  ],
+  "allPushesP50": 76.28333333333333
+ },
+ "main": {
+  "heads": 66,
+  "p50": 157.68333333333334,
+  "p90": 441.3333333333333,
+  "redRate": 0.12121212121212122,
+  "redBy": [
+   [
+    "Build Kernel",
+    6
+   ],
+   [
+    "Build all core packages",
+    2
+   ],
+   [
+    "Build and Push prebuilt tools container",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.23529411764705882,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 8,
+  "spanMin": 104.43333333333334,
+  "jobMinutes": 45.25,
+  "billedMinutes": 51,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 1257,
+  "queueP90Sec": 3310,
+  "setupShare": 0.08234597156398105,
+  "setupMinPerJob": 0.45,
+  "critical": {
+   "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+   "minutes": 26.033333333333335,
+   "shareOfSpan": 0.17839195979899497
+  },
+  "longest": {
+   "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+   "minutes": 26.033333333333335
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    63
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/kernel.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+    "runs": 2
+   },
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (qualcommax, ipq50xx) / Build qualcommax/ipq50xx",
+    "runs": 1
+   },
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+    "minutes": 104.4,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 41.4,
+    "queueMin": 34,
+    "workMin": 25.8,
+    "setupMin": 2.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 104.4,
+  "blockedMinP50": 0,
+  "queueMinP50": 34,
+  "hiddenMinP50": 41.4,
+  "workMinP50": 25.8,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   "\"Build all affected Kernels\" calls openwrt/actions-shared-workflows/.github/workflows/kernel.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 45705379831,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 50.3,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.8,
+      "startMin": 3.9,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 2.8,
+      "queueMin": 1.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 2.8,
+      "startMin": 5.9,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 2.8,
+      "queueMin": 3.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 4.3,
+      "startMin": 5.8,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 4.3,
+      "queueMin": 1.5,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 5.9,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Set up build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 6.1,
+      "startMin": 9,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 6.1,
+      "queueMin": 3,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Check packages for mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.3,
+      "startMin": 9.9,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 9.3,
+      "queueMin": 0.6,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.3,
+      "startMin": 9.9,
+      "endMin": 50.3,
+      "blockedMin": 0,
+      "hiddenMin": 9.3,
+      "queueMin": 0.6,
+      "workMin": 40.4,
+      "setupMin": 2.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45693639457,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 104.4,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (qualcommax, ipq50xx) / Build qualcommax/ipq50xx"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.3,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.3,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.5,
+      "startMin": 17.6,
+      "endMin": 17.9,
+      "blockedMin": 0,
+      "hiddenMin": 9.5,
+      "queueMin": 8.1,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.5,
+      "startMin": 17.5,
+      "endMin": 17.7,
+      "blockedMin": 0,
+      "hiddenMin": 9.5,
+      "queueMin": 8,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (qualcommax, ipq50xx) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 17.9,
+      "startMin": 23.1,
+      "endMin": 23.1,
+      "blockedMin": 0,
+      "hiddenMin": 17.9,
+      "queueMin": 5.2,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (qualcommax, ipq50xx) / Set up build qualcommax/ipq50xx",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 17.9,
+      "startMin": 25.3,
+      "endMin": 25.5,
+      "blockedMin": 0,
+      "hiddenMin": 17.9,
+      "queueMin": 7.4,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (qualcommax, ipq50xx) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 23.1,
+      "startMin": 27.1,
+      "endMin": 29.5,
+      "blockedMin": 0,
+      "hiddenMin": 23.1,
+      "queueMin": 4,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (qualcommax, ipq50xx) / Build qualcommax/ipq50xx",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.5,
+      "startMin": 80.2,
+      "endMin": 104.4,
+      "blockedMin": 0,
+      "hiddenMin": 25.5,
+      "queueMin": 54.8,
+      "workMin": 24.2,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (qualcommax, ipq50xx) / Check packages for qualcommax/ipq50xx",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25.5,
+      "startMin": 80.5,
+      "endMin": 81.6,
+      "blockedMin": 0,
+      "hiddenMin": 25.5,
+      "queueMin": 55.1,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45690928432,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 102.6,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.5,
+      "endMin": 22.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.5,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 22.8,
+      "startMin": 28.6,
+      "endMin": 29.2,
+      "blockedMin": 0,
+      "hiddenMin": 22.8,
+      "queueMin": 5.8,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 22.8,
+      "startMin": 28.3,
+      "endMin": 28.5,
+      "blockedMin": 0,
+      "hiddenMin": 22.8,
+      "queueMin": 5.5,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 34.7,
+      "endMin": 34.7,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 5.5,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Set up build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 38.4,
+      "endMin": 38.5,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 9.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Set up build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 38,
+      "endMin": 38.2,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 8.8,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Set up build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 37.6,
+      "endMin": 37.8,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 8.4,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Set up build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 37.8,
+      "endMin": 37.9,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 8.6,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Set up build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 41.2,
+      "endMin": 41.4,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 12,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Set up build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 29.2,
+      "startMin": 39.2,
+      "endMin": 39.3,
+      "blockedMin": 0,
+      "hiddenMin": 29.2,
+      "queueMin": 10,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (realtek, rtl838x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 34.7,
+      "startMin": 40.5,
+      "endMin": 43.7,
+      "blockedMin": 0,
+      "hiddenMin": 34.7,
+      "queueMin": 5.8,
+      "workMin": 3.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl838x) / Build realtek/rtl838x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 37.8,
+      "startMin": 92.2,
+      "endMin": 99.8,
+      "blockedMin": 0,
+      "hiddenMin": 37.8,
+      "queueMin": 54.4,
+      "workMin": 7.7,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x_nand) / Build realtek/rtl930x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 38,
+      "startMin": 93.2,
+      "endMin": 100.1,
+      "blockedMin": 0,
+      "hiddenMin": 38,
+      "queueMin": 55.3,
+      "workMin": 6.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x_nand) / Build realtek/rtl931x_nand",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 38.2,
+      "startMin": 93.7,
+      "endMin": 100,
+      "blockedMin": 0,
+      "hiddenMin": 38.2,
+      "queueMin": 55.5,
+      "workMin": 6.4,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl931x) / Build realtek/rtl931x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 38.5,
+      "startMin": 94.1,
+      "endMin": 100.6,
+      "blockedMin": 0,
+      "hiddenMin": 38.5,
+      "queueMin": 55.6,
+      "workMin": 6.5,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl930x) / Build realtek/rtl930x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 39.3,
+      "startMin": 95.9,
+      "endMin": 102.1,
+      "blockedMin": 0,
+      "hiddenMin": 39.3,
+      "queueMin": 56.6,
+      "workMin": 6.2,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (realtek, rtl839x) / Build realtek/rtl839x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 41.4,
+      "startMin": 96.4,
+      "endMin": 102.6,
+      "blockedMin": 0,
+      "hiddenMin": 41.4,
+      "queueMin": 55,
+      "workMin": 6.3,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45687274343,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 137.6,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt7621) / Build ramips/mt7621"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 21,
+      "endMin": 21.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 21,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 21.2,
+      "startMin": 30,
+      "endMin": 30.5,
+      "blockedMin": 0,
+      "hiddenMin": 21.2,
+      "queueMin": 8.9,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 21.2,
+      "startMin": 29.8,
+      "endMin": 30.2,
+      "blockedMin": 0,
+      "hiddenMin": 21.2,
+      "queueMin": 8.6,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, rt3883) / Set up build ramips/rt3883",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 58.5,
+      "endMin": 58.7,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 28.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt76x8) / Set up build ramips/mt76x8",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 58.5,
+      "endMin": 58.7,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 28.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, rt305x) / Set up build ramips/rt305x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 58.4,
+      "endMin": 58.6,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 27.9,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt7620) / Set up build ramips/mt7620",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 58,
+      "endMin": 58.2,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 27.5,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt7621) / Set up build ramips/mt7621",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 58.3,
+      "endMin": 58.5,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 27.8,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (ramips, mt7620) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 30.5,
+      "startMin": 48.8,
+      "endMin": 48.9,
+      "blockedMin": 0,
+      "hiddenMin": 30.5,
+      "queueMin": 18.4,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (ramips, mt7620) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 48.9,
+      "startMin": 56.9,
+      "endMin": 59.8,
+      "blockedMin": 0,
+      "hiddenMin": 48.9,
+      "queueMin": 8,
+      "workMin": 3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt7620) / Build ramips/mt7620",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 58.2,
+      "startMin": 111.3,
+      "endMin": 134.9,
+      "blockedMin": 0,
+      "hiddenMin": 58.2,
+      "queueMin": 53.1,
+      "workMin": 23.6,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt7621) / Build ramips/mt7621",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 58.5,
+      "startMin": 111.8,
+      "endMin": 137.6,
+      "blockedMin": 0,
+      "hiddenMin": 58.5,
+      "queueMin": 53.4,
+      "workMin": 25.8,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, rt305x) / Build ramips/rt305x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 58.6,
+      "startMin": 112.8,
+      "endMin": 134.2,
+      "blockedMin": 0,
+      "hiddenMin": 58.6,
+      "queueMin": 54.2,
+      "workMin": 21.4,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, mt76x8) / Build ramips/mt76x8",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 58.7,
+      "startMin": 113.9,
+      "endMin": 133.9,
+      "blockedMin": 0,
+      "hiddenMin": 58.7,
+      "queueMin": 55.2,
+      "workMin": 20.1,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (ramips, rt3883) / Build ramips/rt3883",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 58.7,
+      "startMin": 114.1,
+      "endMin": 136.1,
+      "blockedMin": 0,
+      "hiddenMin": 58.7,
+      "queueMin": 55.3,
+      "workMin": 22.1,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45677930121,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 182.2,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (cortina, cs752x) / Build cortina/cs752x"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 40,
+      "endMin": 40.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 40,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 40.2,
+      "startMin": 50.5,
+      "endMin": 50.9,
+      "blockedMin": 0,
+      "hiddenMin": 40.2,
+      "queueMin": 10.3,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 40.2,
+      "startMin": 70.3,
+      "endMin": 70.5,
+      "blockedMin": 0,
+      "hiddenMin": 40.2,
+      "queueMin": 30.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (cortina, cs752x) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 50.9,
+      "startMin": 80.4,
+      "endMin": 80.5,
+      "blockedMin": 0,
+      "hiddenMin": 50.9,
+      "queueMin": 29.5,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (cortina, cs752x) / Set up build cortina/cs752x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 70.5,
+      "startMin": 104.2,
+      "endMin": 104.5,
+      "blockedMin": 0,
+      "hiddenMin": 70.5,
+      "queueMin": 33.8,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (cortina, cs752x) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 80.5,
+      "startMin": 108,
+      "endMin": 110.8,
+      "blockedMin": 0,
+      "hiddenMin": 80.5,
+      "queueMin": 27.4,
+      "workMin": 2.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (cortina, cs752x) / Build cortina/cs752x",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 104.5,
+      "startMin": 137.8,
+      "endMin": 182.2,
+      "blockedMin": 0,
+      "hiddenMin": 104.5,
+      "queueMin": 33.3,
+      "workMin": 44.4,
+      "setupMin": 18.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45674886623,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 145.9,
+    "path": [
+     "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Set targets",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.2,
+      "startMin": 23.7,
+      "endMin": 24.2,
+      "blockedMin": 0,
+      "hiddenMin": 1.2,
+      "queueMin": 22.5,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 1.2,
+      "startMin": 24.8,
+      "endMin": 25,
+      "blockedMin": 0,
+      "hiddenMin": 1.2,
+      "queueMin": 23.7,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Set up build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 24.2,
+      "startMin": 34.8,
+      "endMin": 34.8,
+      "blockedMin": 0,
+      "hiddenMin": 24.2,
+      "queueMin": 10.6,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Set up build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 25,
+      "startMin": 85.7,
+      "endMin": 85.9,
+      "blockedMin": 0,
+      "hiddenMin": 25,
+      "queueMin": 60.7,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Check Kernel patches",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 34.8,
+      "startMin": 77.5,
+      "endMin": 80.3,
+      "blockedMin": 0,
+      "hiddenMin": 34.8,
+      "queueMin": 42.7,
+      "workMin": 2.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 85.9,
+      "startMin": 119.9,
+      "endMin": 145.9,
+      "blockedMin": 0,
+      "hiddenMin": 85.9,
+      "queueMin": 34,
+      "workMin": 26,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Check packages for mediatek/filogic",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 85.9,
+      "startMin": 119.9,
+      "endMin": 121.4,
+      "blockedMin": 0,
+      "hiddenMin": 85.9,
+      "queueMin": 34,
+      "workMin": 1.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/llm-review.yml",
+    "kind": "job"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/kernel.yml",
+   "pathFilters": ".github/workflows/kernel.yml",
+   "scheduled": ".github/workflows/coverity.yml",
+   "compilerCache": ".github/workflows/kernel.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "affected: .github/workflows/llm-review.yml hints at it, in a form the scorer doesn't check (job)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    60
+   ],
+   [
+    "Makefile",
+    23
+   ],
+   [
+    "Shell",
+    8
+   ],
+   [
+    "ucode",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    63
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 10950
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Build all affected Kernels / Determine Changed Files / Determine Changed Files",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.5,
+     "workMin": 0.2,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Build all affected Kernels / Set targets",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.1,
+     "workMin": 0.4,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Build all affected Kernels / Determine Changed Packages / Determine Changed Packages",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.2,
+     "workMin": 0.2,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Set up build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.5,
+     "workMin": 0.1,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Build all affected Kernels / Check Kernel patches (mediatek, filogic) / Check Kernel patches",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Set up build mediatek/filogic",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3,
+     "workMin": 0.3,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Check packages for mediatek/filogic",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.6,
+     "workMin": 0.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.6,
+     "workMin": 40.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic"
+   ],
+   "pathMinP50": 104.4,
+   "unknown": [
+    "\"Build all affected Kernels\" calls openwrt/actions-shared-workflows/.github/workflows/kernel.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Build all affected Kernels / Build Kernel with external toolchain (mediatek, filogic) / Build mediatek/filogic\" runs 26 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 4.0× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 3310 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 121,
+ "read": {
+  "calls": 121,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

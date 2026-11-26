@@ -1,0 +1,1567 @@
+{
+ "repo": "prometheus/alertmanager",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 13.4,
+  "stars": 8708,
+  "forks": 2517,
+  "languages": [
+   [
+    "Go",
+    88
+   ],
+   [
+    "Elm",
+    8
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "Go Template",
+    1
+   ]
+  ],
+  "linesOfCode": 103396,
+  "files": 785,
+  "sourceFiles": 463,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 53630,
+   "tests": 47892,
+   "integration": 941,
+   "support": 934
+  },
+  "testShare": 0.48131895197987545,
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 9,
+  "commitsPerWeekYear": 13,
+  "pace": 0.7,
+  "activeAuthors28d": 11,
+  "prsOpenedPerWeek": 14.4,
+  "prsMergedPerWeek": 7.7,
+  "botShareOfMergedPrs": 12.5,
+  "openToMergeHours": {
+   "p50": 96,
+   "p90": 861.4,
+   "n": 7
+  },
+  "prRunsPerDay": 10,
+  "runsPerMergedPr": 9.1
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 73,
+  "runsInPeriod": 73,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "small",
+ "headsPerWeek": 33,
+ "score": 93,
+ "grade": "A",
+ "band": "excellent",
+ "parts": {
+  "speed": 92,
+  "reliability": 100,
+  "efficiency": 91
+ },
+ "detail": {
+  "speed": {
+   "wait": 88,
+   "forSize": 96,
+   "tail": 90
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 76,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 67,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 44.9,
+  "prBilledMinutesPerDay": 58.9,
+  "jobMinutesPerMergedPr": 41,
+  "prVcpuMinutesPerDay": 179.7,
+  "vcpuMinutesPerMergedPr": 164.1,
+  "expectedVcpuMinutesPerMergedPr": 626.9,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 156.7,
+  "expectedWait": 10.3,
+  "workflowsOnPrs": 4
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 34,
+  "ranHeads": 24,
+  "timed": 21,
+  "p50": 5.466666666666667,
+  "p75": 5.783333333333333,
+  "p90": 7.9,
+  "redRate": 0.16666666666666666,
+  "rerunRate": 0.08333333333333333,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 1,
+  "lightHeads": 0,
+  "neverRan": 2,
+  "botPushes": 1,
+  "bots": [
+   [
+    "dependabot[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    21
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 5.466666666666667
+ },
+ "main": {
+  "heads": 7,
+  "p50": 0.5666666666666667,
+  "p90": 0.9833333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.02127659574468085,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 5.45,
+  "jobMinutes": 13.033333333333333,
+  "billedMinutes": 16,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.0783289817232376,
+  "setupMinPerJob": 0.2033333333333333,
+  "critical": {
+   "name": "Test",
+   "minutes": 3.1,
+   "shareOfSpan": 0.563953488372093
+  },
+  "longest": {
+   "name": "Test",
+   "minutes": 3.1
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 3,
+  "edges": 2,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Test",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Test alertmanager frontend",
+    "minutes": 2.3,
+    "share": 0.43,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 2.3,
+    "setupMin": 0.2
+   },
+   {
+    "name": "Test",
+    "minutes": 3.1,
+    "share": 0.57,
+    "blockedMin": 2.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 3.1,
+    "setupMin": 0.6
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 5.5,
+  "blockedMinP50": 2.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 5.4,
+  "setupInPathMinP50": 0.6,
+  "topBlockers": [
+   {
+    "name": "Test alertmanager frontend",
+    "runs": 6,
+    "heldJobs": 4,
+    "jobs": 5,
+    "tookMin": 2.3,
+    "heldJobMin": 9.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45555218176,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.5,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 5.5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 4.6,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 5.1,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.4,
+      "createdMin": 2.4,
+      "startMin": 2.4,
+      "endMin": 5,
+      "blockedMin": 2.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45481157507,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.7,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 2.5,
+      "endMin": 5.1,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 2.5,
+      "endMin": 5.1,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 2.5,
+      "endMin": 5.7,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.5,
+      "createdMin": 2.5,
+      "startMin": 2.5,
+      "endMin": 5,
+      "blockedMin": 2.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45476615731,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.4,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 5.2,
+      "endMin": 7.7,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 5.2,
+      "endMin": 8.4,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 5.2,
+      "endMin": 7.9,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 5.2,
+      "createdMin": 5.2,
+      "startMin": 5.2,
+      "endMin": 8,
+      "blockedMin": 5.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45475407779,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.9,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.9,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.6,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4,
+      "blockedMin": 2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45471264314,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.9,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 7.9,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 2.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 4.6,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 5,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.2,
+      "createdMin": 2.2,
+      "startMin": 2.2,
+      "endMin": 4.9,
+      "blockedMin": 2.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45462300609,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.5,
+    "path": [
+     "Test alertmanager frontend",
+     "Test"
+    ],
+    "topBlocker": "Test alertmanager frontend",
+    "jobs": [
+     {
+      "name": "Test alertmanager frontend",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 5.5,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (0)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 4.6,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (1)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 5.1,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build Alertmanager for common architectures (2)",
+      "needs": [
+       "test_frontend"
+      ],
+      "readyMin": 2.3,
+      "createdMin": 2.3,
+      "startMin": 2.4,
+      "endMin": 5,
+      "blockedMin": 2.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 27,
+  "over10s": 2,
+  "top": [
+   {
+    "file": "github.com/prometheus/alertmanager/test/with_api_v2/acceptance",
+    "sec": 39.413,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/app",
+    "sec": 11.359,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/dispatch",
+    "sec": 8.062,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/notify/email",
+    "sec": 5.238,
+    "job": "Test"
+   },
+   {
+    "file": "github.com/prometheus/alertmanager/test/cli/acceptance",
+    "sec": 3.411,
+    "job": "Test"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/zizmor.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/ui-ci.yml",
+   "pathFilters": ".github/workflows/govulncheck.yml",
+   "scheduled": ".github/workflows/govulncheck.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/zizmor.yml",
+   "depBotsBatched": ".github/dependabot.yml"
+  },
+  "unknown": [
+   "affected: .github/workflows/zizmor.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Go",
+    88
+   ],
+   [
+    "Elm",
+    8
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "Go Template",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "go test"
+  ],
+  "lintFormat": [
+   "Biome",
+   "golangci-lint"
+  ],
+  "libraries": [
+   {
+    "name": "vite",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "vite-plugin-compression2",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "buf.build/go/protovalidate",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "connectrpc.com/connect",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "connectrpc.com/cors",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "connectrpc.com/grpchealth",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "connectrpc.com/grpcreflect",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/alecthomas/kingpin/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/alecthomas/units",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/config",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/credentials",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/service/sns",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/service/sts",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/smithy-go",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/cenkalti/backoff/v5",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/cespare/xxhash/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/coreos/go-systemd/v22",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/emersion/go-smtp",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/prometheus/alertmanager",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "github.com/prometheus/prometheus/internal/tools",
+     "path": "internal/tools/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "elm-ui",
+     "path": "ui/app/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "alertmanager",
+     "path": "ui/mantine-ui/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 4,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 4,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "alertmanager",
+     "dir": "ui/mantine-ui",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "elm-ui",
+     "dir": "ui/app",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/prometheus/alertmanager",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "github.com/prometheus/prometheus/internal/tools",
+     "dir": "internal/tools",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "github.com/prometheus/alertmanager"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 0,
+    "filesRead": 2,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 14,
+    "edges": 3,
+    "cached": 0,
+    "trackedFiles": 785
+   },
+   "nodes": [
+    {
+     "id": "alertmanager#build",
+     "pkg": "alertmanager",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#check",
+     "pkg": "alertmanager",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#check:write",
+     "pkg": "alertmanager",
+     "name": "check:write",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#dev",
+     "pkg": "alertmanager",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#format",
+     "pkg": "alertmanager",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#format:write",
+     "pkg": "alertmanager",
+     "name": "format:write",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#generate",
+     "pkg": "alertmanager",
+     "name": "generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#lint",
+     "pkg": "alertmanager",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#lint:fix",
+     "pkg": "alertmanager",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#test",
+     "pkg": "alertmanager",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "alertmanager#typecheck",
+     "pkg": "alertmanager",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#vitest",
+     "pkg": "alertmanager",
+     "name": "vitest",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "alertmanager#vitest:watch",
+     "pkg": "alertmanager",
+     "name": "vitest:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "elm-ui#build",
+     "pkg": "elm-ui",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "alertmanager#test",
+     "to": "alertmanager#check",
+     "how": "calls"
+    },
+    {
+     "from": "alertmanager#test",
+     "to": "alertmanager#vitest",
+     "how": "calls"
+    },
+    {
+     "from": "alertmanager#test",
+     "to": "alertmanager#build",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "alertmanager#test",
+    "alertmanager#check"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 2,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Test alertmanager frontend",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test",
+     "needs": [
+      "test_frontend"
+     ],
+     "onPath": true,
+     "blockedMin": 2.4,
+     "queueMin": 0,
+     "workMin": 3.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build Alertmanager for common architectures (1)",
+     "needs": [
+      "test_frontend"
+     ],
+     "onPath": false,
+     "blockedMin": 2.4,
+     "queueMin": 0,
+     "workMin": 2.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build Alertmanager for common architectures (0)",
+     "needs": [
+      "test_frontend"
+     ],
+     "onPath": false,
+     "blockedMin": 2.4,
+     "queueMin": 0,
+     "workMin": 2.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build Alertmanager for common architectures (2)",
+     "needs": [
+      "test_frontend"
+     ],
+     "onPath": false,
+     "blockedMin": 2.4,
+     "queueMin": 0,
+     "workMin": 2.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Test",
+     "to": "test_frontend"
+    },
+    {
+     "from": "Build Alertmanager for common architectures (1)",
+     "to": "test_frontend"
+    },
+    {
+     "from": "Build Alertmanager for common architectures (0)",
+     "to": "test_frontend"
+    },
+    {
+     "from": "Build Alertmanager for common architectures (2)",
+     "to": "test_frontend"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Test alertmanager frontend",
+     "numbers": {
+      "heldJobs": 4,
+      "jobs": 5,
+      "heldJobMin": 9.3,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "Test alertmanager frontend",
+    "Test"
+   ],
+   "pathMinP50": 5.5,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 2,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "2 test files take over 10 s; the slowest, github.com/prometheus/alertmanager/test/with_api_v2/acceptance, takes 39 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"Test alertmanager frontend\" holds up 4 of 5 jobs, 9.3 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Go it applies the principles, without a Go-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 53,
+ "read": {
+  "calls": 53,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

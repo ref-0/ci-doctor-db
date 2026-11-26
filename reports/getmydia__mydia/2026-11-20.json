@@ -1,0 +1,2442 @@
+{
+ "repo": "getmydia/mydia",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 1,
+  "stars": 809,
+  "forks": 21,
+  "languages": [
+   [
+    "Elixir",
+    58
+   ],
+   [
+    "Dart",
+    32
+   ],
+   [
+    "Rust",
+    5
+   ],
+   [
+    "HTML",
+    1
+   ]
+  ],
+  "linesOfCode": 1315645,
+  "files": 6926,
+  "sourceFiles": 5648,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 572591,
+   "tests": 556785,
+   "integration": 167806,
+   "support": 18463
+  },
+  "testShare": 0.5647829276772864,
+  "packages": {
+   "npm": 4,
+   "cargo": 21,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 195.5,
+  "pace": 2.2,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 53,
+  "prsMergedPerWeek": 52,
+  "botShareOfMergedPrs": 23.1,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 2.6,
+   "n": 40
+  },
+  "prRunsPerDay": 178.4,
+  "runsPerMergedPr": 24
+ },
+ "window": {
+  "days": 5.6,
+  "runs": 1000,
+  "runsInPeriod": 1181,
+  "truncated": true,
+  "mainDays": 6.9
+ },
+ "size": "large",
+ "headsPerWeek": 135,
+ "score": 49,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 55,
+  "reliability": 18,
+  "efficiency": 65
+ },
+ "detail": {
+  "speed": {
+   "wait": 50,
+   "forSize": 63,
+   "tail": 48
+  },
+  "reliability": {
+   "flakes": 0,
+   "mainRed": 43
+  },
+  "efficiency": {
+   "minutesPerPr": 93,
+   "runsPerPr": 37,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1553,
+  "prBilledMinutesPerDay": 2050.8,
+  "jobMinutesPerMergedPr": 209.1,
+  "expectedMinutesPerMergedPr": 362.8,
+  "expectedWait": 19.7,
+  "workflowsOnPrs": 14
+ },
+ "wait": {
+  "heads": 108,
+  "timed": 54,
+  "p50": 17.75,
+  "p75": 22.366666666666667,
+  "p90": 31.15,
+  "redRate": 0.3055555555555556,
+  "rerunRate": 0.18518518518518517,
+  "passedOnRerunRate": 0.12962962962962962,
+  "cancelledRate": 0.24074074074074073,
+  "botHeads": 7,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    "CI / Player Desktop",
+    25
+   ],
+   [
+    "CI",
+    17
+   ],
+   [
+    "CI / Nix",
+    7
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    21
+   ],
+   [
+    "CI / Player E2E",
+    8
+   ],
+   [
+    "CI / Player Desktop",
+    7
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 17.75
+ },
+ "main": {
+  "heads": 44,
+  "p50": 21.016666666666666,
+  "p90": 29.166666666666668,
+  "redRate": 0.25,
+  "redBy": [
+   [
+    "CI",
+    7
+   ],
+   [
+    "CI / Player E2E",
+    4
+   ],
+   [
+    "CI / Docker",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0.09384615384615384,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 10,
+  "spanMin": 12.383333333333333,
+  "jobMinutes": 1.0833333333333335,
+  "billedMinutes": 10,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 28,
+  "queueP90Sec": 546,
+  "setupShare": 0.1856010568031704,
+  "critical": {
+   "name": "Build / Windows",
+   "minutes": 14.716666666666667,
+   "shareOfSpan": 0.6642174871418075
+  },
+  "longest": {
+   "name": "Build / Windows",
+   "minutes": 0.23333333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ],
+   [
+    "xcode-27",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci-player.yml"
+  ],
+  "jobs": 10,
+  "edges": 11,
+  "matrixJobs": 1,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "Build / Windows",
+    "runs": 2
+   },
+   {
+    "name": "Test / Player",
+    "runs": 1
+   },
+   {
+    "name": "Check / Web icons",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Check / Player paths",
+    "minutes": 0.9,
+    "share": 0.04,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.8,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "Build / Windows",
+    "minutes": 14.8,
+    "share": 0.96,
+    "blockedMin": 0.9,
+    "hiddenMin": 0,
+    "queueMin": 0.4,
+    "workMin": 14.7,
+    "setupMin": 3
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 12.4,
+  "blockedMinP50": 0.3,
+  "queueMinP50": 1.3,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.2,
+  "setupInPathMinP50": 0.1,
+  "topBlockers": [
+   {
+    "name": "Check / Player paths",
+    "runs": 6,
+    "heldJobs": 9,
+    "jobs": 10,
+    "tookMin": 0.3,
+    "heldJobMin": 2.7
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 2,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44697309498,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.9,
+    "path": [
+     "Check / Player paths",
+     "Build / Windows"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 11.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 11.1,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 13.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 12.8,
+      "setupMin": 1.9
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 2.6
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 14.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 14.7,
+      "setupMin": 3
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 14.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 13.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 7.3,
+      "setupMin": 3.5
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.7,
+      "setupMin": 1
+     }
+    ]
+   },
+   {
+    "id": 44650848377,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 31.5,
+    "path": [
+     "Check / Player paths",
+     "Test / Player"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.4,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 16.8,
+      "endMin": 30.2,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 8.4,
+      "workMin": 13.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 18.1,
+      "endMin": 18.2,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 9.6,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 17.5,
+      "endMin": 18.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 9.1,
+      "workMin": 0.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 16,
+      "endMin": 23.7,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 7.6,
+      "setupMin": 2.1
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 16,
+      "endMin": 26.1,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 10.1,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 10.2,
+      "endMin": 22.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 12,
+      "setupMin": 2.7
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 18.3,
+      "endMin": 22.9,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 9.9,
+      "workMin": 4.6,
+      "setupMin": 1
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 10,
+      "endMin": 28.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 18.3,
+      "setupMin": 2.3
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 18.7,
+      "endMin": 31.5,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 10.3,
+      "workMin": 12.8,
+      "setupMin": 1
+     }
+    ]
+   },
+   {
+    "id": 44650529590,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.4,
+    "path": [
+     "Check / Player paths",
+     "Check / Web icons"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 5.2,
+      "endMin": 5.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 4.9,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 11.9,
+      "endMin": 12,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 11.6,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.7,
+      "endMin": 0.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 5.3,
+      "endMin": 5.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 1.8,
+      "endMin": 2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 9.7,
+      "endMin": 9.8,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 9.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 12.4,
+      "endMin": 12.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 12.1,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 1,
+      "endMin": 1.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.9,
+      "endMin": 1.2,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44647257180,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.7,
+    "path": [
+     "Check / Player paths",
+     "Build / Windows"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 0.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 7,
+      "endMin": 11.5,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 6.2,
+      "workMin": 4.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 7.2,
+      "endMin": 20.7,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 6.3,
+      "workMin": 13.5,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 8.2,
+      "endMin": 14.9,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 7.4,
+      "workMin": 6.6,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 5.5,
+      "endMin": 14.1,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 4.6,
+      "workMin": 8.6,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 8.6,
+      "endMin": 8.7,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 7.7,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 8.8,
+      "endMin": 20.4,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 11.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 6.9,
+      "endMin": 7.2,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 6,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 7.6,
+      "endMin": 22.7,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 6.7,
+      "workMin": 15.1,
+      "setupMin": 3
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.9,
+      "createdMin": 0.9,
+      "startMin": 1.5,
+      "endMin": 19.6,
+      "blockedMin": 0.9,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 18.2,
+      "setupMin": 2.4
+     }
+    ]
+   },
+   {
+    "id": 44646972900,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.6,
+    "path": [
+     "Check / Player paths",
+     "Build / Linux"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.4,
+      "endMin": 1.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.3,
+      "endMin": 1.4,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.4,
+      "endMin": 1.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.4,
+      "endMin": 1.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.3,
+      "endMin": 1.4,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.4,
+      "endMin": 1.6,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.4,
+      "endMin": 1.5,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1,
+      "endMin": 1.3,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 1,
+      "createdMin": 1,
+      "startMin": 1.1,
+      "endMin": 1.3,
+      "blockedMin": 1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44644673538,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.6,
+    "path": [
+     "Check / Player paths",
+     "Build / Android"
+    ],
+    "topBlocker": "Check / Player paths",
+    "jobs": [
+     {
+      "name": "Check / Player paths",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0
+     },
+     {
+      "name": "Check / Web icons",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.5,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Android",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.6,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Test / Player",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Flatpak / Validate metadata",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / Linux",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build / Web",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.5,
+      "endMin": 0.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build / macOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.4,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build / Windows",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Flatpak / Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.5,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 35,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Elixir",
+    58
+   ],
+   [
+    "Dart",
+    32
+   ],
+   [
+    "Rust",
+    5
+   ],
+   [
+    "HTML",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv",
+    "Cargo",
+    "Bundler"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 4,
+   "cargo": 21,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "chrono",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "sqlx",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "anyhow",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tracing-subscriber",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "daisyui",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "tailwindcss",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "android_logger",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "argon2",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "async-graphql",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "getrandom",
+    "ecosystem": "cargo",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    54
+   ],
+   [
+    "xcode-27",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   "GEMINI.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "mydia-assets",
+     "path": "assets/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "mydia-docs",
+     "path": "docs/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "metadata-relay-assets",
+     "path": "metadata-relay/assets/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "cardigann-deny",
+     "path": "native/cardigann_guest/deny/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-media-names",
+     "path": "native/mydia_media_names/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia_p2p",
+     "path": "native/mydia_p2p/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia_p2p_core"
+     ]
+    },
+    {
+     "name": "mydia_p2p_core",
+     "path": "native/mydia_p2p_core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-plugin-macros",
+     "path": "native/mydia_plugin_macros/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-plugin-sdk",
+     "path": "native/mydia_plugin_sdk/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-plugin-macros"
+     ]
+    },
+    {
+     "name": "mydia_subsync",
+     "path": "native/mydia_subsync/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia_player_p2p",
+     "path": "player/rust/mydia_player_p2p/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-media-names",
+      "mydia_p2p_core",
+      "mydia_smb"
+     ]
+    },
+    {
+     "name": "mydia_smb",
+     "path": "player/rust/mydia_smb/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "assistant_openai",
+     "path": "plugins-extra/assistant_openai/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-plugin-sdk"
+     ]
+    },
+    {
+     "name": "plex",
+     "path": "plugins/plex/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-plugin-sdk"
+     ]
+    },
+    {
+     "name": "simkl_sync",
+     "path": "plugins/simkl_sync/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-plugin-sdk"
+     ]
+    },
+    {
+     "name": "webhook_notifier",
+     "path": "plugins/webhook_notifier/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-plugin-sdk"
+     ]
+    },
+    {
+     "name": "mydia-appcast",
+     "path": "scripts/appcast/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "server/Cargo.toml",
+     "path": "server/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-api",
+     "path": "server/crates/api/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-auth",
+      "mydia-db",
+      "mydia-library",
+      "mydia-streaming"
+     ]
+    },
+    {
+     "name": "mydia-auth",
+     "path": "server/crates/auth/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-config",
+     "path": "server/crates/config/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-db"
+     ]
+    },
+    {
+     "name": "mydia-db",
+     "path": "server/crates/db/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "mydia-library",
+     "path": "server/crates/library/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-db",
+      "mydia-media-names"
+     ]
+    },
+    {
+     "name": "mydia-server",
+     "path": "server/crates/server/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "mydia-api",
+      "mydia-auth",
+      "mydia-config",
+      "mydia-db",
+      "mydia-library",
+      "mydia-streaming"
+     ]
+    },
+    {
+     "name": "mydia-streaming",
+     "path": "server/crates/streaming/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "site",
+     "path": "site/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 26,
+   "edges": 22,
+   "cycles": [],
+   "maxDepth": 3,
+   "topFanIn": [
+    {
+     "name": "mydia-db",
+     "ecosystem": "cargo",
+     "dependents": 4
+    },
+    {
+     "name": "mydia-plugin-sdk",
+     "ecosystem": "cargo",
+     "dependents": 4
+    },
+    {
+     "name": "mydia_p2p_core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "mydia-auth",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "mydia-library",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 26,
+    "edges": 22
+   },
+   "nodes": [
+    {
+     "id": "mydia-db",
+     "dir": "server/crates/db",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "mydia-plugin-sdk",
+     "dir": "native/mydia_plugin_sdk",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "mydia_p2p_core",
+     "dir": "native/mydia_p2p_core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "mydia-auth",
+     "dir": "server/crates/auth",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "mydia-library",
+     "dir": "server/crates/library",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 1
+    },
+    {
+     "id": "mydia-media-names",
+     "dir": "native/mydia_media_names",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "mydia-streaming",
+     "dir": "server/crates/streaming",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "mydia_smb",
+     "dir": "player/rust/mydia_smb",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "mydia-api",
+     "dir": "server/crates/api",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 2
+    },
+    {
+     "id": "mydia-config",
+     "dir": "server/crates/config",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "mydia-plugin-macros",
+     "dir": "native/mydia_plugin_macros",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "assistant_openai",
+     "dir": "plugins-extra/assistant_openai",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "cardigann-deny",
+     "dir": "native/cardigann_guest/deny",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "metadata-relay-assets",
+     "dir": "metadata-relay/assets",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mydia_p2p",
+     "dir": "native/mydia_p2p",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "mydia_player_p2p",
+     "dir": "player/rust/mydia_player_p2p",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "mydia_subsync",
+     "dir": "native/mydia_subsync",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mydia-appcast",
+     "dir": "scripts/appcast",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mydia-assets",
+     "dir": "assets",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mydia-docs",
+     "dir": "docs",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "mydia-server",
+     "dir": "server/crates/server",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 3
+    },
+    {
+     "id": "plex",
+     "dir": "plugins/plex",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "server/Cargo.toml",
+     "dir": "server",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "simkl_sync",
+     "dir": "plugins/simkl_sync",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "site",
+     "dir": "site",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "webhook_notifier",
+     "dir": "plugins/webhook_notifier",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    }
+   ],
+   "edges": [
+    {
+     "from": "mydia_p2p",
+     "to": "mydia_p2p_core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-plugin-sdk",
+     "to": "mydia-plugin-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia_player_p2p",
+     "to": "mydia-media-names",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia_player_p2p",
+     "to": "mydia_p2p_core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia_player_p2p",
+     "to": "mydia_smb",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "assistant_openai",
+     "to": "mydia-plugin-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "plex",
+     "to": "mydia-plugin-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "simkl_sync",
+     "to": "mydia-plugin-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "webhook_notifier",
+     "to": "mydia-plugin-sdk",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-api",
+     "to": "mydia-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-api",
+     "to": "mydia-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-api",
+     "to": "mydia-library",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-api",
+     "to": "mydia-streaming",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-config",
+     "to": "mydia-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-library",
+     "to": "mydia-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-library",
+     "to": "mydia-media-names",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-api",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-library",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mydia-server",
+     "to": "mydia-streaming",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "mydia-server",
+    "mydia-api",
+    "mydia-library",
+    "mydia-db"
+   ],
+   "topFanIn": [
+    {
+     "name": "mydia-db",
+     "ecosystem": "cargo",
+     "dependents": 4
+    },
+    {
+     "name": "mydia-plugin-sdk",
+     "ecosystem": "cargo",
+     "dependents": 4
+    },
+    {
+     "name": "mydia_p2p_core",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "mydia-auth",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "mydia-library",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 4,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 12,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6926
+   },
+   "nodes": [
+    {
+     "id": "mydia-appcast#generate",
+     "pkg": "mydia-appcast",
+     "name": "generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mydia-appcast#test",
+     "pkg": "mydia-appcast",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mydia-assets#deploy",
+     "pkg": "mydia-assets",
+     "name": "deploy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mydia-assets#populate-media",
+     "pkg": "mydia-assets",
+     "name": "populate-media",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mydia-assets#screenshots",
+     "pkg": "mydia-assets",
+     "name": "screenshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "mydia-assets#test:unit",
+     "pkg": "mydia-assets",
+     "name": "test:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#astro",
+     "pkg": "site",
+     "name": "astro",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#build",
+     "pkg": "site",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#check-links",
+     "pkg": "site",
+     "name": "check-links",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#dev",
+     "pkg": "site",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#preview",
+     "pkg": "site",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "site#test",
+     "pkg": "site",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "mydia-appcast#test"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 10,
+    "edges": 11,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Check / Player paths",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0
+    },
+    {
+     "id": "Test / Player",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.2,
+     "workMin": 11.1
+    },
+    {
+     "id": "Build / macOS",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.2,
+     "workMin": 12.8
+    },
+    {
+     "id": "Flatpak / Build",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 11.4
+    },
+    {
+     "id": "Build / Windows",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 14.7
+    },
+    {
+     "id": "Build / Android",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.3,
+     "workMin": 13.9
+    },
+    {
+     "id": "Flatpak / Validate metadata",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.3,
+     "workMin": 0.2
+    },
+    {
+     "id": "Check / Web icons",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.3,
+     "workMin": 0.1
+    },
+    {
+     "id": "Build / Linux",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.3,
+     "workMin": 7.3
+    },
+    {
+     "id": "Build / Web",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.2,
+     "workMin": 4.7
+    }
+   ],
+   "edges": [
+    {
+     "from": "Test / Player",
+     "to": "changes"
+    },
+    {
+     "from": "Build / macOS",
+     "to": "changes"
+    },
+    {
+     "from": "Flatpak / Build",
+     "to": "changes"
+    },
+    {
+     "from": "Build / Windows",
+     "to": "changes"
+    },
+    {
+     "from": "Build / Android",
+     "to": "changes"
+    },
+    {
+     "from": "Flatpak / Validate metadata",
+     "to": "changes"
+    },
+    {
+     "from": "Check / Web icons",
+     "to": "changes"
+    },
+    {
+     "from": "Build / Linux",
+     "to": "changes"
+    },
+    {
+     "from": "Build / Web",
+     "to": "changes"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Check / Player paths",
+    "Build / Windows"
+   ],
+   "pathMinP50": 12.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "13% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Jobs wait 546 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Elixir it applies the principles, without a Elixir-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 120,
+ "read": {
+  "calls": 120,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,1406 @@
+{
+ "repo": "dfed/swift-async-queue",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4,
+  "stars": 289,
+  "forks": 18,
+  "languages": [
+   [
+    "Swift",
+    98
+   ],
+   [
+    "Shell",
+    2
+   ]
+  ],
+  "linesOfCode": 9289,
+  "files": 37,
+  "sourceFiles": 18,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2844,
+   "tests": 6445,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.6938506751446994,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 5.8,
+  "commitsPerWeekYear": 0.8,
+  "pace": 7.2,
+  "activeAuthors28d": 2,
+  "prsOpenedPerWeek": 20,
+  "prsMergedPerWeek": 18,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 34.7,
+   "p90": 69.1,
+   "n": 18
+  },
+  "prRunsPerDay": 27.9,
+  "runsPerMergedPr": 10.9
+ },
+ "window": {
+  "days": 5.8,
+  "runs": 161,
+  "runsInPeriod": 161,
+  "truncated": false,
+  "mainDays": 2.9
+ },
+ "size": "medium",
+ "headsPerWeek": 101,
+ "score": 30,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 10,
+  "reliability": 73,
+  "efficiency": 46
+ },
+ "detail": {
+  "speed": {
+   "wait": 16,
+   "forSize": 0,
+   "tail": 15
+  },
+  "reliability": {
+   "flakes": 54,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 18,
+   "runsPerPr": 69,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 501.1,
+  "prBilledMinutesPerDay": 556.7,
+  "jobMinutesPerMergedPr": 194.9,
+  "expectedMinutesPerMergedPr": 70.8,
+  "expectedWait": 6.3,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 83,
+  "timed": 32,
+  "p50": 43.416666666666664,
+  "p75": 52.766666666666666,
+  "p90": 78.16666666666667,
+  "redRate": 0.0963855421686747,
+  "rerunRate": 0.08433734939759036,
+  "passedOnRerunRate": 0.060240963855421686,
+  "cancelledRate": 0.5301204819277109,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "lastToFinish": [
+   [
+    "CI",
+    30
+   ],
+   [
+    "CodeQL Advanced",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    7
+   ],
+   [
+    "CodeQL Advanced",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 43.416666666666664
+ },
+ "main": {
+  "heads": 3,
+  "p50": 20.716666666666665,
+  "p90": 62.483333333333334,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 116,
+  "jobMinutes": 42.91666666666667,
+  "billedMinutes": 49,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 518,
+  "queueP90Sec": 6229,
+  "setupShare": 0.17713083128726761,
+  "critical": {
+   "name": "Build Xcode Minimum iOS",
+   "minutes": 16.75,
+   "shareOfSpan": 0.1685344827586207
+  },
+  "longest": {
+   "name": "Build Xcode Minimum iOS",
+   "minutes": 16.75
+  },
+  "providers": [
+   [
+    "xcode-27",
+    32
+   ],
+   [
+    "GitHub-hosted",
+    28
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 9,
+  "edges": 1,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Build Xcode Minimum iOS",
+    "runs": 3
+   },
+   {
+    "name": "Build Xcode (iOS,watchOS)",
+    "runs": 1
+   },
+   {
+    "name": "Build Xcode (visionOS)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Copy Minimum iOS Simulator",
+    "minutes": 10.8,
+    "share": 0.17,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 7.8,
+    "workMin": 3.4,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Build Xcode Minimum iOS",
+    "minutes": 90.1,
+    "share": 0.83,
+    "blockedMin": 10.8,
+    "hiddenMin": 0,
+    "queueMin": 70.6,
+    "workMin": 16.8,
+    "setupMin": 14.5
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 1,
+  "pathMinP50": 116,
+  "blockedMinP50": 0,
+  "queueMinP50": 105.8,
+  "hiddenMinP50": 0,
+  "workMinP50": 13.9,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "Copy Minimum iOS Simulator",
+    "runs": 4,
+    "heldJobs": 1,
+    "jobs": 11,
+    "tookMin": 10.8,
+    "heldJobMin": 10.8
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44022497568,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 30.1,
+    "path": [
+     "Copy Minimum iOS Simulator",
+     "Build Xcode Minimum iOS"
+    ],
+    "topBlocker": "Copy Minimum iOS Simulator",
+    "jobs": [
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.5,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 1.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.7,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 0.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.1,
+      "endMin": 13.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.1,
+      "workMin": 8.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.7,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 7.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.9,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.7,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.9,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.9,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Thread Sanitizer on macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.6,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.6,
+      "workMin": 1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Copy Minimum iOS Simulator",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.6,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 3.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode Minimum iOS",
+      "needs": [
+       "minimum-ios-runtime"
+      ],
+      "readyMin": 5.1,
+      "createdMin": 5.1,
+      "startMin": 15.6,
+      "endMin": 30.1,
+      "blockedMin": 5.1,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 14.5,
+      "setupMin": 9.7
+     }
+    ]
+   },
+   {
+    "id": 43981585327,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 134.7,
+    "path": [
+     "Build Xcode (iOS,watchOS)"
+    ],
+    "topBlocker": "Copy Minimum iOS Simulator",
+    "jobs": [
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.2,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.2,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 57,
+      "endMin": 58.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 57,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Thread Sanitizer on macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 101.6,
+      "endMin": 103.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 101.6,
+      "workMin": 1.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Copy Minimum iOS Simulator",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.6,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.6,
+      "workMin": 3.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.9,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 103.5,
+      "endMin": 114.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 103.5,
+      "workMin": 10.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 116.5,
+      "endMin": 119.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 116.5,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.8,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.8,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 1.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 120.9,
+      "endMin": 134.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 120.9,
+      "workMin": 13.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Xcode Minimum iOS",
+      "needs": [
+       "minimum-ios-runtime"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.3,
+      "startMin": 124.2,
+      "endMin": 134.6,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 111.9,
+      "workMin": 10.5,
+      "setupMin": 7.1
+     }
+    ]
+   },
+   {
+    "id": 43981584431,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 119.7,
+    "path": [
+     "Build Xcode (visionOS)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 68.7,
+      "endMin": 75.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 68.7,
+      "workMin": 6.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 91.6,
+      "endMin": 92.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 91.6,
+      "workMin": 1.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 95.6,
+      "endMin": 116.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 95.6,
+      "workMin": 20.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 105.8,
+      "endMin": 119.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 105.8,
+      "workMin": 13.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.9,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.9,
+      "workMin": 0.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.1,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.1,
+      "workMin": 1.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 43981562399,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 112.6,
+    "path": [
+     "Swift Build Xcode"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.8,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.8,
+      "workMin": 1,
+      "setupMin": 0
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 73,
+      "endMin": 89.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 73,
+      "workMin": 16.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 76.5,
+      "endMin": 82.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 76.5,
+      "workMin": 6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 111.2,
+      "endMin": 112.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 111.2,
+      "workMin": 1.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 0.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 103.8,
+      "endMin": 111.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 103.8,
+      "workMin": 7.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.3,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 1.1,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 43981538092,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 160.4,
+    "path": [
+     "Copy Minimum iOS Simulator",
+     "Build Xcode Minimum iOS"
+    ],
+    "topBlocker": "Copy Minimum iOS Simulator",
+    "jobs": [
+     {
+      "name": "Thread Sanitizer on macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.4,
+      "endMin": 19.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.4,
+      "workMin": 1.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Copy Minimum iOS Simulator",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.8,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 60.4,
+      "endMin": 69,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 60.4,
+      "workMin": 8.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.5,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.5,
+      "workMin": 1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 91.6,
+      "endMin": 96.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 91.6,
+      "workMin": 4.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.5,
+      "endMin": 21.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.5,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.7,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.7,
+      "workMin": 1.2,
+      "setupMin": 0
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.2,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.2,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 95.2,
+      "endMin": 96.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 95.2,
+      "workMin": 1.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.9,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.9,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode Minimum iOS",
+      "needs": [
+       "minimum-ios-runtime"
+      ],
+      "readyMin": 10.8,
+      "createdMin": 10.8,
+      "startMin": 143.6,
+      "endMin": 160.4,
+      "blockedMin": 10.8,
+      "hiddenMin": 0,
+      "queueMin": 132.8,
+      "workMin": 16.8,
+      "setupMin": 14.5
+     }
+    ]
+   },
+   {
+    "id": 43981487258,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 116,
+    "path": [
+     "Copy Minimum iOS Simulator",
+     "Build Xcode Minimum iOS"
+    ],
+    "topBlocker": "Copy Minimum iOS Simulator",
+    "jobs": [
+     {
+      "name": "Lint Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Build and Test on Linux",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build Xcode (macOS,tvOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.8,
+      "endMin": 23.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.8,
+      "workMin": 3.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Copy Minimum iOS Simulator",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.2,
+      "endMin": 25.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.2,
+      "workMin": 3.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode (visionOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 24,
+      "endMin": 32.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 24,
+      "workMin": 8.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Build and Test on Latest Swift",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8,
+      "workMin": 1,
+      "setupMin": 0
+     },
+     {
+      "name": "Check Markdown links",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Build Xcode (iOS,watchOS)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 62.3,
+      "endMin": 73.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 62.3,
+      "workMin": 11,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Thread Sanitizer on macOS",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 53.5,
+      "endMin": 54.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 53.5,
+      "workMin": 1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Swift Build Xcode",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 30,
+      "endMin": 31.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 30,
+      "workMin": 1.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build Xcode Minimum iOS",
+      "needs": [
+       "minimum-ios-runtime"
+      ],
+      "readyMin": 25.9,
+      "createdMin": 25.9,
+      "startMin": 96.5,
+      "endMin": 116,
+      "blockedMin": 25.9,
+      "hiddenMin": 0,
+      "queueMin": 70.6,
+      "workMin": 19.6,
+      "setupMin": 14.5
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 2,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Swift",
+    98
+   ],
+   [
+    "Shell",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "xcode-27",
+    32
+   ],
+   [
+    "GitHub-hosted",
+    28
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 37
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 9,
+    "edges": 1,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Build and Test on Linux",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.5,
+     "workMin": 1.5
+    },
+    {
+     "id": "Lint Swift",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.7,
+     "workMin": 0.8
+    },
+    {
+     "id": "Build Xcode (iOS,watchOS)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5.1,
+     "workMin": 8.7
+    },
+    {
+     "id": "Build Xcode (visionOS)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 7.9
+    },
+    {
+     "id": "Check Markdown links",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.9,
+     "workMin": 0.3
+    },
+    {
+     "id": "Swift Build Xcode",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5.7,
+     "workMin": 1.1
+    },
+    {
+     "id": "Build and Test on Latest Swift",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.4,
+     "workMin": 1.1
+    },
+    {
+     "id": "Build Xcode (macOS,tvOS)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 13.9,
+     "workMin": 2.6
+    },
+    {
+     "id": "Thread Sanitizer on macOS",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 10.6,
+     "workMin": 1
+    },
+    {
+     "id": "Copy Minimum iOS Simulator",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 1.6,
+     "workMin": 3.4
+    },
+    {
+     "id": "Build Xcode Minimum iOS",
+     "needs": [
+      "minimum-ios-runtime"
+     ],
+     "onPath": true,
+     "blockedMin": 5.1,
+     "queueMin": 10.5,
+     "workMin": 14.5
+    }
+   ],
+   "edges": [
+    {
+     "from": "Build Xcode Minimum iOS",
+     "to": "minimum-ios-runtime"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Copy Minimum iOS Simulator",
+    "Build Xcode Minimum iOS"
+   ],
+   "pathMinP50": 116,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Build Xcode Minimum iOS\" runs 17 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "6% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Jobs wait 6229 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Swift it applies the principles, without a Swift-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 36,
+ "read": {
+  "calls": 36,
+  "fromCache": 0
+ }
+}

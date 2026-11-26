@@ -1,0 +1,5983 @@
+{
+ "repo": "BerriAI/litellm",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3.3,
+  "stars": 63871,
+  "forks": 13552,
+  "languages": [
+   [
+    "Python",
+    82
+   ],
+   [
+    "TypeScript",
+    10
+   ],
+   [
+    "Rust",
+    7
+   ],
+   [
+    "HTML",
+    1
+   ]
+  ],
+  "linesOfCode": 6863626,
+  "files": 17661,
+  "sourceFiles": 14452,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2381489,
+   "tests": 3337848,
+   "integration": 1141328,
+   "support": 2961
+  },
+  "testShare": 0.6530275835781129,
+  "packages": {
+   "npm": 2,
+   "cargo": 95,
+   "go": 1,
+   "python": 5
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 573.5,
+  "pace": 1.1,
+  "activeAuthors28d": "≥54",
+  "prsOpenedPerWeek": 1655.7,
+  "prsMergedPerWeek": 1064.2,
+  "botShareOfMergedPrs": 17,
+  "openToMergeHours": {
+   "p50": 16.1,
+   "p90": 174.5,
+   "n": 83
+  },
+  "prRunsPerDay": 1956,
+  "runsPerMergedPr": 12.9
+ },
+ "window": {
+  "days": 0.1,
+  "runs": 978,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 0.3
+ },
+ "size": "large",
+ "headsPerWeek": 1274,
+ "score": 73,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 78,
+  "reliability": 58,
+  "efficiency": 73
+ },
+ "detail": {
+  "speed": {
+   "wait": 61,
+   "forSize": 100,
+   "tail": 77
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 62,
+   "setup": 0,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 75
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 16587.2,
+  "prBilledMinutesPerDay": 19784,
+  "jobMinutesPerMergedPr": 109.1,
+  "prVcpuMinutesPerDay": 83864.3,
+  "vcpuMinutesPerMergedPr": 551.6,
+  "expectedVcpuMinutesPerMergedPr": 2503,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 625.7,
+  "expectedWait": 26.2,
+  "workflowsOnPrs": 17
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "11 pushes were timed, under 20",
+   "Buildkite also ran on 3 of 3 sampled pushes, which the score doesn't read",
+   "41 reruns' first attempts weren't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": [
+    {
+     "sha": "f9553d3668959030adfd3cb609203410c3e4f02e",
+     "actionsMin": 14.2,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 1.5
+      }
+     ]
+    },
+    {
+     "sha": "b37ce5b91a3d33c558e81823d1980cafafd4ef7c",
+     "actionsMin": 13.2,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 1.6
+      }
+     ]
+    },
+    {
+     "sha": "b585f6af5abd3964cd6fa7ea4d0649ffb6754ca8",
+     "actionsMin": 13.2,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 1.6
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 91,
+  "ranHeads": 75,
+  "timed": 11,
+  "p50": 13.2,
+  "p75": 13.666666666666666,
+  "p90": 13.783333333333333,
+  "redRate": 0.24,
+  "rerunRate": 0.5733333333333334,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 41,
+  "cancelledRate": 0.12,
+  "botHeads": 7,
+  "lightHeads": 5,
+  "neverRan": 0,
+  "botPushes": 9,
+  "bots": [
+   [
+    "devin-ai-integration[bot]",
+    7
+   ],
+   [
+    "cursor[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "LiteLLM MCP Dependency Resolution",
+    8
+   ],
+   [
+    "lint",
+    1
+   ],
+   [
+    "Conventional PR Title",
+    1
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/test-mcp-dependency-resolution.yml",
+  "redBy": [
+   [
+    "unit",
+    12
+   ],
+   [
+    "Conventional PR Title",
+    3
+   ],
+   [
+    "LiteLLM Rust",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "LiteLLM MCP Dependency Resolution",
+   "unit"
+  ],
+  "allPushesP50": 12.716666666666667
+ },
+ "main": {
+  "heads": 34,
+  "p50": 13.666666666666666,
+  "p90": 15.433333333333334,
+  "redRate": 0.9411764705882353,
+  "redBy": [
+   [
+    "unit",
+    32
+   ]
+  ]
+ },
+ "botRunShare": 0.14835164835164835,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 13.166666666666666,
+  "jobMinutes": 130.58333333333331,
+  "billedMinutes": 138,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.5093690248565965,
+  "setupMinPerJob": 5.541666666666667,
+  "critical": {
+   "name": "core-distribution (3.14)",
+   "minutes": 12.583333333333334,
+   "shareOfSpan": 0.9960422163588392
+  },
+  "longest": {
+   "name": "core-distribution (3.14)",
+   "minutes": 12.583333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test-mcp-dependency-resolution.yml"
+  ],
+  "jobs": 2,
+  "edges": 0,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "core-distribution (3.14)",
+    "runs": 3
+   },
+   {
+    "name": "core-distribution (3.10)",
+    "runs": 1
+   },
+   {
+    "name": "core-distribution (3.13)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "core-distribution (3.10)",
+    "minutes": 13.2,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 13.1,
+    "setupMin": 3.5
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 13.2,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 13.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45591140125,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.8,
+    "path": [
+     "core-distribution (3.10)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 7.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.1,
+      "setupMin": 7.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.5,
+      "setupMin": 3.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.7,
+      "setupMin": 3.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.1,
+      "setupMin": 2.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 7.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.5,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 6.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 7.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.1,
+      "setupMin": 10,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45591097318,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.2,
+    "path": [
+     "core-distribution (3.14)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 8.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.7,
+      "setupMin": 3.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.2,
+      "setupMin": 3.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.3,
+      "setupMin": 3.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.4,
+      "setupMin": 7.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.7,
+      "setupMin": 9.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.5,
+      "setupMin": 7.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 7.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.4,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.2,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.1,
+      "setupMin": 7.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45590726653,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.3,
+    "path": [
+     "core-distribution (3.13)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 9.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.6,
+      "setupMin": 3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.8,
+      "setupMin": 7.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.2,
+      "setupMin": 8.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.3,
+      "setupMin": 3.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 2.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 3.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 7.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 8.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.3,
+      "setupMin": 2.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45590723598,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.2,
+    "path": [
+     "core-distribution (3.12)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 9.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 7.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 8.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.7,
+      "setupMin": 3.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.7,
+      "setupMin": 3.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.5,
+      "setupMin": 3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 13.1,
+      "setupMin": 4.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.3,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 8.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 8.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 3.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45590722068,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.4,
+    "path": [
+     "core-distribution (3.14)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 8.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.6,
+      "setupMin": 9.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 7.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 3.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 8.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.6,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 8.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 3.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 2.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.3,
+      "setupMin": 4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.2,
+      "setupMin": 8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 3.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45590721176,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.6,
+    "path": [
+     "core-distribution (3.14)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "resolve (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 8.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.1,
+      "setupMin": 8.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.1,
+      "setupMin": 8.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.7,
+      "setupMin": 7.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 6.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.3,
+      "setupMin": 3.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 3.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.2,
+      "setupMin": 2.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "resolve (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.4,
+      "setupMin": 8.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "core-distribution (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 12.6,
+      "setupMin": 3.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 42,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/check-schema-sync.yml",
+   "pathFilters": ".github/workflows/auto-close-duplicates.yml",
+   "affected": ".github/workflows/test-merge-smoke.yml",
+   "scheduled": ".github/workflows/auto-close-duplicates.yml",
+   "depCache": ".github/workflows/codspeed.yml",
+   "compilerCache": ".github/workflows/test-rust-db.yml",
+   "frozenInstall": ".github/workflows/codspeed.yml",
+   "shardsConfigured": ".github/workflows/test-integration.yml",
+   "timeouts": ".github/workflows/auto-close-duplicates.yml",
+   "testResults": ".github/workflows/test-integration.yml",
+   "depBotsBatched": ".github/dependabot.yaml"
+  },
+  "unknown": [
+   "Read the first 40 of 42 workflow files"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    82
+   ],
+   [
+    "TypeScript",
+    10
+   ],
+   [
+    "Rust",
+    7
+   ],
+   [
+    "HTML",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv",
+    "pip",
+    "Cargo",
+    "Go modules"
+   ],
+   "tools": [
+    "uv workspace",
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 95,
+   "go": 1,
+   "python": 5
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "Bun test",
+   "cargo nextest",
+   "cargo test",
+   "go test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Ruff",
+   "Pylint",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "rstest",
+    "ecosystem": "cargo",
+    "packages": 89
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 69
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 68
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 66
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 60
+   },
+   {
+    "name": "futures-util",
+    "ecosystem": "cargo",
+    "packages": 39
+   },
+   {
+    "name": "strum",
+    "ecosystem": "cargo",
+    "packages": 32
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 32
+   },
+   {
+    "name": "veil",
+    "ecosystem": "cargo",
+    "packages": 22
+   },
+   {
+    "name": "wiremock",
+    "ecosystem": "cargo",
+    "packages": 22
+   },
+   {
+    "name": "reqwest",
+    "ecosystem": "cargo",
+    "packages": 21
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 21
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 18
+   },
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 16
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 15
+   },
+   {
+    "name": "jiff",
+    "ecosystem": "cargo",
+    "packages": 13
+   },
+   {
+    "name": "serde_with",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "parking_lot",
+    "ecosystem": "cargo",
+    "packages": 9
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/BerriAI/terraform-provider-litellm",
+     "path": "litellm/deploy/terraform/provider/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "litellm-enterprise",
+     "path": "litellm/enterprise/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "litellm-proxy",
+     "path": "litellm/packaging/litellm-proxy/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "litellm-proxy-extras",
+     "path": "litellm/proxy-extras/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "litellm/rust/Cargo.toml",
+     "path": "litellm/rust/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-at-rest",
+     "path": "litellm/rust/crates/at-rest/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-auth-aws",
+     "path": "litellm/rust/crates/auth-aws/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-types",
+      "litellm-error",
+      "litellm-http",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-auth-azure",
+     "path": "litellm/rust/crates/auth-azure/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-types",
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-auth-gcp",
+     "path": "litellm/rust/crates/auth-gcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-auth-types",
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-redaction",
+      "litellm-secret-value",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-auth-store",
+     "path": "litellm/rust/crates/auth-store/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-db",
+      "litellm-db-testing",
+      "litellm-error",
+      "litellm-gateway-auth-core",
+      "litellm-python-compat",
+      "litellm-redis-store",
+      "litellm-repositories",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-auth-types",
+     "path": "litellm/rust/crates/auth-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-auth",
+     "path": "litellm/rust/crates/auth/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-auth-azure",
+      "litellm-auth-gcp",
+      "litellm-auth-types",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-cache-azure-blob",
+     "path": "litellm/rust/crates/cache-azure-blob/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-azure",
+      "litellm-auth-types",
+      "litellm-cache",
+      "litellm-cache-response",
+      "litellm-cache-testing",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-cache-disk",
+     "path": "litellm/rust/crates/cache-disk/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-cache-testing"
+     ]
+    },
+    {
+     "name": "litellm-cache-gcs",
+     "path": "litellm/rust/crates/cache-gcs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-gcp",
+      "litellm-auth-types",
+      "litellm-cache",
+      "litellm-cache-testing",
+      "litellm-error",
+      "litellm-http",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-cache-memory",
+     "path": "litellm/rust/crates/cache-memory/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-cache-testing"
+     ]
+    },
+    {
+     "name": "litellm-cache-qdrant-semantic",
+     "path": "litellm/rust/crates/cache-qdrant-semantic/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-cache-testing",
+      "litellm-error",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-cache-response",
+     "path": "litellm/rust/crates/cache-response/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-cache-gcs",
+      "litellm-cache-memory",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-cache-s3",
+     "path": "litellm/rust/crates/cache-s3/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-cache",
+      "litellm-cache-testing",
+      "litellm-error",
+      "litellm-http",
+      "litellm-s3"
+     ]
+    },
+    {
+     "name": "litellm-cache-testing",
+     "path": "litellm/rust/crates/cache-testing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache"
+     ]
+    },
+    {
+     "name": "litellm-cache",
+     "path": "litellm/rust/crates/cache/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-budgets",
+     "path": "litellm/rust/crates/callbacks-budgets/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks",
+      "litellm-circuit-breaker",
+      "litellm-coroutine",
+      "litellm-python-compat",
+      "litellm-redis-client",
+      "litellm-redis-store",
+      "litellm-redis-testing",
+      "litellm-secret-value",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-legacy-python",
+     "path": "litellm/rust/crates/callbacks-legacy-python/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cost",
+      "litellm-error",
+      "litellm-host",
+      "litellm-host-python",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-model-capacity",
+     "path": "litellm/rust/crates/callbacks-model-capacity/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks",
+      "litellm-callbacks-parallel-request-limiter",
+      "litellm-error",
+      "litellm-python-compat",
+      "litellm-redis-client",
+      "litellm-redis-store"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-parallel-request-limiter",
+     "path": "litellm/rust/crates/callbacks-parallel-request-limiter/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks",
+      "litellm-error",
+      "litellm-host",
+      "litellm-python-compat",
+      "litellm-redis-client",
+      "litellm-redis-store"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-python",
+     "path": "litellm/rust/crates/callbacks-python/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks",
+      "litellm-coroutine",
+      "litellm-host-python",
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-s3-log",
+     "path": "litellm/rust/crates/callbacks-s3-log/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-callbacks",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-s3",
+      "litellm-secret-value",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-spend-log",
+     "path": "litellm/rust/crates/callbacks-spend-log/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-python-compat",
+      "litellm-redaction"
+     ]
+    },
+    {
+     "name": "litellm-callbacks-spend-logger",
+     "path": "litellm/rust/crates/callbacks-spend-logger/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks",
+      "litellm-callbacks-budgets",
+      "litellm-callbacks-spend-log",
+      "litellm-coroutine",
+      "litellm-db",
+      "litellm-python-compat",
+      "litellm-redaction",
+      "litellm-redis-client",
+      "litellm-redis-store",
+      "litellm-redis-testing",
+      "litellm-repositories",
+      "litellm-secret-value",
+      "litellm-spend-log-writer"
+     ]
+    },
+    {
+     "name": "litellm-callbacks",
+     "path": "litellm/rust/crates/callbacks/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-coroutine",
+      "litellm-host"
+     ]
+    },
+    {
+     "name": "litellm-circuit-breaker",
+     "path": "litellm/rust/crates/circuit-breaker/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-config-load",
+     "path": "litellm/rust/crates/config-load/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-config",
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-yaml"
+     ]
+    },
+    {
+     "name": "litellm-config",
+     "path": "litellm/rust/crates/config/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-env",
+      "litellm-python-compat",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-starlette",
+      "litellm-yaml"
+     ]
+    },
+    {
+     "name": "litellm-core-utils",
+     "path": "litellm/rust/crates/core-utils/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-llms-types",
+      "litellm-redaction"
+     ]
+    },
+    {
+     "name": "litellm-coroutine",
+     "path": "litellm/rust/crates/coroutine/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-cost",
+     "path": "litellm/rust/crates/cost/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-fnmatch"
+     ]
+    },
+    {
+     "name": "litellm-db-resolve",
+     "path": "litellm/rust/crates/db-resolve/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-config",
+      "litellm-db",
+      "litellm-env",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-db-testing",
+     "path": "litellm/rust/crates/db-testing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-db",
+     "path": "litellm/rust/crates/db/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-circuit-breaker",
+      "litellm-error",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-env",
+     "path": "litellm/rust/crates/env/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-error",
+     "path": "litellm/rust/crates/error/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-fnmatch",
+     "path": "litellm/rust/crates/fnmatch/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-framer",
+     "path": "litellm/rust/crates/framer/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-gateway-auth-core",
+     "path": "litellm/rust/crates/gateway-auth-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-config",
+      "litellm-fnmatch",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-starlette"
+     ]
+    },
+    {
+     "name": "litellm-gateway-auth",
+     "path": "litellm/rust/crates/gateway-auth/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-gateway-auth-core",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-gateway-forward",
+     "path": "litellm/rust/crates/gateway-forward/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-gateway-inference",
+     "path": "litellm/rust/crates/gateway-inference/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-cache",
+      "litellm-cache-memory",
+      "litellm-cache-response",
+      "litellm-callbacks",
+      "litellm-config",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-framer",
+      "litellm-gateway",
+      "litellm-gateway-auth",
+      "litellm-gateway-auth-core",
+      "litellm-host",
+      "litellm-host-http",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-messages",
+      "litellm-inference-ocr",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-python-compat",
+      "litellm-redis-client",
+      "litellm-redis-store",
+      "litellm-redis-testing",
+      "litellm-router-core",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-gateway",
+     "path": "litellm/rust/crates/gateway/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-at-rest",
+      "litellm-auth-store",
+      "litellm-callbacks",
+      "litellm-callbacks-budgets",
+      "litellm-callbacks-model-capacity",
+      "litellm-callbacks-parallel-request-limiter",
+      "litellm-callbacks-spend-log",
+      "litellm-callbacks-spend-logger",
+      "litellm-circuit-breaker",
+      "litellm-config",
+      "litellm-config-load",
+      "litellm-core-utils",
+      "litellm-coroutine",
+      "litellm-db",
+      "litellm-db-resolve",
+      "litellm-db-testing",
+      "litellm-env",
+      "litellm-error",
+      "litellm-gateway-auth",
+      "litellm-gateway-auth-core",
+      "litellm-gateway-forward",
+      "litellm-gateway-inference",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-messages",
+      "litellm-license",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-model-catalog",
+      "litellm-python-compat",
+      "litellm-redaction",
+      "litellm-redis-client",
+      "litellm-redis-connect",
+      "litellm-redis-resolve",
+      "litellm-redis-store",
+      "litellm-redis-testing",
+      "litellm-redis-types",
+      "litellm-repositories",
+      "litellm-router-core",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-spend-log-writer",
+      "litellm-token-counter",
+      "litellm-tracing",
+      "litellm-yaml"
+     ]
+    },
+    {
+     "name": "litellm-host-http",
+     "path": "litellm/rust/crates/host-http/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-host",
+      "litellm-host-native"
+     ]
+    },
+    {
+     "name": "litellm-host-native",
+     "path": "litellm/rust/crates/host-native/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-host"
+     ]
+    },
+    {
+     "name": "litellm-host-python",
+     "path": "litellm/rust/crates/host-python/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-coroutine",
+      "litellm-error",
+      "litellm-host"
+     ]
+    },
+    {
+     "name": "litellm-host",
+     "path": "litellm/rust/crates/host/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-coroutine",
+      "litellm-cost",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-http",
+     "path": "litellm/rust/crates/http/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-core-utils",
+      "litellm-env",
+      "litellm-error",
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-inference-chat",
+     "path": "litellm/rust/crates/inference-chat/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-cache-memory",
+      "litellm-cache-response",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-host",
+      "litellm-host-native",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-testing",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-inference-messages",
+     "path": "litellm/rust/crates/inference-messages/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-auth-aws",
+      "litellm-auth-gcp",
+      "litellm-cache",
+      "litellm-cache-memory",
+      "litellm-cache-response",
+      "litellm-core-utils",
+      "litellm-cost",
+      "litellm-env",
+      "litellm-error",
+      "litellm-framer",
+      "litellm-host",
+      "litellm-host-native",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-testing",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-python-compat",
+      "litellm-redaction",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-inference-ocr",
+     "path": "litellm/rust/crates/inference-ocr/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-auth-aws",
+      "litellm-auth-gcp",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-host",
+      "litellm-host-native",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-testing",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-inference-responses",
+     "path": "litellm/rust/crates/inference-responses/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-cache",
+      "litellm-cache-memory",
+      "litellm-cache-response",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-host",
+      "litellm-host-native",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-testing",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-inference-testing",
+     "path": "litellm/rust/crates/inference-testing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-inference-transcription",
+     "path": "litellm/rust/crates/inference-transcription/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-testing",
+      "litellm-llms",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-inference",
+     "path": "litellm/rust/crates/inference/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-cache",
+      "litellm-cache-memory",
+      "litellm-cache-response",
+      "litellm-core-utils",
+      "litellm-error",
+      "litellm-framer",
+      "litellm-host",
+      "litellm-http",
+      "litellm-llms",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-license",
+     "path": "litellm/rust/crates/license/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm",
+     "path": "litellm/rust/crates/litellm/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-llms-types",
+     "path": "litellm/rust/crates/llms-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-llms",
+     "path": "litellm/rust/crates/llms/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-auth-aws",
+      "litellm-auth-azure",
+      "litellm-auth-gcp",
+      "litellm-core-utils",
+      "litellm-env",
+      "litellm-error",
+      "litellm-framer",
+      "litellm-host",
+      "litellm-http",
+      "litellm-llms-types",
+      "litellm-model-catalog",
+      "litellm-python-compat",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-model-catalog-refresh",
+     "path": "litellm/rust/crates/model-catalog-refresh/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-gcp",
+      "litellm-auth-types",
+      "litellm-error",
+      "litellm-http",
+      "litellm-s3",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-model-catalog",
+     "path": "litellm/rust/crates/model-catalog/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-cost",
+      "litellm-error",
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-python-bridge",
+     "path": "litellm/rust/crates/python-bridge/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth",
+      "litellm-auth-aws",
+      "litellm-auth-azure",
+      "litellm-auth-gcp",
+      "litellm-auth-store",
+      "litellm-cache",
+      "litellm-cache-response",
+      "litellm-callbacks",
+      "litellm-callbacks-budgets",
+      "litellm-callbacks-legacy-python",
+      "litellm-callbacks-model-capacity",
+      "litellm-callbacks-parallel-request-limiter",
+      "litellm-callbacks-python",
+      "litellm-callbacks-s3-log",
+      "litellm-callbacks-spend-log",
+      "litellm-callbacks-spend-logger",
+      "litellm-circuit-breaker",
+      "litellm-config",
+      "litellm-core-utils",
+      "litellm-coroutine",
+      "litellm-cost",
+      "litellm-db",
+      "litellm-db-resolve",
+      "litellm-env",
+      "litellm-error",
+      "litellm-gateway-auth-core",
+      "litellm-host",
+      "litellm-host-python",
+      "litellm-http",
+      "litellm-inference",
+      "litellm-inference-chat",
+      "litellm-inference-messages",
+      "litellm-inference-ocr",
+      "litellm-inference-responses",
+      "litellm-inference-transcription",
+      "litellm-llms",
+      "litellm-llms-types",
+      "litellm-model-catalog",
+      "litellm-model-catalog-refresh",
+      "litellm-python-compat",
+      "litellm-redaction",
+      "litellm-redis-client",
+      "litellm-redis-connect",
+      "litellm-redis-resolve",
+      "litellm-redis-store",
+      "litellm-redis-types",
+      "litellm-repositories",
+      "litellm-router-core",
+      "litellm-router-types",
+      "litellm-secret-value",
+      "litellm-secrets",
+      "litellm-secrets-aws",
+      "litellm-secrets-types",
+      "litellm-spend-clickhouse",
+      "litellm-spend-log-writer",
+      "litellm-storage-clickhouse",
+      "litellm-token-counter",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-python-compat",
+     "path": "litellm/rust/crates/python-compat/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-host"
+     ]
+    },
+    {
+     "name": "litellm-redaction",
+     "path": "litellm/rust/crates/redaction/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-redis-client",
+     "path": "litellm/rust/crates/redis-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-circuit-breaker",
+      "litellm-python-compat",
+      "litellm-redis-testing",
+      "litellm-redis-types",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-redis-connect",
+     "path": "litellm/rust/crates/redis-connect/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-auth-azure",
+      "litellm-auth-gcp",
+      "litellm-auth-types",
+      "litellm-circuit-breaker",
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-redis-client",
+      "litellm-redis-resolve",
+      "litellm-redis-testing",
+      "litellm-redis-types",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-redis-resolve",
+     "path": "litellm/rust/crates/redis-resolve/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-config",
+      "litellm-env",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-redis-types",
+      "litellm-secret-value",
+      "litellm-secrets"
+     ]
+    },
+    {
+     "name": "litellm-redis-store",
+     "path": "litellm/rust/crates/redis-store/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-cache-memory",
+      "litellm-circuit-breaker",
+      "litellm-python-compat",
+      "litellm-redis-client",
+      "litellm-redis-testing",
+      "litellm-secret-value",
+      "litellm-tracing"
+     ]
+    },
+    {
+     "name": "litellm-redis-testing",
+     "path": "litellm/rust/crates/redis-testing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-redis-types",
+     "path": "litellm/rust/crates/redis-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-repositories",
+     "path": "litellm/rust/crates/repositories/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-core-utils",
+      "litellm-db",
+      "litellm-error",
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-router-core",
+     "path": "litellm/rust/crates/router-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-cache",
+      "litellm-python-compat",
+      "litellm-router-types"
+     ]
+    },
+    {
+     "name": "litellm-router-types",
+     "path": "litellm/rust/crates/router-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-types",
+      "litellm-python-compat",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-s3",
+     "path": "litellm/rust/crates/s3/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-secret-value",
+     "path": "litellm/rust/crates/secret-value/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-secrets-aws",
+     "path": "litellm/rust/crates/secrets-aws/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-aws",
+      "litellm-env",
+      "litellm-secret-value",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-secrets-azure",
+     "path": "litellm/rust/crates/secrets-azure/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-azure",
+      "litellm-auth-types",
+      "litellm-env",
+      "litellm-http",
+      "litellm-secret-value",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-secrets-cyberark",
+     "path": "litellm/rust/crates/secrets-cyberark/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-env",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-secrets-google",
+     "path": "litellm/rust/crates/secrets-google/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-auth-gcp",
+      "litellm-auth-types",
+      "litellm-env",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-secrets-hashicorp",
+     "path": "litellm/rust/crates/secrets-hashicorp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-secret-value",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-secrets-types",
+     "path": "litellm/rust/crates/secrets-types/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-secrets",
+     "path": "litellm/rust/crates/secrets/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-env",
+      "litellm-error",
+      "litellm-http",
+      "litellm-python-compat",
+      "litellm-secret-value",
+      "litellm-secrets-aws",
+      "litellm-secrets-azure",
+      "litellm-secrets-cyberark",
+      "litellm-secrets-google",
+      "litellm-secrets-hashicorp",
+      "litellm-secrets-types"
+     ]
+    },
+    {
+     "name": "litellm-spend-clickhouse",
+     "path": "litellm/rust/crates/spend-clickhouse/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-http",
+      "litellm-storage-clickhouse"
+     ]
+    },
+    {
+     "name": "litellm-spend-log-writer",
+     "path": "litellm/rust/crates/spend-log-writer/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-callbacks-spend-log",
+      "litellm-db",
+      "litellm-error",
+      "litellm-python-compat",
+      "litellm-repositories",
+      "litellm-secret-value"
+     ]
+    },
+    {
+     "name": "litellm-standard-logging",
+     "path": "litellm/rust/crates/standard-logging/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-starlette",
+     "path": "litellm/rust/crates/starlette/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-storage-clickhouse",
+     "path": "litellm/rust/crates/storage-clickhouse/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-testkit",
+     "path": "litellm/rust/crates/testkit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-http"
+     ]
+    },
+    {
+     "name": "litellm-token-counter-fast",
+     "path": "litellm/rust/crates/token-counter-fast/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error"
+     ]
+    },
+    {
+     "name": "litellm-token-counter-huggingface",
+     "path": "litellm/rust/crates/token-counter-huggingface/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "litellm-token-counter-tiktoken",
+     "path": "litellm/rust/crates/token-counter-tiktoken/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error"
+     ]
+    },
+    {
+     "name": "litellm-token-counter",
+     "path": "litellm/rust/crates/token-counter/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-error",
+      "litellm-token-counter-fast",
+      "litellm-token-counter-huggingface",
+      "litellm-token-counter-tiktoken"
+     ]
+    },
+    {
+     "name": "litellm-tracing",
+     "path": "litellm/rust/crates/tracing/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-redaction"
+     ]
+    },
+    {
+     "name": "litellm-yaml",
+     "path": "litellm/rust/crates/yaml/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "litellm-python-compat"
+     ]
+    },
+    {
+     "name": "litellm-dashboard",
+     "path": "litellm/ui/litellm-dashboard/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "litellm-vscode",
+     "path": "litellm/vscode-extension/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "litellm",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": [
+      "litellm-enterprise",
+      "litellm-proxy-extras"
+     ]
+    }
+   ],
+   "count": 102,
+   "edges": 540,
+   "cycles": [
+    {
+     "ecosystem": "cargo",
+     "packages": [
+      "litellm-auth-aws",
+      "litellm-auth-azure",
+      "litellm-auth-gcp",
+      "litellm-secrets",
+      "litellm-secrets-aws",
+      "litellm-secrets-azure",
+      "litellm-secrets-google"
+     ]
+    },
+    {
+     "ecosystem": "cargo",
+     "packages": [
+      "litellm-gateway",
+      "litellm-gateway-inference"
+     ]
+    }
+   ],
+   "maxDepth": 14,
+   "topFanIn": [
+    {
+     "name": "litellm-secret-value",
+     "ecosystem": "cargo",
+     "dependents": 43
+    },
+    {
+     "name": "litellm-error",
+     "ecosystem": "cargo",
+     "dependents": 41
+    },
+    {
+     "name": "litellm-http",
+     "ecosystem": "cargo",
+     "dependents": 35
+    },
+    {
+     "name": "litellm-python-compat",
+     "ecosystem": "cargo",
+     "dependents": 34
+    },
+    {
+     "name": "litellm-env",
+     "ecosystem": "cargo",
+     "dependents": 18
+    }
+   ]
+  },
+  "unknown": [
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 102,
+    "edges": 540
+   },
+   "nodes": [
+    {
+     "id": "litellm-secret-value",
+     "dir": "litellm/rust/crates/secret-value",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 43,
+     "depth": 0
+    },
+    {
+     "id": "litellm-error",
+     "dir": "litellm/rust/crates/error",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 41,
+     "depth": 0
+    },
+    {
+     "id": "litellm-http",
+     "dir": "litellm/rust/crates/http",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 35,
+     "depth": 6
+    },
+    {
+     "id": "litellm-python-compat",
+     "dir": "litellm/rust/crates/python-compat",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 34,
+     "depth": 3
+    },
+    {
+     "id": "litellm-env",
+     "dir": "litellm/rust/crates/env",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 18,
+     "depth": 4
+    },
+    {
+     "id": "litellm-secrets",
+     "dir": "litellm/rust/crates/secrets",
+     "ecosystem": "cargo",
+     "dependencies": 11,
+     "dependents": 16,
+     "depth": 8
+    },
+    {
+     "id": "litellm-cache",
+     "dir": "litellm/rust/crates/cache",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 15,
+     "depth": 4
+    },
+    {
+     "id": "litellm-host",
+     "dir": "litellm/rust/crates/host",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 15,
+     "depth": 2
+    },
+    {
+     "id": "litellm-tracing",
+     "dir": "litellm/rust/crates/tracing",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 13,
+     "depth": 1
+    },
+    {
+     "id": "litellm-auth-aws",
+     "dir": "litellm/rust/crates/auth-aws",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 12,
+     "depth": 8
+    },
+    {
+     "id": "litellm-core-utils",
+     "dir": "litellm/rust/crates/core-utils",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 12,
+     "depth": 5
+    },
+    {
+     "id": "litellm-auth-types",
+     "dir": "litellm/rust/crates/auth-types",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 11,
+     "depth": 1
+    },
+    {
+     "id": "litellm-auth",
+     "dir": "litellm/rust/crates/auth",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 10,
+     "depth": 9
+    },
+    {
+     "id": "litellm-auth-gcp",
+     "dir": "litellm/rust/crates/auth-gcp",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 9,
+     "depth": 8
+    },
+    {
+     "id": "litellm-callbacks",
+     "dir": "litellm/rust/crates/callbacks",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 9,
+     "depth": 3
+    },
+    {
+     "id": "litellm-inference",
+     "dir": "litellm/rust/crates/inference",
+     "ecosystem": "cargo",
+     "dependencies": 12,
+     "dependents": 9,
+     "depth": 11
+    },
+    {
+     "id": "litellm-llms",
+     "dir": "litellm/rust/crates/llms",
+     "ecosystem": "cargo",
+     "dependencies": 17,
+     "dependents": 9,
+     "depth": 10
+    },
+    {
+     "id": "litellm-llms-types",
+     "dir": "litellm/rust/crates/llms-types",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 9,
+     "depth": 4
+    },
+    {
+     "id": "litellm-redis-client",
+     "dir": "litellm/rust/crates/redis-client",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 9,
+     "depth": 4
+    },
+    {
+     "id": "litellm-coroutine",
+     "dir": "litellm/rust/crates/coroutine",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 8,
+     "depth": 0
+    },
+    {
+     "id": "litellm-redaction",
+     "dir": "litellm/rust/crates/redaction",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 8,
+     "depth": 0
+    },
+    {
+     "id": "litellm-redis-store",
+     "dir": "litellm/rust/crates/redis-store",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 8,
+     "depth": 7
+    },
+    {
+     "id": "litellm-cache-memory",
+     "dir": "litellm/rust/crates/cache-memory",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 7,
+     "depth": 6
+    },
+    {
+     "id": "litellm-cache-response",
+     "dir": "litellm/rust/crates/cache-response",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 7,
+     "depth": 10
+    },
+    {
+     "id": "litellm-circuit-breaker",
+     "dir": "litellm/rust/crates/circuit-breaker",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "litellm-config",
+     "dir": "litellm/rust/crates/config",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 7,
+     "depth": 5
+    },
+    {
+     "id": "litellm-db",
+     "dir": "litellm/rust/crates/db",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 7,
+     "depth": 1
+    },
+    {
+     "id": "litellm-redis-testing",
+     "dir": "litellm/rust/crates/redis-testing",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "litellm-router-types",
+     "dir": "litellm/rust/crates/router-types",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 7,
+     "depth": 4
+    },
+    {
+     "id": "litellm-secrets-types",
+     "dir": "litellm/rust/crates/secrets-types",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 7,
+     "depth": 1
+    },
+    {
+     "id": "litellm-auth-azure",
+     "dir": "litellm/rust/crates/auth-azure",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 6,
+     "depth": 8
+    },
+    {
+     "id": "litellm-cache-testing",
+     "dir": "litellm/rust/crates/cache-testing",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 6,
+     "depth": 5
+    },
+    {
+     "id": "litellm-cost",
+     "dir": "litellm/rust/crates/cost",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "litellm-gateway-auth-core",
+     "dir": "litellm/rust/crates/gateway-auth-core",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 5,
+     "depth": 6
+    },
+    {
+     "id": "litellm-host-native",
+     "dir": "litellm/rust/crates/host-native",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 3
+    },
+    {
+     "id": "litellm-inference-testing",
+     "dir": "litellm/rust/crates/inference-testing",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 5,
+     "depth": 12
+    },
+    {
+     "id": "litellm-redis-types",
+     "dir": "litellm/rust/crates/redis-types",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "litellm-repositories",
+     "dir": "litellm/rust/crates/repositories",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 5,
+     "depth": 6
+    },
+    {
+     "id": "litellm-callbacks-spend-log",
+     "dir": "litellm/rust/crates/callbacks-spend-log",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 4,
+     "depth": 4
+    },
+    {
+     "id": "litellm-framer",
+     "dir": "litellm/rust/crates/framer",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 4,
+     "depth": 0
+    },
+    {
+     "id": "litellm-callbacks-budgets",
+     "dir": "litellm/rust/crates/callbacks-budgets",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 3,
+     "depth": 8
+    },
+    {
+     "id": "litellm-callbacks-parallel-request-limiter",
+     "dir": "litellm/rust/crates/callbacks-parallel-request-limiter",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 3,
+     "depth": 8
+    },
+    {
+     "id": "litellm-host-python",
+     "dir": "litellm/rust/crates/host-python",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 3
+    },
+    {
+     "id": "litellm-inference-messages",
+     "dir": "litellm/rust/crates/inference-messages",
+     "ecosystem": "cargo",
+     "dependencies": 24,
+     "dependents": 3,
+     "depth": 13
+    },
+    {
+     "id": "litellm-model-catalog",
+     "dir": "litellm/rust/crates/model-catalog",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "litellm-redis-resolve",
+     "dir": "litellm/rust/crates/redis-resolve",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "litellm-router-core",
+     "dir": "litellm/rust/crates/router-core",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 3,
+     "depth": 5
+    },
+    {
+     "id": "litellm-s3",
+     "dir": "litellm/rust/crates/s3",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 9
+    },
+    {
+     "id": "litellm-spend-log-writer",
+     "dir": "litellm/rust/crates/spend-log-writer",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 3,
+     "depth": 7
+    },
+    {
+     "id": "litellm-yaml",
+     "dir": "litellm/rust/crates/yaml",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 4
+    },
+    {
+     "id": "litellm-auth-store",
+     "dir": "litellm/rust/crates/auth-store",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 2,
+     "depth": 8
+    },
+    {
+     "id": "litellm-callbacks-model-capacity",
+     "dir": "litellm/rust/crates/callbacks-model-capacity",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 2,
+     "depth": 9
+    },
+    {
+     "id": "litellm-callbacks-spend-logger",
+     "dir": "litellm/rust/crates/callbacks-spend-logger",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 2,
+     "depth": 9
+    },
+    {
+     "id": "litellm-db-resolve",
+     "dir": "litellm/rust/crates/db-resolve",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 2,
+     "depth": 9
+    },
+    {
+     "id": "litellm-db-testing",
+     "dir": "litellm/rust/crates/db-testing",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "litellm-fnmatch",
+     "dir": "litellm/rust/crates/fnmatch",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "litellm-gateway-auth",
+     "dir": "litellm/rust/crates/gateway-auth",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 7
+    },
+    {
+     "id": "litellm-inference-ocr",
+     "dir": "litellm/rust/crates/inference-ocr",
+     "ecosystem": "cargo",
+     "dependencies": 15,
+     "dependents": 2,
+     "depth": 13
+    },
+    {
+     "id": "litellm-redis-connect",
+     "dir": "litellm/rust/crates/redis-connect",
+     "ecosystem": "cargo",
+     "dependencies": 13,
+     "dependents": 2,
+     "depth": 10
+    },
+    {
+     "id": "litellm-secrets-aws",
+     "dir": "litellm/rust/crates/secrets-aws",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 8
+    },
+    {
+     "id": "litellm-starlette",
+     "dir": "litellm/rust/crates/starlette",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "litellm-storage-clickhouse",
+     "dir": "litellm/rust/crates/storage-clickhouse",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 7
+    },
+    {
+     "id": "litellm-token-counter",
+     "dir": "litellm/rust/crates/token-counter",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "litellm-at-rest",
+     "dir": "litellm/rust/crates/at-rest",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "litellm-cache-gcs",
+     "dir": "litellm/rust/crates/cache-gcs",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "litellm-callbacks-legacy-python",
+     "dir": "litellm/rust/crates/callbacks-legacy-python",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "litellm-callbacks-python",
+     "dir": "litellm/rust/crates/callbacks-python",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "litellm-callbacks-s3-log",
+     "dir": "litellm/rust/crates/callbacks-s3-log",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 1,
+     "depth": 10
+    },
+    {
+     "id": "litellm-config-load",
+     "dir": "litellm/rust/crates/config-load",
+     "ecosystem": "cargo",
+     "dependencies": 8,
+     "dependents": 1,
+     "depth": 9
+    },
+    {
+     "id": "litellm-enterprise",
+     "dir": "litellm/enterprise",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "litellm-gateway",
+     "dir": "litellm/rust/crates/gateway",
+     "ecosystem": "cargo",
+     "dependencies": 45,
+     "dependents": 1,
+     "depth": 14
+    },
+    {
+     "id": "litellm-gateway-forward",
+     "dir": "litellm/rust/crates/gateway-forward",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "litellm-gateway-inference",
+     "dir": "litellm/rust/crates/gateway-inference",
+     "ecosystem": "cargo",
+     "dependencies": 28,
+     "dependents": 1,
+     "depth": 14
+    },
+    {
+     "id": "litellm-host-http",
+     "dir": "litellm/rust/crates/host-http",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "litellm-inference-chat",
+     "dir": "litellm/rust/crates/inference-chat",
+     "ecosystem": "cargo",
+     "dependencies": 15,
+     "dependents": 1,
+     "depth": 13
+    },
+    {
+     "id": "litellm-inference-responses",
+     "dir": "litellm/rust/crates/inference-responses",
+     "ecosystem": "cargo",
+     "dependencies": 16,
+     "dependents": 1,
+     "depth": 13
+    },
+    {
+     "id": "litellm-inference-transcription",
+     "dir": "litellm/rust/crates/inference-transcription",
+     "ecosystem": "cargo",
+     "dependencies": 9,
+     "dependents": 1,
+     "depth": 13
+    },
+    {
+     "id": "litellm-license",
+     "dir": "litellm/rust/crates/license",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "litellm-model-catalog-refresh",
+     "dir": "litellm/rust/crates/model-catalog-refresh",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 1,
+     "depth": 10
+    },
+    {
+     "id": "litellm-proxy-extras",
+     "dir": "litellm/proxy-extras",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "litellm-secrets-azure",
+     "dir": "litellm/rust/crates/secrets-azure",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "litellm-secrets-cyberark",
+     "dir": "litellm/rust/crates/secrets-cyberark",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "litellm-secrets-google",
+     "dir": "litellm/rust/crates/secrets-google",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "litellm-secrets-hashicorp",
+     "dir": "litellm/rust/crates/secrets-hashicorp",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 1,
+     "depth": 7
+    },
+    {
+     "id": "litellm-spend-clickhouse",
+     "dir": "litellm/rust/crates/spend-clickhouse",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 8
+    },
+    {
+     "id": "litellm-token-counter-fast",
+     "dir": "litellm/rust/crates/token-counter-fast",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "litellm-token-counter-huggingface",
+     "dir": "litellm/rust/crates/token-counter-huggingface",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "litellm-token-counter-tiktoken",
+     "dir": "litellm/rust/crates/token-counter-tiktoken",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "github.com/BerriAI/terraform-provider-litellm",
+     "dir": "litellm/deploy/terraform/provider",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm",
+     "dir": "litellm/rust/crates/litellm",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "litellm-cache-azure-blob",
+     "dir": "litellm/rust/crates/cache-azure-blob",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 11
+    },
+    {
+     "id": "litellm-cache-disk",
+     "dir": "litellm/rust/crates/cache-disk",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 6
+    },
+    {
+     "id": "litellm-cache-qdrant-semantic",
+     "dir": "litellm/rust/crates/cache-qdrant-semantic",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "litellm-cache-s3",
+     "dir": "litellm/rust/crates/cache-s3",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 10
+    },
+    {
+     "id": "litellm-dashboard",
+     "dir": "litellm/ui/litellm-dashboard",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm-proxy",
+     "dir": "litellm/packaging/litellm-proxy",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm-python-bridge",
+     "dir": "litellm/rust/crates/python-bridge",
+     "ecosystem": "cargo",
+     "dependencies": 58,
+     "dependents": 0,
+     "depth": 14
+    },
+    {
+     "id": "litellm-standard-logging",
+     "dir": "litellm/rust/crates/standard-logging",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm-testkit",
+     "dir": "litellm/rust/crates/testkit",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 7
+    },
+    {
+     "id": "litellm-vscode",
+     "dir": "litellm/vscode-extension",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "litellm/rust/Cargo.toml",
+     "dir": "litellm/rust",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "litellm-at-rest",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-aws",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-aws",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-aws",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-aws",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-aws",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-azure",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-gcp",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-db-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-gateway-auth-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-repositories",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-store",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-types",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth-types",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth",
+     "to": "litellm-auth-azure",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth",
+     "to": "litellm-auth-gcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-auth",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-auth-azure",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-cache-response",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-azure-blob",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-disk",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-disk",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-auth-gcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-auth-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-gcs",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-memory",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-memory",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-qdrant-semantic",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-qdrant-semantic",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-qdrant-semantic",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-qdrant-semantic",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-response",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-response",
+     "to": "litellm-cache-gcs",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-response",
+     "to": "litellm-cache-memory",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-response",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-cache-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-s3",
+     "to": "litellm-s3",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache-testing",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cache",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-circuit-breaker",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-redis-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-budgets",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-legacy-python",
+     "to": "litellm-cost",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-legacy-python",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-legacy-python",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-legacy-python",
+     "to": "litellm-host-python",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-legacy-python",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-callbacks-parallel-request-limiter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-model-capacity",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-parallel-request-limiter",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-python",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-python",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-python",
+     "to": "litellm-host-python",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-python",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-s3",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-s3-log",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-log",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-log",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-callbacks-budgets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-callbacks-spend-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-redis-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-repositories",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks-spend-logger",
+     "to": "litellm-spend-log-writer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-callbacks",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-router-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config-load",
+     "to": "litellm-yaml",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-router-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-starlette",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-config",
+     "to": "litellm-yaml",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-core-utils",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-core-utils",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-core-utils",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-cost",
+     "to": "litellm-fnmatch",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db-resolve",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db",
+     "to": "litellm-circuit-breaker",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-db",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-env",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth-core",
+     "to": "litellm-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth-core",
+     "to": "litellm-fnmatch",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth-core",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth-core",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth-core",
+     "to": "litellm-starlette",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth",
+     "to": "litellm-gateway-auth-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-auth",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-cache-memory",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-cache-response",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-framer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-gateway",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-gateway-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-gateway-auth-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-host-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-inference-messages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-inference-ocr",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-llms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-redis-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-router-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-router-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway-inference",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-at-rest",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-auth-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks-budgets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks-model-capacity",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks-parallel-request-limiter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks-spend-log",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-callbacks-spend-logger",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-circuit-breaker",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-config",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-config-load",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-db",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-db-resolve",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-db-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-gateway-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-gateway-auth-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-gateway-forward",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-gateway-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-inference-messages",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-license",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-llms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-model-catalog",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-connect",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-resolve",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-store",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-redis-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-repositories",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-router-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-spend-log-writer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-token-counter",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-gateway",
+     "to": "litellm-yaml",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-http",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-http",
+     "to": "litellm-host-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-native",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-python",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-python",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host-python",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host",
+     "to": "litellm-coroutine",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host",
+     "to": "litellm-cost",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-host",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-http",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-http",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-http",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-http",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-cache-memory",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-cache-response",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-host-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-inference-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-llms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-chat",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-auth-gcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-cache",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-cache-memory",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-cache-response",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-cost",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-env",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-framer",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-host-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-inference-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-llms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-python-compat",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-redaction",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-router-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-secrets",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-messages",
+     "to": "litellm-tracing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-auth",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-auth-aws",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-auth-gcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-core-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-error",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-host",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-host-native",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-http",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-inference",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-inference-testing",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-llms",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-llms-types",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "litellm-inference-ocr",
+     "to": "litellm-secret-value",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "package-cycle",
+     "subject": "litellm-auth-aws ↔ litellm-auth-azure ↔ litellm-auth-gcp ↔ litellm-secrets ↔ litellm-secrets-aws ↔ litellm-secrets-azure ↔ litellm-secrets-google",
+     "numbers": {
+      "packages": 7,
+      "packagesOf": 102
+     },
+     "threshold": null,
+     "detail": "cargo manifest dependencies"
+    },
+    {
+     "kind": "package-cycle",
+     "subject": "litellm-gateway ↔ litellm-gateway-inference",
+     "numbers": {
+      "packages": 2,
+      "packagesOf": 102
+     },
+     "threshold": null,
+     "detail": "cargo manifest dependencies"
+    }
+   ],
+   "flagCounts": {
+    "package-cycle": 2
+   },
+   "depth": 14,
+   "chain": [
+    "litellm-gateway + litellm-gateway-inference",
+    "litellm-inference-messages",
+    "litellm-inference-testing",
+    "litellm-inference",
+    "litellm-cache-response",
+    "litellm-cache-gcs",
+    "litellm-auth-aws + litellm-auth-azure + litellm-auth-gcp + litellm-secrets + litellm-secrets-aws + litellm-secrets-azure + litellm-secrets-google",
+    "litellm-secrets-cyberark",
+    "litellm-http",
+    "litellm-core-utils",
+    "litellm-llms-types",
+    "litellm-python-compat",
+    "litellm-host",
+    "litellm-cost",
+    "litellm-fnmatch"
+   ],
+   "topFanIn": [
+    {
+     "name": "litellm-secret-value",
+     "ecosystem": "cargo",
+     "dependents": 43
+    },
+    {
+     "name": "litellm-error",
+     "ecosystem": "cargo",
+     "dependents": 41
+    },
+    {
+     "name": "litellm-http",
+     "ecosystem": "cargo",
+     "dependents": 35
+    },
+    {
+     "name": "litellm-python-compat",
+     "ecosystem": "cargo",
+     "dependents": 34
+    },
+    {
+     "name": "litellm-env",
+     "ecosystem": "cargo",
+     "dependents": 18
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 1,
+    "filesRead": 1,
+    "undecided": 0
+   },
+   "nodes": [
+    {
+     "id": "litellm-vscode#.",
+     "pkg": "litellm-vscode",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "litellm/vscode-extension/src/extension.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 25,
+    "edges": 2,
+    "cached": 0,
+    "trackedFiles": 17661
+   },
+   "nodes": [
+    {
+     "id": "litellm-dashboard#build",
+     "pkg": "litellm-dashboard",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#dev",
+     "pkg": "litellm-dashboard",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#dev:webpack",
+     "pkg": "litellm-dashboard",
+     "name": "dev:webpack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#format",
+     "pkg": "litellm-dashboard",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#format:check",
+     "pkg": "litellm-dashboard",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#gen:api",
+     "pkg": "litellm-dashboard",
+     "name": "gen:api",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#knip",
+     "pkg": "litellm-dashboard",
+     "name": "knip",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#knip:ci",
+     "pkg": "litellm-dashboard",
+     "name": "knip:ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#knip:fix",
+     "pkg": "litellm-dashboard",
+     "name": "knip:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#lint",
+     "pkg": "litellm-dashboard",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#start",
+     "pkg": "litellm-dashboard",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test",
+     "pkg": "litellm-dashboard",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:component",
+     "pkg": "litellm-dashboard",
+     "name": "test:component",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:coverage",
+     "pkg": "litellm-dashboard",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:dot",
+     "pkg": "litellm-dashboard",
+     "name": "test:dot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:integration",
+     "pkg": "litellm-dashboard",
+     "name": "test:integration",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:types",
+     "pkg": "litellm-dashboard",
+     "name": "test:types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:unit",
+     "pkg": "litellm-dashboard",
+     "name": "test:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#test:watch",
+     "pkg": "litellm-dashboard",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-dashboard#typecheck",
+     "pkg": "litellm-dashboard",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-vscode#build",
+     "pkg": "litellm-vscode",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-vscode#package",
+     "pkg": "litellm-vscode",
+     "name": "package",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-vscode#test",
+     "pkg": "litellm-vscode",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-vscode#typecheck",
+     "pkg": "litellm-vscode",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "litellm-vscode#vscode:prepublish",
+     "pkg": "litellm-vscode",
+     "name": "vscode:prepublish",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "litellm-vscode#vscode:prepublish",
+     "to": "litellm-vscode#typecheck",
+     "how": "calls"
+    },
+    {
+     "from": "litellm-vscode#vscode:prepublish",
+     "to": "litellm-vscode#build",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "litellm-vscode#vscode:prepublish",
+    "litellm-vscode#typecheck"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "resolve (3.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.15)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 12.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "resolve (3.14)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 10.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.12)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 10.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.10)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 13.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.14)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 12.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "resolve (3.12)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 11.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "core-distribution (3.13)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 11.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "resolve (3.13)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 8.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "resolve (3.10)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 9.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "resolve (3.15)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 12.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "core-distribution (3.10)"
+   ],
+   "pathMinP50": 13.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Each job spends 5.5 minutes on setup: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "Packages depend on each other in a cycle, litellm-auth-aws ↔ litellm-auth-azure ↔ litellm-auth-gcp ↔ litellm-secrets ↔ litellm-secrets-aws ↔ litellm-secrets-azure ↔ litellm-secrets-google: break it, so an edit to one stops reaching the rest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#package-dependencies-declared-and-checked"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 141,
+ "read": {
+  "calls": 141,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

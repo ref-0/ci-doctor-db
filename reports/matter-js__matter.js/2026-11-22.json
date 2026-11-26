@@ -1,0 +1,6239 @@
+{
+ "repo": "matter-js/matter.js",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4,
+  "stars": 931,
+  "forks": 136,
+  "languages": [
+   [
+    "TypeScript",
+    100
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "linesOfCode": 1013150,
+  "files": 5172,
+  "sourceFiles": 4698,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 528429,
+   "tests": 453538,
+   "integration": 4426,
+   "support": 26757
+  },
+  "testShare": 0.4784295628816707,
+  "packages": {
+   "npm": 22,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 41.3,
+  "commitsPerWeekYear": 41.7,
+  "pace": 1,
+  "activeAuthors28d": 9,
+  "prsOpenedPerWeek": 35,
+  "prsMergedPerWeek": 24,
+  "botShareOfMergedPrs": 16.7,
+  "openToMergeHours": {
+   "p50": 0.5,
+   "p90": 21.8,
+   "n": 20
+  },
+  "prRunsPerDay": 72.1,
+  "runsPerMergedPr": 21
+ },
+ "window": {
+  "days": 7,
+  "runs": 469,
+  "runsInPeriod": 469,
+  "truncated": false,
+  "mainDays": 4.1
+ },
+ "size": "large",
+ "headsPerWeek": 69,
+ "score": 53,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 36,
+  "reliability": 97,
+  "efficiency": 58
+ },
+ "detail": {
+  "speed": {
+   "wait": 34,
+   "forSize": 35,
+   "tail": 49
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 92
+  },
+  "efficiency": {
+   "minutesPerPr": 18,
+   "runsPerPr": 42,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3118.4,
+  "prBilledMinutesPerDay": 3333.1,
+  "jobMinutesPerMergedPr": 909.5,
+  "expectedMinutesPerMergedPr": 332.8,
+  "expectedWait": 18.6,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 69,
+  "timed": 49,
+  "p50": 26.633333333333333,
+  "p75": 27.533333333333335,
+  "p90": 30.25,
+  "redRate": 0.08695652173913043,
+  "rerunRate": 0.014492753623188406,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.13043478260869565,
+  "botHeads": 10,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 11,
+  "bots": [
+   [
+    "dependabot[bot]",
+    9
+   ],
+   [
+    "mergify[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Build and test",
+    34
+   ],
+   [
+    "CHIP Image - Build and Test",
+    15
+   ]
+  ],
+  "redBy": [
+   [
+    "Chip Tool tests",
+    4
+   ],
+   [
+    "Build and test",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Automatic Labeled NPM Release",
+   "Automatic CHIP Image Release",
+   "Validate published .d.ts",
+   "Auto approve release PRs"
+  ],
+  "heavyWorkflows": [
+   "CHIP Image - Build and Test",
+   "Build and test",
+   "Chip Tool tests"
+  ],
+  "allPushesP50": 26.633333333333333
+ },
+ "main": {
+  "heads": 13,
+  "p50": 25.45,
+  "p90": 28.833333333333332,
+  "redRate": 0.07692307692307693,
+  "redBy": [
+   [
+    "CHIP Image - Build and Test",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.21686746987951808,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 26.05,
+  "jobMinutes": 85.51666666666667,
+  "billedMinutes": 93,
+  "subMinuteJobs": 6,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.004313725490196078,
+  "critical": {
+   "name": "test (20.x)",
+   "minutes": 25,
+   "shareOfSpan": 0.9372716199756393
+  },
+  "longest": {
+   "name": "test (20.x)",
+   "minutes": 25
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    66
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build-test.js.yml"
+  ],
+  "jobs": 3,
+  "edges": 2,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "test (20.x)",
+    "runs": 3
+   },
+   {
+    "name": "test (26.x)",
+    "runs": 1
+   },
+   {
+    "name": "test (24.x)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "check-and-lint",
+    "minutes": 1.7,
+    "share": 0.06,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.6,
+    "setupMin": 0.1
+   },
+   {
+    "name": "test (20.x)",
+    "minutes": 24.3,
+    "share": 0.93,
+    "blockedMin": 1.7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 24.3,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 26.1,
+  "blockedMinP50": 1.7,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 26,
+  "setupInPathMinP50": 0.1,
+  "topBlockers": [
+   {
+    "name": "check-and-lint",
+    "runs": 6,
+    "heldJobs": 10,
+    "jobs": 11,
+    "tookMin": 1.7,
+    "heldJobMin": 16.5
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44979036321,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.1,
+    "path": [
+     "check-and-lint",
+     "test (20.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 18.7,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.9,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 26.1,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 21.2,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 24.6,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.8,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44873400749,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 27.4,
+    "path": [
+     "check-and-lint",
+     "test (20.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 23.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 21.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 19.3,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 27.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44861692153,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.2,
+    "path": [
+     "check-and-lint",
+     "test (26.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 24.2,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.5,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 22.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 22.4,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 22.5,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.7,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.8,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.7,
+      "createdMin": 1.7,
+      "startMin": 1.7,
+      "endMin": 1.7,
+      "blockedMin": 1.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44710712677,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 48.1,
+    "path": [
+     "check-and-lint",
+     "test (24.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 24.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 27.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.9,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 22.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.7,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 48.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 46.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     }
+    ]
+   },
+   {
+    "id": 44705970228,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.3,
+    "path": [
+     "check-and-lint",
+     "test (22.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 19.5,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 21.8,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 22.3,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 19.8,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.9,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.8,
+      "createdMin": 1.8,
+      "startMin": 1.8,
+      "endMin": 1.9,
+      "blockedMin": 1.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44703370462,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.3,
+    "path": [
+     "check-and-lint",
+     "test (20.x)"
+    ],
+    "topBlocker": "check-and-lint",
+    "jobs": [
+     {
+      "name": "check-and-lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (22.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 24,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.7,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "test (24.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 20.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (22.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (24.x, macos-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "build-non-linux (22.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (20.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 26.3,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (24.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "test (26.x)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 16.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build-non-linux (26.x, windows-latest)",
+      "needs": [
+       "check-and-lint"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 13,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    100
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Python",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": [
+    "npm workspaces"
+   ]
+  },
+  "packages": {
+   "npm": 22,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Playwright",
+   "Mocha"
+  ],
+  "lintFormat": [
+   "Oxlint",
+   "Oxfmt"
+  ],
+  "libraries": [
+   {
+    "name": "@nacho-iot/js-tools",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "ws",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "yargs",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@noble/curves",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "ansi-colors",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "chai",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "memlab",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "@craftzdog/react-native-buffer",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@memlab/api",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@memlab/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@noble/hashes",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@noble/post-quantum",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@react-native-async-storage/async-storage",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@react-native-community/netinfo",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stoprocent/bleno",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stoprocent/noble",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@xmldom/xmldom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "acorn",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "bufferutil",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "c8",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    66
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "matter.js-monorepo",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@matter/cli-tool",
+     "path": "packages/cli-tool/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/node",
+      "@matter/nodejs",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@matter/create",
+     "path": "packages/create/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@matter/general",
+     "path": "packages/general/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/testing"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/main",
+     "path": "packages/main/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/node",
+      "@matter/nodejs",
+      "@matter/protocol",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 7,
+      "root": true
+     }
+    },
+    {
+     "name": "@project-chip/matter.js",
+     "path": "packages/matter.js/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/node",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 4,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/model",
+     "path": "packages/model/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/testing"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/mqtt",
+     "path": "packages/mqtt/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/node",
+     "path": "packages/node/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 10,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/nodejs-ble",
+     "path": "packages/nodejs-ble/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/nodejs-shell",
+     "path": "packages/nodejs-shell/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/node",
+      "@matter/nodejs",
+      "@matter/nodejs-ble",
+      "@matter/protocol",
+      "@matter/types"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@matter/nodejs-ws",
+     "path": "packages/nodejs-ws/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/node",
+      "@matter/nodejs",
+      "@matter/protocol"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/nodejs",
+     "path": "packages/nodejs/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/node",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types",
+      "@project-chip/matter.js"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/protocol",
+     "path": "packages/protocol/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/react-native",
+     "path": "packages/react-native/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/nodejs",
+      "@matter/protocol"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/testing",
+     "path": "packages/testing/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/thread-br-client",
+     "path": "packages/thread-br-client/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/main",
+      "@matter/protocol",
+      "@matter/testing"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/types",
+     "path": "packages/types/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/testing"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/chip-testing",
+     "path": "support/chip-testing/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/main",
+      "@matter/model",
+      "@matter/node",
+      "@matter/nodejs",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types",
+      "@project-chip/matter.js"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@matter/codegen",
+     "path": "support/codegen/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/intermediate-models",
+      "@matter/model",
+      "@matter/protocol",
+      "@matter/testing",
+      "@matter/types"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@matter/intermediate-models",
+     "path": "support/models/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@matter/general",
+      "@matter/model",
+      "@matter/testing"
+     ],
+     "exports": {
+      "entries": 2,
+      "root": true
+     }
+    }
+   ],
+   "count": 21,
+   "edges": 82,
+   "cycles": [],
+   "maxDepth": 9,
+   "topFanIn": [
+    {
+     "name": "@matter/general",
+     "ecosystem": "npm",
+     "dependents": 17
+    },
+    {
+     "name": "@matter/testing",
+     "ecosystem": "npm",
+     "dependents": 13
+    },
+    {
+     "name": "@matter/protocol",
+     "ecosystem": "npm",
+     "dependents": 12
+    },
+    {
+     "name": "@matter/model",
+     "ecosystem": "npm",
+     "dependents": 11
+    },
+    {
+     "name": "@matter/types",
+     "ecosystem": "npm",
+     "dependents": 10
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 21,
+    "edges": 82
+   },
+   "nodes": [
+    {
+     "id": "@matter/general",
+     "dir": "packages/general",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 17,
+     "depth": 1
+    },
+    {
+     "id": "@matter/testing",
+     "dir": "packages/testing",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 13,
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol",
+     "dir": "packages/protocol",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 12,
+     "depth": 4
+    },
+    {
+     "id": "@matter/model",
+     "dir": "packages/model",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 11,
+     "depth": 2
+    },
+    {
+     "id": "@matter/types",
+     "dir": "packages/types",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 10,
+     "depth": 3
+    },
+    {
+     "id": "@matter/node",
+     "dir": "packages/node",
+     "ecosystem": "npm",
+     "dependencies": 5,
+     "dependents": 7,
+     "depth": 5
+    },
+    {
+     "id": "@matter/nodejs",
+     "dir": "packages/nodejs",
+     "ecosystem": "npm",
+     "dependencies": 7,
+     "dependents": 6,
+     "depth": 7
+    },
+    {
+     "id": "@matter/main",
+     "dir": "packages/main",
+     "ecosystem": "npm",
+     "dependencies": 6,
+     "dependents": 2,
+     "depth": 8
+    },
+    {
+     "id": "@project-chip/matter.js",
+     "dir": "packages/matter.js",
+     "ecosystem": "npm",
+     "dependencies": 6,
+     "dependents": 2,
+     "depth": 6
+    },
+    {
+     "id": "@matter/intermediate-models",
+     "dir": "support/models",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "@matter/nodejs-ble",
+     "dir": "packages/nodejs-ble",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 5
+    },
+    {
+     "id": "@matter/chip-testing",
+     "dir": "support/chip-testing",
+     "ecosystem": "npm",
+     "dependencies": 9,
+     "dependents": 0,
+     "depth": 9
+    },
+    {
+     "id": "@matter/cli-tool",
+     "dir": "packages/cli-tool",
+     "ecosystem": "npm",
+     "dependencies": 7,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "@matter/codegen",
+     "dir": "support/codegen",
+     "ecosystem": "npm",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "@matter/create",
+     "dir": "packages/create",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@matter/mqtt",
+     "dir": "packages/mqtt",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "@matter/nodejs-shell",
+     "dir": "packages/nodejs-shell",
+     "ecosystem": "npm",
+     "dependencies": 7,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "@matter/nodejs-ws",
+     "dir": "packages/nodejs-ws",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "@matter/react-native",
+     "dir": "packages/react-native",
+     "ecosystem": "npm",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 8
+    },
+    {
+     "id": "@matter/thread-br-client",
+     "dir": "packages/thread-br-client",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 9
+    },
+    {
+     "id": "matter.js-monorepo",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/general",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/model",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/model",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/mqtt",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/nodejs-ble",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@project-chip/matter.js",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/main",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/main",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/node",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/nodejs",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@project-chip/matter.js",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/intermediate-models",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/protocol",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/types",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/general",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/model",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/testing",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 9,
+   "chain": [
+    "@matter/thread-br-client",
+    "@matter/main",
+    "@matter/nodejs",
+    "@project-chip/matter.js",
+    "@matter/node",
+    "@matter/protocol",
+    "@matter/types",
+    "@matter/model",
+    "@matter/general",
+    "@matter/testing"
+   ],
+   "topFanIn": [
+    {
+     "name": "@matter/general",
+     "ecosystem": "npm",
+     "dependents": 17
+    },
+    {
+     "name": "@matter/testing",
+     "ecosystem": "npm",
+     "dependents": 13
+    },
+    {
+     "name": "@matter/protocol",
+     "ecosystem": "npm",
+     "dependents": 12
+    },
+    {
+     "name": "@matter/model",
+     "ecosystem": "npm",
+     "dependents": 11
+    },
+    {
+     "name": "@matter/types",
+     "ecosystem": "npm",
+     "dependents": 10
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 43,
+    "edges": 82,
+    "packages": 21,
+    "packagesWithEntries": 16,
+    "filesRead": 1
+   },
+   "nodes": [
+    {
+     "id": "@matter/nodejs-ble#./package.json",
+     "pkg": "@matter/nodejs-ble",
+     "key": "./package.json",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "packages/nodejs-ble/package.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@matter/nodejs-ble#./require",
+     "pkg": "@matter/nodejs-ble",
+     "key": "./require",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "packages/nodejs-ble/require/require.cjs",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@project-chip/matter.js#./package.json",
+     "pkg": "@project-chip/matter.js",
+     "key": "./package.json",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": "packages/matter.js/package.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@matter/react-native#./package.json",
+     "pkg": "@matter/react-native",
+     "key": "./package.json",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/react-native/package.json",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@matter/codegen#.",
+     "pkg": "@matter/codegen",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/general#.",
+     "pkg": "@matter/general",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 17,
+      "files": null
+     },
+     "dependents": 17,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/intermediate-models#.",
+     "pkg": "@matter/intermediate-models",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/intermediate-models#./*",
+     "pkg": "@matter/intermediate-models",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#.",
+     "pkg": "@matter/main",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/main#./*",
+     "pkg": "@matter/main",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#./behaviors/*",
+     "pkg": "@matter/main",
+     "key": "./behaviors/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./behaviors/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#./clusters/*",
+     "pkg": "@matter/main",
+     "key": "./clusters/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./clusters/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#./devices/*",
+     "pkg": "@matter/main",
+     "key": "./devices/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./devices/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#./endpoints/*",
+     "pkg": "@matter/main",
+     "key": "./endpoints/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "pattern": "./endpoints/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/main#./platform",
+     "pkg": "@matter/main",
+     "key": "./platform",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/model#.",
+     "pkg": "@matter/model",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 11,
+      "files": null
+     },
+     "dependents": 15,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/model#./resources",
+     "pkg": "@matter/model",
+     "key": "./resources",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 11,
+      "files": null
+     },
+     "dependents": 15,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/mqtt#.",
+     "pkg": "@matter/mqtt",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#.",
+     "pkg": "@matter/node",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#./behaviors",
+     "pkg": "@matter/node",
+     "key": "./behaviors",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#./behaviors/*",
+     "pkg": "@matter/node",
+     "key": "./behaviors/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "pattern": "./behaviors/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/node#./behaviors/system/*",
+     "pkg": "@matter/node",
+     "key": "./behaviors/system/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "pattern": "./behaviors/system/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/node#./devices",
+     "pkg": "@matter/node",
+     "key": "./devices",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#./devices/*",
+     "pkg": "@matter/node",
+     "key": "./devices/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "pattern": "./devices/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/node#./endpoints",
+     "pkg": "@matter/node",
+     "key": "./endpoints",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#./endpoints/*",
+     "pkg": "@matter/node",
+     "key": "./endpoints/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "pattern": "./endpoints/*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/node#./load",
+     "pkg": "@matter/node",
+     "key": "./load",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/node#./testing",
+     "pkg": "@matter/node",
+     "key": "./testing",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 7,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/nodejs-ble#.",
+     "pkg": "@matter/nodejs-ble",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/nodejs-ws#.",
+     "pkg": "@matter/nodejs-ws",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/nodejs#.",
+     "pkg": "@matter/nodejs",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 6,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/nodejs#./config",
+     "pkg": "@matter/nodejs",
+     "key": "./config",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 6,
+      "files": null
+     },
+     "dependents": 7,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/protocol#.",
+     "pkg": "@matter/protocol",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 12,
+      "files": null
+     },
+     "dependents": 12,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/react-native#.",
+     "pkg": "@matter/react-native",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/react-native#./*",
+     "pkg": "@matter/react-native",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/testing#.",
+     "pkg": "@matter/testing",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 13,
+      "files": null
+     },
+     "dependents": 18,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/thread-br-client#.",
+     "pkg": "@matter/thread-br-client",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/types#.",
+     "pkg": "@matter/types",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 10,
+      "files": null
+     },
+     "dependents": 13,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@matter/types#./*",
+     "pkg": "@matter/types",
+     "key": "./*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 10,
+      "files": null
+     },
+     "dependents": 13,
+     "loads": null,
+     "pattern": "./*",
+     "subpaths": 0,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@matter/types#./clusters/*",
+     "pkg": "@matter/types",
+     "key": "./clusters/*",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 10,
+      "files": null
+     },
+     "dependents": 13,
+     "loads": null,
+     "pattern": "./clusters/*",
+     "subpaths": 141,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null
+    },
+    {
+     "id": "@project-chip/matter.js#.",
+     "pkg": "@project-chip/matter.js",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@project-chip/matter.js#./cluster",
+     "pkg": "@project-chip/matter.js",
+     "key": "./cluster",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@project-chip/matter.js#./device",
+     "pkg": "@project-chip/matter.js",
+     "key": "./device",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 8,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/model",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/mqtt",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/general",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/model",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/node",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/nodejs",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ws",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/react-native",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/protocol",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/general",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/model",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/types",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/intermediate-models",
+     "to": "@matter/testing",
+     "files": null
+    },
+    {
+     "from": "@matter/cli-tool",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/main",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@project-chip/matter.js",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/node",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-ble",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/protocol",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/types",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs-shell",
+     "to": "@matter/nodejs-ble",
+     "files": null
+    },
+    {
+     "from": "@matter/nodejs",
+     "to": "@project-chip/matter.js",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@project-chip/matter.js",
+     "files": null
+    },
+    {
+     "from": "@matter/thread-br-client",
+     "to": "@matter/main",
+     "files": null
+    },
+    {
+     "from": "@matter/chip-testing",
+     "to": "@matter/main",
+     "files": null
+    },
+    {
+     "from": "@matter/codegen",
+     "to": "@matter/intermediate-models",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "3 entries of 43 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "26 entries of 43 unknown, such as @matter/codegen#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 145,
+    "edges": 7,
+    "cached": 0,
+    "trackedFiles": 5172
+   },
+   "nodes": [
+    {
+     "id": "@matter/chip-testing#build",
+     "pkg": "@matter/chip-testing",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#build-clean",
+     "pkg": "@matter/chip-testing",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#clean",
+     "pkg": "@matter/chip-testing",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test",
+     "pkg": "@matter/chip-testing",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-app-cc-1",
+     "pkg": "@matter/chip-testing",
+     "name": "test-app-cc-1",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-app-cc-2",
+     "pkg": "@matter/chip-testing",
+     "name": "test-app-cc-2",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-app-fast",
+     "pkg": "@matter/chip-testing",
+     "name": "test-app-fast",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-app-slow",
+     "pkg": "@matter/chip-testing",
+     "name": "test-app-slow",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-cert",
+     "pkg": "@matter/chip-testing",
+     "name": "test-cert",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-cert-files",
+     "pkg": "@matter/chip-testing",
+     "name": "test-cert-files",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-cert-framework",
+     "pkg": "@matter/chip-testing",
+     "name": "test-cert-framework",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-cert-long",
+     "pkg": "@matter/chip-testing",
+     "name": "test-cert-long",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@matter/chip-testing#test-core",
+     "pkg": "@matter/chip-testing",
+     "name": "test-core",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-core-security",
+     "pkg": "@matter/chip-testing",
+     "name": "test-core-security",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/chip-testing#test-icd",
+     "pkg": "@matter/chip-testing",
+     "name": "test-icd",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/cli-tool#build",
+     "pkg": "@matter/cli-tool",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/cli-tool#build-clean",
+     "pkg": "@matter/cli-tool",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/cli-tool#clean",
+     "pkg": "@matter/cli-tool",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/cli-tool#matter",
+     "pkg": "@matter/cli-tool",
+     "name": "matter",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#build",
+     "pkg": "@matter/codegen",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#build-clean",
+     "pkg": "@matter/codegen",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#clean",
+     "pkg": "@matter/codegen",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate",
+     "pkg": "@matter/codegen",
+     "name": "generate",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@matter/codegen#generate-chip",
+     "pkg": "@matter/codegen",
+     "name": "generate-chip",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-clusters",
+     "pkg": "@matter/codegen",
+     "name": "generate-clusters",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-endpoints",
+     "pkg": "@matter/codegen",
+     "name": "generate-endpoints",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-forwards",
+     "pkg": "@matter/codegen",
+     "name": "generate-forwards",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-model",
+     "pkg": "@matter/codegen",
+     "name": "generate-model",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-spec",
+     "pkg": "@matter/codegen",
+     "name": "generate-spec",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#generate-vscode",
+     "pkg": "@matter/codegen",
+     "name": "generate-vscode",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#test",
+     "pkg": "@matter/codegen",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/codegen#validate-chipdm-model",
+     "pkg": "@matter/codegen",
+     "name": "validate-chipdm-model",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/create#build",
+     "pkg": "@matter/create",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/create#build-clean",
+     "pkg": "@matter/create",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/create#clean",
+     "pkg": "@matter/create",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/create#create",
+     "pkg": "@matter/create",
+     "name": "create",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/general#build",
+     "pkg": "@matter/general",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/general#build-clean",
+     "pkg": "@matter/general",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/general#clean",
+     "pkg": "@matter/general",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/general#coverage",
+     "pkg": "@matter/general",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/general#test",
+     "pkg": "@matter/general",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/intermediate-models#build",
+     "pkg": "@matter/intermediate-models",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/intermediate-models#build-clean",
+     "pkg": "@matter/intermediate-models",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/intermediate-models#clean",
+     "pkg": "@matter/intermediate-models",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/main#build",
+     "pkg": "@matter/main",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/main#build-clean",
+     "pkg": "@matter/main",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/main#clean",
+     "pkg": "@matter/main",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/main#coverage",
+     "pkg": "@matter/main",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/model#build",
+     "pkg": "@matter/model",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/model#build-clean",
+     "pkg": "@matter/model",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/model#clean",
+     "pkg": "@matter/model",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/model#coverage",
+     "pkg": "@matter/model",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/model#test",
+     "pkg": "@matter/model",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/mqtt#build",
+     "pkg": "@matter/mqtt",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/mqtt#build-clean",
+     "pkg": "@matter/mqtt",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/mqtt#clean",
+     "pkg": "@matter/mqtt",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/node#build",
+     "pkg": "@matter/node",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/node#build-clean",
+     "pkg": "@matter/node",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/node#clean",
+     "pkg": "@matter/node",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/node#coverage",
+     "pkg": "@matter/node",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/node#test",
+     "pkg": "@matter/node",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ble#build",
+     "pkg": "@matter/nodejs-ble",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ble#build-clean",
+     "pkg": "@matter/nodejs-ble",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ble#clean",
+     "pkg": "@matter/nodejs-ble",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ble#test",
+     "pkg": "@matter/nodejs-ble",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-shell#build",
+     "pkg": "@matter/nodejs-shell",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-shell#build-clean",
+     "pkg": "@matter/nodejs-shell",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-shell#bundle-shell",
+     "pkg": "@matter/nodejs-shell",
+     "name": "bundle-shell",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-shell#clean",
+     "pkg": "@matter/nodejs-shell",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-shell#shell",
+     "pkg": "@matter/nodejs-shell",
+     "name": "shell",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ws#build",
+     "pkg": "@matter/nodejs-ws",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ws#build-clean",
+     "pkg": "@matter/nodejs-ws",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ws#clean",
+     "pkg": "@matter/nodejs-ws",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs-ws#test",
+     "pkg": "@matter/nodejs-ws",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs#build",
+     "pkg": "@matter/nodejs",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs#build-clean",
+     "pkg": "@matter/nodejs",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs#clean",
+     "pkg": "@matter/nodejs",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs#coverage",
+     "pkg": "@matter/nodejs",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/nodejs#test",
+     "pkg": "@matter/nodejs",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol#build",
+     "pkg": "@matter/protocol",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol#build-clean",
+     "pkg": "@matter/protocol",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol#clean",
+     "pkg": "@matter/protocol",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol#coverage",
+     "pkg": "@matter/protocol",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/protocol#test",
+     "pkg": "@matter/protocol",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/react-native#build",
+     "pkg": "@matter/react-native",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/react-native#build-clean",
+     "pkg": "@matter/react-native",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/react-native#clean",
+     "pkg": "@matter/react-native",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/testing#build",
+     "pkg": "@matter/testing",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/testing#build-clean",
+     "pkg": "@matter/testing",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/testing#clean",
+     "pkg": "@matter/testing",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/testing#test",
+     "pkg": "@matter/testing",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/thread-br-client#build",
+     "pkg": "@matter/thread-br-client",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/thread-br-client#build-clean",
+     "pkg": "@matter/thread-br-client",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/thread-br-client#clean",
+     "pkg": "@matter/thread-br-client",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/thread-br-client#coverage",
+     "pkg": "@matter/thread-br-client",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/thread-br-client#test",
+     "pkg": "@matter/thread-br-client",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/types#build",
+     "pkg": "@matter/types",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/types#build-clean",
+     "pkg": "@matter/types",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/types#clean",
+     "pkg": "@matter/types",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/types#coverage",
+     "pkg": "@matter/types",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@matter/types#test",
+     "pkg": "@matter/types",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@project-chip/matter.js#build",
+     "pkg": "@project-chip/matter.js",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@project-chip/matter.js#build-clean",
+     "pkg": "@project-chip/matter.js",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@project-chip/matter.js#clean",
+     "pkg": "@project-chip/matter.js",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@project-chip/matter.js#coverage",
+     "pkg": "@project-chip/matter.js",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@project-chip/matter.js#test",
+     "pkg": "@project-chip/matter.js",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#build",
+     "pkg": "matter.js-monorepo",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#build-clean",
+     "pkg": "matter.js-monorepo",
+     "name": "build-clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#build-doc",
+     "pkg": "matter.js-monorepo",
+     "name": "build-doc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#clean",
+     "pkg": "matter.js-monorepo",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#cycles",
+     "pkg": "matter.js-monorepo",
+     "name": "cycles",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-air-quality-sensor",
+     "pkg": "matter.js-monorepo",
+     "name": "device-air-quality-sensor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-composed-wc-light",
+     "pkg": "matter.js-monorepo",
+     "name": "device-composed-wc-light",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-measuring-socket",
+     "pkg": "matter.js-monorepo",
+     "name": "device-measuring-socket",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-multiple-onoff",
+     "pkg": "matter.js-monorepo",
+     "name": "device-multiple-onoff",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-onoff",
+     "pkg": "matter.js-monorepo",
+     "name": "device-onoff",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-onoff-advanced",
+     "pkg": "matter.js-monorepo",
+     "name": "device-onoff-advanced",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-onoff-light",
+     "pkg": "matter.js-monorepo",
+     "name": "device-onoff-light",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-onoff-sensor-binding",
+     "pkg": "matter.js-monorepo",
+     "name": "device-onoff-sensor-binding",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-sensor",
+     "pkg": "matter.js-monorepo",
+     "name": "device-sensor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-simple",
+     "pkg": "matter.js-monorepo",
+     "name": "device-simple",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#device-smoke-co-alarm",
+     "pkg": "matter.js-monorepo",
+     "name": "device-smoke-co-alarm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#format",
+     "pkg": "matter.js-monorepo",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#format-verify",
+     "pkg": "matter.js-monorepo",
+     "name": "format-verify",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-chip",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-chip",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-clusters",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-clusters",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-endpoints",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-endpoints",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-forwards",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-forwards",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-model",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-model",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-spec",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-spec",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#generate-vscode",
+     "pkg": "matter.js-monorepo",
+     "name": "generate-vscode",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#lint",
+     "pkg": "matter.js-monorepo",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#lint-fix",
+     "pkg": "matter.js-monorepo",
+     "name": "lint-fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#matter-bridge",
+     "pkg": "matter.js-monorepo",
+     "name": "matter-bridge",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#matter-controller",
+     "pkg": "matter.js-monorepo",
+     "name": "matter-controller",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#matter-controller-shared-fabric",
+     "pkg": "matter.js-monorepo",
+     "name": "matter-controller-shared-fabric",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#matter-device",
+     "pkg": "matter.js-monorepo",
+     "name": "matter-device",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "matter.js-monorepo#prepare",
+     "pkg": "matter.js-monorepo",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "matter.js-monorepo#relock",
+     "pkg": "matter.js-monorepo",
+     "name": "relock",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#shell",
+     "pkg": "matter.js-monorepo",
+     "name": "shell",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#test",
+     "pkg": "matter.js-monorepo",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#validate-chipdm-model",
+     "pkg": "matter.js-monorepo",
+     "name": "validate-chipdm-model",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#validate-deps",
+     "pkg": "matter.js-monorepo",
+     "name": "validate-deps",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#validate-dts",
+     "pkg": "matter.js-monorepo",
+     "name": "validate-dts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "matter.js-monorepo#version",
+     "pkg": "matter.js-monorepo",
+     "name": "version",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@matter/chip-testing#test-cert-long",
+     "to": "@matter/chip-testing#test-cert",
+     "how": "calls"
+    },
+    {
+     "from": "@matter/codegen#generate",
+     "to": "@matter/codegen#generate-model",
+     "how": "calls"
+    },
+    {
+     "from": "@matter/codegen#generate",
+     "to": "@matter/codegen#generate-clusters",
+     "how": "calls"
+    },
+    {
+     "from": "@matter/codegen#generate",
+     "to": "@matter/codegen#generate-endpoints",
+     "how": "calls"
+    },
+    {
+     "from": "@matter/codegen#generate",
+     "to": "@matter/codegen#generate-forwards",
+     "how": "calls"
+    },
+    {
+     "from": "matter.js-monorepo#prepare",
+     "to": "matter.js-monorepo#build-clean",
+     "how": "calls"
+    },
+    {
+     "from": "matter.js-monorepo#matter-device",
+     "to": "matter.js-monorepo#device-onoff",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "@matter/chip-testing#test-cert-long",
+    "@matter/chip-testing#test-cert"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 2,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "check-and-lint",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build-non-linux (24.x, macos-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "build-non-linux (24.x, windows-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (26.x)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 16.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (20.x)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": true,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 24.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build-non-linux (26.x, windows-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "test (22.x)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 19.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build-non-linux (22.x, macos-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "build-non-linux (22.x, windows-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build-non-linux (26.x, macos-latest)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "test (24.x)",
+     "needs": [
+      "check-and-lint"
+     ],
+     "onPath": false,
+     "blockedMin": 1.7,
+     "queueMin": 0,
+     "workMin": 22.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "build-non-linux (24.x, macos-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "build-non-linux (24.x, windows-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "test (26.x)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "test (20.x)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "build-non-linux (26.x, windows-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "test (22.x)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "build-non-linux (22.x, macos-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "build-non-linux (22.x, windows-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "build-non-linux (26.x, macos-latest)",
+     "to": "check-and-lint"
+    },
+    {
+     "from": "test (24.x)",
+     "to": "check-and-lint"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "check-and-lint",
+     "numbers": {
+      "heldJobs": 10,
+      "jobs": 11,
+      "heldJobMin": 16.5,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "check-and-lint",
+    "test (20.x)"
+   ],
+   "pathMinP50": 26.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"test (20.x)\" runs 25 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"check-and-lint\" holds up 10 of 11 jobs, 16.5 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 55,
+ "read": {
+  "calls": 55,
+  "fromCache": 0
+ }
+}

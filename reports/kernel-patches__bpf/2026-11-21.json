@@ -1,0 +1,4411 @@
+{
+ "repo": "kernel-patches/bpf",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "bpf-next_base",
+ "profile": {
+  "ageYears": 6.2,
+  "stars": 148,
+  "forks": 197,
+  "languages": [
+   [
+    "C",
+    98
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "Rust",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 50583519,
+  "files": 67345,
+  "sourceFiles": 42230,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 23668586,
+   "tests": 141533,
+   "integration": 3355,
+   "support": 581
+  },
+  "testShare": 0.0061085145826608985,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 1842.8,
+  "pace": 0.4,
+  "activeAuthors28d": "≥183",
+  "prsOpenedPerWeek": 126,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 281,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 3.6,
+  "runs": 1000,
+  "runsInPeriod": 1596,
+  "truncated": true,
+  "mainDays": 7.1
+ },
+ "size": "large",
+ "headsPerWeek": 903,
+ "score": 54,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 37,
+  "reliability": 100,
+  "efficiency": 57
+ },
+ "detail": {
+  "speed": {
+   "wait": 22,
+   "forSize": 69,
+   "tail": 2
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 43351.9,
+  "prBilledMinutesPerDay": 45944,
+  "jobMinutesPerMergedPr": null,
+  "expectedMinutesPerMergedPr": 1209.6,
+  "expectedWait": 45.6,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 459,
+  "timed": 39,
+  "p50": 37.35,
+  "p75": 92.81666666666666,
+  "p90": 159.21666666666667,
+  "redRate": 0.25925925925925924,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.20261437908496732,
+  "botHeads": 327,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 411,
+  "bots": [
+   [
+    "kernel-patches-daemon-bpf[bot]",
+    411
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "bpf-ci",
+    39
+   ]
+  ],
+  "redBy": [
+   [
+    "bpf-ci",
+    105
+   ],
+   [
+    "AI Code Review",
+    23
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "bpf-ci"
+  ],
+  "allPushesP50": 37.35
+ },
+ "main": {
+  "heads": 14,
+  "p50": null,
+  "p90": null,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.8905325443786982,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 40,
+  "spanMin": 97.3,
+  "jobMinutes": 360.45000000000005,
+  "billedMinutes": 382,
+  "subMinuteJobs": 2,
+  "queueP50Sec": 308,
+  "queueP90Sec": 7124,
+  "setupShare": 0.06748220640569395,
+  "critical": {
+   "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+   "minutes": 19.866666666666667,
+   "shareOfSpan": 0.5664659564613247
+  },
+  "longest": {
+   "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+   "minutes": 20.65
+  },
+  "providers": [
+   [
+    "self-hosted",
+    160
+   ],
+   [
+    "GitHub-hosted",
+    12
+   ],
+   [
+    "codebuild-bpf-ci-44886167489-1",
+    10
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test.yml"
+  ],
+  "jobs": 11,
+  "edges": 27,
+  "matrixJobs": 0,
+  "reusableCalls": 10,
+  "gateEnd": [
+   {
+    "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+    "runs": 2
+   },
+   {
+    "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+    "runs": 1
+   },
+   {
+    "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "set-matrix",
+    "minutes": 14.2,
+    "share": 0.09,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 5,
+    "workMin": 4.2,
+    "setupMin": 0.3
+   },
+   {
+    "name": "x86_64 llvm-21 / build / build kernel and selftests",
+    "minutes": 6.4,
+    "share": 0.04,
+    "blockedMin": 14.2,
+    "hiddenMin": 0,
+    "queueMin": 0.3,
+    "workMin": 6.1,
+    "setupMin": 0.6
+   },
+   {
+    "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+    "minutes": 130.7,
+    "share": 0.86,
+    "blockedMin": 20.5,
+    "hiddenMin": 0,
+    "queueMin": 114.9,
+    "workMin": 14.2,
+    "setupMin": 0.6
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 3,
+  "pathMinP50": 97.3,
+  "blockedMinP50": 15.6,
+  "queueMinP50": 76.7,
+  "hiddenMinP50": 0,
+  "workMinP50": 26.3,
+  "setupInPathMinP50": 1.2,
+  "topBlockers": [
+   {
+    "name": "x86_64 gcc-15 / build / build kernel and selftests",
+    "runs": 3,
+    "heldJobs": 9,
+    "jobs": 33,
+    "tookMin": 9.5,
+    "heldJobMin": 85.7
+   },
+   {
+    "name": "set-matrix",
+    "runs": 3,
+    "heldJobs": 38,
+    "jobs": 40,
+    "tookMin": 17.9,
+    "heldJobMin": 679.6
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44887971084,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 31.3,
+    "path": [
+     "set-matrix",
+     "aarch64 gcc-15 / build / build kernel and selftests",
+     "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN"
+    ],
+    "topBlocker": "x86_64 gcc-15 / build / build kernel and selftests",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1.5
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.4,
+      "setupMin": 0.7
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 6.3,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 5.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.4,
+      "startMin": 0.6,
+      "endMin": 6.7,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.4,
+      "endMin": 6.8,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.4,
+      "endMin": 23.8,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.4,
+      "endMin": 24.3,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.4,
+      "endMin": 24.1,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 9.2,
+      "endMin": 11.4,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.4,
+      "endMin": 7.4,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.3,
+      "endMin": 25.1,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.4,
+      "endMin": 25.4,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.3,
+      "endMin": 9.6,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.4,
+      "endMin": 25.5,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 7,
+      "endMin": 9.2,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 12,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 20.8,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 20.5,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.8,
+      "endMin": 20.8,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.7,
+      "endMin": 7.5,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 10.2,
+      "endMin": 12.5,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 20,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 20.6,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 20,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 12.3,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 13.5,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 13.3,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 8.1,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.3,
+      "endMin": 23.5,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.5,
+      "endMin": 31.3,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.5,
+      "endMin": 26.5,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 0.5
+     }
+    ]
+   },
+   {
+    "id": 44886167489,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 36,
+    "path": [
+     "set-matrix",
+     "aarch64 gcc-15 / build / build kernel and selftests",
+     "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN"
+    ],
+    "topBlocker": "x86_64 gcc-15 / build / build kernel and selftests",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 1.9
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 2.7,
+      "endMin": 8.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 5.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 5.4,
+      "endMin": 10.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 5.1,
+      "workMin": 5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 4.8,
+      "endMin": 10.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 4.4,
+      "workMin": 5.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 5.5,
+      "endMin": 11.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 6.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 5.5,
+      "endMin": 11.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 5.1,
+      "workMin": 5.9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 11.6,
+      "endMin": 14.9,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 3.3,
+      "setupMin": 2.3
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 11.6,
+      "endMin": 13.9,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 8.6,
+      "endMin": 22.8,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 8.6,
+      "endMin": 22.7,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 8.6,
+      "endMin": 13.3,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 8.6,
+      "endMin": 9.9,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 8.5,
+      "createdMin": 8.5,
+      "startMin": 8.6,
+      "endMin": 22.2,
+      "blockedMin": 8.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 31.7,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 31.6,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 31.5,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21,
+      "setupMin": 0.7
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 11.8,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 13.3,
+      "endMin": 15.6,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 29.4,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 29.5,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19,
+      "setupMin": 0.3
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 14.2,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 29.3,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 10.5,
+      "endMin": 11.2,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 12,
+      "endMin": 15.5,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.4,
+      "setupMin": 2.4
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 12,
+      "endMin": 14.2,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 16.2,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 1.1
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 14.6,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 12.5,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 18.4,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 17.5,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 24.9,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 18.6,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 25.2,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 24.9,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 13.9,
+      "createdMin": 13.9,
+      "startMin": 14,
+      "endMin": 28.9,
+      "blockedMin": 13.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.2,
+      "endMin": 27.9,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 14.9,
+      "endMin": 27.9,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13,
+      "setupMin": 1
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.5,
+      "endMin": 27.8,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 15.6,
+      "createdMin": 15.6,
+      "startMin": 15.6,
+      "endMin": 36,
+      "blockedMin": 15.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.4,
+      "setupMin": 0.7
+     }
+    ]
+   },
+   {
+    "id": 44874064422,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 97.3,
+    "path": [
+     "set-matrix",
+     "x86_64 llvm-21 / build / build kernel and selftests",
+     "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21"
+    ],
+    "topBlocker": "x86_64 gcc-15 / build / build kernel and selftests",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 1.4
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 3.7,
+      "endMin": 10,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 6.3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 5.6,
+      "endMin": 11.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 6.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 3.6,
+      "endMin": 8.2,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 4.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 4.9,
+      "endMin": 10.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 4.4,
+      "workMin": 5.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 8.2,
+      "createdMin": 8.2,
+      "startMin": 63.6,
+      "endMin": 77.9,
+      "blockedMin": 8.2,
+      "hiddenMin": 0,
+      "queueMin": 55.4,
+      "workMin": 14.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 8.2,
+      "createdMin": 8.2,
+      "startMin": 61.9,
+      "endMin": 76.8,
+      "blockedMin": 8.2,
+      "hiddenMin": 0,
+      "queueMin": 53.7,
+      "workMin": 14.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 8.2,
+      "createdMin": 8.2,
+      "startMin": 64.9,
+      "endMin": 79.4,
+      "blockedMin": 8.2,
+      "hiddenMin": 0,
+      "queueMin": 56.7,
+      "workMin": 14.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 8.2,
+      "createdMin": 8.2,
+      "startMin": 66.4,
+      "endMin": 67.2,
+      "blockedMin": 8.2,
+      "hiddenMin": 0,
+      "queueMin": 58.2,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 10.3,
+      "endMin": 12.6,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 61.2,
+      "endMin": 68.2,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 51.3,
+      "workMin": 7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 76.8,
+      "endMin": 90.9,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 66.9,
+      "workMin": 14.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 70.9,
+      "endMin": 76.1,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 60.9,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 78.8,
+      "endMin": 92.8,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 68.9,
+      "workMin": 14,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 79.5,
+      "endMin": 93.2,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 69.6,
+      "workMin": 13.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 78.7,
+      "endMin": 85.3,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 68.8,
+      "workMin": 6.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 10,
+      "createdMin": 10,
+      "startMin": 78.8,
+      "endMin": 79.9,
+      "blockedMin": 10,
+      "hiddenMin": 0,
+      "queueMin": 68.8,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 13.5,
+      "endMin": 16,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 2.5,
+      "setupMin": 1
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 42.9,
+      "endMin": 62.5,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 32.4,
+      "workMin": 19.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 52.7,
+      "endMin": 71.6,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 42.2,
+      "workMin": 18.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 58.4,
+      "endMin": 77.6,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 47.9,
+      "workMin": 19.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 58.2,
+      "endMin": 61.9,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 47.7,
+      "workMin": 3.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 10.5,
+      "createdMin": 10.5,
+      "startMin": 58.4,
+      "endMin": 59.1,
+      "blockedMin": 10.5,
+      "hiddenMin": 0,
+      "queueMin": 47.9,
+      "workMin": 0.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 11.9,
+      "endMin": 14.9,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3,
+      "setupMin": 1.5
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 82.2,
+      "endMin": 96.5,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 70.5,
+      "workMin": 14.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 81.5,
+      "endMin": 86.7,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 69.8,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 80,
+      "endMin": 94.2,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 68.3,
+      "workMin": 14.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 82.6,
+      "endMin": 83.8,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 70.9,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 83.1,
+      "endMin": 97.3,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 71.4,
+      "workMin": 14.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 12.6,
+      "createdMin": 12.6,
+      "startMin": 68.3,
+      "endMin": 84.3,
+      "blockedMin": 12.6,
+      "hiddenMin": 0,
+      "queueMin": 55.7,
+      "workMin": 16,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 71.1,
+      "endMin": 87.7,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 56.2,
+      "workMin": 16.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 16,
+      "createdMin": 16,
+      "startMin": 58.9,
+      "endMin": 79.7,
+      "blockedMin": 16,
+      "hiddenMin": 0,
+      "queueMin": 43,
+      "workMin": 20.8,
+      "setupMin": 0.8
+     }
+    ]
+   },
+   {
+    "id": 44867137821,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 167.7,
+    "path": [
+     "set-matrix",
+     "x86_64 gcc-15 / build / build kernel and selftests",
+     "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.6,
+      "endMin": 17.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.6,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.5,
+      "endMin": 17,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.5,
+      "workMin": 3.5,
+      "setupMin": 1.5
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 18.2,
+      "endMin": 24.3,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 18.2,
+      "endMin": 23.6,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 18.2,
+      "endMin": 24,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 18.2,
+      "endMin": 24.2,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 18.2,
+      "endMin": 23.1,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 120.2,
+      "endMin": 135.7,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 97.1,
+      "workMin": 15.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 141.5,
+      "endMin": 142.3,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 118.4,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 125.1,
+      "endMin": 140.6,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 102,
+      "workMin": 15.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 123.4,
+      "endMin": 139.1,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 100.4,
+      "workMin": 15.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 24.2,
+      "endMin": 26.6,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 118.7,
+      "endMin": 119.8,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 94.8,
+      "workMin": 1.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 123.3,
+      "endMin": 142.5,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 99.3,
+      "workMin": 19.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 123.2,
+      "endMin": 127,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 99.2,
+      "workMin": 3.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 121.8,
+      "endMin": 141,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 97.8,
+      "workMin": 19.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 24,
+      "createdMin": 24,
+      "startMin": 123.8,
+      "endMin": 143.5,
+      "blockedMin": 24,
+      "hiddenMin": 0,
+      "queueMin": 99.8,
+      "workMin": 19.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 24.5,
+      "endMin": 26.9,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 2.4,
+      "setupMin": 1
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 24.6,
+      "endMin": 27.9,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.3,
+      "setupMin": 2.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 128,
+      "endMin": 143.6,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 103.8,
+      "workMin": 15.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 128,
+      "endMin": 143.5,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 103.9,
+      "workMin": 15.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 139.8,
+      "endMin": 155.9,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 115.6,
+      "workMin": 16.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 128.3,
+      "endMin": 129.9,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 104.1,
+      "workMin": 1.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 24.2,
+      "createdMin": 24.2,
+      "startMin": 143,
+      "endMin": 148.9,
+      "blockedMin": 24.2,
+      "hiddenMin": 0,
+      "queueMin": 118.9,
+      "workMin": 5.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 24.5,
+      "endMin": 26.9,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 123.5,
+      "endMin": 126.5,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 99.2,
+      "workMin": 3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 139.1,
+      "endMin": 143.7,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 114.8,
+      "workMin": 4.7,
+      "setupMin": 1
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 24.6,
+      "endMin": 27.9,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 2.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 146.9,
+      "endMin": 152.6,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 122.6,
+      "workMin": 5.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 145.2,
+      "endMin": 160.2,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 120.9,
+      "workMin": 15,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 145.8,
+      "endMin": 152.8,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 121.6,
+      "workMin": 7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 148.3,
+      "endMin": 149.5,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 124,
+      "workMin": 1.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 143,
+      "endMin": 150,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 118.7,
+      "workMin": 7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 146.9,
+      "endMin": 162,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 122.7,
+      "workMin": 15,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 152.7,
+      "endMin": 167.7,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 128.5,
+      "workMin": 15,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 26.6,
+      "createdMin": 26.6,
+      "startMin": 132.1,
+      "endMin": 153.3,
+      "blockedMin": 26.6,
+      "hiddenMin": 0,
+      "queueMin": 105.5,
+      "workMin": 21.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 26.9,
+      "createdMin": 26.9,
+      "startMin": 133.6,
+      "endMin": 150,
+      "blockedMin": 26.9,
+      "hiddenMin": 0,
+      "queueMin": 106.6,
+      "workMin": 16.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 26.9,
+      "createdMin": 26.9,
+      "startMin": 144.2,
+      "endMin": 160.1,
+      "blockedMin": 26.9,
+      "hiddenMin": 0,
+      "queueMin": 117.3,
+      "workMin": 15.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 137,
+      "endMin": 150.9,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 109.2,
+      "workMin": 13.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 27.9,
+      "createdMin": 27.9,
+      "startMin": 138.5,
+      "endMin": 152.8,
+      "blockedMin": 27.9,
+      "hiddenMin": 0,
+      "queueMin": 110.6,
+      "workMin": 14.3,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44867128767,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 179.6,
+    "path": [
+     "set-matrix",
+     "x86_64 gcc-15 / build / build kernel and selftests",
+     "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 14.9,
+      "endMin": 19.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 14.9,
+      "workMin": 4.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 2.7,
+      "setupMin": 1.4
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 24.5,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 25.9,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 25.6,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 25.1,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 19.1,
+      "createdMin": 19.1,
+      "startMin": 19.4,
+      "endMin": 25.4,
+      "blockedMin": 19.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 24.5,
+      "createdMin": 24.5,
+      "startMin": 126.8,
+      "endMin": 142.4,
+      "blockedMin": 24.5,
+      "hiddenMin": 0,
+      "queueMin": 102.3,
+      "workMin": 15.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 24.5,
+      "createdMin": 24.5,
+      "startMin": 125.8,
+      "endMin": 126.7,
+      "blockedMin": 24.5,
+      "hiddenMin": 0,
+      "queueMin": 101.3,
+      "workMin": 0.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 24.5,
+      "createdMin": 24.5,
+      "startMin": 136,
+      "endMin": 152,
+      "blockedMin": 24.5,
+      "hiddenMin": 0,
+      "queueMin": 111.4,
+      "workMin": 16,
+      "setupMin": 0.3
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 24.5,
+      "createdMin": 24.5,
+      "startMin": 138.6,
+      "endMin": 154.8,
+      "blockedMin": 24.5,
+      "hiddenMin": 0,
+      "queueMin": 114.1,
+      "workMin": 16.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 25.4,
+      "endMin": 27.7,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 125.8,
+      "endMin": 126.5,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 100.7,
+      "workMin": 0.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 126.1,
+      "endMin": 145.5,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 101.1,
+      "workMin": 19.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 126.8,
+      "endMin": 146.5,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 101.7,
+      "workMin": 19.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 126.7,
+      "endMin": 146,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 101.6,
+      "workMin": 19.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 126.6,
+      "endMin": 130.2,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 101.5,
+      "workMin": 3.7,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 25.8,
+      "endMin": 29.1,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 2.3
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 25.9,
+      "endMin": 28.2,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 146.3,
+      "endMin": 147.5,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 120.8,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 132.9,
+      "endMin": 138.8,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 107.5,
+      "workMin": 5.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 157.3,
+      "endMin": 172.9,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 131.9,
+      "workMin": 15.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 149.3,
+      "endMin": 165.2,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 123.9,
+      "workMin": 15.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 25.4,
+      "createdMin": 25.4,
+      "startMin": 152.9,
+      "endMin": 168.4,
+      "blockedMin": 25.4,
+      "hiddenMin": 0,
+      "queueMin": 127.5,
+      "workMin": 15.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 128.3,
+      "endMin": 133.7,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 102.8,
+      "workMin": 5.4,
+      "setupMin": 1
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 25.9,
+      "endMin": 28.2,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 129.1,
+      "endMin": 132.2,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 103.6,
+      "workMin": 3.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 25.8,
+      "endMin": 28.9,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.1,
+      "setupMin": 2.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 158.4,
+      "endMin": 173.5,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 132.8,
+      "workMin": 15.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 160.1,
+      "endMin": 175,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 134.5,
+      "workMin": 14.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 160.3,
+      "endMin": 167.2,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 134.7,
+      "workMin": 6.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 165.4,
+      "endMin": 179.6,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 139.8,
+      "workMin": 14.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 165.3,
+      "endMin": 172.4,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 139.8,
+      "workMin": 7.1,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 166,
+      "endMin": 171.5,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 140.4,
+      "workMin": 5.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 25.6,
+      "createdMin": 25.6,
+      "startMin": 166,
+      "endMin": 167.2,
+      "blockedMin": 25.6,
+      "hiddenMin": 0,
+      "queueMin": 140.5,
+      "workMin": 1.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 27.7,
+      "createdMin": 27.7,
+      "startMin": 133.2,
+      "endMin": 153.8,
+      "blockedMin": 27.7,
+      "hiddenMin": 0,
+      "queueMin": 105.5,
+      "workMin": 20.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 28.2,
+      "createdMin": 28.2,
+      "startMin": 149.8,
+      "endMin": 165.8,
+      "blockedMin": 28.2,
+      "hiddenMin": 0,
+      "queueMin": 121.6,
+      "workMin": 16,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 28.2,
+      "createdMin": 28.2,
+      "startMin": 153.3,
+      "endMin": 170.6,
+      "blockedMin": 28.2,
+      "hiddenMin": 0,
+      "queueMin": 125.1,
+      "workMin": 17.3,
+      "setupMin": 1
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 28.9,
+      "createdMin": 28.9,
+      "startMin": 141.9,
+      "endMin": 155.6,
+      "blockedMin": 28.9,
+      "hiddenMin": 0,
+      "queueMin": 113,
+      "workMin": 13.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 29.1,
+      "createdMin": 29.1,
+      "startMin": 151.3,
+      "endMin": 165.3,
+      "blockedMin": 29.1,
+      "hiddenMin": 0,
+      "queueMin": 122.2,
+      "workMin": 14,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44867119543,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 151.2,
+    "path": [
+     "set-matrix",
+     "x86_64 llvm-21 / build / build kernel and selftests",
+     "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5,
+      "endMin": 14.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 9.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.7,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 3.7,
+      "setupMin": 1.6
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.5,
+      "endMin": 20.1,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.5,
+      "endMin": 20.1,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.5,
+      "endMin": 19.4,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.5,
+      "endMin": 20.5,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 14.2,
+      "createdMin": 14.2,
+      "startMin": 14.7,
+      "endMin": 21.4,
+      "blockedMin": 14.2,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 6.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 108.9,
+      "endMin": 124.1,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 89.5,
+      "workMin": 15.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 110.9,
+      "endMin": 125.8,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 91.5,
+      "workMin": 14.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 106.3,
+      "endMin": 122.2,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 86.9,
+      "workMin": 15.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 19.4,
+      "createdMin": 19.4,
+      "startMin": 124.2,
+      "endMin": 125,
+      "blockedMin": 19.4,
+      "hiddenMin": 0,
+      "queueMin": 104.8,
+      "workMin": 0.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 20.3,
+      "endMin": 22.4,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 20.3,
+      "endMin": 23.6,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 2.4
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 93.7,
+      "endMin": 98,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 73.7,
+      "workMin": 4.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 95.2,
+      "endMin": 98.1,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 75.1,
+      "workMin": 2.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 95.8,
+      "endMin": 102.8,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 75.8,
+      "workMin": 6.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 100.9,
+      "endMin": 107,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 80.9,
+      "workMin": 6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 98,
+      "endMin": 99.2,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 77.9,
+      "workMin": 1.2,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 106.6,
+      "endMin": 121.3,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 86.5,
+      "workMin": 14.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 119.5,
+      "endMin": 135.3,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 99.5,
+      "workMin": 15.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 107.1,
+      "endMin": 122.4,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 87.1,
+      "workMin": 15.3,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 106.3,
+      "endMin": 113.4,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 86.3,
+      "workMin": 7.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 20.4,
+      "endMin": 22.8,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.4,
+      "setupMin": 0.9
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 96.6,
+      "endMin": 97.7,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 76.5,
+      "workMin": 1.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 96.8,
+      "endMin": 116.3,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 76.6,
+      "workMin": 19.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 99.3,
+      "endMin": 118.8,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 79.1,
+      "workMin": 19.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 97.8,
+      "endMin": 117.4,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 77.7,
+      "workMin": 19.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 20.1,
+      "createdMin": 20.1,
+      "startMin": 99.2,
+      "endMin": 102.5,
+      "blockedMin": 20.1,
+      "hiddenMin": 0,
+      "queueMin": 79.1,
+      "workMin": 3.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 20.8,
+      "endMin": 24.3,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.5,
+      "setupMin": 2.4
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 20.8,
+      "endMin": 23.1,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 135.4,
+      "endMin": 151.2,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 114.9,
+      "workMin": 15.8,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 126,
+      "endMin": 141.9,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 105.4,
+      "workMin": 16,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 127.8,
+      "endMin": 144.6,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 107.3,
+      "workMin": 16.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 145.9,
+      "endMin": 146.8,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 125.4,
+      "workMin": 0.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 20.5,
+      "createdMin": 20.5,
+      "startMin": 138.6,
+      "endMin": 144.6,
+      "blockedMin": 20.5,
+      "hiddenMin": 0,
+      "queueMin": 118.1,
+      "workMin": 6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 22.4,
+      "createdMin": 22.4,
+      "startMin": 112.5,
+      "endMin": 128.2,
+      "blockedMin": 22.4,
+      "hiddenMin": 0,
+      "queueMin": 90,
+      "workMin": 15.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 22.8,
+      "createdMin": 22.8,
+      "startMin": 112.6,
+      "endMin": 133.2,
+      "blockedMin": 22.8,
+      "hiddenMin": 0,
+      "queueMin": 89.9,
+      "workMin": 20.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 127.6,
+      "endMin": 144.2,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 104.5,
+      "workMin": 16.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 23.6,
+      "createdMin": 23.6,
+      "startMin": 117.4,
+      "endMin": 131.8,
+      "blockedMin": 23.6,
+      "hiddenMin": 0,
+      "queueMin": 93.8,
+      "workMin": 14.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 24.3,
+      "createdMin": 24.3,
+      "startMin": 125,
+      "endMin": 140.1,
+      "blockedMin": 24.3,
+      "hiddenMin": 0,
+      "queueMin": 100.7,
+      "workMin": 15.1,
+      "setupMin": 0.7
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": null,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": null,
+  "preCommit": null,
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    98
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "Rust",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": null,
+  "testRunners": null,
+  "lintFormat": [
+   "Black",
+   "Pylint",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": null,
+  "runners": [
+   [
+    "self-hosted",
+    160
+   ],
+   [
+    "GitHub-hosted",
+    12
+   ],
+   [
+    "codebuild-bpf-ci-44886167489-1",
+    10
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": null,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 11,
+    "edges": 27,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "set-matrix",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.3
+    },
+    {
+     "id": "Test build commands / bpftool / Test bpftool build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.1
+    },
+    {
+     "id": "x86_64 gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.3,
+     "workMin": 6.4
+    },
+    {
+     "id": "aarch64 gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": true,
+     "blockedMin": 0.3,
+     "queueMin": 0.3,
+     "workMin": 5.7
+    },
+    {
+     "id": "s390x gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.3,
+     "workMin": 4.8
+    },
+    {
+     "id": "x86_64 llvm-21 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 0.3,
+     "queueMin": 0.3,
+     "workMin": 6.1
+    },
+    {
+     "id": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 5.4,
+     "queueMin": 0,
+     "workMin": 1.4
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 5.4,
+     "queueMin": 0,
+     "workMin": 18.4
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 5.4,
+     "queueMin": 0,
+     "workMin": 18.9
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 5.4,
+     "queueMin": 0,
+     "workMin": 18.7
+    },
+    {
+     "id": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": true,
+     "blockedMin": 6.3,
+     "queueMin": 2.9,
+     "workMin": 2.3
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 6.3,
+     "queueMin": 0,
+     "workMin": 1.1
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 6.3,
+     "queueMin": 0,
+     "workMin": 18.7
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 6.3,
+     "queueMin": 0,
+     "workMin": 19
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 6.3,
+     "queueMin": 0,
+     "workMin": 3.3
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 6.3,
+     "queueMin": 0,
+     "workMin": 19.1
+    },
+    {
+     "id": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0.3,
+     "workMin": 2.2
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0,
+     "workMin": 5.2
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0,
+     "workMin": 14
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0,
+     "workMin": 13.7
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0,
+     "workMin": 14.1
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 6.7,
+     "queueMin": 0,
+     "workMin": 0.8
+    },
+    {
+     "id": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 3.1,
+     "workMin": 2.3
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 13
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 13.5
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 12.9
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 5.2
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 6.5
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 6.2
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 1
+    },
+    {
+     "id": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+     ],
+     "onPath": false,
+     "blockedMin": 9.2,
+     "queueMin": 0,
+     "workMin": 14.2
+    },
+    {
+     "id": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+     ],
+     "onPath": true,
+     "blockedMin": 11.4,
+     "queueMin": 0,
+     "workMin": 19.9
+    },
+    {
+     "id": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+     ],
+     "onPath": false,
+     "blockedMin": 12.5,
+     "queueMin": 0,
+     "workMin": 14
+    }
+   ],
+   "edges": [
+    {
+     "from": "x86_64 gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "aarch64 gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "s390x gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "x86_64 llvm-21 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+    },
+    {
+     "from": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+    },
+    {
+     "from": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "set-matrix",
+    "x86_64 llvm-21 / build / build kernel and selftests",
+    "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21"
+   ],
+   "pathMinP50": 97.3,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "p90 is 4.3× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 7124 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 112,
+ "read": {
+  "calls": 112,
+  "fromCache": 0
+ }
+}

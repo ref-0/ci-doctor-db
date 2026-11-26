@@ -1,0 +1,4737 @@
+{
+ "repo": "pypa/build",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 6.5,
+  "stars": 864,
+  "forks": 301,
+  "languages": [
+   [
+    "Python",
+    100
+   ]
+  ],
+  "linesOfCode": 5617,
+  "files": 148,
+  "sourceFiles": 23,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 302,
+   "tests": 5232,
+   "integration": 83,
+   "support": 0
+  },
+  "testShare": 0.9461897245398118,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 6.3,
+  "commitsPerWeekYear": 5,
+  "pace": 1.2,
+  "activeAuthors28d": 7,
+  "prsOpenedPerWeek": 20.1,
+  "prsMergedPerWeek": 16.3,
+  "botShareOfMergedPrs": 5.9,
+  "openToMergeHours": {
+   "p50": 17.7,
+   "p90": 290.2,
+   "n": 16
+  },
+  "prRunsPerDay": 19.4,
+  "runsPerMergedPr": 8.4
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 142,
+  "runsInPeriod": 142,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "medium",
+ "headsPerWeek": 66,
+ "score": 71,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 64,
+  "reliability": 100,
+  "efficiency": 60
+ },
+ "detail": {
+  "speed": {
+   "wait": 81,
+   "forSize": 33,
+   "tail": 89
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 79,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1110.1,
+  "prBilledMinutesPerDay": 1323.1,
+  "jobMinutesPerMergedPr": 477.2,
+  "prVcpuMinutesPerDay": 4107.1,
+  "vcpuMinutesPerMergedPr": 1765.5,
+  "expectedVcpuMinutesPerMergedPr": 239.7,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 59.9,
+  "expectedWait": 5.1,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 69,
+  "ranHeads": 69,
+  "timed": 46,
+  "p50": 7.5,
+  "p75": 7.966666666666667,
+  "p90": 8.3,
+  "redRate": 0.10144927536231885,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.30434782608695654,
+  "botHeads": 2,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 2,
+  "bots": [
+   [
+    "pre-commit-ci[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "test",
+    46
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/test.yml",
+  "redBy": [
+   [
+    "test",
+    7
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "test"
+  ],
+  "allPushesP50": 7.5
+ },
+ "main": {
+  "heads": 17,
+  "p50": 7.766666666666667,
+  "p90": 8.5,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.025157232704402517,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 47,
+  "spanMin": 6.866666666666666,
+  "jobMinutes": 121.41666666666666,
+  "billedMinutes": 145,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 3,
+  "queueP90Sec": 4,
+  "setupShare": 0.08454608454608455,
+  "setupMinPerJob": 0.21631205673758863,
+  "critical": {
+   "name": "Required checks pass",
+   "minutes": 0.05,
+   "shareOfSpan": 0.00970873786407767
+  },
+  "longest": {
+   "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+   "minutes": 6.5
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test.yml"
+  ],
+  "jobs": 5,
+  "edges": 7,
+  "matrixJobs": 0,
+  "reusableCalls": 4,
+  "gateEnd": [
+   {
+    "name": "Required checks pass",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "change-detection / Identify source changes",
+    "minutes": 0.1,
+    "share": 0.02,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+    "minutes": 6.8,
+    "share": 0.96,
+    "blockedMin": 0.1,
+    "hiddenMin": 0.3,
+    "queueMin": 0.1,
+    "workMin": 6.5,
+    "setupMin": 0.4
+   },
+   {
+    "name": "Required checks pass",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 7,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 3,
+  "pathMinP50": 6.9,
+  "blockedMinP50": 6.8,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0.2,
+  "workMinP50": 6.5,
+  "setupInPathMinP50": 0.3,
+  "topBlockers": [
+   {
+    "name": "change-detection / Identify source changes",
+    "runs": 2,
+    "heldJobs": 46,
+    "jobs": 47,
+    "tookMin": 0.2,
+    "heldJobMin": 7.7
+   },
+   {
+    "name": "pytest",
+    "runs": 2,
+    "heldJobs": 1,
+    "jobs": 47,
+    "tookMin": 6.6,
+    "heldJobMin": 6.2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   "\"change-detection\" calls $/.github/workflows/reusable-change-detection.yml, in another repo, so the jobs inside it are taken as one",
+   "\"check-docs\" calls $/.github/workflows/reusable-docs.yml, in another repo, so the jobs inside it are taken as one",
+   "\"pytest\" calls $/.github/workflows/reusable-pytest.yml, in another repo, so the jobs inside it are taken as one",
+   "\"type\" calls $/.github/workflows/reusable-type.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 45339059922,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.1,
+    "path": [
+     "change-detection / Identify source changes",
+     "pytest / Run tests (windows-2025, pypy3.11, min)",
+     "Required checks pass"
+    ],
+    "topBlocker": "change-detection / Identify source changes",
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Download integration sources",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs / Build docs",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "type / Type check",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.6,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.6,
+      "endMin": 2.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 6.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 5.3,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 7,
+      "createdMin": 7,
+      "startMin": 7.1,
+      "endMin": 7.1,
+      "blockedMin": 7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45248111931,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "change-detection / Identify source changes",
+     "Required checks pass"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45248048754,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "change-detection / Identify source changes",
+     "Required checks pass"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45080597085,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.2,
+    "path": [
+     "change-detection / Identify source changes",
+     "pytest / Run tests (windows-2025, pypy3.11, tox)",
+     "Required checks pass"
+    ],
+    "topBlocker": "pytest",
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "type / Type check",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Download integration sources",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs / Build docs",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 5.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 5.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 7.1,
+      "createdMin": 7.1,
+      "startMin": 7.1,
+      "endMin": 7.2,
+      "blockedMin": 7.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45017357589,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.3,
+    "path": [
+     "change-detection / Identify source changes",
+     "pytest / Run tests (windows-2025, pypy3.11, min)",
+     "Required checks pass"
+    ],
+    "topBlocker": "change-detection / Identify source changes",
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Download integration sources",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "type / Type check",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs / Build docs",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 1.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 7.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 6.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 6.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.9,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 2.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 5.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 4.8,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 3.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 4.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 7.2,
+      "createdMin": 7.2,
+      "startMin": 7.2,
+      "endMin": 7.3,
+      "blockedMin": 7.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44932852907,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.9,
+    "path": [
+     "change-detection / Identify source changes",
+     "pytest / Run tests (windows-2025, pypy3.11, tox)",
+     "Required checks pass"
+    ],
+    "topBlocker": "pytest",
+    "jobs": [
+     {
+      "name": "change-detection / Identify source changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Download integration sources",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "check-docs / Build docs",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "type / Type check",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.3,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.2,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.5,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 1.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.2,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 5.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.12, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.13, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (macos-26, 3.15, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.14, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.13, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.12, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 0.3,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (macos-26, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 3.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.2,
+      "runner": "macos-26",
+      "vcpus": 3
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, pypy3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "pytest / Run tests (windows-2025, 3.11, min)",
+      "needs": [
+       "change-detection"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 4.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4,
+      "runner": "windows-2025",
+      "vcpus": 4
+     },
+     {
+      "name": "Required checks pass",
+      "needs": [
+       "change-detection",
+       "check-docs",
+       "pytest",
+       "type"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 6.9,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 3,
+  "over10s": 3,
+  "top": [
+   {
+    "file": "tests/test_main.py",
+    "sec": 54.22,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, tox)"
+   },
+   {
+    "file": "tests/test_integration.py",
+    "sec": 44.22,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, min)"
+   },
+   {
+    "file": "tests/test_env.py",
+    "sec": 36.05,
+    "job": "pytest / Run tests (windows-2025, pypy3.11, tox)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 7,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/cd.yml",
+   "pathFilters": ".github/workflows/reusable-change-detection.yml",
+   "scheduled": ".github/workflows/test.yml",
+   "depCache": ".github/workflows/pre-release.yml",
+   "timeouts": ".github/workflows/reusable-change-detection.yml",
+   "depBotsBatched": ".github/dependabot.yml",
+   "preCommit": ".pre-commit-config.yaml"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    100
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "backports-tarfile",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "bump-my-version",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "colorama",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "covdefaults",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "coverage",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "diff-cover",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "docstrfmt",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "extra",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "filelock",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "flit-core",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "furo",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "gitpython",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "packaging",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pip",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pre-commit",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "prek",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyproject-hooks",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyrefly",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-cov",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-mock",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "build",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "build",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "build"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 148
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 5,
+    "edges": 7,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "change-detection / Identify source changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Download integration sources",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "check-docs / Build docs",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "type / Type check",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 0.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 2.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 1.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, pypy3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.9,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.14, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.9,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.15, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 4.8,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, pypy3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.2,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.13, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.15, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.5,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.14, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.3,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 6.1,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, pypy3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2.9,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.14, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.5,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.5,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.15, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.7,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, pypy3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.1,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, pypy3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 6.5,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 2,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.14, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.6,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, pypy3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 5.8,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.7,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 5.3,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.13, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.3,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.11, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.5,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.11, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.6,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.15, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.7,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.13, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.2,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.12, min)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 4.4,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (windows-2025, 3.12, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 3.3,
+     "runner": "windows-2025",
+     "vcpus": 4
+    },
+    {
+     "id": "pytest / Run tests (macos-26, 3.13, tox)",
+     "needs": [
+      "change-detection"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0.1,
+     "workMin": 1.3,
+     "runner": "macos-26",
+     "vcpus": 3
+    },
+    {
+     "id": "Required checks pass",
+     "needs": [
+      "change-detection",
+      "check-docs",
+      "pytest",
+      "type"
+     ],
+     "onPath": true,
+     "blockedMin": 7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "pytest / Download integration sources",
+     "to": "change-detection"
+    },
+    {
+     "from": "check-docs / Build docs",
+     "to": "change-detection"
+    },
+    {
+     "from": "type / Type check",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, pypy3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, pypy3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.13, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.15, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, pypy3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, pypy3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.14, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.15, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, pypy3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.14, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.15, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, pypy3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.13, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.15, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.14, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, pypy3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, pypy3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.14, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.15, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.13, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, pypy3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, pypy3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.14, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, pypy3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, pypy3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (ubuntu-26.04, 3.14, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.13, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.11, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.11, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.15, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.13, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.12, min)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (windows-2025, 3.12, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "pytest / Run tests (macos-26, 3.13, tox)",
+     "to": "change-detection"
+    },
+    {
+     "from": "Required checks pass",
+     "to": "change-detection"
+    },
+    {
+     "from": "Required checks pass",
+     "to": "check-docs"
+    },
+    {
+     "from": "Required checks pass",
+     "to": "pytest"
+    },
+    {
+     "from": "Required checks pass",
+     "to": "type"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "change-detection / Identify source changes",
+    "pytest / Run tests (windows-2025, pypy3.11, min)",
+    "Required checks pass"
+   ],
+   "pathMinP50": 6.9,
+   "unknown": [
+    "\"change-detection\" calls $/.github/workflows/reusable-change-detection.yml, in another repo, so the jobs inside it are taken as one",
+    "\"check-docs\" calls $/.github/workflows/reusable-docs.yml, in another repo, so the jobs inside it are taken as one",
+    "\"pytest\" calls $/.github/workflows/reusable-pytest.yml, in another repo, so the jobs inside it are taken as one",
+    "\"type\" calls $/.github/workflows/reusable-type.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "3 test files take over 10 s; the slowest, tests/test_main.py, takes 54 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 40,
+ "read": {
+  "calls": 40,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

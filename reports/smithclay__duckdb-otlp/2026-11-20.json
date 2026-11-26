@@ -1,0 +1,1219 @@
+{
+ "repo": "smithclay/duckdb-otlp",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 1.1,
+  "stars": 102,
+  "forks": 3,
+  "languages": [
+   [
+    "C++",
+    46
+   ],
+   [
+    "Python",
+    26
+   ],
+   [
+    "MDX",
+    10
+   ],
+   [
+    "Go",
+    6
+   ]
+  ],
+  "linesOfCode": 16167,
+  "files": 200,
+  "sourceFiles": 56,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 11687,
+   "tests": 4131,
+   "integration": 349,
+   "support": 0
+  },
+  "testShare": 0.27712361162942695,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 8.3,
+  "commitsPerWeekYear": 2.3,
+  "pace": 3.2,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 15,
+  "prsMergedPerWeek": 17,
+  "botShareOfMergedPrs": 58.8,
+  "openToMergeHours": {
+   "p50": 0.4,
+   "p90": 21.9,
+   "n": 7
+  },
+  "prRunsPerDay": 12.1,
+  "runsPerMergedPr": 5
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 83,
+  "runsInPeriod": 83,
+  "truncated": false,
+  "mainDays": 3.6
+ },
+ "size": "small",
+ "headsPerWeek": 37,
+ "score": 52,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 26,
+  "reliability": 99,
+  "efficiency": 85
+ },
+ "detail": {
+  "speed": {
+   "wait": 38,
+   "forSize": 0,
+   "tail": 52
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 97
+  },
+  "efficiency": {
+   "minutesPerPr": 57,
+   "runsPerPr": 100,
+   "setup": 99,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 250.3,
+  "prBilledMinutesPerDay": 274.9,
+  "jobMinutesPerMergedPr": 103.1,
+  "expectedMinutesPerMergedPr": 85,
+  "expectedWait": 7.2,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 36,
+  "timed": 17,
+  "p50": 24.016666666666666,
+  "p75": 27.183333333333334,
+  "p90": 27.683333333333334,
+  "redRate": 0.08333333333333333,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 17,
+  "lightHeads": 2,
+  "lastToFinish": [
+   [
+    "Main Extension Distribution Pipeline",
+    17
+   ]
+  ],
+  "redBy": [
+   [
+    "Main Extension Distribution Pipeline",
+    3
+   ]
+  ],
+  "leftOut": [
+   "Claude Code Review"
+  ],
+  "heavyWorkflows": [
+   "Main Extension Distribution Pipeline"
+  ],
+  "allPushesP50": 24.016666666666666
+ },
+ "main": {
+  "heads": 17,
+  "p50": 22.65,
+  "p90": 29.75,
+  "redRate": 0.058823529411764705,
+  "redBy": [
+   [
+    "Pages",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.3584905660377358,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 7,
+  "spanMin": 19.5,
+  "jobMinutes": 46.25,
+  "billedMinutes": 49,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.20602103735944868,
+  "critical": {
+   "name": "Build extension binaries / windows_amd64",
+   "minutes": 9.233333333333333,
+   "shareOfSpan": 0.504265402843602
+  },
+  "longest": {
+   "name": "Compile + config-test + e2e smoke daemon (amd64)",
+   "minutes": 21.816666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    42
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/MainDistributionPipeline.yml"
+  ],
+  "jobs": 8,
+  "edges": 10,
+  "matrixJobs": 2,
+  "reusableCalls": 2,
+  "gateEnd": [
+   {
+    "name": "Build extension binaries / windows_amd64",
+    "runs": 3
+   },
+   {
+    "name": "Compile + config-test + e2e smoke daemon (amd64)",
+    "runs": 3
+   }
+  ],
+  "chain": [
+   {
+    "name": "Build extension binaries / windows_amd64",
+    "minutes": 19.2,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 8.7,
+    "queueMin": 0,
+    "workMin": 9.2,
+    "setupMin": 2.1
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 1,
+  "pathMinP50": 19.5,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 10.9,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [
+   "Build server daemon (${{ matrix.arch }})"
+  ],
+  "skippedP50": 5,
+  "unknown": [
+   "\"Build extension binaries\" calls duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml, in another repo, so the jobs inside it are taken as one",
+   "\"Code Quality Check\" calls duckdb/extension-ci-tools/.github/workflows/_extension_code_quality.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 44646230292,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.2,
+    "path": [
+     "Build extension binaries / windows_amd64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 4.4
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.4,
+      "startMin": 0.4,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0.4,
+      "queueMin": 0,
+      "workMin": 9.5,
+      "setupMin": 3
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 9.9,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.9,
+      "startMin": 10,
+      "endMin": 19.2,
+      "blockedMin": 0,
+      "hiddenMin": 9.9,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 2.1
+     }
+    ]
+   },
+   {
+    "id": 44629459502,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21.9,
+    "path": [
+     "Compile + config-test + e2e smoke daemon (amd64)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 21.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 21.8,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 11.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 16.5,
+      "blockedMin": 0,
+      "hiddenMin": 12.2,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 1.7
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 19,
+      "blockedMin": 0,
+      "hiddenMin": 12.2,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 1.9
+     }
+    ]
+   },
+   {
+    "id": 44627637588,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.5,
+    "path": [
+     "Build extension binaries / windows_amd64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 17.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.6,
+      "startMin": 8.6,
+      "endMin": 19.5,
+      "blockedMin": 0,
+      "hiddenMin": 8.6,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 2
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.6,
+      "startMin": 8.6,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 8.6,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 1.6
+     }
+    ]
+   },
+   {
+    "id": 44627620834,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.6,
+    "path": [
+     "Compile + config-test + e2e smoke daemon (amd64)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 22.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 22.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 1.4
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 2.4
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.1,
+      "startMin": 8.2,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 8.1,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 2
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.1,
+      "startMin": 8.2,
+      "endMin": 15.1,
+      "blockedMin": 0,
+      "hiddenMin": 8.1,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 1.7
+     }
+    ]
+   },
+   {
+    "id": 44623125479,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.6,
+    "path": [
+     "Build extension binaries / windows_amd64"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0.3,
+      "queueMin": 0.1,
+      "workMin": 8.3,
+      "setupMin": 2.8
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 12.8,
+      "blockedMin": 0,
+      "hiddenMin": 8.7,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 2
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 8.7,
+      "startMin": 8.7,
+      "endMin": 17.6,
+      "blockedMin": 0,
+      "hiddenMin": 8.7,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 2.3
+     }
+    ]
+   },
+   {
+    "id": 44617703603,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 25,
+    "path": [
+     "Compile + config-test + e2e smoke daemon (amd64)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Compile + config-test + e2e smoke daemon (amd64)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 25,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Code Quality Check / Format Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 1
+     },
+     {
+      "name": "Code Quality Check / Tidy Check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Build extension binaries / Generate matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Build extension binaries / linux_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 12.1,
+      "blockedMin": 0,
+      "hiddenMin": 0.2,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Build extension binaries / wasm_eh",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 12.1,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 1.6
+     },
+     {
+      "name": "Build extension binaries / windows_amd64",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 12.1,
+      "startMin": 12.2,
+      "endMin": 18.3,
+      "blockedMin": 0,
+      "hiddenMin": 12.1,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 1.6
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    46
+   ],
+   [
+    "Python",
+    26
+   ],
+   [
+    "MDX",
+    10
+   ],
+   [
+    "Go",
+    6
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Black"
+  ],
+  "libraries": [
+   {
+    "name": "@astrojs/check",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@astrojs/starlight",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "astro",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    42
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "duckdb-otlp-site",
+     "path": "site/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "duckdb-otlp-site",
+     "dir": "site",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "duckdb-otlp-site"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 4,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 200
+   },
+   "nodes": [
+    {
+     "id": "duckdb-otlp-site#build",
+     "pkg": "duckdb-otlp-site",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "duckdb-otlp-site#check",
+     "pkg": "duckdb-otlp-site",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "duckdb-otlp-site#dev",
+     "pkg": "duckdb-otlp-site",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "duckdb-otlp-site#preview",
+     "pkg": "duckdb-otlp-site",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "duckdb-otlp-site#dev"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 10,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Compile + config-test + e2e smoke daemon (amd64)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "Code Quality Check / Format Check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.6
+    },
+    {
+     "id": "Build extension binaries / Generate matrix",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.3
+    },
+    {
+     "id": "Code Quality Check / Tidy Check",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.2
+    },
+    {
+     "id": "Build extension binaries / linux_amd64",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 9.5
+    },
+    {
+     "id": "Build extension binaries / wasm_eh",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.2
+    },
+    {
+     "id": "Build extension binaries / windows_amd64",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 9.2
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "Build extension binaries / windows_amd64"
+   ],
+   "pathMinP50": 19.5,
+   "unknown": [
+    "\"Build extension binaries\" calls duckdb/extension-ci-tools/.github/workflows/_extension_distribution.yml, in another repo, so the jobs inside it are taken as one",
+    "\"Code Quality Check\" calls duckdb/extension-ci-tools/.github/workflows/_extension_code_quality.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"Compile + config-test + e2e smoke daemon (amd64)\" runs 22 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 31,
+ "read": {
+  "calls": 31,
+  "fromCache": 0
+ }
+}

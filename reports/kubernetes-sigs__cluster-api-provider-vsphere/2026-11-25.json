@@ -1,0 +1,1274 @@
+{
+ "repo": "kubernetes-sigs/cluster-api-provider-vsphere",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Pull requests here wait on Prow, outside GitHub Actions: on 3 of 3 sampled pushes it was still running when the Actions checks finished, until at least 17 minutes after the push against 4.1 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 8.3,
+  "stars": 420,
+  "forks": 333,
+  "languages": [
+   [
+    "Go",
+    96
+   ],
+   [
+    "Shell",
+    2
+   ],
+   [
+    "Makefile",
+    2
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "linesOfCode": 141001,
+  "files": 1054,
+  "sourceFiles": 452,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 79822,
+   "tests": 53841,
+   "integration": 7338,
+   "support": 0
+  },
+  "testShare": 0.43389091882221,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 3,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 26.5,
+  "commitsPerWeekYear": 16.3,
+  "pace": 1.6,
+  "activeAuthors28d": 7,
+  "prsOpenedPerWeek": 22.4,
+  "prsMergedPerWeek": 23.4,
+  "botShareOfMergedPrs": 8,
+  "openToMergeHours": {
+   "p50": 2.1,
+   "p90": 26.6,
+   "n": 23
+  },
+  "prRunsPerDay": 21.9,
+  "runsPerMergedPr": 6.6
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 45,
+  "runsInPeriod": 45,
+  "truncated": false,
+  "mainDays": 7.5
+ },
+ "size": "small",
+ "headsPerWeek": 29,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 98,
+   "forSize": 100,
+   "tail": 94
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 51
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 89,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 27.9,
+  "prBilledMinutesPerDay": 40.1,
+  "jobMinutesPerMergedPr": 8.4,
+  "prVcpuMinutesPerDay": 111.7,
+  "vcpuMinutesPerMergedPr": 33.4,
+  "expectedVcpuMinutesPerMergedPr": 694.4,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 173.6,
+  "expectedWait": 11.1,
+  "workflowsOnPrs": 4
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": [
+    {
+     "sha": "efe7e67a432ac5a7d9d48ef5af3d54d0ba06ac9e",
+     "actionsMin": 3.4,
+     "ci": [
+      {
+       "name": "Prow",
+       "minutes": 17.2
+      }
+     ]
+    },
+    {
+     "sha": "690a9b89e5037ba30aef292467ef11efb155daa3",
+     "actionsMin": 4.1,
+     "ci": [
+      {
+       "name": "Prow",
+       "minutes": 15.3
+      }
+     ]
+    },
+    {
+     "sha": "f7fa587ac288e81ceecd16531d8385d76d545e90",
+     "actionsMin": 6.5,
+     "ci": [
+      {
+       "name": "Prow",
+       "minutes": 60.3
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 31,
+  "ranHeads": 18,
+  "timed": 14,
+  "p50": 3.4,
+  "p75": 4.583333333333333,
+  "p90": 6.516666666666667,
+  "redRate": 0.2777777777777778,
+  "rerunRate": 0.05555555555555555,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 2,
+  "lightHeads": 1,
+  "neverRan": 0,
+  "botPushes": 16,
+  "bots": [
+   [
+    "kubernetes-prow[bot]",
+    13
+   ],
+   [
+    "dependabot[bot]",
+    2
+   ],
+   [
+    "github-actions[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "PR golangci-lint",
+    14
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/pr-golangci-lint.yaml",
+  "redBy": [
+   [
+    "PR golangci-lint",
+    3
+   ],
+   [
+    "PR title verifier",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "PR golangci-lint"
+  ],
+  "allPushesP50": 3.4
+ },
+ "main": {
+  "heads": 9,
+  "p50": null,
+  "p90": null,
+  "redRate": 0.2222222222222222,
+  "redBy": [
+   [
+    "codecov",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.7109826589595376,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 3.7,
+  "jobMinutes": 8.716666666666667,
+  "billedMinutes": 11,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.06296296296296296,
+  "setupMinPerJob": 0.16666666666666669,
+  "critical": {
+   "name": "lint (test)",
+   "minutes": 3.65,
+   "shareOfSpan": 0.9864864864864864
+  },
+  "longest": {
+   "name": "lint (test)",
+   "minutes": 3.65
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/pr-golangci-lint.yaml"
+  ],
+  "jobs": 2,
+  "edges": 0,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "lint (test)",
+    "runs": 5
+   },
+   {
+    "name": "lint",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "lint (test)",
+    "minutes": 3.7,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 3.7,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 3.7,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 3.7,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45478493675,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.7,
+    "path": [
+     "lint (test)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45402208521,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.3,
+    "path": [
+     "lint (test)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45402186937,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 2.1,
+    "path": [
+     "lint (test)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45398077651,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.1,
+    "path": [
+     "lint"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45230956180,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.7,
+    "path": [
+     "lint (test)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45230641988,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.7,
+    "path": [
+     "lint (test)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "lint (api)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (packaging)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint (test)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "lint-api",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "pathFilters": ".github/workflows/pr-md-link-check.yaml",
+   "scheduled": ".github/workflows/weekly-md-link-check.yaml",
+   "depCache": ".github/workflows/pr-dependabot.yaml",
+   "timeouts": ".github/workflows/pr-dependabot.yaml",
+   "depBotsBatched": ".github/dependabot.yml"
+  },
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Go",
+    96
+   ],
+   [
+    "Shell",
+    2
+   ],
+   [
+    "Makefile",
+    2
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 3,
+   "python": 0
+  },
+  "testRunners": [
+   "go test"
+  ],
+  "lintFormat": [
+   "golangci-lint"
+  ],
+  "libraries": [
+   {
+    "name": "k8s.io/api",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "k8s.io/apimachinery",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "sigs.k8s.io/cluster-api/api",
+    "ecosystem": "go",
+    "packages": 3
+   },
+   {
+    "name": "github.com/onsi/gomega",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/pkg/errors",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/spf13/cobra",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "k8s.io/apiextensions-apiserver",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "k8s.io/utils",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "sigs.k8s.io/cluster-api",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "sigs.k8s.io/controller-runtime",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "sigs.k8s.io/yaml",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/blang/semver",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/blang/semver/v4",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/go-logr/logr",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/go-task/slim-sprig/v3",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/google/go-cmp",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/google/uuid",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/onsi/ginkgo/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/spf13/pflag",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/stretchr/testify",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "path": "api/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    },
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "sigs.k8s.io/cluster-api-provider-vsphere/api"
+     ]
+    },
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere/packaging",
+     "path": "packaging/go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "sigs.k8s.io/cluster-api-provider-vsphere",
+      "sigs.k8s.io/cluster-api-provider-vsphere/api"
+     ]
+    }
+   ],
+   "count": 3,
+   "edges": 3,
+   "cycles": [],
+   "maxDepth": 2,
+   "topFanIn": [
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "ecosystem": "go",
+     "dependents": 2
+    },
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 3,
+    "edges": 3
+   },
+   "nodes": [
+    {
+     "id": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "dir": "api",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "sigs.k8s.io/cluster-api-provider-vsphere/packaging",
+     "dir": "packaging",
+     "ecosystem": "go",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 2
+    }
+   ],
+   "edges": [
+    {
+     "from": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "to": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "ecosystem": "go"
+    },
+    {
+     "from": "sigs.k8s.io/cluster-api-provider-vsphere/packaging",
+     "to": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "ecosystem": "go"
+    },
+    {
+     "from": "sigs.k8s.io/cluster-api-provider-vsphere/packaging",
+     "to": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "ecosystem": "go"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "sigs.k8s.io/cluster-api-provider-vsphere/packaging",
+    "sigs.k8s.io/cluster-api-provider-vsphere",
+    "sigs.k8s.io/cluster-api-provider-vsphere/api"
+   ],
+   "topFanIn": [
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere/api",
+     "ecosystem": "go",
+     "dependents": 2
+    },
+    {
+     "name": "sigs.k8s.io/cluster-api-provider-vsphere",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1054
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "lint (api)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "lint (test)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "lint",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "lint (packaging)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "lint-api",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "lint (test)"
+   ],
+   "pathMinP50": 3.7,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Go it applies the principles, without a Go-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 47,
+ "read": {
+  "calls": 47,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

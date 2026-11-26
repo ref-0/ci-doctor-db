@@ -1,0 +1,2518 @@
+{
+ "repo": "AtalayaLabs/OxiCloud",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 1.7,
+  "stars": 3736,
+  "forks": 195,
+  "languages": [
+   [
+    "Rust",
+    55
+   ],
+   [
+    "TypeScript",
+    15
+   ],
+   [
+    "Hurl",
+    11
+   ],
+   [
+    "Svelte",
+    9
+   ]
+  ],
+  "linesOfCode": 549265,
+  "files": 2345,
+  "sourceFiles": 1052,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 499711,
+   "tests": 37057,
+   "integration": 12293,
+   "support": 205
+  },
+  "testShare": 0.09021951390324308,
+  "packages": {
+   "npm": 2,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 110.8,
+  "commitsPerWeekYear": 59.5,
+  "pace": 1.7,
+  "activeAuthors28d": 15,
+  "prsOpenedPerWeek": 36,
+  "prsMergedPerWeek": 25,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 23.1,
+   "p90": 96.9,
+   "n": 25
+  },
+  "prRunsPerDay": 30.9,
+  "runsPerMergedPr": 8.6
+ },
+ "window": {
+  "days": 7,
+  "runs": 216,
+  "runsInPeriod": 216,
+  "truncated": false,
+  "mainDays": 6.4
+ },
+ "size": "medium",
+ "headsPerWeek": 80,
+ "score": 37,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 8,
+  "reliability": 87,
+  "efficiency": 74
+ },
+ "detail": {
+  "speed": {
+   "wait": 11,
+   "forSize": 0,
+   "tail": 20
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 69
+  },
+  "efficiency": {
+   "minutesPerPr": 40,
+   "runsPerPr": 78,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1685.5,
+  "prBilledMinutesPerDay": 1736.3,
+  "jobMinutesPerMergedPr": 471.9,
+  "expectedMinutesPerMergedPr": 271.9,
+  "expectedWait": 16.1,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 80,
+  "timed": 73,
+  "p50": 59.233333333333334,
+  "p75": 62.53333333333333,
+  "p90": 69.16666666666667,
+  "redRate": 0.4125,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 14,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    71
+   ],
+   [
+    "Docker Build and Test",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    33
+   ],
+   [
+    "Load Smoke",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI",
+   "Docker Build and Test"
+  ],
+  "allPushesP50": 59.233333333333334
+ },
+ "main": {
+  "heads": 25,
+  "p50": 27.833333333333332,
+  "p90": 40.61666666666667,
+  "redRate": 0.16,
+  "redBy": [
+   [
+    "CI",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 8,
+  "spanMin": 54.1,
+  "jobMinutes": 76.31666666666666,
+  "billedMinutes": 81,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.07490326147042566,
+  "critical": {
+   "name": "Frontend end-to-end tests (via Playwright)",
+   "minutes": 20.05,
+   "shareOfSpan": 0.3330564784053156
+  },
+  "longest": {
+   "name": "API, WebDAV & OIDC tests",
+   "minutes": 21.433333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    69
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 20,
+  "edges": 20,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Frontend end-to-end tests (via Playwright)",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "changes",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0.1
+   },
+   {
+    "name": "Build",
+    "minutes": 17.3,
+    "share": 0.3,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 17.2,
+    "setupMin": 0.3
+   },
+   {
+    "name": "API, WebDAV & OIDC tests",
+    "minutes": 21.5,
+    "share": 0.36,
+    "blockedMin": 17.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 19.1,
+    "setupMin": 0.4
+   },
+   {
+    "name": "Frontend end-to-end tests (via Playwright)",
+    "minutes": 20.1,
+    "share": 0.33,
+    "blockedMin": 35.9,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 20.1,
+    "setupMin": 1.7
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 4,
+  "pathMinP50": 54.1,
+  "blockedMinP50": 35.9,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 53.1,
+  "setupInPathMinP50": 2.4,
+  "topBlockers": [
+   {
+    "name": "Build",
+    "runs": 6,
+    "heldJobs": 4,
+    "jobs": 8,
+    "tookMin": 17.3,
+    "heldJobMin": 69
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 5,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44964280605,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 52.1,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rustfmt",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Migration ordering (new migrations postdate target branch)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend — svelte-check, ESLint, Stylelint, Prettier",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Clippy",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 4.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Server Unit and Functionnal Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.1,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 3.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 8.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — utoipa + TS SDK drift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.3,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — breaking-change diff vs base",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Bundled-assets binary — embed + SPA-serve integration",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 11.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Sync convergence — nextcloudcmd",
+      "needs": [
+       "changes",
+       "build"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 11.8,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 31.5,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 8.9,
+      "createdMin": 8.9,
+      "startMin": 8.9,
+      "endMin": 9.6,
+      "blockedMin": 8.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 9.6,
+      "createdMin": 9.6,
+      "startMin": 9.7,
+      "endMin": 10.7,
+      "blockedMin": 9.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 31.5,
+      "createdMin": 31.5,
+      "startMin": 31.6,
+      "endMin": 52.1,
+      "blockedMin": 31.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.5,
+      "setupMin": 1.9,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44853418506,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 61.6,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rustfmt",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — utoipa + TS SDK drift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Migration ordering (new migrations postdate target branch)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — breaking-change diff vs base",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Clippy",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 13.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Server Unit and Functionnal Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 26.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Bundled-assets binary — embed + SPA-serve integration",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 7.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 3.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 18.8,
+      "createdMin": 18.8,
+      "startMin": 18.8,
+      "endMin": 40.9,
+      "blockedMin": 18.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 18.8,
+      "createdMin": 18.8,
+      "startMin": 18.8,
+      "endMin": 19.5,
+      "blockedMin": 18.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Sync convergence — nextcloudcmd",
+      "needs": [
+       "changes",
+       "build"
+      ],
+      "readyMin": 18.8,
+      "createdMin": 18.8,
+      "startMin": 18.8,
+      "endMin": 21.7,
+      "blockedMin": 18.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 20.3,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 40.9,
+      "createdMin": 40.9,
+      "startMin": 40.9,
+      "endMin": 61.6,
+      "blockedMin": 40.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.7,
+      "setupMin": 1.7,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44849031667,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 53.2,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Clippy",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — breaking-change diff vs base",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "OpenAPI spec — utoipa + TS SDK drift",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 3.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 20.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Server Unit and Functionnal Tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 24.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Rustfmt",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Bundled-assets binary — embed + SPA-serve integration",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Migration ordering (new migrations postdate target branch)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 20.2,
+      "createdMin": 20.2,
+      "startMin": 20.2,
+      "endMin": 20.9,
+      "blockedMin": 20.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 20.2,
+      "createdMin": 20.2,
+      "startMin": 20.2,
+      "endMin": 35.9,
+      "blockedMin": 20.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Sync convergence — nextcloudcmd",
+      "needs": [
+       "changes",
+       "build"
+      ],
+      "readyMin": 20.2,
+      "createdMin": 20.2,
+      "startMin": 20.2,
+      "endMin": 23.3,
+      "blockedMin": 20.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 20.9,
+      "createdMin": 20.9,
+      "startMin": 21,
+      "endMin": 21.8,
+      "blockedMin": 20.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 35.9,
+      "createdMin": 35.9,
+      "startMin": 35.9,
+      "endMin": 53.2,
+      "blockedMin": 35.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.3,
+      "setupMin": 1.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44820720408,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 56.2,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Security Audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 2.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 15.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.5,
+      "endMin": 16.2,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 15.5,
+      "endMin": 34.6,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 16.2,
+      "createdMin": 16.2,
+      "startMin": 16.2,
+      "endMin": 17,
+      "blockedMin": 16.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 34.6,
+      "createdMin": 34.6,
+      "startMin": 34.6,
+      "endMin": 56.2,
+      "blockedMin": 34.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.6,
+      "setupMin": 2.5,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44539350450,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 54.1,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend — svelte-check, ESLint, Stylelint, Prettier",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 17.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Bundled-assets binary — embed + SPA-serve integration",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 17.4,
+      "createdMin": 17.4,
+      "startMin": 21.4,
+      "endMin": 40.4,
+      "blockedMin": 17.4,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 19.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 17.4,
+      "createdMin": 17.4,
+      "startMin": 19.1,
+      "endMin": 19.9,
+      "blockedMin": 17.4,
+      "hiddenMin": 0,
+      "queueMin": 1.7,
+      "workMin": 0.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 19.9,
+      "createdMin": 19.9,
+      "startMin": 21.8,
+      "endMin": 22.5,
+      "blockedMin": 19.9,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 40.4,
+      "createdMin": 40.4,
+      "startMin": 40.5,
+      "endMin": 54.1,
+      "blockedMin": 40.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.7,
+      "setupMin": 1.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44507819353,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 60.2,
+    "path": [
+     "changes",
+     "Build",
+     "API, WebDAV & OIDC tests",
+     "Frontend end-to-end tests (via Playwright)"
+    ],
+    "topBlocker": "Build",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend — svelte-check, ESLint, Stylelint, Prettier",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 18.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Bundled-assets binary — embed + SPA-serve integration",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "WebDAV RFC 4918 — litmus (59/59)",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 18.6,
+      "createdMin": 18.6,
+      "startMin": 18.7,
+      "endMin": 19.6,
+      "blockedMin": 18.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "API, WebDAV & OIDC tests",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 18.6,
+      "createdMin": 18.6,
+      "startMin": 18.7,
+      "endMin": 40.1,
+      "blockedMin": 18.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CalDAV + CardDAV — python-caldav",
+      "needs": [
+       "litmus"
+      ],
+      "readyMin": 19.6,
+      "createdMin": 19.6,
+      "startMin": 19.6,
+      "endMin": 20.2,
+      "blockedMin": 19.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Frontend end-to-end tests (via Playwright)",
+      "needs": [
+       "api-test"
+      ],
+      "readyMin": 40.1,
+      "createdMin": 40.1,
+      "startMin": 40.2,
+      "endMin": 60.2,
+      "blockedMin": 40.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.1,
+      "setupMin": 2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 8,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    55
+   ],
+   [
+    "TypeScript",
+    15
+   ],
+   [
+    "Hurl",
+    11
+   ],
+   [
+    "Svelte",
+    9
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 4,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "node:test",
+   "cargo test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Stylelint",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "blake3",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "chrono",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "fastcdc",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "foldhash",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "futures",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "moka",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "sqlx",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "uuid",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "accept-language",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "aes-gcm",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "arc-swap",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "argon2",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "askama",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "async_zip",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "async-compression",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "async-stream",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "async-trait",
+    "ecosystem": "cargo",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    69
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "oxicloud",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "docs/package.json",
+     "path": "docs/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "oxicloud-frontend",
+     "path": "frontend/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "oxicloud-perf-audit",
+     "path": "tools/perf-audit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "oxicloud-hash-wasm",
+     "path": "wasm/oxicloud-hash/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "oxicloud-plugin-hello",
+     "path": "wasm/oxicloud-plugin-hello/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    }
+   ],
+   "count": 6,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 6,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "docs/package.json",
+     "dir": "docs",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "oxicloud",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend",
+     "dir": "frontend",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-hash-wasm",
+     "dir": "wasm/oxicloud-hash",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-perf-audit",
+     "dir": "tools/perf-audit",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-plugin-hello",
+     "dir": "wasm/oxicloud-plugin-hello",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "oxicloud"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 0,
+    "filesRead": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 20,
+    "edges": 5,
+    "cached": 0,
+    "trackedFiles": 2345
+   },
+   "nodes": [
+    {
+     "id": "docs#docs:build",
+     "pkg": "docs",
+     "name": "docs:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "docs#docs:dev",
+     "pkg": "docs",
+     "name": "docs:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "docs#docs:preview",
+     "pkg": "docs",
+     "name": "docs:preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#docs:specs",
+     "pkg": "docs",
+     "name": "docs:specs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#predocs:build",
+     "pkg": "docs",
+     "name": "predocs:build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "docs#predocs:dev",
+     "pkg": "docs",
+     "name": "predocs:dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "oxicloud-frontend#build",
+     "pkg": "oxicloud-frontend",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "oxicloud-frontend#check",
+     "pkg": "oxicloud-frontend",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#check:types-overlap",
+     "pkg": "oxicloud-frontend",
+     "name": "check:types-overlap",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#check:watch",
+     "pkg": "oxicloud-frontend",
+     "name": "check:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#dev",
+     "pkg": "oxicloud-frontend",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#format",
+     "pkg": "oxicloud-frontend",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#gen:asyncapi",
+     "pkg": "oxicloud-frontend",
+     "name": "gen:asyncapi",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#gen:openapi",
+     "pkg": "oxicloud-frontend",
+     "name": "gen:openapi",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#lint",
+     "pkg": "oxicloud-frontend",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#postbuild",
+     "pkg": "oxicloud-frontend",
+     "name": "postbuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#preview",
+     "pkg": "oxicloud-frontend",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#test:unit",
+     "pkg": "oxicloud-frontend",
+     "name": "test:unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#test:unit:coverage",
+     "pkg": "oxicloud-frontend",
+     "name": "test:unit:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "oxicloud-frontend#test:unit:watch",
+     "pkg": "oxicloud-frontend",
+     "name": "test:unit:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "oxicloud-frontend#build",
+     "to": "oxicloud-frontend#postbuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "docs#predocs:dev",
+     "to": "docs#docs:specs",
+     "how": "calls"
+    },
+    {
+     "from": "docs#predocs:build",
+     "to": "docs#docs:specs",
+     "how": "calls"
+    },
+    {
+     "from": "docs#docs:dev",
+     "to": "docs#predocs:dev",
+     "how": "lifecycle"
+    },
+    {
+     "from": "docs#docs:build",
+     "to": "docs#predocs:build",
+     "how": "lifecycle"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "docs#docs:dev",
+    "docs#predocs:dev",
+    "docs#docs:specs"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 20,
+    "edges": 20,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Rustfmt",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Migration ordering (new migrations postdate target branch)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Frontend — svelte-check, ESLint, Stylelint, Prettier",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 2.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Clippy",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 4.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Server Unit and Functionnal Tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 10.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Security Audit",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 3.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 8.7,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "OpenAPI spec — utoipa + TS SDK drift",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 13.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "OpenAPI spec — breaking-change diff vs base",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Bundled-assets binary — embed + SPA-serve integration",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.2,
+     "queueMin": 0,
+     "workMin": 11.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Sync convergence — nextcloudcmd",
+     "needs": [
+      "changes",
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 8.9,
+     "queueMin": 0,
+     "workMin": 2.9,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "API, WebDAV & OIDC tests",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 8.9,
+     "queueMin": 0,
+     "workMin": 22.6,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "WebDAV RFC 4918 — litmus (59/59)",
+     "needs": [
+      "build"
+     ],
+     "onPath": false,
+     "blockedMin": 8.9,
+     "queueMin": 0,
+     "workMin": 0.7,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "CalDAV + CardDAV — python-caldav",
+     "needs": [
+      "litmus"
+     ],
+     "onPath": false,
+     "blockedMin": 9.6,
+     "queueMin": 0,
+     "workMin": 1,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Frontend end-to-end tests (via Playwright)",
+     "needs": [
+      "api-test"
+     ],
+     "onPath": true,
+     "blockedMin": 31.5,
+     "queueMin": 0,
+     "workMin": 20.5,
+     "runner": "ubuntu-22.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Rustfmt",
+     "to": "changes"
+    },
+    {
+     "from": "Migration ordering (new migrations postdate target branch)",
+     "to": "changes"
+    },
+    {
+     "from": "Frontend — svelte-check, ESLint, Stylelint, Prettier",
+     "to": "changes"
+    },
+    {
+     "from": "Clippy",
+     "to": "changes"
+    },
+    {
+     "from": "Server Unit and Functionnal Tests",
+     "to": "changes"
+    },
+    {
+     "from": "Security Audit",
+     "to": "changes"
+    },
+    {
+     "from": "Build",
+     "to": "changes"
+    },
+    {
+     "from": "OpenAPI spec — utoipa + TS SDK drift",
+     "to": "changes"
+    },
+    {
+     "from": "OpenAPI spec — breaking-change diff vs base",
+     "to": "changes"
+    },
+    {
+     "from": "Bundled-assets binary — embed + SPA-serve integration",
+     "to": "changes"
+    },
+    {
+     "from": "Sync convergence — nextcloudcmd",
+     "to": "changes"
+    },
+    {
+     "from": "Sync convergence — nextcloudcmd",
+     "to": "build"
+    },
+    {
+     "from": "API, WebDAV & OIDC tests",
+     "to": "build"
+    },
+    {
+     "from": "WebDAV RFC 4918 — litmus (59/59)",
+     "to": "build"
+    },
+    {
+     "from": "CalDAV + CardDAV — python-caldav",
+     "to": "litmus"
+    },
+    {
+     "from": "Frontend end-to-end tests (via Playwright)",
+     "to": "api-test"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Build",
+     "numbers": {
+      "heldJobs": 4,
+      "jobs": 8,
+      "heldJobMin": 69,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "changes",
+    "Build",
+    "API, WebDAV & OIDC tests",
+    "Frontend end-to-end tests (via Playwright)"
+   ],
+   "pathMinP50": 54.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"API, WebDAV & OIDC tests\" runs 21 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"Build\" holds up 4 of 8 jobs, 69.0 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 71,
+ "read": {
+  "calls": 71,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,1496 @@
+{
+ "repo": "systemd/pystemd",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 9.1,
+  "stars": 469,
+  "forks": 42,
+  "languages": [
+   [
+    "Python",
+    74
+   ],
+   [
+    "Cython",
+    26
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 4016,
+  "files": 82,
+  "sourceFiles": 49,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 2903,
+   "tests": 839,
+   "integration": 274,
+   "support": 0
+  },
+  "testShare": 0.27710183417711015,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 3.8,
+  "commitsPerWeekYear": 0.8,
+  "pace": 4.6,
+  "activeAuthors28d": 3,
+  "prsOpenedPerWeek": 5.7,
+  "prsMergedPerWeek": 10.5,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 36.6,
+   "p90": 53.9,
+   "n": 11
+  },
+  "prRunsPerDay": 8.4,
+  "runsPerMergedPr": 5.6
+ },
+ "window": {
+  "days": 7.3,
+  "runs": 62,
+  "runsInPeriod": 62,
+  "truncated": false,
+  "mainDays": 7.3
+ },
+ "size": "small",
+ "headsPerWeek": 30,
+ "score": 44,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 15,
+  "reliability": 100,
+  "efficiency": 75
+ },
+ "detail": {
+  "speed": {
+   "wait": 29,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 70,
+   "runsPerPr": 95,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 74.9,
+  "prBilledMinutesPerDay": 97.1,
+  "jobMinutesPerMergedPr": 50,
+  "prVcpuMinutesPerDay": 299.6,
+  "vcpuMinutesPerMergedPr": 199.9,
+  "expectedVcpuMinutesPerMergedPr": 214.6,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 53.7,
+  "expectedWait": 4.7,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 31,
+  "ranHeads": 31,
+  "timed": 31,
+  "p50": 30.583333333333332,
+  "p75": 172.01666666666668,
+  "p90": 202.03333333333333,
+  "redRate": 0,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Continuous Integration",
+    16
+   ],
+   [
+    "E2E Tests",
+    15
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "E2E Tests",
+   "Continuous Integration"
+  ],
+  "allPushesP50": 30.583333333333332
+ },
+ "main": {
+  "heads": 11,
+  "p50": 16.6,
+  "p90": 52.18333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 9,
+  "spanMin": 33.55,
+  "jobMinutes": 5.316666666666668,
+  "billedMinutes": 9,
+  "subMinuteJobs": 9,
+  "queueP50Sec": 1911,
+  "queueP90Sec": 22866,
+  "setupShare": 0.8019323671497585,
+  "setupMinPerJob": 0.4222222222222222,
+  "critical": {
+   "name": "python (3.12)",
+   "minutes": 0.6,
+   "shareOfSpan": 0.02997502081598668
+  },
+  "longest": {
+   "name": "python (3.14)",
+   "minutes": 0.8833333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 3,
+  "edges": 0,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "python (3.12)",
+    "runs": 2
+   },
+   {
+    "name": "python (3.15)",
+    "runs": 1
+   },
+   {
+    "name": "python (3.15t)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "python (3.15)",
+    "minutes": 33.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 31.9,
+    "workMin": 0.6,
+    "setupMin": 0.5
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 33.6,
+  "blockedMinP50": 0,
+  "queueMinP50": 31.9,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.6,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45480318488,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 374.8,
+    "path": [
+     "python (3.15)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 361.8,
+      "endMin": 362.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 361.8,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 357,
+      "endMin": 357.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 357,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 369.4,
+      "endMin": 370,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 369.4,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 353,
+      "endMin": 353.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 353,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 370.2,
+      "endMin": 370.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 370.2,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 374.3,
+      "endMin": 374.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 374.3,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 373.4,
+      "endMin": 374.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 373.4,
+      "workMin": 0.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 371.6,
+      "endMin": 372.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 371.6,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 373.7,
+      "endMin": 374.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 373.7,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45474885188,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 395.6,
+    "path": [
+     "python (3.15t)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 85,
+      "endMin": 85.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 85,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 366,
+      "endMin": 366.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 366,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 110.8,
+      "endMin": 111.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 110.8,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 368.7,
+      "endMin": 369.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 368.7,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 381.6,
+      "endMin": 382.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 381.6,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 395.1,
+      "endMin": 395.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 395.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 377.3,
+      "endMin": 378,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 377.3,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 388.2,
+      "endMin": 388.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 388.2,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 393.2,
+      "endMin": 393.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 393.2,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45474325519,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 386.7,
+    "path": [
+     "python (3.11)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 209.8,
+      "endMin": 210.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 209.8,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 351.4,
+      "endMin": 352.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 351.4,
+      "workMin": 0.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 377.4,
+      "endMin": 377.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 377.4,
+      "workMin": 0.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 361.8,
+      "endMin": 362.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 361.8,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 121.4,
+      "endMin": 122.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 121.4,
+      "workMin": 1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 368.6,
+      "endMin": 368.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 368.6,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 364.4,
+      "endMin": 365.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 364.4,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 381.1,
+      "endMin": 381.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 381.1,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 385.9,
+      "endMin": 386.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 385.9,
+      "workMin": 0.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44437531380,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.5,
+    "path": [
+     "python (3.12)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44422029482,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 33.6,
+    "path": [
+     "python (3.14)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 1.2,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.1,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.1,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.8,
+      "endMin": 8.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 26.7,
+      "endMin": 27.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 26.7,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 28.3,
+      "endMin": 29,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 28.3,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 20.6,
+      "endMin": 21.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 20.6,
+      "workMin": 1.4,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29.9,
+      "endMin": 30.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29.9,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 31.9,
+      "endMin": 33.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 31.9,
+      "workMin": 1.7,
+      "setupMin": 1.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44419436602,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20,
+    "path": [
+     "python (3.12)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "typing",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.14)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.2,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15t)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.7,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "formatting",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.4,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.4,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 19.4,
+      "endMin": 20,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 19.4,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.13)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.9,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.9,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "python (3.15)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.3,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.3,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": false,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": false,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": true,
+  "hints": [],
+  "where": {
+   "preCommit": ".pre-commit-config.yaml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Python",
+    74
+   ],
+   [
+    "Cython",
+    26
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 2
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "cstq",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "isort",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "lxml",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pre-commit",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "psutil",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pyrefly",
+    "ecosystem": "python",
+    "packages": 1
+   },
+   {
+    "name": "pytest-cov",
+    "ecosystem": "python",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    54
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "pystemd",
+     "path": "pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "pystemd",
+     "dir": "",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "pystemd"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 82
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 3,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "python (3.15t)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 361.8,
+     "workMin": 0.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "typing",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 357,
+     "workMin": 0.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 369.4,
+     "workMin": 0.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.13)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 353,
+     "workMin": 0.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "formatting",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 370.2,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.15)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 374.3,
+     "workMin": 0.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.14)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 373.4,
+     "workMin": 0.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.14t)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 371.6,
+     "workMin": 0.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "python (3.12)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 373.7,
+     "workMin": 0.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "python (3.15)"
+   ],
+   "pathMinP50": 33.6,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 6.6× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 22866 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Python it applies the principles, without a Python-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 35,
+ "read": {
+  "calls": 35,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

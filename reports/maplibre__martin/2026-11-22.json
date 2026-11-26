@@ -1,0 +1,4644 @@
+{
+ "repo": "maplibre/martin",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 9.1,
+  "stars": 4091,
+  "forks": 421,
+  "languages": [
+   [
+    "Rust",
+    93
+   ],
+   [
+    "TypeScript",
+    5
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Just",
+    1
+   ]
+  ],
+  "linesOfCode": 259349,
+  "files": 2308,
+  "sourceFiles": 738,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 169098,
+   "tests": 58868,
+   "integration": 30512,
+   "support": 870
+  },
+  "testShare": 0.34798897546186847,
+  "packages": {
+   "npm": 2,
+   "cargo": 13,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 47,
+  "commitsPerWeekYear": 23.9,
+  "pace": 2,
+  "activeAuthors28d": 10,
+  "prsOpenedPerWeek": 60,
+  "prsMergedPerWeek": 54,
+  "botShareOfMergedPrs": 29.6,
+  "openToMergeHours": {
+   "p50": 36.1,
+   "p90": 111.2,
+   "n": 38
+  },
+  "prRunsPerDay": 148.1,
+  "runsPerMergedPr": 19.2
+ },
+ "window": {
+  "days": 6.9,
+  "runs": 821,
+  "runsInPeriod": 824,
+  "truncated": false,
+  "mainDays": 6.2
+ },
+ "size": "large",
+ "headsPerWeek": 286,
+ "score": 31,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 23,
+  "reliability": 39,
+  "efficiency": 49
+ },
+ "detail": {
+  "speed": {
+   "wait": 31,
+   "forSize": 9,
+   "tail": 36
+  },
+  "reliability": {
+   "flakes": 67,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 35,
+   "runsPerPr": 46,
+   "setup": 100,
+   "queue": 34,
+   "shardIdle": 29
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3192.8,
+  "prBilledMinutesPerDay": 3827,
+  "jobMinutesPerMergedPr": 413.9,
+  "expectedMinutesPerMergedPr": 212.3,
+  "expectedWait": 13.6,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 282,
+  "timed": 171,
+  "p50": 29.566666666666666,
+  "p75": 36.86666666666667,
+  "p90": 44.266666666666666,
+  "redRate": 0.30851063829787234,
+  "rerunRate": 0.06028368794326241,
+  "passedOnRerunRate": 0.04609929078014184,
+  "cancelledRate": 0.23049645390070922,
+  "botHeads": 19,
+  "lightHeads": 10,
+  "neverRan": 0,
+  "botPushes": 31,
+  "bots": [
+   [
+    "renovate[bot]",
+    22
+   ],
+   [
+    "autofix-ci[bot]",
+    9
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    170
+   ],
+   [
+    "autofix.ci",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    71
+   ],
+   [
+    "autofix.ci",
+    34
+   ]
+  ],
+  "leftOut": [
+   "Hotpath benchmark",
+   "Python release",
+   "Relabel Pull Request"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 28.733333333333334
+ },
+ "main": {
+  "heads": 37,
+  "p50": 45.7,
+  "p90": 135.56666666666666,
+  "redRate": 0.7297297297297297,
+  "redBy": [
+   [
+    "CI",
+    27
+   ]
+  ]
+ },
+ "botRunShare": 0.16995708154506436,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 25,
+  "spanMin": 20.4,
+  "jobMinutes": 116.46666666666664,
+  "billedMinutes": 136,
+  "subMinuteJobs": 4,
+  "queueP50Sec": 3,
+  "queueP90Sec": 94,
+  "setupShare": 0.19477185202474034,
+  "critical": {
+   "name": "CI Finished",
+   "minutes": 0.05,
+   "shareOfSpan": 0.002450980392156863
+  },
+  "longest": {
+   "name": "security / CodeQL (rust)",
+   "minutes": 18.583333333333332
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    163
+   ]
+  ],
+  "shard": {
+   "name": "rust / Check feature matrix (#)",
+   "shards": 4,
+   "medianMin": 2.4166666666666665,
+   "maxMin": 4.683333333333334,
+   "maxOverMedian": 1.7672955974842768,
+   "idleTail": 0.3136942675159236
+  }
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 10,
+  "edges": 20,
+  "matrixJobs": 0,
+  "reusableCalls": 8,
+  "gateEnd": [
+   {
+    "name": "CI Finished",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Decide which suites this change can affect",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "rust / Test against PostGIS variants",
+    "minutes": 20.7,
+    "share": 0.99,
+    "blockedMin": 0.1,
+    "hiddenMin": 4.4,
+    "queueMin": 0.1,
+    "workMin": 16.3,
+    "setupMin": 2.9
+   },
+   {
+    "name": "CI Finished",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 20.8,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 3,
+  "pathMinP50": 20.4,
+  "blockedMinP50": 20.3,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 1.8,
+  "workMinP50": 17.1,
+  "setupInPathMinP50": 3.3,
+  "topBlockers": [
+   {
+    "name": "Decide which suites this change can affect",
+    "runs": 5,
+    "heldJobs": 23,
+    "jobs": 25,
+    "tookMin": 0.1,
+    "heldJobMin": 2.8
+   },
+   {
+    "name": "security / CodeQL (rust)",
+    "runs": 1,
+    "heldJobs": 1,
+    "jobs": 24,
+    "tookMin": 20.2,
+    "heldJobMin": 3.3
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 5,
+  "unknown": [
+   "\"rust\" calls $/.github/workflows/rust.yml, in another repo, so the jobs inside it are taken as one",
+   "\"fuzz\" calls $/.github/workflows/fuzz.yml, in another repo, so the jobs inside it are taken as one",
+   "\"ui\" calls $/.github/workflows/ui.yml, in another repo, so the jobs inside it are taken as one",
+   "\"docs\" calls $/.github/workflows/docs.yml, in another repo, so the jobs inside it are taken as one",
+   "\"schemas\" calls $/.github/workflows/schemas.yml, in another repo, so the jobs inside it are taken as one",
+   "\"demo\" calls $/.github/workflows/demo.yml, in another repo, so the jobs inside it are taken as one",
+   "\"security\" calls $/.github/workflows/security.yml, in another repo, so the jobs inside it are taken as one",
+   "\"release\" calls $/.github/workflows/release.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 44981689986,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.4,
+    "path": [
+     "Decide which suites this change can affect",
+     "security / CodeQL (rust)",
+     "CI Finished"
+    ],
+    "topBlocker": "security / CodeQL (rust)",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.6,
+      "endMin": 1.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.8,
+      "endMin": 20.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 19.5,
+      "setupMin": 3.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 1.4,
+      "endMin": 2.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 1.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 1.4,
+      "endMin": 2.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 1.4,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.8,
+      "endMin": 5.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 5.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.6,
+      "endMin": 4.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 4.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 1.6,
+      "endMin": 6.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 4.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test on windows-latest",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 1.5,
+      "endMin": 10.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 9.3,
+      "setupMin": 4.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 3.8,
+      "endMin": 13.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.1,
+      "workMin": 10,
+      "setupMin": 3.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.2,
+      "endMin": 7.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.4,
+      "workMin": 3.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.5,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.8,
+      "workMin": 2.4,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.5,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.8,
+      "workMin": 2.4,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.9,
+      "endMin": 5.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 2.2,
+      "workMin": 0.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 3.9,
+      "endMin": 5.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.2,
+      "workMin": 2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.6,
+      "endMin": 7.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 1.9,
+      "workMin": 2.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.8,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 2.1,
+      "workMin": 1.7,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.7,
+      "startMin": 4.9,
+      "endMin": 8.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 2.6,
+      "queueMin": 2.2,
+      "workMin": 3.4,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.7,
+      "startMin": 5.9,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.6,
+      "queueMin": 1.1,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.7,
+      "startMin": 5.9,
+      "endMin": 17,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.6,
+      "queueMin": 1.1,
+      "workMin": 11.2,
+      "setupMin": 3.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.8,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.8,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 6.2,
+      "startMin": 6.2,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 6.1,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 20.4,
+      "endMin": 20.4,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44981675576,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 17.9,
+    "path": [
+     "Decide which suites this change can affect",
+     "security / CodeQL (rust)",
+     "CI Finished"
+    ],
+    "topBlocker": "Decide which suites this change can affect",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "ui / Lint and Unit test the frontend",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "docs / Build Docs",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.4,
+      "endMin": 2.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "schemas / Validate generated config + OpenAPI schemas",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.6,
+      "endMin": 0.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / dependency-review",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "demo / Build the demo images",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.7,
+      "endMin": 1.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (javascript-typescript)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 17.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 17.5,
+      "setupMin": 4.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / zizmor",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (actions)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.7,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.4,
+      "endMin": 4.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 3.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 1.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.6,
+      "endMin": 2.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.9,
+      "endMin": 6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 5.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.4,
+      "endMin": 4.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.7,
+      "endMin": 11.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 9.9,
+      "setupMin": 3.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.8,
+      "endMin": 3.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 1.3,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.5,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test on windows-latest",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 1.7,
+      "endMin": 9.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 8.2,
+      "setupMin": 4.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 3.1,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 1.4,
+      "workMin": 2.7,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.15t",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 1.9,
+      "endMin": 2.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 0.2,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 1.8,
+      "endMin": 5.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 3.5,
+      "endMin": 5.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 1.8,
+      "workMin": 1.9,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.15",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 5,
+      "endMin": 6,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 3.3,
+      "workMin": 1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 3.2,
+      "endMin": 5.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 1.5,
+      "workMin": 2.3,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 3.4,
+      "endMin": 15.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 1.7,
+      "workMin": 11.8,
+      "setupMin": 3.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.11",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 5.3,
+      "endMin": 6.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 3.6,
+      "workMin": 0.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 4.6,
+      "endMin": 7.3,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 2.9,
+      "workMin": 2.7,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 4.1,
+      "endMin": 5.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 2.4,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 4.9,
+      "endMin": 6.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 3.2,
+      "workMin": 1.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 1.7,
+      "startMin": 2.2,
+      "endMin": 5.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 1.5,
+      "queueMin": 0.5,
+      "workMin": 3.7,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 4.9,
+      "startMin": 5.9,
+      "endMin": 7.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 4.7,
+      "queueMin": 1,
+      "workMin": 1.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test the built binaries against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 4.9,
+      "startMin": 6.1,
+      "endMin": 12.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 4.7,
+      "queueMin": 1.2,
+      "workMin": 6.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 6,
+      "startMin": 6.1,
+      "endMin": 6.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 5.8,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 6.6,
+      "startMin": 6.7,
+      "endMin": 11.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 6.4,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 6.6,
+      "startMin": 6.7,
+      "endMin": 11.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 6.4,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Merge and upload code coverage",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 15.2,
+      "startMin": 15.2,
+      "endMin": 15.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 15,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 17.8,
+      "createdMin": 17.8,
+      "startMin": 17.8,
+      "endMin": 17.9,
+      "blockedMin": 17.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44974584323,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21.6,
+    "path": [
+     "Decide which suites this change can affect",
+     "rust / Test against PostGIS variants",
+     "CI Finished"
+    ],
+    "topBlocker": "Decide which suites this change can affect",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "docs / Build Docs",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 1.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 18.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.3,
+      "setupMin": 2.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test on windows-latest",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 11.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 4.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 1.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 16,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 3.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 3.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 4.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 6.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 7.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2,
+      "startMin": 2,
+      "endMin": 6.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.6,
+      "endMin": 21.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0,
+      "workMin": 17,
+      "setupMin": 2.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.6,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.1,
+      "startMin": 5.1,
+      "endMin": 12.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 5,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 2.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.1,
+      "startMin": 5.1,
+      "endMin": 12.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 5,
+      "queueMin": 0,
+      "workMin": 7.1,
+      "setupMin": 2.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 7.1,
+      "startMin": 7.1,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 7,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 21.5,
+      "createdMin": 21.5,
+      "startMin": 21.6,
+      "endMin": 21.6,
+      "blockedMin": 21.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44973345485,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.9,
+    "path": [
+     "Decide which suites this change can affect",
+     "rust / Test against PostGIS variants",
+     "CI Finished"
+    ],
+    "topBlocker": "Decide which suites this change can affect",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 19.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.6,
+      "setupMin": 2.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 1.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 7.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 16.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 14,
+      "setupMin": 4.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 3.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 7.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 1.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 7.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 4.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.2,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 2,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 20.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0.1,
+      "workMin": 16.3,
+      "setupMin": 4.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 5.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.8,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 12.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.2,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 3.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 11.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.2,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 2.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 20.8,
+      "createdMin": 20.9,
+      "startMin": 20.9,
+      "endMin": 20.9,
+      "blockedMin": 20.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44973344907,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.1,
+    "path": [
+     "Decide which suites this change can affect",
+     "rust / Test against PostGIS variants",
+     "CI Finished"
+    ],
+    "topBlocker": "Decide which suites this change can affect",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 18.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.6,
+      "setupMin": 2.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / audit",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / dependency-review",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 1.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 5.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 4.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 1.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 7,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 1.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 15.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 13.5,
+      "setupMin": 3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 6.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 4.8,
+      "setupMin": 1.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 4.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.11",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 6.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 1.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.15",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 1.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG Python bindings 3.15t",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 2.1,
+      "startMin": 2.1,
+      "endMin": 3.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.9,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.6,
+      "endMin": 22,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0.1,
+      "workMin": 17.4,
+      "setupMin": 4.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.5,
+      "startMin": 4.6,
+      "endMin": 6.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.4,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.1,
+      "startMin": 5.2,
+      "endMin": 12,
+      "blockedMin": 0.1,
+      "hiddenMin": 5,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.1,
+      "startMin": 5.2,
+      "endMin": 11.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 5,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 2.4,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 7.6,
+      "startMin": 7.6,
+      "endMin": 8.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 7.5,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 22,
+      "createdMin": 22,
+      "startMin": 22,
+      "endMin": 22.1,
+      "blockedMin": 22,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44971119086,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.6,
+    "path": [
+     "Decide which suites this change can affect",
+     "rust / Check feature matrix (3/4)",
+     "CI Finished"
+    ],
+    "topBlocker": "Decide which suites this change can affect",
+    "jobs": [
+     {
+      "name": "Decide which suites this change can affect",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint the Rust code",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Lint Rust dependencies",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.1,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "docs / Build Docs",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "security / CodeQL (rust)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 19.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19,
+      "setupMin": 5.6,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test against RustFS (S3-compatible)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 2.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 1.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 7.2,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.3,
+      "endMin": 5.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 4.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test on windows-latest",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 10.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 4.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / COG GeoTIFF tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 2.1,
+      "endMin": 6,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 0.2,
+      "workMin": 3.9,
+      "setupMin": 1.5,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Maps conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 2.4,
+      "endMin": 6.3,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 0.5,
+      "workMin": 3.9,
+      "setupMin": 1.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / DuckDB GeoParquet tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 3.1,
+      "endMin": 8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 1.3,
+      "workMin": 4.9,
+      "setupMin": 1.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (2/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 2.2,
+      "endMin": 11.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 0.4,
+      "workMin": 9.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Style rendering tests",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 3,
+      "endMin": 7.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 1.1,
+      "workMin": 4.9,
+      "setupMin": 1.7,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Unit test the server (ubuntu-26.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 4.1,
+      "endMin": 14.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 2.3,
+      "workMin": 10.4,
+      "setupMin": 3.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (4/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 2.4,
+      "endMin": 5,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 0.5,
+      "workMin": 2.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (3/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 4.4,
+      "endMin": 19.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 2.5,
+      "workMin": 15.1,
+      "setupMin": 0.9,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Check feature matrix (1/4)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 1.9,
+      "startMin": 2.2,
+      "endMin": 3.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 1.8,
+      "queueMin": 0.4,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / OGC API - Tiles conformance",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.7,
+      "startMin": 5.1,
+      "endMin": 6.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.6,
+      "queueMin": 0.4,
+      "workMin": 1.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test against PostGIS variants",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 4.7,
+      "startMin": 5.4,
+      "endMin": 19.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 4.6,
+      "queueMin": 0.7,
+      "workMin": 14,
+      "setupMin": 4.3,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (full)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.4,
+      "startMin": 6,
+      "endMin": 14,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.3,
+      "queueMin": 0.7,
+      "workMin": 8,
+      "setupMin": 3.1,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Build and test docker images (base)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 5.4,
+      "startMin": 7.6,
+      "endMin": 14,
+      "blockedMin": 0.1,
+      "hiddenMin": 5.3,
+      "queueMin": 2.2,
+      "workMin": 6.5,
+      "setupMin": 2.8,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "rust / Test AWS Lambda",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 7.2,
+      "startMin": 8.1,
+      "endMin": 8.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 7.1,
+      "queueMin": 0.9,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     },
+     {
+      "name": "CI Finished",
+      "needs": [
+       "changes",
+       "rust",
+       "fuzz",
+       "ui",
+       "docs",
+       "schemas",
+       "demo",
+       "security",
+       "release"
+      ],
+      "readyMin": 19.5,
+      "createdMin": 19.5,
+      "startMin": 19.5,
+      "endMin": 19.6,
+      "blockedMin": 19.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-26.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 6130,
+  "over10s": 9,
+  "top": [
+   {
+    "file": "martin config::file::tiles::postgres::builder::tests::discover_matches_each_fixture",
+    "sec": 38.292,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin-core tiles::postgres::pool::tests::verify_ca_skips_hostname_check_but_verify_full_enforces_it",
+    "sec": 34.56,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin config::file::tiles::discovery::postgres::tests::discover_with_bad_connection_string_errors",
+    "sec": 30.201,
+    "job": "rust / Test against PostGIS variants"
+   },
+   {
+    "file": "martin::osm_shortbread_test shortbread_snippet_passes_its_monaco_spec",
+    "sec": 16.431,
+    "job": "rust / Unit test the server (ubuntu-26.04)"
+   },
+   {
+    "file": "map-tile-toolkit::alloc slicing_allocates_little",
+    "sec": 16.014,
+    "job": "rust / Unit test the server (ubuntu-26.04)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 19,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": true,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": true,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    93
+   ],
+   [
+    "TypeScript",
+    5
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Just",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv",
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace",
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 2,
+   "cargo": 13,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "Vitest",
+   "cargo nextest",
+   "cargo test",
+   "pytest"
+  ],
+  "lintFormat": [
+   "Biome",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 9
+   },
+   {
+    "name": "insta",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "rstest",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "bytes",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "hotpath",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "strum",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "approx",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "futures",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "geo",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "object_store",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "tracing",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "criterion",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "flate2",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "geo-types",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "geojson",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "image",
+    "ecosystem": "cargo",
+    "packages": 4
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    163
+   ]
+  ],
+  "agentFiles": [
+   "CLAUDE.md",
+   ".github/copilot-instructions.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "cog-tiles-py",
+     "path": "cog-tiles-py/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "cog-tiles"
+     ]
+    },
+    {
+     "name": "cog-tiles",
+     "path": "cog-tiles-py/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "cog-tiles",
+     "path": "cog-tiles/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "martin-landing",
+     "path": "demo/frontend/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "martin-e2e-tests",
+     "path": "e2e-tests/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "martin-tile-utils"
+     ]
+    },
+    {
+     "name": "map-tile-toolkit",
+     "path": "map-tile-toolkit/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "map-tile-toolkit-fuzz",
+     "path": "map-tile-toolkit/fuzz/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "martin-config-macros",
+     "path": "martin-config-macros/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "martin-core",
+     "path": "martin-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "cog-tiles",
+      "martin-tile-utils",
+      "martin-tilegen",
+      "mbtiles"
+     ]
+    },
+    {
+     "name": "martin-tile-utils",
+     "path": "martin-tile-utils/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "martin-tilegen",
+     "path": "martin-tilegen/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "map-tile-toolkit",
+      "martin-tile-utils",
+      "mbtiles"
+     ]
+    },
+    {
+     "name": "martin-ui",
+     "path": "martin-ui/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "martin-ui",
+     "path": "martin-ui/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "martin",
+     "path": "martin/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "martin-config-macros",
+      "martin-core",
+      "martin-tile-utils",
+      "martin-tilegen",
+      "martin-ui",
+      "mbtiles"
+     ]
+    },
+    {
+     "name": "mbtiles",
+     "path": "mbtiles/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "martin-tile-utils"
+     ]
+    }
+   ],
+   "count": 16,
+   "edges": 16,
+   "cycles": [],
+   "maxDepth": 4,
+   "topFanIn": [
+    {
+     "name": "martin-tile-utils",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "mbtiles",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "cog-tiles",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "martin-tilegen",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "map-tile-toolkit",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 16,
+    "edges": 16
+   },
+   "nodes": [
+    {
+     "id": "martin-tile-utils",
+     "dir": "martin-tile-utils",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "mbtiles",
+     "dir": "mbtiles",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "cog-tiles",
+     "dir": "cog-tiles",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "martin-tilegen",
+     "dir": "martin-tilegen",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "map-tile-toolkit",
+     "dir": "map-tile-toolkit",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "martin-config-macros",
+     "dir": "martin-config-macros",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "martin-core",
+     "dir": "martin-core",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "martin-ui",
+     "dir": "martin-ui",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "cog-tiles",
+     "dir": "cog-tiles-py",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "cog-tiles-py",
+     "dir": "cog-tiles-py",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "map-tile-toolkit-fuzz",
+     "dir": "map-tile-toolkit/fuzz",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "martin",
+     "dir": "martin",
+     "ecosystem": "cargo",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "martin-e2e-tests",
+     "dir": "e2e-tests",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "martin-landing",
+     "dir": "demo/frontend",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "martin-ui",
+     "dir": "martin-ui",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "cog-tiles-py",
+     "to": "cog-tiles",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-e2e-tests",
+     "to": "martin-tile-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-core",
+     "to": "cog-tiles",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-core",
+     "to": "martin-tile-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-core",
+     "to": "martin-tilegen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-core",
+     "to": "mbtiles",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-tilegen",
+     "to": "map-tile-toolkit",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-tilegen",
+     "to": "martin-tile-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin-tilegen",
+     "to": "mbtiles",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "martin-config-macros",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "martin-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "martin-tile-utils",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "martin-tilegen",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "martin-ui",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "martin",
+     "to": "mbtiles",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "mbtiles",
+     "to": "martin-tile-utils",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 4,
+   "chain": [
+    "martin",
+    "martin-core",
+    "martin-tilegen",
+    "mbtiles",
+    "martin-tile-utils"
+   ],
+   "topFanIn": [
+    {
+     "name": "martin-tile-utils",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "mbtiles",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "cog-tiles",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "martin-tilegen",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "map-tile-toolkit",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 2,
+    "packagesWithEntries": 0,
+    "filesRead": 2
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 19,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2308
+   },
+   "nodes": [
+    {
+     "id": "martin-landing#build",
+     "pkg": "martin-landing",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-landing#dev",
+     "pkg": "martin-landing",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-landing#format",
+     "pkg": "martin-landing",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-landing#lint",
+     "pkg": "martin-landing",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-landing#preview",
+     "pkg": "martin-landing",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-landing#type-check",
+     "pkg": "martin-landing",
+     "name": "type-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#build",
+     "pkg": "martin-ui",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#dev",
+     "pkg": "martin-ui",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#format",
+     "pkg": "martin-ui",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#gen-types",
+     "pkg": "martin-ui",
+     "name": "gen-types",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#lint",
+     "pkg": "martin-ui",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#preview",
+     "pkg": "martin-ui",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test",
+     "pkg": "martin-ui",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test:browser",
+     "pkg": "martin-ui",
+     "name": "test:browser",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test:coverage",
+     "pkg": "martin-ui",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test:ui",
+     "pkg": "martin-ui",
+     "name": "test:ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test:update-snapshots",
+     "pkg": "martin-ui",
+     "name": "test:update-snapshots",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#test:watch",
+     "pkg": "martin-ui",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "martin-ui#type-check",
+     "pkg": "martin-ui",
+     "name": "type-check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "martin-landing#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 10,
+    "edges": 20,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Decide which suites this change can affect",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Lint Rust dependencies",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.5,
+     "workMin": 0.8,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "security / CodeQL (rust)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.1,
+     "queueMin": 0.7,
+     "workMin": 19.5,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Lint the Rust code",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.3,
+     "workMin": 1.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Unit test against RustFS (S3-compatible)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.3,
+     "workMin": 1.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.7,
+     "workMin": 5.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.5,
+     "workMin": 4.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.5,
+     "workMin": 4.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Test on windows-latest",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.4,
+     "workMin": 9.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Unit test the server (ubuntu-26.04)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.1,
+     "workMin": 10,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / OGC API - Maps conformance",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.4,
+     "workMin": 3.2,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / COG GeoTIFF tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.8,
+     "workMin": 2.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Style rendering tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.8,
+     "workMin": 2.4,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Check feature matrix (1/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 2.2,
+     "workMin": 0.9,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Check feature matrix (3/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.2,
+     "workMin": 2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Check feature matrix (2/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.9,
+     "workMin": 2.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Check feature matrix (4/4)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 2.1,
+     "workMin": 1.7,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / DuckDB GeoParquet tests",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 2.2,
+     "workMin": 3.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / OGC API - Tiles conformance",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.1,
+     "workMin": 1.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Test against PostGIS variants",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 1.1,
+     "workMin": 11.2,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Build and test docker images (base)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 4.4,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Build and test docker images (full)",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 4.3,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "rust / Test AWS Lambda",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    },
+    {
+     "id": "CI Finished",
+     "needs": [
+      "changes",
+      "rust",
+      "fuzz",
+      "ui",
+      "docs",
+      "schemas",
+      "demo",
+      "security",
+      "release"
+     ],
+     "onPath": true,
+     "blockedMin": 20.3,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-26.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "rust / Lint Rust dependencies",
+     "to": "changes"
+    },
+    {
+     "from": "security / CodeQL (rust)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Lint the Rust code",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Unit test against RustFS (S3-compatible)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / build-x86_64-unknown-linux-gnu-full / Build x86_64-unknown-linux-gnu",
+     "to": "changes"
+    },
+    {
+     "from": "rust / build-x86_64-unknown-linux-gnu / Build x86_64-unknown-linux-gnu",
+     "to": "changes"
+    },
+    {
+     "from": "rust / build-x86_64-unknown-linux-musl / Build x86_64-unknown-linux-musl",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Test on windows-latest",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Unit test the server (ubuntu-26.04)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / OGC API - Maps conformance",
+     "to": "changes"
+    },
+    {
+     "from": "rust / COG GeoTIFF tests",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Style rendering tests",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Check feature matrix (1/4)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Check feature matrix (3/4)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Check feature matrix (2/4)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Check feature matrix (4/4)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / DuckDB GeoParquet tests",
+     "to": "changes"
+    },
+    {
+     "from": "rust / OGC API - Tiles conformance",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Test against PostGIS variants",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Build and test docker images (base)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Build and test docker images (full)",
+     "to": "changes"
+    },
+    {
+     "from": "rust / Test AWS Lambda",
+     "to": "changes"
+    },
+    {
+     "from": "CI Finished",
+     "to": "changes"
+    },
+    {
+     "from": "CI Finished",
+     "to": "rust"
+    },
+    {
+     "from": "CI Finished",
+     "to": "fuzz"
+    },
+    {
+     "from": "CI Finished",
+     "to": "ui"
+    },
+    {
+     "from": "CI Finished",
+     "to": "docs"
+    },
+    {
+     "from": "CI Finished",
+     "to": "schemas"
+    },
+    {
+     "from": "CI Finished",
+     "to": "demo"
+    },
+    {
+     "from": "CI Finished",
+     "to": "security"
+    },
+    {
+     "from": "CI Finished",
+     "to": "release"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "setup-in-path",
+     "subject": "Decide which suites this change can affect → rust / Test against PostGIS variants → CI Finished",
+     "numbers": {
+      "setupMin": 3.3,
+      "pathMin": 20.4
+     },
+     "threshold": {
+      "setupMin": 1,
+      "shareOfPath": 0.1
+     }
+    }
+   ],
+   "chain": [
+    "Decide which suites this change can affect",
+    "rust / Test against PostGIS variants",
+    "CI Finished"
+   ],
+   "pathMinP50": 20.4,
+   "unknown": [
+    "\"rust\" calls $/.github/workflows/rust.yml, in another repo, so the jobs inside it are taken as one",
+    "\"fuzz\" calls $/.github/workflows/fuzz.yml, in another repo, so the jobs inside it are taken as one",
+    "\"ui\" calls $/.github/workflows/ui.yml, in another repo, so the jobs inside it are taken as one",
+    "\"docs\" calls $/.github/workflows/docs.yml, in another repo, so the jobs inside it are taken as one",
+    "\"schemas\" calls $/.github/workflows/schemas.yml, in another repo, so the jobs inside it are taken as one",
+    "\"demo\" calls $/.github/workflows/demo.yml, in another repo, so the jobs inside it are taken as one",
+    "\"security\" calls $/.github/workflows/security.yml, in another repo, so the jobs inside it are taken as one",
+    "\"release\" calls $/.github/workflows/release.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 2,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"rust / Check feature matrix (#)\": the slowest shard takes 1.77× the median, 31% idle; balance shards by measured time",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "9 test files take over 10 s; the slowest, martin config::file::tiles::postgres::builder::tests::discover_matches_each_fixture, takes 38 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "5% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Setup on the critical path: 3.3 min of setup in jobs that first wait on others; start it while they wait, and wait only for the step you need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md#shorten-the-critical-path-before-buying-cores"
+  },
+  {
+   "text": "Jobs wait 94 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 78,
+ "read": {
+  "calls": 78,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,1718 @@
+{
+ "repo": "brave/brave-core",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 9,
+  "stars": 3818,
+  "forks": 1598,
+  "languages": [
+   [
+    "C++",
+    39
+   ],
+   [
+    "HTML",
+    29
+   ],
+   [
+    "TypeScript",
+    10
+   ],
+   [
+    "Swift",
+    7
+   ]
+  ],
+  "linesOfCode": 4118424,
+  "files": 46577,
+  "sourceFiles": 14682,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 2453639,
+   "tests": 214427,
+   "integration": 259,
+   "support": 3002
+  },
+  "testShare": 0.08149037030145376,
+  "packages": {
+   "npm": 2,
+   "cargo": 18,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 211,
+  "pace": 1.4,
+  "activeAuthors28d": "≥51",
+  "prsOpenedPerWeek": 248,
+  "prsMergedPerWeek": 195.4,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 37,
+   "p90": 148,
+   "n": 100
+  },
+  "prRunsPerDay": 1339.5,
+  "runsPerMergedPr": 48
+ },
+ "window": {
+  "days": 0.8,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 0
+ },
+ "size": "large",
+ "headsPerWeek": 1662,
+ "score": 87,
+ "grade": "B+",
+ "band": "fast",
+ "parts": {
+  "speed": 93,
+  "reliability": 100,
+  "efficiency": 58
+ },
+ "detail": {
+  "speed": {
+   "wait": 87,
+   "forSize": 100,
+   "tail": 91
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": null
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 9,
+   "setup": 12,
+   "queue": 100,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1348.8,
+  "prBilledMinutesPerDay": 1855.7,
+  "jobMinutesPerMergedPr": 48.3,
+  "prVcpuMinutesPerDay": 5305,
+  "vcpuMinutesPerMergedPr": 190,
+  "expectedVcpuMinutesPerMergedPr": 2114.7,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 528.7,
+  "expectedWait": 38.2,
+  "workflowsOnPrs": 5
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "the default branch's red rate and how the jobs are wired couldn't be measured"
+  ],
+  "measured": 0.89,
+  "missing": [
+   "reliability.mainRed",
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 201,
+  "ranHeads": 177,
+  "timed": 137,
+  "p50": 5.633333333333334,
+  "p75": 5.883333333333334,
+  "p90": 7.783333333333333,
+  "redRate": 0.03389830508474576,
+  "rerunRate": 0.005649717514124294,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.14689265536723164,
+  "botHeads": 0,
+  "lightHeads": 13,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "security",
+    137
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/security-action.yml",
+  "redBy": [
+   [
+    "Compare Chromium versions",
+    5
+   ],
+   [
+    "Rerun Compare Chromium versions",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Assign labels",
+   "Assign author",
+   "Propagate labels"
+  ],
+  "heavyWorkflows": [
+   "security"
+  ],
+  "allPushesP50": 5.6
+ },
+ "main": {
+  "heads": 0,
+  "p50": null,
+  "p90": null,
+  "redRate": null,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 5.633333333333334,
+  "jobMinutes": 5.6,
+  "billedMinutes": 6,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.5677655677655677,
+  "setupMinPerJob": 3.1166666666666667,
+  "critical": {
+   "name": "security",
+   "minutes": 5.6,
+   "shareOfSpan": 0.9940652818991098
+  },
+  "longest": {
+   "name": "security",
+   "minutes": 5.6
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/security-action.yml"
+  ],
+  "gateEnd": [
+   {
+    "name": "security",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "security",
+    "minutes": 5.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 5.6,
+    "setupMin": 3.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 5.6,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 5.6,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   ".github/workflows/security-action.yml couldn't be found, so its jobs are taken as waiting on nothing"
+  ],
+  "perRun": [
+   {
+    "id": 45593169110,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.8,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 3.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45588927497,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.2,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 3.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45588719623,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.6,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 3.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45588286385,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.6,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 3.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45581298694,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.3,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 6.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45578642354,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.6,
+    "path": [
+     "security"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "security",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 2.6,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": null,
+  "pathFilters": null,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": null,
+  "depCache": null,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": "pnpm",
+  "fastLint": null,
+  "eslint": true,
+  "testRunner": "jest",
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": null,
+  "hints": [],
+  "where": {
+   "timeouts": ".github/workflows/socket-fix.yml",
+   "eslint": "package.json",
+   "agentRules": ".claude/commands/rebasing/fix-broken-test.md"
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   ".github/renovate.json extends a preset kept in another repo, so whether it batches updates can't be read here"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C++",
+    39
+   ],
+   [
+    "HTML",
+    29
+   ],
+   [
+    "TypeScript",
+    10
+   ],
+   [
+    "Swift",
+    7
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm",
+    "pip",
+    "Cargo"
+   ],
+   "tools": [
+    "pnpm workspaces"
+   ]
+  },
+  "packages": null,
+  "testRunners": [
+   "Jest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Ruff"
+  ],
+  "libraries": [
+   {
+    "name": "cxx",
+    "ecosystem": "cargo",
+    "packages": 11
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "lazy_static",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "rand",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "async-trait",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "futures",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "regex",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "challenge-bypass-ristretto",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "hex",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "hmac",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "html5ever",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "kuchikiki",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "libc",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "log",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "reqwest",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "url",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "wasm-bindgen",
+    "ecosystem": "cargo",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".claude/commands"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "opaque-ke-wasm",
+     "path": "components/brave_account/resources/opaque_ke/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "brave-news-cxx",
+     "path": "components/brave_news/browser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "adblock-cxx",
+     "path": "components/brave_shields/core/common/adblock/rs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "zcash",
+     "path": "components/brave_wallet/browser/zcash/rust/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "brave_wallet"
+     ]
+    },
+    {
+     "name": "brave_wallet",
+     "path": "components/brave_wallet/common/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "challenge-bypass-ristretto-cxx",
+     "path": "components/challenge_bypass_ristretto/rust/cxx/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "filecoin-cxx",
+     "path": "components/filecoin/rs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "json-cxx",
+     "path": "components/json/rs/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "constellation-cxx",
+     "path": "components/p3a/constellation/rs/cxx/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "skus-cxx",
+     "path": "components/skus/browser/rs/cxx/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "skus"
+     ]
+    },
+    {
+     "name": "skus",
+     "path": "components/skus/browser/rs/lib/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "skus-sdk",
+     "path": "components/skus/browser/rs/wasm/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "skus"
+     ]
+    },
+    {
+     "name": "speedreader-ffi",
+     "path": "components/speedreader/rust/ffi/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "speedreader"
+     ]
+    },
+    {
+     "name": "speedreader",
+     "path": "components/speedreader/rust/lib/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "readability"
+     ]
+    },
+    {
+     "name": "readability",
+     "path": "components/speedreader/rust/lib/src/readability/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "anonymous-credentials",
+     "path": "components/web_discovery/browser/anonymous_credentials/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "document-extractor",
+     "path": "components/web_discovery/browser/document_extractor/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "brave-core",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "brave-tools-crates",
+     "path": "tools/crates/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    }
+   ],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [
+    {
+     "id": "skus",
+     "dir": "components/skus/browser/rs/lib",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "brave_wallet",
+     "dir": "components/brave_wallet/common",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "readability",
+     "dir": "components/speedreader/rust/lib/src/readability",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "speedreader",
+     "dir": "components/speedreader/rust/lib",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "adblock-cxx",
+     "dir": "components/brave_shields/core/common/adblock/rs",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "anonymous-credentials",
+     "dir": "components/web_discovery/browser/anonymous_credentials",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "brave-core",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "brave-news-cxx",
+     "dir": "components/brave_news/browser",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "brave-tools-crates",
+     "dir": "tools/crates",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "challenge-bypass-ristretto-cxx",
+     "dir": "components/challenge_bypass_ristretto/rust/cxx",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "constellation-cxx",
+     "dir": "components/p3a/constellation/rs/cxx",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "document-extractor",
+     "dir": "components/web_discovery/browser/document_extractor",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "filecoin-cxx",
+     "dir": "components/filecoin/rs",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "json-cxx",
+     "dir": "components/json/rs",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "opaque-ke-wasm",
+     "dir": "components/brave_account/resources/opaque_ke",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "skus-cxx",
+     "dir": "components/skus/browser/rs/cxx",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "skus-sdk",
+     "dir": "components/skus/browser/rs/wasm",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "speedreader-ffi",
+     "dir": "components/speedreader/rust/ffi",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "zcash",
+     "dir": "components/brave_wallet/browser/zcash/rust",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "zcash",
+     "to": "brave_wallet",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "skus-cxx",
+     "to": "skus",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "skus-sdk",
+     "to": "skus",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "speedreader-ffi",
+     "to": "speedreader",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "speedreader",
+     "to": "readability",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": null,
+    "packages": 1,
+    "packagesWithEntries": 1,
+    "filesRead": 0,
+    "undecided": 2
+   },
+   "nodes": [
+    {
+     "id": "brave-core#.",
+     "pkg": "brave-core",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "files": null
+     },
+     "dependents": null,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show",
+    "1 entry of 1 unknown, such as brave-core#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 45,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [
+    {
+     "id": "brave-core#ai-chat-shared-conversation-lib-dev",
+     "pkg": "brave-core",
+     "name": "ai-chat-shared-conversation-lib-dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#apply_patches",
+     "pkg": "brave-core",
+     "name": "apply_patches",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#audit_deps",
+     "pkg": "brave-core",
+     "name": "audit_deps",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#build",
+     "pkg": "brave-core",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#build_chromium_release",
+     "pkg": "brave-core",
+     "name": "build_chromium_release",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#build_fuzzer",
+     "pkg": "brave-core",
+     "name": "build_fuzzer",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#build-storybook",
+     "pkg": "brave-core",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#chromium_rebase_l10n",
+     "pkg": "brave-core",
+     "name": "chromium_rebase_l10n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#coverage_report",
+     "pkg": "brave-core",
+     "name": "coverage_report",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#create_dist",
+     "pkg": "brave-core",
+     "name": "create_dist",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#delete_string_translations",
+     "pkg": "brave-core",
+     "name": "delete_string_translations",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#docs",
+     "pkg": "brave-core",
+     "name": "docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#eslint",
+     "pkg": "brave-core",
+     "name": "eslint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#format",
+     "pkg": "brave-core",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#fuzzer",
+     "pkg": "brave-core",
+     "name": "fuzzer",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#gclient",
+     "pkg": "brave-core",
+     "name": "gclient",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#gen_gradle",
+     "pkg": "brave-core",
+     "name": "gen_gradle",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#generate_about_credits",
+     "pkg": "brave-core",
+     "name": "generate_about_credits",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#get_build_var",
+     "pkg": "brave-core",
+     "name": "get_build_var",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#gn",
+     "pkg": "brave-core",
+     "name": "gn",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#gn_check",
+     "pkg": "brave-core",
+     "name": "gn_check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#help",
+     "pkg": "brave-core",
+     "name": "help",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#init",
+     "pkg": "brave-core",
+     "name": "init",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#ios_bootstrap",
+     "pkg": "brave-core",
+     "name": "ios_bootstrap",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#list_affected_tests",
+     "pkg": "brave-core",
+     "name": "list_affected_tests",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#mass_rename",
+     "pkg": "brave-core",
+     "name": "mass_rename",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#network-audit",
+     "pkg": "brave-core",
+     "name": "network-audit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#perf_tests",
+     "pkg": "brave-core",
+     "name": "perf_tests",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#pnpm:devPreinstall",
+     "pkg": "brave-core",
+     "name": "pnpm:devPreinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#presubmit",
+     "pkg": "brave-core",
+     "name": "presubmit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#pull_l10n",
+     "pkg": "brave-core",
+     "name": "pull_l10n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#push_l10n",
+     "pkg": "brave-core",
+     "name": "push_l10n",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#start",
+     "pkg": "brave-core",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#storybook",
+     "pkg": "brave-core",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#sync",
+     "pkg": "brave-core",
+     "name": "sync",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#test",
+     "pkg": "brave-core",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#test-unit",
+     "pkg": "brave-core",
+     "name": "test-unit",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#test-unit:wallet",
+     "pkg": "brave-core",
+     "name": "test-unit:wallet",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#test:scripts",
+     "pkg": "brave-core",
+     "name": "test:scripts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#update_brave_tools_crates",
+     "pkg": "brave-core",
+     "name": "update_brave_tools_crates",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#update_patches",
+     "pkg": "brave-core",
+     "name": "update_patches",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#update_symlink",
+     "pkg": "brave-core",
+     "name": "update_symlink",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#update_wasm_resources",
+     "pkg": "brave-core",
+     "name": "update_wasm_resources",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#upload",
+     "pkg": "brave-core",
+     "name": "upload",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "brave-core#versions",
+     "pkg": "brave-core",
+     "name": "versions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "brave-core#pnpm:devPreinstall"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "security",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "security"
+   ],
+   "pathMinP50": 5.6,
+   "unknown": [
+    ".github/workflows/security-action.yml couldn't be found, so its jobs are taken as waiting on nothing"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Each job spends 3.1 minutes on setup: cache dependencies and build once",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/06-reuse-work-by-its-real-inputs.md"
+  },
+  {
+   "text": "Jest: consider Vitest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C++ it applies the principles, without a C++-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 66,
+ "read": {
+  "calls": 66,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

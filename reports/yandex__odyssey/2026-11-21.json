@@ -1,0 +1,2141 @@
+{
+ "repo": "yandex/odyssey",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 8.5,
+  "stars": 3641,
+  "forks": 224,
+  "languages": [
+   [
+    "C",
+    73
+   ],
+   [
+    "Yacc",
+    14
+   ],
+   [
+    "Shell",
+    4
+   ],
+   [
+    "Go",
+    3
+   ]
+  ],
+  "linesOfCode": 110414,
+  "files": 1256,
+  "sourceFiles": 588,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 90043,
+   "tests": 20371,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.1845004235566319,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 1,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 25,
+  "commitsPerWeekYear": 13.9,
+  "pace": 1.8,
+  "activeAuthors28d": 6,
+  "prsOpenedPerWeek": 22,
+  "prsMergedPerWeek": 21,
+  "botShareOfMergedPrs": 4.8,
+  "openToMergeHours": {
+   "p50": 3.2,
+   "p90": 72.8,
+   "n": 20
+  },
+  "prRunsPerDay": 140.5,
+  "runsPerMergedPr": 46.8
+ },
+ "window": {
+  "days": 6.7,
+  "runs": 948,
+  "runsInPeriod": 948,
+  "truncated": false,
+  "mainDays": 6.9
+ },
+ "size": "medium",
+ "headsPerWeek": 66,
+ "score": 11,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 7,
+  "reliability": 9,
+  "efficiency": 26
+ },
+ "detail": {
+  "speed": {
+   "wait": 13,
+   "forSize": 0,
+   "tail": 3
+  },
+  "reliability": {
+   "flakes": 10,
+   "mainRed": 9
+  },
+  "efficiency": {
+   "minutesPerPr": 0,
+   "runsPerPr": 10,
+   "setup": 100,
+   "queue": 0,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2070.5,
+  "prBilledMinutesPerDay": 2287,
+  "jobMinutesPerMergedPr": 690.2,
+  "expectedMinutesPerMergedPr": 160.2,
+  "expectedWait": 11.2,
+  "workflowsOnPrs": 16
+ },
+ "wait": {
+  "heads": 64,
+  "timed": 37,
+  "p50": 52.63333333333333,
+  "p75": 108.78333333333333,
+  "p90": 146.41666666666666,
+  "redRate": 0.5,
+  "rerunRate": 0.15625,
+  "passedOnRerunRate": 0.109375,
+  "cancelledRate": 0.234375,
+  "botHeads": 0,
+  "lightHeads": 1,
+  "neverRan": 0,
+  "botPushes": 1,
+  "bots": [
+   [
+    "dependabot[bot]",
+    1
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Protocol tests",
+    18
+   ],
+   [
+    "Functional tests",
+    13
+   ],
+   [
+    "Stress tests",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Functional tests",
+    21
+   ],
+   [
+    "Drivers tests",
+    5
+   ],
+   [
+    "Format",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Functional tests",
+   "Protocol tests",
+   "Unit tests",
+   "SCRAM-passthrough tests"
+  ],
+  "allPushesP50": 52.63333333333333
+ },
+ "main": {
+  "heads": 19,
+  "p50": 67.1,
+  "p90": 247.53333333333333,
+  "redRate": 0.3684210526315789,
+  "redBy": [
+   [
+    "Functional tests",
+    7
+   ]
+  ]
+ },
+ "botRunShare": 0.002403846153846154,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 18,
+  "spanMin": 15.95,
+  "jobMinutes": 43.11666666666666,
+  "billedMinutes": 53,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 742,
+  "queueP90Sec": 3201,
+  "setupShare": 0.02299794661190965,
+  "critical": {
+   "name": "protocol (build_dbg, gcc, xproto)",
+   "minutes": 1.9666666666666666,
+   "shareOfSpan": 0.04763340367802231
+  },
+  "longest": {
+   "name": "protocol (build_asan, clang, copy)",
+   "minutes": 2.6166666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/proto-tests.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "protocol (build_dbg, gcc, xproto)",
+    "runs": 2
+   },
+   {
+    "name": "protocol (build_dbg, clang, copy)",
+    "runs": 1
+   },
+   {
+    "name": "protocol (build_dbg, clang, xproto)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "protocol (build_dbg, clang, copy)",
+    "minutes": 16,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 13.6,
+    "workMin": 2.4,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 16,
+  "blockedMinP50": 0,
+  "queueMinP50": 13.6,
+  "hiddenMinP50": 0,
+  "workMinP50": 2.4,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44801743953,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16,
+    "path": [
+     "protocol (build_dbg, clang, copy)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.2,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.2,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.8,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.8,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.6,
+      "endMin": 16,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.6,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.5,
+      "endMin": 11.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.5,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.8,
+      "endMin": 14.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.8,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.2,
+      "endMin": 12.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.2,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.4,
+      "endMin": 14.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.4,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.7,
+      "endMin": 14.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.7,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.6,
+      "endMin": 14.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.6,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.9,
+      "endMin": 14.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.9,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44791905121,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 15.7,
+    "path": [
+     "protocol (build_dbg, clang, xproto)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.8,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.2,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.2,
+      "workMin": 2.8,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.8,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.1,
+      "endMin": 13.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.1,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.9,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.5,
+      "endMin": 14.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.5,
+      "workMin": 2.5,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.1,
+      "endMin": 15.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.1,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.2,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.2,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11,
+      "endMin": 13.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.8,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.8,
+      "workMin": 2.2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.6,
+      "endMin": 14,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.6,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 11.8,
+      "endMin": 13.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 11.8,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13,
+      "endMin": 15.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.5,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.2,
+      "endMin": 15.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.2,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.3,
+      "endMin": 15.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.3,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.2,
+      "endMin": 15.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.2,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44299044582,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 102.7,
+    "path": [
+     "protocol (build_release, clang, xproto)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 31.5,
+      "endMin": 34,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 31.5,
+      "workMin": 2.5,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 68.9,
+      "endMin": 71.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 68.9,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 53.4,
+      "endMin": 55.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 53.4,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 32.6,
+      "endMin": 34.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 32.6,
+      "workMin": 2.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 47.4,
+      "endMin": 49.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 47.4,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 42.6,
+      "endMin": 45.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 42.6,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 34,
+      "endMin": 36.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 34,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 54.8,
+      "endMin": 57.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 54.8,
+      "workMin": 2.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 62.4,
+      "endMin": 64.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 62.4,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 73.9,
+      "endMin": 76.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 73.9,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36,
+      "endMin": 38.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 51.6,
+      "endMin": 54.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 51.6,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 74,
+      "endMin": 76.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 74,
+      "workMin": 2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 81.5,
+      "endMin": 83.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 81.5,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 100,
+      "endMin": 102.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 100,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 77.9,
+      "endMin": 80.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 77.9,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 80.5,
+      "endMin": 82.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 80.5,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 94,
+      "endMin": 96.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 94,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44291833647,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 44.3,
+    "path": [
+     "protocol (build_dbg, gcc, simple)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 15.6,
+      "endMin": 18.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 15.6,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29,
+      "endMin": 31.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.2,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.2,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 38,
+      "endMin": 40.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 38,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 28.2,
+      "endMin": 30.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 28.2,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 14.4,
+      "endMin": 16.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 14.4,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 34.1,
+      "endMin": 36.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 34.1,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29.1,
+      "endMin": 31.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29.1,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 36.6,
+      "endMin": 39,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 36.6,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 26.2,
+      "endMin": 28.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 26.2,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.5,
+      "endMin": 38,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.5,
+      "workMin": 2.5,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 40.1,
+      "endMin": 42.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 40.1,
+      "workMin": 2,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 41.9,
+      "endMin": 44.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 41.9,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44272934573,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 55.3,
+    "path": [
+     "protocol (build_dbg, gcc, xproto)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9.7,
+      "endMin": 12.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9.7,
+      "workMin": 2.8,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 46.7,
+      "endMin": 48.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 46.7,
+      "workMin": 1.9,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.5,
+      "endMin": 12.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 30.4,
+      "endMin": 33.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 30.4,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 48.4,
+      "endMin": 51,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 48.4,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 38.5,
+      "endMin": 40.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 38.5,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 24.7,
+      "endMin": 27.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 24.7,
+      "workMin": 2.7,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 22.6,
+      "endMin": 25.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 22.6,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 52.7,
+      "endMin": 55.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 52.7,
+      "workMin": 2.6,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 29.8,
+      "endMin": 32.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 29.8,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 33.1,
+      "endMin": 35.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 33.1,
+      "workMin": 2.7,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.9,
+      "endMin": 38.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.9,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 44.8,
+      "endMin": 47.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 44.8,
+      "workMin": 2.4,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 44.1,
+      "endMin": 46.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 44.1,
+      "workMin": 2.5,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 37.3,
+      "endMin": 39.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 37.3,
+      "workMin": 2.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 35.3,
+      "endMin": 37.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 35.3,
+      "workMin": 2.5,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 38.1,
+      "endMin": 40.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 38.1,
+      "workMin": 2.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 46.3,
+      "endMin": 49.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 46.3,
+      "workMin": 2.9,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44241714922,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.4,
+    "path": [
+     "protocol (build_dbg, gcc, xproto)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "protocol (build_release, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.8,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 3.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.2,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 2.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_release, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.7,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.7,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.3,
+      "endMin": 8.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.3,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_asan, clang, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.2,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 2.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "protocol (build_asan, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.2,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 2.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_dbg, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.5,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.5,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_release, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.4,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.4,
+      "workMin": 2.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, gcc, simple)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 2.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "protocol (build_asan, clang, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.6,
+      "endMin": 10.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.6,
+      "workMin": 2.9,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, copy)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.7,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.7,
+      "workMin": 2.3,
+      "setupMin": 0
+     },
+     {
+      "name": "protocol (build_dbg, gcc, xproto)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.5,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.5,
+      "workMin": 2,
+      "setupMin": 0
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 19,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    73
+   ],
+   [
+    "Yacc",
+    14
+   ],
+   [
+    "Shell",
+    4
+   ],
+   [
+    "Go",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip",
+    "Go modules"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 1,
+   "python": 0
+  },
+  "testRunners": [
+   "pytest"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "github.com/alecthomas/kingpin/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/DATA-DOG/go-sqlmock",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/lib/pq",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/prometheus/client_golang",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/prometheus/client_model",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/prometheus/common",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/prometheus/exporter-toolkit",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/odyssey/prometheus/odyssey_exporter",
+     "path": "prometheus/exporter/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "github.com/odyssey/prometheus/odyssey_exporter",
+     "dir": "prometheus/exporter",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "github.com/odyssey/prometheus/odyssey_exporter"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1256
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "protocol (build_release, gcc, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.2,
+     "workMin": 2.1
+    },
+    {
+     "id": "protocol (build_asan, gcc, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.2,
+     "workMin": 2.6
+    },
+    {
+     "id": "protocol (build_release, clang, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2
+    },
+    {
+     "id": "protocol (build_asan, gcc, copy)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.4
+    },
+    {
+     "id": "protocol (build_dbg, clang, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 7,
+     "workMin": 2.4
+    },
+    {
+     "id": "protocol (build_asan, clang, copy)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.6
+    },
+    {
+     "id": "protocol (build_release, clang, copy)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 9.8,
+     "workMin": 2
+    },
+    {
+     "id": "protocol (build_dbg, clang, copy)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 13.6,
+     "workMin": 2.4
+    },
+    {
+     "id": "protocol (build_release, clang, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 9.5,
+     "workMin": 2.3
+    },
+    {
+     "id": "protocol (build_asan, gcc, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 11.8,
+     "workMin": 2.6
+    },
+    {
+     "id": "protocol (build_dbg, clang, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5,
+     "workMin": 2.4
+    },
+    {
+     "id": "protocol (build_asan, clang, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4.1,
+     "workMin": 2
+    },
+    {
+     "id": "protocol (build_release, gcc, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 10.2,
+     "workMin": 2.4
+    },
+    {
+     "id": "protocol (build_asan, clang, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 12.4,
+     "workMin": 2.3
+    },
+    {
+     "id": "protocol (build_dbg, gcc, copy)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 12.7,
+     "workMin": 2.2
+    },
+    {
+     "id": "protocol (build_dbg, gcc, xproto)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4.1,
+     "workMin": 1.9
+    },
+    {
+     "id": "protocol (build_dbg, gcc, simple)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 12.6,
+     "workMin": 2.2
+    },
+    {
+     "id": "protocol (build_release, gcc, copy)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 11.9,
+     "workMin": 2.5
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "protocol (build_dbg, clang, copy)"
+   ],
+   "pathMinP50": 16,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "11% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "p90 is 2.8× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 3201 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 117,
+ "read": {
+  "calls": 117,
+  "fromCache": 0
+ }
+}

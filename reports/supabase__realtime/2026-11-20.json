@@ -1,0 +1,2981 @@
+{
+ "repo": "supabase/realtime",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 7.2,
+  "stars": 7687,
+  "forks": 488,
+  "languages": [
+   [
+    "Elixir",
+    90
+   ],
+   [
+    "PLpgSQL",
+    3
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "TLA",
+    2
+   ]
+  ],
+  "linesOfCode": 186678,
+  "files": 1003,
+  "sourceFiles": 713,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 69140,
+   "tests": 98733,
+   "integration": 17776,
+   "support": 1029
+  },
+  "testShare": 0.6296312498984439,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 58,
+  "commitsPerWeekYear": 21.9,
+  "pace": 2.6,
+  "activeAuthors28d": 16,
+  "prsOpenedPerWeek": 47,
+  "prsMergedPerWeek": 42,
+  "botShareOfMergedPrs": 9.5,
+  "openToMergeHours": {
+   "p50": 10.2,
+   "p90": 67.7,
+   "n": 38
+  },
+  "prRunsPerDay": 74.1,
+  "runsPerMergedPr": 12.4
+ },
+ "window": {
+  "days": 7.2,
+  "runs": 435,
+  "runsInPeriod": 435,
+  "truncated": false,
+  "mainDays": 4.5
+ },
+ "size": "medium",
+ "headsPerWeek": 83,
+ "score": 80,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 84,
+  "reliability": 67,
+  "efficiency": 80
+ },
+ "detail": {
+  "speed": {
+   "wait": 82,
+   "forSize": 90,
+   "tail": 76
+  },
+  "reliability": {
+   "flakes": 46,
+   "mainRed": 96
+  },
+  "efficiency": {
+   "minutesPerPr": 69,
+   "runsPerPr": 63,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 1086.5,
+  "prBilledMinutesPerDay": 1326.8,
+  "jobMinutesPerMergedPr": 181.1,
+  "expectedMinutesPerMergedPr": 190.5,
+  "expectedWait": 12.6,
+  "workflowsOnPrs": 11
+ },
+ "wait": {
+  "heads": 86,
+  "timed": 46,
+  "p50": 7.35,
+  "p75": 10.05,
+  "p90": 14.15,
+  "redRate": 0.18604651162790697,
+  "rerunRate": 0.12790697674418605,
+  "passedOnRerunRate": 0.06976744186046512,
+  "cancelledRate": 0.1744186046511628,
+  "botHeads": 4,
+  "lightHeads": 10,
+  "lastToFinish": [
+   [
+    "Tests",
+    43
+   ],
+   [
+    "Packaging",
+    2
+   ],
+   [
+    "E2E Tests",
+    1
+   ]
+  ],
+  "redBy": [
+   [
+    "Tests",
+    9
+   ],
+   [
+    "E2E Tests",
+    6
+   ],
+   [
+    "Lint",
+    4
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Tests"
+  ],
+  "allPushesP50": 7
+ },
+ "main": {
+  "heads": 31,
+  "p50": 9.1,
+  "p90": 12.116666666666667,
+  "redRate": 0.06451612903225806,
+  "redBy": [
+   [
+    "Tests",
+    2
+   ]
+  ]
+ },
+ "botRunShare": 0.06212664277180406,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 27,
+  "spanMin": 7.233333333333333,
+  "jobMinutes": 89.76666666666665,
+  "billedMinutes": 103,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 7,
+  "queueP90Sec": 8,
+  "setupShare": 0.16266924564796906,
+  "critical": {
+   "name": "CRAP Report",
+   "minutes": 0.36666666666666664,
+   "shareOfSpan": 0.052219321148825056
+  },
+  "longest": {
+   "name": "Tests (multigres - Partition 3)",
+   "minutes": 6.166666666666667
+  },
+  "providers": [
+   [
+    "Blacksmith",
+    162
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/tests.yml"
+  ],
+  "jobs": 4,
+  "edges": 2,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "CRAP Report",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Tests (multigres - Partition 3)",
+    "minutes": 6.8,
+    "share": 0.93,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 6.6,
+    "setupMin": 1.1
+   },
+   {
+    "name": "CRAP Report",
+    "minutes": 0.5,
+    "share": 0.07,
+    "blockedMin": 6.8,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.4,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 7.2,
+  "blockedMinP50": 6.8,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 7,
+  "setupInPathMinP50": 0.2,
+  "topBlockers": [
+   {
+    "name": "Tests (… - Partition …)",
+    "runs": 6,
+    "heldJobs": 2,
+    "jobs": 27,
+    "tookMin": 6.8,
+    "heldJobMin": 13.5
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44696560159,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.4,
+    "path": [
+     "Tests (multigres - Partition 3)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.9,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 1
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6,
+      "createdMin": 6,
+      "startMin": 6.1,
+      "endMin": 6.2,
+      "blockedMin": 6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6,
+      "createdMin": 6,
+      "startMin": 6.1,
+      "endMin": 6.4,
+      "blockedMin": 6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44668649950,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.2,
+    "path": [
+     "Tests (multigres - Partition 2)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 1
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.2,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.9,
+      "endMin": 7.2,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.9,
+      "endMin": 7.1,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44660228861,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 7.3,
+    "path": [
+     "Tests (multigres - Partition 2)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.5,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.1,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.9,
+      "endMin": 7.3,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.9,
+      "endMin": 7.1,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44653854026,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.8,
+    "path": [
+     "Tests (multigres - Partition 3)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 1
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1.1
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.4,
+      "endMin": 6.6,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 6.3,
+      "createdMin": 6.3,
+      "startMin": 6.4,
+      "endMin": 6.8,
+      "blockedMin": 6.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44651710813,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 8.1,
+    "path": [
+     "Tests (multigres - Partition 1)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 1
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 1.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 7.5,
+      "createdMin": 7.5,
+      "startMin": 7.6,
+      "endMin": 7.8,
+      "blockedMin": 7.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 7.5,
+      "createdMin": 7.5,
+      "startMin": 7.6,
+      "endMin": 8.1,
+      "blockedMin": 7.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44631421489,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.1,
+    "path": [
+     "Tests (multigres - Partition 3)",
+     "CRAP Report"
+    ],
+    "topBlocker": "Tests (… - Partition …)",
+    "jobs": [
+     {
+      "name": "Asset Tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.7
+     },
+     {
+      "name": "Tests (multigres - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg17 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.4,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Tests (pg17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg14 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (multigres - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 1.3
+     },
+     {
+      "name": "Tests (pg14 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Tests (pg15 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 1
+     },
+     {
+      "name": "Tests (multigres - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Tests (pg15 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.9
+     },
+     {
+      "name": "Tests (pg14 - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.6
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg14 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (orioledb17 - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Tests (pg15_latest - Partition 3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "Tests (pg15 - Partition 1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.3,
+      "setupMin": 0.8
+     },
+     {
+      "name": "Tests (multigres - Partition 2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "Merge Coverage",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.3,
+      "endMin": 9.6,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1
+     },
+     {
+      "name": "CRAP Report",
+      "needs": [
+       "tests"
+      ],
+      "readyMin": 9.2,
+      "createdMin": 9.2,
+      "startMin": 9.4,
+      "endMin": 10.1,
+      "blockedMin": 9.2,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 0.7,
+      "setupMin": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 22,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Elixir",
+    90
+   ],
+   [
+    "PLpgSQL",
+    3
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "TLA",
+    2
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test"
+  ],
+  "lintFormat": [
+   "Oxlint",
+   "Oxfmt"
+  ],
+  "libraries": [
+   {
+    "name": "@supabase/realtime-js",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "Blacksmith",
+    162
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "assets/package.json",
+     "path": "assets/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "assets/package.json",
+     "dir": "assets",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "assets/package.json"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 4,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1003
+   },
+   "nodes": [
+    {
+     "id": "assets#format",
+     "pkg": "assets",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "assets#format:check",
+     "pkg": "assets",
+     "name": "format:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "assets#lint",
+     "pkg": "assets",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "assets#test",
+     "pkg": "assets",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "assets#test"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 2,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Asset Tests",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "Tests (multigres - Partition 3)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.9
+    },
+    {
+     "id": "Tests (pg14 - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.5
+    },
+    {
+     "id": "Tests (pg15 - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.5
+    },
+    {
+     "id": "Tests (pg15_latest - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.5
+    },
+    {
+     "id": "Tests (multigres - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.7
+    },
+    {
+     "id": "Tests (pg17 - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.3
+    },
+    {
+     "id": "Tests (pg15_latest - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.2
+    },
+    {
+     "id": "Tests (multigres - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.1
+    },
+    {
+     "id": "Tests (orioledb17 - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.2
+    },
+    {
+     "id": "Tests (pg15 - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.7
+    },
+    {
+     "id": "Tests (pg15_latest - Partition 3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.7
+    },
+    {
+     "id": "Tests (pg15 - Partition 3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.9
+    },
+    {
+     "id": "Tests (pg14 - Partition 3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.7
+    },
+    {
+     "id": "Tests (pg17 - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.4
+    },
+    {
+     "id": "Tests (pg14 - Partition 2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.3
+    },
+    {
+     "id": "Tests (orioledb17 - Partition 1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.5
+    },
+    {
+     "id": "Tests (pg17 - Partition 3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.6
+    },
+    {
+     "id": "Tests (pg17 - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.7
+    },
+    {
+     "id": "Tests (multigres - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.1
+    },
+    {
+     "id": "Tests (pg15 - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.1
+    },
+    {
+     "id": "Tests (orioledb17 - Partition 3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 3.8
+    },
+    {
+     "id": "Tests (pg15_latest - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.7
+    },
+    {
+     "id": "Tests (pg14 - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.8
+    },
+    {
+     "id": "Tests (orioledb17 - Partition 4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.8
+    },
+    {
+     "id": "Merge Coverage",
+     "needs": [
+      "tests"
+     ],
+     "onPath": false,
+     "blockedMin": 6,
+     "queueMin": 0.1,
+     "workMin": 0.2
+    },
+    {
+     "id": "CRAP Report",
+     "needs": [
+      "tests"
+     ],
+     "onPath": true,
+     "blockedMin": 6,
+     "queueMin": 0.1,
+     "workMin": 0.3
+    }
+   ],
+   "edges": [
+    {
+     "from": "Merge Coverage",
+     "to": "tests"
+    },
+    {
+     "from": "CRAP Report",
+     "to": "tests"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Tests (multigres - Partition 3)",
+    "CRAP Report"
+   ],
+   "pathMinP50": 7.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "7% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Elixir it applies the principles, without a Elixir-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 107,
+ "read": {
+  "calls": 107,
+  "fromCache": 0
+ }
+}

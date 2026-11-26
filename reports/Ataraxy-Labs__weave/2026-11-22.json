@@ -1,0 +1,941 @@
+{
+ "repo": "Ataraxy-Labs/weave",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Only 4 PR pushes in the window ran the main workflows; 5 are needed.",
+ "profile": {
+  "ageYears": 0.8,
+  "stars": 1364,
+  "forks": 50,
+  "languages": [
+   [
+    "Rust",
+    99
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "Nix",
+    0
+   ]
+  ],
+  "linesOfCode": 96930,
+  "files": 206,
+  "sourceFiles": 141,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 78062,
+   "tests": 14502,
+   "integration": 3463,
+   "support": 904
+  },
+  "testShare": 0.19466144870619914,
+  "packages": {
+   "npm": 1,
+   "cargo": 8,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 5.5,
+  "commitsPerWeekYear": 7.3,
+  "pace": 0.8,
+  "activeAuthors28d": 2,
+  "prsOpenedPerWeek": 4,
+  "prsMergedPerWeek": 3,
+  "botShareOfMergedPrs": 66.7,
+  "openToMergeHours": {
+   "p50": 0,
+   "p90": 0,
+   "n": 1
+  },
+  "prRunsPerDay": 19.8,
+  "runsPerMergedPr": 46.3
+ },
+ "window": {
+  "days": 0.9,
+  "runs": 18,
+  "runsInPeriod": 18,
+  "truncated": false,
+  "mainDays": 0
+ },
+ "size": "small",
+ "headsPerWeek": 46,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 69,
+   "forSize": 57,
+   "tail": 53
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 24,
+   "runsPerPr": 10,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 159.1,
+  "prBilledMinutesPerDay": 165.4,
+  "jobMinutesPerMergedPr": 371.2,
+  "expectedMinutesPerMergedPr": 153.4,
+  "expectedWait": 10.8,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 6,
+  "timed": 4,
+  "p50": 10.75,
+  "p75": 18.366666666666667,
+  "p90": 27.1,
+  "redRate": 0.16666666666666666,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 2,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 2,
+  "bots": [
+   [
+    "dependabot[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "Windows",
+    2
+   ],
+   [
+    "CI",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Dependabot auto-merge",
+   "Release publisher tests"
+  ],
+  "heavyWorkflows": [
+   "Windows",
+   "CI"
+  ],
+  "allPushesP50": 10.75
+ },
+ "main": {
+  "heads": 1,
+  "p50": 17.766666666666666,
+  "p90": 17.766666666666666,
+  "redRate": 1,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.3,
+ "jobs": {
+  "runsSampled": 4,
+  "jobs": 1,
+  "spanMin": 20.95,
+  "jobMinutes": 20.916666666666668,
+  "billedMinutes": 21,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.009572431397574984,
+  "critical": {
+   "name": "build-windows",
+   "minutes": 20.916666666666668,
+   "shareOfSpan": 0.9981834695731152
+  },
+  "longest": {
+   "name": "build-windows",
+   "minutes": 20.916666666666668
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    4
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 4,
+  "runsUsed": 4,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test-windows.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "build-windows",
+    "runs": 4
+   }
+  ],
+  "chain": [
+   {
+    "name": "build-windows",
+    "minutes": 21,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 20.9,
+    "setupMin": 0.3
+   }
+  ],
+  "chainRuns": 4,
+  "pathJobsP50": 1,
+  "pathMinP50": 21,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 20.9,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44909566375,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 18.4,
+    "path": [
+     "build-windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 18.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 18.3,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44902454274,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 27.1,
+    "path": [
+     "build-windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 27.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 27,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44882260124,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26.2,
+    "path": [
+     "build-windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 26.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 26.2,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44882241240,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 21,
+    "path": [
+     "build-windows"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "build-windows",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.9,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 5,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    99
+   ],
+   [
+    "JavaScript",
+    0
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "Nix",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 8,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "sem-core",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "thiserror",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tree-sitter",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "diffy",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "openssl",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "sha2",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "tracing-subscriber",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "automerge",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "axum",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "base64",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "clap",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "colored",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "criterion",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "env_logger",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "harness",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "hex",
+    "ecosystem": "cargo",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    4
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "weave-certify",
+     "path": "crates/weave-certify/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "weave-cli",
+     "path": "crates/weave-cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "weave-certify",
+      "weave-core",
+      "weave-crdt"
+     ]
+    },
+    {
+     "name": "weave-core",
+     "path": "crates/weave-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "weave-crdt",
+     "path": "crates/weave-crdt/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "weave-core"
+     ]
+    },
+    {
+     "name": "weave-driver",
+     "path": "crates/weave-driver/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "weave-core",
+      "weave-crdt"
+     ]
+    },
+    {
+     "name": "weave-github",
+     "path": "crates/weave-github/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "weave-core"
+     ]
+    },
+    {
+     "name": "weave-mcp",
+     "path": "crates/weave-mcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "weave-cli",
+      "weave-core",
+      "weave-crdt"
+     ]
+    },
+    {
+     "name": "@ataraxy-labs/weave",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 9,
+   "edges": 10,
+   "cycles": [],
+   "maxDepth": 3,
+   "topFanIn": [
+    {
+     "name": "weave-core",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "weave-crdt",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "weave-certify",
+     "ecosystem": "cargo",
+     "dependents": 1
+    },
+    {
+     "name": "weave-cli",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 9,
+    "edges": 10
+   },
+   "nodes": [
+    {
+     "id": "weave-core",
+     "dir": "crates/weave-core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 5,
+     "depth": 0
+    },
+    {
+     "id": "weave-crdt",
+     "dir": "crates/weave-crdt",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 3,
+     "depth": 1
+    },
+    {
+     "id": "weave-certify",
+     "dir": "crates/weave-certify",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "weave-cli",
+     "dir": "crates/weave-cli",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 1,
+     "depth": 2
+    },
+    {
+     "id": "@ataraxy-labs/weave",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "weave-driver",
+     "dir": "crates/weave-driver",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "weave-github",
+     "dir": "crates/weave-github",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "weave-mcp",
+     "dir": "crates/weave-mcp",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 3
+    }
+   ],
+   "edges": [
+    {
+     "from": "weave-cli",
+     "to": "weave-certify",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-cli",
+     "to": "weave-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-cli",
+     "to": "weave-crdt",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-crdt",
+     "to": "weave-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-driver",
+     "to": "weave-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-driver",
+     "to": "weave-crdt",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-github",
+     "to": "weave-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-mcp",
+     "to": "weave-cli",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-mcp",
+     "to": "weave-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "weave-mcp",
+     "to": "weave-crdt",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "weave-mcp",
+    "weave-cli",
+    "weave-crdt",
+    "weave-core"
+   ],
+   "topFanIn": [
+    {
+     "name": "weave-core",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "weave-crdt",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "weave-certify",
+     "ecosystem": "cargo",
+     "dependents": 1
+    },
+    {
+     "name": "weave-cli",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 2,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 206
+   },
+   "nodes": [
+    {
+     "id": "@ataraxy-labs/weave#postinstall",
+     "pkg": "@ataraxy-labs/weave",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ataraxy-labs/weave#prepack",
+     "pkg": "@ataraxy-labs/weave",
+     "name": "prepack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "@ataraxy-labs/weave#postinstall"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 4,
+    "runsOf": 4
+   },
+   "nodes": [
+    {
+     "id": "build-windows",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 18.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "build-windows"
+   ],
+   "pathMinP50": 21,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"build-windows\" runs 21 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 26,
+ "read": {
+  "calls": 26,
+  "fromCache": 0
+ }
+}

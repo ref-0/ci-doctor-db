@@ -1,0 +1,4285 @@
+{
+ "repo": "nextest-rs/nextest",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4.8,
+  "stars": 3409,
+  "forks": 184,
+  "languages": [
+   [
+    "Rust",
+    99
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "linesOfCode": 151000,
+  "files": 815,
+  "sourceFiles": 260,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 131336,
+   "tests": 1189,
+   "integration": 17281,
+   "support": 1194
+  },
+  "testShare": 0.13022601058849995,
+  "packages": {
+   "npm": 0,
+   "cargo": 11,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 17,
+  "commitsPerWeekYear": 21.8,
+  "pace": 0.8,
+  "activeAuthors28d": 4,
+  "prsOpenedPerWeek": 10,
+  "prsMergedPerWeek": 9,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 3.2,
+   "p90": 348.1,
+   "n": 9
+  },
+  "prRunsPerDay": 21.5,
+  "runsPerMergedPr": 16.7
+ },
+ "window": {
+  "days": 6.3,
+  "runs": 135,
+  "runsInPeriod": 135,
+  "truncated": false,
+  "mainDays": 6.2
+ },
+ "size": "small",
+ "headsPerWeek": 30,
+ "score": 45,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 28,
+  "reliability": 100,
+  "efficiency": 43
+ },
+ "detail": {
+  "speed": {
+   "wait": 36,
+   "forSize": 11,
+   "tail": 46
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 17,
+   "runsPerPr": 51,
+   "setup": 100,
+   "queue": 10,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 642.4,
+  "prBilledMinutesPerDay": 722.6,
+  "jobMinutesPerMergedPr": 499.6,
+  "expectedMinutesPerMergedPr": 177.6,
+  "expectedWait": 12,
+  "workflowsOnPrs": 5
+ },
+ "wait": {
+  "heads": 27,
+  "timed": 27,
+  "p50": 25.216666666666665,
+  "p75": 31,
+  "p90": 33.06666666666667,
+  "redRate": 0.1111111111111111,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    25
+   ],
+   [
+    "Test coverage",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    3
+   ],
+   [
+    "Docs",
+    1
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 25.216666666666665
+ },
+ "main": {
+  "heads": 10,
+  "p50": 11.266666666666667,
+  "p90": 14.55,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 32,
+  "spanMin": 13.366666666666667,
+  "jobMinutes": 134.86666666666667,
+  "billedMinutes": 151,
+  "subMinuteJobs": 3,
+  "queueP50Sec": 3,
+  "queueP90Sec": 213,
+  "setupShare": 0.12842023748064016,
+  "critical": {
+   "name": "Test (macos-latest, 1.91, local)",
+   "minutes": 8.933333333333334,
+   "shareOfSpan": 0.5497026338147833
+  },
+  "longest": {
+   "name": "Build documentation (ubuntu-latest)",
+   "minutes": 10
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 8,
+  "edges": 2,
+  "matrixJobs": 6,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "Test (macos-latest, 1.91, local)",
+    "runs": 3
+   },
+   {
+    "name": "Test (macos-latest, stable, compat)",
+    "runs": 1
+   },
+   {
+    "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Test (macos-latest, 1.91, local)",
+    "minutes": 16.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 8.8,
+    "workMin": 8.4,
+    "setupMin": 0.8
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 1,
+  "pathMinP50": 13.4,
+  "blockedMinP50": 0,
+  "queueMinP50": 5,
+  "hiddenMinP50": 0,
+  "workMinP50": 8.4,
+  "setupInPathMinP50": 0,
+  "topBlockers": [
+   {
+    "name": "Build checks",
+    "runs": 6,
+    "heldJobs": 2,
+    "jobs": 32,
+    "tookMin": 9.6,
+    "heldJobMin": 13.7
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44882012962,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.8,
+    "path": [
+     "Test (macos-latest, 1.91, local)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.7,
+      "endMin": 16.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.7,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.3,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 5.7,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 15,
+      "endMin": 18.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 15,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.3,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 8.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.9,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.7,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 6.7,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.3,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.7,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 6.3,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 2.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 3.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 5.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 3.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.2,
+      "endMin": 20.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.2,
+      "workMin": 4,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 3.2,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 5.4,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 18.9,
+      "endMin": 23.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 18.9,
+      "workMin": 4.3,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.4,
+      "endMin": 23.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.4,
+      "workMin": 7.4,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.6,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.6,
+      "workMin": 4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 16.3,
+      "endMin": 20.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 16.3,
+      "workMin": 4.4,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 5.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.6,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.6,
+      "workMin": 6.7,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 5.2,
+      "setupMin": 1.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.7,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 3.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 23.2,
+      "createdMin": 23.2,
+      "startMin": 23.3,
+      "endMin": 23.6,
+      "blockedMin": 23.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 23.2,
+      "createdMin": 23.2,
+      "startMin": 23.3,
+      "endMin": 23.6,
+      "blockedMin": 23.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44882001302,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.6,
+    "path": [
+     "Test (macos-latest, 1.91, local)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 3.3,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.8,
+      "setupMin": 1.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.5,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 3.2,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.9,
+      "setupMin": 1.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.1,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 6,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.7,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.4,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.4,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.2,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 4.6,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 3.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.4,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 5.1,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.7,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 4.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.8,
+      "endMin": 8.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 6,
+      "setupMin": 0.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.3,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.3,
+      "workMin": 5.7,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.8,
+      "endMin": 19.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.8,
+      "workMin": 10.8,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10.8,
+      "endMin": 16.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10.8,
+      "workMin": 5.5,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.4,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.4,
+      "workMin": 2.5,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 9.6,
+      "createdMin": 9.6,
+      "startMin": 9.7,
+      "endMin": 10,
+      "blockedMin": 9.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 9.6,
+      "createdMin": 9.6,
+      "startMin": 9.7,
+      "endMin": 9.8,
+      "blockedMin": 9.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44881991331,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 16.6,
+    "path": [
+     "Test (macos-latest, stable, compat)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.8,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.8,
+      "workMin": 6.1,
+      "setupMin": 0.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.6,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.1,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.4,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.1,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9,
+      "endMin": 16.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9,
+      "workMin": 7.6,
+      "setupMin": 1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 9,
+      "endMin": 15.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 9,
+      "workMin": 6.2,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 10.9,
+      "createdMin": 10.9,
+      "startMin": 11,
+      "endMin": 11.3,
+      "blockedMin": 10.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 10.9,
+      "createdMin": 10.9,
+      "startMin": 11,
+      "endMin": 11.2,
+      "blockedMin": 10.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44875415055,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 11.5,
+    "path": [
+     "Test (macos-latest, 1.91, local)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.2,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 0.8,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.4,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.9,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 1.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.2,
+      "setupMin": 0.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 8.9,
+      "setupMin": 0.8,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 6,
+      "createdMin": 6,
+      "startMin": 6.1,
+      "endMin": 6.4,
+      "blockedMin": 6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 6,
+      "createdMin": 6,
+      "startMin": 6.1,
+      "endMin": 6.3,
+      "blockedMin": 6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44817880056,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 12.5,
+    "path": [
+     "Build checks (windows-latest, 1.91)",
+     "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 1.1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 0.4,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.1,
+      "setupMin": 0.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.7,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.1,
+      "setupMin": 0.7,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.9,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.9,
+      "workMin": 5.6,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.8,
+      "setupMin": 0.5,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 12.5,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 12.5,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44723338530,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.4,
+    "path": [
+     "Test (macos-latest, 1.91, compat)"
+    ],
+    "topBlocker": "Build checks",
+    "jobs": [
+     {
+      "name": "Lint (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test with Cargo build-dir",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a target runner",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint (windows-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 1,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build documentation (ubuntu-latest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (windows-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (ubuntu-24.04-arm, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Build checks (macos-latest, 1.91)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.6,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Build checks (macos-latest, stable)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.6,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 1.2,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 1.4,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.3,
+      "setupMin": 1.2,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10,
+      "setupMin": 1.3,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (macos-latest, 1.91, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5,
+      "endMin": 13.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 8.4,
+      "setupMin": 1.1,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (windows-latest, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.8,
+      "setupMin": 1.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (macos-latest, stable, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 6.4,
+      "setupMin": 0.9,
+      "runner": "macos-latest",
+      "vcpus": 3
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, 1.91, local)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test (ubuntu-24.04-arm, stable, compat)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.7,
+      "endMin": 7.1,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+      "needs": [
+       "test-archive-target-runner",
+       "build-checks"
+      ],
+      "readyMin": 6.7,
+      "createdMin": 6.7,
+      "startMin": 6.7,
+      "endMin": 7.1,
+      "blockedMin": 6.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 887,
+  "over10s": 0,
+  "top": [
+   {
+    "file": "nextest-runner reporter::displayer::status_level::tests::should_load_output_consistent_with_helpers",
+    "sec": 9.252,
+    "job": "Test (macos-latest, 1.91, local)"
+   },
+   {
+    "file": "nextest-runner test_command::imp::tests::concurrent_spawns_do_not_inherit_capture_pipes::combined_relative",
+    "sec": 7.861,
+    "job": "Test (macos-latest, 1.91, local)"
+   },
+   {
+    "file": "integration-tests::integration test_show_config_test_groups",
+    "sec": 6.318,
+    "job": "Test (windows-latest, stable, compat)"
+   },
+   {
+    "file": "nextest-runner test_command::imp::tests::concurrent_spawns_do_not_inherit_capture_pipes::split_relative",
+    "sec": 4.77,
+    "job": "Test (macos-latest, 1.91, local)"
+   },
+   {
+    "file": "integration-tests::integration test_target_dir",
+    "sec": 4.327,
+    "job": "Test (windows-latest, stable, compat)"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 9,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": false,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "nextest",
+  "testResults": true,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    99
+   ],
+   [
+    "CSS",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "uv",
+    "Cargo"
+   ],
+   "tools": [
+    "Cargo workspace",
+    "just"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 11,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "cargo nextest",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "camino",
+    "ecosystem": "cargo",
+    "packages": 7
+   },
+   {
+    "name": "clap",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "color-eyre",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "miette",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "proptest",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "target-spec",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "camino-tempfile",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "cfg-if",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "eazip",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "guppy",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "iddqd",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "insta",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "itertools",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "libc",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "pathdiff",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "quick-junit",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "regex",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "shell-words",
+    "ecosystem": "cargo",
+    "packages": 3
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    192
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".claude/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "cargo-nextest",
+     "path": "cargo-nextest/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-filtering",
+      "nextest-metadata",
+      "nextest-runner",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "fixture-data",
+     "path": "fixture-data/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-metadata",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "integration-tests",
+     "path": "integration-tests/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "cargo-nextest",
+      "fixture-data",
+      "nextest-metadata",
+      "nextest-runner",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "internal-test",
+     "path": "internal-test/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "zstd-dict",
+     "path": "internal-tools/zstd-dict/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-runner",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "nextest-filtering",
+     "path": "nextest-filtering/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-metadata",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "nextest-filtering-fuzz",
+     "path": "nextest-filtering/fuzz/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-filtering"
+     ]
+    },
+    {
+     "name": "nextest-metadata",
+     "path": "nextest-metadata/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "nextest-runner",
+     "path": "nextest-runner/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "fixture-data",
+      "nextest-filtering",
+      "nextest-metadata",
+      "nextest-workspace-hack"
+     ]
+    },
+    {
+     "name": "site",
+     "path": "site/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "nextest-workspace-hack",
+     "path": "workspace-hack/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    }
+   ],
+   "count": 12,
+   "edges": 21,
+   "cycles": [],
+   "maxDepth": 5,
+   "topFanIn": [
+    {
+     "name": "nextest-workspace-hack",
+     "ecosystem": "cargo",
+     "dependents": 7
+    },
+    {
+     "name": "nextest-metadata",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "nextest-filtering",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "nextest-runner",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "fixture-data",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 12,
+    "edges": 21
+   },
+   "nodes": [
+    {
+     "id": "nextest-workspace-hack",
+     "dir": "workspace-hack",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 7,
+     "depth": 0
+    },
+    {
+     "id": "nextest-metadata",
+     "dir": "nextest-metadata",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 5,
+     "depth": 1
+    },
+    {
+     "id": "nextest-filtering",
+     "dir": "nextest-filtering",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "nextest-runner",
+     "dir": "nextest-runner",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 3,
+     "depth": 3
+    },
+    {
+     "id": "fixture-data",
+     "dir": "fixture-data",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 2,
+     "depth": 2
+    },
+    {
+     "id": "cargo-nextest",
+     "dir": "cargo-nextest",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 1,
+     "depth": 4
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "integration-tests",
+     "dir": "integration-tests",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 5
+    },
+    {
+     "id": "internal-test",
+     "dir": "internal-test",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "nextest-filtering-fuzz",
+     "dir": "nextest-filtering/fuzz",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 3
+    },
+    {
+     "id": "site",
+     "dir": "site",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "zstd-dict",
+     "dir": "internal-tools/zstd-dict",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "cargo-nextest",
+     "to": "nextest-filtering",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-nextest",
+     "to": "nextest-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-nextest",
+     "to": "nextest-runner",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "cargo-nextest",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "fixture-data",
+     "to": "nextest-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "fixture-data",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "integration-tests",
+     "to": "cargo-nextest",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "integration-tests",
+     "to": "fixture-data",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "integration-tests",
+     "to": "nextest-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "integration-tests",
+     "to": "nextest-runner",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "integration-tests",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "zstd-dict",
+     "to": "nextest-runner",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "zstd-dict",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-filtering",
+     "to": "nextest-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-filtering",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-filtering-fuzz",
+     "to": "nextest-filtering",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-metadata",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-runner",
+     "to": "fixture-data",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-runner",
+     "to": "nextest-filtering",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-runner",
+     "to": "nextest-metadata",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "nextest-runner",
+     "to": "nextest-workspace-hack",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 5,
+   "chain": [
+    "integration-tests",
+    "cargo-nextest",
+    "nextest-runner",
+    "fixture-data",
+    "nextest-metadata",
+    "nextest-workspace-hack"
+   ],
+   "topFanIn": [
+    {
+     "name": "nextest-workspace-hack",
+     "ecosystem": "cargo",
+     "dependents": 7
+    },
+    {
+     "name": "nextest-metadata",
+     "ecosystem": "cargo",
+     "dependents": 5
+    },
+    {
+     "name": "nextest-filtering",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "nextest-runner",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "fixture-data",
+     "ecosystem": "cargo",
+     "dependents": 2
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 815
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 2,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Test archives with a target runner",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 2.8,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (macos-latest, stable, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 10.7,
+     "workMin": 5.4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Test (ubuntu-24.04-arm, 1.91, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.6,
+     "workMin": 4,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Lint (ubuntu-latest)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.8,
+     "workMin": 0.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (ubuntu-24.04-arm, stable, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 3.8,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (windows-latest, 1.91, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.3,
+     "workMin": 5.7,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (macos-latest, 1.91, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 15,
+     "workMin": 3.9,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Build documentation (ubuntu-latest)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.3,
+     "workMin": 8.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test with Cargo build-dir",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.9,
+     "workMin": 0.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (windows-latest, stable, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 6.7,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (ubuntu-24.04-arm, 1.91, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.3,
+     "workMin": 4,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Build nextest-metadata on MSRV (ubuntu-latest, 1.91)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (ubuntu-24.04-arm, 1.91)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 3.2,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (windows-latest, 1.91)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.8,
+     "workMin": 6.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (ubuntu-latest, 1.91)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3,
+     "workMin": 2.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (ubuntu-24.04-arm, stable)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.5,
+     "workMin": 3.5,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (ubuntu-latest, stable)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.4,
+     "workMin": 5.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (ubuntu-latest, 1.91, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.1,
+     "workMin": 3.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (macos-latest, stable)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 16.2,
+     "workMin": 4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Lint (windows-latest)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.5,
+     "workMin": 3.2,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (windows-latest, stable)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.4,
+     "workMin": 5.4,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Build checks (macos-latest, 1.91)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 18.9,
+     "workMin": 4.3,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Test (macos-latest, 1.91, local)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 16.4,
+     "workMin": 7.4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Test (ubuntu-latest, 1.91, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (ubuntu-latest, stable, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.6,
+     "workMin": 4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (macos-latest, stable, compat)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 16.3,
+     "workMin": 4.4,
+     "runner": "macos-latest",
+     "vcpus": 3
+    },
+    {
+     "id": "Test (ubuntu-latest, stable, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 5.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (windows-latest, 1.91, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.6,
+     "workMin": 6.7,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (windows-latest, stable, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 5.2,
+     "runner": "windows-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test (ubuntu-24.04-arm, stable, local)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.7,
+     "workMin": 3.6,
+     "runner": "ubuntu-24.04-arm",
+     "vcpus": 4
+    },
+    {
+     "id": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+     "needs": [
+      "test-archive-target-runner",
+      "build-checks"
+     ],
+     "onPath": false,
+     "blockedMin": 23.2,
+     "queueMin": 0.1,
+     "workMin": 0.3,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+     "needs": [
+      "test-archive-target-runner",
+      "build-checks"
+     ],
+     "onPath": false,
+     "blockedMin": 23.2,
+     "queueMin": 0.1,
+     "workMin": 0.3,
+     "runner": "windows-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+     "to": "test-archive-target-runner"
+    },
+    {
+     "from": "Test archives with a runner (destination) (ubuntu-24.04, ubuntu-latest)",
+     "to": "build-checks"
+    },
+    {
+     "from": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+     "to": "test-archive-target-runner"
+    },
+    {
+     "from": "Test archives with a runner (destination) (windows-latest, windows-latest)",
+     "to": "build-checks"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Test (macos-latest, 1.91, local)"
+   ],
+   "pathMinP50": 13.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"Build documentation (ubuntu-latest)\" runs 10 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "Jobs wait 213 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Set timeout-minutes on jobs",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/03-workflow-anatomy.md"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 44,
+ "read": {
+  "calls": 44,
+  "fromCache": 0
+ }
+}

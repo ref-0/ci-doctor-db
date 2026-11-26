@@ -1,0 +1,2906 @@
+{
+ "repo": "b-editor/beutl",
+ "date": "2026-11-20",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 6.1,
+  "stars": 1248,
+  "forks": 63,
+  "languages": [
+   [
+    "C#",
+    99
+   ],
+   [
+    "Swift",
+    0
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "C++",
+    0
+   ]
+  ],
+  "linesOfCode": 1327084,
+  "files": 6067,
+  "sourceFiles": 5384,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 599535,
+   "tests": 725484,
+   "integration": 2065,
+   "support": 0
+  },
+  "testShare": 0.5482315823670815,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 50.5,
+  "pace": 3,
+  "activeAuthors28d": "≥2",
+  "prsOpenedPerWeek": 116,
+  "prsMergedPerWeek": 111,
+  "botShareOfMergedPrs": 4,
+  "openToMergeHours": {
+   "p50": 1.9,
+   "p90": 6.2,
+   "n": 96
+  },
+  "prRunsPerDay": 105,
+  "runsPerMergedPr": 6.6
+ },
+ "window": {
+  "days": 7.1,
+  "runs": 749,
+  "runsInPeriod": 750,
+  "truncated": false,
+  "mainDays": 7.2
+ },
+ "size": "large",
+ "headsPerWeek": 245,
+ "score": 79,
+ "grade": "B",
+ "band": "fast",
+ "parts": {
+  "speed": 68,
+  "reliability": 97,
+  "efficiency": 95
+ },
+ "detail": {
+  "speed": {
+   "wait": 59,
+   "forSize": 79,
+   "tail": 73
+  },
+  "reliability": {
+   "flakes": 95,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 93,
+   "runsPerPr": 89,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3337.5,
+  "prBilledMinutesPerDay": 3694.2,
+  "jobMinutesPerMergedPr": 210.5,
+  "expectedMinutesPerMergedPr": 363.8,
+  "expectedWait": 19.8,
+  "workflowsOnPrs": 2
+ },
+ "wait": {
+  "heads": 250,
+  "timed": 179,
+  "p50": 13.833333333333334,
+  "p75": 14.716666666666667,
+  "p90": 15.9,
+  "redRate": 0.128,
+  "rerunRate": 0.024,
+  "passedOnRerunRate": 0.016,
+  "cancelledRate": 0.228,
+  "botHeads": 7,
+  "lightHeads": 1,
+  "lastToFinish": [
+   [
+    ".NET",
+    179
+   ]
+  ],
+  "redBy": [
+   [
+    ".NET",
+    25
+   ],
+   [
+    "Format check",
+    10
+   ]
+  ],
+  "leftOut": [
+   "Actions lock"
+  ],
+  "heavyWorkflows": [
+   ".NET"
+  ],
+  "allPushesP50": 13.833333333333334
+ },
+ "main": {
+  "heads": 112,
+  "p50": 13.15,
+  "p90": 13.233333333333333,
+  "redRate": 0.03571428571428571,
+  "redBy": [
+   [
+    ".NET",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0.24948665297741274,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 23,
+  "spanMin": 13.433333333333334,
+  "jobMinutes": 101.46666666666668,
+  "billedMinutes": 111,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.07951227889404087,
+  "critical": {
+   "name": "build",
+   "minutes": 1.2666666666666666,
+   "shareOfSpan": 0.09529553679131483
+  },
+  "longest": {
+   "name": "linux-arm64-tests",
+   "minutes": 7.866666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    138
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/dotnet.yml"
+  ],
+  "jobs": 8,
+  "edges": 8,
+  "matrixJobs": 1,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "build",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "compile",
+    "minutes": 5.3,
+    "share": 0.39,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 5.3,
+    "setupMin": 1.3
+   },
+   {
+    "name": "test (unit-other, false)",
+    "minutes": 6.8,
+    "share": 0.51,
+    "blockedMin": 5.3,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 6.7,
+    "setupMin": 0.4
+   },
+   {
+    "name": "build",
+    "minutes": 1.3,
+    "share": 0.1,
+    "blockedMin": 12.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.3,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 3,
+  "pathMinP50": 13.4,
+  "blockedMinP50": 12.1,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 13.3,
+  "setupInPathMinP50": 0.6,
+  "topBlockers": [
+   {
+    "name": "compile",
+    "runs": 6,
+    "heldJobs": 17,
+    "jobs": 23,
+    "tookMin": 5.3,
+    "heldJobMin": 88.2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44714573830,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13,
+    "path": [
+     "compile",
+     "test (unit-other, false)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.9
+     },
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.7
+     },
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.1,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 11.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.5,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 7.6,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.1,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.3,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 6.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 6.9,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.4,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.3,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 11.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10.4,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.9
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10.6,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.5,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 11.7,
+      "createdMin": 11.7,
+      "startMin": 11.8,
+      "endMin": 13,
+      "blockedMin": 11.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44712242396,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.8,
+    "path": [
+     "compile",
+     "test (validation-rendering, true)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.7
+     },
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 1.2
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 0.2
+     },
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 6.5,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 6.8,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.2,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10.4,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.6
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 9.8,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 11.3,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.3,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10.6,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 8.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 12.2,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 10.7,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 7.4,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5,
+      "createdMin": 5,
+      "startMin": 5,
+      "endMin": 12.5,
+      "blockedMin": 5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 2.4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.5,
+      "endMin": 13.8,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44707784271,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.6,
+    "path": [
+     "compile",
+     "test (unit-engine, false)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.9
+     },
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 1.3
+     },
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.7,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 12.2,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 7.8,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 8.8,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 9.7,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 9.1,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 11.6,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 7.6,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 10.3,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 10.2,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 10.6,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 10.6,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 11.8,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 1
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 9.4,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 10,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 11.2,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 5.8,
+      "endMin": 8.5,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.7,
+      "setupMin": 0.5
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.3,
+      "endMin": 13.6,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44685159957,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.2,
+    "path": [
+     "compile",
+     "test (validation-core, true)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9,
+      "setupMin": 0.6
+     },
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 1.6
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.7
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 8.8,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 8.2,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 7.5,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 11.6,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 11.4,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 11.2,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 9.8,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 9.6,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 11.3,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 8.8,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10.7,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 13.2,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 12.7,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10.3,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.9,
+      "createdMin": 5.9,
+      "startMin": 6,
+      "endMin": 10.7,
+      "blockedMin": 5.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 14.2,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44681374378,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.3,
+    "path": [
+     "compile",
+     "test (validation-rendering, true)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.6
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 8.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 1.3
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 9.1,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 10.9,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 12.1,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 7.3,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 11.6,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 8.9,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 9.4,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.1,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 9.5,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 8.1,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 10.3,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 11.9,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 10.9,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.1
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 8.5,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 11.6,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 1.3
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 8.3,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.3,
+      "createdMin": 5.3,
+      "startMin": 5.3,
+      "endMin": 10.6,
+      "blockedMin": 5.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 13.3,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44616807495,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.4,
+    "path": [
+     "compile",
+     "test (unit-engine, false)",
+     "build"
+    ],
+    "topBlocker": "compile",
+    "jobs": [
+     {
+      "name": "sdk-package",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2
+     },
+     {
+      "name": "compile",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 1.3
+     },
+     {
+      "name": "macos-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.3
+     },
+     {
+      "name": "linux-arm64-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "windows-publish",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2
+     },
+     {
+      "name": "mediafoundation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test (ui-e-i, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 9.4,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-git, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 9,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-rendering, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 7.1,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-engine, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 12,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (unit-golden, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 7.9,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 10.5,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-audio, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 11.3,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 11.1,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (ui-n-r, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 11.3,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-particles, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 8.9,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (ui-a-d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 8.8,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (validation-core, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 9.8,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test (ui-j-m, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 7.9,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (unit-other, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 10.8,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test (graphics3d, false)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 10,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "test (validation-rendering, true)",
+      "needs": [
+       "compile"
+      ],
+      "readyMin": 5.4,
+      "createdMin": 5.4,
+      "startMin": 5.5,
+      "endMin": 9.7,
+      "blockedMin": 5.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.3
+     },
+     {
+      "name": "build",
+      "needs": [
+       "compile",
+       "test",
+       "linux-arm64-tests",
+       "macos-tests",
+       "mediafoundation-tests",
+       "sdk-package",
+       "windows-publish"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 13.4,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 20,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": true,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": true,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    99
+   ],
+   [
+    "Swift",
+    0
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "C++",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    138
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 6067
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 8,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "compile",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.9
+    },
+    {
+     "id": "windows-publish",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.4
+    },
+    {
+     "id": "mediafoundation-tests",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 6
+    },
+    {
+     "id": "sdk-package",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 3.5
+    },
+    {
+     "id": "linux-arm64-tests",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 7.4
+    },
+    {
+     "id": "macos-tests",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 4.3
+    },
+    {
+     "id": "test (ui-a-d, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.1
+    },
+    {
+     "id": "test (unit-other, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": true,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 6.7
+    },
+    {
+     "id": "test (ui-e-i, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 3.5
+    },
+    {
+     "id": "test (unit-particles, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 3.7
+    },
+    {
+     "id": "test (ui-j-m, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 2.6
+    },
+    {
+     "id": "test (unit-audio, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.1
+    },
+    {
+     "id": "test (unit-engine, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.4
+    },
+    {
+     "id": "test (unit-rendering, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 1.7
+    },
+    {
+     "id": "test (unit-golden, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 1.9
+    },
+    {
+     "id": "test (unit-git, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 3.4
+    },
+    {
+     "id": "test (ui-other, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.3
+    },
+    {
+     "id": "test (validation-rendering, true)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.7
+    },
+    {
+     "id": "test (validation-core, true)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 6.7
+    },
+    {
+     "id": "test (other, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 5.5
+    },
+    {
+     "id": "test (ui-n-r, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 5.6
+    },
+    {
+     "id": "test (graphics3d, false)",
+     "needs": [
+      "compile"
+     ],
+     "onPath": false,
+     "blockedMin": 5,
+     "queueMin": 0,
+     "workMin": 4.5
+    },
+    {
+     "id": "build",
+     "needs": [
+      "compile",
+      "test",
+      "linux-arm64-tests",
+      "macos-tests",
+      "mediafoundation-tests",
+      "sdk-package",
+      "windows-publish"
+     ],
+     "onPath": true,
+     "blockedMin": 11.7,
+     "queueMin": 0,
+     "workMin": 1.3
+    }
+   ],
+   "edges": [
+    {
+     "from": "test (ui-a-d, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-other, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (ui-e-i, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-particles, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (ui-j-m, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-audio, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-engine, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-rendering, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-golden, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (unit-git, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (ui-other, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (validation-rendering, true)",
+     "to": "compile"
+    },
+    {
+     "from": "test (validation-core, true)",
+     "to": "compile"
+    },
+    {
+     "from": "test (other, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (ui-n-r, false)",
+     "to": "compile"
+    },
+    {
+     "from": "test (graphics3d, false)",
+     "to": "compile"
+    },
+    {
+     "from": "build",
+     "to": "compile"
+    },
+    {
+     "from": "build",
+     "to": "test"
+    },
+    {
+     "from": "build",
+     "to": "linux-arm64-tests"
+    },
+    {
+     "from": "build",
+     "to": "macos-tests"
+    },
+    {
+     "from": "build",
+     "to": "mediafoundation-tests"
+    },
+    {
+     "from": "build",
+     "to": "sdk-package"
+    },
+    {
+     "from": "build",
+     "to": "windows-publish"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "compile",
+     "numbers": {
+      "heldJobs": 17,
+      "jobs": 23,
+      "heldJobMin": 88.2,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "compile",
+    "test (unit-other, false)",
+    "build"
+   ],
+   "pathMinP50": 13.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"compile\" holds up 17 of 23 jobs, 88.2 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 67,
+ "read": {
+  "calls": 67,
+  "fromCache": 0
+ }
+}

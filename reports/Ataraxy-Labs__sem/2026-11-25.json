@@ -1,0 +1,954 @@
+{
+ "repo": "Ataraxy-Labs/sem",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Only 1 PR pushes in the window ran the main workflows; 5 are needed.",
+ "profile": {
+  "ageYears": 0.8,
+  "stars": 3458,
+  "forks": 111,
+  "languages": [
+   [
+    "Rust",
+    73
+   ],
+   [
+    "TypeScript",
+    17
+   ],
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "Python",
+    3
+   ]
+  ],
+  "linesOfCode": 300967,
+  "files": 825,
+  "sourceFiles": 667,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 242769,
+   "tests": 55219,
+   "integration": 206,
+   "support": 2773
+  },
+  "testShare": 0.19337114478774528,
+  "packages": {
+   "npm": 3,
+   "cargo": 7,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 4,
+  "commitsPerWeekYear": 14.3,
+  "pace": 0.3,
+  "activeAuthors28d": 2,
+  "prsOpenedPerWeek": 0.9,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 0.5,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 8,
+  "runs": 3,
+  "runsInPeriod": 3,
+  "truncated": false,
+  "mainDays": 8
+ },
+ "size": "medium",
+ "headsPerWeek": 1,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 100
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 0,
+  "prBilledMinutesPerDay": 0.1,
+  "jobMinutesPerMergedPr": null,
+  "prVcpuMinutesPerDay": 0,
+  "vcpuMinutesPerMergedPr": null,
+  "expectedVcpuMinutesPerMergedPr": 891.9,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 223,
+  "expectedWait": 15.2,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 0.91,
+  "missing": [
+   "efficiency.minutesPerPr",
+   "efficiency.runsPerPr"
+  ],
+  "outsideCi": {
+   "sampled": 0,
+   "read": 0,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 1,
+  "ranHeads": 1,
+  "timed": 1,
+  "p50": 0.13333333333333333,
+  "p75": 0.13333333333333333,
+  "p90": 0.13333333333333333,
+  "redRate": 0,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Changelog",
+    1
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/changelog.yml",
+  "redBy": [],
+  "leftOut": [
+   "Lockfile"
+  ],
+  "heavyWorkflows": [
+   "Changelog"
+  ],
+  "allPushesP50": 0.13333333333333333
+ },
+ "main": {
+  "heads": 2,
+  "p50": 23.616666666666667,
+  "p90": 40.63333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 1,
+  "jobs": 1,
+  "spanMin": 0.1,
+  "jobMinutes": 0.05,
+  "billedMinutes": 1,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": null,
+  "setupMinPerJob": 0,
+  "critical": {
+   "name": "changelog",
+   "minutes": 0.05,
+   "shareOfSpan": 0.5
+  },
+  "longest": {
+   "name": "changelog",
+   "minutes": 0.05
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    1
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 1,
+  "runsUsed": 1,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/changelog.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "changelog",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "changelog",
+    "minutes": 0.1,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 1,
+  "pathJobsP50": 1,
+  "pathMinP50": 0.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44929320571,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "changelog"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "changelog",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "pathFilters": ".github/workflows/release-publisher.yml",
+   "draftSkip": ".github/workflows/changelog.yml",
+   "depCache": ".github/workflows/shared-mcp.yml",
+   "compilerCache": ".github/workflows/shared-mcp.yml",
+   "frozenInstall": ".github/workflows/lockfile.yml",
+   "timeouts": ".github/workflows/release.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Rust",
+    73
+   ],
+   [
+    "TypeScript",
+    17
+   ],
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "Python",
+    3
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Cargo"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 3,
+   "cargo": 7,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "node:test",
+   "cargo test"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "git2",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "ignore",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "mimalloc",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "rusqlite",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tempfile",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "tokio",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "ureq",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "axum",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "ciborium",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "rayon",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "regex",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "similar",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "anyhow",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "async-trait",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "clap",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "clap_complete_command",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "colored",
+    "ecosystem": "cargo",
+    "packages": 1
+   },
+   {
+    "name": "criterion",
+    "ecosystem": "cargo",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    1
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "@ataraxy-labs/sem-skill",
+     "path": "agent-skill/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "crates/Cargo.toml",
+     "path": "crates/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "sem-cli",
+     "path": "crates/sem-cli/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "sem-cloud-client",
+      "sem-core",
+      "sem-mcp"
+     ]
+    },
+    {
+     "name": "sem-cloud-client",
+     "path": "crates/sem-cloud-client/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "sem-core",
+     "path": "crates/sem-core/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "sem-mcp",
+     "path": "crates/sem-mcp/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "sem-cloud-client",
+      "sem-core"
+     ]
+    },
+    {
+     "name": "sem-plugin",
+     "path": "crates/sem-plugin/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "sem-core"
+     ]
+    },
+    {
+     "name": "sem-plugin-test",
+     "path": "crates/sem-plugin/test-harness/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "@ataraxy-labs/sem",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "pi-sem",
+     "path": "pi/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 10,
+   "edges": 6,
+   "cycles": [],
+   "maxDepth": 2,
+   "topFanIn": [
+    {
+     "name": "sem-core",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "sem-cloud-client",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "sem-mcp",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 10,
+    "edges": 6
+   },
+   "nodes": [
+    {
+     "id": "sem-core",
+     "dir": "crates/sem-core",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 3,
+     "depth": 0
+    },
+    {
+     "id": "sem-cloud-client",
+     "dir": "crates/sem-cloud-client",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "sem-mcp",
+     "dir": "crates/sem-mcp",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "@ataraxy-labs/sem",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@ataraxy-labs/sem-skill",
+     "dir": "agent-skill",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "crates/Cargo.toml",
+     "dir": "crates",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "pi-sem",
+     "dir": "pi",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "sem-cli",
+     "dir": "crates/sem-cli",
+     "ecosystem": "cargo",
+     "dependencies": 3,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "sem-plugin",
+     "dir": "crates/sem-plugin",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "sem-plugin-test",
+     "dir": "crates/sem-plugin/test-harness",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "sem-cli",
+     "to": "sem-cloud-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sem-cli",
+     "to": "sem-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sem-cli",
+     "to": "sem-mcp",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sem-mcp",
+     "to": "sem-cloud-client",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sem-mcp",
+     "to": "sem-core",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "sem-plugin",
+     "to": "sem-core",
+     "ecosystem": "cargo"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "sem-cli",
+    "sem-mcp",
+    "sem-cloud-client"
+   ],
+   "topFanIn": [
+    {
+     "name": "sem-core",
+     "ecosystem": "cargo",
+     "dependents": 3
+    },
+    {
+     "name": "sem-cloud-client",
+     "ecosystem": "cargo",
+     "dependents": 2
+    },
+    {
+     "name": "sem-mcp",
+     "ecosystem": "cargo",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 3,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 10,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 825
+   },
+   "nodes": [
+    {
+     "id": "@ataraxy-labs/sem-skill#prepack",
+     "pkg": "@ataraxy-labs/sem-skill",
+     "name": "prepack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ataraxy-labs/sem#postinstall",
+     "pkg": "@ataraxy-labs/sem",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ataraxy-labs/sem#prepack",
+     "pkg": "@ataraxy-labs/sem",
+     "name": "prepack",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@ataraxy-labs/sem#test",
+     "pkg": "@ataraxy-labs/sem",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#route",
+     "pkg": "pi-sem",
+     "name": "route",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#test",
+     "pkg": "pi-sem",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#test:scripts",
+     "pkg": "pi-sem",
+     "name": "test:scripts",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#test:simple",
+     "pkg": "pi-sem",
+     "name": "test:simple",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#typecheck",
+     "pkg": "pi-sem",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "pi-sem#verify:pin",
+     "pkg": "pi-sem",
+     "name": "verify:pin",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "@ataraxy-labs/sem-skill#prepack"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 1,
+    "runsOf": 1
+   },
+   "nodes": [
+    {
+     "id": "changelog",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "changelog"
+   ],
+   "pathMinP50": 0.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  }
+ ],
+ "apiCalls": 24,
+ "read": {
+  "calls": 24,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

@@ -1,0 +1,912 @@
+{
+ "repo": "MetrolistGroup/Metrolist",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 3.3,
+  "stars": 14742,
+  "forks": 1373,
+  "languages": [
+   [
+    "Kotlin",
+    97
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "HTML",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 564840,
+  "files": 2375,
+  "sourceFiles": 1753,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 556370,
+   "tests": 8470,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.01499515202231191,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 11.6,
+  "pace": 13,
+  "activeAuthors28d": "≥34",
+  "prsOpenedPerWeek": 121,
+  "prsMergedPerWeek": 95,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 8,
+   "p90": 58.1,
+   "n": 95
+  },
+  "prRunsPerDay": 157.6,
+  "runsPerMergedPr": 11.6
+ },
+ "window": {
+  "days": 6.5,
+  "runs": 1000,
+  "runsInPeriod": 1436,
+  "truncated": true,
+  "mainDays": 2.7
+ },
+ "size": "large",
+ "headsPerWeek": 946,
+ "score": 39,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 4,
+  "reliability": 96,
+  "efficiency": 87
+ },
+ "detail": {
+  "speed": {
+   "wait": 7,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 89
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 66,
+   "setup": 100,
+   "queue": 71,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 0,
+  "prBilledMinutesPerDay": 0,
+  "jobMinutesPerMergedPr": 0,
+  "expectedMinutesPerMergedPr": 274.5,
+  "expectedWait": 16.2,
+  "workflowsOnPrs": 6
+ },
+ "wait": {
+  "heads": 875,
+  "timed": 110,
+  "p50": 74.9,
+  "p75": 732.8666666666667,
+  "p90": 4158.316666666667,
+  "redRate": 0.14742857142857144,
+  "rerunRate": 0.21371428571428572,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.010285714285714285,
+  "botHeads": 0,
+  "lightHeads": 6,
+  "neverRan": 60,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    110
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    126
+   ],
+   [
+    "Verify Desktop",
+    3
+   ],
+   [
+    "Verify Arch package",
+    3
+   ]
+  ],
+  "leftOut": [
+   "LLM triage"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 64.46666666666667
+ },
+ "main": {
+  "heads": 149,
+  "p50": 15.4,
+  "p90": 25.2,
+  "redRate": 0.087248322147651,
+  "redBy": [
+   [
+    "CI",
+    12
+   ],
+   [
+    "Nightly",
+    4
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 4.75,
+  "jobMinutes": 11.55,
+  "billedMinutes": 13,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 7,
+  "queueP90Sec": 27,
+  "setupShare": 0.05710102489019034,
+  "critical": {
+   "name": "Android / APK",
+   "minutes": 4.283333333333333,
+   "shareOfSpan": 0.9017543859649123
+  },
+  "longest": {
+   "name": "Android / APK",
+   "minutes": 4.283333333333333
+  },
+  "providers": [
+   [
+    "Blacksmith",
+    21
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 5,
+  "edges": 8,
+  "matrixJobs": 1,
+  "reusableCalls": 3,
+  "gateEnd": [
+   {
+    "name": "Android / APK",
+    "runs": 3
+   },
+   {
+    "name": "iOS / Validate iOS",
+    "runs": 2
+   },
+   {
+    "name": "Desktop / Linux x64",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "Select checks and repository checks",
+    "minutes": 0.4,
+    "share": 0.08,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.3,
+    "setupMin": 0
+   },
+   {
+    "name": "Android / APK",
+    "minutes": 4.4,
+    "share": 0.92,
+    "blockedMin": 0.4,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 4.3,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 4.8,
+  "blockedMinP50": 0.4,
+  "queueMinP50": 0.2,
+  "hiddenMinP50": 0,
+  "workMinP50": 4.4,
+  "setupInPathMinP50": 0.1,
+  "topBlockers": [
+   {
+    "name": "Select checks and repository checks",
+    "runs": 6,
+    "heldJobs": 3,
+    "jobs": 4,
+    "tookMin": 0.4,
+    "heldJobMin": 1.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44867578468,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.1,
+    "path": [
+     "Select checks and repository checks",
+     "iOS / Validate iOS"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Android / APK",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 3.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "iOS / Validate iOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.9,
+      "endMin": 5.1,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 4.2,
+      "setupMin": 0.4
+     }
+    ]
+   },
+   {
+    "id": 44867181300,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.6,
+    "path": [
+     "Select checks and repository checks",
+     "Android / APK"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Android / APK",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.3
+     },
+     {
+      "name": "iOS / Validate iOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.8,
+      "endMin": 4.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.7,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44866365526,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 6.5,
+    "path": [
+     "Select checks and repository checks",
+     "Android / APK"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "Android / APK",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 6.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44866240957,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 5.4,
+    "path": [
+     "Select checks and repository checks",
+     "iOS / Validate iOS"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 3.3,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.8,
+      "setupMin": 0.1
+     },
+     {
+      "name": "iOS / Validate iOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.9,
+      "endMin": 5.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 4.5,
+      "setupMin": 0.4
+     },
+     {
+      "name": "Android / APK",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4.5,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44865857156,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 3.9,
+    "path": [
+     "Select checks and repository checks",
+     "Desktop / Linux x64"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 3.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44865760118,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 4.8,
+    "path": [
+     "Select checks and repository checks",
+     "Android / APK"
+    ],
+    "topBlocker": "Select checks and repository checks",
+    "jobs": [
+     {
+      "name": "Select checks and repository checks",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0
+     },
+     {
+      "name": "Android / APK",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 4.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.1
+     },
+     {
+      "name": "Desktop / Linux x64",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 3.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.2
+     },
+     {
+      "name": "iOS / Validate iOS",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.8,
+      "endMin": 4.7,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 3.9,
+      "setupMin": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 19,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Kotlin",
+    97
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "HTML",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": [
+    "Gradle",
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test",
+   "go test"
+  ],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "Blacksmith",
+    21
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2375
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 5,
+    "edges": 8,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Select checks and repository checks",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.3
+    },
+    {
+     "id": "Android / APK",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.4,
+     "queueMin": 0.1,
+     "workMin": 4.1
+    },
+    {
+     "id": "Desktop / Linux x64",
+     "needs": [
+      "changes"
+     ],
+     "onPath": false,
+     "blockedMin": 0.4,
+     "queueMin": 0.1,
+     "workMin": 3.2
+    },
+    {
+     "id": "iOS / Validate iOS",
+     "needs": [
+      "changes"
+     ],
+     "onPath": true,
+     "blockedMin": 0.4,
+     "queueMin": 0.5,
+     "workMin": 4.2
+    }
+   ],
+   "edges": [
+    {
+     "from": "Android / APK",
+     "to": "changes"
+    },
+    {
+     "from": "Desktop / Linux x64",
+     "to": "changes"
+    },
+    {
+     "from": "iOS / Validate iOS",
+     "to": "changes"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "Select checks and repository checks",
+    "Android / APK"
+   ],
+   "pathMinP50": 4.8,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "p90 is 55.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Kotlin it applies the principles, without a Kotlin-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 156,
+ "read": {
+  "calls": 156,
+  "fromCache": 0
+ }
+}

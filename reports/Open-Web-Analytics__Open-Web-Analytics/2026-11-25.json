@@ -1,0 +1,2738 @@
+{
+ "repo": "Open-Web-Analytics/Open-Web-Analytics",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 14.7,
+  "stars": 2693,
+  "forks": 489,
+  "languages": [
+   [
+    "PHP",
+    75
+   ],
+   [
+    "JavaScript",
+    22
+   ],
+   [
+    "CSS",
+    2
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "linesOfCode": 262744,
+  "files": 1093,
+  "sourceFiles": 898,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 143221,
+   "tests": 93891,
+   "integration": 25430,
+   "support": 203
+  },
+  "testShare": 0.45490275531368696,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 12.5,
+  "commitsPerWeekYear": 15.4,
+  "pace": 0.8,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 125.8,
+  "prsMergedPerWeek": 126.7,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 2.1,
+   "n": 100
+  },
+  "prRunsPerDay": 31.3,
+  "runsPerMergedPr": 1.7
+ },
+ "window": {
+  "days": 7.8,
+  "runs": 246,
+  "runsInPeriod": 247,
+  "truncated": false,
+  "mainDays": 7.8
+ },
+ "size": "medium",
+ "headsPerWeek": 219,
+ "score": 42,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 16,
+  "reliability": 100,
+  "efficiency": 63
+ },
+ "detail": {
+  "speed": {
+   "wait": 30,
+   "forSize": 0,
+   "tail": 8
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 63,
+   "runsPerPr": 100,
+   "setup": 75,
+   "queue": 0,
+   "shardIdle": null,
+   "path": null,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 4151.4,
+  "prBilledMinutesPerDay": 4431.4,
+  "jobMinutesPerMergedPr": 229.4,
+  "prVcpuMinutesPerDay": 16605.5,
+  "vcpuMinutesPerMergedPr": 917.7,
+  "expectedVcpuMinutesPerMergedPr": 852.8,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 213.2,
+  "expectedWait": 9.1,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 246,
+  "ranHeads": 246,
+  "timed": 168,
+  "p50": 29.716666666666665,
+  "p75": 52.28333333333333,
+  "p90": 103.31666666666666,
+  "redRate": 0.06504065040650407,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.3170731707317073,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    168
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    16
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 29.716666666666665
+ },
+ "main": {
+  "heads": 3,
+  "p50": 56.4,
+  "p90": 107.73333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 19,
+  "spanMin": 28.833333333333332,
+  "jobMinutes": 163.26666666666665,
+  "billedMinutes": 172,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 5,
+  "queueP90Sec": 344,
+  "setupShare": 0.09912289971467822,
+  "setupMinPerJob": 0.8385964912280702,
+  "critical": {
+   "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+   "minutes": 28.816666666666666,
+   "shareOfSpan": 0.9988681380871535
+  },
+  "longest": {
+   "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+   "minutes": 27.4
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 0,
+  "runsLeftOut": 6,
+  "leftOutBecause": [
+   {
+    "why": "a job the YAML doesn't name, or could name two ways",
+    "runs": 6
+   }
+  ],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 5,
+  "edges": 0,
+  "matrixJobs": 2,
+  "reusableCalls": 0,
+  "gateEnd": [],
+  "chain": [],
+  "chainRuns": 0,
+  "pathJobsP50": null,
+  "pathMinP50": null,
+  "blockedMinP50": null,
+  "queueMinP50": null,
+  "hiddenMinP50": null,
+  "workMinP50": null,
+  "setupInPathMinP50": null,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [
+   "E2E (self-hosted, php -S + MariaDB 10.11)",
+   "E2E (self-hosted, php -S + MariaDB 11.8)",
+   "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+   "Automatic updates, end to end",
+   "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)"
+  ],
+  "ambiguous": [],
+  "skippedP50": null,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45675720503,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 33.3,
+    "path": [
+     "E2E (self-hosted, php -S + MySQL)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.4,
+      "endMin": 1.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 0.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 30.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 27.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.8,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.8,
+      "workMin": 3.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.1,
+      "endMin": 27.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 24.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.8,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 1.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.5,
+      "endMin": 13.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.5,
+      "workMin": 6.2,
+      "setupMin": 5.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.6,
+      "endMin": 9.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.6,
+      "workMin": 6.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 1.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.2,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.2,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.8,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.9,
+      "endMin": 13.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.9,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.9,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.9,
+      "workMin": 2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.8,
+      "endMin": 11.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.8,
+      "workMin": 5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.2,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 2.3,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.7,
+      "endMin": 14.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.7,
+      "workMin": 6.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 3.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.7,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.4,
+      "endMin": 33.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.4,
+      "workMin": 25.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.7,
+      "endMin": 33.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.7,
+      "workMin": 25.6,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45675716648,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 29.5,
+    "path": [
+     "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 23.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 23.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 2.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 25.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.4,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 6.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.3,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 29.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 29.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.4,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 4.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.6,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 7.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.5,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 3.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45668363364,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 30.8,
+    "path": [
+     "E2E (self-hosted, php -S + MySQL)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 6.6,
+      "setupMin": 5.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 27.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 27.1,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.7,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 2.5,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 24.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 24,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 28,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 27.4,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.3,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 2.4,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.4,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.4,
+      "workMin": 1.1,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.9,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 2.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 6.6,
+      "endMin": 30.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 6.6,
+      "workMin": 24.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 3.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.5,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.5,
+      "workMin": 3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.3,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.3,
+      "workMin": 5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 8.3,
+      "endMin": 15.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 8.3,
+      "workMin": 7.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 7.5,
+      "endMin": 13.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 7.5,
+      "workMin": 5.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45662581392,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 28.7,
+    "path": [
+     "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 2,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.3,
+      "setupMin": 4.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.2,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.5,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 28.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 28.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.3,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45644186666,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 28.3,
+    "path": [
+     "E2E (self-hosted, php -S + MariaDB 10.11)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 24.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 27,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 26.9,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 6.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 5.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.5,
+      "endMin": 2.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.5,
+      "workMin": 1.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.4,
+      "endMin": 26,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 24.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.2,
+      "endMin": 28.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.2,
+      "workMin": 27.2,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.5,
+      "endMin": 6.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.5,
+      "workMin": 4.4,
+      "setupMin": 3.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 8.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 7.4,
+      "setupMin": 6.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5,
+      "endMin": 8.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5,
+      "workMin": 3.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 4.3,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 4.3,
+      "workMin": 3.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 8.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 7.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 7.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 6.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.2,
+      "endMin": 9.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 6.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.8,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.8,
+      "workMin": 1.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.5,
+      "endMin": 8.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.4,
+      "endMin": 8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 2.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 5.7,
+      "endMin": 8.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 3.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45577249592,
+    "fits": false,
+    "leftOutBecause": [
+     "a job the YAML doesn't name, or could name two ways"
+    ],
+    "spanMin": 28.8,
+    "path": [
+     "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "Tracker JS tests (Jest)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3,
+      "setupMin": 2.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysql)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 28.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 28.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 28,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.9,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Automatic updates, end to end",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.4,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 5.3,
+      "setupMin": 4.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, mysqli)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.8,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.3,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 7.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Lint, analyse & test (PHP 8.2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 11.8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Test isolation sweep (each file alone, MariaDB 10.11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.4,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "E2E (self-hosted, php -S + MySQL)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.6,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 3,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "jest",
+  "testResults": true,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/ci.yml",
+   "testResults": ".github/workflows/main.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "PHP",
+    75
+   ],
+   [
+    "JavaScript",
+    22
+   ],
+   [
+    "CSS",
+    2
+   ],
+   [
+    "HTML",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Jest",
+   "Playwright",
+   "PHPUnit"
+  ],
+  "lintFormat": [],
+  "libraries": [
+   {
+    "name": "@babel/core",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@babel/preset-env",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "babel-jest",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "chosen-js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "copy-webpack-plugin",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "css-loader",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "free-jqgrid",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jest-environment-jsdom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jgrowl",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jquery",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jquery-migrate",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jquery-sparkline",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jquery-ui-dist",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "jquery.flot",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "mini-css-extract-plugin",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "terser-webpack-plugin",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "webpack",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "webpack-cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "webpack-remove-empty-scripts",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    114
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [
+    {
+     "name": "owa",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    }
+   ],
+   "count": 1,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 1,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "owa",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "owa"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 1,
+    "filesRead": 0,
+    "undecided": 1
+   },
+   "nodes": [
+    {
+     "id": "owa#.",
+     "pkg": "owa",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 1 unknown, such as owa#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 10,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1093
+   },
+   "nodes": [
+    {
+     "id": "owa#build",
+     "pkg": "owa",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#start",
+     "pkg": "owa",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test",
+     "pkg": "owa",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e",
+     "pkg": "owa",
+     "name": "test:e2e",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:install",
+     "pkg": "owa",
+     "name": "test:e2e:install",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:install:doctor",
+     "pkg": "owa",
+     "name": "test:e2e:install:doctor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:seed",
+     "pkg": "owa",
+     "name": "test:e2e:seed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:selfhost",
+     "pkg": "owa",
+     "name": "test:e2e:selfhost",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:selfhost:doctor",
+     "pkg": "owa",
+     "name": "test:e2e:selfhost:doctor",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "owa#test:e2e:teardown",
+     "pkg": "owa",
+     "name": "test:e2e:teardown",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "owa#test"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 5,
+    "edges": 0,
+    "runs": 0,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Tracker JS tests (Jest)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 1.4,
+     "workMin": 0.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "E2E (self-hosted, php -S + MariaDB 10.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.5,
+     "workMin": 27.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Lint, analyse & test (PHP 8.3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 6.8,
+     "workMin": 3.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "E2E (self-hosted, php -S + MariaDB 11.8)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.1,
+     "workMin": 24.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Schema upgrade cycle (rewind, then upgrade, MariaDB 11.8)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.8,
+     "workMin": 1.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Automatic updates, end to end",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 7.5,
+     "workMin": 6.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test isolation sweep (each file alone, mysqli)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.6,
+     "workMin": 6.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Schema upgrade cycle (rewind, then upgrade, MariaDB 10.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 2.5,
+     "workMin": 1.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Lint, analyse & test (PHP 8.5)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 7.2,
+     "workMin": 2.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Lint, analyse & test (PHP 8.4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.8,
+     "workMin": 4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test isolation sweep (each file alone, mysql)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 6.9,
+     "workMin": 7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Schema upgrade cycle (rewind, then upgrade, MySQL 8.4, PHP 8.4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 4.9,
+     "workMin": 2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test isolation sweep (each file alone, MariaDB 11.8)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 6.8,
+     "workMin": 5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Schema upgrade cycle (rewind, then upgrade)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 5.2,
+     "workMin": 2.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test isolation sweep (each file alone, MySQL 8.4, PHP 8.4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 7.7,
+     "workMin": 6.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Lint, analyse & test (PHP 8.2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 3.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Test isolation sweep (each file alone, MariaDB 10.11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 3.7,
+     "workMin": 4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "E2E (self-hosted, php -S + MySQL 8.4, PHP 8.4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 7.4,
+     "workMin": 25.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "E2E (self-hosted, php -S + MySQL)",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 7.7,
+     "workMin": 25.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [],
+   "pathMinP50": null,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"E2E (self-hosted, php -S + MariaDB 10.11)\" runs 27 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 3.5× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 344 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  },
+  {
+   "text": "Jest: consider Vitest",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/09-workspace-tooling.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For PHP it applies the principles, without a PHP-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 38,
+ "read": {
+  "calls": 38,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

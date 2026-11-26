@@ -1,0 +1,5214 @@
+{
+ "repo": "kernel-patches/bpf",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "bpf-next_base",
+ "profile": {
+  "ageYears": 6.2,
+  "stars": 148,
+  "forks": 198,
+  "languages": [
+   [
+    "C",
+    98
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "Rust",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 50583628,
+  "files": 67345,
+  "sourceFiles": 42230,
+  "treeTruncated": true,
+  "sourceLines": {
+   "implementation": 23668586,
+   "tests": 141533,
+   "integration": 3355,
+   "support": 581
+  },
+  "testShare": 0.0061085145826608985,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "languages",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 1829.2,
+  "pace": 0.3,
+  "activeAuthors28d": "≥180",
+  "prsOpenedPerWeek": 148.2,
+  "prsMergedPerWeek": 0,
+  "botShareOfMergedPrs": null,
+  "openToMergeHours": {
+   "p50": null,
+   "p90": null,
+   "n": 0
+  },
+  "prRunsPerDay": 360,
+  "runsPerMergedPr": null
+ },
+ "window": {
+  "days": 2.7,
+  "runs": 965,
+  "runsInPeriod": 2201,
+  "truncated": true,
+  "mainDays": 7.9
+ },
+ "size": "large",
+ "headsPerWeek": 1214,
+ "score": 61,
+ "grade": "C",
+ "band": "ok",
+ "parts": {
+  "speed": 51,
+  "reliability": 100,
+  "efficiency": 55
+ },
+ "detail": {
+  "speed": {
+   "wait": 24,
+   "forSize": 100,
+   "tail": 9
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": null,
+   "runsPerPr": null,
+   "setup": 88,
+   "queue": 0,
+   "shardIdle": null,
+   "path": 67,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 52135.3,
+  "prBilledMinutesPerDay": 54730.4,
+  "jobMinutesPerMergedPr": null,
+  "prVcpuMinutesPerDay": 205310,
+  "vcpuMinutesPerMergedPr": null,
+  "expectedVcpuMinutesPerMergedPr": 4838.5,
+  "sizedShare": 0.03,
+  "expectedMinutesPerMergedPr": 1209.6,
+  "expectedWait": 74.9,
+  "workflowsOnPrs": 3
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "vCPU-minutes per merged PR and runs per merged PR couldn't be measured"
+  ],
+  "measured": 0.9,
+  "missing": [
+   "efficiency.minutesPerPr",
+   "efficiency.runsPerPr"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 465,
+  "ranHeads": 432,
+  "timed": 40,
+  "p50": 35.416666666666664,
+  "p75": 37.766666666666666,
+  "p90": 97.16666666666667,
+  "redRate": 0.1412037037037037,
+  "rerunRate": 0,
+  "passedOnRerunRate": 0,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.3819444444444444,
+  "botHeads": 225,
+  "lightHeads": 2,
+  "neverRan": 0,
+  "botPushes": 421,
+  "bots": [
+   [
+    "kernel-patches-daemon-bpf[bot]",
+    421
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "bpf-ci",
+    39
+   ],
+   [
+    "AI Code Review",
+    1
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/test.yml",
+  "redBy": [
+   [
+    "bpf-ci",
+    40
+   ],
+   [
+    "AI Code Review",
+    22
+   ],
+   [
+    ".github/workflows/test.yml",
+    3
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "bpf-ci"
+  ],
+  "allPushesP50": 35.416666666666664
+ },
+ "main": {
+  "heads": 16,
+  "p50": null,
+  "p90": null,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.8939857288481141,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 40,
+  "spanMin": 44.083333333333336,
+  "jobMinutes": 382.76666666666665,
+  "billedMinutes": 403,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 15,
+  "queueP90Sec": 830,
+  "setupShare": 0.0663355020221558,
+  "setupMinPerJob": 0.6379166666666667,
+  "critical": {
+   "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+   "minutes": 18.933333333333334,
+   "shareOfSpan": 0.4434285714285714
+  },
+  "longest": {
+   "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+   "minutes": 20.916666666666668
+  },
+  "providers": [
+   [
+    "self-hosted",
+    164
+   ],
+   [
+    "GitHub-hosted",
+    12
+   ],
+   [
+    "codebuild-bpf-ci-45703444683-1",
+    10
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/test.yml"
+  ],
+  "jobs": 11,
+  "edges": 27,
+  "matrixJobs": 0,
+  "reusableCalls": 10,
+  "gateEnd": [
+   {
+    "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+    "runs": 3
+   },
+   {
+    "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+    "runs": 1
+   },
+   {
+    "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "set-matrix",
+    "minutes": 6.6,
+    "share": 0.13,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 2.1,
+    "workMin": 4.1,
+    "setupMin": 0.3
+   },
+   {
+    "name": "s390x gcc-15 / build / build kernel and selftests",
+    "minutes": 7.7,
+    "share": 0.1,
+    "blockedMin": 6.6,
+    "hiddenMin": 0,
+    "queueMin": 2.6,
+    "workMin": 4.9,
+    "setupMin": 0.8
+   },
+   {
+    "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+    "minutes": 38.8,
+    "share": 0.7,
+    "blockedMin": 13.6,
+    "hiddenMin": 0,
+    "queueMin": 21.4,
+    "workMin": 17.4,
+    "setupMin": 0.4
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 3,
+  "pathMinP50": 44.1,
+  "blockedMinP50": 13.6,
+  "queueMinP50": 17.5,
+  "hiddenMinP50": 0,
+  "workMinP50": 26.4,
+  "setupInPathMinP50": 1.1,
+  "topBlockers": [
+   {
+    "name": "set-matrix",
+    "runs": 6,
+    "heldJobs": 38,
+    "jobs": 40,
+    "tookMin": 6.5,
+    "heldJobMin": 246.4
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45703444683,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 50.7,
+    "path": [
+     "set-matrix",
+     "s390x gcc-15 / build / build kernel and selftests",
+     "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 2.1,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 4.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 10,
+      "endMin": 13.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 10,
+      "workMin": 3.4,
+      "setupMin": 1.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 12.3,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.5,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 12.7,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.8,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 13.1,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.2,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 13,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.6,
+      "createdMin": 6.7,
+      "startMin": 6.9,
+      "endMin": 11.8,
+      "blockedMin": 6.6,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.9,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 13.2,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 33.7,
+      "endMin": 50.7,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 21.9,
+      "workMin": 17,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 32.3,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.5,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 32.2,
+      "endMin": 49.4,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 20.4,
+      "workMin": 17.3,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 12.6,
+      "endMin": 15.6,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3,
+      "setupMin": 2.1,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 16.6,
+      "endMin": 19.8,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 4.3,
+      "workMin": 3.2,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 12.5,
+      "endMin": 17,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 12.6,
+      "endMin": 14.9,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 13.7,
+      "endMin": 21.2,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 1.3,
+      "workMin": 7.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 15.6,
+      "endMin": 31.1,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 3.2,
+      "workMin": 15.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 15.9,
+      "endMin": 21.5,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 5.7,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 19.4,
+      "endMin": 27.1,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 7,
+      "workMin": 7.7,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 18.4,
+      "endMin": 19.5,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 6,
+      "workMin": 1.1,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 17.8,
+      "endMin": 33.6,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 15.8,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.3,
+      "createdMin": 12.4,
+      "startMin": 17.7,
+      "endMin": 32.3,
+      "blockedMin": 12.3,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 14.6,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 13,
+      "endMin": 15.2,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.7,
+      "endMin": 31.9,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 13.2,
+      "endMin": 14.2,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 32.4,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.6,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 13.5,
+      "endMin": 32.9,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 19.4,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 13,
+      "endMin": 16.3,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.4,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 14.5,
+      "endMin": 17.9,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 1.4,
+      "workMin": 3.4,
+      "setupMin": 2.3,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 13.3,
+      "endMin": 15.5,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.2,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703444683-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 26.9,
+      "endMin": 33.3,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 13.8,
+      "workMin": 6.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 26.9,
+      "endMin": 42.8,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 13.8,
+      "workMin": 15.9,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 27.2,
+      "endMin": 43.2,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 14.1,
+      "workMin": 16,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 27.3,
+      "endMin": 28.5,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 14.2,
+      "workMin": 1.2,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.1,
+      "createdMin": 13.1,
+      "startMin": 28.7,
+      "endMin": 44.5,
+      "blockedMin": 13.1,
+      "hiddenMin": 0,
+      "queueMin": 15.6,
+      "workMin": 15.8,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 15.3,
+      "endMin": 32,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 16.7,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 15.2,
+      "createdMin": 15.2,
+      "startMin": 15.4,
+      "endMin": 36,
+      "blockedMin": 15.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.6,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 25.8,
+      "endMin": 42.6,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 10.3,
+      "workMin": 16.8,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 15.6,
+      "createdMin": 15.6,
+      "startMin": 18.6,
+      "endMin": 32.5,
+      "blockedMin": 15.6,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 13.8,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 17.9,
+      "createdMin": 17.9,
+      "startMin": 24,
+      "endMin": 38.7,
+      "blockedMin": 17.9,
+      "hiddenMin": 0,
+      "queueMin": 6.1,
+      "workMin": 14.7,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45703356951,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 44.1,
+    "path": [
+     "set-matrix",
+     "x86_64 gcc-15 / build / build kernel and selftests",
+     "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+     "x86_64 gcc-15 / GCC BPF / GCC BPF"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 5.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 12.5,
+      "endMin": 15.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 12.5,
+      "workMin": 3.2,
+      "setupMin": 1.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.7,
+      "endMin": 12.5,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.8,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.7,
+      "endMin": 12.4,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.6,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.7,
+      "endMin": 12.1,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.4,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.7,
+      "endMin": 12,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.3,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.7,
+      "endMin": 12.4,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.7,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.3,
+      "endMin": 15.6,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 2.2,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.3,
+      "endMin": 14.7,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.4,
+      "setupMin": 0.9,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 28.5,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12,
+      "endMin": 13,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12,
+      "endMin": 18.2,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 28.4,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 29.1,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.1,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 13.6,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 33.3,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.2,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 33.1,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.1,
+      "createdMin": 12.1,
+      "startMin": 12.1,
+      "endMin": 32.8,
+      "blockedMin": 12.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.7,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 13.1,
+      "endMin": 15.5,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 12.4,
+      "endMin": 16.1,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 12.4,
+      "endMin": 13.6,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 12.4,
+      "endMin": 31.5,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 12.4,
+      "endMin": 31.6,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12.4,
+      "createdMin": 12.4,
+      "startMin": 12.4,
+      "endMin": 31.7,
+      "blockedMin": 12.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.3,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 17.4,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.9,
+      "setupMin": 1.1,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 13,
+      "endMin": 16.3,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.4,
+      "setupMin": 2.4,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 16.2,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.7,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.9,
+      "endMin": 14.9,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 2,
+      "setupMin": 0.7,
+      "runner": "codebuild-bpf-ci-45703356951-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 27.7,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 19.6,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 13.8,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 18.8,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 6.2,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 19.8,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 7.2,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 27.8,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.5,
+      "createdMin": 12.5,
+      "startMin": 12.6,
+      "endMin": 28.7,
+      "blockedMin": 12.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 16.1,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 14.7,
+      "createdMin": 14.7,
+      "startMin": 17.8,
+      "endMin": 35.8,
+      "blockedMin": 14.7,
+      "hiddenMin": 0,
+      "queueMin": 3.1,
+      "workMin": 18,
+      "setupMin": 0.9,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 17.9,
+      "endMin": 34.3,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 16.5,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 15.5,
+      "createdMin": 15.5,
+      "startMin": 16.3,
+      "endMin": 37.3,
+      "blockedMin": 15.5,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 21,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 15.6,
+      "createdMin": 15.6,
+      "startMin": 26.4,
+      "endMin": 40.8,
+      "blockedMin": 15.6,
+      "hiddenMin": 0,
+      "queueMin": 10.8,
+      "workMin": 14.4,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 16.3,
+      "createdMin": 16.3,
+      "startMin": 30.6,
+      "endMin": 44.1,
+      "blockedMin": 16.3,
+      "hiddenMin": 0,
+      "queueMin": 14.3,
+      "workMin": 13.5,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45703308176,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 52.4,
+    "path": [
+     "set-matrix",
+     "s390x gcc-15 / build / build kernel and selftests",
+     "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.6,
+      "endMin": 8.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.6,
+      "workMin": 6.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 15.6,
+      "endMin": 18.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 15.6,
+      "workMin": 3,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.6,
+      "endMin": 14.3,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.7,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.7,
+      "endMin": 14.8,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.1,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.7,
+      "endMin": 14.9,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.3,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.7,
+      "endMin": 14,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.3,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 8.4,
+      "createdMin": 8.4,
+      "startMin": 8.7,
+      "endMin": 13.6,
+      "blockedMin": 8.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.9,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 14.2,
+      "endMin": 34.7,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 20.4,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 31.1,
+      "endMin": 32.3,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 17.5,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 33.4,
+      "endMin": 50.8,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 19.8,
+      "workMin": 17.4,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 35,
+      "endMin": 52.4,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 21.4,
+      "workMin": 17.4,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 14.2,
+      "endMin": 16.5,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 14.2,
+      "endMin": 17.6,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.4,
+      "setupMin": 2.4,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 15.8,
+      "endMin": 31.1,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 1.8,
+      "workMin": 15.4,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 18.2,
+      "endMin": 24.6,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 4.3,
+      "workMin": 6.4,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 18.1,
+      "endMin": 33.4,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 4.1,
+      "workMin": 15.4,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 17.3,
+      "endMin": 34,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 16.8,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 20.9,
+      "endMin": 22.1,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 6.9,
+      "workMin": 1.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 14.6,
+      "endMin": 16.9,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 15.2,
+      "endMin": 18.9,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 3.7,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 14.4,
+      "endMin": 33.9,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.5,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 14.4,
+      "endMin": 34.1,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 19.7,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 17.3,
+      "endMin": 36.6,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 19.3,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 15.4,
+      "endMin": 16.1,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 15,
+      "endMin": 18.3,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 2.2,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 15.1,
+      "endMin": 17.2,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.2,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703308176-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 27.2,
+      "endMin": 31.1,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 12.4,
+      "workMin": 3.9,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 17.4,
+      "endMin": 22.2,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 4.8,
+      "setupMin": 1,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 21.5,
+      "endMin": 36.1,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 6.7,
+      "workMin": 14.6,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 30.9,
+      "endMin": 37.8,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 16.1,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 32.2,
+      "endMin": 47.5,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 17.4,
+      "workMin": 15.3,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 28.2,
+      "endMin": 44.6,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 13.4,
+      "workMin": 16.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 28.3,
+      "endMin": 35.6,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 13.5,
+      "workMin": 7.4,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 33.5,
+      "endMin": 39.3,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 18.7,
+      "workMin": 5.8,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 33.4,
+      "endMin": 34.7,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 18.6,
+      "workMin": 1.3,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 16.5,
+      "createdMin": 16.5,
+      "startMin": 20.5,
+      "endMin": 38.5,
+      "blockedMin": 16.5,
+      "hiddenMin": 0,
+      "queueMin": 4,
+      "workMin": 18,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 16.9,
+      "createdMin": 16.9,
+      "startMin": 30.8,
+      "endMin": 52,
+      "blockedMin": 16.9,
+      "hiddenMin": 0,
+      "queueMin": 14,
+      "workMin": 21.2,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 17.2,
+      "createdMin": 17.2,
+      "startMin": 22.4,
+      "endMin": 38.9,
+      "blockedMin": 17.2,
+      "hiddenMin": 0,
+      "queueMin": 5.2,
+      "workMin": 16.6,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 17.6,
+      "createdMin": 17.6,
+      "startMin": 28.3,
+      "endMin": 42.9,
+      "blockedMin": 17.6,
+      "hiddenMin": 0,
+      "queueMin": 10.6,
+      "workMin": 14.6,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 18.3,
+      "createdMin": 18.3,
+      "startMin": 29.6,
+      "endMin": 43.4,
+      "blockedMin": 18.3,
+      "hiddenMin": 0,
+      "queueMin": 11.3,
+      "workMin": 13.8,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45703209647,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 43.8,
+    "path": [
+     "set-matrix",
+     "s390x gcc-15 / build / build kernel and selftests",
+     "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 3.9,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 3.9,
+      "workMin": 1.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.2,
+      "endMin": 16.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.2,
+      "workMin": 3.5,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 6,
+      "endMin": 11.8,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.8,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 6,
+      "endMin": 12.2,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.2,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 6,
+      "endMin": 12.4,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.4,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 9.1,
+      "endMin": 14,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 4.9,
+      "setupMin": 0.7,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 5.8,
+      "createdMin": 5.8,
+      "startMin": 6,
+      "endMin": 11.4,
+      "blockedMin": 5.8,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.7,
+      "endMin": 14.8,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.2,
+      "setupMin": 2.1,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.6,
+      "endMin": 13.6,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2,
+      "setupMin": 0.7,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.4,
+      "endMin": 12.7,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.4,
+      "endMin": 28.7,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.3,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.4,
+      "endMin": 27.7,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.4,
+      "endMin": 17.7,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 11.4,
+      "createdMin": 11.4,
+      "startMin": 11.4,
+      "endMin": 28.8,
+      "blockedMin": 11.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 14.7,
+      "endMin": 17,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 3,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 12.8,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 30.8,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 31.5,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.7,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 15.4,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 11.8,
+      "createdMin": 11.8,
+      "startMin": 11.8,
+      "endMin": 31.3,
+      "blockedMin": 11.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.5,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.4,
+      "endMin": 14.7,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.3,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 17.7,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 1,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 15.1,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 15.5,
+      "endMin": 18.8,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 3.3,
+      "workMin": 3.3,
+      "setupMin": 2.4,
+      "runner": "codebuild-bpf-ci-45703209647-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 27.7,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.5,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 19.6,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 13.4,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.2,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 18.7,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 27.8,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.6,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 19.6,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 12.2,
+      "endMin": 28.8,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.6,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 13.6,
+      "createdMin": 13.6,
+      "startMin": 13.6,
+      "endMin": 31.3,
+      "blockedMin": 13.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 17.7,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 32.2,
+      "endMin": 33.5,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 18.2,
+      "workMin": 1.3,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 24.4,
+      "endMin": 43.8,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 10.4,
+      "workMin": 19.4,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 14.7,
+      "endMin": 35.6,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 0.7,
+      "workMin": 20.9,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 22.2,
+      "endMin": 42.4,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 8.2,
+      "workMin": 20.2,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 14.7,
+      "createdMin": 14.7,
+      "startMin": 20.1,
+      "endMin": 36.6,
+      "blockedMin": 14.7,
+      "hiddenMin": 0,
+      "queueMin": 5.4,
+      "workMin": 16.5,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 14.8,
+      "createdMin": 14.8,
+      "startMin": 15.6,
+      "endMin": 29.8,
+      "blockedMin": 14.8,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 14.3,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 17,
+      "createdMin": 17,
+      "startMin": 19.7,
+      "endMin": 40.6,
+      "blockedMin": 17,
+      "hiddenMin": 0,
+      "queueMin": 2.7,
+      "workMin": 20.9,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 18.8,
+      "createdMin": 18.8,
+      "startMin": 23.6,
+      "endMin": 37.5,
+      "blockedMin": 18.8,
+      "hiddenMin": 0,
+      "queueMin": 4.8,
+      "workMin": 13.9,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45701540554,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 79.6,
+    "path": [
+     "set-matrix",
+     "s390x gcc-15 / build / build kernel and selftests",
+     "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 13.9,
+      "endMin": 17.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 13.9,
+      "workMin": 3.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.1,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.5,
+      "createdMin": 17.5,
+      "startMin": 17.7,
+      "endMin": 23.5,
+      "blockedMin": 17.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.9,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.5,
+      "createdMin": 17.5,
+      "startMin": 20,
+      "endMin": 26,
+      "blockedMin": 17.5,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 6,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.5,
+      "createdMin": 17.5,
+      "startMin": 20,
+      "endMin": 25.1,
+      "blockedMin": 17.5,
+      "hiddenMin": 0,
+      "queueMin": 2.6,
+      "workMin": 5.1,
+      "setupMin": 0.9,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 17.5,
+      "createdMin": 17.5,
+      "startMin": 17.7,
+      "endMin": 23.1,
+      "blockedMin": 17.5,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 5.4,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.3,
+      "endMin": 25.3,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.1,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 30.1,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.1,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 38.2,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.1,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 30.3,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 39.6,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 16.5,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 23.9,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 38.2,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.1,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 23.1,
+      "createdMin": 23.1,
+      "startMin": 23.1,
+      "endMin": 29.6,
+      "blockedMin": 23.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.8,
+      "endMin": 26.2,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.4,
+      "setupMin": 0.9,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.6,
+      "endMin": 43.1,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.6,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.6,
+      "endMin": 42.8,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.6,
+      "endMin": 24.7,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.6,
+      "endMin": 42.7,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 23.5,
+      "createdMin": 23.5,
+      "startMin": 23.6,
+      "endMin": 26.9,
+      "blockedMin": 23.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.4,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 54.9,
+      "endMin": 71.2,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 29.8,
+      "workMin": 16.3,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 45,
+      "endMin": 46,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 19.8,
+      "workMin": 1,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 62.6,
+      "endMin": 78.1,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 37.4,
+      "workMin": 15.5,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 25.1,
+      "createdMin": 25.1,
+      "startMin": 64.3,
+      "endMin": 79.6,
+      "blockedMin": 25.1,
+      "hiddenMin": 0,
+      "queueMin": 39.2,
+      "workMin": 15.3,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 25.3,
+      "createdMin": 25.4,
+      "startMin": 31.1,
+      "endMin": 47.5,
+      "blockedMin": 25.3,
+      "hiddenMin": 0,
+      "queueMin": 5.7,
+      "workMin": 16.4,
+      "setupMin": 0.9,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 26.3,
+      "endMin": 28.6,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.4,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45701540554-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 28.5,
+      "endMin": 43.7,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 2.4,
+      "workMin": 15.3,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 29.6,
+      "endMin": 30.9,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 1.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 29.7,
+      "endMin": 44.9,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 3.7,
+      "workMin": 15.2,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 33.8,
+      "endMin": 50.1,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 7.8,
+      "workMin": 16.3,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 26,
+      "createdMin": 26,
+      "startMin": 38,
+      "endMin": 43.4,
+      "blockedMin": 26,
+      "hiddenMin": 0,
+      "queueMin": 11.9,
+      "workMin": 5.4,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 26.2,
+      "createdMin": 26.2,
+      "startMin": 26.6,
+      "endMin": 47.7,
+      "blockedMin": 26.2,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 21.1,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 28.6,
+      "createdMin": 28.6,
+      "startMin": 42.8,
+      "endMin": 59.9,
+      "blockedMin": 28.6,
+      "hiddenMin": 0,
+      "queueMin": 14.2,
+      "workMin": 17.2,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45700629355,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 41,
+    "path": [
+     "set-matrix",
+     "s390x gcc-15 / build / build kernel and selftests",
+     "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15"
+    ],
+    "topBlocker": "set-matrix",
+    "jobs": [
+     {
+      "name": "set-matrix",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-slim",
+      "vcpus": 1
+     },
+     {
+      "name": "Test build commands / bpftool / Test bpftool build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.9,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "x86_64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 6,
+      "endMin": 11.9,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 5.9,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 7.6,
+      "endMin": 13.7,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 3.5,
+      "workMin": 6,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 6,
+      "endMin": 12.4,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 6.4,
+      "setupMin": 0.5,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 7.1,
+      "endMin": 12.2,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 5.2,
+      "setupMin": 0.8,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / build / build kernel and selftests",
+      "needs": [
+       "set-matrix"
+      ],
+      "readyMin": 4.2,
+      "createdMin": 4.2,
+      "startMin": 6.2,
+      "endMin": 12,
+      "blockedMin": 4.2,
+      "hiddenMin": 0,
+      "queueMin": 2,
+      "workMin": 5.9,
+      "setupMin": 0.6,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 15.7,
+      "endMin": 18.9,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 3.2,
+      "setupMin": 2.3,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 11.9,
+      "endMin": 15.5,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.5,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 17.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 1,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 17.7,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 27.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.5,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 15.7,
+      "endMin": 17.7,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 3.8,
+      "workMin": 2,
+      "setupMin": 0.7,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 19.1,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.1,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 19.2,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 27.2,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.2,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 27.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.4,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+      "needs": [
+       "build-and-test/build@x86_64 gcc-15"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 12,
+      "endMin": 12.8,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.4,
+      "endMin": 14.9,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 2.5,
+      "setupMin": 0.9,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 15.7,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 3.7,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 31.7,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.6,
+      "setupMin": 0.5,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 12.8,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 31.7,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.6,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+      "needs": [
+       "build-and-test/build@aarch64 gcc-15"
+      ],
+      "readyMin": 12,
+      "createdMin": 12,
+      "startMin": 12.1,
+      "endMin": 31.2,
+      "blockedMin": 12,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.1,
+      "setupMin": 0.2,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 19.1,
+      "endMin": 37.5,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 6.9,
+      "workMin": 18.4,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 21.2,
+      "endMin": 22.3,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 9,
+      "workMin": 1.1,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 22,
+      "endMin": 41,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 9.8,
+      "workMin": 18.9,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+      "needs": [
+       "build-and-test/build@s390x gcc-15"
+      ],
+      "readyMin": 12.2,
+      "createdMin": 12.2,
+      "startMin": 22,
+      "endMin": 40.9,
+      "blockedMin": 12.2,
+      "hiddenMin": 0,
+      "queueMin": 9.8,
+      "workMin": 18.9,
+      "setupMin": 0.4,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 15.7,
+      "endMin": 18.2,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 2.4,
+      "setupMin": 0.9,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 15.7,
+      "endMin": 19,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 2.1,
+      "workMin": 3.3,
+      "setupMin": 2.3,
+      "runner": "codebuild-bpf-ci-45700629355-1",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 17.3,
+      "endMin": 33.1,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 3.6,
+      "workMin": 15.8,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 17.9,
+      "endMin": 19.2,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 1.4,
+      "setupMin": 0.7,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 17.9,
+      "endMin": 33.5,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 15.6,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 17.9,
+      "endMin": 33.8,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 15.9,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+      "needs": [
+       "build-and-test/build@x86_64 llvm-21"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 17.9,
+      "endMin": 24,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 4.2,
+      "workMin": 6.1,
+      "setupMin": 0.6,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 14.9,
+      "createdMin": 14.9,
+      "startMin": 17.8,
+      "endMin": 38.2,
+      "blockedMin": 14.9,
+      "hiddenMin": 0,
+      "queueMin": 2.9,
+      "workMin": 20.4,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+      ],
+      "readyMin": 17.7,
+      "createdMin": 17.7,
+      "startMin": 18.6,
+      "endMin": 34.7,
+      "blockedMin": 17.7,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 16.1,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+      "needs": [
+       "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+      ],
+      "readyMin": 18.2,
+      "createdMin": 18.2,
+      "startMin": 20.1,
+      "endMin": 36.9,
+      "blockedMin": 18.2,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 16.8,
+      "setupMin": 0.9,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+      ],
+      "readyMin": 18.9,
+      "createdMin": 18.9,
+      "startMin": 20.8,
+      "endMin": 34.8,
+      "blockedMin": 18.9,
+      "hiddenMin": 0,
+      "queueMin": 1.9,
+      "workMin": 14,
+      "setupMin": 0.8,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     },
+     {
+      "name": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+      "needs": [
+       "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+      ],
+      "readyMin": 19,
+      "createdMin": 19,
+      "startMin": 21.2,
+      "endMin": 35.4,
+      "blockedMin": 19,
+      "hiddenMin": 0,
+      "queueMin": 2.2,
+      "workMin": 14.2,
+      "setupMin": 0.3,
+      "runner": "docker-noble-main",
+      "vcpus": null
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 14,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": null,
+  "mergeQueue": null,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": null,
+  "packageManager": null,
+  "fastLint": null,
+  "eslint": null,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": null,
+  "preCommit": null,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/test.yml",
+   "pathFilters": ".github/workflows/ai-agent.yml",
+   "scheduled": ".github/workflows/ai-agent.yml",
+   "depCache": ".github/workflows/ai-agent.yml",
+   "timeouts": ".github/workflows/ai-code-review.yml"
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C",
+    98
+   ],
+   [
+    "Assembly",
+    1
+   ],
+   [
+    "Rust",
+    0
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": null,
+  "testRunners": null,
+  "lintFormat": [
+   "Black",
+   "Pylint",
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": null,
+  "runners": [
+   [
+    "self-hosted",
+    164
+   ],
+   [
+    "GitHub-hosted",
+    12
+   ],
+   [
+    "codebuild-bpf-ci-45703444683-1",
+    10
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": null,
+   "edges": null,
+   "cycles": null,
+   "maxDepth": null,
+   "topFanIn": null
+  },
+  "unknown": [
+   "GitHub cut the file tree short, so a file past the cut can't be checked",
+   "Not every workflow file was read"
+  ]
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": null,
+    "edges": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": null,
+   "chain": [],
+   "topFanIn": null,
+   "unknown": [
+    "Not every manifest, or a file that declares a workspace, was read, so packages or edges may be missing"
+   ]
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": null,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 1
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "The package graph is unknown, so each entry's importers and overload count only what the files read show"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": null
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": [
+    "GitHub cut the file tree short, so how many files each task's inputs cover is unknown, and none is flagged wide"
+   ]
+  },
+  "jobs": {
+   "count": {
+    "nodes": 11,
+    "edges": 27,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "set-matrix",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 2.1,
+     "workMin": 4.5,
+     "runner": "ubuntu-slim",
+     "vcpus": 1
+    },
+    {
+     "id": "Test build commands / bpftool / Test bpftool build",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 10,
+     "workMin": 3.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "x86_64 gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 6.6,
+     "queueMin": 0.2,
+     "workMin": 5.5,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 6.6,
+     "queueMin": 0.3,
+     "workMin": 5.8,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 6.6,
+     "queueMin": 0.2,
+     "workMin": 6.2,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": false,
+     "blockedMin": 6.6,
+     "queueMin": 0.3,
+     "workMin": 6.1,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "s390x gcc-15 / build / build kernel and selftests",
+     "needs": [
+      "set-matrix"
+     ],
+     "onPath": true,
+     "blockedMin": 6.6,
+     "queueMin": 0.2,
+     "workMin": 4.9,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 11.8,
+     "queueMin": 0,
+     "workMin": 1.4,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": true,
+     "blockedMin": 11.8,
+     "queueMin": 21.9,
+     "workMin": 17,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 11.8,
+     "queueMin": 0,
+     "workMin": 20.5,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+     "needs": [
+      "build-and-test/build@s390x gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 11.8,
+     "queueMin": 20.4,
+     "workMin": 17.3,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 0.2,
+     "workMin": 3,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 4.3,
+     "workMin": 3.2,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 0.2,
+     "workMin": 4.5,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 0.2,
+     "workMin": 2.3,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 1.3,
+     "workMin": 7.5,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 3.2,
+     "workMin": 15.5,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 3.5,
+     "workMin": 5.7,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 7,
+     "workMin": 7.7,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 6,
+     "workMin": 1.1,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 5.4,
+     "workMin": 15.8,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+     "needs": [
+      "build-and-test/build@x86_64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.3,
+     "queueMin": 5.4,
+     "workMin": 14.6,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0.3,
+     "workMin": 2.3,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0,
+     "workMin": 19.2,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0.5,
+     "workMin": 1,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0.1,
+     "workMin": 19.6,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0.8,
+     "workMin": 19.4,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+     "needs": [
+      "build-and-test/build@aarch64 gcc-15"
+     ],
+     "onPath": false,
+     "blockedMin": 12.7,
+     "queueMin": 0.3,
+     "workMin": 3.4,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 1.4,
+     "workMin": 3.4,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 0.2,
+     "workMin": 2.2,
+     "runner": "codebuild-bpf-ci-45703444683-1",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 13.8,
+     "workMin": 6.4,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 13.8,
+     "workMin": 15.9,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 14.1,
+     "workMin": 16,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 14.2,
+     "workMin": 1.2,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+     "needs": [
+      "build-and-test/build@x86_64 llvm-21"
+     ],
+     "onPath": false,
+     "blockedMin": 13.1,
+     "queueMin": 15.6,
+     "workMin": 15.8,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+     ],
+     "onPath": false,
+     "blockedMin": 14.9,
+     "queueMin": 0.4,
+     "workMin": 16.7,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+     ],
+     "onPath": false,
+     "blockedMin": 15.2,
+     "queueMin": 0.1,
+     "workMin": 20.6,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+     "needs": [
+      "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+     ],
+     "onPath": false,
+     "blockedMin": 15.5,
+     "queueMin": 10.3,
+     "workMin": 16.8,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+     "needs": [
+      "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+     ],
+     "onPath": false,
+     "blockedMin": 15.6,
+     "queueMin": 3.1,
+     "workMin": 13.8,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    },
+    {
+     "id": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+     "needs": [
+      "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+     ],
+     "onPath": false,
+     "blockedMin": 17.9,
+     "queueMin": 6.1,
+     "workMin": 14.7,
+     "runner": "docker-noble-main",
+     "vcpus": null
+    }
+   ],
+   "edges": [
+    {
+     "from": "x86_64 gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "aarch64 gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "x86_64 llvm-21 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "x86_64 llvm-21 / build-release / build kernel and selftests -O2",
+     "to": "set-matrix"
+    },
+    {
+     "from": "s390x gcc-15 / build / build kernel and selftests",
+     "to": "set-matrix"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_verifier, false, 360) / test_verifier on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "s390x gcc-15 / test (test_progs, false, 360) / test_progs on s390x with gcc-15",
+     "to": "build-and-test/build@s390x gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / GCC BPF / GCC BPF build",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / veristat-meta / veristat-meta",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / veristat-oss / veristat-oss",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_parallel, true, 30) / test_progs_parallel on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs, false, 360) / test_progs on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_maps, false, 360) / test_maps on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_no_alu32_parallel, true, 30) / test_progs_no_alu32_parallel on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_verifier, false, 360) / test_verifier on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "x86_64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with gcc-15",
+     "to": "build-and-test/build@x86_64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_verifier, false, 360) / test_verifier on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_progs, false, 360) / test_progs on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "aarch64 gcc-15 / test (test_maps, false, 360) / test_maps on aarch64 with gcc-15",
+     "to": "build-and-test/build@aarch64 gcc-15"
+    },
+    {
+     "from": "x86_64 llvm-21 / GCC BPF / GCC BPF build",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test_progs with ASAN / build test_progs with ASAN",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_maps, false, 360) / test_maps on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs_no_alu32, false, 360) / test_progs_no_alu32 on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_verifier, false, 360) / test_verifier on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 llvm-21 / test (test_progs, false, 360) / test_progs on x86_64 with llvm-21",
+     "to": "build-and-test/build@x86_64 llvm-21"
+    },
+    {
+     "from": "x86_64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@x86_64 gcc-15 / test_progs with ASAN"
+    },
+    {
+     "from": "aarch64 gcc-15 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@aarch64 gcc-15 / test_progs with ASAN"
+    },
+    {
+     "from": "x86_64 llvm-21 / test_progs with ASAN / test_progs ASAN",
+     "to": "build-and-test/test-progs-asan/build@x86_64 llvm-21 / test_progs with ASAN"
+    },
+    {
+     "from": "x86_64 gcc-15 / GCC BPF / GCC BPF",
+     "to": "build-and-test/gcc-bpf/build@x86_64 gcc-15 / GCC BPF"
+    },
+    {
+     "from": "x86_64 llvm-21 / GCC BPF / GCC BPF",
+     "to": "build-and-test/gcc-bpf/build@x86_64 llvm-21 / GCC BPF"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "set-matrix",
+     "numbers": {
+      "heldJobs": 38,
+      "jobs": 40,
+      "heldJobMin": 246.4,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "set-matrix",
+    "s390x gcc-15 / build / build kernel and selftests",
+    "s390x gcc-15 / test (test_progs_cpuv4, false, 360) / test_progs_cpuv4 on s390x with gcc-15"
+   ],
+   "pathMinP50": 44.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "A blocker most jobs wait on: \"set-matrix\" holds up 38 of 40 jobs, 246.4 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  },
+  {
+   "text": "p90 is 2.7× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Jobs wait 830 s for a runner at p90",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C it applies the principles, without a C-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 86,
+ "read": {
+  "calls": 86,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

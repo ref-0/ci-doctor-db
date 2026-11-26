@@ -1,0 +1,1618 @@
+{
+ "repo": "KnifeLemon/Filee",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.2,
+  "stars": 31185,
+  "forks": 1796,
+  "languages": [
+   [
+    "C#",
+    98
+   ],
+   [
+    "PowerShell",
+    1
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "linesOfCode": 549831,
+  "files": 1565,
+  "sourceFiles": 1257,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 297372,
+   "tests": 252459,
+   "integration": 0,
+   "support": 0
+  },
+  "testShare": 0.45915729803718014,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 55.5,
+  "pace": 6.9,
+  "activeAuthors28d": "≥21",
+  "prsOpenedPerWeek": 76.7,
+  "prsMergedPerWeek": 63.4,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 5.9,
+   "p90": 81,
+   "n": 71
+  },
+  "prRunsPerDay": 32.1,
+  "runsPerMergedPr": 3.5
+ },
+ "window": {
+  "days": 7.8,
+  "runs": 168,
+  "runsInPeriod": 175,
+  "truncated": false,
+  "mainDays": 7.8
+ },
+ "size": "medium",
+ "headsPerWeek": 150,
+ "score": 27,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 1,
+  "reliability": 57,
+  "efficiency": 74
+ },
+ "detail": {
+  "speed": {
+   "wait": 3,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 26,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 19,
+   "runsPerPr": 100,
+   "setup": 92,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 6641.9,
+  "prBilledMinutesPerDay": 6784.5,
+  "jobMinutesPerMergedPr": 733.9,
+  "prVcpuMinutesPerDay": 26567.7,
+  "vcpuMinutesPerMergedPr": 2935.6,
+  "expectedVcpuMinutesPerMergedPr": 1088.1,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 272,
+  "expectedWait": 14.8,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "1 rerun's first attempt wasn't read"
+  ],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 168,
+  "ranHeads": 160,
+  "timed": 100,
+  "p50": 101.1,
+  "p75": 135.71666666666667,
+  "p90": 176.5,
+  "redRate": 0.20625,
+  "rerunRate": 0.19375,
+  "passedOnRerunRate": 0.091,
+  "rerunsUnread": 1,
+  "cancelledRate": 0.18125,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 5,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    100
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    33
+   ]
+  ],
+  "leftOut": [
+   "Label pull requests"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 101.1
+ },
+ "main": {
+  "heads": 42,
+  "p50": 98.41666666666667,
+  "p90": 155.95,
+  "redRate": 0.023809523809523808,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 11,
+  "spanMin": 86.55,
+  "jobMinutes": 329.7666666666667,
+  "billedMinutes": 337,
+  "subMinuteJobs": 6,
+  "queueP50Sec": 2,
+  "queueP90Sec": 4,
+  "setupShare": 0.019491368108409134,
+  "setupMinPerJob": 0.5884615384615385,
+  "critical": {
+   "name": "build",
+   "minutes": 0.05,
+   "shareOfSpan": 0.0005777007510109764
+  },
+  "longest": {
+   "name": "windows / build (win-arm64)",
+   "minutes": 87.16666666666667
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    59
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 8,
+  "edges": 13,
+  "matrixJobs": 3,
+  "reusableCalls": 2,
+  "gateEnd": [
+   {
+    "name": "build",
+    "runs": 5
+   },
+   {
+    "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "changes",
+    "minutes": 0.2,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   },
+   {
+    "name": "windows / build (win-x64)",
+    "minutes": 86.2,
+    "share": 1,
+    "blockedMin": 0.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 86.1,
+    "setupMin": 2.5
+   },
+   {
+    "name": "build",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 86.5,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 2,
+  "pathJobsP50": 3,
+  "pathMinP50": 86.6,
+  "blockedMinP50": 86.5,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 86.4,
+  "setupInPathMinP50": 2.5,
+  "topBlockers": [
+   {
+    "name": "portable / portable",
+    "runs": 5,
+    "heldJobs": 2,
+    "jobs": 11,
+    "tookMin": 84.6,
+    "heldJobMin": 169.2
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45685340938,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 20.7,
+    "path": [
+     "changes",
+     "build"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 20.1,
+      "endMin": 20.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 20.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 20.3,
+      "createdMin": 20.3,
+      "startMin": 20.7,
+      "endMin": 20.7,
+      "blockedMin": 20.3,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 0,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45659729603,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 97.4,
+    "path": [
+     "changes",
+     "windows / build (win-x64)",
+     "build"
+    ],
+    "topBlocker": "portable / portable",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "metadata (linux-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 10.2,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-x64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-arm64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 88.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 88.5,
+      "setupMin": 3.5,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 97.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 97.1,
+      "setupMin": 2.5,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 85.1,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 84.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04, linux-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 77.9,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 77.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-x64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 85.1,
+      "createdMin": 85.1,
+      "startMin": 85.1,
+      "endMin": 85.9,
+      "blockedMin": 85.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 85.1,
+      "createdMin": 85.1,
+      "startMin": 85.1,
+      "endMin": 86.1,
+      "blockedMin": 85.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 97.4,
+      "createdMin": 97.4,
+      "startMin": 97.4,
+      "endMin": 97.4,
+      "blockedMin": 97.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45659722073,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 97.6,
+    "path": [
+     "changes",
+     "windows / build (win-arm64)",
+     "build"
+    ],
+    "topBlocker": "portable / portable",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "metadata (linux-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 10.7,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 82.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 82.3,
+      "setupMin": 2.3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-x64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-arm64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 97.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 97.3,
+      "setupMin": 3,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04, linux-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 67.4,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 66.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.5,
+      "createdMin": 0.5,
+      "startMin": 0.5,
+      "endMin": 86,
+      "blockedMin": 0.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 85.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-x64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 86,
+      "createdMin": 86,
+      "startMin": 86,
+      "endMin": 86.9,
+      "blockedMin": 86,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 86,
+      "createdMin": 86,
+      "startMin": 86,
+      "endMin": 86.8,
+      "blockedMin": 86,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 97.6,
+      "createdMin": 97.6,
+      "startMin": 97.6,
+      "endMin": 97.6,
+      "blockedMin": 97.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45659715974,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 86.6,
+    "path": [
+     "changes",
+     "windows / build (win-arm64)",
+     "build"
+    ],
+    "topBlocker": "portable / portable",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "metadata (linux-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 12.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-arm64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 86.5,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 86.3,
+      "setupMin": 3.8,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 66.8,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 66.6,
+      "setupMin": 2.6,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-x64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 82.9,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 82.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04, linux-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 49.4,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 48.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-x64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 82.9,
+      "createdMin": 82.9,
+      "startMin": 82.9,
+      "endMin": 83.8,
+      "blockedMin": 82.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 82.9,
+      "createdMin": 82.9,
+      "startMin": 83,
+      "endMin": 83.9,
+      "blockedMin": 82.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 86.5,
+      "createdMin": 86.5,
+      "startMin": 86.5,
+      "endMin": 86.6,
+      "blockedMin": 86.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45659705868,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 87.6,
+    "path": [
+     "changes",
+     "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+     "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+     "portable / Package on Ubuntu 22.04 (linux-arm64)"
+    ],
+    "topBlocker": "portable / portable",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.3,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "metadata (linux-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 9.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-x64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 0.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-arm64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 87.4,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 87.2,
+      "setupMin": 2.7,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 86.9,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 86.6,
+      "setupMin": 3,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04, linux-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 58.8,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 58.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.4,
+      "createdMin": 0.4,
+      "startMin": 0.5,
+      "endMin": 86.6,
+      "blockedMin": 0.4,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 86.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-x64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 86.6,
+      "createdMin": 86.6,
+      "startMin": 86.7,
+      "endMin": 87.5,
+      "blockedMin": 86.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 86.6,
+      "createdMin": 86.6,
+      "startMin": 86.7,
+      "endMin": 87.6,
+      "blockedMin": 86.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 87.4,
+      "createdMin": 87.4,
+      "startMin": 87.5,
+      "endMin": 87.5,
+      "blockedMin": 87.4,
+      "hiddenMin": 0.1,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45572456434,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 86.5,
+    "path": [
+     "changes",
+     "windows / build (win-x64)",
+     "build"
+    ],
+    "topBlocker": "portable / portable",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "metadata (linux-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 9.4,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-x64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 86.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 86.1,
+      "setupMin": 2.9,
+      "runner": "windows-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "windows / build (win-arm64)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 82.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 82.1,
+      "setupMin": 2.9,
+      "runner": "windows-11-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-arm64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.4,
+      "endMin": 0.6,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Linux native linux-x64 (Ubuntu 22.04)",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.3,
+      "createdMin": 0.3,
+      "startMin": 0.3,
+      "endMin": 0.5,
+      "blockedMin": 0.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (macos-15-intel, osx-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 49.9,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 49.3,
+      "setupMin": 0.4,
+      "runner": "macos-15-intel",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04, linux-x64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 73.5,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 72.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (ubuntu-24.04-arm, linux-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.7,
+      "endMin": 62.4,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 61.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-24.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / portable (macos-15, osx-arm64)",
+      "needs": [
+       "portable/linux-native@portable"
+      ],
+      "readyMin": 0.6,
+      "createdMin": 0.6,
+      "startMin": 0.6,
+      "endMin": 40.3,
+      "blockedMin": 0.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 39.7,
+      "setupMin": 0.3,
+      "runner": "macos-15",
+      "vcpus": 3
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-arm64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 73.5,
+      "createdMin": 73.5,
+      "startMin": 73.5,
+      "endMin": 74.4,
+      "blockedMin": 73.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04-arm",
+      "vcpus": 4
+     },
+     {
+      "name": "portable / Package on Ubuntu 22.04 (linux-x64)",
+      "needs": [
+       "portable/portable@portable"
+      ],
+      "readyMin": 73.5,
+      "createdMin": 73.5,
+      "startMin": 73.5,
+      "endMin": 75,
+      "blockedMin": 73.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-22.04",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "changes",
+       "windows"
+      ],
+      "readyMin": 86.5,
+      "createdMin": 86.5,
+      "startMin": 86.5,
+      "endMin": 86.5,
+      "blockedMin": 86.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 9,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": true,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": null,
+  "agentsMd": [],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "pathFilters": ".github/workflows/windows-arm64-native.yml",
+   "affected": ".github/workflows/ci.yml",
+   "depCache": ".github/workflows/build.yml",
+   "timeouts": ".github/workflows/build.yml",
+   "testResults": ".github/workflows/build.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "C#",
+    98
+   ],
+   [
+    "PowerShell",
+    1
+   ],
+   [
+    "Python",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    59
+   ]
+  ],
+  "agentFiles": [],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 1565
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 13,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 20.1,
+     "workMin": 0.1,
+     "runner": "ubuntu-24.04",
+     "vcpus": 4
+    },
+    {
+     "id": "build",
+     "needs": [
+      "changes",
+      "windows"
+     ],
+     "onPath": true,
+     "blockedMin": 20.3,
+     "queueMin": 0.4,
+     "workMin": 0,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "build",
+     "to": "changes"
+    },
+    {
+     "from": "build",
+     "to": "windows"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "changes",
+    "windows / build (win-x64)",
+    "build"
+   ],
+   "pathMinP50": 86.6,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"windows / build (win-arm64)\" runs 87 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "9% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "No AGENTS.md: agents working here have no instructions, such as how to run one test",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/15-the-agent-workflow-around-ci.md"
+  },
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For C# it applies the principles, without a C#-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 85,
+ "read": {
+  "calls": 85,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

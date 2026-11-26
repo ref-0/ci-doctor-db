@@ -1,0 +1,974 @@
+{
+ "repo": "antiwork/gumroad",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "unscored": "Pull requests here wait on Buildkite, outside GitHub Actions: on 3 of 3 sampled pushes it was still running when the Actions checks finished, until at least 9.5 minutes after the push against 0.6 minutes at the median. The score reads only GitHub Actions.",
+ "profile": {
+  "ageYears": 1.6,
+  "stars": 10210,
+  "forks": 2138,
+  "languages": [
+   [
+    "Ruby",
+    80
+   ],
+   [
+    "TypeScript",
+    16
+   ],
+   [
+    "HTML",
+    4
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "linesOfCode": 1588547,
+  "files": 12642,
+  "sourceFiles": 7277,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 538432,
+   "tests": 1049076,
+   "integration": 1038,
+   "support": 0
+  },
+  "testShare": 0.6610535846290895,
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 1,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 94.8,
+  "pace": 1.7,
+  "activeAuthors28d": "≥5",
+  "prsOpenedPerWeek": 67.1,
+  "prsMergedPerWeek": 67.1,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.2,
+   "p90": 20.2,
+   "n": 72
+  },
+  "prRunsPerDay": 53.9,
+  "runsPerMergedPr": 5.6
+ },
+ "window": {
+  "days": 7.5,
+  "runs": 293,
+  "runsInPeriod": 293,
+  "truncated": false,
+  "mainDays": 7.5
+ },
+ "size": "large",
+ "headsPerWeek": 106,
+ "score": null,
+ "grade": null,
+ "band": null,
+ "parts": {},
+ "detail": {
+  "speed": {
+   "wait": 100,
+   "forSize": 100,
+   "tail": 93
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 95,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 9.5,
+  "prBilledMinutesPerDay": 53.9,
+  "jobMinutesPerMergedPr": 1,
+  "prVcpuMinutesPerDay": 38.2,
+  "vcpuMinutesPerMergedPr": 4,
+  "expectedVcpuMinutesPerMergedPr": 1544.3,
+  "sizedShare": 0.82,
+  "expectedMinutesPerMergedPr": 386.1,
+  "expectedWait": 20.6,
+  "workflowsOnPrs": 2
+ },
+ "evidence": {
+  "confidence": null,
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [
+    {
+     "ci": "Buildkite",
+     "path": ".buildkite/pipeline.yml"
+    }
+   ],
+   "pushes": [
+    {
+     "sha": "6ecdc11b865099a7c62a21d114be0693db29b567",
+     "actionsMin": 0.6,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 8.7
+      }
+     ]
+    },
+    {
+     "sha": "5079d6f984cba0cd60908f880809a0f26fc5d36d",
+     "actionsMin": 1.9,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 10.1
+      }
+     ]
+    },
+    {
+     "sha": "215600567b25d3e5bde820b070749385967e306f",
+     "actionsMin": 0.6,
+     "ci": [
+      {
+       "name": "Buildkite",
+       "minutes": 9.5
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "wait": {
+  "heads": 114,
+  "ranHeads": 114,
+  "timed": 112,
+  "p50": 0.7,
+  "p75": 2.3333333333333335,
+  "p90": 6.983333333333333,
+  "redRate": 0.16666666666666666,
+  "rerunRate": 0.008771929824561403,
+  "passedOnRerunRate": 0.008771929824561403,
+  "rerunsUnread": 0,
+  "cancelledRate": 0,
+  "botHeads": 0,
+  "lightHeads": 1,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Marketing readiness",
+    58
+   ],
+   [
+    "Tests",
+    54
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/marketing-readiness.yml",
+  "redBy": [
+   [
+    "Marketing readiness",
+    30
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "Marketing readiness"
+  ],
+  "allPushesP50": 0.7
+ },
+ "main": {
+  "heads": 82,
+  "p50": 11.05,
+  "p90": 15.083333333333334,
+  "redRate": 0.012195121951219513,
+  "redBy": [
+   [
+    "Tests",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 1,
+  "spanMin": 0.23333333333333334,
+  "jobMinutes": 0.2,
+  "billedMinutes": 1,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.875,
+  "setupMinPerJob": 0.13333333333333333,
+  "critical": {
+   "name": "marketing/ready",
+   "minutes": 0.2,
+   "shareOfSpan": 0.8666666666666667
+  },
+  "longest": {
+   "name": "marketing/ready",
+   "minutes": 0.2
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/marketing-readiness.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "marketing/ready",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "marketing/ready",
+    "minutes": 0.2,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.2,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 0.2,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 0.2,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45598660796,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45598631367,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45594639581,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45585652303,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.3,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45568292995,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45563830503,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.2,
+    "path": [
+     "marketing/ready"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "marketing/ready",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 12,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": true,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": true,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": true,
+  "preCommit": null,
+  "hints": [
+   {
+    "practice": "preCommit",
+    "path": ".githooks/pre-commit",
+    "kind": "config"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/tests.yml",
+   "affected": ".github/workflows/revert-red-main-deploy.yml",
+   "draftSkip": ".github/workflows/marketing-readiness.yml",
+   "scheduled": ".github/workflows/enforce-review-cycles.yml",
+   "depCache": ".github/workflows/build-test-image.yml",
+   "frozenInstall": ".github/workflows/tests.yml",
+   "shardsConfigured": ".github/workflows/rerun-main-spec-failure.yml",
+   "timeouts": ".github/workflows/build-test-image.yml",
+   "eslint": "package.json",
+   "agentRules": ".agents/skills/commit/SKILL.md"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "preCommit: .githooks/pre-commit hints at it, in a form the scorer doesn't check (config)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Ruby",
+    80
+   ],
+   [
+    "TypeScript",
+    16
+   ],
+   [
+    "HTML",
+    4
+   ],
+   [
+    "Shell",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm",
+    "Go modules",
+    "Bundler"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 1,
+   "cargo": 0,
+   "go": 1,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "go test",
+   "RSpec",
+   "Minitest"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "github.com/redis/go-redis/v9",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "@ai-sdk/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@anycable/web",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@boxicons/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@eslint/compat",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@inertiajs/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@paypal/paypal-js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@radix-ui/react-dialog",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@radix-ui/react-popover",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@radix-ui/react-slot",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@rails/activestorage",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stripe/react-stripe-js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@stripe/stripe-js",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tailwindcss/cli",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tailwindcss/postcss",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tailwindcss/typography",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@testing-library/dom",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@testing-library/react",
+    "ecosystem": "npm",
+    "packages": 1
+   },
+   {
+    "name": "@tiptap/core",
+    "ecosystem": "npm",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    6
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md",
+   ".claude/skills",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "gumroad",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "github.com/antiwork/gumroad/resend_callbacks",
+     "path": "resend_callbacks/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 0
+   },
+   "nodes": [
+    {
+     "id": "github.com/antiwork/gumroad/resend_callbacks",
+     "dir": "resend_callbacks",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "gumroad",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [
+    "gumroad"
+   ],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "packages": 1,
+    "packagesWithEntries": 1,
+    "filesRead": 1,
+    "undecided": 1
+   },
+   "nodes": [
+    {
+     "id": "gumroad#.",
+     "pkg": "gumroad",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": [
+    "1 entry of 1 unknown, such as gumroad#.: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 8,
+    "edges": 2,
+    "cached": 0,
+    "trackedFiles": 12642
+   },
+   "nodes": [
+    {
+     "id": "gumroad#build",
+     "pkg": "gumroad",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "gumroad#build:pages-tailwind",
+     "pkg": "gumroad",
+     "name": "build:pages-tailwind",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "gumroad#build:widget",
+     "pkg": "gumroad",
+     "name": "build:widget",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "gumroad#lint-fast",
+     "pkg": "gumroad",
+     "name": "lint-fast",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "gumroad#postinstall",
+     "pkg": "gumroad",
+     "name": "postinstall",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "gumroad#setup",
+     "pkg": "gumroad",
+     "name": "setup",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "gumroad#test",
+     "pkg": "gumroad",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "gumroad#typecheck",
+     "pkg": "gumroad",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "gumroad#build",
+     "to": "gumroad#build:pages-tailwind",
+     "how": "calls"
+    },
+    {
+     "from": "gumroad#setup",
+     "to": "gumroad#build:pages-tailwind",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 2,
+   "chain": [
+    "gumroad#build",
+    "gumroad#build:pages-tailwind"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "marketing/ready",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "marketing/ready"
+   ],
+   "pathMinP50": 0.2,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 1,
+   "calls": 1
+  },
+  "unknown": []
+ },
+ "fixes": [],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Ruby it applies the principles, without a Ruby-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 55,
+ "read": {
+  "calls": 55,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

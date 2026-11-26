@@ -1,0 +1,6782 @@
+{
+ "repo": "yukiyokotani/office-open-xml-viewer",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 0.6,
+  "stars": 886,
+  "forks": 61,
+  "languages": [
+   [
+    "TypeScript",
+    64
+   ],
+   [
+    "Rust",
+    33
+   ],
+   [
+    "JavaScript",
+    2
+   ],
+   [
+    "Astro",
+    1
+   ]
+  ],
+  "linesOfCode": 1416881,
+  "files": 3188,
+  "sourceFiles": 2877,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 903479,
+   "tests": 505443,
+   "integration": 3600,
+   "support": 4360
+  },
+  "testShare": 0.36234675349023054,
+  "packages": {
+   "npm": 11,
+   "cargo": 12,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 135.6,
+  "pace": 2,
+  "activeAuthors28d": "≥7",
+  "prsOpenedPerWeek": 39.4,
+  "prsMergedPerWeek": 29.6,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 3.7,
+   "p90": 17.8,
+   "n": 33
+  },
+  "prRunsPerDay": 49.9,
+  "runsPerMergedPr": 11.8
+ },
+ "window": {
+  "days": 7.8,
+  "runs": 390,
+  "runsInPeriod": 390,
+  "truncated": false,
+  "mainDays": 7.8
+ },
+ "size": "large",
+ "headsPerWeek": 350,
+ "score": 56,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 37,
+  "reliability": 100,
+  "efficiency": 71
+ },
+ "detail": {
+  "speed": {
+   "wait": 35,
+   "forSize": 38,
+   "tail": 38
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 49,
+   "runsPerPr": 65,
+   "setup": 81,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 100,
+   "graphs": 50
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 2275,
+  "prBilledMinutesPerDay": 2327.7,
+  "jobMinutesPerMergedPr": 538.4,
+  "prVcpuMinutesPerDay": 9099.8,
+  "vcpuMinutesPerMergedPr": 2153.5,
+  "expectedVcpuMinutesPerMergedPr": 1487.1,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 371.8,
+  "expectedWait": 19.3,
+  "workflowsOnPrs": 1
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 390,
+  "ranHeads": 390,
+  "timed": 201,
+  "p50": 26.066666666666666,
+  "p75": 33.483333333333334,
+  "p90": 42.75,
+  "redRate": 0.2846153846153846,
+  "rerunRate": 0.01282051282051282,
+  "passedOnRerunRate": 0.010256410256410256,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.4717948717948718,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "CI",
+    201
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/ci.yml",
+  "redBy": [
+   [
+    "CI",
+    111
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 26.066666666666666
+ },
+ "main": {
+  "heads": 29,
+  "p50": 27.433333333333334,
+  "p90": 33.71666666666667,
+  "redRate": 0.034482758620689655,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 4,
+  "spanMin": 27.133333333333333,
+  "jobMinutes": 55.38333333333333,
+  "billedMinutes": 57,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.0505533199195171,
+  "setupMinPerJob": 0.75,
+  "critical": {
+   "name": "typecheck",
+   "minutes": 27.8,
+   "shareOfSpan": 0.9989969909729188
+  },
+  "longest": {
+   "name": "typecheck",
+   "minutes": 27.8
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    24
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 4,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "typecheck",
+    "runs": 5
+   },
+   {
+    "name": "smoke",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "typecheck",
+    "minutes": 27.8,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 27.8,
+    "setupMin": 1.5
+   }
+  ],
+  "chainRuns": 5,
+  "pathJobsP50": 1,
+  "pathMinP50": 27.1,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 0,
+  "workMinP50": 27.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45354733410,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 25.4,
+    "path": [
+     "smoke"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 21.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 21.8,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 25.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.4,
+      "setupMin": 1.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45342035280,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 33.2,
+    "path": [
+     "typecheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 33.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.2,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 24.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 24.8,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45098394094,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 27.8,
+    "path": [
+     "typecheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.8,
+      "setupMin": 1.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 20.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.7,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45089024099,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.8,
+    "path": [
+     "typecheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 6.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 22.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 22.8,
+      "setupMin": 1.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 15.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 15.7,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45085261423,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 27.1,
+    "path": [
+     "typecheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 20.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 20.7,
+      "setupMin": 1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 27.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 27.1,
+      "setupMin": 1.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45068636672,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 33.9,
+    "path": [
+     "typecheck"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "smoke",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 25.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 25.3,
+      "setupMin": 0.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "rust",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "typecheck",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 33.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 33.8,
+      "setupMin": 1.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "audit",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 1201,
+  "over10s": 15,
+  "top": [
+   {
+    "file": "packages/node/src/decoration-paint-parity.test.ts",
+    "sec": 31.908,
+    "job": "typecheck"
+   },
+   {
+    "file": "packages/docx/src/layout/progressive.test.ts",
+    "sec": 31.694,
+    "job": "typecheck"
+   },
+   {
+    "file": "packages/docx/src/layout/progressive-anchors.test.ts",
+    "sec": 23.855,
+    "job": "typecheck"
+   },
+   {
+    "file": "packages/docx/src/render-worker-progressive.test.ts",
+    "sec": 23.53,
+    "job": "typecheck"
+   },
+   {
+    "file": "packages/docx/src/vml-geometry-render.test.ts",
+    "sec": 20.422,
+    "job": "typecheck"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 6,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": true,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "pnpm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": "vitest",
+  "testResults": false,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "hints": [],
+  "where": {
+   "cancelInProgress": ".github/workflows/ci.yml",
+   "scheduled": ".github/workflows/fuzz.yml",
+   "depCache": ".github/workflows/ci.yml",
+   "compilerCache": ".github/workflows/ci.yml",
+   "frozenInstall": ".github/workflows/ci.yml",
+   "timeouts": ".github/workflows/ci.yml",
+   "agentRules": ".agents/skills/adversarial-review/SKILL.md"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "TypeScript",
+    64
+   ],
+   [
+    "Rust",
+    33
+   ],
+   [
+    "JavaScript",
+    2
+   ],
+   [
+    "Astro",
+    1
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pnpm",
+    "Cargo"
+   ],
+   "tools": [
+    "pnpm workspaces",
+    "Cargo workspace"
+   ]
+  },
+  "packages": {
+   "npm": 11,
+   "cargo": 12,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "node:test",
+   "cargo test"
+  ],
+  "lintFormat": [
+   "Clippy",
+   "rustfmt"
+  ],
+  "libraries": [
+   {
+    "name": "serde",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "serde_json",
+    "ecosystem": "cargo",
+    "packages": 10
+   },
+   {
+    "name": "zip",
+    "ecosystem": "cargo",
+    "packages": 8
+   },
+   {
+    "name": "roxmltree",
+    "ecosystem": "cargo",
+    "packages": 6
+   },
+   {
+    "name": "pngjs",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "vite",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "console_error_panic_hook",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "schemars",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "wasm-bindgen",
+    "ecosystem": "cargo",
+    "packages": 5
+   },
+   {
+    "name": "pixelmatch",
+    "ecosystem": "npm",
+    "packages": 5
+   },
+   {
+    "name": "vite-plugin-wasm",
+    "ecosystem": "npm",
+    "packages": 5
+   },
+   {
+    "name": "quick-xml",
+    "ecosystem": "cargo",
+    "packages": 4
+   },
+   {
+    "name": "flate2",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "name",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "required-features",
+    "ecosystem": "cargo",
+    "packages": 3
+   },
+   {
+    "name": "crc32fast",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "js-sys",
+    "ecosystem": "cargo",
+    "packages": 2
+   },
+   {
+    "name": "@typescript/typescript6",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "esbuild",
+    "ecosystem": "npm",
+    "packages": 2
+   },
+   {
+    "name": "rolldown",
+    "ecosystem": "npm",
+    "packages": 2
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    24
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".claude/skills",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "Cargo.toml",
+     "path": "Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "ooxml-fuzz",
+     "path": "fuzz/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "docx-parser",
+      "legacy-office-parser",
+      "ooxml-common",
+      "pptx-parser",
+      "xlsx-parser"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml",
+     "path": "package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 11,
+      "root": true
+     }
+    },
+    {
+     "name": "@silurus/ooxml-core",
+     "path": "packages/core/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 72,
+      "root": true
+     }
+    },
+    {
+     "name": "docx-model",
+     "path": "packages/docx/model/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ooxml-common"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-docx",
+     "path": "packages/docx/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core"
+     ],
+     "exports": {
+      "entries": 6,
+      "root": true
+     }
+    },
+    {
+     "name": "docx-parser",
+     "path": "packages/docx/parser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "docx-model",
+      "ooxml-common"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-legacy-office",
+     "path": "packages/legacy-office/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml",
+      "@silurus/ooxml-core"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": false
+     }
+    },
+    {
+     "name": "legacy-office-parser",
+     "path": "packages/legacy-office/parser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "docx-model",
+      "docx-parser",
+      "ooxml-common",
+      "pptx-model",
+      "pptx-parser",
+      "xlsx-model",
+      "xlsx-parser"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-markdown",
+     "path": "packages/markdown/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core",
+      "@silurus/ooxml-docx",
+      "@silurus/ooxml-pptx",
+      "@silurus/ooxml-xlsx"
+     ],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "ooxml-mcp-server",
+     "path": "packages/mcp-server/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "docx-model",
+      "docx-parser",
+      "ooxml-common",
+      "pptx-model",
+      "pptx-parser",
+      "xlsx-model",
+      "xlsx-parser"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-node",
+     "path": "packages/node/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core",
+      "@silurus/ooxml-docx",
+      "@silurus/ooxml-pptx",
+      "@silurus/ooxml-xlsx"
+     ],
+     "exports": {
+      "entries": 4,
+      "root": true
+     }
+    },
+    {
+     "name": "ooxml-common",
+     "path": "packages/ooxml-common/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": []
+    },
+    {
+     "name": "@silurus/ooxml-opendocument",
+     "path": "packages/opendocument/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml",
+      "@silurus/ooxml-core"
+     ],
+     "exports": {
+      "entries": 3,
+      "root": false
+     }
+    },
+    {
+     "name": "opendocument-parser",
+     "path": "packages/opendocument/parser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "docx-model",
+      "ooxml-common",
+      "pptx-model",
+      "xlsx-model"
+     ]
+    },
+    {
+     "name": "pptx-model",
+     "path": "packages/pptx/model/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ooxml-common"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-pptx",
+     "path": "packages/pptx/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core"
+     ],
+     "exports": {
+      "entries": 5,
+      "root": true
+     }
+    },
+    {
+     "name": "pptx-parser",
+     "path": "packages/pptx/parser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ooxml-common",
+      "pptx-model"
+     ]
+    },
+    {
+     "name": "office-open-xml-viewer",
+     "path": "packages/vscode-extension/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core",
+      "@silurus/ooxml-docx",
+      "@silurus/ooxml-pptx",
+      "@silurus/ooxml-xlsx"
+     ],
+     "exports": false
+    },
+    {
+     "name": "xlsx-model",
+     "path": "packages/xlsx/model/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ooxml-common"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-xlsx",
+     "path": "packages/xlsx/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core"
+     ],
+     "exports": {
+      "entries": 8,
+      "root": true
+     }
+    },
+    {
+     "name": "xlsx-parser",
+     "path": "packages/xlsx/parser/Cargo.toml",
+     "ecosystem": "cargo",
+     "internal": [
+      "ooxml-common",
+      "xlsx-model"
+     ]
+    },
+    {
+     "name": "@silurus/ooxml-site",
+     "path": "site/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@silurus/ooxml-core",
+      "@silurus/ooxml-docx",
+      "@silurus/ooxml-legacy-office",
+      "@silurus/ooxml-opendocument",
+      "@silurus/ooxml-pptx",
+      "@silurus/ooxml-xlsx"
+     ],
+     "exports": false
+    }
+   ],
+   "count": 23,
+   "edges": 57,
+   "cycles": [],
+   "maxDepth": 4,
+   "topFanIn": [
+    {
+     "name": "ooxml-common",
+     "ecosystem": "cargo",
+     "dependents": 10
+    },
+    {
+     "name": "@silurus/ooxml-core",
+     "ecosystem": "npm",
+     "dependents": 9
+    },
+    {
+     "name": "@silurus/ooxml-docx",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@silurus/ooxml-pptx",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm",
+     "dependents": 4
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 23,
+    "edges": 57
+   },
+   "nodes": [
+    {
+     "id": "ooxml-common",
+     "dir": "packages/ooxml-common",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 10,
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-core",
+     "dir": "packages/core",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 9,
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx",
+     "dir": "packages/docx",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml-pptx",
+     "dir": "packages/pptx",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml-xlsx",
+     "dir": "packages/xlsx",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "docx-model",
+     "dir": "packages/docx/model",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "pptx-model",
+     "dir": "packages/pptx/model",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "xlsx-model",
+     "dir": "packages/xlsx/model",
+     "ecosystem": "cargo",
+     "dependencies": 1,
+     "dependents": 4,
+     "depth": 1
+    },
+    {
+     "id": "docx-parser",
+     "dir": "packages/docx/parser",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "pptx-parser",
+     "dir": "packages/pptx/parser",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "xlsx-parser",
+     "dir": "packages/xlsx/parser",
+     "ecosystem": "cargo",
+     "dependencies": 2,
+     "dependents": 3,
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml",
+     "dir": "",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office",
+     "dir": "packages/legacy-office",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml-opendocument",
+     "dir": "packages/opendocument",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 1,
+     "depth": 1
+    },
+    {
+     "id": "legacy-office-parser",
+     "dir": "packages/legacy-office/parser",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 1,
+     "depth": 3
+    },
+    {
+     "id": "@silurus/ooxml-markdown",
+     "dir": "packages/markdown",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml-node",
+     "dir": "packages/node",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml-site",
+     "dir": "site",
+     "ecosystem": "npm",
+     "dependencies": 6,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "Cargo.toml",
+     "dir": "",
+     "ecosystem": "cargo",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "office-open-xml-viewer",
+     "dir": "packages/vscode-extension",
+     "ecosystem": "npm",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 2
+    },
+    {
+     "id": "ooxml-fuzz",
+     "dir": "fuzz",
+     "ecosystem": "cargo",
+     "dependencies": 5,
+     "dependents": 0,
+     "depth": 4
+    },
+    {
+     "id": "ooxml-mcp-server",
+     "dir": "packages/mcp-server",
+     "ecosystem": "cargo",
+     "dependencies": 7,
+     "dependents": 0,
+     "depth": 3
+    },
+    {
+     "id": "opendocument-parser",
+     "dir": "packages/opendocument/parser",
+     "ecosystem": "cargo",
+     "dependencies": 4,
+     "dependents": 0,
+     "depth": 2
+    }
+   ],
+   "edges": [
+    {
+     "from": "ooxml-fuzz",
+     "to": "docx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-fuzz",
+     "to": "legacy-office-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-fuzz",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-fuzz",
+     "to": "pptx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-fuzz",
+     "to": "xlsx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "docx-model",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-docx",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "docx-parser",
+     "to": "docx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "docx-parser",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-legacy-office",
+     "to": "@silurus/ooxml",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-legacy-office",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "docx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "docx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "pptx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "pptx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "xlsx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "legacy-office-parser",
+     "to": "xlsx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-docx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-pptx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "docx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "docx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "pptx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "pptx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "xlsx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "ooxml-mcp-server",
+     "to": "xlsx-parser",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-docx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-pptx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-opendocument",
+     "to": "@silurus/ooxml",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-opendocument",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "opendocument-parser",
+     "to": "docx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "opendocument-parser",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "opendocument-parser",
+     "to": "pptx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "opendocument-parser",
+     "to": "xlsx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "pptx-model",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-pptx",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "pptx-parser",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "pptx-parser",
+     "to": "pptx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-docx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-pptx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "xlsx-model",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-xlsx",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "xlsx-parser",
+     "to": "ooxml-common",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "xlsx-parser",
+     "to": "xlsx-model",
+     "ecosystem": "cargo"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-core",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-docx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-legacy-office",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-opendocument",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-pptx",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 4,
+   "chain": [
+    "ooxml-fuzz",
+    "legacy-office-parser",
+    "docx-parser",
+    "docx-model",
+    "ooxml-common"
+   ],
+   "topFanIn": [
+    {
+     "name": "ooxml-common",
+     "ecosystem": "cargo",
+     "dependents": 10
+    },
+    {
+     "name": "@silurus/ooxml-core",
+     "ecosystem": "npm",
+     "dependents": 9
+    },
+    {
+     "name": "@silurus/ooxml-docx",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@silurus/ooxml-pptx",
+     "ecosystem": "npm",
+     "dependents": 4
+    },
+    {
+     "name": "@silurus/ooxml-xlsx",
+     "ecosystem": "npm",
+     "dependents": 4
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 114,
+    "edges": 25,
+    "packages": 11,
+    "packagesWithEntries": 10,
+    "filesRead": 326,
+    "undecided": 29
+   },
+   "nodes": [
+    {
+     "id": "@silurus/ooxml-core#.",
+     "pkg": "@silurus/ooxml-core",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 4,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/index.ts",
+     "reexports": 154,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 616,
+     "overloadAtMost": 1386
+    },
+    {
+     "id": "@silurus/ooxml-pptx#./internal/session",
+     "pkg": "@silurus/ooxml-pptx",
+     "key": "./internal/session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/pptx/src/internal/session.ts",
+     "reexports": 161,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 161,
+     "overloadAtMost": 644
+    },
+    {
+     "id": "@silurus/ooxml-core#./worker",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./worker",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 5,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/worker/index.ts",
+     "reexports": 18,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 90,
+     "overloadAtMost": 162
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/font-sources",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/font-sources",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 2,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/font-sources.ts",
+     "reexports": 21,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 42,
+     "overloadAtMost": 189
+    },
+    {
+     "id": "@silurus/ooxml-docx#./internal/session",
+     "pkg": "@silurus/ooxml-docx",
+     "key": "./internal/session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/docx/src/internal/session.ts",
+     "reexports": 10,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 10,
+     "overloadAtMost": 40
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/drawingml-text",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/drawingml-text",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/drawingml-text/index.ts",
+     "reexports": 9,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 9,
+     "overloadAtMost": 81
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./internal/session",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./internal/session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/xlsx/src/internal/session.ts",
+     "reexports": 6,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 6,
+     "overloadAtMost": 24
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/chart-font-sources",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/chart-font-sources",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/chart-font-sources.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 1,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/script-preload-accumulator",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/script-preload-accumulator",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/script-preload-accumulator.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 1,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/text-breaks",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/text-breaks",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/text-breaks.ts",
+     "reexports": 7,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 63
+    },
+    {
+     "id": "@silurus/ooxml-core#./testing",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./testing",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/testing/index.ts",
+     "reexports": 5,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 45
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/bidi-line",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/bidi-line",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/text/bidi/segment-line.ts",
+     "reexports": 3,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 27
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/font-scalar-demand",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/font-scalar-demand",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/font-scalar-demand.ts",
+     "reexports": 2,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 18
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./internal/model-source-session",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./internal/model-source-session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/xlsx/src/internal/model-source-session.ts",
+     "reexports": 3,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 12
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/bitmap-slot-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/bitmap-slot-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/bitmap-slot-renderer.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/comment-margin-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/comment-margin-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/comment-margin-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/comment-overlay-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/comment-overlay-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/comment-overlay-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/find-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/find-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/find-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/highlight-layer-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/highlight-layer-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/highlight-layer-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/main-slot-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/main-slot-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/main-slot-renderer.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/metafile-font-demand",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/metafile-font-demand",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/metafile-font-demand.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/read-only-comment-margin",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/read-only-comment-margin",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/read-only-comment-margin.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/scroll-load-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/scroll-load-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/scroll-load-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/scroll-navigation-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/scroll-navigation-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/scroll-navigation-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/scroll-viewer-shell",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/scroll-viewer-shell",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/scroll-viewer-shell.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/scroll-viewport-policy",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/scroll-viewport-policy",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/scroll-viewport-policy.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/scroll-zoom-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/scroll-zoom-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/scroll-zoom-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/selection-context-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/selection-context-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/selection-context-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/slot-layer-controller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/slot-layer-controller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/slot-layer-controller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/slot-scroller",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/slot-scroller",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/slot-scroller.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/tiff-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/tiff-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/image/tiff.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/virtual-scroll",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/virtual-scroll",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/virtual-scroll.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/visible-unit-events",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/visible-unit-events",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/visible-unit-events.ts",
+     "reexports": 1,
+     "stars": 1,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 9
+    },
+    {
+     "id": "@silurus/ooxml-docx#./internal/model-source-session",
+     "pkg": "@silurus/ooxml-docx",
+     "key": "./internal/model-source-session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/docx/src/internal/model-source-session.ts",
+     "reexports": 2,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 8
+    },
+    {
+     "id": "@silurus/ooxml-pptx#./internal/model-source-session",
+     "pkg": "@silurus/ooxml-pptx",
+     "key": "./internal/model-source-session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/pptx/src/internal/model-source-session.ts",
+     "reexports": 2,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 8
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./internal/grid-geometry",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./internal/grid-geometry",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/xlsx/src/internal/grid-geometry.ts",
+     "reexports": 1,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 4
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/abort",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/abort",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 4,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/abort.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/bounded-async-lru-cache",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/bounded-async-lru-cache",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/bounded-async-lru-cache.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/bounded-raw-part-cache",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/bounded-raw-part-cache",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/bounded-raw-part-cache.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/bundled-asset-url",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/bundled-asset-url",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/bundled-asset-url.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/canvas-clip",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/canvas-clip",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/canvas-clip.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/canvas-viewer-mechanics",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/canvas-viewer-mechanics",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/canvas-viewer-mechanics.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/cfb-directory-names",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/cfb-directory-names",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/source/cfb-directory-names.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/chart-context",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/chart-context",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/chart-context.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/chart-ex-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/chart-ex-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/chart/chart-ex-renderer.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/comment-context",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/comment-context",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/comment-context.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/css-font-family",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/css-font-family",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/css-font-family.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/deferred",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/deferred",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/deferred.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/dom-geometry",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/dom-geometry",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/dom-geometry.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/dom-interaction-boundary",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/dom-interaction-boundary",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/dom-interaction-boundary.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/error-placeholder-text",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/error-placeholder-text",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/error-placeholder-text.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/font-decoration",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/font-decoration",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/text/font-decoration.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/font-measurement-sentinels",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/font-measurement-sentinels",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/font-measurement-sentinels.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/font-stack",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/font-stack",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/fonts/font-stack.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/in-process-pull-transport",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/in-process-pull-transport",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 2,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/in-process-pull-transport.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/joining-type",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/joining-type",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/text/joining-type.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/model-source",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/model-source",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 3,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/source/model-source.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/model-source-runtime",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/model-source-runtime",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/source/model-source-runtime.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/office-auto-line",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/office-auto-line",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/fonts/office-auto-line.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/own-key",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/own-key",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/own-key.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/owned-session",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/owned-session",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/owned-session.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/part-failures",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/part-failures",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 2,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/part-failures.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/progressive-layout-lifecycle",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/progressive-layout-lifecycle",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/progressive-layout-lifecycle.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/progressive-layout-observers",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/progressive-layout-observers",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/progressive-layout-observers.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/read-only-comment-contract",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/read-only-comment-contract",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/read-only-comment-contract.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/read-only-comment-decoration",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/read-only-comment-decoration",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/read-only-comment-decoration.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/region-map-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/region-map-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/chart/region-map-renderer.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/resource-measurement",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/resource-measurement",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 2,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/resource-measurement.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/runtime-generation",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/runtime-generation",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/runtime-generation.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/selection-data",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/selection-data",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/selection-data.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/sha256",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/sha256",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/crypto/sha256.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/three-d-renderer",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/three-d-renderer",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/chart/three-d-renderer.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/utf16-prefix",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/utf16-prefix",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/utf16-prefix.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/wasm-runtime-generation",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/wasm-runtime-generation",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 3,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/wasm-runtime-generation.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/worker-model-source",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/worker-model-source",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 3,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/source/worker-model-source.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./internal/worker-sidecar",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./internal/worker-sidecar",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/internal/worker-sidecar.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./testing/metafile-paint",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./testing/metafile-paint",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/testing/metafile-paint.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./types",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./types",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": "packages/core/src/types/common.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#./internal/parser-errors",
+     "pkg": "@silurus/ooxml-docx",
+     "key": "./internal/parser-errors",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/docx/src/internal/parser-errors.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./internal/host-layout-measure",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./internal/host-layout-measure",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/xlsx/src/internal/host-layout-measure.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./internal/source-pull-worker",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./internal/source-pull-worker",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": "packages/xlsx/src/worksheet-pull-source-worker.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 0
+    },
+    {
+     "id": "@silurus/ooxml-node#.",
+     "pkg": "@silurus/ooxml-node",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/node/src/index.ts",
+     "reexports": 159,
+     "stars": 0,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "@silurus/ooxml-markdown#.",
+     "pkg": "@silurus/ooxml-markdown",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/markdown/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@silurus/ooxml-node#./docx",
+     "pkg": "@silurus/ooxml-node",
+     "key": "./docx",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/node/src/docx.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@silurus/ooxml-node#./pptx",
+     "pkg": "@silurus/ooxml-node",
+     "key": "./pptx",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/node/src/pptx.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@silurus/ooxml-node#./xlsx",
+     "pkg": "@silurus/ooxml-node",
+     "key": "./xlsx",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/node/src/xlsx.ts",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "office-open-xml-viewer#.",
+     "pkg": "office-open-xml-viewer",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "packages/vscode-extension/src/extension.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#./mathjax-stix2",
+     "pkg": "@silurus/ooxml-core",
+     "key": "./mathjax-stix2",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 9,
+      "files": null
+     },
+     "dependents": 9,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-docx#.",
+     "pkg": "@silurus/ooxml-docx",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-docx#./wasm",
+     "pkg": "@silurus/ooxml-docx",
+     "key": "./wasm",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-docx#./wasm-binary",
+     "pkg": "@silurus/ooxml-docx",
+     "key": "./wasm-binary",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#./doc",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "key": "./doc",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#./ppt",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "key": "./ppt",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#./xls",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "key": "./xls",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#./odp",
+     "pkg": "@silurus/ooxml-opendocument",
+     "key": "./odp",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#./ods",
+     "pkg": "@silurus/ooxml-opendocument",
+     "key": "./ods",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#./odt",
+     "pkg": "@silurus/ooxml-opendocument",
+     "key": "./odt",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-pptx#.",
+     "pkg": "@silurus/ooxml-pptx",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-pptx#./wasm",
+     "pkg": "@silurus/ooxml-pptx",
+     "key": "./wasm",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-pptx#./wasm-binary",
+     "pkg": "@silurus/ooxml-pptx",
+     "key": "./wasm-binary",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#.",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./wasm",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./wasm",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 1,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#./wasm-binary",
+     "pkg": "@silurus/ooxml-xlsx",
+     "key": "./wasm-binary",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 4,
+      "files": null
+     },
+     "dependents": 4,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#.",
+     "pkg": "@silurus/ooxml",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./chart-ex",
+     "pkg": "@silurus/ooxml",
+     "key": "./chart-ex",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./docx",
+     "pkg": "@silurus/ooxml",
+     "key": "./docx",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./internal/companion",
+     "pkg": "@silurus/ooxml",
+     "key": "./internal/companion",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./math",
+     "pkg": "@silurus/ooxml",
+     "key": "./math",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./node",
+     "pkg": "@silurus/ooxml",
+     "key": "./node",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./pptx",
+     "pkg": "@silurus/ooxml",
+     "key": "./pptx",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./region-map",
+     "pkg": "@silurus/ooxml",
+     "key": "./region-map",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./three-d",
+     "pkg": "@silurus/ooxml",
+     "key": "./three-d",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./tiff",
+     "pkg": "@silurus/ooxml",
+     "key": "./tiff",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@silurus/ooxml#./xlsx",
+     "pkg": "@silurus/ooxml",
+     "key": "./xlsx",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 2,
+      "files": null
+     },
+     "dependents": 3,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "@silurus/ooxml-docx",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-legacy-office",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-opendocument",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-pptx",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-xlsx",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-core",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-legacy-office",
+     "to": "@silurus/ooxml",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-opendocument",
+     "to": "@silurus/ooxml",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-docx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-docx",
+     "files": null
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-docx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-docx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-pptx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-pptx",
+     "files": null
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-pptx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-pptx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-markdown",
+     "to": "@silurus/ooxml-xlsx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-node",
+     "to": "@silurus/ooxml-xlsx",
+     "files": null
+    },
+    {
+     "from": "office-open-xml-viewer",
+     "to": "@silurus/ooxml-xlsx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-xlsx",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-legacy-office",
+     "files": null
+    },
+    {
+     "from": "@silurus/ooxml-site",
+     "to": "@silurus/ooxml-opendocument",
+     "files": null
+    }
+   ],
+   "flags": [
+    {
+     "kind": "overloaded-entry",
+     "subject": "@silurus/ooxml-core#.",
+     "numbers": {
+      "reexports": 154,
+      "importerPackages": 4,
+      "importerPackagesAtMost": 9,
+      "overload": 616,
+      "dependents": 9,
+      "packagesOf": 11
+     },
+     "threshold": {
+      "reexports": 20,
+      "importerPackages": 3
+     },
+     "detail": "importers seen in the files read, so at least that many; more may import it in files not read"
+    }
+   ],
+   "flagCounts": {
+    "overloaded-entry": 1
+   },
+   "rootBarrels": 0,
+   "withStars": 15,
+   "worst": {
+    "id": "@silurus/ooxml-core#.",
+    "reexports": 154,
+    "importerPackages": 4,
+    "importerPackagesAtMost": 9,
+    "exact": false,
+    "overload": 616,
+    "dependents": 9,
+    "packagesOf": 11,
+    "share": 0.8182
+   },
+   "unknown": [
+    "81 entries of 114 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "27 entries of 114 unknown, such as @silurus/ooxml-core#./mathjax-stix2: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 134,
+    "edges": 103,
+    "cached": 0,
+    "trackedFiles": 3188
+   },
+   "nodes": [
+    {
+     "id": "@silurus/ooxml-core#build",
+     "pkg": "@silurus/ooxml-core",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#build:mathjax",
+     "pkg": "@silurus/ooxml-core",
+     "name": "build:mathjax",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#prepare",
+     "pkg": "@silurus/ooxml-core",
+     "name": "prepare",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-core#typecheck",
+     "pkg": "@silurus/ooxml-core",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#build",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#conformance",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "conformance",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#typecheck",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:fidelity",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:fidelity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:pdf",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:pdf",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:private",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:private",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:private:snapshot",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:private:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:snapshot",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#vrt:worker",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "vrt:worker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-docx#wasm",
+     "pkg": "@silurus/ooxml-docx",
+     "name": "wasm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#build",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#survey",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "survey",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#test",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#typecheck",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#wasm:direct-doc",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "wasm:direct-doc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#wasm:direct-ppt",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "wasm:direct-ppt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-legacy-office#wasm:direct-xls",
+     "pkg": "@silurus/ooxml-legacy-office",
+     "name": "wasm:direct-xls",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-markdown#build",
+     "pkg": "@silurus/ooxml-markdown",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-markdown#typecheck",
+     "pkg": "@silurus/ooxml-markdown",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-node#typecheck",
+     "pkg": "@silurus/ooxml-node",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#build",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#corpus:convert",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "corpus:convert",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#corpus:odp",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "corpus:odp",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#corpus:odt",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "corpus:odt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#test",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#typecheck",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#wasm:odp",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "wasm:odp",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#wasm:ods",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "wasm:ods",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-opendocument#wasm:odt",
+     "pkg": "@silurus/ooxml-opendocument",
+     "name": "wasm:odt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#build",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#typecheck",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt:fidelity",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt:fidelity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt:private",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt:private",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt:private:snapshot",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt:private:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt:snapshot",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#vrt:worker",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "vrt:worker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-pptx#wasm",
+     "pkg": "@silurus/ooxml-pptx",
+     "name": "wasm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-site#build",
+     "pkg": "@silurus/ooxml-site",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml-site#dev",
+     "pkg": "@silurus/ooxml-site",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 3
+    },
+    {
+     "id": "@silurus/ooxml-site#postbuild",
+     "pkg": "@silurus/ooxml-site",
+     "name": "postbuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-site#prebuild",
+     "pkg": "@silurus/ooxml-site",
+     "name": "prebuild",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml-site#predev",
+     "pkg": "@silurus/ooxml-site",
+     "name": "predev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml-site#preview",
+     "pkg": "@silurus/ooxml-site",
+     "name": "preview",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#build",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#dev",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#typecheck",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt:fidelity",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt:fidelity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt:private",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt:private",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt:private:snapshot",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt:private:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt:snapshot",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#vrt:worker",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "vrt:worker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml-xlsx#wasm",
+     "pkg": "@silurus/ooxml-xlsx",
+     "name": "wasm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#bench:layout",
+     "pkg": "@silurus/ooxml",
+     "name": "bench:layout",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#bench:progressive",
+     "pkg": "@silurus/ooxml",
+     "name": "bench:progressive",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#build",
+     "pkg": "@silurus/ooxml",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build-storybook",
+     "pkg": "@silurus/ooxml",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#build:legacy",
+     "pkg": "@silurus/ooxml",
+     "name": "build:legacy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:opendocument",
+     "pkg": "@silurus/ooxml",
+     "name": "build:opendocument",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:packages",
+     "pkg": "@silurus/ooxml",
+     "name": "build:packages",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml#build:packages:ci",
+     "pkg": "@silurus/ooxml",
+     "name": "build:packages:ci",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml#build:runtime",
+     "pkg": "@silurus/ooxml",
+     "name": "build:runtime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:legacy-doc",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:legacy-doc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:legacy-ppt",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:legacy-ppt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:legacy-xls",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:legacy-xls",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:odp",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:odp",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:ods",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:ods",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:odt",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:odt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#build:wasm:opendocument",
+     "pkg": "@silurus/ooxml",
+     "name": "build:wasm:opendocument",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:core-legacy-boundary",
+     "pkg": "@silurus/ooxml",
+     "name": "check:core-legacy-boundary",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:docx-compatibility",
+     "pkg": "@silurus/ooxml",
+     "name": "check:docx-compatibility",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:font-source-tree-shaking",
+     "pkg": "@silurus/ooxml",
+     "name": "check:font-source-tree-shaking",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:legacy-wasm-exports",
+     "pkg": "@silurus/ooxml",
+     "name": "check:legacy-wasm-exports",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:model-source-lazy-graph",
+     "pkg": "@silurus/ooxml",
+     "name": "check:model-source-lazy-graph",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:model-source-lazy-runtime",
+     "pkg": "@silurus/ooxml",
+     "name": "check:model-source-lazy-runtime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:model-source-ooxml-path",
+     "pkg": "@silurus/ooxml",
+     "name": "check:model-source-ooxml-path",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:model-wire-drift",
+     "pkg": "@silurus/ooxml",
+     "name": "check:model-wire-drift",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:no-inline-wasm",
+     "pkg": "@silurus/ooxml",
+     "name": "check:no-inline-wasm",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-chart-ex",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-chart-ex",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-legacy-doc",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-legacy-doc",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-legacy-ppt",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-legacy-ppt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-legacy-xls",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-legacy-xls",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-region-map",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-region-map",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-three-d",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-three-d",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:optional-tiff",
+     "pkg": "@silurus/ooxml",
+     "name": "check:optional-tiff",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:production-render-workers",
+     "pkg": "@silurus/ooxml",
+     "name": "check:production-render-workers",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:public-api",
+     "pkg": "@silurus/ooxml",
+     "name": "check:public-api",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "@silurus/ooxml#check:public-api:built",
+     "pkg": "@silurus/ooxml",
+     "name": "check:public-api:built",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#check:public-type-exports",
+     "pkg": "@silurus/ooxml",
+     "name": "check:public-type-exports",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:relative-wasm-urls",
+     "pkg": "@silurus/ooxml",
+     "name": "check:relative-wasm-urls",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:resource-policy",
+     "pkg": "@silurus/ooxml",
+     "name": "check:resource-policy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:tombstones",
+     "pkg": "@silurus/ooxml",
+     "name": "check:tombstones",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:versions",
+     "pkg": "@silurus/ooxml",
+     "name": "check:versions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#check:viewer-api-symmetry",
+     "pkg": "@silurus/ooxml",
+     "name": "check:viewer-api-symmetry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#generate:resource-policy",
+     "pkg": "@silurus/ooxml",
+     "name": "generate:resource-policy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#lint",
+     "pkg": "@silurus/ooxml",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#lint:docx-import-zones",
+     "pkg": "@silurus/ooxml",
+     "name": "lint:docx-import-zones",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#lint:test",
+     "pkg": "@silurus/ooxml",
+     "name": "lint:test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#measure:archive-entries",
+     "pkg": "@silurus/ooxml",
+     "name": "measure:archive-entries",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#screenshots:readme",
+     "pkg": "@silurus/ooxml",
+     "name": "screenshots:readme",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#smoke",
+     "pkg": "@silurus/ooxml",
+     "name": "smoke",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#storybook",
+     "pkg": "@silurus/ooxml",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#sync:versions",
+     "pkg": "@silurus/ooxml",
+     "name": "sync:versions",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test",
+     "pkg": "@silurus/ooxml",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:docx-boundaries",
+     "pkg": "@silurus/ooxml",
+     "name": "test:docx-boundaries",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:docx-compatibility",
+     "pkg": "@silurus/ooxml",
+     "name": "test:docx-compatibility",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:docx-compatibility-build",
+     "pkg": "@silurus/ooxml",
+     "name": "test:docx-compatibility-build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:docx-package-build",
+     "pkg": "@silurus/ooxml",
+     "name": "test:docx-package-build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:docx-public-api",
+     "pkg": "@silurus/ooxml",
+     "name": "test:docx-public-api",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:packed-packages",
+     "pkg": "@silurus/ooxml",
+     "name": "test:packed-packages",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:pattern-browser",
+     "pkg": "@silurus/ooxml",
+     "name": "test:pattern-browser",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:production-render-workers",
+     "pkg": "@silurus/ooxml",
+     "name": "test:production-render-workers",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:python",
+     "pkg": "@silurus/ooxml",
+     "name": "test:python",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:resource-policy",
+     "pkg": "@silurus/ooxml",
+     "name": "test:resource-policy",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#test:site-runtime",
+     "pkg": "@silurus/ooxml",
+     "name": "test:site-runtime",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@silurus/ooxml#typecheck",
+     "pkg": "@silurus/ooxml",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt:fidelity",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt:fidelity",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt:private",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt:private",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt:private:snapshot",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt:private:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt:snapshot",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt:snapshot",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@silurus/ooxml#vrt:worker",
+     "pkg": "@silurus/ooxml",
+     "name": "vrt:worker",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "office-open-xml-viewer#compile",
+     "pkg": "office-open-xml-viewer",
+     "name": "compile",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "office-open-xml-viewer#package",
+     "pkg": "office-open-xml-viewer",
+     "name": "package",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "office-open-xml-viewer#typecheck",
+     "pkg": "office-open-xml-viewer",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "office-open-xml-viewer#vscode:prepublish",
+     "pkg": "office-open-xml-viewer",
+     "name": "vscode:prepublish",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "office-open-xml-viewer#watch",
+     "pkg": "office-open-xml-viewer",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#predev",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#prebuild",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml-site#dev",
+     "to": "@silurus/ooxml-site#predev",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@silurus/ooxml-site#build",
+     "to": "@silurus/ooxml-site#prebuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@silurus/ooxml-site#build",
+     "to": "@silurus/ooxml-site#postbuild",
+     "how": "lifecycle"
+    },
+    {
+     "from": "@silurus/ooxml#build",
+     "to": "@silurus/ooxml#build:legacy",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build",
+     "to": "@silurus/ooxml#build:opendocument",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:packages:ci",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "office-open-xml-viewer#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-legacy-office#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-opendocument#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-markdown#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-core#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-docx#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-node#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-pptx#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#typecheck",
+     "to": "@silurus/ooxml-xlsx#typecheck",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml-docx#wasm",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml-pptx#wasm",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml-xlsx#wasm",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml#build:wasm:legacy-doc",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml#build:wasm:legacy-ppt",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml#build:wasm:legacy-xls",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm",
+     "to": "@silurus/ooxml#build:wasm:opendocument",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:legacy-doc",
+     "to": "@silurus/ooxml-legacy-office#wasm:direct-doc",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:legacy-ppt",
+     "to": "@silurus/ooxml-legacy-office#wasm:direct-ppt",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:legacy-xls",
+     "to": "@silurus/ooxml-legacy-office#wasm:direct-xls",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:odt",
+     "to": "@silurus/ooxml-opendocument#wasm:odt",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:odp",
+     "to": "@silurus/ooxml-opendocument#wasm:odp",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:wasm:ods",
+     "to": "@silurus/ooxml-opendocument#wasm:ods",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt",
+     "to": "@silurus/ooxml-docx#vrt",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt",
+     "to": "@silurus/ooxml-pptx#vrt",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt",
+     "to": "@silurus/ooxml-xlsx#vrt",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:snapshot",
+     "to": "@silurus/ooxml-docx#vrt:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:snapshot",
+     "to": "@silurus/ooxml-pptx#vrt:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:snapshot",
+     "to": "@silurus/ooxml-xlsx#vrt:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private",
+     "to": "@silurus/ooxml-docx#vrt:private",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private",
+     "to": "@silurus/ooxml-pptx#vrt:private",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private",
+     "to": "@silurus/ooxml-xlsx#vrt:private",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private:snapshot",
+     "to": "@silurus/ooxml-docx#vrt:private:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private:snapshot",
+     "to": "@silurus/ooxml-pptx#vrt:private:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:private:snapshot",
+     "to": "@silurus/ooxml-xlsx#vrt:private:snapshot",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:fidelity",
+     "to": "@silurus/ooxml-docx#vrt:fidelity",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:fidelity",
+     "to": "@silurus/ooxml-pptx#vrt:fidelity",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:fidelity",
+     "to": "@silurus/ooxml-xlsx#vrt:fidelity",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:worker",
+     "to": "@silurus/ooxml-docx#vrt:worker",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:worker",
+     "to": "@silurus/ooxml-pptx#vrt:worker",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#vrt:worker",
+     "to": "@silurus/ooxml-xlsx#vrt:worker",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#lint",
+     "to": "@silurus/ooxml#lint:docx-import-zones",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#check:public-api",
+     "to": "@silurus/ooxml#build",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#check:public-api",
+     "to": "@silurus/ooxml#check:public-api:built",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#check:public-api:built",
+     "to": "@silurus/ooxml#check:viewer-api-symmetry",
+     "how": "calls"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:legacy",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-legacy-office#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-opendocument#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-markdown#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-core#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-docx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-pptx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-xlsx#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml-site#build",
+     "how": "fan-out"
+    },
+    {
+     "from": "@silurus/ooxml#build:opendocument",
+     "to": "@silurus/ooxml#build",
+     "how": "fan-out"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "task-cycle",
+     "subject": "@silurus/ooxml#build ↔ @silurus/ooxml#build:legacy ↔ @silurus/ooxml#build:opendocument ↔ @silurus/ooxml-site#build ↔ @silurus/ooxml-site#prebuild",
+     "numbers": {
+      "tasks": 5
+     },
+     "threshold": null
+    }
+   ],
+   "flagCounts": {
+    "task-cycle": 1
+   },
+   "depth": 4,
+   "chain": [
+    "@silurus/ooxml-site#dev",
+    "@silurus/ooxml-site#predev",
+    "@silurus/ooxml#build + @silurus/ooxml#build:legacy + @silurus/ooxml#build:opendocument + @silurus/ooxml-site#build + @silurus/ooxml-site#prebuild",
+    "@silurus/ooxml-legacy-office#build"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 4,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "audit",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "rust",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "typecheck",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 21.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "smoke",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 25.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "typecheck"
+   ],
+   "pathMinP50": 27.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 326,
+   "calls": 5
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"typecheck\" runs 28 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "15 test files take over 10 s; the slowest, packages/node/src/decoration-paint-parity.test.ts, takes 32 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "Split @silurus/ooxml-core#.: it re-exports 154 modules to at least 4 packages, so an edit to any of them reaches all of those packages' checks; give each area its own entry, listed by name, not `export *`",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#export-paths-what-an-edit-triggers"
+  }
+ ],
+ "notes": [],
+ "apiCalls": 53,
+ "read": {
+  "calls": 53,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

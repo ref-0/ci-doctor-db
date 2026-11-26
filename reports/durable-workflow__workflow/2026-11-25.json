@@ -1,0 +1,4170 @@
+{
+ "repo": "durable-workflow/workflow",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 4.8,
+  "stars": 1298,
+  "forks": 94,
+  "languages": [
+   [
+    "PHP",
+    98
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "linesOfCode": 728237,
+  "files": 3218,
+  "sourceFiles": 2450,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 295201,
+   "tests": 415429,
+   "integration": 283,
+   "support": 17323
+  },
+  "testShare": 0.5946355895872303,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 71.8,
+  "pace": 4.5,
+  "activeAuthors28d": "≥1",
+  "prsOpenedPerWeek": 79.1,
+  "prsMergedPerWeek": 75.6,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 0.6,
+   "p90": 5.9,
+   "n": 85
+  },
+  "prRunsPerDay": 138.8,
+  "runsPerMergedPr": 12.9
+ },
+ "window": {
+  "days": 7.2,
+  "runs": 997,
+  "runsInPeriod": 1027,
+  "truncated": true,
+  "mainDays": 7.9
+ },
+ "size": "medium",
+ "headsPerWeek": 250,
+ "score": 54,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 47,
+  "reliability": 61,
+  "efficiency": 66
+ },
+ "detail": {
+  "speed": {
+   "wait": 53,
+   "forSize": 35,
+   "tail": 63
+  },
+  "reliability": {
+   "flakes": 74,
+   "mainRed": 44
+  },
+  "efficiency": {
+   "minutesPerPr": 28,
+   "runsPerPr": 62,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null,
+   "path": 67,
+   "graphs": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 7274,
+  "prBilledMinutesPerDay": 7815.8,
+  "jobMinutesPerMergedPr": 673.8,
+  "prVcpuMinutesPerDay": 29096.1,
+  "vcpuMinutesPerMergedPr": 2695.4,
+  "expectedVcpuMinutesPerMergedPr": 1193.8,
+  "sizedShare": 1,
+  "expectedMinutesPerMergedPr": 298.5,
+  "expectedWait": 11.5,
+  "workflowsOnPrs": 7
+ },
+ "evidence": {
+  "confidence": "high",
+  "reasons": [],
+  "measured": 1,
+  "missing": [],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 256,
+  "ranHeads": 256,
+  "timed": 174,
+  "p50": 16.416666666666668,
+  "p75": 18.983333333333334,
+  "p90": 20.2,
+  "redRate": 0.328125,
+  "rerunRate": 0.06640625,
+  "passedOnRerunRate": 0.0390625,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.2421875,
+  "botHeads": 0,
+  "lightHeads": 2,
+  "neverRan": 0,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "build",
+    146
+   ],
+   [
+    "Fan-out scaling",
+    22
+   ],
+   [
+    "SonarQube",
+    6
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/php.yml",
+  "redBy": [
+   [
+    "build",
+    50
+   ],
+   [
+    "Fan-out scaling",
+    14
+   ],
+   [
+    "SonarQube",
+    14
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "build"
+  ],
+  "allPushesP50": 16.383333333333333
+ },
+ "main": {
+  "heads": 85,
+  "p50": 27.716666666666665,
+  "p90": 32.516666666666666,
+  "redRate": 0.24705882352941178,
+  "redBy": [
+   [
+    "build",
+    21
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 29,
+  "spanMin": 14.05,
+  "jobMinutes": 196.96666666666664,
+  "billedMinutes": 212,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.03569925065252168,
+  "setupMinPerJob": 0.24367816091954023,
+  "critical": {
+   "name": "build",
+   "minutes": 0.05,
+   "shareOfSpan": 0.0037783375314861464
+  },
+  "longest": {
+   "name": "feature-postgresql (7)",
+   "minutes": 12.566666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    174
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/php.yml"
+  ],
+  "jobs": 18,
+  "edges": 33,
+  "matrixJobs": 4,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "build",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "Validate repository contracts",
+    "minutes": 1.4,
+    "share": 0.1,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 1.4,
+    "setupMin": 0.1
+   },
+   {
+    "name": "feature-postgresql (7)",
+    "minutes": 12.6,
+    "share": 0.9,
+    "blockedMin": 1.4,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 12.6,
+    "setupMin": 0.2
+   },
+   {
+    "name": "build",
+    "minutes": 0.1,
+    "share": 0.01,
+    "blockedMin": 14,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 3,
+  "pathMinP50": 14.1,
+  "blockedMinP50": 14,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 14,
+  "setupInPathMinP50": 0.2,
+  "topBlockers": [
+   {
+    "name": "Validate repository contracts",
+    "runs": 6,
+    "heldJobs": 27,
+    "jobs": 29,
+    "tookMin": 1.4,
+    "heldJobMin": 36.9
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 6,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 45696939496,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.8,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (7)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 2.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 4.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.6,
+      "endMin": 2.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 1.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 11.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 10.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 13.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 12.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 12.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 7.2,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 13.3,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 11.8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 10.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 12.4,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 12.6,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 8,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 12.9,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 11.7,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.5,
+      "createdMin": 1.5,
+      "startMin": 1.5,
+      "endMin": 9.1,
+      "blockedMin": 1.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 13.7,
+      "createdMin": 13.7,
+      "startMin": 13.7,
+      "endMin": 13.8,
+      "blockedMin": 13.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45695477859,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.2,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (7)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 3,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 2.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 5.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 5.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 14.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.6,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 10.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.6,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 14.1,
+      "createdMin": 14.1,
+      "startMin": 14.1,
+      "endMin": 14.2,
+      "blockedMin": 14.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45693951838,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.6,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (8)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 3.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 5.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 6.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 6.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 1.9,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 7.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 7.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.5,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 1.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 2.1,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 11.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 10.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 9.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 13.2,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 10.3,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 10.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 7.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 11.6,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 14.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 10.6,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 8.5,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 11.4,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.9,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.7,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 12.6,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.6,
+      "createdMin": 1.6,
+      "startMin": 1.6,
+      "endMin": 8.8,
+      "blockedMin": 1.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 14.5,
+      "createdMin": 14.5,
+      "startMin": 14.5,
+      "endMin": 14.6,
+      "blockedMin": 14.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45693250413,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 13.2,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (0)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 1.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 5.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 4.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.4,
+      "endMin": 1.6,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.2,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 6.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 7.1,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 10,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 10.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 10.4,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 13.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.5,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12.7,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 12,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 8.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 9.9,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 10.2,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.3,
+      "createdMin": 1.3,
+      "startMin": 1.3,
+      "endMin": 11.8,
+      "blockedMin": 1.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 13.2,
+      "createdMin": 13.2,
+      "startMin": 13.2,
+      "endMin": 13.2,
+      "blockedMin": 13.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45692590097,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.4,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (7)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 1.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.6,
+      "setupMin": 2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 2.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 4.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 8.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 1.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 9.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 8.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 9.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 9.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.2,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 14.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 14.3,
+      "createdMin": 14.3,
+      "startMin": 14.4,
+      "endMin": 14.4,
+      "blockedMin": 14.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 45688908007,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 14.1,
+    "path": [
+     "Validate repository contracts",
+     "feature-postgresql (7)",
+     "build"
+    ],
+    "topBlocker": "Validate repository contracts",
+    "jobs": [
+     {
+      "name": "Validate repository contracts",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.4,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Central action policy preflight",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "tracing-http",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 2.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "quality",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 3.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit-contracts",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 2.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "Native child-start turn contract",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 1.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.1,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "regression-corpus",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 1.9,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.5,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-tracing",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 6.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 8.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-unit (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 8.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "pr-feature-mysql",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (12)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 9.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (3)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.3,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (4)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.5,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (10)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (5)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.5,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.1,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (9)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (7)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 14,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (14)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (8)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.6,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (15)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 8.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (0)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.5,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (16)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 11.1,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (6)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.2,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (11)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 9.4,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (1)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 10.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (2)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.7,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.3,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "feature-postgresql (13)",
+      "needs": [
+       "preflight"
+      ],
+      "readyMin": 1.4,
+      "createdMin": 1.4,
+      "startMin": 1.4,
+      "endMin": 12.8,
+      "blockedMin": 1.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.4,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build",
+      "needs": [
+       "preflight",
+       "regression-corpus",
+       "quality",
+       "tracing-http",
+       "native-child-start-turn",
+       "pr-unit-contracts",
+       "pr-unit",
+       "pr-tracing",
+       "pr-feature-mysql",
+       "feature-mysql",
+       "feature-mariadb",
+       "feature-postgresql",
+       "coverage-unit",
+       "coverage",
+       "laravel-embedded-upgrade-source",
+       "action-policy"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 14,
+      "endMin": 14.1,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 10,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": true,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": null,
+  "agentsMd": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "affected",
+    "path": ".github/workflows/php.yml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "cancelInProgress": ".github/workflows/compensation-upgrade.yml",
+   "pathFilters": ".github/workflows/compensation-upgrade.yml",
+   "scheduled": ".github/workflows/dependency-security.yml",
+   "depCache": ".github/workflows/fan-out-scaling.yml",
+   "frozenInstall": ".github/workflows/embedded-replay-profile.yml",
+   "shardsConfigured": ".github/workflows/php.yml",
+   "timeouts": ".github/workflows/compensation-upgrade.yml",
+   "testResults": ".github/workflows/fan-out-scaling.yml"
+  },
+  "unknown": [
+   "No dependency bot config and no bot pull requests merged in the window, so there are no updates to batch",
+   "affected: .github/workflows/php.yml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "PHP",
+    98
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Shell",
+    0
+   ],
+   [
+    "Dockerfile",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": []
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [
+   "node:test",
+   "PHPUnit"
+  ],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    174
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/copilot-instructions.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 3218
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 18,
+    "edges": 33,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "Validate repository contracts",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 1.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Central action policy preflight",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "tracing-http",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 0.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "quality",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 2.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "regression-corpus",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0.1,
+     "workMin": 0.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "Native child-start turn contract",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "pr-unit-contracts",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 4.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "pr-unit (1)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 5.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "pr-tracing",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 6.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "pr-feature-mysql",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 5.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "pr-unit (0)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 5.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (1)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 10.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (6)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 6.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (4)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 6.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (0)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 8.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (7)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": true,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 12.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (2)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 11,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (9)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 11.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (11)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 5.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (8)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 11.8,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (12)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 10.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (10)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 8.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (5)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 10.9,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (16)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 11.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (14)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 6.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (15)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 11.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (13)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 10.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "feature-postgresql (3)",
+     "needs": [
+      "preflight"
+     ],
+     "onPath": false,
+     "blockedMin": 1.5,
+     "queueMin": 0,
+     "workMin": 7.5,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build",
+     "needs": [
+      "preflight",
+      "regression-corpus",
+      "quality",
+      "tracing-http",
+      "native-child-start-turn",
+      "pr-unit-contracts",
+      "pr-unit",
+      "pr-tracing",
+      "pr-feature-mysql",
+      "feature-mysql",
+      "feature-mariadb",
+      "feature-postgresql",
+      "coverage-unit",
+      "coverage",
+      "laravel-embedded-upgrade-source",
+      "action-policy"
+     ],
+     "onPath": true,
+     "blockedMin": 13.7,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "tracing-http",
+     "to": "preflight"
+    },
+    {
+     "from": "quality",
+     "to": "preflight"
+    },
+    {
+     "from": "regression-corpus",
+     "to": "preflight"
+    },
+    {
+     "from": "Native child-start turn contract",
+     "to": "preflight"
+    },
+    {
+     "from": "pr-unit-contracts",
+     "to": "preflight"
+    },
+    {
+     "from": "pr-unit (1)",
+     "to": "preflight"
+    },
+    {
+     "from": "pr-tracing",
+     "to": "preflight"
+    },
+    {
+     "from": "pr-feature-mysql",
+     "to": "preflight"
+    },
+    {
+     "from": "pr-unit (0)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (1)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (6)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (4)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (0)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (7)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (2)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (9)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (11)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (8)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (12)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (10)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (5)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (16)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (14)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (15)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (13)",
+     "to": "preflight"
+    },
+    {
+     "from": "feature-postgresql (3)",
+     "to": "preflight"
+    },
+    {
+     "from": "build",
+     "to": "preflight"
+    },
+    {
+     "from": "build",
+     "to": "regression-corpus"
+    },
+    {
+     "from": "build",
+     "to": "quality"
+    },
+    {
+     "from": "build",
+     "to": "tracing-http"
+    },
+    {
+     "from": "build",
+     "to": "native-child-start-turn"
+    },
+    {
+     "from": "build",
+     "to": "pr-unit-contracts"
+    },
+    {
+     "from": "build",
+     "to": "pr-unit"
+    },
+    {
+     "from": "build",
+     "to": "pr-tracing"
+    },
+    {
+     "from": "build",
+     "to": "pr-feature-mysql"
+    },
+    {
+     "from": "build",
+     "to": "feature-mysql"
+    },
+    {
+     "from": "build",
+     "to": "feature-mariadb"
+    },
+    {
+     "from": "build",
+     "to": "feature-postgresql"
+    },
+    {
+     "from": "build",
+     "to": "coverage-unit"
+    },
+    {
+     "from": "build",
+     "to": "coverage"
+    },
+    {
+     "from": "build",
+     "to": "laravel-embedded-upgrade-source"
+    },
+    {
+     "from": "build",
+     "to": "action-policy"
+    }
+   ],
+   "flags": [
+    {
+     "kind": "top-blocker",
+     "subject": "Validate repository contracts",
+     "numbers": {
+      "heldJobs": 27,
+      "jobs": 29,
+      "heldJobMin": 36.9,
+      "runs": 6,
+      "runsOf": 6
+     },
+     "threshold": null
+    }
+   ],
+   "chain": [
+    "Validate repository contracts",
+    "feature-postgresql (7)",
+    "build"
+   ],
+   "pathMinP50": 14.1,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "4% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "A blocker most jobs wait on: \"Validate repository contracts\" holds up 27 of 29 jobs, 36.9 job-min past their other needs; shorten it, or let them start setup and wait only for what they need",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/21-optimize-all-of-your-graphs.md#ci-jobs"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For PHP it applies the principles, without a PHP-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 83,
+ "read": {
+  "calls": 83,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

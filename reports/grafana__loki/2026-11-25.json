@@ -1,0 +1,2582 @@
+{
+ "repo": "grafana/loki",
+ "date": "2026-11-25",
+ "scorerVersion": "0.4.0",
+ "checkout": null,
+ "defaultBranch": "main",
+ "profile": {
+  "ageYears": 8.6,
+  "stars": 29245,
+  "forks": 4207,
+  "languages": [
+   [
+    "Go",
+    98
+   ],
+   [
+    "Jsonnet",
+    1
+   ],
+   [
+    "Go Template",
+    0
+   ],
+   [
+    "Ruby",
+    0
+   ]
+  ],
+  "linesOfCode": 793147,
+  "files": 16907,
+  "sourceFiles": 2657,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 354268,
+   "tests": 417576,
+   "integration": 11198,
+   "support": 10105
+  },
+  "testShare": 0.5533388410662935,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 112.5,
+  "commitsPerWeekYear": 68.3,
+  "pace": 1.7,
+  "activeAuthors28d": 37,
+  "prsOpenedPerWeek": 147.8,
+  "prsMergedPerWeek": 108.5,
+  "botShareOfMergedPrs": 30,
+  "openToMergeHours": {
+   "p50": 11.8,
+   "p90": 126.6,
+   "n": 70
+  },
+  "prRunsPerDay": 633.4,
+  "runsPerMergedPr": 40.9
+ },
+ "window": {
+  "days": 1.7,
+  "runs": 1000,
+  "runsInPeriod": 2500,
+  "truncated": true,
+  "mainDays": 7.5
+ },
+ "size": "large",
+ "headsPerWeek": 361,
+ "score": 74,
+ "grade": "C+",
+ "band": "ok",
+ "parts": {
+  "speed": 81,
+  "reliability": 62,
+  "efficiency": 66
+ },
+ "detail": {
+  "speed": {
+   "wait": 73,
+   "forSize": 90,
+   "tail": 83
+  },
+  "reliability": {
+   "flakes": 34,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 69,
+   "runsPerPr": 15,
+   "setup": 100,
+   "queue": 47,
+   "shardIdle": null,
+   "path": null,
+   "graphs": 100
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 4560.2,
+  "prBilledMinutesPerDay": 5465.3,
+  "jobMinutesPerMergedPr": 294.2,
+  "prVcpuMinutesPerDay": 18240.8,
+  "vcpuMinutesPerMergedPr": 1176.8,
+  "expectedVcpuMinutesPerMergedPr": 1227.9,
+  "sizedShare": 0.22,
+  "expectedMinutesPerMergedPr": 307,
+  "expectedWait": 16.5,
+  "workflowsOnPrs": 13
+ },
+ "evidence": {
+  "confidence": "medium",
+  "reasons": [
+   "how the jobs are wired couldn't be measured",
+   "the runners' sizes are known for 22% of job minutes, and the rest count as standard runners"
+  ],
+  "measured": 0.97,
+  "missing": [
+   "efficiency.path"
+  ],
+  "outsideCi": {
+   "sampled": 3,
+   "read": 3,
+   "configs": [],
+   "pushes": []
+  }
+ },
+ "wait": {
+  "heads": 87,
+  "ranHeads": 85,
+  "timed": 39,
+  "p50": 9.666666666666666,
+  "p75": 10.183333333333334,
+  "p90": 10.75,
+  "redRate": 0.15294117647058825,
+  "rerunRate": 0.08235294117647059,
+  "passedOnRerunRate": 0.08235294117647059,
+  "rerunsUnread": 0,
+  "cancelledRate": 0.07058823529411765,
+  "botHeads": 24,
+  "lightHeads": 9,
+  "neverRan": 8,
+  "botPushes": 24,
+  "bots": [
+   [
+    "renovate-sh-app[bot]",
+    16
+   ],
+   [
+    "loki-gh-app[bot]",
+    6
+   ],
+   [
+    "grafana-assistant-ops[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "check",
+    39
+   ]
+  ],
+  "lastWorkflow": ".github/workflows/check.yml",
+  "redBy": [
+   [
+    "check",
+    7
+   ],
+   [
+    "enforce conventional commits",
+    3
+   ],
+   [
+    "Assistant approvals",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Deploy pr preview",
+   "Pull Request Labeler",
+   "Verify release workflow updates",
+   "Backport for perf(lbac): Cache the chunk filterer built for a label policy header (#26711)",
+   "Backport for perf(tsdb): Decode only the labels the chunk filterer needs in GetChunkRefs (#26710)",
+   "Backport PR Creator",
+   "Backport for docs: Backport 26609 to 4.0 branch (#26716)",
+   "Claude Code Review",
+   "Backport for fix(logline): Cap metadata cache by bytes with LRU eviction (#26704)",
+   "Backport for chore(deps): Update actions/labeler action to v7 (main) (#26715)",
+   "Backport for chore(deps): Update fluxcd/flux2 action to v2.10.1 (main) (#26714)",
+   "Backport for feat (docs): Loki on Juju docs (#26609)",
+   "Backport for chore(deps): Update fluxcd/flux2 action to v2.10.1 (main) - autoclosed (#26669)",
+   "Backport for chore(deps): Update actions/labeler action to v7 (main) - autoclosed (#23375)",
+   "Backport for docs: Update Storage and Schema [release-4.0.0] (#26709)",
+   "Backport for docs: Update WAL [release-4.0.0] (#26708)",
+   "Backport for docs: Update Storage and Schema (#26688)",
+   "Backport for docs: Update WAL (#26694)",
+   "Backport for docs: Update TSDB [release-4.0.0] (#26707)",
+   "Backport for docs: Update TSDB (#26693)",
+   "Backport for fix(dataobj-compactor): Read each index run as one sequence in an index merge (#26683)",
+   "Backport for docs: Update LBAC topic (#26680)",
+   "Backport for fix(deps): Update module github.com/pierrec/lz4/v4 to v4.1.34 (main) (#26705)",
+   "Backport for chore(mixin): Clarify Loki Writes panel titles (#26697)",
+   "Backport for test(indexgateway): Fix race in TestIndexOwnershipWatcher (#26699)",
+   "Backport for test(metastore): Use a fixed time in the object metastore tests (#26703)",
+   "Backport for fix: Flaky TestTailQueryCloseResponseBeforeCancellation (#26681)",
+   "Backport for chore(deps): Update CA trust base images [SECURITY] (main) (#26700)",
+   "Backport for feat(dataobj): Delete deletion candidates when the sweep is not a dry run (#26698)",
+   "Backport for fix(engine): Avoid scheduler deadlock when collecting metrics (#26696)",
+   "Backport for refactor(dataobj): Make logsobj.Builder single-tenant (#26675)",
+   "Backport for chore(deps): Update amannn/action-semantic-pull-request action to v6.1.3 (main) (#26695)",
+   "Backport for docs: Update Retention (#26692)",
+   "Backport for docs: Update Logs Deletion (#26691)",
+   "Backport for docs: Update filesystem (#26690)",
+   "Backport for docs: Update Compactor Horizontal Scaling (#26689)"
+  ],
+  "heavyWorkflows": [
+   "check",
+   "Test Build Loki Binaries"
+  ],
+  "allPushesP50": 9.533333333333333
+ },
+ "main": {
+  "heads": 85,
+  "p50": 9.35,
+  "p90": 10.483333333333333,
+  "redRate": 0,
+  "redBy": []
+ },
+ "botRunShare": 0.21735849056603773,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 18,
+  "spanMin": 9.583333333333334,
+  "jobMinutes": 74.88333333333333,
+  "billedMinutes": 85,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 24,
+  "queueP90Sec": 61,
+  "setupShare": 0.11988237955213753,
+  "setupMinPerJob": 0.49074074074074076,
+  "critical": {
+   "name": "check / check",
+   "minutes": 0.08333333333333333,
+   "shareOfSpan": 0.009124087591240875
+  },
+  "longest": {
+   "name": "check / integration",
+   "minutes": 9.05
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/check.yml"
+  ],
+  "jobs": 1,
+  "edges": 0,
+  "matrixJobs": 0,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "check / check",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "check / check",
+    "minutes": 9.6,
+    "share": 1,
+    "blockedMin": 0,
+    "hiddenMin": 9.5,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 1,
+  "pathMinP50": 9.6,
+  "blockedMinP50": 0,
+  "queueMinP50": 0,
+  "hiddenMinP50": 9.5,
+  "workMinP50": 0.1,
+  "setupInPathMinP50": 0,
+  "topBlockers": [],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 0,
+  "unknown": [
+   "\"check\" calls grafana/loki-release/.github/workflows/check.yml, in another repo, so the jobs inside it are taken as one"
+  ],
+  "perRun": [
+   {
+    "id": 45601735434,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.6,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 2.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 2.6,
+      "setupMin": 0.9,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 1.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 5.6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.4,
+      "setupMin": 0.9,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 9.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 9.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 7.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.5,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 5.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 3.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 3.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.5,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.5,
+      "workMin": 3.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.5,
+      "startMin": 9.5,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 9.5,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45599968647,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.3,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 9.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 9.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 3.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 6.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.7,
+      "setupMin": 1.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 2.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 2.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5.4,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 1.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 1.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 5.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 4.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.2,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.2,
+      "workMin": 3,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9.2,
+      "startMin": 9.2,
+      "endMin": 9.3,
+      "blockedMin": 0,
+      "hiddenMin": 9.2,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45595891365,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 9.1,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 7.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 7.4,
+      "setupMin": 2.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 1.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 1.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 8.7,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 7.4,
+      "setupMin": 2.6,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 4.2,
+      "setupMin": 2.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 4.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 6.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 6.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.3,
+      "endMin": 3.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.3,
+      "workMin": 2.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 4.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 5.1,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 4.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 3.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.4,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.4,
+      "workMin": 5.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 9,
+      "startMin": 9.1,
+      "endMin": 9.1,
+      "blockedMin": 0,
+      "hiddenMin": 9,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45589823390,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.3,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.6,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.6,
+      "workMin": 5.9,
+      "setupMin": 1.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 1.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 6.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 6,
+      "setupMin": 1.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 9.2,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 3.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 2.8,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 3.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 3.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 3.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 2.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 7.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 6.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 5.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 4.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 4.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 4.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 3.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 6.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 5.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 10.2,
+      "startMin": 10.2,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 10.2,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45515430455,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.1,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 1.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 4.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 3.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 6.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 3.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 2.7,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.8,
+      "endMin": 5.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.8,
+      "workMin": 4.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 2.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 10,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 9,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 6.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 5.5,
+      "setupMin": 1.1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 6.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 5.6,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 4.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 2.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 10,
+      "startMin": 10,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 10,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   },
+   {
+    "id": 45515393961,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 10.3,
+    "path": [
+     "check / check"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "check / checkFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 6.3,
+      "setupMin": 1.2,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPushPackage",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 2.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 1.3,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (4)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 4.2,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (7)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 6.6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / golangciLint",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 6.5,
+      "setupMin": 1.3,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / lintFiles",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 3.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 2.8,
+      "setupMin": 1,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / integration",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 10.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 9.1,
+      "setupMin": 0,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (8)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 4.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 3.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (12)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 4.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 3.9,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (5)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (3)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.9,
+      "endMin": 5.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.9,
+      "workMin": 5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (6)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 3.1,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (10)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (9)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (11)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 3.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 2.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (1)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1.1,
+      "endMin": 5.8,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1.1,
+      "workMin": 4.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / testPackages (2)",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 1,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 1,
+      "workMin": 4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-x64",
+      "vcpus": null
+     },
+     {
+      "name": "check / check",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 10.1,
+      "startMin": 10.2,
+      "endMin": 10.3,
+      "blockedMin": 0,
+      "hiddenMin": 10.1,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0.1,
+      "runner": "ubuntu-x64-small",
+      "vcpus": null
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 3,
+  "filesTimed": 1,
+  "over10s": 1,
+  "top": [
+   {
+    "file": "github.com/grafana/loki/v3/integration",
+    "sec": 301.657,
+    "job": "check / integration"
+   }
+  ]
+ },
+ "practices": {
+  "workflows": 26,
+  "cancelInProgress": null,
+  "pathFilters": true,
+  "affected": null,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": null,
+  "remoteCache": null,
+  "compilerCache": null,
+  "frozenInstall": null,
+  "shardsConfigured": null,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": null,
+  "testResults": null,
+  "depBotsBatched": true,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "hints": [
+   {
+    "practice": "depCache",
+    "path": ".github/workflows/build-loki-binary.yml",
+    "kind": "word"
+   },
+   {
+    "practice": "compilerCache",
+    "path": ".github/workflows/nix-ci.yaml",
+    "kind": "word"
+   }
+  ],
+  "where": {
+   "pathFilters": ".github/workflows/claude-code-review.yml",
+   "scheduled": ".github/workflows/relyance.yml",
+   "timeouts": ".github/workflows/govulncheck.yml",
+   "depBotsBatched": ".github/renovate.json5"
+  },
+  "unknown": [
+   ".github/workflows/release.yml calls a local action that isn't in the tree",
+   "depCache: .github/workflows/build-loki-binary.yml hints at it, in a form the scorer doesn't check (word)",
+   "compilerCache: .github/workflows/nix-ci.yaml hints at it, in a form the scorer doesn't check (word)"
+  ]
+ },
+ "stack": {
+  "languages": [
+   [
+    "Go",
+    98
+   ],
+   [
+    "Jsonnet",
+    1
+   ],
+   [
+    "Go Template",
+    0
+   ],
+   [
+    "Ruby",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "Go modules",
+    "Bundler"
+   ],
+   "tools": [
+    "Make"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 2,
+   "python": 0
+  },
+  "testRunners": [
+   "go test",
+   "RSpec"
+  ],
+  "lintFormat": [
+   "golangci-lint",
+   "RuboCop"
+  ],
+  "libraries": [
+   {
+    "name": "github.com/gogo/protobuf",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "github.com/stretchr/testify",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "google.golang.org/grpc",
+    "ecosystem": "go",
+    "packages": 2
+   },
+   {
+    "name": "cloud.google.com/go/storage",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "dario.cat/mergo",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/alecthomas/chroma/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/alecthomas/kingpin/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/alicebob/miniredis/v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aliyun/aliyun-oss-go-sdk",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aliyun/credentials-go",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/apache/arrow-go/v18",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/config",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/credentials",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/aws-sdk-go-v2/service/s3",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/aws/smithy-go",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/axiomhq/hyperloglog",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/Azure/azure-sdk-for-go/sdk/azcore",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/Azure/azure-sdk-for-go/sdk/azidentity",
+    "ecosystem": "go",
+    "packages": 1
+   },
+   {
+    "name": "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob",
+    "ecosystem": "go",
+    "packages": 1
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    108
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "github.com/grafana/loki/v3",
+     "path": "go.mod",
+     "ecosystem": "go",
+     "internal": [
+      "github.com/grafana/loki/pkg/push"
+     ]
+    },
+    {
+     "name": "github.com/grafana/loki/pkg/push",
+     "path": "pkg/push/go.mod",
+     "ecosystem": "go",
+     "internal": []
+    }
+   ],
+   "count": 2,
+   "edges": 1,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "github.com/grafana/loki/pkg/push",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 2,
+    "edges": 1
+   },
+   "nodes": [
+    {
+     "id": "github.com/grafana/loki/pkg/push",
+     "dir": "pkg/push",
+     "ecosystem": "go",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "github.com/grafana/loki/v3",
+     "dir": "",
+     "ecosystem": "go",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    }
+   ],
+   "edges": [
+    {
+     "from": "github.com/grafana/loki/v3",
+     "to": "github.com/grafana/loki/pkg/push",
+     "ecosystem": "go"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "github.com/grafana/loki/v3",
+    "github.com/grafana/loki/pkg/push"
+   ],
+   "topFanIn": [
+    {
+     "name": "github.com/grafana/loki/pkg/push",
+     "ecosystem": "go",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0,
+    "undecided": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 16907
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 1,
+    "edges": 0,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "check / lintFiles",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 2.6,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPushPackage",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 1.2,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / golangciLint",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 5.6,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / checkFiles",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 5.4,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (1)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 4.7,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (5)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 4.6,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (6)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 2.9,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (12)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.2,
+     "workMin": 3.8,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / integration",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.4,
+     "workMin": 9.1,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (4)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 4.2,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (10)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 4.5,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (7)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 7,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (3)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.5,
+     "workMin": 5.2,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (9)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 4.8,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (8)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 3.3,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (11)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.3,
+     "workMin": 2.7,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / testPackages (2)",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0.5,
+     "workMin": 3.4,
+     "runner": "ubuntu-x64",
+     "vcpus": null
+    },
+    {
+     "id": "check / check",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-x64-small",
+     "vcpus": null
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "check / check"
+   ],
+   "pathMinP50": 9.6,
+   "unknown": [
+    "\"check\" calls grafana/loki-release/.github/workflows/check.yml, in another repo, so the jobs inside it are taken as one"
+   ]
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "1 test file takes over 10 s; the slowest, github.com/grafana/loki/v3/integration, takes 302 s",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/10-slow-tests-the-method.md"
+  },
+  {
+   "text": "8% of PR heads went green only on a rerun: track and fix flakes",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/11-flakes.md"
+  },
+  {
+   "text": "Jobs wait 61 s for a runner at p90: GitHub-hosted runners are often slow to start, so price a faster provider",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/02-runners-blacksmith-and-the-cost-of-getting-fast.md#when-jobs-wait-to-start"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Go it applies the principles, without a Go-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 118,
+ "read": {
+  "calls": 118,
+  "fromCache": 0
+ },
+ "practicesDate": "2026-11-26"
+}

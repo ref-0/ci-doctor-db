@@ -1,0 +1,3093 @@
+{
+ "repo": "bytechefhq/bytechef",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 5.1,
+  "stars": 1061,
+  "forks": 183,
+  "languages": [
+   [
+    "Java",
+    69
+   ],
+   [
+    "TypeScript",
+    30
+   ],
+   [
+    "MDX",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "linesOfCode": 2455440,
+  "files": 19194,
+  "sourceFiles": 14648,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1332709,
+   "tests": 1073323,
+   "integration": 48691,
+   "support": 716
+  },
+  "testShare": 0.4572420487693256,
+  "packages": {
+   "npm": 11,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": "≥125",
+  "commitsPerWeekYear": 199.3,
+  "pace": 3.5,
+  "activeAuthors28d": "≥4",
+  "prsOpenedPerWeek": 123,
+  "prsMergedPerWeek": 134,
+  "botShareOfMergedPrs": 2,
+  "openToMergeHours": {
+   "p50": 0.7,
+   "p90": 46.8,
+   "n": 98
+  },
+  "prRunsPerDay": 38.9,
+  "runsPerMergedPr": 2
+ },
+ "window": {
+  "days": 4.9,
+  "runs": 192,
+  "runsInPeriod": 196,
+  "truncated": false,
+  "mainDays": 4.9
+ },
+ "size": "large",
+ "headsPerWeek": 272,
+ "score": 33,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 2,
+  "reliability": 58,
+  "efficiency": 100
+ },
+ "detail": {
+  "speed": {
+   "wait": 5,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 0
+  },
+  "efficiency": {
+   "minutesPerPr": 100,
+   "runsPerPr": 100,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3304.2,
+  "prBilledMinutesPerDay": 3344.4,
+  "jobMinutesPerMergedPr": 172.6,
+  "expectedMinutesPerMergedPr": 445.7,
+  "expectedWait": 22.8,
+  "workflowsOnPrs": 1
+ },
+ "wait": {
+  "heads": 192,
+  "timed": 182,
+  "p50": 87.2,
+  "p75": 154.2,
+  "p90": 210.6,
+  "redRate": 0.3802083333333333,
+  "rerunRate": 0.010416666666666666,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0,
+  "botHeads": 7,
+  "lightHeads": 0,
+  "neverRan": 1,
+  "botPushes": 7,
+  "bots": [
+   [
+    "dependabot[bot]",
+    5
+   ],
+   [
+    "posthog-eu[bot]",
+    2
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI Build on PULL Request",
+    182
+   ]
+  ],
+  "redBy": [
+   [
+    "CI Build on PULL Request",
+    73
+   ]
+  ],
+  "leftOut": [],
+  "heavyWorkflows": [
+   "CI Build on PULL Request"
+  ],
+  "allPushesP50": 87.2
+ },
+ "main": {
+  "heads": 99,
+  "p50": 124.3,
+  "p90": 201.56666666666666,
+  "redRate": 0.47474747474747475,
+  "redBy": [
+   [
+    "CI Build on PUSH",
+    47
+   ]
+  ]
+ },
+ "botRunShare": 0.024054982817869417,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 2,
+  "spanMin": 19.916666666666668,
+  "jobMinutes": 19.85,
+  "billedMinutes": 21,
+  "subMinuteJobs": 1,
+  "queueP50Sec": 3,
+  "queueP90Sec": 3,
+  "setupShare": 0.006321968841724994,
+  "critical": {
+   "name": "server",
+   "minutes": 213.53333333333333,
+   "shareOfSpan": 0.9992480637641927
+  },
+  "longest": {
+   "name": "server",
+   "minutes": 213.53333333333333
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    13
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/build_pull_request.yml"
+  ],
+  "jobs": 6,
+  "edges": 5,
+  "matrixJobs": 0,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "server",
+    "runs": 3
+   },
+   {
+    "name": "changes",
+    "runs": 1
+   },
+   {
+    "name": "embedded-sdk",
+    "runs": 1
+   }
+  ],
+  "chain": [
+   {
+    "name": "changes",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "server",
+    "minutes": 213.6,
+    "share": 1,
+    "blockedMin": 0.1,
+    "hiddenMin": 0,
+    "queueMin": 0.1,
+    "workMin": 213.5,
+    "setupMin": 1.1
+   }
+  ],
+  "chainRuns": 3,
+  "pathJobsP50": 2,
+  "pathMinP50": 19.9,
+  "blockedMinP50": 0.1,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 19.9,
+  "setupInPathMinP50": 1,
+  "topBlockers": [
+   {
+    "name": "changes",
+    "runs": 5,
+    "heldJobs": 1,
+    "jobs": 2,
+    "tookMin": 0.1,
+    "heldJobMin": 0.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 4,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44823651030,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 0.1,
+    "path": [
+     "changes"
+    ],
+    "topBlocker": null,
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     }
+    ]
+   },
+   {
+    "id": 44806474590,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 198.1,
+    "path": [
+     "changes",
+     "server"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "client",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 20.6,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 20.4,
+      "setupMin": 0.5
+     },
+     {
+      "name": "embedded-sdk",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 2.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.9,
+      "setupMin": 1.5
+     },
+     {
+      "name": "server",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.2,
+      "createdMin": 0.2,
+      "startMin": 0.2,
+      "endMin": 198.1,
+      "blockedMin": 0.2,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 197.9,
+      "setupMin": 1.1
+     }
+    ]
+   },
+   {
+    "id": 44792072239,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 213.7,
+    "path": [
+     "changes",
+     "server"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "server",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 213.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 213.5,
+      "setupMin": 1
+     }
+    ]
+   },
+   {
+    "id": 44791599549,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 221.7,
+    "path": [
+     "changes",
+     "server"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "server",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 221.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 221.5,
+      "setupMin": 1.4
+     }
+    ]
+   },
+   {
+    "id": 44754633509,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 1.7,
+    "path": [
+     "changes",
+     "embedded-sdk"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "embedded-sdk",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 1.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.6,
+      "setupMin": 1.3
+     }
+    ]
+   },
+   {
+    "id": 44729703895,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 19.9,
+    "path": [
+     "changes",
+     "client"
+    ],
+    "topBlocker": "changes",
+    "jobs": [
+     {
+      "name": "changes",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0
+     },
+     {
+      "name": "client",
+      "needs": [
+       "changes"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 19.9,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 19.8,
+      "setupMin": 0.5
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 1,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 5,
+  "cancelInProgress": false,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": false,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": true,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": "npm",
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": false,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md",
+   "CLAUDE.md"
+  ],
+  "agentRules": true,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    69
+   ],
+   [
+    "TypeScript",
+    30
+   ],
+   [
+    "MDX",
+    0
+   ],
+   [
+    "JavaScript",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "npm"
+   ],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 11,
+   "cargo": 0,
+   "go": 0,
+   "python": 1
+  },
+  "testRunners": [
+   "Vitest",
+   "Playwright",
+   "Mocha"
+  ],
+  "lintFormat": [
+   "ESLint",
+   "Prettier",
+   "Stylelint"
+  ],
+  "libraries": [
+   {
+    "name": "@eslint/js",
+    "ecosystem": "npm",
+    "packages": 7
+   },
+   {
+    "name": "react",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "react-dom",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "tailwindcss",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "typescript-eslint",
+    "ecosystem": "npm",
+    "packages": 6
+   },
+   {
+    "name": "globals",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "postcss",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "tailwind-merge",
+    "ecosystem": "npm",
+    "packages": 4
+   },
+   {
+    "name": "@chromatic-com/storybook",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@radix-ui/react-dialog",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@radix-ui/react-tooltip",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@storybook/react-vite",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@tailwindcss/postcss",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@tailwindcss/vite",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@testing-library/jest-dom",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@testing-library/react",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@vitejs/plugin-react",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "@vitest/coverage-v8",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "class-variance-authority",
+    "ecosystem": "npm",
+    "packages": 3
+   },
+   {
+    "name": "clsx",
+    "ecosystem": "npm",
+    "packages": 3
+   }
+  ],
+  "runners": [
+   [
+    "GitHub-hosted",
+    13
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   "CLAUDE.md",
+   ".junie/guidelines.md",
+   ".agents/skills"
+  ],
+  "graph": {
+   "packages": [
+    {
+     "name": "eslint-plugin-bytechef",
+     "path": "client/eslint/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "bytechef-client",
+     "path": "client/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@bytechef/embedded",
+      "eslint-plugin-bytechef"
+     ],
+     "exports": false
+    },
+    {
+     "name": "docs",
+     "path": "docs/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@bytechef/embedded-api",
+     "path": "sdks/api/typescript/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "bytechef-workflow-api",
+     "path": "sdks/backend/python/workflow-api/pyproject.toml",
+     "ecosystem": "python",
+     "internal": []
+    },
+    {
+     "name": "@bytechef/workflow-api",
+     "path": "sdks/backend/typescript/workflow-api/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@bytechef/chat",
+     "path": "sdks/frontend/automation/chat/library/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 3,
+      "root": true
+     }
+    },
+    {
+     "name": "@bytechef/chat-workspace",
+     "path": "sdks/frontend/automation/chat/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@bytechef/chat-test-app",
+     "path": "sdks/frontend/automation/chat/test-app/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@bytechef/chat"
+     ],
+     "exports": false
+    },
+    {
+     "name": "@bytechef/embedded",
+     "path": "sdks/frontend/embedded/library/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": {
+      "entries": 1,
+      "root": true
+     }
+    },
+    {
+     "name": "@bytechef/embedded-workspace",
+     "path": "sdks/frontend/embedded/package.json",
+     "ecosystem": "npm",
+     "internal": [],
+     "exports": false
+    },
+    {
+     "name": "@bytechef-embedded/nextjs-react",
+     "path": "sdks/frontend/embedded/test-apps/package.json",
+     "ecosystem": "npm",
+     "internal": [
+      "@bytechef/embedded"
+     ],
+     "exports": false
+    }
+   ],
+   "count": 12,
+   "edges": 4,
+   "cycles": [],
+   "maxDepth": 1,
+   "topFanIn": [
+    {
+     "name": "@bytechef/embedded",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "@bytechef/chat",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "eslint-plugin-bytechef",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ]
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 12,
+    "edges": 4
+   },
+   "nodes": [
+    {
+     "id": "@bytechef/embedded",
+     "dir": "sdks/frontend/embedded/library",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 2,
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat",
+     "dir": "sdks/frontend/automation/chat/library",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "eslint-plugin-bytechef",
+     "dir": "client/eslint",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 1,
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react",
+     "dir": "sdks/frontend/embedded/test-apps",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/chat-test-app",
+     "dir": "sdks/frontend/automation/chat/test-app",
+     "ecosystem": "npm",
+     "dependencies": 1,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/chat-workspace",
+     "dir": "sdks/frontend/automation/chat",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-api",
+     "dir": "sdks/api/typescript",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace",
+     "dir": "sdks/frontend/embedded",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/workflow-api",
+     "dir": "sdks/backend/typescript/workflow-api",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client",
+     "dir": "client",
+     "ecosystem": "npm",
+     "dependencies": 2,
+     "dependents": 0,
+     "depth": 1
+    },
+    {
+     "id": "bytechef-workflow-api",
+     "dir": "sdks/backend/python/workflow-api",
+     "ecosystem": "python",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    },
+    {
+     "id": "docs",
+     "dir": "docs",
+     "ecosystem": "npm",
+     "dependencies": 0,
+     "dependents": 0,
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "bytechef-client",
+     "to": "@bytechef/embedded",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "bytechef-client",
+     "to": "eslint-plugin-bytechef",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@bytechef/chat-test-app",
+     "to": "@bytechef/chat",
+     "ecosystem": "npm"
+    },
+    {
+     "from": "@bytechef-embedded/nextjs-react",
+     "to": "@bytechef/embedded",
+     "ecosystem": "npm"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 1,
+   "chain": [
+    "bytechef-client",
+    "@bytechef/embedded"
+   ],
+   "topFanIn": [
+    {
+     "name": "@bytechef/embedded",
+     "ecosystem": "npm",
+     "dependents": 2
+    },
+    {
+     "name": "@bytechef/chat",
+     "ecosystem": "npm",
+     "dependents": 1
+    },
+    {
+     "name": "eslint-plugin-bytechef",
+     "ecosystem": "npm",
+     "dependents": 1
+    }
+   ],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 9,
+    "edges": 4,
+    "packages": 11,
+    "packagesWithEntries": 5,
+    "filesRead": 114
+   },
+   "nodes": [
+    {
+     "id": "@bytechef/chat#.",
+     "pkg": "@bytechef/chat",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "sdks/frontend/automation/chat/library/src/index.ts",
+     "guessed": true,
+     "reexports": 11,
+     "stars": 0,
+     "barrel": true,
+     "overload": null,
+     "overloadAtLeast": 0,
+     "overloadAtMost": 11
+    },
+    {
+     "id": "@bytechef/embedded-api#.",
+     "pkg": "@bytechef/embedded-api",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "sdks/api/typescript/src/configuration/index.ts",
+     "guessed": true,
+     "reexports": 65,
+     "stars": 3,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "@bytechef/embedded-api#./execution",
+     "pkg": "@bytechef/embedded-api",
+     "key": "./execution",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "sdks/api/typescript/src/execution/index.ts",
+     "guessed": true,
+     "reexports": 19,
+     "stars": 3,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "@bytechef/embedded-api#./webhook",
+     "pkg": "@bytechef/embedded-api",
+     "key": "./webhook",
+     "root": false,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "sdks/api/typescript/src/webhook/index.ts",
+     "guessed": true,
+     "reexports": 9,
+     "stars": 3,
+     "barrel": true,
+     "overload": 0
+    },
+    {
+     "id": "@bytechef/embedded#.",
+     "pkg": "@bytechef/embedded",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 2,
+      "files": null
+     },
+     "dependents": 2,
+     "loads": null,
+     "file": "sdks/frontend/embedded/library/src/main.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@bytechef/workflow-api#.",
+     "pkg": "@bytechef/workflow-api",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 0,
+      "files": null
+     },
+     "dependents": 0,
+     "loads": null,
+     "file": "sdks/backend/typescript/workflow-api/src/index.ts",
+     "guessed": true,
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "eslint-plugin-bytechef#.",
+     "pkg": "eslint-plugin-bytechef",
+     "key": ".",
+     "root": true,
+     "importedBy": {
+      "packages": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": "client/eslint/lib/index.js",
+     "reexports": 0,
+     "stars": 0,
+     "barrel": false,
+     "overload": 0
+    },
+    {
+     "id": "@bytechef/chat#./dist/style.css",
+     "pkg": "@bytechef/chat",
+     "key": "./dist/style.css",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    },
+    {
+     "id": "@bytechef/chat#./style.css",
+     "pkg": "@bytechef/chat",
+     "key": "./style.css",
+     "root": false,
+     "importedBy": {
+      "packages": null,
+      "atLeast": 0,
+      "atMost": 1,
+      "files": null
+     },
+     "dependents": 1,
+     "loads": null,
+     "file": null,
+     "reexports": null,
+     "stars": null,
+     "barrel": null,
+     "overload": null,
+     "unknown": "every target is build output that isn't in the tree, with no source beside it"
+    }
+   ],
+   "edges": [
+    {
+     "from": "bytechef-client",
+     "to": "@bytechef/embedded",
+     "files": null
+    },
+    {
+     "from": "@bytechef-embedded/nextjs-react",
+     "to": "@bytechef/embedded",
+     "files": null
+    },
+    {
+     "from": "bytechef-client",
+     "to": "eslint-plugin-bytechef",
+     "files": null
+    },
+    {
+     "from": "@bytechef/chat-test-app",
+     "to": "@bytechef/chat",
+     "files": null
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 3,
+   "worst": null,
+   "unknown": [
+    "1 entry of 9 belong to packages with more than one entry, so which entry each importer imports shows only in the files read: their importers are at least those seen, at most the package's, and only those seen raise a flag",
+    "2 entries of 9 unknown, such as @bytechef/chat#./dist/style.css: every target is build output that isn't in the tree, with no source beside it"
+   ]
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 122,
+    "edges": 14,
+    "cached": 0,
+    "trackedFiles": 19194
+   },
+   "nodes": [
+    {
+     "id": "@bytechef-embedded/nextjs-react#build",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#dev",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#dev:local",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "dev:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#format",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#format:fix",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#install:local",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "install:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#link:library",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "link:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#lint",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#start",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef-embedded/nextjs-react#unlink:library",
+     "pkg": "@bytechef-embedded/nextjs-react",
+     "name": "unlink:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#build",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#dev",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#dev:local",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "dev:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#format",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#format:fix",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#install:local",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "install:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#link:library",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "link:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#lint",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#start",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-test-app#unlink:library",
+     "pkg": "@bytechef/chat-test-app",
+     "name": "unlink:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#build:all",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "build:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#clean",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#dev",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#dev:library",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "dev:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#dev:test-app",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "dev:test-app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/chat-workspace#format",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#format:fix",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#install:test-app",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "install:test-app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#publish:library",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "publish:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#registry:start",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "registry:start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#registry:stop",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "registry:stop",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#setup:link",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "setup:link",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat-workspace#setup:registry",
+     "pkg": "@bytechef/chat-workspace",
+     "name": "setup:registry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/chat#build",
+     "pkg": "@bytechef/chat",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#build-storybook",
+     "pkg": "@bytechef/chat",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#coverage",
+     "pkg": "@bytechef/chat",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#format",
+     "pkg": "@bytechef/chat",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#format:fix",
+     "pkg": "@bytechef/chat",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#link:local",
+     "pkg": "@bytechef/chat",
+     "name": "link:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#lint",
+     "pkg": "@bytechef/chat",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#lint:fix",
+     "pkg": "@bytechef/chat",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#publish:local",
+     "pkg": "@bytechef/chat",
+     "name": "publish:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#storybook",
+     "pkg": "@bytechef/chat",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#test",
+     "pkg": "@bytechef/chat",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#test:ui",
+     "pkg": "@bytechef/chat",
+     "name": "test:ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#test:watch",
+     "pkg": "@bytechef/chat",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#unlink:local",
+     "pkg": "@bytechef/chat",
+     "name": "unlink:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/chat#watch",
+     "pkg": "@bytechef/chat",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-api#build",
+     "pkg": "@bytechef/embedded-api",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-api#typecheck",
+     "pkg": "@bytechef/embedded-api",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#build:all",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "build:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#clean",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#dev",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#dev:library",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "dev:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#dev:test-app",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "dev:test-app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/embedded-workspace#format",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#format:fix",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#install:test-app",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "install:test-app",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#publish:library",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "publish:library",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#registry:start",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "registry:start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#registry:stop",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "registry:stop",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#setup:link",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "setup:link",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded-workspace#setup:registry",
+     "pkg": "@bytechef/embedded-workspace",
+     "name": "setup:registry",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "@bytechef/embedded#build",
+     "pkg": "@bytechef/embedded",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#build-storybook",
+     "pkg": "@bytechef/embedded",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#coverage",
+     "pkg": "@bytechef/embedded",
+     "name": "coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#format",
+     "pkg": "@bytechef/embedded",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#format:fix",
+     "pkg": "@bytechef/embedded",
+     "name": "format:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#link:local",
+     "pkg": "@bytechef/embedded",
+     "name": "link:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#lint",
+     "pkg": "@bytechef/embedded",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#lint:fix",
+     "pkg": "@bytechef/embedded",
+     "name": "lint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#publish:local",
+     "pkg": "@bytechef/embedded",
+     "name": "publish:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#storybook",
+     "pkg": "@bytechef/embedded",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#stylelint",
+     "pkg": "@bytechef/embedded",
+     "name": "stylelint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#stylelint:fix",
+     "pkg": "@bytechef/embedded",
+     "name": "stylelint:fix",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#test",
+     "pkg": "@bytechef/embedded",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#test:ui",
+     "pkg": "@bytechef/embedded",
+     "name": "test:ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#test:watch",
+     "pkg": "@bytechef/embedded",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#typecheck",
+     "pkg": "@bytechef/embedded",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#unlink:local",
+     "pkg": "@bytechef/embedded",
+     "name": "unlink:local",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/embedded#watch",
+     "pkg": "@bytechef/embedded",
+     "name": "watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/workflow-api#build",
+     "pkg": "@bytechef/workflow-api",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "@bytechef/workflow-api#check:examples",
+     "pkg": "@bytechef/workflow-api",
+     "name": "check:examples",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "bytechef-client#build",
+     "pkg": "bytechef-client",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "bytechef-client#build-storybook",
+     "pkg": "bytechef-client",
+     "name": "build-storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#build:cloud",
+     "pkg": "bytechef-client",
+     "name": "build:cloud",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "bytechef-client#check",
+     "pkg": "bytechef-client",
+     "name": "check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#check:node",
+     "pkg": "bytechef-client",
+     "name": "check:node",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#codegen",
+     "pkg": "bytechef-client",
+     "name": "codegen",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#dev",
+     "pkg": "bytechef-client",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#format",
+     "pkg": "bytechef-client",
+     "name": "format",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#lingui:compile",
+     "pkg": "bytechef-client",
+     "name": "lingui:compile",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#lingui:extract",
+     "pkg": "bytechef-client",
+     "name": "lingui:extract",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#lint",
+     "pkg": "bytechef-client",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#playwright",
+     "pkg": "bytechef-client",
+     "name": "playwright",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#playwright:debug",
+     "pkg": "bytechef-client",
+     "name": "playwright:debug",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#playwright:headed",
+     "pkg": "bytechef-client",
+     "name": "playwright:headed",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#playwright:ui",
+     "pkg": "bytechef-client",
+     "name": "playwright:ui",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#serve",
+     "pkg": "bytechef-client",
+     "name": "serve",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#storybook",
+     "pkg": "bytechef-client",
+     "name": "storybook",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#test",
+     "pkg": "bytechef-client",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#test:all",
+     "pkg": "bytechef-client",
+     "name": "test:all",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "bytechef-client#test:coverage",
+     "pkg": "bytechef-client",
+     "name": "test:coverage",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#test:watch",
+     "pkg": "bytechef-client",
+     "name": "test:watch",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "bytechef-client#typecheck",
+     "pkg": "bytechef-client",
+     "name": "typecheck",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#build",
+     "pkg": "docs",
+     "name": "build",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "docs#build:post",
+     "pkg": "docs",
+     "name": "build:post",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#build:pre",
+     "pkg": "docs",
+     "name": "build:pre",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#clean",
+     "pkg": "docs",
+     "name": "clean",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#coming-soon",
+     "pkg": "docs",
+     "name": "coming-soon",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#coming-soon:write",
+     "pkg": "docs",
+     "name": "coming-soon:write",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#dev",
+     "pkg": "docs",
+     "name": "dev",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#generate:openapi",
+     "pkg": "docs",
+     "name": "generate:openapi",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#lint",
+     "pkg": "docs",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#start",
+     "pkg": "docs",
+     "name": "start",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#test",
+     "pkg": "docs",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "docs#types:check",
+     "pkg": "docs",
+     "name": "types:check",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "eslint-plugin-bytechef#lint",
+     "pkg": "eslint-plugin-bytechef",
+     "name": "lint",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 2
+    },
+    {
+     "id": "eslint-plugin-bytechef#lint:eslint-docs",
+     "pkg": "eslint-plugin-bytechef",
+     "name": "lint:eslint-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 1
+    },
+    {
+     "id": "eslint-plugin-bytechef#lint:js",
+     "pkg": "eslint-plugin-bytechef",
+     "name": "lint:js",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "eslint-plugin-bytechef#test",
+     "pkg": "eslint-plugin-bytechef",
+     "name": "test",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    },
+    {
+     "id": "eslint-plugin-bytechef#update:eslint-docs",
+     "pkg": "eslint-plugin-bytechef",
+     "name": "update:eslint-docs",
+     "runner": "script",
+     "cached": false,
+     "inputs": {
+      "mode": "unknown",
+      "globs": [],
+      "files": null
+     },
+     "outputs": [],
+     "depth": 0
+    }
+   ],
+   "edges": [
+    {
+     "from": "@bytechef/workflow-api#check:examples",
+     "to": "@bytechef/workflow-api#build",
+     "how": "calls"
+    },
+    {
+     "from": "@bytechef/chat-workspace#dev:test-app",
+     "to": "@bytechef/chat-workspace#dev",
+     "how": "calls"
+    },
+    {
+     "from": "@bytechef/chat-workspace#setup:registry",
+     "to": "@bytechef/chat-workspace#registry:start",
+     "how": "calls"
+    },
+    {
+     "from": "@bytechef/embedded-workspace#dev:test-app",
+     "to": "@bytechef/embedded-workspace#dev",
+     "how": "calls"
+    },
+    {
+     "from": "@bytechef/embedded-workspace#setup:registry",
+     "to": "@bytechef/embedded-workspace#registry:start",
+     "how": "calls"
+    },
+    {
+     "from": "eslint-plugin-bytechef#lint",
+     "to": "eslint-plugin-bytechef#lint:eslint-docs",
+     "how": "calls"
+    },
+    {
+     "from": "eslint-plugin-bytechef#lint",
+     "to": "eslint-plugin-bytechef#lint:js",
+     "how": "calls"
+    },
+    {
+     "from": "eslint-plugin-bytechef#lint:eslint-docs",
+     "to": "eslint-plugin-bytechef#update:eslint-docs",
+     "how": "calls"
+    },
+    {
+     "from": "bytechef-client#build",
+     "to": "bytechef-client#check:node",
+     "how": "calls"
+    },
+    {
+     "from": "bytechef-client#build:cloud",
+     "to": "bytechef-client#check:node",
+     "how": "calls"
+    },
+    {
+     "from": "bytechef-client#test:all",
+     "to": "bytechef-client#test",
+     "how": "calls"
+    },
+    {
+     "from": "bytechef-client#test:all",
+     "to": "bytechef-client#playwright",
+     "how": "calls"
+    },
+    {
+     "from": "docs#build",
+     "to": "docs#generate:openapi",
+     "how": "calls"
+    },
+    {
+     "from": "docs#build",
+     "to": "docs#build:post",
+     "how": "calls"
+    }
+   ],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 3,
+   "chain": [
+    "eslint-plugin-bytechef#lint",
+    "eslint-plugin-bytechef#lint:eslint-docs",
+    "eslint-plugin-bytechef#update:eslint-docs"
+   ],
+   "runners": [
+    "script"
+   ],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 6,
+    "edges": 5,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "changes",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0.1,
+     "workMin": 0.1
+    }
+   ],
+   "edges": [],
+   "flags": [],
+   "chain": [
+    "changes",
+    "server"
+   ],
+   "pathMinP50": 19.9,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 114,
+   "calls": 3
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"server\" runs 214 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 2.4× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  },
+  {
+   "text": "Cancel superseded PR runs: no concurrency with cancel-in-progress",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "Move broad checks to a scheduled sweep",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/05-tiers-what-runs-where.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 76,
+ "read": {
+  "calls": 76,
+  "fromCache": 0
+ }
+}

@@ -1,0 +1,2146 @@
+{
+ "repo": "apache/kafka",
+ "date": "2026-11-22",
+ "checkout": null,
+ "defaultBranch": "trunk",
+ "profile": {
+  "ageYears": 15.3,
+  "stars": 34250,
+  "forks": 15833,
+  "languages": [
+   [
+    "Java",
+    90
+   ],
+   [
+    "Scala",
+    8
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "linesOfCode": 2684815,
+  "files": 7681,
+  "sourceFiles": 6749,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 1087885,
+   "tests": 1433940,
+   "integration": 150252,
+   "support": 12738
+  },
+  "testShare": 0.5948008980085132,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 61.3,
+  "commitsPerWeekYear": 40.3,
+  "pace": 1.5,
+  "activeAuthors28d": 78,
+  "prsOpenedPerWeek": 100,
+  "prsMergedPerWeek": 78,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 117.2,
+   "p90": 1322.2,
+   "n": 78
+  },
+  "prRunsPerDay": 109,
+  "runsPerMergedPr": 9.8
+ },
+ "window": {
+  "days": 7,
+  "runs": 564,
+  "runsInPeriod": 564,
+  "truncated": false,
+  "mainDays": 6.4
+ },
+ "size": "large",
+ "headsPerWeek": 334,
+ "score": 34,
+ "grade": "F",
+ "band": "slow",
+ "parts": {
+  "speed": 0,
+  "reliability": 100,
+  "efficiency": 71
+ },
+ "detail": {
+  "speed": {
+   "wait": 0,
+   "forSize": 0,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 100
+  },
+  "efficiency": {
+   "minutesPerPr": 35,
+   "runsPerPr": 73,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 9944.7,
+  "prBilledMinutesPerDay": 10211.6,
+  "jobMinutesPerMergedPr": 892.5,
+  "expectedMinutesPerMergedPr": 459.1,
+  "expectedWait": 23.2,
+  "workflowsOnPrs": 3
+ },
+ "wait": {
+  "heads": 334,
+  "timed": 95,
+  "p50": 174.91666666666666,
+  "p75": 225.75,
+  "p90": 286.18333333333334,
+  "redRate": 0.09281437125748503,
+  "rerunRate": 0.39820359281437123,
+  "passedOnRerunRate": 0.0029940119760479044,
+  "cancelledRate": 0.05089820359281437,
+  "botHeads": 0,
+  "lightHeads": 51,
+  "neverRan": 11,
+  "botPushes": 11,
+  "bots": [
+   [
+    "airlock-confluentinc[bot]",
+    11
+   ]
+  ],
+  "lastToFinish": [
+   [
+    "CI",
+    95
+   ]
+  ],
+  "redBy": [
+   [
+    "CI",
+    30
+   ],
+   [
+    "Pull Request Reviewed",
+    2
+   ]
+  ],
+  "leftOut": [
+   "Pull Request Labeled"
+  ],
+  "heavyWorkflows": [
+   "CI"
+  ],
+  "allPushesP50": 140.25
+ },
+ "main": {
+  "heads": 70,
+  "p50": 195.51666666666668,
+  "p90": 370.2,
+  "redRate": 0.014285714285714285,
+  "redBy": [
+   [
+    "CI",
+    1
+   ]
+  ]
+ },
+ "botRunShare": 0.03357314148681055,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 12,
+  "spanMin": 130.5,
+  "jobMinutes": 277.45,
+  "billedMinutes": 285,
+  "subMinuteJobs": 5,
+  "queueP50Sec": 2,
+  "queueP90Sec": 2,
+  "setupShare": 0.012765701210332991,
+  "critical": {
+   "name": "build / Collate Test Catalog",
+   "minutes": 0.31666666666666665,
+   "shareOfSpan": 0.0023258660790794463
+  },
+  "longest": {
+   "name": "build / JUnit tests Java 25",
+   "minutes": 123.36666666666666
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/ci.yml"
+  ],
+  "jobs": 8,
+  "edges": 21,
+  "matrixJobs": 1,
+  "reusableCalls": 1,
+  "gateEnd": [
+   {
+    "name": "build / Collate Test Catalog",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "build / Configure Workflow",
+    "minutes": 0.1,
+    "share": 0,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.1,
+    "setupMin": 0
+   },
+   {
+    "name": "build / Compile and Check (Merge Ref)",
+    "minutes": 6.7,
+    "share": 0.05,
+    "blockedMin": 0.1,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 6.6,
+    "setupMin": 0.4
+   },
+   {
+    "name": "build / JUnit tests Java 25",
+    "minutes": 123.4,
+    "share": 0.94,
+    "blockedMin": 6.8,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 123.4,
+    "setupMin": 0.4
+   },
+   {
+    "name": "build / Collate Test Catalog",
+    "minutes": 0.3,
+    "share": 0,
+    "blockedMin": 130.2,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 0.3,
+    "setupMin": 0.2
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 4,
+  "pathMinP50": 130.5,
+  "blockedMinP50": 130.2,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 130.4,
+  "setupInPathMinP50": 1,
+  "topBlockers": [
+   {
+    "name": "build / JUnit tests Java ………",
+    "runs": 6,
+    "heldJobs": 2,
+    "jobs": 12,
+    "tookMin": 123.4,
+    "heldJobMin": 246.1
+   }
+  ],
+  "stepWaits": [],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 1,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44910967495,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 130.5,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 25",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 6.8,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 7.5,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 14.4,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 15.2,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.4,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 13,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 123.4,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 116.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 13.9,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.8,
+      "createdMin": 6.8,
+      "startMin": 6.8,
+      "endMin": 130.2,
+      "blockedMin": 6.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 123.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 130.2,
+      "createdMin": 130.2,
+      "startMin": 130.2,
+      "endMin": 130.2,
+      "blockedMin": 130.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 130.2,
+      "createdMin": 130.2,
+      "startMin": 130.2,
+      "endMin": 130.5,
+      "blockedMin": 130.2,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44904288310,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 83.5,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 25",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 4.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 12.9,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 69.7,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 65.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 83.3,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 78.8,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 10,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 10.2,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.7,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 13.4,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.9,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 4.5,
+      "createdMin": 4.5,
+      "startMin": 4.5,
+      "endMin": 5.1,
+      "blockedMin": 4.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.7,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 83.3,
+      "createdMin": 83.3,
+      "startMin": 83.3,
+      "endMin": 83.4,
+      "blockedMin": 83.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 83.3,
+      "createdMin": 83.3,
+      "startMin": 83.3,
+      "endMin": 83.5,
+      "blockedMin": 83.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44878568588,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 126.4,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 17",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 7.6,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.8,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 8.3,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.6,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 14.6,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 14.2,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.5,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 13.7,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 116.6,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 108.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 13.1,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.6,
+      "createdMin": 7.7,
+      "startMin": 7.7,
+      "endMin": 126.1,
+      "blockedMin": 7.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 118.5,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 126.1,
+      "createdMin": 126.2,
+      "startMin": 126.2,
+      "endMin": 126.2,
+      "blockedMin": 126.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 126.1,
+      "createdMin": 126.2,
+      "startMin": 126.2,
+      "endMin": 126.4,
+      "blockedMin": 126.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44871986212,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 153.3,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 17",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.2,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 6.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 7.3,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.8,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 12.6,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 6,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 14.1,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.3,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 153,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 146.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 13.9,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.4,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 129.1,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 122.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 6.5,
+      "createdMin": 6.5,
+      "startMin": 6.5,
+      "endMin": 14.2,
+      "blockedMin": 6.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 153,
+      "createdMin": 153,
+      "startMin": 153,
+      "endMin": 153.1,
+      "blockedMin": 153,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 153,
+      "createdMin": 153,
+      "startMin": 153,
+      "endMin": 153.3,
+      "blockedMin": 153,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44859519963,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 155.7,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 17",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 12.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.2,
+      "endMin": 0.5,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 13.6,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.9,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 143.7,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 131,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 24.7,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 155.3,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 142.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 20.5,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.7,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 23.6,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.5,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 12.7,
+      "createdMin": 12.7,
+      "startMin": 12.8,
+      "endMin": 22,
+      "blockedMin": 12.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.3,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 155.3,
+      "createdMin": 155.3,
+      "startMin": 155.3,
+      "endMin": 155.7,
+      "blockedMin": 155.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.4,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 155.3,
+      "createdMin": 155.3,
+      "startMin": 155.3,
+      "endMin": 155.4,
+      "blockedMin": 155.3,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   },
+   {
+    "id": 44858414922,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 136.2,
+    "path": [
+     "build / Configure Workflow",
+     "build / Compile and Check (Merge Ref)",
+     "build / JUnit tests Java 25",
+     "build / Collate Test Catalog"
+    ],
+    "topBlocker": "build / JUnit tests Java ………",
+    "jobs": [
+     {
+      "name": "build / Configure Workflow",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 0.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Load Test Catalog",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 0.4,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Compile and Check (Merge Ref)",
+      "needs": [
+       "build/configure@build"
+      ],
+      "readyMin": 0.1,
+      "createdMin": 0.1,
+      "startMin": 0.1,
+      "endMin": 7.7,
+      "blockedMin": 0.1,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 18.6,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.8,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 15,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 135.8,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 128,
+      "setupMin": 0.6,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17 (flaky)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 17,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.2,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / API Checker Java 25",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 8.8,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 1.1,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 17",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 132.4,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 124.7,
+      "setupMin": 0.7,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / JUnit tests Java 25 (new)",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/load-catalog@build"
+      ],
+      "readyMin": 7.7,
+      "createdMin": 7.7,
+      "startMin": 7.8,
+      "endMin": 18.2,
+      "blockedMin": 7.7,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.5,
+      "setupMin": 0.4,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / Collate Test Catalog",
+      "needs": [
+       "build/test@build"
+      ],
+      "readyMin": 135.8,
+      "createdMin": 135.8,
+      "startMin": 135.8,
+      "endMin": 136.2,
+      "blockedMin": 135.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.3,
+      "setupMin": 0.2,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     },
+     {
+      "name": "build / CI checks completed",
+      "needs": [
+       "build/configure@build",
+       "build/validate@build",
+       "build/test@build",
+       "build/api-checker@build"
+      ],
+      "readyMin": 135.8,
+      "createdMin": 135.8,
+      "startMin": 135.8,
+      "endMin": 135.9,
+      "blockedMin": 135.8,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 0.1,
+      "setupMin": 0,
+      "runner": "ubuntu-latest",
+      "vcpus": 4
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 20,
+  "cancelInProgress": true,
+  "pathFilters": false,
+  "affected": false,
+  "draftSkip": true,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": true,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    90
+   ],
+   [
+    "Scala",
+    8
+   ],
+   [
+    "Python",
+    2
+   ],
+   [
+    "Shell",
+    0
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [
+    "pip"
+   ],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    72
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 7681
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 21,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "build / Configure Workflow",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / Load Test Catalog",
+     "needs": [
+      "build/configure@build"
+     ],
+     "onPath": false,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / Compile and Check (Merge Ref)",
+     "needs": [
+      "build/configure@build"
+     ],
+     "onPath": true,
+     "blockedMin": 0.1,
+     "queueMin": 0,
+     "workMin": 6.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / API Checker Java 25",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 0.7,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 17 (flaky)",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 7.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 25 (new)",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 8.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 17 (new)",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 6.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 17",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 116.6,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 25 (flaky)",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": false,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 7.2,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / JUnit tests Java 25",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/load-catalog@build"
+     ],
+     "onPath": true,
+     "blockedMin": 6.8,
+     "queueMin": 0,
+     "workMin": 123.4,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / CI checks completed",
+     "needs": [
+      "build/configure@build",
+      "build/validate@build",
+      "build/test@build",
+      "build/api-checker@build"
+     ],
+     "onPath": false,
+     "blockedMin": 130.2,
+     "queueMin": 0,
+     "workMin": 0.1,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    },
+    {
+     "id": "build / Collate Test Catalog",
+     "needs": [
+      "build/test@build"
+     ],
+     "onPath": true,
+     "blockedMin": 130.2,
+     "queueMin": 0,
+     "workMin": 0.3,
+     "runner": "ubuntu-latest",
+     "vcpus": 4
+    }
+   ],
+   "edges": [
+    {
+     "from": "build / Load Test Catalog",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / Compile and Check (Merge Ref)",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / API Checker Java 25",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / API Checker Java 25",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (flaky)",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (flaky)",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (flaky)",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (new)",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (new)",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (new)",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (new)",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (new)",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17 (new)",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 17",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (flaky)",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (flaky)",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25 (flaky)",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / JUnit tests Java 25",
+     "to": "build/load-catalog@build"
+    },
+    {
+     "from": "build / CI checks completed",
+     "to": "build/configure@build"
+    },
+    {
+     "from": "build / CI checks completed",
+     "to": "build/validate@build"
+    },
+    {
+     "from": "build / CI checks completed",
+     "to": "build/test@build"
+    },
+    {
+     "from": "build / CI checks completed",
+     "to": "build/api-checker@build"
+    },
+    {
+     "from": "build / Collate Test Catalog",
+     "to": "build/test@build"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "build / Configure Workflow",
+    "build / Compile and Check (Merge Ref)",
+    "build / JUnit tests Java 25",
+    "build / Collate Test Catalog"
+   ],
+   "pathMinP50": 130.5,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "Run only what a change can reach: no path filters or affected-only selection on PR workflows",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/04-run-only-what-a-change-can-reach.md"
+  },
+  {
+   "text": "\"build / JUnit tests Java 25\" runs 123 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 101,
+ "read": {
+  "calls": 101,
+  "fromCache": 0
+ }
+}

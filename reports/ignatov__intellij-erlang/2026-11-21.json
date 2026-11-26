@@ -1,0 +1,997 @@
+{
+ "repo": "ignatov/intellij-erlang",
+ "date": "2026-11-21",
+ "checkout": null,
+ "defaultBranch": "master",
+ "profile": {
+  "ageYears": 14.3,
+  "stars": 752,
+  "forks": 134,
+  "languages": [
+   [
+    "Java",
+    58
+   ],
+   [
+    "Erlang",
+    22
+   ],
+   [
+    "HTML",
+    12
+   ],
+   [
+    "Python",
+    7
+   ]
+  ],
+  "linesOfCode": 123948,
+  "files": 2753,
+  "sourceFiles": 850,
+  "treeTruncated": false,
+  "sourceLines": {
+   "implementation": 83943,
+   "tests": 37017,
+   "integration": 2989,
+   "support": 0
+  },
+  "testShare": 0.32276180815221833,
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "linesFrom": "tree",
+  "commitsPerWeek": 51.3,
+  "commitsPerWeekYear": 4.2,
+  "pace": 12,
+  "activeAuthors28d": 1,
+  "prsOpenedPerWeek": 210,
+  "prsMergedPerWeek": 164,
+  "botShareOfMergedPrs": 0,
+  "openToMergeHours": {
+   "p50": 10.6,
+   "p90": 73.4,
+   "n": 100
+  },
+  "prRunsPerDay": 125,
+  "runsPerMergedPr": 5.3
+ },
+ "window": {
+  "days": 6.8,
+  "runs": 818,
+  "runsInPeriod": 818,
+  "truncated": false,
+  "mainDays": 6.9
+ },
+ "size": "large",
+ "headsPerWeek": 784,
+ "score": 51,
+ "grade": "D",
+ "band": "ok",
+ "parts": {
+  "speed": 23,
+  "reliability": 97,
+  "efficiency": 90
+ },
+ "detail": {
+  "speed": {
+   "wait": 38,
+   "forSize": 10,
+   "tail": 0
+  },
+  "reliability": {
+   "flakes": 100,
+   "mainRed": 92
+  },
+  "efficiency": {
+   "minutesPerPr": 73,
+   "runsPerPr": 98,
+   "setup": 100,
+   "queue": 100,
+   "shardIdle": null
+  }
+ },
+ "efficiency": {
+  "prJobMinutesPerDay": 3437.3,
+  "prBilledMinutesPerDay": 3763,
+  "jobMinutesPerMergedPr": 146.7,
+  "expectedMinutesPerMergedPr": 166.4,
+  "expectedWait": 11.5,
+  "workflowsOnPrs": 4
+ },
+ "wait": {
+  "heads": 764,
+  "timed": 221,
+  "p50": 24.366666666666667,
+  "p75": 43.88333333333333,
+  "p90": 236.85,
+  "redRate": 0.09293193717277487,
+  "rerunRate": 0.4489528795811518,
+  "passedOnRerunRate": 0,
+  "cancelledRate": 0.032722513089005235,
+  "botHeads": 0,
+  "lightHeads": 0,
+  "neverRan": 57,
+  "botPushes": 0,
+  "bots": [],
+  "lastToFinish": [
+   [
+    "Java CI",
+    219
+   ],
+   [
+    "Compatibility check",
+    2
+   ]
+  ],
+  "redBy": [
+   [
+    "Java CI",
+    68
+   ],
+   [
+    "Compatibility check",
+    4
+   ],
+   [
+    "Compatibility watch",
+    1
+   ]
+  ],
+  "leftOut": [
+   "Copilot Setup Steps"
+  ],
+  "heavyWorkflows": [
+   "Java CI"
+  ],
+  "allPushesP50": 24.366666666666667
+ },
+ "main": {
+  "heads": 164,
+  "p50": 21.166666666666668,
+  "p90": 38.06666666666667,
+  "redRate": 0.07926829268292683,
+  "redBy": [
+   [
+    "Java CI",
+    13
+   ]
+  ]
+ },
+ "botRunShare": 0,
+ "jobs": {
+  "runsSampled": 6,
+  "jobs": 5,
+  "spanMin": 23.4,
+  "jobMinutes": 48.86666666666666,
+  "billedMinutes": 52,
+  "subMinuteJobs": 0,
+  "queueP50Sec": 2,
+  "queueP90Sec": 3,
+  "setupShare": 0.031187790311877902,
+  "critical": {
+   "name": "ide-2026.3",
+   "minutes": 11.466666666666667,
+   "shareOfSpan": 0.4900284900284901
+  },
+  "longest": {
+   "name": "build",
+   "minutes": 13.933333333333334
+  },
+  "providers": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ]
+ },
+ "jobGraph": {
+  "runsSampled": 6,
+  "runsUsed": 6,
+  "runsLeftOut": 0,
+  "leftOutBecause": [],
+  "workflows": [
+   ".github/workflows/gradle.yml"
+  ],
+  "jobs": 8,
+  "edges": 9,
+  "matrixJobs": 3,
+  "reusableCalls": 0,
+  "gateEnd": [
+   {
+    "name": "ide-2026.3",
+    "runs": 6
+   }
+  ],
+  "chain": [
+   {
+    "name": "build",
+    "minutes": 11.6,
+    "share": 0.5,
+    "blockedMin": 0,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 11.6,
+    "setupMin": 0.1
+   },
+   {
+    "name": "ide-2026.3",
+    "minutes": 11.5,
+    "share": 0.49,
+    "blockedMin": 11.6,
+    "hiddenMin": 0,
+    "queueMin": 0,
+    "workMin": 11.5,
+    "setupMin": 0.1
+   }
+  ],
+  "chainRuns": 6,
+  "pathJobsP50": 2,
+  "pathMinP50": 23.4,
+  "blockedMinP50": 11.6,
+  "queueMinP50": 0.1,
+  "hiddenMinP50": 0,
+  "workMinP50": 23.3,
+  "setupInPathMinP50": 0.1,
+  "topBlockers": [
+   {
+    "name": "build",
+    "runs": 6,
+    "heldJobs": 1,
+    "jobs": 5,
+    "tookMin": 11.6,
+    "heldJobMin": 11.6
+   }
+  ],
+  "stepWaits": [
+   {
+    "job": "ide-2026.3",
+    "waitsOn": "build",
+    "step": "Upload Plugin Artifact",
+    "earlyMin": 2.3,
+    "runs": 2,
+    "guess": true
+   }
+  ],
+  "hidden": {
+   "runs": 0,
+   "jobs": [],
+   "lateMinP50": null,
+   "waitSteps": []
+  },
+  "unmatched": [],
+  "ambiguous": [],
+  "skippedP50": 3,
+  "unknown": [],
+  "perRun": [
+   {
+    "id": 44845145469,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 26,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.8
+     },
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 14.4,
+      "setupMin": 0.1
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.1,
+      "setupMin": 0.4
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.6,
+      "setupMin": 0.6
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 14.4,
+      "createdMin": 14.4,
+      "startMin": 14.4,
+      "endMin": 26,
+      "blockedMin": 14.4,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.3
+     }
+    ]
+   },
+   {
+    "id": 44836887371,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23.4,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 11.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.2,
+      "setupMin": 0.4
+     },
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.7,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.2,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.2,
+      "setupMin": 0.5
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 11.9,
+      "createdMin": 11.9,
+      "startMin": 11.9,
+      "endMin": 23.4,
+      "blockedMin": 11.9,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44833524650,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.6,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.6,
+      "setupMin": 0.3
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.9,
+      "setupMin": 0.5
+     },
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.3,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5.2,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 11.6,
+      "createdMin": 11.6,
+      "startMin": 11.7,
+      "endMin": 24.6,
+      "blockedMin": 11.6,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.9,
+      "setupMin": 0.2
+     }
+    ]
+   },
+   {
+    "id": 44827829697,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 23,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 4.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 4.5,
+      "setupMin": 0.2
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 8.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 8.1,
+      "setupMin": 0.3
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 7.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 7.5,
+      "setupMin": 0.5
+     },
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 11.5,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 11.5,
+      "createdMin": 11.5,
+      "startMin": 11.6,
+      "endMin": 23,
+      "blockedMin": 11.5,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 11.5,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44822462512,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 24.7,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 14,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 13.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 5.1,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 5,
+      "setupMin": 0.1
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 9.6,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 9.6,
+      "setupMin": 0.5
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 12,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.4
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 14,
+      "createdMin": 14,
+      "startMin": 14,
+      "endMin": 24.7,
+      "blockedMin": 14,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.7,
+      "setupMin": 0.1
+     }
+    ]
+   },
+   {
+    "id": 44788760336,
+    "fits": true,
+    "leftOutBecause": [],
+    "spanMin": 22.8,
+    "path": [
+     "build",
+     "ide-2026.3"
+    ],
+    "topBlocker": "build",
+    "jobs": [
+     {
+      "name": "compilation-tests",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0.1,
+      "endMin": 4.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 4.8,
+      "setupMin": 0.4
+     },
+     {
+      "name": "build",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.9,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.9,
+      "setupMin": 0.1
+     },
+     {
+      "name": "test-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 12.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 12.4,
+      "setupMin": 0.4
+     },
+     {
+      "name": "compilation-tests-windows-latest",
+      "needs": [],
+      "readyMin": 0,
+      "createdMin": 0,
+      "startMin": 0,
+      "endMin": 10.4,
+      "blockedMin": 0,
+      "hiddenMin": 0,
+      "queueMin": 0,
+      "workMin": 10.3,
+      "setupMin": 1.2
+     },
+     {
+      "name": "ide-2026.3",
+      "needs": [
+       "build"
+      ],
+      "readyMin": 10.9,
+      "createdMin": 10.9,
+      "startMin": 11,
+      "endMin": 22.8,
+      "blockedMin": 10.9,
+      "hiddenMin": 0,
+      "queueMin": 0.1,
+      "workMin": 11.9,
+      "setupMin": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "tests": {
+  "logsRead": 2,
+  "filesTimed": 0,
+  "over10s": 0,
+  "top": []
+ },
+ "practices": {
+  "workflows": 11,
+  "cancelInProgress": true,
+  "pathFilters": true,
+  "affected": false,
+  "draftSkip": false,
+  "mergeQueue": false,
+  "scheduled": true,
+  "depCache": true,
+  "remoteCache": false,
+  "compilerCache": false,
+  "frozenInstall": false,
+  "shardsConfigured": false,
+  "timeouts": true,
+  "taskRunner": false,
+  "packageManager": false,
+  "fastLint": false,
+  "eslint": false,
+  "testRunner": false,
+  "testResults": true,
+  "depBotsBatched": false,
+  "agentsMd": [
+   "AGENTS.md"
+  ],
+  "agentRules": false,
+  "preCommit": false,
+  "unknown": []
+ },
+ "stack": {
+  "languages": [
+   [
+    "Java",
+    58
+   ],
+   [
+    "Erlang",
+    22
+   ],
+   [
+    "HTML",
+    12
+   ],
+   [
+    "Python",
+    7
+   ]
+  ],
+  "workspace": {
+   "packageManagers": [],
+   "tools": [
+    "Gradle"
+   ]
+  },
+  "packages": {
+   "npm": 0,
+   "cargo": 0,
+   "go": 0,
+   "python": 0
+  },
+  "testRunners": [],
+  "lintFormat": [],
+  "libraries": [],
+  "runners": [
+   [
+    "GitHub-hosted",
+    30
+   ]
+  ],
+  "agentFiles": [
+   "AGENTS.md",
+   ".github/instructions"
+  ],
+  "graph": {
+   "packages": [],
+   "count": 0,
+   "edges": 0,
+   "cycles": [],
+   "maxDepth": 0,
+   "topFanIn": []
+  },
+  "unknown": []
+ },
+ "graphs": {
+  "schema": 1,
+  "packages": {
+   "count": {
+    "nodes": 0,
+    "edges": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "topFanIn": [],
+   "unknown": []
+  },
+  "exports": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "packages": 0,
+    "packagesWithEntries": 0,
+    "filesRead": 0
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "rootBarrels": 0,
+   "withStars": 0,
+   "worst": null,
+   "unknown": []
+  },
+  "layers": {
+   "nodes": null,
+   "edges": null,
+   "flags": [],
+   "note": "Layers inside a package need every file: run `scripts/graph/` in a checkout for layers and what triggers what"
+  },
+  "tasks": {
+   "count": {
+    "nodes": 0,
+    "edges": 0,
+    "cached": 0,
+    "trackedFiles": 2753
+   },
+   "nodes": [],
+   "edges": [],
+   "flags": [],
+   "flagCounts": {},
+   "depth": 0,
+   "chain": [],
+   "runners": [],
+   "unread": [],
+   "unknown": []
+  },
+  "jobs": {
+   "count": {
+    "nodes": 8,
+    "edges": 9,
+    "runs": 6,
+    "runsOf": 6
+   },
+   "nodes": [
+    {
+     "id": "compilation-tests",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 5.2
+    },
+    {
+     "id": "build",
+     "needs": [],
+     "onPath": true,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 14.4
+    },
+    {
+     "id": "test-windows-latest",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 10.1
+    },
+    {
+     "id": "compilation-tests-windows-latest",
+     "needs": [],
+     "onPath": false,
+     "blockedMin": 0,
+     "queueMin": 0,
+     "workMin": 7.6
+    },
+    {
+     "id": "ide-2026.3",
+     "needs": [
+      "build"
+     ],
+     "onPath": true,
+     "blockedMin": 14.4,
+     "queueMin": 0,
+     "workMin": 11.6
+    }
+   ],
+   "edges": [
+    {
+     "from": "ide-2026.3",
+     "to": "build"
+    }
+   ],
+   "flags": [],
+   "chain": [
+    "build",
+    "ide-2026.3"
+   ],
+   "pathMinP50": 23.4,
+   "unknown": []
+  },
+  "thresholds": {
+   "overloadModules": 20,
+   "overloadPackages": 3,
+   "top": 20,
+   "wideInputs": 0.5,
+   "deepChain": 6,
+   "maxFiles": 1000,
+   "maxTaskFiles": 300,
+   "maxReexportDepth": 8
+  },
+  "read": {
+   "files": 0,
+   "calls": 0
+  },
+  "unknown": []
+ },
+ "fixes": [
+  {
+   "text": "\"build\" runs 14 min in one job: shard it",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/07-shards-runners-and-billing.md"
+  },
+  {
+   "text": "p90 is 9.7× p50: find what makes the slow runs slow",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/12-budgets-health-and-spend.md"
+  }
+ ],
+ "notes": [
+  {
+   "text": "ci-doctor's guides are strongest for TypeScript and Rust. For Java it applies the principles, without a Java-specific page",
+   "guide": "https://github.com/ref-0/ci-doctor/blob/main/docs/pages/01-principles.md"
+  }
+ ],
+ "apiCalls": 136,
+ "read": {
+  "calls": 136,
+  "fromCache": 0
+ }
+}
