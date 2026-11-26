@@ -1,5 +1,5 @@
-// Publishing: every report under reports/ that origin/main doesn't have yet, or has with other content, such as one whose
-// practices were read again in place (reread.ts), as one data commit pushed to main.
+// Publishing: every report under reports/ that origin/main doesn't have yet, or has as HEAD has it while this checkout
+// changed it, such as one whose practices were read again in place (reread.ts), as one data commit pushed to main.
 // The commit is made in a worktree of its own on origin/main, so nothing else on the checkout's branch (a code
 // commit not yet through a PR, say) is ever pushed with it. A report it can't publish stays where it is, and the
 // next run publishes it.
@@ -48,13 +48,24 @@ function onMain(root: string): Map<string, string> {
 
 export const publishedReports = (root: string): Set<string> => new Set(onMain(root).keys());
 
-// The reports origin/main doesn't have, and those it has with other content, after fetching it.
-export function pending(root: string): { added: string[]; changed: string[] } {
+// The reports origin/main doesn't have, and those it has with other content, after fetching it. A report main has is
+// told apart by three versions, the checkout's HEAD, the file on disk and main's: it's `changed` when it was changed
+// here (disk differs from HEAD) and main still holds what HEAD holds. When only main moved, it's nobody's to publish,
+// since the next pull brings main's; when both did, it's `held`, left as it is, and named, so a stale copy never
+// overwrites a newer one.
+export function pending(root: string): { added: string[]; changed: string[]; held: string[] } {
   const published = onMain(root);
   const files = onDisk(root);
-  const both = files.filter((p) => published.has(p));
-  const ids = blobIds(root, both);
-  return { added: files.filter((p) => !published.has(p)), changed: both.filter((p, i) => ids[i] !== published.get(p)) };
+  const head = reportsAt(root, 'HEAD');
+  const differ = files.filter((p) => published.has(p));
+  const ids = blobIds(root, differ);
+  const changed: string[] = [];
+  const held: string[] = [];
+  differ.forEach((p, i) => {
+    if (ids[i] === published.get(p) || ids[i] === head.get(p)) return;
+    (published.get(p) === head.get(p) ? changed : held).push(p);
+  });
+  return { added: files.filter((p) => !published.has(p)), changed, held };
 }
 
 export function unpublished(root: string): string[] {
@@ -66,14 +77,20 @@ export function publish(opts: { root: string; scratch: string; date: string; pus
   const { root, scratch, date, push, log } = opts;
   let files: string[];
   let changed: number;
+  let held: string;
   try {
     const p = pending(root);
     files = [...p.added, ...p.changed].sort();
     changed = p.changed.length;
+    held = p.held.length ? `; ${p.held.length} changed both here and on origin/main since HEAD, left as they are: ${p.held.join(', ')}` : '';
   } catch (e) {
     return `publish: couldn't read origin/main (${why(e)}); nothing pushed`;
   }
-  if (!files.length) return 'publish: every report is on origin/main';
+  if (!files.length) return held ? `publish: nothing pushed${held}` : 'publish: every report is on origin/main';
+  return publishFiles(root, scratch, date, push, log, files, changed) + held;
+}
+
+function publishFiles(root: string, scratch: string, date: string, push: boolean, log: (s: string) => void, files: string[], changed: number): string {
   const of = changed ? ` (${changed} changed since origin/main had them)` : '';
   if (!push) return `publish: ${files.length} reports not on origin/main yet${of}; not pushed (--push publishes them)`;
 

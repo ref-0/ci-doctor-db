@@ -7,8 +7,8 @@
 //   --hours     how long the run measures, from its start (default RUN_HOURS, 11); it may cross midnight
 //   --max       the most repos it queues (default: what the quota allows in --hours)
 //   --dry-run   prints the queue with each repo's reason, and how many reports' practices are due, and checks nothing
-//   --push      pushes every report origin/main lacks or holds at other content to main, as one data commit made on
-//               origin/main (publish.ts)
+//   --push      pushes every report origin/main lacks, or holds as HEAD does while it changed here, to main, as one
+//               data commit made on origin/main (publish.ts)
 //   --prune     really deletes the cache's old files; without it the prune stage only says what it would delete
 import { execFile, execFileSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';

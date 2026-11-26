@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { IDENTITY, publish, unpublished } from '../publish.ts';
+import { partialOf } from '../reread.ts';
 
 const SCRATCH = process.env.LOOP_TEST_DIR ?? join(homedir(), '.cache', 'ci-loop-measure');
 const git = (dir: string, ...a: string[]) => execFileSync('git', ['-C', dir, ...IDENTITY, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
@@ -73,6 +74,37 @@ test('a report changed in place since origin/main had it is pushed too, and the 
   assert.equal(git(origin, 'show', 'main:reports/a__old/2026-11-12.json'), '{"old":1,"practicesDate":"2026-11-29"}');
   assert.match(git(origin, 'log', '-1', '--format=%s', 'main'), /^Reports: 1 checks and 1 changed in place, published 2026-11-29$/);
   assert.equal(git(root, 'status', '--porcelain'), '');
+  assert.deepEqual(unpublished(root), []);
+  done();
+});
+
+test("a report main changed since this checkout's HEAD is never overwritten by the checkout's older copy", () => {
+  const { origin, root, scratch, done } = repos();
+  const other = join(root, '..', 'other');
+  execFileSync('git', ['clone', '-q', origin, other], { stdio: 'ignore' });
+  write(other, 'reports/a__old/2026-11-12.json', '{"old":1,"practicesDate":"2026-11-30"}');
+  git(other, 'commit', '-q', '-am', 'main reads it again');
+  git(other, 'push', '-q', 'origin', 'main');
+
+  // Unchanged here: main's newer copy is the pull's to bring, and nothing is pushed.
+  assert.deepEqual(unpublished(root), []);
+  assert.equal(publish({ root, scratch, date: '2026-11-30', push: true, log: () => {} }), 'publish: every report is on origin/main');
+  assert.equal(git(origin, 'show', 'main:reports/a__old/2026-11-12.json'), '{"old":1,"practicesDate":"2026-11-30"}');
+
+  // Changed both here and on main: left as it is, and named.
+  write(root, 'reports/a__old/2026-11-12.json', '{"old":1,"practicesDate":"2026-11-29"}');
+  const line = publish({ root, scratch, date: '2026-11-30', push: true, log: () => {} });
+  assert.equal(line, 'publish: nothing pushed; 1 changed both here and on origin/main since HEAD, left as they are: reports/a__old/2026-11-12.json');
+  assert.equal(git(origin, 'show', 'main:reports/a__old/2026-11-12.json'), '{"old":1,"practicesDate":"2026-11-30"}');
+  assert.equal(git(root, 'show', ':reports/a__old/2026-11-12.json'), '{"old":1}');
+  assert.equal(execFileSync('cat', [join(root, 'reports/a__old/2026-11-12.json')], { encoding: 'utf8' }), '{"old":1,"practicesDate":"2026-11-29"}');
+  done();
+});
+
+test("a re-read's partial file, left by a kill, is never published", () => {
+  const { root, done } = repos();
+  writeFileSync(partialOf(join(root, 'reports/a__old/2026-11-12.json')), '{"old":');
+
   assert.deepEqual(unpublished(root), []);
   done();
 });
