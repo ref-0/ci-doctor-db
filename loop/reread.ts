@@ -14,15 +14,15 @@
 //   --all       reads every latest report, whatever readings says
 //   --max       the most it reads (default: every one due)
 //   --dry-run   lists what's due and reads nothing
-//   --push      pushes every report that origin/main lacks or holds at other content to main (publish.ts)
+//   --push      pushes every report origin/main lacks, or holds as HEAD does while it changed here, to main (publish.ts)
 //   --reports, --db   another reports/ and loop.db than this checkout's; then nothing is published
 // It reads with GH_TOKEN when that's set, and otherwise the ref0-ci-doctor App's token. It holds the measure run's
 // lock, so the two never overlap.
 import { execFile } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { appendFileSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
-import { basename, dirname, join } from 'node:path';
+import { basename, dirname, join, posix } from 'node:path';
 import type { DatabaseSync } from 'node:sqlite';
 import { childEnv, debugSettings } from './env.ts';
 import type { Quota } from './github.ts';
@@ -32,23 +32,50 @@ import { CHECK_TIMEOUT_MS, realClock, reportText, waitForQuota, type CheckResult
 const ROOT = join(import.meta.dirname, '..');
 const SCRATCH = join(homedir(), '.cache', 'ci-loop-measure');
 
-// The scorer's practice detection, as one sha256: practices.ts and each module it imports code from, in turn, by name
-// and content. Type-only imports change no verdict, so they're left out.
-const IMPORT = /^(?:import|export)\s+(?!type\s)[^'";]*?\bfrom\s+'\.\/([\w./-]+\.ts)'/gm;
+// The scorer's practice detection, as one sha256 of everything a re-read runs: index.ts, the entry it's called through,
+// and each module it imports code from, in turn, so score.ts (the history it supplies, its fixes and notes), source.ts
+// (how files are fetched) and practices.ts with theirs. Each file counts by its path from the scorer's src/ and its
+// bytes, in path order, so the hash is the same on every machine. Type-only imports change no verdict, so they're left
+// out; a hash a little too wide only costs a re-read's calls, where one too narrow leaves wrong verdicts up.
+const IMPORT = /^(?:import|export)\s+(?!type\s)[^'";]*?\bfrom\s+'(\.\.?\/[\w./-]+\.ts)'/gm;
 
 export function detectionOf(scorerSrc: string): string {
-  const files = new Map<string, string>();
+  const files = new Map<string, Buffer>();
   const visit = (name: string) => {
     if (files.has(name)) return;
-    const text = readFileSync(join(scorerSrc, name), 'utf8');
-    files.set(name, text);
-    for (const m of text.matchAll(IMPORT)) visit(m[1]!);
+    const bytes = readFileSync(join(scorerSrc, name));
+    files.set(name, bytes);
+    for (const m of bytes.toString('utf8').matchAll(IMPORT)) visit(posix.normalize(posix.join(posix.dirname(name), m[1]!)));
   };
-  visit('practices.ts');
+  visit('index.ts');
 
   const hash = createHash('sha256');
-  for (const [name, text] of [...files].sort(([a], [b]) => a.localeCompare(b))) hash.update(`${name}\0${text}\0`);
+  for (const name of [...files.keys()].sort()) hash.update(`${name}\0`).update(files.get(name)!).update('\0');
   return hash.digest('hex');
+}
+
+// A report is rewritten by writing a sibling, then renaming it over the report, so a kill mid-write leaves the report
+// whole. The sibling's name starts with a dot and doesn't end in .json, so import, publish and the site never take it
+// for a report, and a run removes any a killed one left behind before it reads.
+const PARTIAL = /^\..*\.json\.partial-\d+$/;
+export const partialOf = (file: string) => join(dirname(file), `.${basename(file)}.partial-${process.pid}`);
+
+export function writeWhole(file: string, text: string) {
+  const partial = partialOf(file);
+  try {
+    writeFileSync(partial, text);
+    renameSync(partial, file);
+  } catch (err) {
+    rmSync(partial, { force: true });
+    throw err;
+  }
+}
+
+export function clearPartials(reportsDir: string) {
+  for (const d of readdirSync(reportsDir, { withFileTypes: true })) {
+    if (!d.isDirectory()) continue;
+    for (const f of readdirSync(join(reportsDir, d.name))) if (PARTIAL.test(f)) rmSync(join(reportsDir, d.name, f), { force: true });
+  }
 }
 
 export type Due = { id: string; repo: string; path: string };
@@ -130,6 +157,7 @@ export type RereadResult = { due: number; read: number; changed: number; failed:
 // columns and hints follow the file; its reading is recorded. A read that fails, or a file that won't import, leaves
 // the stored report as it was.
 export async function rereadDue(d: RereadDeps): Promise<RereadResult> {
+  clearPartials(d.reportsDir);
   const due = dueReports(d.db, d.detection, d.all);
   const max = Math.min(due.length, d.max ?? Infinity);
   const r: RereadResult = { due: due.length, read: 0, changed: 0, failed: 0, left: 0, calls: 0, stopped: 'every due report was read' };
@@ -191,11 +219,17 @@ export async function rereadDue(d: RereadDeps): Promise<RereadResult> {
     }
 
     const changes = verdictChanges(stored.practices, res.report.practices);
-    writeFileSync(file, reportText(res.report));
+    try {
+      writeWhole(file, reportText(res.report));
+    } catch (err) {
+      r.failed++;
+      d.log(`${at} reread ${e.id}: failed, left as it was (couldn't write it: ${(err as Error).message.split('\n')[0]})`);
+      continue;
+    }
     try {
       d.importOne(d.db, d.reportsDir, basename(dirname(file)), basename(file));
     } catch (err) {
-      writeFileSync(file, text);
+      writeWhole(file, text);
       r.failed++;
       d.log(`${at} reread ${e.id}: failed, left as it was (import failed: ${(err as Error).message})`);
       continue;
@@ -208,7 +242,8 @@ export async function rereadDue(d: RereadDeps): Promise<RereadResult> {
   }
 
   if (tried === max && max < due.length) r.stopped = `reached --max ${max}`;
-  r.left = due.length - tried;
+  // Every due report not read is due again: those not reached, those that failed and those left as they are.
+  r.left = due.length - r.read;
   return r;
 }
 
