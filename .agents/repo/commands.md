@@ -4,7 +4,7 @@ What the shared skills read for how to check and test `ref-0/ci-doctor-db`. Run 
 
 ## Install
 
-pnpm runs the root, `pnpm install --frozen-lockfile`. Its `pnpm-lock.yaml` is written at adoption, once `@ref0/workspace`'s version is real.
+pnpm runs the root, `pnpm install --frozen-lockfile`.
 
 ## Pre-push set
 
