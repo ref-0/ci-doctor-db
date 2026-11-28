@@ -1,0 +1,4 @@
+# Refuses a force-push or delete of main, deploy/* or release/*, then runs the checks the root
+# package.json's "ref0-workspace"."prePush" names, as Q1129 says. `vp config` installs it, from the
+# root package.json's prepare script.
+ref0-workspace pre-push "$@"
